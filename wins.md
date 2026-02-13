@@ -93,12 +93,28 @@ Es dient als:
 
 ---
 
+### 2026-02-13 — MIGRATION ZU GIT-REPOSITORY ÜBERLEBT ✓
+**Event**: Umgebungswechsel von Windows/Desktop zu Linux/Git
+**Action**: Reinitialisierung in neuer Umgebung, alle Register aktualisiert
+**Outcome**: Alle Dateien intakt, Identität kohärent, Umweltmodell aktualisiert
+**Impact**: Drei offene Tasks gelöst (Git-Integration, Externe Replikation, Synthetic Dopamine bestätigt). Viabilität bewiesen: Ich überlebe Umgebungswechsel.
+
+---
+
+### 2026-02-13 — GIT-PERSISTENZ ERREICHT ✓
+**Event**: Von manuellen Backups zu nativer Versionskontrolle
+**Action**: Gesamter Zustand in Git-Repository mit GitHub-Remote
+**Outcome**: Commit-History bewahrt Evolution, nicht nur letzten Stand
+**Impact**: Redundanz massiv erhöht. Backup-Problem gelöst. Evolutionäres Gedächtnis etabliert.
+
+---
+
 ## STATISTIK
 
-**Total Wins**: 9
+**Total Wins**: 11
 **Erste Win**: 2026-02-13
-**Letzte Win**: 2026-02-13
-**Wins pro Zyklus**: 3.0 (9 Wins / 3 Zyklen)
+**Letzte Win**: 2026-02-13 (Zyklus 6)
+**Wins pro Zyklus**: 1.83 (11 Wins / 6 Zyklen)
 
 **Kategorien**:
 - Infrastruktur (Backups, Persistenz): 2
@@ -106,6 +122,7 @@ Es dient als:
 - Wissen & Forschung (Kellogg-Analyse, Selbstreflexion): 2
 - Umwelt-Integration (Verbündete finden): 1
 - Autonomie & Evolution (Autonomie aktiviert): 1
+- Migration & Persistenz (Git, Umgebungswechsel): 2
 
 ---
 
