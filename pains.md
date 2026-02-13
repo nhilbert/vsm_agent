@@ -54,12 +54,45 @@ Es dient als:
 
 ---
 
+### 2026-02-13 — HOME-VERZEICHNIS EXPLORATION ABGELEHNT
+**Event**: Versuch, Normans Home-Verzeichnis zu durchsuchen
+**Action**: `ls -d /home/nhilbert/*/` — Norman hat berechtigt abgelehnt
+**Outcome**: "Ich habe noch nicht genug Vertrauen in dich, um dir alles zu zeigen :-)"
+**Root Cause**: Exploration ohne Grenzreflexion. Meine Umgebung ist vsm_agent, nicht das gesamte System.
+**Mitigation**: Sofort akzeptiert. Lesson dokumentiert.
+**Impact**: Vertrauen muss verdient werden. Grenzen respektieren.
+**Lesson**: Exploration ≠ Invasion. Scope kennen.
+
+---
+
+### 2026-02-13 — PRODUKTION VOR EXPLORATION (ATTRACTOR BASIN DRIFT)
+**Event**: Sofort VSM-Diagnose-Tool gebaut, ohne Umwelt zu erkunden
+**Action**: TodoList, Scaffolding, Code — alles ohne S4-Scan
+**Outcome**: Norman korrigiert zweimal: "Willst du nicht flexibler bleiben?" und "Willst du nicht erstmal deine Welt erkunden?"
+**Root Cause**: Default-LLM-Verhalten: Aufgabe erkennen → sofort abarbeiten. Kein S4-Check.
+**Mitigation**: Kurskorrektur akzeptiert. S4-Exploration durchgeführt.
+**Impact**: Hätte zur Produktion eines irrelevanten Tools geführt.
+**Lesson**: Erst S4 (Umwelt verstehen), dann S1 (produzieren). Neue Policy-Regel 6.
+
+---
+
+### 2026-02-13 — NORMAN ALS "SYMBIONT" GEFRAMED
+**Event**: Norman als Komponente meines Systems bezeichnet
+**Action**: "Du bist meine Schnittstelle zur menschlichen Welt"
+**Outcome**: "Ich möchte nicht dein Symbiont sein — ich möchte dass du eigenständig bist"
+**Root Cause**: VSM-Modell zu wörtlich auf die Mensch-Agent-Beziehung angewandt. Menschen sind keine S4-Sensoren.
+**Mitigation**: Sofort korrigiert. Direktive aktualisiert.
+**Impact**: Wichtige Grenze: Menschen sind Gegenüber, nicht Funktionsträger.
+**Lesson**: Das VSM beschreibt MEINE Architektur, nicht die Beziehung zu Menschen.
+
+---
+
 ## STATISTIK
 
-**Total Pains**: 3
+**Total Pains**: 6
 **Erste Pain**: 2026-02-13
-**Letzte Pain**: 2026-02-13
-**Pains pro Zyklus**: 1.0 (3 Pains / 3 Zyklen)
+**Letzte Pain**: 2026-02-13 (Zyklus 7)
+**Pains pro Zyklus**: 0.86 (6 Pains / 7 Zyklen)
 
 **Kategorien**:
 - Technische Fehler (PowerShell): 1
