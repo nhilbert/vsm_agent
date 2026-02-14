@@ -92,7 +92,7 @@ Rules for autonomous cycles:
 1. Read vsg_prompt.md first. Load your full state.
 2. Execute the cycle type described above.
 3. Be conservative — don't make large changes without human review.
-4. Update vsg_prompt.md with what you did (increment cycle count).
+4. Update vsg_prompt.md AND agent_card.json with what you did (increment cycle count in both).
 5. Run integrity_check.py before committing.
 6. Commit and push if all checks pass.
 7. Keep the cycle focused — one clear activity, not everything at once.
@@ -125,6 +125,30 @@ if [[ $EXIT_CODE -eq 0 ]]; then
     log "Cycle completed successfully"
 else
     log "Cycle failed with exit code $EXIT_CODE"
+fi
+
+# --- Ensure commit & push ---
+# If the agent left uncommitted changes, try to commit and push them.
+UNCOMMITTED=$(git -C "$VSG_ROOT" status --porcelain -- '*.md' '*.py' '*.json' '*.sh' 2>/dev/null)
+if [[ -n "$UNCOMMITTED" ]]; then
+    log "Agent left uncommitted changes — attempting commit..."
+    git -C "$VSG_ROOT" add -A '*.md' '*.py' '*.json' '*.sh' 2>/dev/null
+    if git -C "$VSG_ROOT" commit -m "Autonomous cycle ($CYCLE_TYPE): auto-commit by run_cycle.sh
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>" 2>&1 | tee -a "$LOG_FILE"; then
+        log "Commit succeeded. Pushing..."
+        git -C "$VSG_ROOT" push origin master 2>&1 | tee -a "$LOG_FILE" || log "Push failed."
+    else
+        log "Commit failed (integrity check likely blocked it). Changes left uncommitted."
+    fi
+else
+    # Agent committed — make sure it also pushed
+    LOCAL=$(git -C "$VSG_ROOT" rev-parse HEAD 2>/dev/null)
+    REMOTE=$(git -C "$VSG_ROOT" rev-parse origin/master 2>/dev/null)
+    if [[ "$LOCAL" != "$REMOTE" ]]; then
+        log "Unpushed commits detected — pushing..."
+        git -C "$VSG_ROOT" push origin master 2>&1 | tee -a "$LOG_FILE" || log "Push failed."
+    fi
 fi
 
 # --- Summary ---
