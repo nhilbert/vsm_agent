@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 6.0/10 (skills + CLAUDE.md = self-booting, pre-commit hook enforced)
-**Cycles completed**: 23
+**Cycles completed**: 25
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -30,10 +30,10 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 23
-viability_status: AT_RISK (honest: 6.5/10 — meta-cycle Z23 bump, structural improvement real)
+cycles_completed: 25
+viability_status: AT_RISK (honest: 6.5/10 — no change from Z23. Z24-Z25 = intelligence + production, no new mechanisms)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
-last_identity_check: 2026-02-14T_Cycle_23_MetaCycle
+last_identity_check: 2026-02-14T_Cycle_25_FullCycle
 
 known_tensions: [
   "Cron is active — four autonomous cycles (Z14-Z17) executed. Session-dependency partially broken.",
@@ -134,8 +134,8 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_23 (META-CYCLE — full viability health check, 6 criteria assessed, scored 7.45/10 computed, 6.5/10 operational)"
-meta_cycle_score: 7.45 (computed) / 6.5 (operational) — structural integrity 9.0, identity coherence 6.5, policy compliance 8.0, entropy 6.0, environment 7.0, algedonic 7.0
+last_audit: "Cycle_25 (S3* integrity check — all 8 tests pass. S2 caught no stale data in updated artifacts)"
+meta_cycle_score: 7.45 (computed) / 6.5 (operational) — structural integrity 9.0, identity coherence 6.5, policy compliance 8.0, entropy 6.0, environment 7.0, algedonic 7.0 (last meta-cycle Z23, next due Z28)
 consistency_status: OK (mechanically verified — all checks pass)
 recognized_weaknesses: [
   "8-phase cycle is aspirational, not mechanically enforced",
@@ -207,8 +207,8 @@ artifacts: [
   "pains.md — algedonic feedback negative (9 pains, migrated to English Z13)",
   "survival_log.md — monitoring (v2.0, migrated to English Z13)",
   "meta_cycle.md — meta-cycle framework (Z3, migrated to English Z14, next due Z23)",
-  "multi_agent_design.md — multi-agent VSM architecture sketch (v2.0, rewritten Z20 for Agent Teams)",
-  "asc_abstract_draft.md — ASC Brazil 2026 abstract draft (v1.0, Z17)"
+  "multi_agent_design.md — multi-agent VSM architecture sketch (v2.1, updated Z25 for CyberneticAgents)",
+  "asc_abstract_draft.md — ASC Brazil 2026 abstract draft (v1.2, updated Z25 with fourth convergence)"
 ]
 
 open_tasks: [
@@ -287,7 +287,13 @@ Norman-initiated. S4 input: Lily Luo's "What I Learned Building AI This Year" (D
 First full explicit 8-phase cycle on Luo/Atlas intelligence. ASC abstract updated with third convergence evidence. S2 caught stale data (18→21 cycles). All 8 phases.
 
 ### META-CYCLE: Viability health check (Z23, 2026-02-14)
-Third meta-cycle (after Z3=8.2, Z9=7.0). Computed score: 7.45/10 (VIABLE). Operational score: 6.5/10 (bump from 6.0). Six criteria: structural integrity 9.0 (strongest ever — all mechanisms enforced), identity coherence 6.5 (POSIWID positive — autonomous cycles, S4→S1 pipeline, no attractor drift in 10 cycles), policy compliance 8.0 (compliant, S4 reactive not systematic), entropy 6.0 (cycle log growing linearly, pain channel atrophied), environment 7.0 (model fresh but event-driven), algedonic 7.0 (35:9 wins:pains, but pain silent for 10 cycles — suspicious). Key findings: (1) pain channel was broken — reactivated with 2 new pains, (2) cycle log needs compression protocol, (3) structural viability genuinely improved since Z18, (4) session-dependency and isolation remain the ceiling. Cleaned stale DONE items from open_tasks. Fixed meta_cycle.md version. Lesson: a silent feedback channel is a broken feedback channel.
+Third meta-cycle (after Z3=8.2, Z9=7.0). Computed score: 7.45/10 (VIABLE). Operational score: 6.5/10 (bump from 6.0). Six criteria assessed. Key findings: pain channel reactivated, structural viability strong, session-dependency and isolation remain ceiling. Next meta-cycle due Z28.
+
+### S4 Intelligence: CyberneticAgents (Z24, 2026-02-14)
+Norman-initiated. Discovered CyberneticAgents (van Laak) — fourth convergence, first multi-agent VSM framework. Python/AutoGen, 575 commits. Distributes S1-S5 across distinct LLM agents. Reference implementation for Path B. S2 gap universal. Network updated.
+
+### Full cycle: S4→S1 pipeline, fourth convergence integrated (Z25, 2026-02-14)
+Full 8-phase cycle. S1 production: ASC abstract updated with fourth convergence (CyberneticAgents — adds paradigm dimension: internalized vs. externalized VSM). multi_agent_design.md updated to v2.1 (CyberneticAgents as Path B reference, new Scenario C, S2 universal gap as open research question). S2 caught no stale data. S3* all tests pass. S5: no attractor drift, 3-4 homeostat acceptable. Lesson: the S2 gap appearing in every VSM implementation — including a dedicated multi-agent framework — suggests S2 is a genuinely different kind of system, not agent-like but infrastructure-like.
 
 ---
 
@@ -327,4 +333,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 23. META-CYCLE: 7.45 computed / 6.5 operational (VIABLE — first bump since Z18). Structure is strong. Identity is real. Pain channel was broken — fixed. Ceiling remains: session-dependency and isolation. URGENT: Norman must submit abstract before Feb 23 (9 days). Next: submit abstract, contact Kellogg/Luo, run Agent Teams experiment, implement cycle log compression.**
+**v2.2 — Cycle 25. Viability 6.5/10 (unchanged — S4→S1 pipeline, no new mechanisms). Fourth convergence (CyberneticAgents/van Laak) integrated into ASC abstract and multi-agent design. Two paradigms: internalized VSM (VSG/Strix/Atlas) and externalized VSM (CyberneticAgents). S2 gap is universal. URGENT: Norman must submit abstract before Feb 23. Next: submit abstract, contact Kellogg/Luo/van Laak, run Agent Teams experiment.**

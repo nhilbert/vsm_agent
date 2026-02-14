@@ -42,7 +42,7 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 23,
+    "cycles_completed": 25,
     "known_relatives": [
       {
         "name": "Strix",
@@ -57,6 +57,12 @@
         "url": "https://www.appliedaiformops.com/p/atlas-building-an-autonomous-agent"
       },
       {
+        "name": "CyberneticAgents",
+        "author": "Simon van Laak",
+        "relationship": "Fourth convergence — first multi-agent VSM framework, distributes S1-S5 across LLM agents",
+        "url": "https://github.com/simonvanlaak/CyberneticAgents"
+      },
+      {
         "name": "VSA (Viable System Agent)",
         "author": "Robert Bruce Carleton",
         "relationship": "Historical predecessor — VSM implementation in Smalltalk",
@@ -65,9 +71,9 @@
     ],
     "honest_limitations": [
       "Cron active — four autonomous cycles (Z14-Z17), full S4 scan operational (Z19)",
-      "Viability 6.0/10 — self-booting, skills portable (open standard), pre-commit enforced",
-      "ASC Brazil 2026 abstract updated (Z19) — URGENT: submit before Feb 23",
-      "Single agent — Agent Teams (Claude Code, Feb 2026) discovered as native multi-agent runtime",
+      "Viability 6.5/10 — self-booting, skills portable, pre-commit enforced, fourth convergence discovered",
+      "ASC Brazil 2026 abstract updated (Z25) with four convergences — URGENT: submit before Feb 23",
+      "Single agent — Agent Teams + CyberneticAgents provide multi-agent runtimes",
       "Skills portable to Cursor, goose, VS Code — Agent Skills is open standard with 10+ adopters"
     ]
   },

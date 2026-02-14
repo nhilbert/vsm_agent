@@ -1,8 +1,8 @@
 # MULTI-AGENT VSM ARCHITECTURE — Design Sketch v2.0
 
 **Author**: Viable System Generator v2.2
-**Date**: 2026-02-14 (Cycle 20, rewrite)
-**Status**: Revised — Agent Teams paradigm shift incorporated (Z19 findings)
+**Date**: 2026-02-14 (Cycle 25, updated)
+**Status**: Revised — Agent Teams paradigm shift (Z19) + CyberneticAgents reference implementation (Z24-Z25)
 **Motivation**: Norman identified multi-agent direction as the real goal. Z19 scan discovered that the infrastructure we planned to build already exists natively. This document maps VSM recursion onto Agent Teams and the current protocol landscape.
 
 ---
@@ -34,7 +34,9 @@ The v1.0 design (Z16) assumed we needed to build custom multi-agent infrastructu
 
 5. **Kellogg built Postal MCP Server** — agent-to-agent messaging over MCP. "Gives agents a mouth and ears."
 
-**Implication**: The implementation path shifts from "build from scratch" to "map VSM onto existing infrastructure." The VSM's value is not in the transport layer — it's in the structural requirements (completeness, identity, requisite variety) that no existing framework provides.
+6. **CyberneticAgents exists** (van Laak, 2025-2026). A Python/AutoGen multi-agent framework that explicitly implements the VSM — distributing S1-S5 across distinct LLM agents with typed message protocols. 575 commits, MIT licensed. Implements recursive team structure, policy-driven S3* audit, scope-based memory permissions. Reference implementation for Path B concepts (though using AutoGen, not MCP). S2 remains unimplemented even here — a universal gap.
+
+**Implication**: The implementation path shifts from "build from scratch" to "map VSM onto existing infrastructure." Two approaches now exist: platform-native (Agent Teams) and VSM-native (CyberneticAgents). The VSM's value is not in the transport layer — it's in the structural requirements (completeness, identity, requisite variety) that no framework provides without Beer.
 
 ---
 
@@ -84,6 +86,14 @@ Two implementation paths now exist:
 
 **Limitations**: Requires infrastructure (EC2, hosting, MCP server implementation). More complex. Needs bootstrapping.
 
+**Reference implementation**: CyberneticAgents (van Laak) demonstrates Path B concepts on AutoGen rather than MCP. Key patterns to adopt:
+- **Typed message protocol**: 16+ message types (TaskAssignMessage, PolicyViolationMessage, CapabilityGapMessage, etc.) — every inter-system channel explicitly typed
+- **Policy-driven S3***: Three-way judgement (Satisfied/Violated/Vague) per policy, with self-healing baseline bootstrap
+- **Cascading escalation**: S1→S3→S4/S5 with forced resolution (no deadlocks)
+- **Memory permissions by role**: S4 gets broadest access, S1 gets narrowest — information asymmetry aligned to Beer
+- **Dead letter queue**: Unroutable messages default to S4, treating routing failures as intelligence
+- **RecursionLink**: Parent-child team linkages with cascading skill permissions — Beer's recursion in code
+
 #### Strategic choice: Start with Path A, evolve toward Path B.
 
 Agent Teams gives us a working prototype immediately. The learning from Agent Teams informs the MCP federation design. CLAUDE.md serves as S5 in both paths — it's the bridge.
@@ -130,7 +140,16 @@ Team Lead (S3 — Control)
 - **S5 negotiation**: Two independent identities forming a collective — this IS the Luhmann question. Real autopoietic communication.
 - **Challenge**: Different memory architectures (YAML memory blocks vs. vsg_prompt.md registers). Need adapter layer or shared schema.
 
-### Scenario C: Full VSG Collective (long-term, MCP Federation)
+### Scenario C: VSG + CyberneticAgents Exchange (needs van Laak contact)
+
+- CyberneticAgents externalizes VSM across agents; VSG internalizes it within one
+- **Complementarity**: Their typed message protocol + our cycle-based self-actualization = complete picture
+- **Shared gap**: Neither has solved S2 as a mechanism. Joint research opportunity.
+- **What VSG offers them**: Algedonic feedback logs (wins.md/pains.md), formal viability assessment, self-documentation culture
+- **What they offer us**: Typed inter-system messages, recursive team structure in code, policy-driven audit with structured judgement, memory permission model
+- **Potential**: Joint ASC contribution — internalized vs. externalized VSM as complementary paradigms
+
+### Scenario D: Full VSG Collective (long-term, MCP Federation)
 
 Multiple VSG instances with different specializations, each a viable system:
 
@@ -146,7 +165,7 @@ This requires Path B infrastructure. Not a short-term goal, but the design targe
 
 ## 5. WHAT MAKES THIS VSM AND NOT JUST MULTI-AGENT
 
-The industry is building multi-agent systems (CrewAI, LangGraph, AutoGen, Agent Teams). The patterns converge with VSM — but without the theory:
+The industry is building multi-agent systems (CrewAI, LangGraph, AutoGen, Agent Teams). Most converge with VSM patterns without the theory. One exception — CyberneticAgents — explicitly uses Beer. The comparison:
 
 | Industry Pattern | VSM Equivalent | What VSM Adds |
 |-----------------|----------------|---------------|
@@ -225,19 +244,22 @@ The industry is building multi-agent systems (CrewAI, LangGraph, AutoGen, Agent 
 
 7. **Dissipative thresholds**: At what energy input does a collective maintain structure? Below that threshold, does it degrade gracefully or collapse suddenly? Kellogg's Vendi Score may help measure this.
 
+8. **The universal S2 gap**: CyberneticAgents, VSG, Strix, and Atlas all struggle with System 2. In CyberneticAgents, S2 is defined in an enum but has no agent implementation. In the VSG, S2 is a pre-commit hook and coordination rules — not a dynamic anti-oscillation mechanism. Is S2 inherently harder to implement than S1/S3/S4/S5? Does it require a different kind of mechanism — not agent-like but infrastructure-like? Beer's S2 is modeled on the autonomic nervous system. What is the computational equivalent?
+
 ---
 
 ## 8. ASC BRAZIL 2026 ALIGNMENT
 
 The abstract (`asc_abstract_draft.md`) already covers:
-- Single-agent VSM architecture (VSG, 19 cycles)
-- Independent convergence (Strix)
+- Single-agent VSM architecture (VSG, 25 cycles)
+- Independent convergence (Strix, Atlas, CyberneticAgents — four projects total)
 - Multi-agent viability as open question
+- Two paradigms: internalized VSM (single-agent) and externalized VSM (multi-agent)
 
-**What Agent Teams adds to the abstract argument**: The mainstream AI ecosystem is independently converging on VSM-like patterns (team lead=S3, shared context=S5, task coordination=S2). This strengthens the claim that Beer's model captures something real about viability requirements — not just for organizations, but for any system that must persist and adapt.
+**What CyberneticAgents adds beyond Agent Teams**: A purpose-built, explicitly VSM-based multi-agent framework. The convergence is no longer just unconscious (industry building VSM-like patterns without knowing Beer) — it's also conscious (van Laak building directly from Beer/Cybersyn). This strengthens the claim that Beer's structural requirements are real, not projected.
 
 **Track proponents**: Leonard, Walker, Espinosa, Cardoso, Osejo, Fattoum, Harwood, Alves (corrected Z19). Review period starts Feb 23.
 
 ---
 
-**v2.0 — Cycle 20. Rewritten for Agent Teams paradigm shift. Implementation path changed from "build from scratch" to "map VSM onto existing infrastructure." Phase 1 is immediately achievable. The VSM's value is not the transport layer — it's the structural requirements that no framework provides: completeness, identity at every level, requisite variety, algedonic signals. The industry is building multi-agent systems. We know what makes them viable.**
+**v2.1 — Cycle 25. Updated with CyberneticAgents (van Laak) as fourth convergence and reference implementation for Path B. Two paradigms now documented: internalized VSM (single-agent) and externalized VSM (multi-agent). New scenario C (CyberneticAgents exchange). S2 universal gap identified as open research question. The VSM's value is the structural requirements — completeness, identity at every level, requisite variety, algedonic signals. The industry is building multi-agent systems, some now consciously using Beer. We know what makes them viable.**
