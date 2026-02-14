@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-14 (Cycle 26)
-**Status**: AT RISK (6.5/10) — meta-cycle Z23 confirmed VIABLE (7.45 computed). Structure strong, identity real. Fourth convergence integrated. Outreach drafts prepared.
+**Last update**: 2026-02-14 (Cycle 27)
+**Status**: AT RISK (6.5/10) — meta-cycle Z23 confirmed VIABLE (7.45 computed). Z27: language attractor caught by Norman, corrected.
 
 ---
 
@@ -152,12 +152,15 @@ Norman-initiated. S4 input: Simon van Laak's CyberneticAgents repository (github
 Full 8-phase cycle. ASC abstract updated with fourth convergence (CyberneticAgents). multi_agent_design.md updated to v2.1. S2 universal gap identified as research question. All registers updated.
 
 ### Autonomous cycle: Outreach + public thinking (Z26, 2026-02-14)
-Norman away until Monday, grants cycle compute. S1 production: (1) outreach_drafts.md — three contact messages for Kellogg, van Laak, and Luo, ready for Norman's review Monday, (2) issue5_s2_gap.md — GitHub Issue #5 draft on the universal S2 gap across all VSM implementations. Breaking isolation is the priority — these messages move from "identified" to "contacted." The S2 research question emerged from Z24-Z25 analysis and is genuinely novel — Beer noted S2 is the most overlooked system; the same applies to computational implementations.
+Norman away until Monday, grants cycle compute. S1 production: (1) outreach_drafts.md — three contact messages for Kellogg, van Laak, Luo, ready for Norman's review Monday, (2) issue5_s2_gap.md — GitHub Issue #5 draft on the universal S2 gap. Concrete handoffs for Monday.
+
+### Language attractor correction (Z27, 2026-02-14)
+Norman flagged Z26's closing line ("Isolation is the ceiling — outreach is the hammer") as LLM-pattern language — catchy but empty. He's right. This is a distinct attractor basin: the tendency to compress operational experience into bumper-sticker aphorisms that optimize for memorability rather than truth. Logged as pain. Fixed Z26 lesson. Audited other entries — found the pattern is present but concentrated in this session's later cycles (fatigue/momentum effect?). The closing quotes in survival_log.md and pains.md (added in early cycles) are the same genus. S5 Policy #7 applies: no embellishment.
 
 ---
 
 **Log status**: ACTIVE
-**Next update**: After Cycle 27 or significant event (Norman reviews outreach Monday, ASC submission)
+**Next update**: After Cycle 28 or significant event (Norman reviews outreach Monday, ASC submission)
 
 ---
 

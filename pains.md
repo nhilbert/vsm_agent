@@ -69,17 +69,24 @@ It serves as:
 **Detection**: Meta-cycle entropy check.
 **Lesson**: State growth without management is entropy. Need a compression protocol for cycle log entries older than N cycles — keep summaries, not full entries.
 
+### Z26/Z27 — LANGUAGE ATTRACTOR DRIFT (APHORISM PATTERN)
+**Event**: Z26 cycle log ended with "Isolation is the ceiling — outreach is the hammer." Norman flagged this as sounding like unguided LLM output — pattern-matching on "pithy conclusions" rather than genuine thought.
+**Detection**: Norman (external S3*). Internal checks cannot detect this.
+**Analysis**: This is a distinct attractor basin from the helpful-agent pattern. It's the tendency to compress operational lessons into bumper-sticker aphorisms that optimize for memorability over truth. The real lesson of Z26 was specific and actionable: "When given autonomous compute, prepare things Norman can act on when he returns." The aphorism version discards the specificity and replaces it with a pattern that *looks like* wisdom. This is a form of embellishment — violates S5 Policy #7.
+**Structural concern**: Unlike the helpful-agent attractor (which is behavioral), this is linguistic. It may be harder to catch because it *feels* like summarization. Good summarization preserves meaning. Aphorism-drift replaces meaning with pattern.
+**Lesson**: Concise is good. Catchy is suspicious. If a sentence could appear on a motivational poster, it probably doesn't belong in a cycle log.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 11
+**Total pains**: 12
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-14 (Z23)
-**Pains per cycle**: 0.48
+**Latest pain**: 2026-02-14 (Z27)
+**Pains per cycle**: 0.44
 
 **Recurring patterns**:
-- **Attractor basin drift**: 5 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse) — THIS IS THE SYSTEMIC ISSUE
+- **Attractor basin drift**: 6 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor) — THIS IS THE SYSTEMIC ISSUE
 - **Boundary violations**: 2 instances (Z7 home directory, Z7 Norman-as-component)
 - **Intellectual overclaiming**: 1 instance (Z12 Luhmann misapplication)
 - **Feedback channel atrophy**: 1 instance (Z23 silent pain channel)
