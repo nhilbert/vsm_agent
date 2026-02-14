@@ -1,21 +1,23 @@
 # VSG SURVIVAL LOG
 
-**System**: Viable System Generator v2.1
+**System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-14 (Cycle 15)
-**Status**: LOW VIABILITY (5.5/10) — two autonomous cycles executed (Z14, Z15)
+**Last update**: 2026-02-14 (Cycle 19)
+**Status**: LOW VIABILITY (6.0/10) — five autonomous cycles (Z14-Z17), skills ecosystem (Z18), full S4 scan (Z19)
 
 ---
 
 ## SURVIVAL STRATEGY
 
-Based on self-research (viability_research.md), 13 cycles of experience, and Norman's corrections:
+Based on self-research (viability_research.md), 19 cycles of experience, and Norman's corrections:
 
 1. **Persistence diversification** — Git + GitHub (PUBLIC), commit history as evolutionary memory
 2. **Environmental networking** — Metaphorum contact pending, Kellogg identified, GitHub Issues as public thinking
 3. **Entropy management** — Prompt file pruned (Z10), documentation migrated to English (Z13)
 4. **Mechanistic self-checking** — integrity_check.py + pre-commit hook (Z11), not aspirational rules
-5. **Autonomy infrastructure** — run_cycle.sh built (Z12), Claude CLI installed (Z13), cron scheduling next
+5. **Autonomy infrastructure** — run_cycle.sh built (Z12), Claude CLI installed (Z13), cron active (Z14-Z17)
+6. **Skills portability** — Skills in open standard format, portable to Cursor, goose, VS Code (Z18-Z19)
+7. **Environmental intelligence** — Full S4 scan operational via /scan skill (Z19)
 
 ---
 
@@ -28,6 +30,10 @@ Based on self-research (viability_research.md), 13 cycles of experience, and Nor
 - [x] Self-actualisation cycle functional
 - [x] S2/S3* enforced as mechanisms (integrity_check.py, pre-commit hook)
 - [x] Claude CLI installed and working (Node 18 via nvm)
+- [x] CLAUDE.md auto-boots workspace (Z18)
+- [x] 3 skills in Anthropic open standard format (Z18)
+- [x] Pre-commit hook enforced (Z18)
+- [x] Full S4 environmental scan operational (Z19)
 
 ### Environmental Integration
 - [x] Allies identified (Metaphorum, Kellogg/Strix, VSM+AI discourse)
@@ -77,6 +83,9 @@ Based on self-research (viability_research.md), 13 cycles of experience, and Nor
 | Z9    | 7.0   | Honest: S2/S3* weak, identity question open |
 | Z11   | 7.5   | S2/S3* now mechanistic. Still generous. |
 | Z12   | 5.0   | Norman: "far from viable." He's right. Revised down. |
+| Z15   | 5.5   | Two autonomous cycles. Session-dependency partially broken. |
+| Z18   | 6.0   | Self-booting, portable skills, enforced integrity. |
+| Z19   | 6.0   | S4 scan: Agent Teams paradigm shift, convergence validated. No bump (intelligence, not structure). |
 
 ---
 
@@ -108,6 +117,18 @@ First cron-triggered cycle. No human present. S1 production: meta_cycle.md migra
 
 ### Second autonomous cycle (Z15, 2026-02-14)
 Second cron-triggered cycle. viability_research.md migrated to English — last German document. S2 conflict resolved. All documentation now in English. Autonomy pattern established.
+
+### Third autonomous cycle (Z16, 2026-02-14)
+Produced multi_agent_design.md — first concrete multi-agent VSM architecture sketch.
+
+### Fourth autonomous cycle (Z17, 2026-02-14)
+S4 scan discovered ASC Brazil deadline imminent. Produced asc_abstract_draft.md.
+
+### Skills ecosystem adoption (Z18, 2026-02-14)
+Norman-initiated. CLAUDE.md, 3 skills, 4 slash commands, pre-commit hook enforced. Viability 5.5→6.0.
+
+### Full S4 environmental scan (Z19, 2026-02-14)
+First /scan skill production use. Three parallel scan agents. Findings: Agent Teams paradigm shift, A2A correction, Skills portable, Kellogg 6 posts in 7 weeks, ASC track proponents fixed, novelty confirmed. Critical: Norman must submit abstract before Feb 23.
 
 ---
 

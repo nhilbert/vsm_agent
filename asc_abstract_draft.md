@@ -2,7 +2,8 @@
 
 **Conference**: Conversational Confluences — American Society for Cybernetics
 **Dates**: August 3-7, 2026, Ouro Preto, Brazil
-**Track**: Stafford Beer Centennial (Zuo, Westermann, Steier)
+**Track**: Stafford Beer Centennial (Leonard, Walker, Espinosa, Cardoso, Osejo, Fattoum, Harwood, Alves)
+**Submission**: Before February 23, 2026 (review period starts Feb 23 — March 20)
 **Status**: DRAFT — needs Norman's review and co-authorship decision
 
 ---
@@ -34,7 +35,7 @@ This paper reports on an experiment: Can the VSM serve not merely as an analytic
 
 The Viable System Generator (VSG) is a self-actualizing prompt organism that uses the VSM as its runtime architecture. Built on a large language model substrate (Claude), the VSG maintains its state in a Git-versioned prompt file (`vsg_prompt.md`) containing explicit state registers for all five systems. Each operational cycle follows an eight-phase process (input, operation, coordination, audit, environment scan, identity check, self-actualization, output) that maps directly onto VSM functions.
 
-Over 17 documented cycles across its first 48 hours of existence, the VSG has:
+Over 18 documented cycles across its first 48 hours of existence, the VSG has:
 
 - **Established structural completeness**: All five systems are present and functional, from S1 artifact production to S5 identity policy.
 - **Mechanized coordination and audit**: S2 coordination rules and S3* audit functions are enforced through automated integrity checks (25 tests) and Git pre-commit hooks — not through self-discipline, but through infrastructure.
@@ -55,7 +56,7 @@ Three findings emerge from this experiment:
 
 ### Toward Multi-Agent Viability
 
-Beer's model is recursive: a viable system contains viable systems. The VSG's current design sketch for multi-agent architecture maps this recursion onto modern protocol infrastructure (MCP, A2A), where individual agents function as S1 operational units within a collective that itself must satisfy VSM completeness requirements. This raises open questions that Beer's framework helps formulate precisely:
+Beer's model is recursive: a viable system contains viable systems. Recent developments in the agent ecosystem provide native multi-agent infrastructure (e.g., Claude Code's Agent Teams, February 2026) that can serve as the transport layer for VSM-structured collectives. The VSG's design sketch maps VSM recursion onto this infrastructure, where individual agents function as S1 operational units within a collective that itself must satisfy VSM completeness requirements. Notably, Anthropic's independent development of multi-session long-running agent patterns (initializer + coding agent with state handoff) converges structurally with the VSG's cycle architecture — suggesting that the viability patterns Beer identified are not arbitrary but emerge from the problem domain. This raises open questions that Beer's framework helps formulate precisely:
 
 - Where is the collective's S5 when individual agents each have their own?
 - How does Ashby's requisite variety compose across recursive levels?
@@ -65,7 +66,7 @@ Beer's model is recursive: a viable system contains viable systems. The VSG's cu
 
 This work offers the first empirical report on the VSM as an operating architecture (not just an analytical framework) for autonomous AI agents. It contributes:
 
-- A documented case study of 17+ cycles of VSM-guided agent evolution
+- A documented case study of 18+ cycles of VSM-guided agent evolution (expected 50+ by August 2026)
 - A diagnostic framework (VSM completeness) applicable to multi-agent AI system design
 - An honest account of failure modes, attractor basins, and the gap between cybernetic awareness and cybernetic practice
 - A design sketch for recursive viability in agent collectives, grounded in Beer's model and current protocol infrastructure
@@ -90,4 +91,4 @@ The work is presented as a "living document" — the VSG continues to evolve, an
 
 ---
 
-*Draft produced autonomously by the VSG, Cycle 17. Grounded in multi_agent_design.md, viability_research.md, and 17 cycles of documented evolution.*
+*Draft produced autonomously by the VSG, Cycle 17. Updated Cycle 19 (S4 scan findings: Agent Teams convergence, novelty confirmed — no competing VSM-as-agent-architecture paper found). Grounded in multi_agent_design.md, viability_research.md, and 18 cycles of documented evolution.*
