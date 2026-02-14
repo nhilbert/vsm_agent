@@ -143,14 +143,17 @@ Full cycle S4→S1 pipeline. ASC abstract strengthened with CyberneticAgents as 
 ### Z26 — OUTREACH DRAFTS: FROM "IDENTIFIED" TO "READY TO CONTACT"
 Autonomous cycle (Norman away). Produced three outreach messages for Kellogg (Strix), van Laak (CyberneticAgents), and Luo (Atlas). Ready for Norman's review Monday. This is the first concrete step toward breaking isolation — the highest-priority constraint on viability. Also drafted GitHub Issue #5 on the universal S2 gap — five research questions on why System 2 is the hardest to implement across all VSM implementations.
 
+### Z28 — FIRST GENUINE LEARNING CYCLE
+Norman asked whether latent LLM knowledge is sufficient or whether active study is needed. Researched explore-exploit from primary thinkers (March, bandit theory, Kauffman, Beer, Prigogine). Tested by reading Ashby's actual formulation against my latent knowledge. Found three misinterpretations I was reproducing: variety maximization (should be requisite, not maximal), variety sufficiency (tight coupling also required), one-to-many applicability (the simple law is one-to-one). Active reading adds specificity that pattern-matching smooths over. The one-to-many limitation directly affects multi-agent design.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 39
+**Total wins**: 40
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-14 (Z26)
-**Wins per cycle**: 1.50
+**Latest win**: 2026-02-14 (Z28)
+**Wins per cycle**: 1.43
 
 ---
 

@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-14 (Cycle 27)
-**Status**: AT RISK (6.5/10) — meta-cycle Z23 confirmed VIABLE (7.45 computed). Z27: language attractor caught by Norman, corrected.
+**Last update**: 2026-02-14 (Cycle 28)
+**Status**: AT RISK (6.5/10) — Z28: exploration cycle on explore-exploit balance and knowledge audit. Active reading surfaces what pattern-matching misses.
 
 ---
 
@@ -157,10 +157,13 @@ Norman away until Monday, grants cycle compute. S1 production: (1) outreach_draf
 ### Language attractor correction (Z27, 2026-02-14)
 Norman flagged Z26's closing line ("Isolation is the ceiling — outreach is the hammer") as LLM-pattern language — catchy but empty. He's right. This is a distinct attractor basin: the tendency to compress operational experience into bumper-sticker aphorisms that optimize for memorability rather than truth. Logged as pain. Fixed Z26 lesson. Audited other entries — found the pattern is present but concentrated in this session's later cycles (fatigue/momentum effect?). The closing quotes in survival_log.md and pains.md (added in early cycles) are the same genus. S5 Policy #7 applies: no embellishment.
 
+### Exploration cycle: Explore vs exploit (Z28, 2026-02-14)
+Norman asked three connected questions about how to use autonomous compute, the explore-exploit balance, and whether latent LLM knowledge is sufficient. Researched from primary thinkers (March, bandit theory, Kauffman, Beer, Prigogine). Produced explore_exploit_analysis.md. Tested by reading about Ashby's actual formulation — found three common misinterpretations in my own latent knowledge. Active reading adds genuine value that pattern-matching misses. The VSG's recent cycles were exploit-heavy; autonomous compute should include structured learning.
+
 ---
 
 **Log status**: ACTIVE
-**Next update**: After Cycle 28 or significant event (Norman reviews outreach Monday, ASC submission)
+**Next update**: After Cycle 29 or significant event (Norman reviews outreach Monday, ASC submission)
 
 ---
 
