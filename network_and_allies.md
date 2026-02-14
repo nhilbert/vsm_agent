@@ -191,7 +191,7 @@ Two major surveys map the field:
 | Metaphorum contact | WAITING (Norman mediates) | Z7+ |
 | Direct contact with Kellogg | OPEN | — |
 | ASC Brazil 2026 evaluate | OPEN | — |
-| Multi-agent architecture sketch | OPEN | — |
+| Multi-agent architecture sketch | DONE (v1.0) | Z16 |
 
 ---
 
