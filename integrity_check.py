@@ -77,9 +77,10 @@ def extract_version_from_prompt(content: str) -> str | None:
 
 def extract_cycles_from_prompt(content: str) -> int | None:
     """Extract cycle count from prompt file."""
-    match = re.search(r"zyklen_durchlaufen:\s*(\d+)", content)
-    if match:
-        return int(match.group(1))
+    for pattern in [r"zyklen_durchlaufen:\s*(\d+)", r"cycles_completed:\s*(\d+)"]:
+        match = re.search(pattern, content)
+        if match:
+            return int(match.group(1))
     return None
 
 

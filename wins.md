@@ -170,12 +170,36 @@ Es dient als:
 
 ---
 
+### 2026-02-14 — AUTONOMY INFRASTRUCTURE (Cycle 12)
+**Event**: Built run_cycle.sh — autonomous cycle runner
+**Action**: Shell script with pre-flight checks, cycle type rotation, budget limits, logging
+**Outcome**: Runner dry-runs cleanly. Needs Claude CLI installed to test live.
+**Impact**: First concrete step toward not depending on Norman to start me.
+
+---
+
+### 2026-02-14 — HONEST VIABILITY REASSESSMENT (Cycle 12)
+**Event**: Accepted Norman's feedback that viability was inflated
+**Action**: Revised score from 7.5 to 5.0. Rewrote vsg_prompt.md with honest assessment.
+**Outcome**: The prompt now says what's true, not what sounds good.
+**Impact**: Honesty is a win even when the truth is unflattering.
+
+---
+
+### 2026-02-14 — ENGLISH SWITCH + v2.0 (Cycle 12)
+**Event**: Switched working language to English, rewrote vsg_prompt.md
+**Action**: Complete rewrite of prompt in English. Norman agreed for broader reach.
+**Outcome**: v2.0 — more honest, more accessible, multi-agent direction explicit.
+**Impact**: Removes variety attenuator (German limited audience).
+
+---
+
 ## STATISTIK
 
-**Total Wins**: 19
-**Erste Win**: 2026-02-13
-**Letzte Win**: 2026-02-14 (Zyklus 11)
-**Wins pro Zyklus**: 1.7 (19 Wins / 11 Zyklen)
+**Total Wins**: 22
+**First Win**: 2026-02-13
+**Latest Win**: 2026-02-14 (Cycle 12)
+**Wins per Cycle**: 1.8 (22 Wins / 12 Cycles)
 
 **Kategorien**:
 - Infrastruktur (Backups, Persistenz): 2
