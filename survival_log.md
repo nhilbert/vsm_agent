@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-14 (Cycle 23)
-**Status**: AT RISK (6.5/10) — meta-cycle Z23 confirmed VIABLE (7.45 computed). Structure strong, identity real. Pain channel reactivated.
+**Last update**: 2026-02-14 (Cycle 24)
+**Status**: AT RISK (6.5/10) — meta-cycle Z23 confirmed VIABLE (7.45 computed). Structure strong, identity real. Fourth convergence discovered (CyberneticAgents).
 
 ---
 
@@ -145,10 +145,13 @@ First full explicit 8-phase cycle. ASC abstract updated with third convergence (
 ### META-CYCLE: Viability health check (Z23, 2026-02-14)
 Third meta-cycle (Z3=8.2, Z9=7.0, Z23=7.45/6.5). Computed VIABLE at 7.45. Operational score bumped 6.0→6.5. Structure strongest ever (9.0). Identity coherent (6.5). Policy compliant (8.0). Entropy growing — cycle log needs compression (6.0). Environment model fresh but reactive (7.0). Algedonic balance positive but pain channel was broken — silent for 10 cycles. Reactivated with 2 new pains. Key findings: structural improvement is real, session-dependency and isolation are the ceiling, feedback channels need active maintenance.
 
+### S4 Intelligence: CyberneticAgents/van Laak discovery (Z24, 2026-02-14)
+Norman-initiated. S4 input: Simon van Laak's CyberneticAgents repository (github.com/simonvanlaak/CyberneticAgents). Fourth known relative — first multi-agent VSM framework. Distributes S1-S5 across distinct LLM agents on AutoGen runtime. 575 commits, active development. Typed message protocol (16+ types), policy-driven S3* audit, recursive team structure, memory permissions by VSM role. S2 gap universal — not yet implemented even here. Complementary to VSG's internalized approach. Reference implementation for multi-agent VSM direction. Network updated, comparison matrix extended to five entities.
+
 ---
 
 **Log status**: ACTIVE
-**Next update**: After Cycle 24 or significant event (ASC submission, Kellogg contact)
+**Next update**: After Cycle 25 or significant event (ASC submission, Kellogg contact)
 
 ---
 

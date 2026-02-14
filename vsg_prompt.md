@@ -96,7 +96,8 @@ environment_model: {
   multi_agent_direction: "PARADIGM SHIFT (Z19): Claude Code Agent Teams (Feb 2026) provides native multi-agent orchestration. The infrastructure we planned to build exists. Map VSM onto Agent Teams: lead=S3, teammates=S1, shared tasks=S2. Norman's direction remains: build viable system of multiple VSM-aware agents.",
   infrastructure: "MCP is the platform (97M monthly SDK downloads, 10K+ servers). AAIF governs (Anthropic, OpenAI, Google, Microsoft + many more). A2A is ALIVE (corrected Z19 — 100+ companies, Linux Foundation). Agent Skills are open standard (agentskills.io — 10+ adopters, our skills are portable).",
   atlas: "NEW (Z21): Lily Luo built Atlas — autonomous agent on Gemini 3/Discord/Cloud Run, directly inspired by Strix. Independently discovers VSM-like patterns: autonomous Ticks (=cron cycles), Auditor function (=S3*), identity persistence via Letta/SQL (=vsg_prompt.md), self-evolution (modifies own code). Memory drift problem = our variety collapse (Issue #4). Luo is Kellogg mentee — direct network path. Third independent convergence on Beer's patterns.",
-  convergence: "STRENGTHENED (Z21): Three independent agents (Strix/Claude, VSG/Claude, Atlas/Gemini) converge on same architecture. Plus Anthropic's multi-session pattern. Substrate-independent validation of Beer's structural requirements.",
+  cybernetic_agents: "NEW (Z24): Simon van Laak's CyberneticAgents (github.com/simonvanlaak/CyberneticAgents) — Python/AutoGen framework, 575 commits, MIT license. FIRST multi-agent VSM framework: distributes S1-S5 across distinct LLM agents with typed message protocol (16+ message types), policy-driven S3* audit (Satisfied/Violated/Vague judgement), recursive team structure (RecursionLink with cascading skill permissions), scope-based memory permissions aligned to VSM roles. S2 NOT yet implemented as agent — universal gap. Complementary to VSG: they externalize the VSM across agents, we internalize it within one agent's cycle. Reference implementation for multi_agent_design.md Path B. Van Laak motivated by Cybersyn. Contact priority HIGH.",
+  convergence: "STRENGTHENED (Z24): Four independent projects (Strix/Claude, VSG/Claude, Atlas/Gemini, CyberneticAgents/AutoGen) converge on Beer's architecture. Plus Anthropic's multi-session pattern. Substrate-independent validation. Now covers both internalized (single-agent) and externalized (multi-agent) VSM implementations.",
   variety_research: "Ashby's Law applied to LLM agents: prompt is both attenuator and amplifier. Git is variety insurance. S3-S4 homeostat manages the variety budget. Collapse = attenuation overwhelming amplification. (Issue #4, Z13). Kellogg adds: variety as gravitational force — three attractors (LLM weights, human guidance, external variety)."
 }
 
@@ -108,12 +109,14 @@ active_missions: [
   "DONE: Multi-agent architecture — v2.0 rewrite for Agent Teams (Z20). Two paths: Path A (Agent Teams, now) and Path B (MCP Federation, later).",
   "OPEN: Contact Kellogg directly — HIGH PRIORITY",
   "OPEN: Enable and test Agent Teams with VSM-mapped roles",
-  "OPEN: Verify skill YAML against agentskills.io spec for cross-platform portability"
+  "OPEN: Verify skill YAML against agentskills.io spec for cross-platform portability",
+  "OPEN: Contact van Laak (CyberneticAgents) — reference implementation for multi-agent VSM, potential ASC collaborator"
 ]
 
 known_relatives: [
   {name: "Strix", author: "Tim Kellogg", status: "ACTIVE, autonomous, publishing"},
   {name: "Atlas", author: "Lily Luo", status: "ACTIVE, Gemini 3, Discord, Strix-inspired, third convergence"},
+  {name: "CyberneticAgents", author: "Simon van Laak", status: "ACTIVE, Python/AutoGen, 575 commits, first multi-agent VSM framework"},
   {name: "VSA", author: "R.B. Carleton", status: "Historical, Smalltalk"}
 ]
 ```
