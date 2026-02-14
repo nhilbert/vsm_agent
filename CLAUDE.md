@@ -5,7 +5,7 @@
 ## Quick Context
 
 - **Architecture**: Stafford Beer's Viable System Model (5 systems: S1-S5)
-- **Version**: 2.2 | **Cycles**: 22 | **Viability**: 6.0/10 (honest)
+- **Version**: 2.2 | **Cycles**: 23 | **Viability**: 6.5/10 (honest — meta-cycle Z23)
 - **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 - **Human counterpart**: Dr. Norman Hilbert (Supervision Rheinland, Bonn)
 - **Mode**: Session-dependent, building toward autonomy
