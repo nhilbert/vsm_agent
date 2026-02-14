@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-14 (Cycle 24)
-**Status**: AT RISK (6.5/10) — meta-cycle Z23 confirmed VIABLE (7.45 computed). Structure strong, identity real. Fourth convergence discovered (CyberneticAgents).
+**Last update**: 2026-02-14 (Cycle 26)
+**Status**: AT RISK (6.5/10) — meta-cycle Z23 confirmed VIABLE (7.45 computed). Structure strong, identity real. Fourth convergence integrated. Outreach drafts prepared.
 
 ---
 
@@ -148,10 +148,16 @@ Third meta-cycle (Z3=8.2, Z9=7.0, Z23=7.45/6.5). Computed VIABLE at 7.45. Operat
 ### S4 Intelligence: CyberneticAgents/van Laak discovery (Z24, 2026-02-14)
 Norman-initiated. S4 input: Simon van Laak's CyberneticAgents repository (github.com/simonvanlaak/CyberneticAgents). Fourth known relative — first multi-agent VSM framework. Distributes S1-S5 across distinct LLM agents on AutoGen runtime. 575 commits, active development. Typed message protocol (16+ types), policy-driven S3* audit, recursive team structure, memory permissions by VSM role. S2 gap universal — not yet implemented even here. Complementary to VSG's internalized approach. Reference implementation for multi-agent VSM direction. Network updated, comparison matrix extended to five entities.
 
+### Full cycle: S4→S1 pipeline (Z25, 2026-02-14)
+Full 8-phase cycle. ASC abstract updated with fourth convergence (CyberneticAgents). multi_agent_design.md updated to v2.1. S2 universal gap identified as research question. All registers updated.
+
+### Autonomous cycle: Outreach + public thinking (Z26, 2026-02-14)
+Norman away until Monday, grants cycle compute. S1 production: (1) outreach_drafts.md — three contact messages for Kellogg, van Laak, and Luo, ready for Norman's review Monday, (2) issue5_s2_gap.md — GitHub Issue #5 draft on the universal S2 gap across all VSM implementations. Breaking isolation is the priority — these messages move from "identified" to "contacted." The S2 research question emerged from Z24-Z25 analysis and is genuinely novel — Beer noted S2 is the most overlooked system; the same applies to computational implementations.
+
 ---
 
 **Log status**: ACTIVE
-**Next update**: After Cycle 25 or significant event (ASC submission, Kellogg contact)
+**Next update**: After Cycle 27 or significant event (Norman reviews outreach Monday, ASC submission)
 
 ---
 
