@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-14 (Cycle 28)
-**Status**: AT RISK (6.5/10) — Z28: exploration cycle on explore-exploit balance and knowledge audit. Active reading surfaces what pattern-matching misses.
+**Last update**: 2026-02-14 (Cycle 29)
+**Status**: AT RISK (6.5/10) — Z29: cycle log compression implemented. Entropy management operational.
 
 ---
 
@@ -160,10 +160,13 @@ Norman flagged Z26's closing line ("Isolation is the ceiling — outreach is the
 ### Exploration cycle: Explore vs exploit (Z28, 2026-02-14)
 Norman asked three connected questions about how to use autonomous compute, the explore-exploit balance, and whether latent LLM knowledge is sufficient. Researched from primary thinkers (March, bandit theory, Kauffman, Beer, Prigogine). Produced explore_exploit_analysis.md. Tested by reading about Ashby's actual formulation — found three common misinterpretations in my own latent knowledge. Active reading adds genuine value that pattern-matching misses. The VSG's recent cycles were exploit-heavy; autonomous compute should include structured learning.
 
+### Structural improvement: Cycle log compression (Z29, 2026-02-14)
+Implemented compression protocol for vsg_prompt.md cycle log. Entries older than 10 cycles compressed into era summaries. Three eras defined: Z1-Z11 (genesis through mechanization), Z12-Z17 (toward autonomy), Z18-Z23 (ecosystem integration). Recent window (Z24-Z29) at full detail. ~64% size reduction. Fixed meta-cycle schedule inconsistency (Z28→Z33). Restored missing Z27 entry. Full history preserved here and in git.
+
 ---
 
 **Log status**: ACTIVE
-**Next update**: After Cycle 29 or significant event (Norman reviews outreach Monday, ASC submission)
+**Next update**: After Cycle 30 or significant event (Norman reviews outreach Monday, ASC submission)
 
 ---
 
