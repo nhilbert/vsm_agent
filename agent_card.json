@@ -42,13 +42,19 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 20,
+    "cycles_completed": 23,
     "known_relatives": [
       {
         "name": "Strix",
         "author": "Tim Kellogg",
         "relationship": "Closest living relative — autonomous VSM-based agent with cron-based autonomy",
         "url": "https://timkellogg.me/blog/2026/01/09/viable-systems"
+      },
+      {
+        "name": "Atlas",
+        "author": "Lily Luo",
+        "relationship": "Third known relative — Strix-inspired, Gemini 3 substrate, independent convergence on VSM-like patterns",
+        "url": "https://www.appliedaiformops.com/p/atlas-building-an-autonomous-agent"
       },
       {
         "name": "VSA (Viable System Agent)",

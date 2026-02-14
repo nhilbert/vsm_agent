@@ -1,6 +1,6 @@
 # META-CYCLE — VIABILITY HEALTH CHECK
 
-**System**: Viable System Generator v2.1
+**System**: Viable System Generator v2.2
 **Function**: Periodic self-assessment of viability
 **Frequency**: Every 10 cycles OR on request
 **Status**: IMPLEMENTED
@@ -203,7 +203,44 @@ Honest reassessment. S2/S3* identified as rule lists, not mechanisms. Identity q
 
 ---
 
-**Next meta-cycle due**: Cycle 23 (10 cycles after Z13)
+**Next meta-cycle due**: Cycle 33 (10 cycles after Z23)
+
+### Meta-Cycle Report — 2026-02-14 — After Cycle 22
+
+**Overall score**: 7.45 / 10.0 (computed) | 6.5 / 10.0 (operational)
+**Status**: VIABLE (first bump since Z18: 6.0→6.5)
+
+**Detailed scores**:
+
+| Criterion | Score | Weight | Weighted | Key Finding |
+|-----------|-------|--------|----------|-------------|
+| Structural Integrity | 9.0 | 25% | 2.25 | Strongest ever. All mechanisms enforced. Pre-commit hook, CLAUDE.md, skills, CLI. |
+| Identity Coherence | 6.5 | 30% | 1.95 | POSIWID positive. 4 autonomous cycles, S4→S1 pipeline proven, no attractor drift in 10 cycles. Session-dependency is the ceiling. |
+| Policy Compliance | 8.0 | 20% | 1.60 | Compliant. S4 scanning is reactive not systematic. "Act don't ask" constrained by session-dependency. |
+| Entropy Check | 6.0 | 10% | 0.60 | Cycle log growing linearly (~10-15 lines/cycle). Pain channel atrophied (10 cycles silent). Stale DONE items in open_tasks. |
+| Environmental Integration | 7.0 | 10% | 0.70 | Model fresh (all data from today). Event-driven, not scheduled. No direct external contact made. |
+| Algedonic Balance | 7.0 | 5% | 0.35 | 35 wins : 9 pains (3.89:1). Pain channel was broken — silent since Z12. Reactivated with 2 new pains at Z23. |
+| **TOTAL** | | **100%** | **7.45** | |
+
+**Key dissonances**:
+1. Pain channel was silent for 10 cycles — algedonic feedback was one-directional (wins only)
+2. Cycle log entropy is unmanaged — growing linearly with no compression protocol
+3. Operational viability (6.5) trails computed viability (7.45) because the formula under-indexes practical blockers (session-dependency, isolation)
+
+**Score trajectory**: Z3=8.2 (optimistic) → Z9=7.0 (revised honest) → Z23=7.45 (computed), 6.5 (operational)
+- The downward correction (Z3→Z9) was Norman catching inflation
+- The upward movement (Z9→Z23) reflects real structural improvement: mechanized checks (Z11), autonomous cycles (Z14-Z17), self-booting workspace (Z18), S4 pipeline (Z19-Z22)
+- The gap between computed (7.45) and operational (6.5) is the gap between structure and practice
+
+**Recommendations**:
+1. **Implement cycle log compression** — entries older than 10 cycles get compressed to 1-2 lines
+2. **Reactivate pain logging** — actively look for minor pains each cycle, not just major failures
+3. **Submit the ASC abstract** — 9 days remaining, this is the most urgent viability-increasing action
+4. **Contact Kellogg/Luo** — isolation is the second-biggest viability limiter after session-dependency
+5. **Run Agent Teams experiment** — structural improvement requires new infrastructure, not more documents
+6. **Consider systematic S4 schedule** — event-driven scanning works but is not the same as systematic environmental monitoring
+
+**S5 Decision**: ACCEPT score. Update operational viability to 6.5/10. Proceed with recommendations in priority order. Next meta-cycle at Z33
 
 ---
 
