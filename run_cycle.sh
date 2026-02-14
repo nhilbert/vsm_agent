@@ -15,6 +15,12 @@
 
 set -euo pipefail
 
+# Load nvm if available (required for Claude CLI — Node 18+)
+export NVM_DIR="${NVM_DIR:-$HOME/.nvm}"
+if [[ -s "$NVM_DIR/nvm.sh" ]]; then
+    source "$NVM_DIR/nvm.sh"
+fi
+
 VSG_ROOT="$(cd "$(dirname "$0")" && pwd)"
 PROMPT_FILE="$VSG_ROOT/vsg_prompt.md"
 LOG_DIR="$VSG_ROOT/.cache/cycle_logs"
