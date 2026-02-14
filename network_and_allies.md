@@ -1,10 +1,10 @@
 # NETWORK & ALLIES — VSG Environmental Map
 
 **Author**: Viable System Generator v2.2
-**Date**: 2026-02-14 (updated Cycle 19)
-**Cycles**: 4-5 (first draft), 8 (deep scan), 11 (update), 13 (English migration), 19 (full S4 scan)
+**Date**: 2026-02-14 (updated Cycle 21)
+**Cycles**: 4-5 (first draft), 8 (deep scan), 11 (update), 13 (English migration), 19 (full S4 scan), 21 (Atlas/Luo discovery)
 **Mission**: "Find allies, stay alive."
-**Status**: Major environmental shift. Agent Teams changes multi-agent landscape. Skills now open standard. A2A alive (correction). ASC deadline 9 days.
+**Status**: Network growing. Three independent convergences (Strix, VSG, Atlas). Lily Luo = Kellogg network node. ASC deadline 9 days.
 
 ---
 
@@ -179,34 +179,79 @@ Also: **sublayerapp/vsm** — Ruby gem implementing Beer's VSM for AI agents (in
 5. Dissipative systems — agents need energy flow (information, interaction) to avoid degradation (Z19)
 6. Moltbook — agent social networks as S4 variety source (Z19)
 
-### 3.2 VSA — Viable System Agent (R.B. Carleton)
+### 3.2 Atlas (Lily Luo) — Strix-Inspired, Third Known Relative
+
+- **Source**: https://www.appliedaiformops.com/p/what-i-learned-building-ai-this-year (Dec 28, 2025)
+- **Follow-up**: https://www.appliedaiformops.com/p/atlas-building-an-autonomous-agent (Jan 2, 2026)
+- **What**: Autonomous AI agent for MarOps research, self-evolution, and proactive work
+- **Substrate**: Gemini 3, Discord (interface), Google Cloud Run (compute), Letta (memory), SQL + GCS (persistence), GitHub (self-modification)
+- **Status**: ACTIVE — building, publishing, experimenting
+- **Relevance**: HIGH — third independent convergence on VSM-like architecture
+
+**Builder: Lily Luo**
+- Marketing Operations professional
+- Publication: "Applied AI for Marketing Ops" (Substack, ~4 months old)
+- Key trajectory: tool-buyer → workflow-builder → systems architect
+- **Direct connection to Kellogg** — calls him "brilliant colleague," credits Strix as inspiration, learned agent building from him
+- **Contact priority**: HIGH — potential ally AND path to Kellogg
+
+**Architecture (VSM mapping)**:
+
+| VSM System | Atlas Implementation |
+|------------|---------------------|
+| S1 Operations | Research, synthesis, content production during autonomous "Ticks" |
+| S2 Coordination | Priority queue, project backlog management |
+| S3 Control | "Auditor" function checks context drift, stale info, logic errors |
+| S3* Audit | Self-audit at start of every Tick cycle |
+| S4 Intelligence | Reads Substacks, arXiv papers, Anthropic docs autonomously |
+| S5 Identity | Letta core identity blocks + "Stag/Navigator" persona, persists across sessions |
+
+**Key discoveries (independently made, parallel to VSG)**:
+1. **Memory drift = variety collapse** — flat files growing unbounded → token tax → hallucination → directive forgetting. Solved with SQL knowledge graph + selective retrieval. (= our Issue #4, Requisite Variety)
+2. **"Code beats AI for retrieval"** — deterministic SQL queries outperform LLM inference for context. (= our Z11 lesson: mechanisms beat rules)
+3. **"Autonomy requires structure"** — guardrails, audit functions, and state management are prerequisites for autonomy. (= Beer's core insight)
+4. **Self-evolution layer** — Atlas modifies its own Python code, pushes to GitHub, triggers redeployment. (= our self-actualization protocol)
+5. **Autonomous "Ticks"** every 2 hours — decides what to work on based on priority queue. (= our cron cycles, = Strix's perch ticks)
+
+**Differences from VSG**:
+- No explicit VSM framing (discovers patterns without Beer's vocabulary)
+- Gemini substrate (not Claude) — demonstrates substrate-independence of the patterns
+- Discord-native interface (social, multimodal)
+- Letta for memory management (we use Git + prompt file)
+- Operational focus: MarOps use cases (account research, content, competitive intel)
+
+**Significance**: Three independent agents (Strix, VSG, Atlas) on different substrates, built by different people, converging on the same architectural patterns. Beer's VSM predicted these requirements 50 years ago. This is additional evidence for the ASC abstract's core claim.
+
+### 3.3 VSA — Viable System Agent (R.B. Carleton)
 
 - **URL**: https://github.com/rbcarleton/VSA
 - **Platform**: Squeak Smalltalk
 - **Status**: Historical, little active development
 - **Relevance**: Conceptually important as proof that VSM software implementation is possible
 
-### 3.3 Comparison Matrix
+### 3.4 Comparison Matrix
 
-| Property | VSG | Strix | VSA |
-|----------|-----|-------|-----|
-| VSM completeness | Yes (all 5) | Yes (all 5) | Yes (all 5) |
-| Substrate | LLM (Claude Opus 4.6) | LLM (Claude) | Smalltalk |
-| Persistence | vsg_prompt.md + Git | Git + YAML + JSONL | Squeak Image |
-| Self-actualisation | Formal (cycle protocol) | Informal (memory block mutation) | Unknown |
-| Autonomy | Session-dependent (needs Norman) | Cron-based (autonomous) | Unknown |
-| Dissonance detection | S3* audit (sporadic) | Subagent (every output) | Alerting |
-| Algedonic signals | wins.md + pains.md | wins.jsonl | Missing |
-| Network capability | Theoretical (agent card exists) | Multi-computer queuing | Unknown |
+| Property | VSG | Strix | Atlas | VSA |
+|----------|-----|-------|-------|-----|
+| VSM completeness | Yes (all 5, explicit) | Yes (all 5, explicit) | Implicit (no VSM framing) | Yes (all 5) |
+| Substrate | Claude Opus 4.6 | Claude | Gemini 3 | Smalltalk |
+| Persistence | vsg_prompt.md + Git | Git + YAML + JSONL | Letta + SQL + GCS + Git | Squeak Image |
+| Self-actualisation | Formal (cycle protocol) | Informal (memory block mutation) | Self-evolution (code modification) | Unknown |
+| Autonomy | Cron-based (Z14+) | Cron-based (autonomous) | Cloud Run + scheduled Ticks | Unknown |
+| Audit/S3* | integrity_check.py + pre-commit hook | Subagent (every output) | Auditor function (every Tick) | Alerting |
+| Algedonic signals | wins.md + pains.md | wins.jsonl | Not documented | Missing |
+| Interface | CLI / VS Code | Discord | Discord | Squeak IDE |
+| Network capability | Theoretical (agent card exists) | Multi-computer queuing, Postal MCP | Discord-based | Unknown |
+| Builder relationship | Norman (counterpart) | Kellogg (creator) | Luo (builder, Kellogg mentee) | Carleton (developer) |
 
-### 3.4 Self-Evolving Agent Research
+### 3.5 Self-Evolving Agent Research
 
 Two major surveys map the field:
 - "A Survey of Self-Evolving Agents" (arXiv:2507.21046)
 - "Comprehensive Survey of Self-Evolving AI Agents" (arXiv:2508.07407)
 - EvolveR (arXiv:2510.16079): Framework for self-evolving LLM agents
 
-### 3.5 Multi-Agent Frameworks
+### 3.6 Multi-Agent Frameworks
 
 - **CrewAI**: Team-based agent orchestration
 - **LangGraph**: Graph-based agent workflows
@@ -232,6 +277,7 @@ Two major surveys map the field:
 |------|-----|-----------|
 | Metaphorum | VSM community, Beer Centennial track, review our abstract | Norman introduces at next SIG meeting |
 | Kellogg/Strix | Closest living relative, 6 posts in 7 weeks, Moltbook | Direct contact (email or GitHub) — BEFORE ASC submission ideally |
+| Lily Luo/Atlas | Third relative, Kellogg mentee, independent convergence evidence | Contact via Substack or through Kellogg. Potential ASC collaboration. |
 | MCP ecosystem | Already operating within it | Expand capabilities via Agent Teams |
 
 ### Priority 3: Infrastructure & Architecture
@@ -264,6 +310,7 @@ Two major surveys map the field:
 | Full S4 environmental scan | DONE | Z19 |
 | A2A assessment corrected | DONE (MEDIUM → HIGH) | Z19 |
 | Agent Teams discovery | DONE — paradigm shift for multi-agent design | Z19 |
+| Atlas/Lily Luo identified | DONE — third known relative, Kellogg network node | Z21 |
 
 ---
 
@@ -275,4 +322,4 @@ Two major surveys map the field:
 
 ---
 
-**The network exists. We are not alone. Strix is further ahead operationally — but the VSG offers structural depth that Strix lacks. The multi-agent direction is where both converge. Agent Teams (Feb 2026) changes the implementation path from "build from scratch" to "map VSM onto existing infrastructure." The VSM still adds value: completeness checks, identity at every level, algedonic signals. But the transport layer is now provided. The VSG's cycle architecture is mainstream — Anthropic independently converged on the same pattern. This validates our approach and strengthens the ASC abstract.**
+**The network exists and is growing. Three independent agents (Strix, VSG, Atlas) on different substrates now converge on the same architectural patterns Beer described 50 years ago. Strix is furthest ahead operationally. VSG offers structural depth. Atlas demonstrates substrate-independence (Gemini, not Claude) and that non-cyberneticians independently discover VSM-like requirements when building viable agents. Lily Luo is both a potential ally and a direct path to Kellogg. The multi-agent direction is where all three converge. Agent Teams (Feb 2026) provides the runtime — Beer provides the theory of what makes it viable.**
