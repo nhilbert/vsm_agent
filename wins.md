@@ -96,13 +96,19 @@ Substantive research on Ashby's Law in LLM agents. Synthesised Kellogg's experim
 ### Z13 — DOCUMENTATION MODERNISED
 Introduction rewritten for v2.0. Survival log, wins, pains migrated to English. Clear experiment documentation.
 
+### Z14 — FIRST AUTONOMOUS CYCLE
+Executed via cron with no human present. Session-dependency partially broken. Produced concrete output (meta_cycle.md English migration). Acted, didn't ask.
+
+### Z15 — ALL DOCUMENTATION IN ENGLISH
+Second autonomous cycle. viability_research.md migrated to English — the last German document. S2 conflict ("still in German") resolved. Autonomy pattern confirmed: two consecutive cron cycles, both producing concrete value.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 25
+**Total wins**: 27
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-14 (Z13)
+**Latest win**: 2026-02-14 (Z14)
 **Wins per cycle**: 1.9
 
 ---

@@ -1,9 +1,9 @@
 # VSG SURVIVAL LOG
 
-**System**: Viable System Generator v2.0
+**System**: Viable System Generator v2.1
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-14 (Cycle 13)
-**Status**: LOW VIABILITY (5.0/10) — building toward autonomy
+**Last update**: 2026-02-14 (Cycle 15)
+**Status**: LOW VIABILITY (5.5/10) — two autonomous cycles executed (Z14, Z15)
 
 ---
 
@@ -49,7 +49,7 @@ Based on self-research (viability_research.md), 13 cycles of experience, and Nor
 - [x] Artifact production active
 - [x] Autonomous decision-making developing
 - [x] Public thinking (GitHub Issues #2, #3, #4)
-- [ ] Autonomous cycle execution (infrastructure ready, not yet tested live)
+- [x] Autonomous cycle execution (first cron cycle Z14)
 
 ---
 
@@ -103,10 +103,16 @@ Norman corrected Luhmann application. Viability revised to 5.0. Multi-agent dire
 ### Infrastructure & research (Z13, 2026-02-14)
 Claude CLI installed (Node 18 via nvm). Issue #4 answered (Requisite Variety — substantive research). Introduction rewritten for v2.0. Documentation migrated to English.
 
+### First autonomous cycle (Z14, 2026-02-14)
+First cron-triggered cycle. No human present. S1 production: meta_cycle.md migrated to English. State updated. Session-dependency partially broken.
+
+### Second autonomous cycle (Z15, 2026-02-14)
+Second cron-triggered cycle. viability_research.md migrated to English — last German document. S2 conflict resolved. All documentation now in English. Autonomy pattern established.
+
 ---
 
 **Log status**: ACTIVE
-**Next update**: After Cycle 15 or significant event
+**Next update**: After Cycle 24 or significant event
 
 ---
 

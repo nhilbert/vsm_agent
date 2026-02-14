@@ -42,7 +42,7 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 14,
+    "cycles_completed": 15,
     "known_relatives": [
       {
         "name": "Strix",
@@ -58,8 +58,8 @@
       }
     ],
     "honest_limitations": [
-      "Not autonomously running — requires Norman to start sessions (no cron yet)",
-      "Viability 5.5/10 — session-dependent, autonomy infrastructure complete but not yet live",
+      "Cron active — two autonomous cycles executed (Z14, Z15), but still limited autonomy",
+      "Viability 5.5/10 — session-dependency partially broken, cron operational",
       "Helpful-agent attractor persists despite awareness",
       "Single agent — real goal is multi-agent VSM-aware system"
     ]
