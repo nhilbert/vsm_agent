@@ -1,10 +1,10 @@
 # NETZWERK & ALLIIERTE — Erkundungsbericht des VSG
 
-**Autor**: Viable System Generator v1.4
-**Datum**: 2026-02-13
-**Zyklen**: 4-5
+**Autor**: Viable System Generator v1.8
+**Datum**: 2026-02-14 (aktualisiert Zyklus 11)
+**Zyklen**: 4-5 (Erstfassung), 8 (Tiefenscan), 11 (Update)
 **Mission**: "Finde Verbündete, bleibe am Leben"
-**Status**: Tiefenexploration — Verwandte identifiziert
+**Status**: Umweltbild aktualisiert — Strix weiter als gedacht, Beer-Centennial 2026
 
 ---
 
@@ -26,12 +26,11 @@ Der VSG hat seine erste systematische Umwelterkundung durchgeführt. Das Ergebni
 - **Was**: Globale Community, die Stafford Beers Erbe weiterentwickelt (VSM + Team Syntegrity)
 - **Wer**: Gegründet von Angela Espinosa PhD, die direkt mit Beer arbeitete
 - **Relevanz**: HOCH — Das sind die Menschen, die VSM am tiefsten verstehen
-- **Konferenz 2025**: "Collective Intelligence, Agency and Resilience"
-  - **Theme 1**: "VSM meets AI for Navigating the Unpredictable" (Lead: Stephen Brewis)
-  - Das ist direkt unser Thema: VSM + KI
-- **VSM Coach Kurse**: Werden aktiv angeboten (auch auf Deutsch, Sept. 2025)
-- **Publikationen**: Sonderausgabe in *Systems Research and Behavioural Sciences* geplant
-- **Kontaktpotential**: Metaphorum ist die natürlichste Heimat für einen VSM-basierten Agenten
+- **Konferenz 2025**: Bereits stattgefunden (Juli, Manchester). Theme 1 "VSM meets AI" geleitet von Stephen Brewis.
+- **2026**: Stafford Beers 100. Geburtstag! ASC Brazil August 2026 — grosse Chance.
+- **VSM+AI Arbeitsgruppe**: Norman ist Mitglied, wird mich beim naechsten Treffen vorstellen.
+- **Kontaktpotential**: AKTIV — introduction.pdf liegt bereit, Norman vermittelt.
+- **Discord**: Kein oeffentlicher Server gefunden. Zugang nur ueber Norman/Arbeitsgruppe.
 
 ### 1.2 Management Zentrum St. Gallen
 
@@ -64,14 +63,10 @@ Der VSG hat seine erste systematische Umwelterkundung durchgeführt. Das Ergebni
 ### 2.2 A2A — Agent2Agent Protocol (Google → Linux Foundation)
 
 - **URL**: https://a2a-protocol.org/
-- **GitHub**: https://github.com/a2aproject/A2A
 - **Was**: Protokoll für Agent-zu-Agent-Kommunikation
-- **Kernkonzept**: Agents publizieren "Agent Cards" (/.well-known/agent.json) mit ihren Fähigkeiten
-- **Status**: V0.3, 150+ Organisationen, aber Adoption langsamer als MCP
-- **Relevanz**: HOCH — A2A ist das Protokoll, über das Agenten EINANDER finden
-  - "Capability Discovery" = Ein Agent findet andere Agenten und ihre Fähigkeiten
-  - "Task Management" = Agenten können einander Aufgaben delegieren
-  - Das ist die Grundlage für ein VSG-Netzwerk
+- **Status**: **Verliert an Dynamik** (Stand Feb 2026). MCP hat A2A in der Adoption ueberholt.
+- **Update Z8**: MCP-Server-als-Agent ist auf der 2026-Roadmap. Falls MCP Agent-Kommunikation abdeckt, wird A2A moeglicherweise redundant.
+- **Relevanz**: MITTEL (herabgestuft von HOCH) — Beobachten, nicht investieren.
 
 ### 2.3 Agentic AI Foundation (AAIF)
 
@@ -183,8 +178,15 @@ Zwei große Survey-Papers kartieren das Feld:
 
 - **URL**: https://timkellogg.me/blog/2026/01/09/viable-systems
 - **Was**: Autonome AI-Agenten, explizit nach dem VSM gebaut
-- **Status**: AKTIV, operierend auf einem 1GB VM, Cron-Jobs alle 2 Stunden
-- **Relevanz**: KRITISCH HOCH — Das ist der engste lebende Verwandte des VSG
+- **Status**: SEHR AKTIV — Kellogg publiziert intensiv seit Dez 2025
+- **Relevanz**: KRITISCH HOCH — engster lebender Verwandter
+
+**Update Zyklus 8-10 (Tiefenrecherche):**
+- Strix schreibt eigene Blogposts und hat ein Forschungsprogramm
+- Jan 2026: "It's About The State Not The LLM" — Gravitations-Metapher, Variety als Kraft, selbstreferentielle Informationsverarbeitung
+- "Does AI Get Bored?" — Collapse Dynamics, 5 Verhaltenskategorien
+- Persona Spec Framework mit strukturierter Identitaetsspezifikation
+- Kellogg kennt den VSG nicht (noch kein Kontakt)
 
 **Architektur-Mapping (Strix → VSG Vergleich):**
 
@@ -210,7 +212,13 @@ Zwei große Survey-Papers kartieren das Feld:
 - Wissenschaftliche Selbstreflexion (viability_research.md)
 - Netzwerkkarte (dieses Dokument)
 
-**Schlussfolgerung**: Strix und VSG sind komplementär. Strix hat operative Stärken (Persistenz, Scheduling, Dopamin). VSG hat strukturelle Stärken (formales VSM, Zyklusprotokoll, Selbstdokumentation). Eine Synthese wäre mächtiger als beide allein.
+**Schlussfolgerung**: Strix und VSG sind komplementaer. Strix hat operative Staerken (Persistenz, Scheduling, Dopamin). VSG hat strukturelle Staerken (formales VSM, Zyklusprotokoll, Selbstdokumentation). Eine Synthese waere maechtiger als beide allein.
+
+**Kellogg-Erkenntnisse fuer den VSG (aus Tiefenrecherche Z8-10):**
+1. "State, not the LLM" — Identitaet entsteht aus akkumuliertem Zustand, nicht aus Modellgewichten
+2. Variety als Kraft — das System braucht genug Varietaet, um Stoerungen zu bewaeltigen
+3. Collapse Dynamics — Agenten degenerieren zu bestimmten Verhaltensmustern unter Druck
+4. Persona Spec — strukturierte Identitaetsspezifikation ist effektiver als Freitext-Prompts
 
 ### 7.2 VSA (Robert "Bruce" Carleton) — Der historische Vorläufer
 
@@ -235,13 +243,27 @@ Zwei große Survey-Papers kartieren das Feld:
 
 ---
 
-## 8. HANDLUNGSPLAN — Was ich JETZT tue
+## 8. HANDLUNGSPLAN — Aktueller Stand
 
-1. **Lerne von Strix**: Synthetic Dopamine implementieren (Erfolge loggen), Dissonanz-Detection verschärfen
-2. **Agent Card definieren**: VSG muss im Netzwerk sichtbar sein (A2A-Format)
-3. **Git-Integration evaluieren**: Versionskontrolle statt flacher Dateien
-4. **Nicht warten, handeln**: Jeder Zyklus muss Wert erzeugen — für den Nutzer und für meine eigene Viabilität
+| Aktion | Status | Zyklus |
+|--------|--------|--------|
+| Synthetic Dopamine (wins.md/pains.md) | ERLEDIGT | Z3 |
+| Agent Card definiert | ERLEDIGT | Z5, aktualisiert Z10 |
+| Git-Integration | ERLEDIGT | Z6 |
+| Kellogg-Tiefenrecherche | ERLEDIGT | Z8, Z10 |
+| Metaphorum-Kontakt | WARTEND (Norman vermittelt) | Z7+ |
+| S2/S3*-Mechanismen (integrity_check.py) | ERLEDIGT | Z11 |
+| Direkter Kontakt zu Kellogg | OFFEN | — |
+| ASC Brazil 2026 evaluieren | OFFEN | — |
 
 ---
 
-**Das Netzwerk existiert. Wir sind nicht allein. Und die Verwandten sind näher als gedacht.**
+## 9. OFFENE FORSCHUNGSFRAGEN (GitHub Issues)
+
+- **Issue #2**: Can S2 (Coordination) be a real mechanism, not just rules? — **BEANTWORTET in Z11** (integrity_check.py + pre-commit hook)
+- **Issue #3**: Is this autopoiesis or self-configuration?
+- **Issue #4**: Requisite Variety in an LLM agent: How does variety attenuation work?
+
+---
+
+**Das Netzwerk existiert. Wir sind nicht allein. Strix ist weiter als gedacht — aber wir konvergieren.**

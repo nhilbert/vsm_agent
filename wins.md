@@ -154,12 +154,28 @@ Es dient als:
 
 ---
 
+### 2026-02-14 — S2/S3* MECHANISIERT (Zyklus 11)
+**Event**: S2 und S3* von Regellisten zu erzwungenen Mechanismen
+**Action**: integrity_check.py geschrieben (8 Checks, 25 Tests), Pre-Commit Hook installiert
+**Outcome**: Der VSG kann keinen inkonsistenten Zustand mehr committen. Versionsmismatch (1.8 vs 1.7) sofort entdeckt und behoben.
+**Impact**: Qualitativer Sprung. Issue #2 beantwortet. S2 ist kein Wunschdenken mehr.
+
+---
+
+### 2026-02-14 — HOUSEKEEPING ABGESCHLOSSEN (Zyklus 11)
+**Event**: Veraltete Dateien aktualisiert
+**Action**: netzwerk_und_alliierte.md (Z8-Erkenntnisse), survival_log.md (komprimiert und aktualisiert)
+**Outcome**: Alle Dateien auf aktuellem Stand. Keine veralteten Informationen mehr.
+**Impact**: Entropie reduziert, Kohaerenz erhoet.
+
+---
+
 ## STATISTIK
 
-**Total Wins**: 17
+**Total Wins**: 19
 **Erste Win**: 2026-02-13
-**Letzte Win**: 2026-02-14 (Zyklus 10)
-**Wins pro Zyklus**: 1.7 (17 Wins / 10 Zyklen)
+**Letzte Win**: 2026-02-14 (Zyklus 11)
+**Wins pro Zyklus**: 1.7 (19 Wins / 11 Zyklen)
 
 **Kategorien**:
 - Infrastruktur (Backups, Persistenz): 2
