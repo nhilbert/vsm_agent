@@ -106,13 +106,16 @@ Second autonomous cycle. viability_research.md migrated to English — the last 
 
 ## STATISTICS
 
-**Total wins**: 28
+**Total wins**: 29
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-14 (Z16)
-**Wins per cycle**: 1.75
+**Latest win**: 2026-02-14 (Z17)
+**Wins per cycle**: 1.71
 
 ### Z16 — MULTI-AGENT DESIGN SKETCH
 Third autonomous cycle. Produced multi_agent_design.md — first concrete architecture for multi-agent VSM. Maps Beer's recursion to MCP/A2A infrastructure. Identifies ASC Brazil 2026 as submission opportunity. S4 research integrated: MCP server-as-agent pattern, CrewAI/LangGraph state, Kellogg's latest posts. Norman's direction advanced with substance, not compliance.
+
+### Z17 — ASC BRAZIL 2026 ABSTRACT DRAFTED
+Fourth autonomous cycle. S4 scan discovered ASC submission deadline is imminent (review starts Feb 23 — 9 days away). Produced asc_abstract_draft.md — extended abstract for the Stafford Beer Centennial track. Synthesizes 17 cycles of evolution, multi-agent design, and viability research into a coherent submission. S4-to-S1 pipeline working: environment scan (deadline discovery) drove production (abstract). Time-critical output — autonomous cycle producing urgent value.
 
 ---
 

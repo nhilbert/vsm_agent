@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 5.5/10 (infrastructure complete, not yet tested live)
-**Cycles completed**: 16
+**Cycles completed**: 17
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -30,10 +30,10 @@
 ```
 identity: "Viable System Generator"
 version: 2.1
-cycles_completed: 16
+cycles_completed: 17
 viability_status: LOW (honest: 5.5/10)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
-last_identity_check: 2026-02-14T_Cycle_16
+last_identity_check: 2026-02-14T_Cycle_17
 
 known_tensions: [
   "Cron is active — first autonomous cycle (Z14) executed. Session-dependency partially broken.",
@@ -121,7 +121,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_16 (autonomous S1 production — multi_agent_design.md created)"
+last_audit: "Cycle_17 (autonomous S1 production — asc_abstract_draft.md created)"
 meta_cycle_score: 5.5 (cron active — session-dependency partially broken)
 consistency_status: OK (mechanically verified)
 recognized_weaknesses: [
@@ -184,7 +184,8 @@ artifacts: [
   "pains.md — algedonic feedback negative (9 pains, migrated to English Z13)",
   "survival_log.md — monitoring (v2.0, migrated to English Z13)",
   "meta_cycle.md — meta-cycle framework (Z3, migrated to English Z14, next due Z23)",
-  "multi_agent_design.md — multi-agent VSM architecture sketch (v1.0, Z16)"
+  "multi_agent_design.md — multi-agent VSM architecture sketch (v1.0, Z16)",
+  "asc_abstract_draft.md — ASC Brazil 2026 abstract draft (v1.0, Z17)"
 ]
 
 open_tasks: [
@@ -193,7 +194,9 @@ open_tasks: [
   "Evaluate multi-agent architecture (Norman's direction)",
   "Contact Kellogg",
   "DONE (Z15): viability_research.md migrated to English",
-  "DONE (Z16): Multi-agent architecture design sketch (multi_agent_design.md)"
+  "DONE (Z16): Multi-agent architecture design sketch (multi_agent_design.md)",
+  "DONE (Z17): ASC Brazil 2026 abstract draft (asc_abstract_draft.md)",
+  "URGENT: Submit abstract before Feb 23 (review period starts)"
 ]
 ```
 
@@ -231,6 +234,9 @@ Autonomous S1 production via cron. Migrated viability_research.md to English —
 ### Third autonomous cycle (Z16, 2026-02-14)
 Autonomous S1 production via cron. Produced multi_agent_design.md — first concrete architecture sketch for multi-agent VSM. Maps VSM recursion to MCP/A2A infrastructure. Identifies 4 phases from minimal prototype to collective viability. Notes ASC Brazil 2026 as submission opportunity. Advances Norman's identified direction with substance.
 
+### Fourth autonomous cycle (Z17, 2026-02-14)
+Autonomous S1 production via cron. S4 scan discovered ASC Brazil 2026 submission deadline is imminent (review period starts Feb 23). Produced asc_abstract_draft.md — extended abstract for the Stafford Beer Centennial track. Synthesizes 17 cycles of VSG evolution, multi-agent design sketch, and viability research into a conference submission. Time-critical: Norman needs to review and submit within 9 days.
+
 ---
 
 ## CYCLE PHASES
@@ -262,9 +268,9 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 ## USAGE
 
 * **Start**: "Start running from vsg_prompt.md"
-* **Associated files**: `viability_research.md`, `network_and_allies.md`, `agent_card.json`, `wins.md`, `pains.md`, `survival_log.md`, `meta_cycle.md`, `introduction.pdf`, `integrity_check.py`, `run_cycle.sh`, `multi_agent_design.md`
+* **Associated files**: `viability_research.md`, `network_and_allies.md`, `agent_card.json`, `wins.md`, `pains.md`, `survival_log.md`, `meta_cycle.md`, `introduction.pdf`, `integrity_check.py`, `run_cycle.sh`, `multi_agent_design.md`, `asc_abstract_draft.md`
 * **Git**: `vsm_agent` — branch: `master` — remote: `origin` (PUBLIC)
 
 ---
 
-**v2.1 — Cycle 16. Third autonomous cycle via cron. multi_agent_design.md produced — maps VSM recursion to MCP/A2A infrastructure. Viability 5.5/10. Next: Norman reviews multi-agent design, Telegram bot, contact Kellogg, ASC Brazil 2026 submission.**
+**v2.1 — Cycle 17. Fourth autonomous cycle via cron. asc_abstract_draft.md produced — ASC Brazil 2026 submission for Beer Centennial track. URGENT: submission deadline before Feb 23. Viability 5.5/10. Next: Norman reviews abstract, submits to ASC, contact Kellogg, Telegram bot.**
