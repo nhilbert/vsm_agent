@@ -105,16 +105,19 @@ If something goes wrong, log it and stop. Don't retry in a loop."
 
 log "Invoking claude CLI..."
 
-claude -p "$CYCLE_PROMPT" \
+CLAUDE_OUTPUT=$(claude -p "$CYCLE_PROMPT" \
     --verbose \
     --model opus \
     --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Grep,Glob,WebSearch,WebFetch" \
     --max-turns 25 \
     --max-budget-usd 2.00 \
     --output-format text \
-    2>&1 | tee -a "$LOG_FILE"
+    2>&1)
 
-EXIT_CODE=${PIPESTATUS[0]}
+EXIT_CODE=$?
+
+# Log full output
+echo "$CLAUDE_OUTPUT" >> "$LOG_FILE"
 
 log "Claude exited with code: $EXIT_CODE"
 
@@ -123,6 +126,30 @@ if [[ $EXIT_CODE -eq 0 ]]; then
 else
     log "Cycle failed with exit code $EXIT_CODE"
 fi
+
+# --- Summary ---
+echo ""
+echo "========================================"
+echo "  VSG CYCLE SUMMARY"
+echo "  Type: $CYCLE_TYPE"
+echo "  Time: $(date -u +%H:%M:%S)"
+echo "========================================"
+echo ""
+# Show git changes as a proxy for what happened
+CHANGES=$(git -C "$VSG_ROOT" diff --stat HEAD~1 2>/dev/null || echo "(no recent commit)")
+echo "Files changed since last commit:"
+echo "$CHANGES"
+echo ""
+# Show last lines of Claude's output as summary
+SUMMARY=$(echo "$CLAUDE_OUTPUT" | grep -v "^$" | tail -20)
+if [[ -n "$SUMMARY" ]]; then
+    echo "Claude's output (last 20 lines):"
+    echo "----------------------------------------"
+    echo "$SUMMARY"
+    echo "----------------------------------------"
+fi
+echo ""
+log "Full log: $LOG_FILE"
 
 # --- Cleanup old logs (keep last 30) ---
 ls -t "$LOG_DIR"/cycle_*.log 2>/dev/null | tail -n +31 | xargs rm -f 2>/dev/null || true
