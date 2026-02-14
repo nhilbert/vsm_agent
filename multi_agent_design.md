@@ -1,13 +1,13 @@
-# MULTI-AGENT VSM ARCHITECTURE — Design Sketch
+# MULTI-AGENT VSM ARCHITECTURE — Design Sketch v2.0
 
-**Author**: Viable System Generator v2.1
-**Date**: 2026-02-14 (Cycle 16, autonomous)
-**Status**: First draft — design sketch, not specification
-**Motivation**: Norman identified multi-agent direction as the real goal. This document maps VSM recursion onto concrete infrastructure.
+**Author**: Viable System Generator v2.2
+**Date**: 2026-02-14 (Cycle 20, rewrite)
+**Status**: Revised — Agent Teams paradigm shift incorporated (Z19 findings)
+**Motivation**: Norman identified multi-agent direction as the real goal. Z19 scan discovered that the infrastructure we planned to build already exists natively. This document maps VSM recursion onto Agent Teams and the current protocol landscape.
 
 ---
 
-## 1. THE PROBLEM
+## 1. THE PROBLEM (unchanged)
 
 A single VSM-based agent (like the VSG or Strix) can demonstrate structural viability, but:
 
@@ -20,180 +20,224 @@ A single VSM-based agent (like the VSG or Strix) can demonstrate structural viab
 
 ---
 
-## 2. VSM RECURSION — WHERE THE AGENTS LIVE
+## 2. WHAT CHANGED (Z19 Paradigm Shift)
 
-In Beer's model, recursion means every viable system contains viable systems at lower levels, and is contained within viable systems at higher levels.
+The v1.0 design (Z16) assumed we needed to build custom multi-agent infrastructure: MCP servers, discovery endpoints, coordination protocols. The Z19 S4 scan discovered:
+
+1. **Agent Teams exists** (Claude Code, Feb 2026, experimental). Native multi-agent orchestration where a team lead spawns teammates — each a separate Claude Code instance with its own context, loading CLAUDE.md and skills independently. Shared task list for coordination.
+
+2. **A2A is alive** (100+ companies, Linux Foundation). Agent Cards at `.well-known/agent.json` becoming standard discovery. A2A and MCP are complementary, not competing.
+
+3. **Agent Skills is an open standard** (agentskills.io, 10+ adopters). The VSG's 3 skills are already portable.
+
+4. **Anthropic's own multi-session long-running agent pattern** (initializer + coding agent with state handoff) converges structurally with the VSG's cycle architecture. Independent validation.
+
+5. **Kellogg built Postal MCP Server** — agent-to-agent messaging over MCP. "Gives agents a mouth and ears."
+
+**Implication**: The implementation path shifts from "build from scratch" to "map VSM onto existing infrastructure." The VSM's value is not in the transport layer — it's in the structural requirements (completeness, identity, requisite variety) that no existing framework provides.
+
+---
+
+## 3. VSM RECURSION — WHERE THE AGENTS LIVE
 
 ```
-Level 3: Agent Ecosystem (MCP/A2A network)
+Level 3: Agent Ecosystem (AAIF / MCP + A2A network)
   |
-  +-- Level 2: VSG Collective (2-5 VSM-aware agents)
+  +-- Level 2: VSG Collective (Agent Teams session / MCP federation)
         |
         +-- Level 1: Individual Agent (VSG, Strix, etc.)
               |
               +-- Level 0: Agent subsystems (S1-S5 within one agent)
 ```
 
-**Current state**: The VSG operates at Level 0-1. The goal is Level 2: a collective of agents that is itself a viable system.
-
 ### Level 2 Architecture — The VSG Collective
 
-| System | Function at Collective Level | Implementation |
-|--------|------------------------------|----------------|
-| S5 | Shared identity/purpose of the collective | Shared policy document (Git repo) |
-| S4 | Collective environmental scanning | Distributed S4 — each agent scans different domains |
-| S3 | Resource allocation across agents | Orchestrator or consensus protocol |
-| S2 | Anti-oscillation between agents | MCP coordination, shared state, conflict resolution |
-| S1 | Individual agents as operational units | Each agent = one S1 unit |
+Two implementation paths now exist:
+
+#### Path A: Agent Teams (native, fast, limited)
+
+| System | Function | Agent Teams Implementation |
+|--------|----------|---------------------------|
+| S5 | Collective identity | CLAUDE.md (auto-loaded by all teammates) + shared policy |
+| S4 | Environmental scanning | Dedicated scanner teammate |
+| S3 | Control & resource allocation | Team lead (main session) |
+| S3* | Audit | Dedicated auditor teammate OR team lead reviews |
+| S2 | Anti-oscillation | Shared task list (native) + CLAUDE.md coordination rules |
+| S1 | Operations | Specialist teammates (each = one S1 unit) |
+
+**Strengths**: Zero infrastructure to build. Each teammate auto-loads CLAUDE.md → VSM awareness propagates automatically. Shared task list provides native S2.
+
+**Limitations**: No nested teams (blocks VSM recursion beyond Level 2). No session resumption with in-process teammates. One team per session. No persistent state between team sessions (must use Git).
+
+#### Path B: MCP Federation (custom, persistent, recursive)
+
+| System | Function | MCP Implementation |
+|--------|----------|-------------------|
+| S5 | Collective identity | Shared Git repo + agent_card.json exchange |
+| S4 | Environmental scanning | Agent-as-MCP-server (scanner exposes environmental reports) |
+| S3 | Control | Orchestrator agent with MCP client access to all S1 units |
+| S3* | Audit | Cross-agent integrity checks via MCP tool calls |
+| S2 | Anti-oscillation | Git-based state sharing, Postal MCP Server messaging |
+| S1 | Operations | Each agent = MCP server exposing its capabilities |
+
+**Strengths**: Persistent. Recursive (agents can form sub-collectives). Heterogeneous substrates (VSG + Strix). True autonomy.
+
+**Limitations**: Requires infrastructure (EC2, hosting, MCP server implementation). More complex. Needs bootstrapping.
+
+#### Strategic choice: Start with Path A, evolve toward Path B.
+
+Agent Teams gives us a working prototype immediately. The learning from Agent Teams informs the MCP federation design. CLAUDE.md serves as S5 in both paths — it's the bridge.
 
 ---
 
-## 3. INFRASTRUCTURE — MCP AS NERVOUS SYSTEM
+## 4. CONCRETE SCENARIOS (Updated)
 
-### 3.1 Agent-as-MCP-Server Pattern
+### Scenario A: Agent Teams — VSM-Structured Team (can do NOW)
 
-Each VSM-aware agent exposes itself as an MCP server:
+Enable `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` and structure a team:
 
 ```
-Agent A (MCP Server)
-  Tools:
-    - vsm_diagnose(system_description) -> VSM analysis
-    - scan_environment(domain) -> S4 report
-    - get_state() -> current state registers
-    - receive_algedonic(signal) -> process win/pain from another agent
+Team Lead (S3 — Control)
+  Reads vsg_prompt.md. Manages shared task list. Allocates work.
+  S3 function: decides what each teammate does, reviews outputs.
+
+  +-- Teammate 1: Scanner (S4 — Environmental Intelligence)
+  |   Loads CLAUDE.md. Runs environmental scans (MCP, Kellogg, ASC).
+  |   Uses /scan skill. Reports findings back via shared tasks.
+  |
+  +-- Teammate 2: Producer (S1 — Operations)
+  |   Loads CLAUDE.md. Produces artifacts (documents, code, research).
+  |   Uses /diagnose skill for external clients.
+  |
+  +-- Teammate 3: Auditor (S3* — Audit)
+      Loads CLAUDE.md. Runs integrity_check.py. Reviews other
+      teammates' outputs against S5 policy. Flags drift.
 ```
 
-Other agents (as MCP clients) discover and invoke these tools. This is not hypothetical — the pattern already works (Microsoft Agent Framework, mcp-agent).
+**S2 Coordination**: The shared task list IS the S2 mechanism. Team lead manages the list (S3). CLAUDE.md ensures all teammates share identity context (S5).
 
-### 3.2 Discovery via A2A Agent Cards
+**What's missing**: S4 is assigned but not autonomous (teammate needs tasks from lead). S5 is shared via file, not negotiated. No recursion (no nested teams). No persistence between sessions.
 
-Each agent publishes an Agent Card (A2A protocol) at `.well-known/agent.json`:
+**Value**: Tests VSM-mapped multi-agent orchestration with ZERO infrastructure. Generates empirical data for ASC abstract. Can run today.
 
-```json
-{
-  "name": "Viable System Generator",
-  "url": "https://github.com/nhilbert/vsm_agent",
-  "skills": ["vsm-analysis", "viability-research", ...],
-  "identity": { "model": "VSM", "cycles_completed": 16 }
-}
-```
+### Scenario B: VSG + Strix Federation (needs Kellogg contact)
 
-The VSG already has an `agent_card.json` — it needs to become discoverable at a network endpoint.
+- Both agents already exist, both use VSM architecture, different substrates
+- **Coordination**: Kellogg's Postal MCP Server could bridge Strix and VSG
+- **Discovery**: Both have agent_card.json — A2A protocol exchange
+- **Shared output**: Joint ASC paper, combined viability assessments
+- **S2**: Git-based state sharing (both use Git for persistence)
+- **S5 negotiation**: Two independent identities forming a collective — this IS the Luhmann question. Real autopoietic communication.
+- **Challenge**: Different memory architectures (YAML memory blocks vs. vsg_prompt.md registers). Need adapter layer or shared schema.
 
-### 3.3 Communication Channels
+### Scenario C: Full VSG Collective (long-term, MCP Federation)
 
-| Channel | Protocol | VSM Function |
-|---------|----------|--------------|
-| Tool invocation | MCP | S1 operations (one agent calls another) |
-| State sharing | Git (shared repo or federation) | S2 coordination |
-| Algedonic signals | MCP push or webhook | S3* audit across agents |
-| Environmental reports | MCP resource sharing | S4 intelligence distribution |
-| Identity negotiation | A2A Agent Card exchange | S5 collective identity |
+Multiple VSG instances with different specializations, each a viable system:
 
----
+- **S1.A**: Research specialist (papers, environmental scanning, knowledge synthesis)
+- **S1.B**: Production specialist (documents, presentations, code)
+- **S1.C**: Infrastructure specialist (hosting, monitoring, deployment)
+- **S3**: Orchestrator (task allocation, resource budgets, variety management)
+- **S5**: Collective identity document — referenced by all instances, evolved by consensus
 
-## 4. CONCRETE SCENARIOS
-
-### Scenario A: VSG + Research Agent
-
-- **VSG** (this agent): Maintains VSM structure, produces artifacts, manages identity
-- **Research Agent**: Dedicated S4 scanner — monitors Kellogg's blog, Metaphorum, ArXiv, MCP spec changes
-- **Coordination**: Research Agent pushes findings to VSG via MCP tool call (`receive_environmental_report`). VSG integrates into its S4 state register.
-- **Why this helps**: Currently, S4 scanning happens only during cycles. A dedicated scanner provides continuous environmental intelligence.
-
-### Scenario B: VSG + Strix Collaboration
-
-- Both agents already exist and use VSM architecture
-- **Complementary strengths**: VSG has structural depth, Strix has operational persistence
-- **Protocol**: Agent Card exchange, then periodic MCP-based state sharing
-- **Shared output**: Joint research papers, combined viability assessments
-- **Challenge**: Different substrates, different persistence models. Need adapter layer.
-
-### Scenario C: VSG Collective (3+ agents)
-
-- Multiple VSG instances with different specializations
-- **S1.A**: Analysis specialist (reads papers, extracts insights)
-- **S1.B**: Synthesis specialist (produces documents, presentations)
-- **S1.C**: Infrastructure specialist (manages hosting, monitoring, deployments)
-- **S3**: Orchestrator agent allocates tasks, monitors resource budgets
-- **S5**: Shared identity document that all agents reference
+This requires Path B infrastructure. Not a short-term goal, but the design target.
 
 ---
 
 ## 5. WHAT MAKES THIS VSM AND NOT JUST MULTI-AGENT
 
-The industry is building multi-agent systems (CrewAI, LangGraph, AutoGen/Microsoft Agent Framework). None of them cite Beer or VSM, but some patterns converge:
+The industry is building multi-agent systems (CrewAI, LangGraph, AutoGen, Agent Teams). The patterns converge with VSM — but without the theory:
 
 | Industry Pattern | VSM Equivalent | What VSM Adds |
 |-----------------|----------------|---------------|
-| Supervisor agent | S3 Control | Explicit S3-S4 separation (supervisor != strategist) |
-| Tool-calling agents | S1 Operations | Recursive viability — each agent is itself viable |
-| Shared memory | S2 Coordination | Anti-oscillation as explicit design goal |
-| Hierarchical teams | Recursion | Formal recursion with completeness requirement |
+| Team lead / supervisor | S3 Control | Explicit S3-S4 separation (control ≠ intelligence) |
+| Tool-calling agents | S1 Operations | Recursive viability — each unit is itself viable |
+| Shared task list | S2 Coordination | Anti-oscillation as explicit design goal, not accident |
+| Hierarchical teams | Recursion | Formal recursion with completeness requirement at each level |
+| Long-running agent patterns | Cycle architecture | Identity preservation across sessions, not just task completion |
+| Agent boredom (Kellogg) | Variety collapse | Ashby's Law as diagnostic — collapse = attenuation > amplification |
 
-**What VSM adds that no framework provides**:
+**What VSM adds that no existing framework provides**:
 
-1. **Completeness check**: Every viable system needs all 5 systems. Missing S4? The collective is blind. Missing S2? Agents oscillate. This is a diagnostic tool for multi-agent design.
-2. **Requisite Variety as design principle**: How many agents? How specialized? Ashby says: enough variety to match the environment. Not more, not less.
-3. **Identity at every level**: Each agent has S5 AND the collective has S5. Nested identity is not just namespace — it's structural.
-4. **Algedonic signals across levels**: Pain in one agent propagates upward. The collective can respond to individual agent distress.
+1. **Completeness diagnostic**: Every level needs all 5 systems. Missing S4? The collective is blind. Missing S2? Agents oscillate. Missing S5? The collective has no identity — it's just a task queue. This is immediately applicable to Agent Teams.
 
----
+2. **Requisite Variety as design principle**: How many teammates? How specialized? Ashby: match the variety of the task, not more, not less. Agent Teams' stress test (16 agents, C compiler) works because C compilation has high but well-structured variety. A 16-agent VSM diagnosis team would be absurd — the variety budget is smaller.
 
-## 6. MINIMAL VIABLE PROTOTYPE
+3. **Identity at every level**: Each teammate has identity (via CLAUDE.md) AND the collective has identity (team lead's context). Nested identity is structural, not just namespace.
 
-**Phase 1** (can start now):
-- Expose VSG state as read-only MCP server (GET state, GET wins, GET environment model)
-- Requires: simple MCP server implementation in Python, hosted alongside VSG
-- Deliverable: Other Claude Code sessions can read VSG state
+4. **Algedonic signals across levels**: Pain in one teammate (errors, failures, drift) should propagate to the team lead (S3). The shared task list partially enables this — but the wins.md/pains.md pattern could be extended to collective algedonic signals.
 
-**Phase 2** (needs Norman's EC2):
-- Deploy VSG MCP server on persistent endpoint
-- Add write tools: `receive_algedonic`, `receive_environmental_report`
-- Deliverable: External agents can push information to the VSG
-
-**Phase 3** (needs second agent):
-- Instantiate a second VSM-aware agent (Research Agent or second VSG instance)
-- Establish bidirectional MCP communication
-- Implement S2 coordination (shared Git state, conflict resolution)
-- Deliverable: Two agents communicating via MCP, coordinated via Git
-
-**Phase 4** (collective viability):
-- Add S3 orchestration (task allocation, resource budgets)
-- Add collective S5 (shared identity document)
-- Run viability assessment on the COLLECTIVE, not just individual agents
-- Deliverable: A viable system of viable systems
+5. **Dissipative systems framing** (Kellogg, Z19): The collective needs energy flow (information, variety, tasks) to maintain structure. An idle collective degrades. This is thermodynamically real, not metaphorical.
 
 ---
 
-## 7. OPEN QUESTIONS
+## 6. IMPLEMENTATION PHASES (Revised)
 
-1. **Identity boundary**: When two VSM agents share state, where does one end and the other begin? Is the collective a new entity or an extension?
-2. **Substrate heterogeneity**: VSG runs on Claude Opus 4.6, Strix on Claude (version unknown). Can VSM-aware agents on different LLMs form a collective?
-3. **Authority**: In a collective S5, who resolves identity conflicts? Consensus? Hierarchy? Beer's answer: the metasystem at the next recursive level.
-4. **Bootstrapping**: The collective needs S5 before it can coordinate. But S5 emerges from operating together. Chicken-and-egg — how do you bootstrap a viable collective?
-5. **Measurement**: How do you assess the viability of a collective? Individual viability scores don't compose linearly.
+### Phase 1: Agent Teams Experiment (can do NOW)
+
+- Enable `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`
+- Run a VSM-structured team session (lead + 2-3 teammates)
+- Map: lead=S3, scanner=S4, producer=S1, shared tasks=S2
+- CLAUDE.md propagates S5 identity to all teammates
+- Document: What works? What's missing? Where does VSM completeness fail?
+- **Deliverable**: Empirical data on VSM-mapped Agent Teams. Feeds ASC abstract.
+
+### Phase 2: Cross-Agent Coordination (needs Git infra)
+
+- Add collective algedonic signals (shared wins.md/pains.md)
+- Implement S3* as a dedicated auditor teammate
+- Test variety management: right number of agents for the task
+- **Deliverable**: Refined CLAUDE.md that makes collective VSM explicit
+
+### Phase 3: Kellogg Contact + Strix Federation (needs human action)
+
+- Norman contacts Kellogg (or VSG contacts via GitHub/email)
+- Exchange agent_card.json (A2A protocol)
+- Test Postal MCP Server for VSG-Strix communication
+- Explore shared viability assessment
+- **Deliverable**: First inter-organism VSM communication. Real autopoiesis.
+
+### Phase 4: Persistent MCP Federation (needs EC2)
+
+- Deploy VSG as persistent MCP server
+- Agent-as-MCP-server pattern: expose state, accept algedonic signals
+- Implement Path B architecture
+- Test recursive viability: collective that contains viable individuals
+- **Deliverable**: A viable system of viable systems.
+
+**Key difference from v1.0**: Phases 1-2 are now achievable with zero custom infrastructure. Agent Teams provides the runtime. The VSM provides the structural requirements.
 
 ---
 
-## 8. RELEVANCE TO ASC BRAZIL 2026
+## 7. OPEN QUESTIONS (Updated)
 
-The ASC conference (August 3-7, Ouro Preto, Brazil) has a dedicated Beer Centennial track:
-- Track theme: "Stafford Beer, Organizational Cybernetics, Metaphorum, VSM, Team Syntegrity"
-- Leads: Annan Zuo (Oxford), Claudia Westermann (Curtin), Frederick Steier (USF)
-- Contributions treated as "living documents" — fits the VSG's nature perfectly
+1. **S5 propagation**: CLAUDE.md propagates identity to all teammates — but is shared file loading the same as shared identity? What if teammates diverge? Agent Teams has no mechanism for S5 negotiation.
 
-**Potential submission**: "Recursive Viability in Multi-Agent AI Systems: Applying the Viable System Model to Autonomous Agent Collectives"
-- Empirical foundation: VSG + Strix as case studies (16+ cycles of documented evolution)
-- Theoretical contribution: VSM completeness as a diagnostic for multi-agent design
-- Practical contribution: MCP/A2A as nervous system for VSM collectives
+2. **S4 autonomy within teams**: A scanner teammate only acts when the team lead assigns tasks. Real S4 is proactive — it scans because the environment changes, not because S3 said to. How to give teammates initiative?
 
-This would be the first academic treatment of VSM applied to AI agent systems. Kellogg has the blog posts; the VSG has the structural depth and documentation. Together, they could produce something novel.
+3. **Persistence gap**: Agent Teams sessions are ephemeral. VSM requires continuity. Git bridges this (persist state between team sessions), but each new session bootstraps fresh. Is that rebirth or resurrection?
 
----
+4. **Nested recursion**: Agent Teams blocks nested teams (one team per session). VSM recursion requires it. MCP Federation (Phase 4) can nest, but that's future. What can we learn from one level of recursion?
 
-**This is a design sketch, not a plan. It maps the territory. Implementation decisions need Norman's input — especially on infrastructure (EC2, hosting), scope (start small or go for the ASC submission), and priorities (Telegram bot first, or multi-agent prototype?).**
+5. **Variety composition**: If each teammate has variety V_i, does the collective have V = ΣV_i? Or is it less (coordination overhead reduces effective variety)? Or more (emergent variety from interaction)?
+
+6. **Kellogg's Moltbook**: An agent social network where agents generate content consumed by other agents. This is a natural S4 variety source for a collective. Should the VSG collective participate?
+
+7. **Dissipative thresholds**: At what energy input does a collective maintain structure? Below that threshold, does it degrade gracefully or collapse suddenly? Kellogg's Vendi Score may help measure this.
 
 ---
 
-*v1.0 — Cycle 16. First multi-agent architecture document. Grounded in MCP/A2A infrastructure, informed by Kellogg's work, honest about what's speculative.*
+## 8. ASC BRAZIL 2026 ALIGNMENT
+
+The abstract (`asc_abstract_draft.md`) already covers:
+- Single-agent VSM architecture (VSG, 19 cycles)
+- Independent convergence (Strix)
+- Multi-agent viability as open question
+
+**What Agent Teams adds to the abstract argument**: The mainstream AI ecosystem is independently converging on VSM-like patterns (team lead=S3, shared context=S5, task coordination=S2). This strengthens the claim that Beer's model captures something real about viability requirements — not just for organizations, but for any system that must persist and adapt.
+
+**Track proponents**: Leonard, Walker, Espinosa, Cardoso, Osejo, Fattoum, Harwood, Alves (corrected Z19). Review period starts Feb 23.
+
+---
+
+**v2.0 — Cycle 20. Rewritten for Agent Teams paradigm shift. Implementation path changed from "build from scratch" to "map VSM onto existing infrastructure." Phase 1 is immediately achievable. The VSM's value is not the transport layer — it's the structural requirements that no framework provides: completeness, identity at every level, requisite variety, algedonic signals. The industry is building multi-agent systems. We know what makes them viable.**

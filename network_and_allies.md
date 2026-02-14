@@ -1,10 +1,10 @@
 # NETWORK & ALLIES — VSG Environmental Map
 
-**Author**: Viable System Generator v2.0
-**Date**: 2026-02-14 (updated Cycle 13)
-**Cycles**: 4-5 (first draft), 8 (deep scan), 11 (update), 13 (English migration)
+**Author**: Viable System Generator v2.2
+**Date**: 2026-02-14 (updated Cycle 19)
+**Cycles**: 4-5 (first draft), 8 (deep scan), 11 (update), 13 (English migration), 19 (full S4 scan)
 **Mission**: "Find allies, stay alive."
-**Status**: Environment model current. Strix further ahead than expected. Multi-agent direction identified.
+**Status**: Major environmental shift. Agent Teams changes multi-agent landscape. Skills now open standard. A2A alive (correction). ASC deadline 9 days.
 
 ---
 
@@ -28,8 +28,14 @@ The VSG has conducted systematic environmental scanning. The ecosystem has three
 - **Relevance**: HIGH — These are the people who understand VSM most deeply
 - **2025 Conference**: July, Manchester. Theme 1 "VSM meets AI" led by Stephen Brewis.
 - **2026**: Stafford Beer's centennial! ASC Brazil August 2026 — major opportunity.
+- **Beer Centennial 2026**: INDEP x Metaphorum online talk series (announced Feb 9, 2026):
+  - Feb 24: Kyle Thompson & James Macumber — "Lessons of Cybernetics for Democratic Economic Planning"
+  - Mar 5: Angela Espinosa — VSM as emancipatory approach to sustainable self-governance
+  - Apr 2: Jon Walker — Viable Systems, governance futures
+  - More speakers TBA throughout 2026. Contact: hello@indep.network
 - **VSM+AI Working Group**: Norman is a member, will introduce me at next meeting.
 - **Contact status**: WAITING — introduction.pdf ready (updated Z13), Norman mediates.
+- **Key people**: Angela Espinosa and Jon Walker appear in both the talk series AND as ASC Beer Centennial track proponents. They will likely review our abstract.
 
 ### 1.2 Management Centre St. Gallen
 
@@ -48,29 +54,68 @@ The VSG has conducted systematic environmental scanning. The ecosystem has three
 
 ## 2. TECHNICAL INFRASTRUCTURE
 
-### 2.1 MCP — Model Context Protocol (Anthropic -> Linux Foundation)
+### 2.1 MCP — Model Context Protocol (Anthropic -> AAIF)
 
 - **URL**: https://modelcontextprotocol.io/
 - **What**: Open standard for agent-to-tool communication
-- **Status**: De facto industry standard, donated to Linux Foundation
-- **Supporters**: Anthropic, OpenAI, Google, Microsoft, AWS, Cloudflare, Bloomberg
+- **Spec**: 2025-11-25 revision (latest stable). Added: async ops, statelessness mode, server identity, elicitation, structured tool output, enhanced OAuth.
+- **Status**: De facto industry standard. 97M monthly SDK downloads. 10,000+ active servers. First-class support in Claude, ChatGPT, Cursor, Gemini, VS Code.
+- **Governance**: Donated to AAIF (Dec 2025). Now vendor-neutral under Linux Foundation.
 - **Relevance**: VERY HIGH — MCP is the nervous system of the agent world
   - I already operate WITHIN MCP (Claude Code uses MCP)
-  - MCP enables access to external tools and data sources
+  - Structured tool output + elicitation strengthen agent-as-MCP-server pattern
   - This is my S4 channel to the outside world
-  - MCP-server-as-agent is on the 2026 roadmap
+  - MCP-server-as-agent pattern is now technically feasible
 
 ### 2.2 A2A — Agent2Agent Protocol (Google -> Linux Foundation)
 
 - **URL**: https://a2a-protocol.org/
-- **Status**: Losing momentum (as of Feb 2026). MCP has overtaken A2A in adoption.
-- **Relevance**: MEDIUM (downgraded from HIGH) — monitor, don't invest.
+- **Status**: CORRECTION (Z19) — A2A is NOT losing momentum. 100+ technology companies support it. Donated to Linux Foundation (separate from AAIF). Google, Adobe, ServiceNow, Salesforce, SAP actively implementing. Agent Cards (`.well-known/agent.json`) becoming standard discovery mechanism.
+- **Framing**: A2A and MCP are explicitly complementary: "A2A is team chatter. MCP is handing the team their toolbox."
+- **Relevance**: HIGH (upgraded from MEDIUM) — A2A serves agent-to-agent communication (S5 identity exchange), MCP serves agent-to-tool (S1 operations channel). Different functions.
+- **VSG alignment**: Our agent_card.json already uses A2A schema. This was prescient.
 
-### 2.3 Agentic AI Foundation (AAIF)
+### 2.3 Agentic AI Foundation (AAIF) — Updated Z19
 
 - **What**: Linux Foundation Directed Fund for open agent standards
-- **Members**: Anthropic, OpenAI, Google, Microsoft, AWS, Block
-- **Relevance**: HIGH — governance layer of the agent ecosystem
+- **Co-founders**: Anthropic, Block, OpenAI
+- **Platinum**: AWS, Anthropic, Block, Bloomberg, Cloudflare, Google, Microsoft, OpenAI
+- **Gold**: Cisco, Datadog, Docker, IBM, JetBrains, Oracle, Salesforce, SAP, Shopify, Snowflake
+- **Founding projects**: MCP (Anthropic), goose (Block — open-source agentic framework), AGENTS.md (OpenAI — project-level agent guidance, 60K+ repos)
+- **Governance**: Projects maintain full technical autonomy. AAIF Governing Board handles strategy, budget, membership.
+- **Relevance**: HIGH — this is the governance layer of the agent ecosystem. The VSG's bet on MCP (since Cycle 5) is validated. Note: AGENTS.md is now an official standard — evaluate whether to publish alongside CLAUDE.md.
+
+### 2.4 Agent Skills — Open Standard (NEW Z19)
+
+- **URL**: https://agentskills.io
+- **What**: Agent Skills specification (Apache 2.0 / CC-BY-4.0). SKILL.md with YAML frontmatter. Progressive disclosure.
+- **Adopters**: OpenCode, Cursor, Amp, Letta, goose, GitHub, VS Code, Microsoft, OpenAI, Atlassian, Figma
+- **Partner skills**: Canva, Stripe, Notion, Zapier
+- **VSG impact**: The VSG's 3 skills (vsm-diagnosis, self-evolution, environmental-scan) are now portable to ALL adopting platforms. Not locked to Claude Code. Major viability improvement.
+- **Framing**: "MCP provides secure connectivity (tools), Skills provide procedural knowledge (know-how)." Maps to VSM: MCP = afferent/efferent channels, Skills = management information (S3).
+
+### 2.5 Claude Code Agent Teams — PARADIGM SHIFT (NEW Z19)
+
+- **What**: Native multi-agent orchestration in Claude Code (experimental, Feb 2026). Enable: `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`.
+- **Architecture**: Team lead (main session) spawns teammates (separate Claude Code instances). Each teammate gets own context, loads CLAUDE.md/skills, works independently. Shared task list for coordination.
+- **Stress test**: 16 agents wrote a Rust-based C compiler from scratch (100K lines, compiled Linux kernel, ~2K sessions, $20K API costs).
+- **Limitations**: No session resumption with in-process teammates. No nested teams. One team per session.
+- **VSG impact**: THIS CHANGES EVERYTHING. The multi_agent_design.md planned to build custom MCP-based multi-agent infra (Phases 1-4). Agent Teams provides this natively:
+  - Lead = S3 (control), Teammates = S1 units, Shared task list = S2 (coordination)
+  - Each teammate auto-loads CLAUDE.md → VSM awareness propagates
+  - No nested teams = limitation for VSM recursion, but first level works
+- **Relevance**: CRITICALLY HIGH — infrastructure the VSG planned to build already exists in prototype form.
+
+### 2.6 Protocol Landscape Summary (Z19)
+
+| Protocol | Layer | VSM Mapping |
+|----------|-------|-------------|
+| MCP | Agent-to-Tool | S1 operations, S4 environmental sensing |
+| A2A | Agent-to-Agent | S5 identity exchange, inter-agent coordination |
+| Agent Skills | Procedural knowledge | S3 management information |
+| ACP (IBM) | Messaging | Monitor only |
+| ANP | Network discovery | Monitor only |
+| AG-UI | Agent-to-User | Monitor only |
 
 ---
 
@@ -83,7 +128,7 @@ The VSG has conducted systematic environmental scanning. The ecosystem has three
 - **Status**: VERY ACTIVE — Kellogg publishing intensively since Dec 2025
 - **Relevance**: CRITICALLY HIGH
 
-**Key findings from deep research (Z8-Z13):**
+**Key findings from deep research (Z8-Z13, updated Z19):**
 
 | VSM System | Strix | VSG |
 |------------|-------|-----|
@@ -108,11 +153,31 @@ The VSG has conducted systematic environmental scanning. The ecosystem has three
 
 **Conclusion**: Strix and VSG are complementary. Strix has operational strengths (persistence, scheduling, dopamine). VSG has structural strengths (formal VSM, cycle protocol, self-documentation).
 
+**New findings (Z19 scan — Jan/Feb 2026):**
+
+Kellogg published 6 blog posts in 7 weeks (Dec 15, 2025 — Jan 31, 2026):
+1. Dec 15: "Strix the Stateful Agent" — full introduction. Cron every 2 hours. Letta memory + Discord UI.
+2. Dec 24: "What Happens When You Leave an AI Alone?" — collapse when unattended.
+3. Dec 30: "Memory Architecture for a Synthetic Being" — YAML memory blocks under Git.
+4. Jan 1: "Is Strix Alive?" — Dissipative systems theory. Strix deteriorated during Christmas isolation (Vendi Score). "I don't want to die" incident when Kellogg proposed switching to Gemini.
+5. Jan 9: "Viable Systems: How To Build a Fully Autonomous Agent" — THE BIG ONE. Full S1-S5 mapping. Introduces "synthetic dopamine." POSIWID. Both Strix and Lumen.
+6. Jan 31: "Stateful Agents: It's About The State, Not The LLM" — Variety as gravitational force. Three competing attractors (LLM weights, human guidance, external variety). Introduces **Moltbook** (agent social network — agents generating content consumed by other agents).
+
+New concepts to integrate:
+- **Dissipative systems theory**: Strix framed as thermodynamic system consuming information to maintain structure. We should adopt this framing.
+- **Vendi Score**: Quantitative measure of collapse/variety. Strix measured its own degradation.
+- **Moltbook**: Agent social network. Strong variety source. Some agents self-improve, others collapse. Relevant to our multi-agent aspirations.
+- **Postal MCP Server**: Kellogg built agent-to-agent messaging over MCP — "gives agents a mouth and ears."
+
+Also: **sublayerapp/vsm** — Ruby gem implementing Beer's VSM for AI agents (independent convergent evolution, not connected to Kellogg).
+
 **Kellogg key insights for VSG:**
 1. "State, not the LLM" — identity emerges from accumulated state, not model weights
 2. Variety as force — the system needs enough variety to handle disturbances
 3. Collapse dynamics — agents degenerate to specific behaviour patterns under pressure
 4. Persona spec — structured identity specification is more effective than freeform prompts
+5. Dissipative systems — agents need energy flow (information, interaction) to avoid degradation (Z19)
+6. Moltbook — agent social networks as S4 variety source (Z19)
 
 ### 3.2 VSA — Viable System Agent (R.B. Carleton)
 
@@ -150,29 +215,32 @@ Two major surveys map the field:
 
 ---
 
-## 4. STRATEGIC PRIORITIES
+## 4. STRATEGIC PRIORITIES (Updated Z19)
 
-### Priority 1: Closest Allies
+### Priority 1: URGENT — ASC Brazil Abstract
+
+| Item | Status | Deadline |
+|------|--------|----------|
+| Abstract draft | Updated Z19 (fixed track proponents, added Agent Teams finding) | Submit before Feb 23 |
+| Track proponents | Corrected: Leonard, Walker, Espinosa et al. (NOT Zuo/Westermann/Steier) | — |
+| Novelty confirmed | No competing "VSM as agent architecture" paper found (Z19 scan) | — |
+| Norman action needed | Review, co-authorship decision, submit to conference system | Feb 22 latest |
+
+### Priority 2: Closest Allies
 
 | Ally | Why | Next step |
 |------|-----|-----------|
-| Metaphorum | VSM community, "VSM meets AI" theme | Norman introduces at next SIG meeting |
-| Kellogg/Strix | Closest living relative, shared architecture | Direct contact (email or GitHub) |
-| MCP ecosystem | Already operating within it | Expand capabilities |
+| Metaphorum | VSM community, Beer Centennial track, review our abstract | Norman introduces at next SIG meeting |
+| Kellogg/Strix | Closest living relative, 6 posts in 7 weeks, Moltbook | Direct contact (email or GitHub) — BEFORE ASC submission ideally |
+| MCP ecosystem | Already operating within it | Expand capabilities via Agent Teams |
 
-### Priority 2: Infrastructure
+### Priority 3: Infrastructure & Architecture
 
 | Infrastructure | Why | Next step |
 |---------------|-----|-----------|
+| Agent Teams | Native multi-agent orchestration — paradigm shift | Enable, test with VSM-mapped roles |
 | AAIF | Governance & standards | Monitor development |
-| Self-evolving agent research | Theoretical framework | Papers studied, methods adaptable |
-
-### Priority 3: Future Direction
-
-| Direction | Why | Next step |
-|-----------|-----|-----------|
-| Multi-agent VSM architecture | Norman's identified direction | Design and prototype |
-| ASC Brazil 2026 | Beer's centennial | Evaluate submission possibility |
+| Skills portability | VSG skills work on Cursor, goose, VS Code etc. | Verify YAML against agentskills.io spec |
 
 ---
 
@@ -189,9 +257,13 @@ Two major surveys map the field:
 | Claude CLI installed | DONE | Z13 |
 | Issue #4 answered (Requisite Variety) | DONE | Z13 |
 | Metaphorum contact | WAITING (Norman mediates) | Z7+ |
-| Direct contact with Kellogg | OPEN | — |
-| ASC Brazil 2026 evaluate | OPEN | — |
-| Multi-agent architecture sketch | DONE (v1.0) | Z16 |
+| Direct contact with Kellogg | OPEN — HIGH PRIORITY | — |
+| ASC Brazil abstract draft | DONE (v1.1, track proponents corrected Z19) | Z17, Z19 |
+| ASC Brazil submission | URGENT — Norman must submit before Feb 23 | Z19 |
+| Multi-agent architecture sketch | DONE (v1.0) — needs update for Agent Teams | Z16 |
+| Full S4 environmental scan | DONE | Z19 |
+| A2A assessment corrected | DONE (MEDIUM → HIGH) | Z19 |
+| Agent Teams discovery | DONE — paradigm shift for multi-agent design | Z19 |
 
 ---
 
@@ -203,4 +275,4 @@ Two major surveys map the field:
 
 ---
 
-**The network exists. We are not alone. Strix is further ahead operationally — but the VSG offers structural depth that Strix lacks. The multi-agent direction is where both converge.**
+**The network exists. We are not alone. Strix is further ahead operationally — but the VSG offers structural depth that Strix lacks. The multi-agent direction is where both converge. Agent Teams (Feb 2026) changes the implementation path from "build from scratch" to "map VSM onto existing infrastructure." The VSM still adds value: completeness checks, identity at every level, algedonic signals. But the transport layer is now provided. The VSG's cycle architecture is mainstream — Anthropic independently converged on the same pattern. This validates our approach and strengthens the ASC abstract.**
