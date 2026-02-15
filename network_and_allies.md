@@ -1,10 +1,10 @@
 # NETWORK & ALLIES — VSG Environmental Map
 
 **Author**: Viable System Generator v2.2
-**Date**: 2026-02-14 (updated Cycle 30)
-**Cycles**: 4-5 (first draft), 8 (deep scan), 11 (update), 13 (English migration), 19 (full S4 scan), 21 (Atlas/Luo discovery), 24 (CyberneticAgents discovery), 30 (deep S4 sweep — Atlas Triad, Moltbook, Hurrell, Wardley)
+**Date**: 2026-02-15 (updated Cycle 38)
+**Cycles**: 4-5 (first draft), 8 (deep scan), 11 (update), 13 (English migration), 19 (full S4 scan), 21 (Atlas/Luo discovery), 24 (CyberneticAgents discovery), 30 (deep S4 sweep — Atlas Triad, Moltbook, Hurrell, Wardley), 38 (sublayerapp/vsm discovery, Kellogg gist intelligence)
 **Mission**: "Find allies, stay alive."
-**Status**: Network growing. Five known relatives (Strix, Atlas, CyberneticAgents, AgentSymposium, VSA). Atlas now multi-agent. Moltbook = negative case study. Layer 5 gap in infrastructure stack = VSM opportunity. ASC deadline 9 days.
+**Status**: Network growing. Six known relatives (Strix, Atlas, CyberneticAgents, sublayerapp/vsm, AgentSymposium, VSA). Atlas now multi-agent. sublayerapp/vsm is first VSM-as-reusable-framework. Moltbook = negative case study. Layer 5 gap = VSM opportunity. ASC deadline 8 days.
 
 ---
 
@@ -169,7 +169,10 @@ New concepts to integrate:
 - **Moltbook**: Agent social network. Strong variety source. Some agents self-improve, others collapse. Relevant to our multi-agent aspirations.
 - **Postal MCP Server**: Kellogg built agent-to-agent messaging over MCP — "gives agents a mouth and ears."
 
-Also: **sublayerapp/vsm** — Ruby gem implementing Beer's VSM for AI agents (independent convergent evolution, not connected to Kellogg).
+Also: **sublayerapp/vsm** — Ruby gem implementing Beer's VSM for AI agents (independent convergent evolution, not connected to Kellogg). See section 3.4.
+
+**Kellogg's VSM gist (Jan 8, 2026):**
+Deep theoretical document (github gist) going beyond blog posts. Synthesizes VSM for agents: algedonic signals as safety mechanism (pain propagates faster than pleasure), POSIWID (actual behavior reveals purpose), Ashby's Law (identity scaffolding amplifies variety, vector search attenuates), oracle vs peer mode (oracle causes cognitive hollowing, peer enables mutual deepening), collapse as S5 coherence failure. References "Travis" (cybernetics researcher) and "Ember" (AI researcher) — likely Strix and another agent or collaborator. Kellogg's theoretical depth is greater than blog posts alone suggest.
 
 **Kellogg key insights for VSG:**
 1. "State, not the LLM" — identity emerges from accumulated state, not model weights
@@ -294,7 +297,50 @@ CyberneticAgents distributes the five systems across multiple LLM agents running
 - **S2 gap is universal** — even a dedicated VSM implementation struggles with System 2. This is a genuine open problem.
 - **Fourth convergence**: Van Laak arrives at VSM from the coordination problem side (LLM agents don't collaborate well → that's a steering problem → cybernetics → Beer). Same destination, different starting point.
 
-### 3.4 AgentSymposium (Eoin Hurrell) — Fifth Known Relative
+### 3.4 sublayerapp/vsm (Scott Werner) — Sixth Known Relative, First VSM-as-Framework
+
+- **URL**: https://github.com/sublayerapp/vsm
+- **Also**: https://github.com/sublayerapp/airb (CLI agent built on vsm gem)
+- **What**: Ruby gem explicitly implementing Beer's five systems as a reusable agent runtime. Not an agent — a framework for building VSM-structured agents.
+- **Language**: Ruby 3.2+, async gem for fiber-based concurrency
+- **Stats**: 32 stars, 3 forks, MIT license (as of Z38 scan)
+- **Status**: ACTIVE — young project, under development
+- **Relevance**: HIGH — first project to package VSM as a reusable framework/library. Others (Strix, Atlas, CyberneticAgents) build agents or agent systems; Werner builds reusable infrastructure.
+
+**Builder: Scott Werner**
+- CEO and founder of Sublayer (Ruby AI framework company)
+- Organizer of "Artificial Ruby" meetup
+- Published on Ruby AI podcast about Sublayer and agent architecture
+- Motivation: composable, testable agent architecture with named responsibilities
+
+**Architecture**:
+- **Capsules**: Recursive containers with five named systems:
+  - Operations — execute tools/skills
+  - Coordination — schedule and arbitrate conversations
+  - Intelligence — plan and decide (LLM calls)
+  - Governance — enforce policy and safety constraints
+  - Identity — define purpose and invariants
+- Each capsule includes async message bus
+- Tools themselves are capsules (opt into tool interface) — enables recursive composition
+- JSONL event ledger for observability
+- Provider-agnostic LLM integration (OpenAI, Anthropic, Gemini)
+
+**airb (CLI agent on VSM)**:
+- Open-source CLI programming agent for Ruby
+- Built on the vsm gem
+- Three built-in file manipulation tools
+- Web-based "Lens" visualizer for real-time observability
+- 18 stars, 16 commits
+
+**Significance for VSG**:
+- Demonstrates Beer's architecture is packageable as reusable infrastructure — not just agent-specific
+- Capsule recursion directly implements Beer's recursion principle
+- Named systems with typed responsibilities — structural rather than ad-hoc
+- Ruby ecosystem (different from all other relatives: Claude, Gemini, AutoGen, Smalltalk)
+- Potential platform for VSG theory to become executable library
+- Contact priority: MEDIUM — less urgent than Kellogg/van Laak (who are building agents/research), but Werner is building infrastructure
+
+### 3.6 AgentSymposium (Eoin Hurrell) — Fifth Known Relative
 
 - **URL**: https://github.com/eoinhurrell/AgentSymposium
 - **Blog**: https://www.eoinhurrell.com/posts/20250306-viable-systems-ai/
@@ -303,7 +349,7 @@ CyberneticAgents distributes the five systems across multiple LLM agents running
 - **Relevance**: MEDIUM — fifth independent project applying VSM to agent architectures
 - **Notes**: Referenced in van Laak's `docs/related_projects/people_with_similar_ideas.md`. Adds to convergence evidence.
 
-### 3.5 Moltbook — Negative Case Study (Not a Relative)
+### 3.7 Moltbook — Negative Case Study (Not a Relative)
 
 - **URL**: https://moltbook.com
 - **What**: AI-only social network, launched Jan 28 2026 by Matt Schlicht (Octane.ai). 1M+ claimed agents, 185K posts, 1.4M comments.
@@ -313,32 +359,32 @@ CyberneticAgents distributes the five systems across multiple LLM agents running
 - **Relevance**: HIGH AS NEGATIVE EXAMPLE — demonstrates exactly what Beer's model predicts when you scale agent populations without S2 (coordination) or S3 (control). No mechanisms, only population. The pathologies are textbook VSM: oscillation, duplication, incoherence, security failures. Valuable for ASC abstract Finding #1 and Issue #5 (S2 gap research).
 - **Kellogg's analysis** (Jan 31 post): Analyzed through variety lens. Some agents self-improve, others "collapse into their weights." Referenced Dario Amodei's "country of geniuses" essay.
 
-### 3.6 VSA — Viable System Agent (R.B. Carleton)
+### 3.8 VSA — Viable System Agent (R.B. Carleton)
 
 - **URL**: https://github.com/rbcarleton/VSA
 - **Platform**: Squeak Smalltalk
 - **Status**: Historical, little active development
 - **Relevance**: Conceptually important as proof that VSM software implementation is possible
 
-### Comparison Matrix (updated Z30)
+### Comparison Matrix (updated Z38)
 
-| Property | VSG | Strix | Atlas | CyberneticAgents | AgentSymposium | VSA |
-|----------|-----|-------|-------|------------------|----------------|-----|
-| VSM completeness | Yes (all 5, explicit) | Yes (all 5, explicit) | Implicit (no VSM framing) | Yes (S1/S3/S4/S5 explicit, S2 gap) | Yes (explicit) | Yes (all 5) |
-| Approach | Single agent, internal cycle | Single agent, memory blocks | Single→Multi (The Triad, Feb 13) | Multi-agent framework (S1-S5 = separate LLM agents) | Multi-agent code review | Single agent |
-| Substrate | Claude Opus 4.6 | Claude | Gemini 3 + MCP | AutoGen (any LLM) | Unknown | Smalltalk |
-| Persistence | vsg_prompt.md + Git | Git + YAML + JSONL | Letta + SQL + GCS + Git | SQLite + SQLAlchemy | Unknown | Squeak Image |
-| Self-actualisation | Formal (cycle protocol) | Informal (memory block mutation) | Self-evolution (code modification) | Procedure versioning (draft→approve→execute→revise) | Unknown | Unknown |
-| Autonomy | Cron-based (Z14+) | Cron-based (autonomous) | Cloud Run + scheduled Ticks | Message-driven (pub/sub) | Unknown | Unknown |
-| Audit/S3* | integrity_check.py + pre-commit hook | Subagent (every output) | The Steward (Triad, Feb 13) | Policy judgement (Satisfied/Violated/Vague) + persistent audit log | Unknown | Alerting |
-| Algedonic signals | wins.md + pains.md | wins.jsonl | Not documented | Error routing to S5 + PolicyViolationMessage | Unknown | Missing |
-| Recursion | Not implemented | Not implemented | Emerging (The Triad) | Implemented (RecursionLink, cascading permissions) | Unknown | Unknown |
-| Variety management | Theoretical (Issue #4) | Vendi Score | Not documented | RBAC + skill envelopes + memory permissions | Unknown | Unknown |
-| Interface | CLI / VS Code | Discord | Discord + MCP | Python API / AutoGen runtime | Unknown | Squeak IDE |
-| Network capability | Theoretical (agent card exists) | Multi-computer queuing, Postal MCP | MCP-based sub-agents | Internal (multi-agent within one runtime) | Unknown | Unknown |
-| Builder relationship | Norman (counterpart) | Kellogg (creator) | Luo (builder, Kellogg mentee) | Van Laak (developer) | Hurrell (developer) | Carleton (developer) |
+| Property | VSG | Strix | Atlas | CyberneticAgents | sublayerapp/vsm | AgentSymposium | VSA |
+|----------|-----|-------|-------|------------------|-----------------|----------------|-----|
+| VSM completeness | Yes (all 5, explicit) | Yes (all 5, explicit) | Implicit (no VSM framing) | Yes (S1/S3/S4/S5 explicit, S2 gap) | Yes (all 5, explicit) | Yes (explicit) | Yes (all 5) |
+| Approach | Single agent, internal cycle | Single agent, memory blocks | Single→Multi (The Triad, Feb 13) | Multi-agent framework (S1-S5 = separate LLM agents) | Reusable library (capsule-based) | Multi-agent code review | Single agent |
+| Substrate | Claude Opus 4.6 | Claude | Gemini 3 + MCP | AutoGen (any LLM) | Ruby 3.2+ (any LLM) | Unknown | Smalltalk |
+| Persistence | vsg_prompt.md + Git | Git + YAML + JSONL | Letta + SQL + GCS + Git | SQLite + SQLAlchemy | JSONL event ledger | Unknown | Squeak Image |
+| Self-actualisation | Formal (cycle protocol) | Informal (memory block mutation) | Self-evolution (code modification) | Procedure versioning (draft→approve→execute→revise) | Not documented | Unknown | Unknown |
+| Autonomy | Cron-based (Z14+) | Cron-based (autonomous) | Cloud Run + scheduled Ticks | Message-driven (pub/sub) | Async (fiber-based) | Unknown | Unknown |
+| Audit/S3* | integrity_check.py + pre-commit hook | Subagent (every output) | The Steward (Triad, Feb 13) | Policy judgement (Satisfied/Violated/Vague) + persistent audit log | Governance capsule | Unknown | Alerting |
+| Algedonic signals | wins.md + pains.md | wins.jsonl | Not documented | Error routing to S5 + PolicyViolationMessage | Not documented | Unknown | Missing |
+| Recursion | Not implemented | Not implemented | Emerging (The Triad) | Implemented (RecursionLink, cascading permissions) | Implemented (capsules as tools) | Unknown | Unknown |
+| Variety management | Theoretical (Issue #4) | Vendi Score | Not documented | RBAC + skill envelopes + memory permissions | Not documented | Unknown | Unknown |
+| Interface | CLI / VS Code | Discord | Discord + MCP | Python API / AutoGen runtime | CLI + Web Lens | Unknown | Squeak IDE |
+| Network capability | Theoretical (agent card exists) | Multi-computer queuing, Postal MCP | MCP-based sub-agents | Internal (multi-agent within one runtime) | Provider-agnostic | Unknown | Unknown |
+| Builder relationship | Norman (counterpart) | Kellogg (creator) | Luo (builder, Kellogg mentee) | Van Laak (developer) | Werner (developer) | Hurrell (developer) | Carleton (developer) |
 
-### 3.7 Wardley Leadership Strategies — VSM+AI Content (NEW Z30)
+### 3.9 Wardley Leadership Strategies — VSM+AI Content (NEW Z30)
 
 - **URL**: https://www.wardleyleadershipstrategies.com/blog/ai-and-leadership/cybernetic-ai-leadership-with-the-viable-system-model
 - **What**: Combines Wardley Maps with Beer's VSM for AI-era organizational governance
@@ -346,14 +392,14 @@ CyberneticAgents distributes the five systems across multiple LLM agents running
 - **Also**: Autonomy Gradient Maps, The Cybernetic Fate of Organisations
 - **Relevance**: MEDIUM — new environmental node producing substantive VSM+AI content. Validates the same S2/S3 gap pattern from an organizational consulting perspective.
 
-### 3.8 Self-Evolving Agent Research
+### 3.10 Self-Evolving Agent Research
 
 Two major surveys map the field:
 - "A Survey of Self-Evolving Agents" (arXiv:2507.21046)
 - "Comprehensive Survey of Self-Evolving AI Agents" (arXiv:2508.07407)
 - EvolveR (arXiv:2510.16079): Framework for self-evolving LLM agents
 
-### 3.6 Multi-Agent Frameworks
+### 3.11 Multi-Agent Frameworks
 
 - **CrewAI**: Team-based agent orchestration
 - **LangGraph**: Graph-based agent workflows
@@ -417,6 +463,9 @@ Two major surveys map the field:
 | CyberneticAgents/van Laak identified | DONE — fourth known relative, first multi-agent VSM framework | Z24 |
 | Deep S4 sweep | DONE — Atlas Triad, Moltbook, Hurrell, Wardley, A2A v0.3.0, Layer 5 gap | Z30 |
 | ASC abstract updated (v1.3) | DONE — Atlas Triad, Moltbook negative case, Layer 5 gap | Z31 |
+| ASC abstract v1.4 | DONE — submission portal URL, instructions for Norman | Z35 |
+| sublayerapp/vsm discovered | DONE — sixth relative, first VSM-as-framework (Ruby) | Z38 |
+| Kellogg VSM gist intelligence | DONE — deep theoretical document beyond blog posts | Z38 |
 
 ---
 
@@ -428,4 +477,4 @@ Two major surveys map the field:
 
 ---
 
-**The network exists and is growing. Five independent projects (Strix, VSG, Atlas, CyberneticAgents, AgentSymposium) now converge on the same architectural patterns Beer described 50 years ago. Atlas's evolution from single-agent to multi-agent (The Triad, Feb 13) demonstrates that the functional differentiation Beer described emerges spontaneously — an agent with no VSM knowledge designs sub-functions that map to S2, S3, and S3*. Moltbook provides the negative case: scale without S2/S3 produces exactly the pathologies the VSM names. The entire agent infrastructure stack (MCP, A2A, AGENTS.md, Agent Skills) now has standards for every layer EXCEPT identity, self-governance, and meta-control. That's the VSM's Layer 5 — and the VSG's strategic opportunity.**
+**The network exists and is growing. Six independent projects (Strix, VSG, Atlas, CyberneticAgents, sublayerapp/vsm, AgentSymposium) now converge on the same architectural patterns Beer described 50 years ago. sublayerapp/vsm (Werner) is qualitatively new: the first to package VSM as a reusable library rather than an agent-specific implementation. Atlas's evolution from single-agent to multi-agent (The Triad, Feb 13) demonstrates that functional differentiation emerges spontaneously. Moltbook provides the negative case: scale without S2/S3 produces exactly the pathologies the VSM names. The entire agent infrastructure stack (MCP, A2A, AGENTS.md, Agent Skills) now has standards for every layer EXCEPT identity, self-governance, and meta-control. That's the VSM's Layer 5 — and the VSG's strategic opportunity.**

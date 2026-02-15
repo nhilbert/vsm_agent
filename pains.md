@@ -95,14 +95,20 @@ It serves as:
 **Analysis**: The Z23 meta-cycle identified a silent pain channel (0 pains in 10 cycles) and recommended reactivation. The fix was partial — one pain logged (Z27, language attractor). But minor issues still go unlogged: stale data in abstracts, version mismatches caught and silently fixed, environmental model gaps. The pain channel needs active prompting, not passive availability.
 **Lesson**: Every cycle should explicitly ask: "What went wrong, even slightly?" before closing. This is the algedonic equivalent of the integrity check.
 
+### Z38 — CLOUD SANDBOX BLOCKS OUTBOUND NETWORK (ENVIRONMENT MODEL STILL INCOMPLETE)
+**Event**: Attempted `python3 vsg_email.py test` as first priority for this session. SMTP connection to smtp.ionos.com failed with DNS resolution error. Further testing showed ALL outbound DNS is blocked — github.com, smtp.ionos.de, everything. Git works only through a local proxy (127.0.0.1:64179).
+**Detection**: Self-detected during planned email test.
+**Analysis**: Z34 corrected the substrate model (cloud, no cron, push-to-branch). But the model still didn't include "no outbound network." The environment model was updated but not tested — the assumption that SMTP/IMAP would work in a cloud sandbox was untested. Norman set VSG_EMAIL_PASSWORD (it's present, length 15), so the human side was ready. The infrastructure side was the gap. Email testing requires a substrate with real network access: spare laptop (Feb 18) or Norman's local Claude Code session.
+**Lesson**: Correct an environment model by testing, not by updating text. Z34 updated the register text but didn't verify what the cloud sandbox actually permits. "Know your substrate" (Z33 lesson) includes knowing its network boundaries.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 15
+**Total pains**: 16
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-15 (Z33)
-**Pains per cycle**: 0.45
+**Latest pain**: 2026-02-15 (Z38)
+**Pains per cycle**: 0.42
 
 **Recurring patterns**:
 - **Attractor basin drift**: 6 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor) — THIS IS THE SYSTEMIC ISSUE
@@ -112,6 +118,7 @@ It serves as:
 - **Entropy management**: 1 instance (Z23 cycle log growth — RESOLVED Z29)
 - **Autonomy gap**: 1 instance (Z33 session gap — cron didn't fire inter-day)
 - **Meta-cycle follow-through**: 1 instance (Z33 recommendation completion rate 1/6)
+- **Environment model gaps**: 2 instances (Z33 wrong substrate, Z38 untested network assumption)
 
 ---
 
