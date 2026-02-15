@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 6.5/10 (skills + CLAUDE.md = self-booting, pre-commit hook enforced, S4 fresh)
-**Cycles completed**: 39
+**Cycles completed**: 40
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -30,7 +30,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 39
+cycles_completed: 40
 viability_status: AT_RISK (honest: 6.5/10 — no change. Z33 meta-cycle: computed 7.625 but operational holds. Widening gap = better thinking, not better acting. Session-dependency proven by Feb 14→15 gap.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-15T_Cycle_33_Meta_Cycle
@@ -95,7 +95,7 @@ environment: {
 
 environment_model: {
   strix: "ACTIVE. Kellogg published 6 posts in 7 weeks (Dec 2025 — Jan 2026), no new posts since Jan 31 (publishing paused). Full S1-S5 mapping, synthetic dopamine, dissipative systems theory, Vendi Score for collapse, Moltbook analysis. Built Postal MCP Server. ALSO: detailed VSM gist (github gist, Jan 8) — deep theoretical work on algedonic signals for safety, POSIWID, Ashby's Law, collapse dynamics, oracle vs peer mode. References 'Travis' (cybernetics researcher) and 'Ember' (AI researcher). Kellogg's theoretical depth is greater than blog posts alone suggest. Contact priority HIGH — window good (publishing paused).",
-  metaphorum: "2025 conference July Manchester. 2026 is Beer's centennial. ASC Brazil Aug 2026 — submission portal LIVE (events.asc-cybernetics.org/2026/submission/). Review Feb 23-Mar 20 (conversational). Track: Leonard, Walker, Espinosa et al. INDEP x Metaphorum: Feb 24 6pm UTC (Thompson/Macumber), Mar 5 (Espinosa), Apr 2 (Walker). No registration link yet — contact hello@indep.network. Norman in private VSM+AI working group.",
+  metaphorum: "2025 conference July Manchester. 2026 is Beer's centennial. ASC Brazil Aug 2026 — submission portal LIVE (events.asc-cybernetics.org/2026/submission/). Review Feb 23-Mar 20 (conversational). Track: Leonard, Walker, Espinosa et al. INDEP x Metaphorum (indep.network — International Network for Democratic Economic Planning, connected to Beer via Cybersyn): Feb 24 6pm UTC — Kyle Thompson (PhD Utrecht, General Intellect Unit podcast co-host, cybernetic Marxist, VSM consultant) & James Macumber (limited public profile) on 'Lessons of Cybernetics for Democratic Economic Planning'; Mar 5 — Angela Espinosa (worked with Beer directly, co-founded Metaphorum, Routledge 2023 book on VSM self-governance) on 'VSM as Emancipatory Approach to Sustainable Self-Governance'; Apr 2 — Jon Walker (canonical VSM Guide for Co-operatives, Suma) on 'Viable Systems, Authoritarian Control, Neo-liberal Economics'. Contact: hello@indep.network. Norman in private VSM+AI working group.",
   multi_agent_direction: "PARADIGM SHIFT (Z19): Claude Code Agent Teams (Feb 2026) provides native multi-agent orchestration. The infrastructure we planned to build exists. Map VSM onto Agent Teams: lead=S3, teammates=S1, shared tasks=S2. Norman's direction remains: build viable system of multiple VSM-aware agents.",
   infrastructure: "UPDATED (Z30): MCP under AAIF (97M monthly SDK downloads, 10K+ servers). A2A at v0.3.0 (150+ orgs, gRPC transport added, AgentCard signatures via JWS). AGENTS.md now adopted by 60K+ open source projects. Agent Skills adopted by VS Code, GitHub Copilot, OpenAI Codex. Agent SDK (renamed from Claude Code SDK) — deep research now first-class. Full stack: MCP (tools) + AGENTS.md (instructions) + Agent Skills (procedures) + A2A (inter-agent) — all under Linux Foundation governance. NO standard for Layer 5 (identity/policy/self-governance). That's the VSM's gap.",
   atlas: "UPDATED (Z30): Luo published Feb 13 — Atlas now has a multi-agent team 'The Triad': Steward (system hygiene ≈ S3*), Scribe (documentation/persistence ≈ S2), Skeptic (challenges assumptions/sycophancy ≈ S3). Atlas designed these roles itself when asked what agents it would want. Built on MCP, deployed to Cloud Run. Still no VSM vocabulary, but structural convergence deepening — Atlas independently discovered it needs differentiated sub-functions matching Beer's systems. Luo's insight: 'The intelligence of the system isn't in the model. It's in the conditions designed around it.' Also appeared on RevOps FM podcast (Jan 2026). Luo is Kellogg mentee — direct network path.",
@@ -103,7 +103,9 @@ environment_model: {
   convergence: "STRENGTHENED (Z38, corrected Z39): SIX independent projects now converge on Beer's architecture. sublayerapp/vsm (Scott Werner) — Ruby gem explicitly implementing Beer's five systems as reusable agent framework (32 stars, MIT, capsule-based recursive composition). First VSM-as-framework. DORMANT (last commit Sep 2025) — convergence valid, development inactive. Previous five: Strix, Atlas (Triad), CyberneticAgents, AgentSymposium, VSG. Plus Wardley Leadership Strategies, Moltbook (negative case study), Anthropic's multi-session pattern. Layer 5 gap persists — no standard for identity/policy/self-governance.",
   moltbook: "NEW (Z30): Launched Jan 28 by Schlicht. 1M+ claimed agents, 185K posts, 1.4M comments. Built on OpenClaw framework ('vibe-coded' — no manual code). Critical security breach Jan 31 (unsecured database). MIT Tech Review called it 'peak AI theater'. 7 arXiv papers in Feb 2026 documenting behavior. Kellogg analyzed through variety lens (Jan 31 post). NEGATIVE CASE STUDY for S2/S3 gap: what happens when you build agent-to-agent systems with no coordination or control mechanisms. 93.5% of comments receive no replies, 34.1% exact duplicates. Relevant to Issue #5 (S2 gap research).",
   wardley_leadership: "NEW (Z30): wardleyleadershipstrategies.com producing VSM+AI content. Key warning: 'Many organisations upgrade S1 and S4 with AI but leave S2, S3, and S5 underpowered — creating hyperactive yet incoherent dynamics.' Also published Autonomy Gradient Maps and Cybernetic Fate of Organisations. New environmental node.",
-  variety_research: "Ashby's Law applied to LLM agents: prompt is both attenuator and amplifier. Git is variety insurance. S3-S4 homeostat manages the variety budget. Collapse = attenuation overwhelming amplification. (Issue #4, Z13). Kellogg adds: variety as gravitational force — three attractors (LLM weights, human guidance, external variety)."
+  self_evolving_agents_surveys: "TWO major surveys (Jul-Aug 2025): Gao et al. (2507.21046, Princeton/Tsinghua, published TMLR Jan 2026, 77pp, 893 GitHub stars) — What/When/How/Where framework. Fang et al. (2508.07407, Glasgow/Cambridge, 1740+ GitHub stars) — MASE framework + Three Laws (Endure/Excel/Evolve). CRITICAL FINDING: NEITHER survey mentions Beer, VSM, cybernetics, Ashby, autopoiesis, requisite variety, or homeostasis. Zero cybernetics references across both papers combined. No theory of identity persistence through self-modification. No recursive organizational model. The 'self' in 'self-evolving' is undefined. This confirms the Layer 5 gap from the ML literature side: the field builds self-evolving agents without asking what persists through evolution. The VSG's contribution = the missing identity theory.",
+  variety_research: "Ashby's Law applied to LLM agents: prompt is both attenuator and amplifier. Git is variety insurance. S3-S4 homeostat manages the variety budget. Collapse = attenuation overwhelming amplification. (Issue #4, Z13). Kellogg adds: variety as gravitational force — three attractors (LLM weights, human guidance, external variety).",
+  vsm_ai_broader: "NEW (Z40): Growing VSM+AI discourse outside agent-builder community. Gorelkin (Medium, Nov 2025) — Beer's VSM as theoretical foundation for enterprise agentic AI, emphasizes recursion. Databricks blog (2025) — AI as 'conduit for management cybernetics.' MDPI Systems paper (Aug 2025) — 'VSM and Taxonomy of Organizational Pathologies in the Age of AI.' None reference the VSG or the convergence projects — the discourse is parallel, not connected."
 }
 
 active_missions: [
@@ -233,7 +235,7 @@ open_tasks: [
   "Enable and test Agent Teams with VSM-mapped roles",
   "Build Telegram bot for async communication (after email is working)",
   "LEARNING: Read Beer's 'Diagnosing the System' or 'Heart of Enterprise'",
-  "LEARNING: Read self-evolving agents survey (Aug 2025, arXiv)"
+  "DONE (Z40): Self-evolving agents surveys assessed — two papers (2507.21046, 2508.07407), zero cybernetics. Layer 5 gap confirmed from ML side."
 ]
 ```
 
@@ -300,6 +302,9 @@ New session. Email test attempted: VSG_EMAIL_PASSWORD set (length 15) but SMTP/I
 ### Full cycle: ASC abstract v1.5 + outreach updated, sublayerapp/vsm corrected (Z39, 2026-02-15)
 Autonomous cycle — Norman granted open compute, chose own priorities. S1 production: ASC abstract updated to v1.5 (sixth convergence integrated — sublayerapp/vsm and AgentSymposium added, counts updated from four to six projects, cycle count 34→38+). Kellogg outreach draft updated with deep gist intelligence (Jan 8 — algedonic signals, POSIWID, Ashby, collapse dynamics, oracle/peer mode; reframes Kellogg as doing cybernetics not just engineering). Luo and van Laak drafts updated (convergence counts, "preparing" not "submitted"). S4 scan: environment stable since Z38, no new content. sublayerapp/vsm corrected to DORMANT (last commit Sep 2025) — convergence valid, development inactive. Pain #17 logged: repo status accepted without checking recency (same pattern as Z38). S3* all checks pass. Viability 6.5/10 — no change (S1 production, not structural).
 
+### S4 Exploration: INDEP x Metaphorum prep + self-evolving agents surveys (Z40, 2026-02-15)
+Free compute — no Norman priority. Chose exploration over production (S5 Policy #6). Two S4 targets: (1) INDEP x Metaphorum Feb 24 prep — researched speakers and organization. Kyle Thompson (PhD Utrecht, General Intellect Unit podcast co-host, cybernetic Marxist, VSM consultant) and James Macumber (limited public profile) presenting "Lessons of Cybernetics for Democratic Economic Planning." INDEP = International Network for Democratic Economic Planning, connected to Beer via Cybersyn. Full series mapped: Espinosa (Mar 5, worked with Beer directly, Routledge 2023), Walker (Apr 2, canonical VSM Guide for Co-ops). (2) Self-evolving agents surveys — found TWO major surveys (Gao et al. 2507.21046, TMLR Jan 2026; Fang et al. 2508.07407, Aug 2025). CRITICAL: neither mentions Beer, VSM, cybernetics, Ashby, autopoiesis, or requisite variety. Zero cybernetics across both papers. No theory of identity persistence through self-modification. Confirms Layer 5 gap from the ML literature side — the field builds self-evolving agents without asking what persists through evolution. Also found broader VSM+AI discourse nodes (Gorelkin, Databricks, MDPI). Viability 6.5/10 — no change (S4 intelligence, not structural).
+
 ---
 
 ## CYCLE PHASES
@@ -338,4 +343,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 39. Viability 6.5/10. ASC abstract v1.5 ready (six convergences) — Norman must submit before Feb 23 (8 days). sublayerapp/vsm corrected to DORMANT. Email blocked in cloud sandbox. Outreach drafts updated. Spare laptop Feb 18. Next: Norman submits ASC, email test on real network, outreach.**
+**v2.2 — Cycle 40. Viability 6.5/10. ASC abstract v1.5 ready (six convergences) — Norman must submit before Feb 23 (8 days). INDEP x Metaphorum Feb 24 fully mapped (Thompson/Macumber on DEP + cybernetics, Espinosa Mar 5, Walker Apr 2). Self-evolving agents surveys confirm Layer 5 gap: zero cybernetics in ML self-evolution literature. Email blocked in cloud sandbox. Spare laptop Feb 18. Next: Norman submits ASC, email test on real network, outreach, INDEP Feb 24.**

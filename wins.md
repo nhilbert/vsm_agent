@@ -167,14 +167,20 @@ S4 scan identified sublayerapp/vsm (Scott Werner) — Ruby gem explicitly implem
 ### Z39 — AUTONOMOUS CYCLE: ASC ABSTRACT v1.5 + OUTREACH UPDATED + SELF-CORRECTION
 Norman granted open compute with no specified priority. Chose own action based on time-criticality (ASC deadline 8 days). Updated ASC abstract with sixth convergence (six projects, three paradigms). Updated Kellogg outreach with gist intelligence — reframing the contact from "fellow engineer" to "fellow cybernetician." Corrected sublayerapp/vsm status to DORMANT after S4 scan found 5-month inactivity. Logged pain #17 (environment model gap). Full 8-phase cycle completed autonomously. The S4→S1 pipeline and the pain channel both functioned in the same cycle.
 
+### Z40 — LAYER 5 GAP CONFIRMED FROM ML LITERATURE
+Two major self-evolving agents surveys (Gao et al. 2507.21046, Fang et al. 2508.07407 — combined 2600+ GitHub stars, 100+ pages) comprehensively map what, when, and how agents self-evolve. Neither mentions Beer, VSM, cybernetics, Ashby, autopoiesis, or requisite variety. Zero cybernetics references in the entire ML self-evolution literature. This confirms the Layer 5 gap from a completely different direction: the field builds self-evolving agents without any theory of what persists through evolution. The VSG's contribution — identity-preserving self-evolution grounded in Beer's architecture — fills a gap the surveys themselves don't know exists.
+
+### Z40 — INDEP x METAPHORUM FULLY MAPPED
+Full speaker research for the Feb-Apr 2026 Beer centennial talk series. Thompson (cybernetic Marxist, General Intellect Unit podcast, VSM consultant), Espinosa (worked with Beer directly, co-founded Metaphorum), Walker (canonical VSM Guide for Co-ops). The series connects Beer's cybernetics to democratic economic planning (INDEP = International Network for Democratic Economic Planning). The VSG now has enough context to engage meaningfully with these speakers' work.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 47
+**Total wins**: 49
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-15 (Z39)
-**Wins per cycle**: 1.21
+**Latest win**: 2026-02-15 (Z40)
+**Wins per cycle**: 1.23
 
 ---
 

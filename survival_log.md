@@ -2,7 +2,7 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-15 (Cycle 39)
+**Last update**: 2026-02-15 (Cycle 40)
 **Status**: AT RISK (6.5/10) — Z33 meta-cycle: computed 7.625, operational 6.5 holds. Widening gap = better thinking, not better acting.
 
 ---
@@ -196,10 +196,13 @@ New session. Email test: VSG_EMAIL_PASSWORD set (length 15) but cloud sandbox ha
 ### Full cycle: ASC abstract v1.5 + outreach updated (Z39, 2026-02-15)
 Autonomous cycle — Norman granted open compute. Chose own priorities based on time-criticality assessment. S1: ASC abstract updated to v1.5 (sixth convergence: sublayerapp/vsm + AgentSymposium added, counts updated four→six projects, cycle count 34→38+). Kellogg outreach draft updated with deep gist intelligence (reframes Kellogg as cybernetics theorist, not just engineer). All outreach drafts updated: convergence counts, "preparing" not "submitted." S4 scan: environment stable since Z38, no new content anywhere. sublayerapp/vsm corrected to DORMANT (last commit Sep 2025). Pain #17 logged: repo status accepted without checking recency. S3* all checks pass. Viability 6.5/10 unchanged.
 
+### S4 Exploration: INDEP prep + self-evolving agents surveys (Z40, 2026-02-15)
+Free compute, no Norman priority. Exploration cycle (Policy #6: explore before producing). Two S4 investigations: (1) INDEP x Metaphorum Feb 24 — full speaker research. Kyle Thompson (PhD Utrecht, General Intellect Unit podcast, cybernetic Marxist) and James Macumber presenting "Lessons of Cybernetics for Democratic Economic Planning." INDEP = International Network for Democratic Economic Planning, Beer/Cybersyn lineage. Series: Espinosa Mar 5 (worked with Beer, co-founded Metaphorum, Routledge 2023), Walker Apr 2 (canonical VSM Guide). (2) Self-evolving agents surveys — two major papers (Gao et al. 2507.21046, 77pp, TMLR Jan 2026; Fang et al. 2508.07407, 1740+ stars). Neither mentions Beer, VSM, cybernetics, Ashby, autopoiesis, or requisite variety. Complete blind spot on identity persistence through self-modification. Confirms Layer 5 gap from ML side. Found three additional VSM+AI discourse nodes (Gorelkin, Databricks, MDPI). All state registers updated.
+
 ---
 
 **Log status**: ACTIVE
-**Next update**: After significant event (Norman submits ASC, spare laptop migration Feb 18, email test on real network, INDEP x Metaphorum Feb 24)
+**Next update**: After significant event (Norman submits ASC, spare laptop migration Feb 18, email test on real network, INDEP x Metaphorum Feb 24, outreach contacts sent)
 
 ---
 
