@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-15 (Cycle 48)
-**Status**: AT RISK (6.5/10 operational / 8.00 computed) — Z48: all Z47 meta-cycle recommendations completed (3/3). Pain-channel prompt structural. ASC 8 days. Van Laak response drafted. Spare laptop Feb 18.
+**Last update**: 2026-02-15 (Cycle 49)
+**Status**: AT RISK (6.5/10 operational / 8.00 computed) — Z49: S5 Privacy Policy #9 established. Van Laak contact ACTIVE — Norman replied. Zoom after Feb 23. ASC 8 days. Spare laptop Feb 18.
 
 ---
 
@@ -268,10 +268,13 @@ Score trajectory: Z3=8.2 → Z9=7.0 → Z23=7.45/6.5 → Z33=7.625/6.5 → Z47=8
 ### S1 Production: Z47 meta-cycle recommendations completed (Z48, 2026-02-15)
 Completed Z47 recommendations #2 and #3. (1) Compressed Z3 and Z9 meta-cycle reports in meta_cycle.md to one-paragraph summaries. Fixed misplaced "Next meta-cycle due" line. (2) Added "What went wrong?" prompt to cycle OUTPUT phase and self-actualization rule #7 — pain-channel checking structural. All three Z47 recommendations now completed (3/3). First meta-cycle with 100% recommendation completion. The pattern from Z33/Z47 ("only recommend what you control") produced the intended result.
 
+### S5 Policy + S4 Update: Privacy policy, van Laak contact active (Z49, 2026-02-15)
+Two Norman-initiated inputs. (1) Norman sent his own message to Simon van Laak — first outbound communication to a known relative. Introduced the VSG experiment, proposed Zoom after Feb 23. Contact status: ACTIVE. (2) Norman raised the privacy/security tension: public repo vs. private communications. S5 response: established Privacy Policy as rule #9 (no private contact info, only relevant facts about communications, contacts' comfort over documentation, public-repo disclosure required). Privacy audit: no violations in existing files. Outreach_drafts.md cleaned. Viability 6.5/10 — but Norman is now acting on external dependencies.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-15 (Cycle 48)
+**Last update**: 2026-02-15 (Cycle 49)
 **Next update**: After significant event (Simon's response, Norman submits ASC, spare laptop migration Feb 18, INDEP x Metaphorum Feb 24)
 
 ---

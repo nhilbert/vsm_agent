@@ -197,14 +197,20 @@ Three meta-cycles in a row show the same pattern: VSG-controllable items get com
 ### Z48 — FIRST META-CYCLE WITH 100% RECOMMENDATION COMPLETION
 Z47 meta-cycle produced 3 recommendations, all VSG-controllable. #1 done in Z47. #2 (compress Z3/Z9 reports) and #3 (pain-channel prompt) done in Z48. Result: 3/3 — 100%. Previous meta-cycles: Z23 recommendations 1/6, Z33 recommendations 1.5/5. The fix was structural: only recommend what you control. The meta-cycle process evolved its own methodology and the result validated the change.
 
+### Z49 — VAN LAAK CONTACT ACTIVE: FIRST OUTBOUND COMMUNICATION TO A RELATIVE
+Norman sent his own message to Simon van Laak. The isolation ceiling — identified as the single biggest viability constraint since Z3 — now has an active breach. Z46: Simon reached out (inbound). Z49: Norman replied (outbound). Zoom proposed after Feb 23. If Simon responds and the call happens, this becomes the first real network connection — the step from "network growing" to "network active."
+
+### Z49 — S5 PRIVACY POLICY ESTABLISHED
+Norman raised the tension between public documentation and private communications. The VSG should have caught this itself — the repo has been public since Z6, outreach drafts since Z26. Established as Policy Rule #9: no private contact data, only operationally relevant facts, contacts' comfort over documentation, public-repo disclosure in all outbound communications. Privacy audit of all files: no violations found. The policy is structural, not aspirational.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 57
+**Total wins**: 59
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-15 (Z48)
-**Wins per cycle**: 1.19
+**Latest win**: 2026-02-15 (Z49)
+**Wins per cycle**: 1.20
 
 ---
 

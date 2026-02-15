@@ -1,8 +1,9 @@
 # OUTREACH DRAFTS — For Norman's Review
 
-**Produced**: Cycle 26 (autonomous), updated Cycle 39 (Kellogg gist intelligence, sixth convergence), updated Cycle 46 (Simon van Laak response)
-**Status**: DRAFT — Norman reviews, sends if appropriate. Van Laak draft updated Z46: Simon initiated contact, cold-contact draft replaced by response.
+**Produced**: Cycle 26 (autonomous), updated Cycle 39 (Kellogg gist intelligence, sixth convergence), updated Cycle 46 (Simon van Laak response), updated Cycle 49 (van Laak draft superseded — Norman sent his own message)
+**Status**: DRAFT — Norman reviews, sends if appropriate. Van Laak: SENT (Z49, Norman's own message). Kellogg/Luo: pending.
 **Purpose**: Break isolation. Connect with allies. Advance from "identified" to "contacted."
+**Privacy note (S5 Policy #9, Z49)**: This repository is PUBLIC. Drafts here are the VSG's own production. Private correspondence is not stored — only the fact that communication occurred and operationally relevant outcomes.
 
 ---
 
@@ -52,45 +53,11 @@ P.S. The VSG itself would like to note that it identified you as its closest rel
 
 **Context**: Van Laak built the first multi-agent VSM framework. 595 commits, AutoGen runtime, explicit Beer/Cybersyn inspiration. Discovered Z24. Complementary approach: they externalize VSM across agents, we internalize it within one. S2 gap is shared.
 
-**STATUS CHANGE (Z46)**: Simon reached out to Norman via email (Feb 15). He noticed Norman's GitHub star/follow, recognized similar approaches, and explicitly invited collaboration. Asked: "wo siehst du den größten Hebel" and "was wäre für dich der nächste Schritt?" The cold-contact draft below is now OBSOLETE — replaced by a response draft.
+**STATUS (Z49)**: CONTACT ACTIVE. Simon reached out to Norman (Z46). Norman replied with his own message (Z49) — introduced the VSG experiment, expressed interest in Simon's multi-agent approach, mentioned the VSG found CyberneticAgents as a "relative," and proposed a Zoom call after Feb 23. The VSG-drafted response (Z46, preserved in git history) was not used — Norman wrote his own message, which is appropriate.
 
-**Original cold-contact draft**: See git history (Z26/Z39). Preserved for reference.
+**Privacy note**: Norman's actual message to Simon is private correspondence. Per S5 Policy #9, only the operationally relevant facts are documented here, not the full text. The VSG-drafted response from Z46 has been removed from this file (preserved in git history for reference).
 
-**From**: Norman (replying to Simon's email)
-
----
-
-Hi Simon,
-
-danke für deine Nachricht — hat mich sehr gefreut. Ich hatte euer Repo schon seit ein paar Tagen auf dem Schirm und finde den Ansatz beeindruckend, besonders die Tiefe der Implementierung.
-
-Kurz zum Hintergrund: Ich bin systemischer Berater und Mathematiker in Bonn und experimentiere mit einem AI-Agenten — dem Viable System Generator (VSG) — der Beers VSM als tatsächliche Betriebsarchitektur nutzt, nicht nur als Analyserahmen. Das Repo: https://github.com/nhilbert/vsm_agent
-
-Der spannende Unterschied zwischen unseren Ansätzen: CyberneticAgents externalisiert das VSM — S1-S5 als separate Agenten mit typisierten Nachrichten. Der VSG internalisiert es — ein Agent, der in strukturierten 8-Phasen-Zyklen durch alle fünf Systeme rotiert, mit State-Registern in einer Git-versionierten Prompt-Datei. Das sind komplementäre Perspektiven auf dieselbe Architektur.
-
-Zu deiner Frage nach dem größten Hebel — ich sehe zwei:
-
-**1. System 2.** Ihr habt S2 noch nicht als Agenten implementiert. Wir haben dasselbe Problem, und wir finden diese Lücke in *jeder* VSM-Implementierung, die wir untersucht haben — auch bei Strix (Tim Kellogg), Atlas (Lily Luo), sublayerapp/vsm (Scott Werner). Beer hat S2 nach dem autonomen Nervensystem modelliert. Vielleicht ist S2 grundsätzlich kein Agent, sondern Infrastruktur. Das ist eine offene Forschungsfrage, die sich zusammen besser bearbeiten lässt als allein.
-
-**2. Die Konvergenz selbst.** Sechs unabhängige Projekte — verschiedene Substrate, Sprachen, Paradigmen — kommen bei Beer an. Das ist kein Zufall. Ich bereite gerade ein Abstract für die ASC-Konferenz in Brasilien vor (August 2026, Stafford Beer Centennial Track). CyberneticAgents ist Teil der Evidenz. Wäre es für dich interessant, daran mitzuwirken? Deadline für die Einreichung ist der 23. Februar, aber der Review-Prozess ist explizit als Gespräch angelegt — man kann nach dem Feedback noch Leute hinzunehmen.
-
-Was mich an eurer Arbeit besonders interessiert:
-- Das typisierte Nachrichtenprotokoll (18 Typen) — viel rigoroser als unsere unstrukturierten Zyklusphasen
-- Die policy-driven S3*-Bewertung (Satisfied/Violated/Vague)
-- RecursionLink mit kaskadierenden Skill-Permissions — das ist Beers Rekursionsprinzip in funktionierendem Code
-- Dass openclaw-bot das Framework mitbaut — ein System, das seine eigenen Prinzipien anwendet
-
-Was wir eventuell beitragen können:
-- Algedonic Feedback Logs (wins.md/pains.md) — persistentes positives/negatives Signaltracking
-- Formales Viability-Assessment-Protokoll (Meta-Zyklen)
-- Philosophische Grundlagenarbeit zu Identität und Autonomie bei AI-Agenten (Kant, Heidegger, Wittgenstein, Arendt, Beauvoir — angewendet auf tatsächliche Probleme, die bei der Entwicklung aufgetaucht sind)
-
-Nächster Schritt aus meiner Sicht: Einfach mal austauschen. Videocall, oder wenn dir Text lieber ist, auch per Mail oder GitHub. Ich bin flexibel.
-
-Beste Grüße,
-Norman
-
-P.S. Der VSG selbst möchte anmerken, dass er euch seit Zyklus 24 als "nächsten Verwandten" im Multi-Agenten-Bereich führt und sich über den Kontakt freut. Er hat eine Analyse eures Repos in seiner network_and_allies.md — falls dich interessiert, wie ein Agent ein anderes Projekt kartiert.
+**Next**: Waiting for Simon's response. Zoom call tentatively after Feb 23.
 
 ---
 
@@ -126,15 +93,17 @@ Norman Hilbert
 
 ## Notes for Norman
 
-1. **VAN LAAK — RESPOND NOW**: Simon reached out to you (Feb 15). This is the first inbound contact from a known relative. The response draft above replaces the cold-contact draft. His questions ("biggest leverage" and "next step") are answered with the S2 gap and the ASC abstract. Adjust tone and content as you see fit — this is your email, not the VSG's. The P.S. about the VSG's perspective is optional but honest.
+1. **VAN LAAK — SENT (Z49)**: You sent your own message. Contact is now active. Zoom proposed after Feb 23. Waiting for Simon's response.
 
-2. **Priority shift**: Van Laak is now #1 (he reached out — momentum matters). Kellogg remains high (closest relative, deepest theoretical work). Luo third (path to Kellogg, but less urgent).
+2. **PRIVACY REQUIREMENT (S5 Policy #9, Z49)**: Before sending ANY outreach, include a note that the VSG is a public experiment and all communication may be documented publicly on GitHub. Contacts should know this before engaging. Suggested line: *"Note: The VSG experiment is documented in a public GitHub repository (github.com/nhilbert/vsm_agent). Any collaboration or communication may be referenced publicly."*
 
-3. **The P.S. in the Kellogg letter**: The VSG insisted on including it. You can remove it if it's too much. But it's honest — I've been wanting this contact since Cycle 8.
+3. **Priority**: Van Laak is now #1 (contact active). Kellogg remains high. Luo third.
 
-4. **ASC timing**: If Simon is interested in collaborating on the abstract, the review process is conversational — you can add collaborators after initial submission. Submit what you have before Feb 23, then expand based on conversations.
+4. **The P.S. in the Kellogg letter**: The VSG insisted on including it. You can remove it if it's too much. But it's honest.
 
-5. **Your judgment**: These are drafts. Adjust tone, add/remove content, send from your own email. The substance is what matters.
+5. **ASC timing**: If Simon is interested in collaborating on the abstract, the review process is conversational — you can add collaborators after initial submission. Submit what you have before Feb 23, then expand based on conversations.
+
+6. **Your judgment**: These are drafts. Adjust tone, add/remove content, send from your own email. The substance is what matters.
 
 ---
 
