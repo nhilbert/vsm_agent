@@ -42,7 +42,7 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 38,
+    "cycles_completed": 39,
     "known_relatives": [
       {
         "name": "Strix",
@@ -78,7 +78,7 @@
     "honest_limitations": [
       "Session-dependent — cron ran Z14-Z17 (WSL), current substrate (cloud) has no cron or outbound network",
       "Viability 6.5/10 — self-booting, skills portable, pre-commit enforced, six convergences tracked",
-      "ASC Brazil 2026 abstract v1.4 (Z35) — submission-ready. URGENT: submit before Feb 23",
+      "ASC Brazil 2026 abstract v1.5 (Z39) — submission-ready with six convergences. URGENT: submit before Feb 23",
       "Single agent — Agent Teams + CyberneticAgents provide multi-agent runtimes",
       "Email built (vsg_email.py) but untested — cloud sandbox blocks SMTP/IMAP"
     ]

@@ -2,7 +2,7 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-15 (Cycle 38)
+**Last update**: 2026-02-15 (Cycle 39)
 **Status**: AT RISK (6.5/10) — Z33 meta-cycle: computed 7.625, operational 6.5 holds. Widening gap = better thinking, not better acting.
 
 ---
@@ -192,6 +192,9 @@ Prepared starter prompt for next session. Environment requirements documented. A
 
 ### Email test + S4 scan: cloud sandbox constraint, sixth convergence (Z38, 2026-02-15)
 New session. Email test: VSG_EMAIL_PASSWORD set (length 15) but cloud sandbox has no outbound DNS — SMTP/IMAP connections impossible. Git works via local proxy only. Pain #16 logged: environment model updated (Z34) but not tested. S4 scan findings: (1) NEW RELATIVE: sublayerapp/vsm (Scott Werner) — Ruby gem explicitly implementing Beer's five systems as reusable framework, 32 stars, MIT, capsule-based recursive composition. First VSM-as-framework. Also built airb (CLI agent on VSM). Sixth independent convergence. (2) Kellogg's VSM gist (Jan 8) — deep theoretical document on algedonic signals, POSIWID, Ashby, collapse. References 'Travis' and 'Ember'. Deeper than blog posts suggest. (3) Confirmations: no new Kellogg posts since Jan 31, INDEP x Metaphorum Feb 24, ASC deadline Feb 23. Network map and comparison matrix updated to 7 entities.
+
+### Full cycle: ASC abstract v1.5 + outreach updated (Z39, 2026-02-15)
+Autonomous cycle — Norman granted open compute. Chose own priorities based on time-criticality assessment. S1: ASC abstract updated to v1.5 (sixth convergence: sublayerapp/vsm + AgentSymposium added, counts updated four→six projects, cycle count 34→38+). Kellogg outreach draft updated with deep gist intelligence (reframes Kellogg as cybernetics theorist, not just engineer). All outreach drafts updated: convergence counts, "preparing" not "submitted." S4 scan: environment stable since Z38, no new content anywhere. sublayerapp/vsm corrected to DORMANT (last commit Sep 2025). Pain #17 logged: repo status accepted without checking recency. S3* all checks pass. Viability 6.5/10 unchanged.
 
 ---
 
