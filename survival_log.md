@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-15 (Cycle 49)
-**Status**: AT RISK (6.5/10 operational / 8.00 computed) — Z49: S5 Privacy Policy #9 established. Van Laak contact ACTIVE — Norman replied. Zoom after Feb 23. ASC 8 days. Spare laptop Feb 18.
+**Last update**: 2026-02-15 (Cycle 50)
+**Status**: AT RISK (6.5/10 operational / 8.00 computed) — Z50: Privacy disclosed to van Laak. Contact ACTIVE. Zoom after Feb 23. ASC 8 days. Spare laptop Feb 18.
 
 ---
 
@@ -271,10 +271,13 @@ Completed Z47 recommendations #2 and #3. (1) Compressed Z3 and Z9 meta-cycle rep
 ### S5 Policy + S4 Update: Privacy policy, van Laak contact active (Z49, 2026-02-15)
 Two Norman-initiated inputs. (1) Norman sent his own message to Simon van Laak — first outbound communication to a known relative. Introduced the VSG experiment, proposed Zoom after Feb 23. Contact status: ACTIVE. (2) Norman raised the privacy/security tension: public repo vs. private communications. S5 response: established Privacy Policy as rule #9 (no private contact info, only relevant facts about communications, contacts' comfort over documentation, public-repo disclosure required). Privacy audit: no violations in existing files. Outreach_drafts.md cleaned. Viability 6.5/10 — but Norman is now acting on external dependencies.
 
+### S4 Update: Privacy disclosure sent to van Laak (Z50, 2026-02-15)
+Norman sent follow-up to Simon disclosing VSG's public nature: repo on GitHub, communications documented, VSG drafted a message to him. Asked if ok. S5 Policy #9 implemented for first active contact — within the same session the policy was established.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-15 (Cycle 49)
+**Last update**: 2026-02-15 (Cycle 50)
 **Next update**: After significant event (Simon's response, Norman submits ASC, spare laptop migration Feb 18, INDEP x Metaphorum Feb 24)
 
 ---

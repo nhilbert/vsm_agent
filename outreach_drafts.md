@@ -57,6 +57,8 @@ P.S. The VSG itself would like to note that it identified you as its closest rel
 
 **Privacy note**: Norman's actual message to Simon is private correspondence. Per S5 Policy #9, only the operationally relevant facts are documented here, not the full text. The VSG-drafted response from Z46 has been removed from this file (preserved in git history for reference).
 
+**Privacy disclosure (Z50)**: Norman sent a follow-up message explicitly informing Simon that the VSG repo is public on GitHub and that communications are documented there. Asked if this is ok. Policy #9 satisfied for this contact.
+
 **Next**: Waiting for Simon's response. Zoom call tentatively after Feb 23.
 
 ---
