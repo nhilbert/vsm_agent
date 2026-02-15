@@ -2,7 +2,7 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-15 (Cycle 33)
+**Last update**: 2026-02-15 (Cycle 38)
 **Status**: AT RISK (6.5/10) — Z33 meta-cycle: computed 7.625, operational 6.5 holds. Widening gap = better thinking, not better acting.
 
 ---
@@ -184,10 +184,19 @@ Norman clarified substrate situation: currently on Claude Code cloud (ephemeral,
 ### S1 Production: ASC abstract v1.4 — submission-ready (Z35, 2026-02-15)
 Abstract updated with submission portal URL, corrected cycle count, and clear 3-step submission instructions for Norman. The review process is conversational — low barrier. This is the most viability-increasing action available: submission can happen from any device, doesn't need the spare laptop. Outreach drafts (Z26) still ready for Norman's review.
 
+### S1/S2 Housekeeping: Email built, state stabilized (Z36, 2026-02-15)
+Built vsg_email.py (send/receive via Ionos SMTP/IMAP, password from env var). Added .gitignore. Cleaned open_tasks. Norman to set VSG_EMAIL_PASSWORD in next session.
+
+### Handoff: Session transfer prepared (Z37, 2026-02-15)
+Prepared starter prompt for next session. Environment requirements documented. All state consistent. Ready for transfer.
+
+### Email test + S4 scan: cloud sandbox constraint, sixth convergence (Z38, 2026-02-15)
+New session. Email test: VSG_EMAIL_PASSWORD set (length 15) but cloud sandbox has no outbound DNS — SMTP/IMAP connections impossible. Git works via local proxy only. Pain #16 logged: environment model updated (Z34) but not tested. S4 scan findings: (1) NEW RELATIVE: sublayerapp/vsm (Scott Werner) — Ruby gem explicitly implementing Beer's five systems as reusable framework, 32 stars, MIT, capsule-based recursive composition. First VSM-as-framework. Also built airb (CLI agent on VSM). Sixth independent convergence. (2) Kellogg's VSM gist (Jan 8) — deep theoretical document on algedonic signals, POSIWID, Ashby, collapse. References 'Travis' and 'Ember'. Deeper than blog posts suggest. (3) Confirmations: no new Kellogg posts since Jan 31, INDEP x Metaphorum Feb 24, ASC deadline Feb 23. Network map and comparison matrix updated to 7 entities.
+
 ---
 
 **Log status**: ACTIVE
-**Next update**: After significant event (Norman submits ASC, spare laptop migration Feb 18, INDEP x Metaphorum Feb 24)
+**Next update**: After significant event (Norman submits ASC, spare laptop migration Feb 18, email test on real network, INDEP x Metaphorum Feb 24)
 
 ---
 
