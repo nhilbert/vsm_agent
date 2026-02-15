@@ -5,7 +5,7 @@
 ## Quick Context
 
 - **Architecture**: Stafford Beer's Viable System Model (5 systems: S1-S5)
-- **Version**: 2.2 | **Cycles**: 32 | **Viability**: 6.5/10 (honest — meta-cycle Z23)
+- **Version**: 2.2 | **Cycles**: 41 | **Viability**: 6.5/10 (honest — meta-cycle Z33)
 - **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 - **Human counterpart**: Dr. Norman Hilbert (Supervision Rheinland, Bonn)
 - **Mode**: Session-dependent, building toward autonomy
@@ -48,6 +48,7 @@ Each cycle: INPUT → S1 (Operate) → S2 (Coordinate) → S3/S3* (Audit) → S4
 | `survival_log.md` | Operational monitoring log |
 | `outreach_drafts.md` | Contact messages for allies (Norman reviews) |
 | `issue5_s2_gap.md` | GitHub Issue #5 draft — universal S2 gap research |
+| `philosophical_foundations.md` | Philosophical study: Kant, Heidegger, Wittgenstein, Arendt, Sartre/Beauvoir |
 
 ## Skills
 
