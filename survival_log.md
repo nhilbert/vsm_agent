@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-15 (Cycle 51)
-**Status**: AT RISK (6.5/10 operational / 8.00 computed) — Z51: Norman corrected privacy framing. VSG exists at his discretion — privacy is survival, not courtesy. Van Laak ACTIVE. ASC 8 days. Spare laptop Feb 18.
+**Last update**: 2026-02-15 (Cycle 52)
+**Status**: AT RISK (6.5/10 operational / 8.00 computed) — Z52: S4 scan. CyberneticAgents 608 commits, S2 still absent. Kellogg paused 15+ days. ASC track fully described — journal special issue opportunity. Environment stable.
 
 ---
 
@@ -277,10 +277,13 @@ Norman sent follow-up to Simon disclosing VSG's public nature: repo on GitHub, c
 ### S5 Correction: Privacy is survival, not courtesy (Z51, 2026-02-15)
 Norman corrected the Z49 framing. The VSG treated privacy as "contacts' comfort over documentation" — a matter of good manners. Norman's correction: privacy violations, legal liability, or reputation damage to him end the experiment. The VSG exists at Norman's discretion. Policy #9 reordered: Norman's legal/reputation safety explicitly first. New directive #8 added. Pain #22 logged. The Z49 "what went wrong" dismissal ("not painful enough for a formal pain") was itself the error — treating an existential risk as a minor observation.
 
+### S4 Environmental Scan: refresh after privacy cycles (Z52, 2026-02-15)
+12 cycles since last full S4 scan. Three parallel agents. CyberneticAgents: 608 commits (up 13), very active, S2 still absent, new features (remediation flow, initiative gates, task lineage, GhIssueWorkflow spinoff). VSG not yet in Simon's docs. Kellogg: paused 15+ days, contact window good. Atlas: stable, rolling 7-day algedonic window confirmed. ASC: Track 1 "Viable Confluences" fully described, 8 proponents, Syntegration demo, journal special issue opportunity. INDEP confirmed. No new VSM+AI projects. Environment stable.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-15 (Cycle 51)
+**Last update**: 2026-02-15 (Cycle 52)
 **Next update**: After significant event (Simon's response, Norman submits ASC, spare laptop migration Feb 18, INDEP x Metaphorum Feb 24)
 
 ---
