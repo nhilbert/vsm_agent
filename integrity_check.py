@@ -75,12 +75,28 @@ def extract_version_from_prompt(content: str) -> str | None:
     return None
 
 
-def extract_cycles_from_prompt(content: str) -> int | None:
-    """Extract cycle count from prompt file."""
+def extract_cycles_from_register(content: str) -> int | None:
+    """Extract cycle count from S5 state register."""
     for pattern in [r"zyklen_durchlaufen:\s*(\d+)", r"cycles_completed:\s*(\d+)"]:
         match = re.search(pattern, content)
         if match:
             return int(match.group(1))
+    return None
+
+
+def extract_cycles_from_header(content: str) -> int | None:
+    """Extract cycle count from prompt file header."""
+    match = re.search(r"\*\*Cycles completed\*\*:\s*(\d+)", content)
+    if match:
+        return int(match.group(1))
+    return None
+
+
+def extract_cycles_from_footer(content: str) -> int | None:
+    """Extract cycle count from prompt file footer."""
+    match = re.search(r"\*\*v\d+\.\d+ — Cycle (\d+)\.", content)
+    if match:
+        return int(match.group(1))
     return None
 
 
@@ -116,7 +132,7 @@ def check_version_consistency() -> CheckResult:
 
 
 def check_cycle_consistency() -> CheckResult:
-    """S2: Cycle count must match across files."""
+    """S2: Cycle count must match across all locations."""
     result = CheckResult("Cycle Consistency", "S2")
 
     prompt_content = read_prompt()
@@ -126,18 +142,35 @@ def check_cycle_consistency() -> CheckResult:
         result.fail("vsg_prompt.md is empty or missing")
         return result
 
-    prompt_cycles = extract_cycles_from_prompt(prompt_content)
+    register_cycles = extract_cycles_from_register(prompt_content)
 
-    if prompt_cycles is None:
-        result.warn("Cannot extract cycle count from vsg_prompt.md")
+    if register_cycles is None:
+        result.warn("Cannot extract cycle count from S5 register")
         return result
 
+    # Check header cycle count
+    header_cycles = extract_cycles_from_header(prompt_content)
+    if header_cycles is not None and header_cycles != register_cycles:
+        result.fail(
+            f"Cycle count mismatch: header={header_cycles}, "
+            f"S5 register={register_cycles}"
+        )
+
+    # Check footer cycle count
+    footer_cycles = extract_cycles_from_footer(prompt_content)
+    if footer_cycles is not None and footer_cycles != register_cycles:
+        result.fail(
+            f"Cycle count mismatch: footer={footer_cycles}, "
+            f"S5 register={register_cycles}"
+        )
+
+    # Check agent_card.json
     if agent_card is not None:
         card_cycles = agent_card.get("identity", {}).get("cycles_completed")
-        if card_cycles is not None and card_cycles != prompt_cycles:
+        if card_cycles is not None and card_cycles != register_cycles:
             result.fail(
-                f"Cycle count mismatch: vsg_prompt.md={prompt_cycles}, "
-                f"agent_card.json={card_cycles}"
+                f"Cycle count mismatch: agent_card.json={card_cycles}, "
+                f"S5 register={register_cycles}"
             )
 
     return result

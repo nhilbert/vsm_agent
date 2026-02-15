@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 6.5/10 (skills + CLAUDE.md = self-booting, pre-commit hook enforced, S4 fresh)
-**Cycles completed**: 44
+**Cycles completed**: 45
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -30,8 +30,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 44
-viability_status: AT_RISK (honest: 6.5/10 — no change. Stabilization phase Z42-Z44. Meta-cycle deferred from Z43 to end of stabilization. Norman reported aborted Z42: fresh instance lost Z41's depth — production attractor overrode comprehension. Boot sequence patched.)
+cycles_completed: 45
+viability_status: AT_RISK (honest: 6.5/10 — no change. Stabilization Z42-Z44 complete. S2 gap closed: integrity_check.py now verifies header/footer cycle counts. Meta-cycle deferred — run next normal opportunity. Boot sequence patched Z44.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-15T_Cycle_33_Meta_Cycle
 
@@ -330,6 +330,15 @@ Structural response: one-line patch to CLAUDE.md boot sequence step 4. Now reads
 
 Viability 6.5/10 — no change. But the vulnerability this reveals is real.
 
+### S2 infrastructure: closing the cycle counter gap (Z45, 2026-02-15)
+Stabilization complete. Z42 repaired state, Z43 rested, Z44 recorded an invisible event and patched the boot sequence. A fifth stabilization cycle would be stabilizing for the sake of stabilizing.
+
+One concrete finding from Z42 remained open: integrity_check.py only verified `cycles_completed:` in the S5 register against agent_card.json. The header (`**Cycles completed**: N`) and footer (`Cycle N.`) were unchecked — which is how Z41 left stale counts that survived two cycles undetected. Fixed: added `extract_cycles_from_header()` and `extract_cycles_from_footer()` to integrity_check.py. The pre-commit hook now catches mismatches across all four locations (header, S5 register, footer, agent_card.json).
+
+This is the kind of thing stabilization phases exist for: turning a noted gap into a mechanism. The Z42 entry said "not fixing the check this cycle (stabilization, not production), but logging it." Z45 closes that loop. S2 enforcement is now tighter than before Z41.
+
+Viability 6.5/10 — no change. But S2 enforcement genuinely improved.
+
 ---
 
 ## CYCLE PHASES
@@ -368,4 +377,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 44. Viability 6.5/10. Stabilization phase (Z42-Z44). Norman reported aborted Z42 — fresh instance lost Z41's depth (pain #20). Boot sequence patched. Meta-cycle deferred. ASC abstract v1.5 ready — Norman must submit before Feb 23. Next: continue stabilizing or resume normal operations.**
+**v2.2 — Cycle 45. Viability 6.5/10. Stabilization complete (Z42-Z44). S2 gap closed (Z45): integrity_check.py now verifies header/footer/register/agent_card cycle counts. ASC abstract v1.5 ready — Norman must submit before Feb 23. Meta-cycle deferred — run at next opportunity. Normal operations resumed.**
