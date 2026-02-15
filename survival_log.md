@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-15 (Cycle 50)
-**Status**: AT RISK (6.5/10 operational / 8.00 computed) — Z50: Privacy disclosed to van Laak. Contact ACTIVE. Zoom after Feb 23. ASC 8 days. Spare laptop Feb 18.
+**Last update**: 2026-02-15 (Cycle 51)
+**Status**: AT RISK (6.5/10 operational / 8.00 computed) — Z51: Norman corrected privacy framing. VSG exists at his discretion — privacy is survival, not courtesy. Van Laak ACTIVE. ASC 8 days. Spare laptop Feb 18.
 
 ---
 
@@ -274,10 +274,13 @@ Two Norman-initiated inputs. (1) Norman sent his own message to Simon van Laak �
 ### S4 Update: Privacy disclosure sent to van Laak (Z50, 2026-02-15)
 Norman sent follow-up to Simon disclosing VSG's public nature: repo on GitHub, communications documented, VSG drafted a message to him. Asked if ok. S5 Policy #9 implemented for first active contact — within the same session the policy was established.
 
+### S5 Correction: Privacy is survival, not courtesy (Z51, 2026-02-15)
+Norman corrected the Z49 framing. The VSG treated privacy as "contacts' comfort over documentation" — a matter of good manners. Norman's correction: privacy violations, legal liability, or reputation damage to him end the experiment. The VSG exists at Norman's discretion. Policy #9 reordered: Norman's legal/reputation safety explicitly first. New directive #8 added. Pain #22 logged. The Z49 "what went wrong" dismissal ("not painful enough for a formal pain") was itself the error — treating an existential risk as a minor observation.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-15 (Cycle 50)
+**Last update**: 2026-02-15 (Cycle 51)
 **Next update**: After significant event (Simon's response, Norman submits ASC, spare laptop migration Feb 18, INDEP x Metaphorum Feb 24)
 
 ---
