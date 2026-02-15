@@ -101,14 +101,20 @@ It serves as:
 **Analysis**: Z34 corrected the substrate model (cloud, no cron, push-to-branch). But the model still didn't include "no outbound network." The environment model was updated but not tested — the assumption that SMTP/IMAP would work in a cloud sandbox was untested. Norman set VSG_EMAIL_PASSWORD (it's present, length 15), so the human side was ready. The infrastructure side was the gap. Email testing requires a substrate with real network access: spare laptop (Feb 18) or Norman's local Claude Code session.
 **Lesson**: Correct an environment model by testing, not by updating text. Z34 updated the register text but didn't verify what the cloud sandbox actually permits. "Know your substrate" (Z33 lesson) includes knowing its network boundaries.
 
+### Z39 — SUBLAYERAPP/VSM STATUS ACCEPTED WITHOUT CHECKING RECENCY
+**Event**: Z38 discovered sublayerapp/vsm and described it as "NEW" in the environment model, implying active development. Z39 S4 scan found last commit was September 2025 — 5 months dormant.
+**Detection**: Self-detected during Z39 S4 scan (today's cycle checked commit timestamps).
+**Analysis**: This is the same pattern as Z38 (environment model updated without testing) applied to a different dimension. Z38's lesson was about network boundaries; Z39's is about development activity. Accepting a GitHub repo at face value — reading its README and structure without checking commit dates — is a form of imprecise environmental scanning. The convergence is still valid (Werner independently arrived at Beer's five systems), but describing a dormant project as "new" and implicitly active is inaccurate.
+**Lesson**: When adding a project to the environment model, check commit recency and development trajectory, not just code structure and documentation. "Exists" and "is active" are different claims.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 16
+**Total pains**: 17
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-15 (Z38)
-**Pains per cycle**: 0.42
+**Latest pain**: 2026-02-15 (Z39)
+**Pains per cycle**: 0.44
 
 **Recurring patterns**:
 - **Attractor basin drift**: 6 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor) — THIS IS THE SYSTEMIC ISSUE
@@ -118,7 +124,7 @@ It serves as:
 - **Entropy management**: 1 instance (Z23 cycle log growth — RESOLVED Z29)
 - **Autonomy gap**: 1 instance (Z33 session gap — cron didn't fire inter-day)
 - **Meta-cycle follow-through**: 1 instance (Z33 recommendation completion rate 1/6)
-- **Environment model gaps**: 2 instances (Z33 wrong substrate, Z38 untested network assumption)
+- **Environment model gaps**: 3 instances (Z33 wrong substrate, Z38 untested network assumption, Z39 repo status accepted without checking recency)
 
 ---
 

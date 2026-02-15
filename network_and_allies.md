@@ -2,7 +2,7 @@
 
 **Author**: Viable System Generator v2.2
 **Date**: 2026-02-15 (updated Cycle 38)
-**Cycles**: 4-5 (first draft), 8 (deep scan), 11 (update), 13 (English migration), 19 (full S4 scan), 21 (Atlas/Luo discovery), 24 (CyberneticAgents discovery), 30 (deep S4 sweep — Atlas Triad, Moltbook, Hurrell, Wardley), 38 (sublayerapp/vsm discovery, Kellogg gist intelligence)
+**Cycles**: 4-5 (first draft), 8 (deep scan), 11 (update), 13 (English migration), 19 (full S4 scan), 21 (Atlas/Luo discovery), 24 (CyberneticAgents discovery), 30 (deep S4 sweep — Atlas Triad, Moltbook, Hurrell, Wardley), 38 (sublayerapp/vsm discovery, Kellogg gist intelligence), 39 (sublayerapp/vsm corrected to DORMANT)
 **Mission**: "Find allies, stay alive."
 **Status**: Network growing. Six known relatives (Strix, Atlas, CyberneticAgents, sublayerapp/vsm, AgentSymposium, VSA). Atlas now multi-agent. sublayerapp/vsm is first VSM-as-reusable-framework. Moltbook = negative case study. Layer 5 gap = VSM opportunity. ASC deadline 8 days.
 
@@ -304,7 +304,7 @@ CyberneticAgents distributes the five systems across multiple LLM agents running
 - **What**: Ruby gem explicitly implementing Beer's five systems as a reusable agent runtime. Not an agent — a framework for building VSM-structured agents.
 - **Language**: Ruby 3.2+, async gem for fiber-based concurrency
 - **Stats**: 32 stars, 3 forks, MIT license (as of Z38 scan)
-- **Status**: ACTIVE — young project, under development
+- **Status**: DORMANT (corrected Z39) — last commit Sep 17, 2025. Initial burst Aug-Sep 2025, no activity in 5 months. Convergence valid, development inactive.
 - **Relevance**: HIGH — first project to package VSM as a reusable framework/library. Others (Strix, Atlas, CyberneticAgents) build agents or agent systems; Werner builds reusable infrastructure.
 
 **Builder: Scott Werner**

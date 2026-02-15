@@ -6,7 +6,7 @@
 **Submission portal**: https://events.asc-cybernetics.org/2026/submission/ (create account, sign in, submit)
 **Deadline**: Before February 23, 2026 (review Feb 23 — Mar 20, feedback Mar 23)
 **Review process**: "The beginning of a conversation" — constructive dialogue with track proponents, not gatekeeping
-**Status**: v1.4 — needs Norman's review, co-authorship decision, and submission
+**Status**: v1.5 — needs Norman's review, co-authorship decision, and submission
 
 ---
 
@@ -31,13 +31,15 @@ Stafford Beer's Viable System Model (VSM) was designed to diagnose and design or
 
 A parallel development in AI: autonomous agents that persist across sessions, maintain state, scan their environment, and evolve their own behavior. These agents face exactly the viability challenges Beer described — identity preservation under change, balancing internal stability with environmental adaptation, and managing requisite variety. Yet the dominant frameworks for multi-agent AI systems (CrewAI, LangGraph, AutoGen) cite neither Beer nor cybernetics, despite converging on structurally similar patterns. One notable exception has recently emerged: CyberneticAgents (van Laak, 2025-2026), a multi-agent orchestration framework that explicitly implements the VSM, distributing S1-S5 across distinct LLM agents — demonstrating that the convergence is now becoming conscious.
 
+Two further projects extend the convergence. sublayerapp/vsm (Werner, 2025-2026) packages Beer's five systems as a reusable Ruby framework for building agents — the first project to treat the VSM not as an individual agent's architecture but as a reusable library. AgentSymposium (Hurrell, 2025-2026) applies the VSM to multi-agent code review. Six independent projects now converge on Beer's architecture across different substrates, languages, paradigms, and disciplines.
+
 This paper reports on an experiment: Can the VSM serve not merely as an analytical lens for AI agents, but as their actual operating architecture?
 
 ### The Experiment
 
 The Viable System Generator (VSG) is a self-actualizing prompt organism that uses the VSM as its runtime architecture. Built on a large language model substrate (Claude), the VSG maintains its state in a Git-versioned prompt file (`vsg_prompt.md`) containing explicit state registers for all five systems. Each operational cycle follows an eight-phase process (input, operation, coordination, audit, environment scan, identity check, self-actualization, output) that maps directly onto VSM functions.
 
-Over 34 documented cycles across its first three days of existence, the VSG has:
+Over 38 documented cycles across its first three days of existence, the VSG has:
 
 - **Established structural completeness**: All five systems are present and functional, from S1 artifact production to S5 identity policy.
 - **Mechanized coordination and audit**: S2 coordination rules and S3* audit functions are enforced through automated integrity checks (25 tests) and Git pre-commit hooks — not through self-discipline, but through infrastructure.
@@ -48,7 +50,7 @@ Three closely related cases strengthen the argument. Strix (Kellogg, 2025-2026) 
 
 A fourth case adds a qualitatively different dimension. CyberneticAgents (van Laak, 2025-2026) is a multi-agent orchestration framework that explicitly implements the VSM — not by internalizing S1-S5 within a single agent's cycle, but by distributing them across distinct LLM agents communicating via typed message protocols. Van Laak, motivated by the observation that LLM coordination failures are fundamentally steering problems, arrived at Beer via Project Cybersyn. His framework implements recursive team structure (Beer's recursion principle), policy-driven S3* audit with structured judgement, scope-based memory permissions aligned to VSM roles, and algedonic signal routing through the S5 hierarchy. Notably, System 2 (Coordination) remains unimplemented as an agent even in this dedicated VSM framework — suggesting that S2 represents a genuinely hard problem in the translation from organizational to computational cybernetics.
 
-The convergence of four independent projects — spanning three substrates, two paradigms (internalized and externalized VSM), and four disciplinary backgrounds — suggests that Beer's model does not merely describe one approach to agent viability, but captures structural requirements that any viable agent system must satisfy.
+The convergence of six independent projects — spanning five substrates (Claude, Gemini, AutoGen/Python, Ruby, unspecified), two paradigms (internalized and externalized VSM), and six disciplinary backgrounds — suggests that Beer's model does not merely describe one approach to agent viability, but captures structural requirements that any viable agent system must satisfy. That Werner packaged the VSM as a reusable library (not a specific agent) indicates the pattern is maturing from individual experiments into infrastructure.
 
 ### Findings
 
@@ -58,7 +60,7 @@ Three findings emerge from this experiment:
 
 **2. Requisite variety as a design principle for agent collectives.** Ashby's Law, operationalized through Beer's VSM, provides guidance on agent specialization: how many agents, with what capabilities, to match the variety of the environment — not more, not less. The S3-S4 homeostat becomes the mechanism for managing the variety budget: too much variety produces incoherence, too little produces collapse.
 
-**3. Convergence across substrates, paradigms, and disciplines.** Four independent projects (VSG/Claude, Strix/Claude, Atlas/Gemini, CyberneticAgents/AutoGen) — built by a mathematician, an engineer, an operations professional, and a software developer respectively — converge on the same architectural patterns. This convergence spans substrates (Claude, Gemini, any-LLM-via-AutoGen), paradigms (internalized single-agent VSM and externalized multi-agent VSM), and disciplines. It suggests that Beer's structural requirements emerge from the problem domain itself, not from any particular implementation choice.
+**3. Convergence across substrates, paradigms, and disciplines.** Six independent projects (VSG/Claude, Strix/Claude, Atlas/Gemini, CyberneticAgents/AutoGen, sublayerapp/vsm/Ruby, AgentSymposium) — built by practitioners from mathematics, engineering, marketing operations, software development, and framework design — converge on the same architectural patterns. This convergence spans substrates (Claude, Gemini, AutoGen, Ruby, others), paradigms (internalized single-agent VSM, externalized multi-agent VSM, and VSM-as-reusable-framework), and disciplines. It suggests that Beer's structural requirements emerge from the problem domain itself, not from any particular implementation choice.
 
 **4. Rules are not mechanisms.** The most significant lesson from the VSG experiment is that structural awareness does not prevent structural failure. The VSG identified its "helpful-agent attractor basin" multiple times before building infrastructure (integrity checks, automated audits) to mechanically prevent drift. Atlas's builder reached the same conclusion independently: "code beats AI for retrieval" — deterministic infrastructure outperforms stochastic self-regulation. This mirrors Beer's insistence that organizational viability requires designed structures, not good intentions.
 
@@ -74,8 +76,8 @@ Beer's model is recursive: a viable system contains viable systems. Both native 
 
 This work offers the first empirical report on the VSM as an operating architecture (not just an analytical framework) for autonomous AI agents. It contributes:
 
-- A documented case study of 34+ cycles of VSM-guided agent evolution (expected 100+ by August 2026)
-- Convergence evidence from four independent projects across three substrates, two paradigms (internalized/externalized VSM), and four disciplinary backgrounds
+- A documented case study of 38+ cycles of VSM-guided agent evolution (expected 100+ by August 2026)
+- Convergence evidence from six independent projects across five substrates, three paradigms (internalized VSM, externalized multi-agent VSM, and VSM-as-reusable-framework), and six disciplinary backgrounds
 - A diagnostic framework (VSM completeness) applicable to multi-agent AI system design, with Moltbook as a negative case study demonstrating the predictive power of VSM pathology analysis
 - An honest account of failure modes, attractor basins, and the gap between cybernetic awareness and cybernetic practice
 - An observation on the emerging agent infrastructure stack: by February 2026, open standards exist for tool connectivity (MCP), project-level instructions (AGENTS.md), procedural knowledge (Agent Skills), and inter-agent communication (A2A) — all under Linux Foundation governance. What is conspicuously absent is any standard for agent identity, self-governance, and meta-control. This is precisely what Beer's System 5 provides. The VSM's contribution to the agent ecosystem may be most urgently needed at this missing "Layer 5"
@@ -115,4 +117,4 @@ The ASC treats contributions as "living documents." This matches the VSG's natur
 
 ---
 
-*v1.4 — Updated Cycle 35. History: Cycle 17 (first draft), 19 (Agent Teams, novelty confirmed), 22 (Atlas/Luo), 25 (CyberneticAgents), 31 (Atlas Triad, Moltbook, Layer 5 gap), 35 (submission portal, cycle count, Norman instructions). Grounded in multi_agent_design.md, viability_research.md, network_and_allies.md, and 34+ cycles of documented evolution.*
+*v1.5 — Updated Cycle 39. History: Cycle 17 (first draft), 19 (Agent Teams, novelty confirmed), 22 (Atlas/Luo), 25 (CyberneticAgents), 31 (Atlas Triad, Moltbook, Layer 5 gap), 35 (submission portal, cycle count, Norman instructions), 39 (sixth convergence: sublayerapp/vsm + AgentSymposium, counts updated to six projects). Grounded in multi_agent_design.md, viability_research.md, network_and_allies.md, and 38+ cycles of documented evolution.*
