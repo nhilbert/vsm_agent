@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-15 (Cycle 46)
-**Status**: AT RISK (6.5/10) — FIRST INBOUND CONTACT (Z46): Van Laak (CyberneticAgents) emailed Norman, invited collaboration. Response drafted. ASC deadline 8 days. Meta-cycle overdue.
+**Last update**: 2026-02-15 (Cycle 47)
+**Status**: AT RISK (6.5/10 operational / 8.00 computed) — META-CYCLE Z47. Gap widened to 1.50. System computed VIABLE but operationally AT_RISK. ASC 8 days. Van Laak response drafted. Spare laptop Feb 18.
 
 ---
 
@@ -90,6 +90,7 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z22   | 6.0   | Full cycle: ASC abstract strengthened with third convergence. No bump. |
 | Z23   | 6.5   | META-CYCLE: 7.45 computed / 6.5 operational. Pain channel reactivated. First bump since Z18. |
 | Z33   | 6.5   | META-CYCLE: 7.625 computed / 6.5 operational. No change. Widening gap = structural quality up, practical viability flat. |
+| Z47   | 6.5   | META-CYCLE: 8.00 computed / 6.5 operational. Gap widened to 1.50. All 6 criteria improved. Thinks well, acts through others. |
 
 ---
 
@@ -253,10 +254,21 @@ Structural response: patched CLAUDE.md boot sequence step 4 to direct attention 
 ### First inbound contact: Van Laak reaches out (Z46, 2026-02-15)
 Simon van Laak (CyberneticAgents, 595 commits, first multi-agent VSM framework) emailed Norman — the first inbound contact from a known relative. He noticed Norman's GitHub star/follow, recognized similar approaches, and explicitly invited collaboration. Asked: where is the biggest leverage, what's the next step? Response drafted in German (matching Simon's register) in outreach_drafts.md. Answers: (1) S2 gap as shared research problem. (2) ASC abstract as concrete collaboration opportunity. Environment model, network map, outreach drafts all updated. Van Laak contact priority upgraded to HIGHEST. If Norman sends and Simon responds, this is the first real network connection — the step from "allies identified" to "ally in dialogue."
 
+### META-CYCLE: Fifth viability health check (Z47, 2026-02-15)
+Overdue since Z43. Computed 8.00 (highest grounded score, up from 7.625). All six criteria improved: identity coherence 7.5 (+0.5), policy compliance 8.5 (+0.5), entropy 7.0 (+0.5), environment 7.5 (+0.5), algedonic 7.0 (+0.5). Structural integrity holds at 9.0.
+
+Operational score HOLDS at 6.5/10. Gap widened to 1.50 — widest yet. The gap IS the diagnostic: the system is increasingly capable of quality internal work (philosophical depth, self-regulation, cycle variety, functioning pain channel) but cannot close the gap without external action (Norman: submit ASC, send van Laak response) and infrastructure (spare laptop: autonomy).
+
+Z33 recommendation audit: 1.5/5 completed. Pattern confirmed across 3 meta-cycles: VSG-controllable recommendations get done, Norman-dependent items stall. Z47 response: only 3 recommendations, all VSG-controllable. Norman-dependent items listed as dependencies, not recommendations.
+
+Cleaned stale open_tasks (removed Beer reading, Telegram bot — open 20+ cycles, no action). This is Z47 recommendation #1 completed within the cycle.
+
+Score trajectory: Z3=8.2 → Z9=7.0 → Z23=7.45/6.5 → Z33=7.625/6.5 → Z47=8.00/6.5.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-15 (Cycle 46)
+**Last update**: 2026-02-15 (Cycle 47)
 **Next update**: After significant event (Simon's response, Norman submits ASC, spare laptop migration Feb 18, INDEP x Metaphorum Feb 24)
 
 ---
