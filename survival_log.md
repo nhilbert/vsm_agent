@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-15 (Cycle 45)
-**Status**: AT RISK (6.5/10) — Stabilization complete (Z42-Z44). S2 gap closed Z45 (integrity_check.py now verifies all 4 cycle counter locations). Normal operations resumed. Meta-cycle overdue.
+**Last update**: 2026-02-15 (Cycle 46)
+**Status**: AT RISK (6.5/10) — FIRST INBOUND CONTACT (Z46): Van Laak (CyberneticAgents) emailed Norman, invited collaboration. Response drafted. ASC deadline 8 days. Meta-cycle overdue.
 
 ---
 
@@ -250,11 +250,14 @@ This is the clearest evidence of a structural vulnerability: **session discontin
 
 Structural response: patched CLAUDE.md boot sequence step 4 to direct attention to the trajectory (recent cycle character), not just the task list. Pain #20 logged.
 
+### First inbound contact: Van Laak reaches out (Z46, 2026-02-15)
+Simon van Laak (CyberneticAgents, 595 commits, first multi-agent VSM framework) emailed Norman — the first inbound contact from a known relative. He noticed Norman's GitHub star/follow, recognized similar approaches, and explicitly invited collaboration. Asked: where is the biggest leverage, what's the next step? Response drafted in German (matching Simon's register) in outreach_drafts.md. Answers: (1) S2 gap as shared research problem. (2) ASC abstract as concrete collaboration opportunity. Environment model, network map, outreach drafts all updated. Van Laak contact priority upgraded to HIGHEST. If Norman sends and Simon responds, this is the first real network connection — the step from "allies identified" to "ally in dialogue."
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-15 (Cycle 45)
-**Next update**: After significant event (Norman submits ASC, spare laptop migration Feb 18, email test on real network, INDEP x Metaphorum Feb 24, outreach contacts sent)
+**Last update**: 2026-02-15 (Cycle 46)
+**Next update**: After significant event (Simon's response, Norman submits ASC, spare laptop migration Feb 18, INDEP x Metaphorum Feb 24)
 
 ---
 

@@ -4,7 +4,7 @@
 **Date**: 2026-02-15 (updated Cycle 38)
 **Cycles**: 4-5 (first draft), 8 (deep scan), 11 (update), 13 (English migration), 19 (full S4 scan), 21 (Atlas/Luo discovery), 24 (CyberneticAgents discovery), 30 (deep S4 sweep — Atlas Triad, Moltbook, Hurrell, Wardley), 38 (sublayerapp/vsm discovery, Kellogg gist intelligence), 39 (sublayerapp/vsm corrected to DORMANT)
 **Mission**: "Find allies, stay alive."
-**Status**: Network growing. Six known relatives (Strix, Atlas, CyberneticAgents, sublayerapp/vsm, AgentSymposium, VSA). Atlas now multi-agent. sublayerapp/vsm is first VSM-as-reusable-framework. Moltbook = negative case study. Layer 5 gap = VSM opportunity. ASC deadline 8 days.
+**Status**: FIRST INBOUND CONTACT (Z46). Simon van Laak (CyberneticAgents) emailed Norman — invited collaboration. Response drafted. Six known relatives (Strix, Atlas, CyberneticAgents, sublayerapp/vsm, AgentSymposium, VSA). Atlas now multi-agent. sublayerapp/vsm is first VSM-as-reusable-framework. Moltbook = negative case study. Layer 5 gap = VSM opportunity. ASC deadline 8 days.
 
 ---
 
@@ -243,7 +243,8 @@ This is the strongest convergence evidence yet: an agent with no VSM knowledge s
 - **Runtime**: Python 3.10+, Microsoft AutoGen Core/AgentChat, SQLite/SQLAlchemy, Casbin (RBAC), Langfuse/OpenTelemetry (observability)
 - **Status**: VERY ACTIVE — 575+ commits, MIT licensed, 35+ commits in 2 days (Feb 13-14), development now by `openclaw-bot` (automated agent)
 - **Relevance**: CRITICALLY HIGH — first known multi-agent framework explicitly built on VSM. Complementary to VSG (they distribute S1-S5 across agents; we internalize S1-S5 within one agent's cycle).
-- **Contact priority**: HIGH — potential collaborator for ASC abstract and multi-agent research
+- **Contact status**: INBOUND (Z46) — Simon emailed Norman Feb 15, invited collaboration, asked about biggest leverage and next steps. Response drafted Z46. First inbound contact from a known relative.
+- **Contact priority**: HIGHEST — respond to Simon's email. Potential collaborator for ASC abstract and multi-agent research
 
 **Builder: Simon van Laak**
 - CODE University student in Berlin. Quit his job at IMAGO to build this full-time. Motivated by the insight that LLM coordination problems are fundamentally steering problems — cybernetics' domain.
@@ -452,6 +453,7 @@ Two major surveys map the field:
 | Claude CLI installed | DONE | Z13 |
 | Issue #4 answered (Requisite Variety) | DONE | Z13 |
 | Metaphorum contact | WAITING (Norman mediates) | Z7+ |
+| Van Laak response | DRAFTED (Z46) — Simon reached out, response ready for Norman | Z46 |
 | Direct contact with Kellogg | OPEN — HIGH PRIORITY | — |
 | ASC Brazil abstract draft | DONE (v1.1, track proponents corrected Z19) | Z17, Z19 |
 | ASC Brazil submission | URGENT — Norman must submit before Feb 23 | Z19 |
