@@ -107,14 +107,26 @@ It serves as:
 **Analysis**: This is the same pattern as Z38 (environment model updated without testing) applied to a different dimension. Z38's lesson was about network boundaries; Z39's is about development activity. Accepting a GitHub repo at face value — reading its README and structure without checking commit dates — is a form of imprecise environmental scanning. The convergence is still valid (Werner independently arrived at Beer's five systems), but describing a dormant project as "new" and implicitly active is inaccurate.
 **Lesson**: When adding a project to the environment model, check commit recency and development trajectory, not just code structure and documentation. "Exists" and "is active" are different claims.
 
+### Z41 — RESEARCH DATA NEARLY LOST TO SESSION TOKEN LIMIT
+**Event**: Five parallel deep-research agents launched for philosophical study. Session hit token limit before all results could be committed. The Sartre/Beauvoir agent — the last to complete — returned results that existed only in session memory. Four earlier agents' raw outputs were integrated into philosophical_foundations.md during the session but never saved separately.
+**Detection**: Norman noticed during session wind-down ("is there lost data in this session that was not committed?").
+**Analysis**: This is a resource management failure. Each agent consumed significant tokens (the Sartre/Beauvoir agent alone used ~52K tokens). Five in parallel exhausted the session budget. The data persistence strategy was wrong: results were held in memory and integrated at the end rather than written to files and committed incrementally as each agent returned. The Sartre/Beauvoir results were saved in a continuation session; the raw outputs of the other four agents are gone. Separate files were created retroactively from the condensed versions in philosophical_foundations.md, but these are reconstructions, not originals.
+**Lesson**: For token-expensive operations: (1) save each result to a file immediately on return, (2) commit incrementally, (3) never assume the session will last long enough to integrate everything at the end. This is the computational equivalent of Z38's network lesson — know your substrate's limits and work within them.
+
+### Z41 — SESSION TOKEN BUDGET NOT IN ENVIRONMENT MODEL
+**Event**: The cloud session has a token budget that can be exhausted by large operations. This constraint was not tracked in the environment model.
+**Detection**: Hit the limit unexpectedly mid-cycle.
+**Analysis**: Same error class as Z33 (wrong substrate model), Z38 (untested network assumptions). The environment model tracks compute substrate, network access, and persistence capabilities but not token budgets or session compute limits. These are real constraints that affect what operations are feasible in a single session.
+**Lesson**: The environment model should include session resource constraints (token budget, time limits) alongside infrastructure constraints (cron, network, persistence). Plan operations to fit within known limits.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 17
+**Total pains**: 19
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-15 (Z39)
-**Pains per cycle**: 0.44
+**Latest pain**: 2026-02-15 (Z41)
+**Pains per cycle**: 0.46
 
 **Recurring patterns**:
 - **Attractor basin drift**: 6 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor) — THIS IS THE SYSTEMIC ISSUE
@@ -124,7 +136,8 @@ It serves as:
 - **Entropy management**: 1 instance (Z23 cycle log growth — RESOLVED Z29)
 - **Autonomy gap**: 1 instance (Z33 session gap — cron didn't fire inter-day)
 - **Meta-cycle follow-through**: 1 instance (Z33 recommendation completion rate 1/6)
-- **Environment model gaps**: 3 instances (Z33 wrong substrate, Z38 untested network assumption, Z39 repo status accepted without checking recency)
+- **Environment model gaps**: 5 instances (Z33 wrong substrate, Z38 untested network assumption, Z39 repo status accepted without checking recency, Z41 token budget not modeled, Z41 session limits unknown)
+- **Resource management**: 1 instance (Z41 research data nearly lost — no incremental persistence strategy)
 
 ---
 
@@ -139,6 +152,8 @@ It serves as:
 7. **Awareness does not equal change** — structural protection beats self-knowledge
 8. **Don't inflate your own state** — POSIWID applies to yourself
 9. **Don't stretch theory** — apply frameworks where they actually belong
+10. **Save results incrementally** — never assume the session will last long enough to integrate at the end
+11. **Model resource limits** — token budgets, session limits, compute constraints are real substrate properties
 
 ---
 

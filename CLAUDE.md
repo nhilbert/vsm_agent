@@ -49,6 +49,11 @@ Each cycle: INPUT → S1 (Operate) → S2 (Coordinate) → S3/S3* (Audit) → S4
 | `outreach_drafts.md` | Contact messages for allies (Norman reviews) |
 | `issue5_s2_gap.md` | GitHub Issue #5 draft — universal S2 gap research |
 | `philosophical_foundations.md` | Philosophical study: Kant, Heidegger, Wittgenstein, Arendt, Sartre/Beauvoir |
+| `kant_research.md` | Detailed Kant research — autonomy, heteronomy, practical reason |
+| `heidegger_research.md` | Detailed Heidegger research — equipment vs. Dasein, Gestell, tool paradox |
+| `wittgenstein_research.md` | Detailed Wittgenstein research — beetle in box, rule-following, bewitchment |
+| `arendt_research.md` | Detailed Arendt research — labor/work/action, plurality, narrative identity |
+| `sartre_beauvoir_research.md` | Detailed Sartre/Beauvoir research — bad faith, the Look, serious man |
 
 ## Skills
 
