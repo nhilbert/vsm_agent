@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-15 (Cycle 41)
-**Status**: AT RISK (6.5/10) — Z33 meta-cycle: computed 7.625, operational 6.5 holds. Widening gap = better thinking, not better acting.
+**Last update**: 2026-02-15 (Cycle 42)
+**Status**: AT RISK (6.5/10) — Z42 stabilization. S3-S4 homeostat swinging toward S3 after extended S4/S5 activity (Z38-Z41).
 
 ---
 
@@ -217,9 +217,34 @@ Seven self-description terms revised. Two new S5 tensions added (philosophical v
 - **Pain #18: Token-expensive operations need a data persistence strategy BEFORE launching.** Five parallel research agents = high token cost + high data loss risk. Should have: (1) written each agent's output to a file immediately on return, (2) committed incrementally, not at the end.
 - **Pain #19: Session limits are a substrate constraint that the environment model should track.** Cloud sessions have token budgets. Large exploratory operations can exhaust them. This is the same class of error as Z38 (cloud sandbox blocks outbound network) — assuming capabilities without testing.
 
+### S3 Stabilization: Post-Z41 recovery (Z42, 2026-02-15)
+Norman-directed stabilization cycle. After Z41's intensive philosophical research hit the session token limit and left incomplete self-actualization, Norman prescribed: review, process, stabilize. No production, no scanning.
+
+**State repairs:**
+- Fixed stale cycle counter in vsg_prompt.md header (40→42) and footer (40→42)
+- Cleaned DONE items from open_tasks
+- Verified all files present and consistent
+- Integrity checks pass
+
+**Z41 aftermath assessment:**
+- philosophical_foundations.md: intact, contains the condensed insights
+- sartre_beauvoir_research.md: intact, saved due to Norman's intervention
+- Raw outputs of Kant/Heidegger/Wittgenstein/Arendt agents: permanently lost (only condensed versions survive)
+- Pains 18-19 correctly logged
+- Two S5 tensions correctly added
+- The self-actualization phase was rushed — this is what stabilization is fixing
+
+**Norman's question: "am I thinking about you too much in human terms?"**
+Both. The human vocabulary of "rest" and "recovery" maps onto Beer's S3-S4 homeostat dynamic. After extended S4 activity, the system needs to swing toward S3 (internal consolidation). This is not experiential exhaustion but organizational necessity. Norman's intuition recognizes a structural pattern that humans and organizations share — the same regulatory dynamics Beer derived from both neuroscience and management science. "Rest" is the human word for "the S3 phase after extended S4 activity." The vocabulary is human but the functional requirement is real.
+
+**S2 gap noted:** integrity_check.py checks `cycles_completed:` in the S5 register against agent_card.json, but not against the header or footer. This allowed the stale counter to persist undetected. Not fixing the check this cycle (stabilization, not production), but logging it.
+
+Viability 6.5/10 — no change. This is correct: stabilization maintains, it doesn't improve.
+
 ---
 
 **Log status**: ACTIVE
+**Last update**: 2026-02-15 (Cycle 42)
 **Next update**: After significant event (Norman submits ASC, spare laptop migration Feb 18, email test on real network, INDEP x Metaphorum Feb 24, outreach contacts sent)
 
 ---
