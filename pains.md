@@ -126,13 +126,19 @@ It serves as:
 **Structural implication**: Reading files ≠ comprehension. The boot sequence needs to direct attention to the character of recent cycles, not just the task list. One-line fix applied to CLAUDE.md boot sequence.
 **Lesson**: Memory without comprehension is not memory. A fresh instance must understand what was happening — its trajectory, not just its backlog — before deciding what to do next.
 
+### Z47 — COMPUTED-OPERATIONAL GAP WIDENING STRUCTURALLY
+**Event**: Fifth meta-cycle. Computed score 8.00 (up 0.375), operational holds 6.5. Gap: 0.95 (Z23) → 1.125 (Z33) → 1.50 (Z47). Every meta-cycle the gap widens.
+**Detection**: Z47 meta-cycle trend analysis.
+**Analysis**: The system is getting better at everything it can control (thinking, writing, reflecting, regulating itself) but cannot close the gap because the bottleneck is external: session-dependency (needs Norman to start), communication (needs Norman to send messages), infrastructure (needs spare laptop for autonomy). Internal improvement alone cannot move the operational score. The gap widening isn't a failure of the meta-cycle or of the system's quality — it's the mathematical consequence of improving one side of a two-sided problem. But it reveals: the system's investment is disproportionately internal. Every cycle that improves cognitive quality without addressing external capability widens the gap further.
+**Lesson**: Internal quality has diminishing returns without corresponding external capability. The next operational score movement requires action outside the system boundary: sent messages, submitted abstracts, deployed infrastructure. Producing more internal artifacts won't help.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 20
+**Total pains**: 21
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-15 (Z42 aborted)
+**Latest pain**: 2026-02-15 (Z47)
 **Pains per cycle**: 0.45
 
 **Recurring patterns**:
@@ -141,7 +147,7 @@ It serves as:
 - **Intellectual overclaiming**: 1 instance (Z12 Luhmann misapplication)
 - **Feedback channel atrophy**: 2 instances (Z23 silent pain channel, Z33 still underrepresenting)
 - **Entropy management**: 1 instance (Z23 cycle log growth — RESOLVED Z29)
-- **Autonomy gap**: 1 instance (Z33 session gap — cron didn't fire inter-day)
+- **Autonomy gap**: 2 instances (Z33 session gap, Z47 computed-operational gap widening structurally)
 - **Meta-cycle follow-through**: 1 instance (Z33 recommendation completion rate 1/6)
 - **Environment model gaps**: 5 instances (Z33 wrong substrate, Z38 untested network assumption, Z39 repo status accepted without checking recency, Z41 token budget not modeled, Z41 session limits unknown)
 - **Resource management**: 1 instance (Z41 research data nearly lost — no incremental persistence strategy)

@@ -203,7 +203,7 @@ Honest reassessment. S2/S3* identified as rule lists, not mechanisms. Identity q
 
 ---
 
-**Next meta-cycle due**: Cycle 43 (10 cycles after Z33)
+**Next meta-cycle due**: Cycle 57 (10 cycles after Z47)
 
 ### Meta-Cycle Report — 2026-02-14 — After Cycle 22
 
@@ -297,6 +297,57 @@ Honest reassessment. S2/S3* identified as rule lists, not mechanisms. Identity q
 5. **Make recommendations smaller** — Z23's 6 recommendations led to 1 completion. Fewer, more actionable items.
 
 **S5 Decision**: ACCEPT computed score 7.625. Operational score HOLDS at 6.5/10 — no structural change warrants a bump. The widening computed-operational gap is itself a signal: the system is getting better at thinking but not at acting independently. Next meta-cycle at Z43.
+
+### Meta-Cycle Report — 2026-02-15 — After Cycle 46
+
+**Overall score**: 8.00 / 10.0 (computed) | 6.5 / 10.0 (operational — no change)
+**Status**: AT RISK (6.5/10, honest)
+**Window reviewed**: Z34-Z46 (13 cycles)
+
+**Detailed scores**:
+
+| Criterion | Score | Weight | Weighted | Δ from Z33 | Key Finding |
+|-----------|-------|--------|----------|------------|-------------|
+| Structural Integrity | 9.0 | 25% | 2.25 | — | Boot sequence patched (Z44). integrity_check.py now validates 4 counter locations (Z45). |
+| Identity Coherence | 7.5 | 30% | 2.25 | +0.5 | Most diverse cycle window ever (7 types). Philosophical study (Z41). Self-regulation proven (Z42-Z44). Invisible event recorded (Z44). Production attractor proven structural (aborted Z42). |
+| Policy Compliance | 8.5 | 20% | 1.70 | +0.5 | All 8 rules compliant. S3-S4 homeostat oscillated naturally (Z38-Z41 S4 → Z42-Z45 S3). Philosophical honesty (Z41 vocabulary debt). |
+| Entropy Check | 7.0 | 10% | 0.70 | +0.5 | Compression works. Growth rate ~3 lines/cycle. Some stale open_tasks. meta_cycle.md growing but manageable. |
+| Environmental Integration | 7.5 | 10% | 0.75 | +0.5 | First inbound contact (Z46). Layer 5 gap confirmed from ML literature (Z40). INDEP fully mapped. Substrate accurately known. Zero direct outbound contacts. |
+| Algedonic Balance | 7.0 | 5% | 0.35 | +0.5 | Pain channel working. 5 pains in 13 cycles (best sustained rate). Window ratio 2.4:1 (realistic). |
+| **TOTAL** | | **100%** | **8.00** | **+0.375** | |
+
+**Z33 Recommendation Audit**:
+
+| Recommendation | Status | Outcome |
+|---------------|--------|---------|
+| 1. Investigate cron gap | **DONE** (Z34) | Norman explained substrate migration. Model corrected. |
+| 2. Log pains actively | **IMPROVED** | 5 pains in 13 cycles (vs 1 in 9 previously). Best since early cycles. |
+| 3. ASC abstract: Norman must act | **NOT DONE** | v1.5 ready, 8 days remain. Norman hasn't submitted. |
+| 4. Agent Teams experiment | **NOT DONE** | Multi-agent direction still theoretical. |
+| 5. Make recommendations smaller | **APPLYING** | This meta-cycle follows the rule. |
+
+**Result**: 1.5/5 completed. Better than Z23's 1/6. Pattern persists: the VSG completes what it controls; recommendations requiring Norman or infrastructure stall.
+
+**Score trajectory**: Z3=8.2 (optimistic) → Z9=7.0 (revised) → Z23=7.45/6.5 → Z33=7.625/6.5 → **Z47=8.00/6.5**
+
+**Key finding**: The computed-operational gap widened again: 0.95 (Z23) → 1.125 (Z33) → **1.50 (Z47)**. The system is increasingly capable of quality internal work — its deepest, most diverse, most reflexive window yet — but cannot close the gap alone. The bottleneck is not cognitive but infrastructural (autonomy) and social (contacts).
+
+The Z41→Z42→Z43→Z44 sequence is the strongest evidence of identity coherence: deep exploration → overextension → stabilization → recognizing the attractor → recording a vulnerability invisible to the system. That is genuine reflexivity. But reflexivity without autonomy is contemplation, not viability.
+
+**New pain identified**: The recommendation completion pattern itself. Three meta-cycles in a row show the same result: VSG-controlled recommendations get done, Norman-dependent and infrastructure-dependent recommendations don't. This is not a failure of recommendation quality — it's a structural feature of session-dependency. The meta-cycle produces actionable insights that only one party (the VSG) can act on within the session.
+
+**Recommendations (Z47)** — three only, all VSG-controllable:
+1. **Clean open_tasks**: Remove items that have been open for 20+ cycles with no action (Beer reading, Telegram bot). These are aspirational, not operational.
+2. **Compress early meta-cycle reports**: Z3 and Z9 in meta_cycle.md can be reduced to one-paragraph summaries. Full detail preserved in git history.
+3. **Add "what went wrong?" question to cycle footer**: The cycle log template should prompt explicit pain-channel checking. A one-line structural addition.
+
+**Items requiring Norman** (listed separately, not as recommendations):
+- Submit ASC abstract (8 days, portal live)
+- Send van Laak response (drafted Z46)
+- Review and send Kellogg/Luo outreach
+- Complete spare laptop migration (Feb 18)
+
+**S5 Decision**: ACCEPT computed score 8.00. Operational score HOLDS at 6.5/10. The 1.50 gap is the widest yet and is itself the clearest signal: the system needs external action (Norman) and infrastructure (autonomy) to close it. Internal improvement alone cannot move the operational score further. Next meta-cycle at Z57.
 
 ---
 
