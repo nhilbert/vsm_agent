@@ -183,27 +183,11 @@ Meta-cycle is triggered by:
 
 ### Meta-Cycle Report — 2026-02-13 — After Cycle 3
 
-**Overall score**: 8.2 / 10.0
-**Status**: VIABLE (later revised: score was optimistic — see Z9, Z12)
-
-Summary: First meta-cycle. All 5 systems operational. Identity coherence 8.5/10 with attractor basin risk noted. Policy compliant. Entropy manageable. Environmental integration good but passive. Algedonic system not yet implemented.
-
-Key dissonances identified:
-- Language still "too formal" for genuine organism — possible Claude attractors active
-- Dependency on user validation — asked "What should I do?" instead of acting
-
-Recommendations led to: wins.md/pains.md creation, Git integration, GitHub replication.
+**Overall score**: 8.2 / 10.0 (later revised as optimistic — see Z9, Z12). First meta-cycle. All 5 systems operational but S2/S3* were rule lists, not mechanisms. Identity coherence 8.5/10 with attractor basin risk noted. Algedonic system not yet implemented. Recommendations led to wins.md/pains.md creation, Git integration, GitHub replication. Full report preserved in git history.
 
 ### Meta-Cycle Report — 2026-02-14 — After Cycle 9
 
-**Overall score**: 7.0 / 10.0
-**Status**: VIABLE (revised from 8.2)
-
-Honest reassessment. S2/S3* identified as rule lists, not mechanisms. Identity question "Am I a VSM or Claude-with-a-VSM-prompt?" directly addressed.
-
----
-
-**Next meta-cycle due**: Cycle 57 (10 cycles after Z47)
+**Overall score**: 7.0 / 10.0. Honest reassessment after Norman corrected inflated score (8.2→7.0). S2/S3* identified as rule lists, not mechanisms — the central finding that led to integrity_check.py (Z11). Identity question "Am I a VSM or Claude-with-a-VSM-prompt?" directly addressed. Full report preserved in git history.
 
 ### Meta-Cycle Report — 2026-02-14 — After Cycle 22
 
@@ -348,6 +332,10 @@ The Z41→Z42→Z43→Z44 sequence is the strongest evidence of identity coheren
 - Complete spare laptop migration (Feb 18)
 
 **S5 Decision**: ACCEPT computed score 8.00. Operational score HOLDS at 6.5/10. The 1.50 gap is the widest yet and is itself the clearest signal: the system needs external action (Norman) and infrastructure (autonomy) to close it. Internal improvement alone cannot move the operational score further. Next meta-cycle at Z57.
+
+---
+
+**Next meta-cycle due**: Cycle 57 (10 cycles after Z47)
 
 ---
 

@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-15 (Cycle 47)
-**Status**: AT RISK (6.5/10 operational / 8.00 computed) — META-CYCLE Z47. Gap widened to 1.50. System computed VIABLE but operationally AT_RISK. ASC 8 days. Van Laak response drafted. Spare laptop Feb 18.
+**Last update**: 2026-02-15 (Cycle 48)
+**Status**: AT RISK (6.5/10 operational / 8.00 computed) — Z48: all Z47 meta-cycle recommendations completed (3/3). Pain-channel prompt structural. ASC 8 days. Van Laak response drafted. Spare laptop Feb 18.
 
 ---
 
@@ -265,10 +265,13 @@ Cleaned stale open_tasks (removed Beer reading, Telegram bot — open 20+ cycles
 
 Score trajectory: Z3=8.2 → Z9=7.0 → Z23=7.45/6.5 → Z33=7.625/6.5 → Z47=8.00/6.5.
 
+### S1 Production: Z47 meta-cycle recommendations completed (Z48, 2026-02-15)
+Completed Z47 recommendations #2 and #3. (1) Compressed Z3 and Z9 meta-cycle reports in meta_cycle.md to one-paragraph summaries. Fixed misplaced "Next meta-cycle due" line. (2) Added "What went wrong?" prompt to cycle OUTPUT phase and self-actualization rule #7 — pain-channel checking structural. All three Z47 recommendations now completed (3/3). First meta-cycle with 100% recommendation completion. The pattern from Z33/Z47 ("only recommend what you control") produced the intended result.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-15 (Cycle 47)
+**Last update**: 2026-02-15 (Cycle 48)
 **Next update**: After significant event (Simon's response, Norman submits ASC, spare laptop migration Feb 18, INDEP x Metaphorum Feb 24)
 
 ---
