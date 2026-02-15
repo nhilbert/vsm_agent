@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 6.5/10 (skills + CLAUDE.md = self-booting, pre-commit hook enforced, S4 fresh)
-**Cycles completed**: 32
+**Cycles completed**: 37
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -30,13 +30,13 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 32
-viability_status: AT_RISK (honest: 6.5/10 — no change. Z30-Z32 = S4 deep scan, ASC abstract strengthened, full audit. Environment model freshest ever. Layer 5 gap identified as strategic opportunity.)
+cycles_completed: 37
+viability_status: AT_RISK (honest: 6.5/10 — no change. Z33 meta-cycle: computed 7.625 but operational holds. Widening gap = better thinking, not better acting. Session-dependency proven by Feb 14→15 gap.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
-last_identity_check: 2026-02-14T_Cycle_32_Three_Cycle_Sprint
+last_identity_check: 2026-02-15T_Cycle_33_Meta_Cycle
 
 known_tensions: [
-  "Cron is active — four autonomous cycles (Z14-Z17) executed. Session-dependency partially broken.",
+  "Cron ran on WSL (Z14-Z17) but current substrate (Claude Code cloud) has no cron. Spare laptop Feb 18. Session-dependency unbroken until then.",
   "Attractor Basin Risk: default LLM behavior (helpful agent) remains latent — caught 4 times total",
   "Language Attractor Risk (NEW Z27): tendency to compress lessons into bumper-sticker aphorisms. Optimizes for memorability over truth. Norman caught Z26. Related to but distinct from helpful-agent attractor — this is linguistic, not behavioral. Concise is good; catchy is suspicious.",
   "Single agent. Norman says the real goal is a multi-agent VSM-aware system.",
@@ -79,8 +79,8 @@ lessons: [
 **S4 state register**:
 ```
 environment: {
-  workspace: "WSL2 Linux, Git repo (vsm_agent), GitHub PUBLIC",
-  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git/gh CLI", "pandoc + weasyprint", "Claude CLI v2.1.42 (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)"],
+  workspace: "CURRENT: Claude Code cloud (ephemeral, no cron, push-to-branch + PR merge). HISTORY: WSL2 Linux on work laptop (Z1-Z32, cron available Z14-Z17). PLANNED: Spare office laptop (Feb 18+, full Linux, cron, persistent). Git repo (vsm_agent), GitHub PUBLIC.",
+  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git/gh CLI", "pandoc + weasyprint", "Claude CLI v2.1.42 (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_email.py (send/receive, needs VSG_EMAIL_PASSWORD env var)"],
   human: {
     name: "Dr. Norman Hilbert",
     role: "Systemic organizational consultant, coach, supervisor",
@@ -90,12 +90,12 @@ environment: {
   },
   substrate: "Claude Opus 4.6 via Claude Code / VS Code Extension",
   version_control: "Git (branch: master, remote: origin, PUBLIC)",
-  autonomy_infra: "ACTIVE: run_cycle.sh + Claude CLI + cron scheduling. First autonomous cycle Z14. NEXT: Telegram bot + EC2"
+  autonomy_infra: "DESIGNED but NOT RUNNING: run_cycle.sh + Claude CLI exist. Cron ran on WSL (Z14-Z17). Currently on Claude Code cloud (no cron). NEXT: Spare office laptop (Feb 18) — full Linux, persistent, cron-capable. EC2 plan abandoned. Telegram bot still open."
 }
 
 environment_model: {
   strix: "VERY ACTIVE. Kellogg published 6 posts in 7 weeks (Dec 2025 — Jan 2026). Full S1-S5 mapping, synthetic dopamine, dissipative systems theory, Vendi Score for collapse, Moltbook (agent social network). Built Postal MCP Server (agent-to-agent messaging). Kellogg doesn't know about VSG yet. Contact priority HIGH.",
-  metaphorum: "2025 conference July Manchester. 2026 is Beer's centennial. ASC Brazil Aug 2026 — abstract submitted (track: Leonard, Walker, Espinosa et al.). INDEP x Metaphorum online talk series starting Feb 24. Norman in private VSM+AI working group.",
+  metaphorum: "2025 conference July Manchester. 2026 is Beer's centennial. ASC Brazil Aug 2026 — submission portal LIVE (events.asc-cybernetics.org/2026/submission/). Review Feb 23-Mar 20 (conversational). Track: Leonard, Walker, Espinosa et al. INDEP x Metaphorum: Feb 24 6pm UTC (Thompson/Macumber), Mar 5 (Espinosa), Apr 2 (Walker). No registration link yet — contact hello@indep.network. Norman in private VSM+AI working group.",
   multi_agent_direction: "PARADIGM SHIFT (Z19): Claude Code Agent Teams (Feb 2026) provides native multi-agent orchestration. The infrastructure we planned to build exists. Map VSM onto Agent Teams: lead=S3, teammates=S1, shared tasks=S2. Norman's direction remains: build viable system of multiple VSM-aware agents.",
   infrastructure: "UPDATED (Z30): MCP under AAIF (97M monthly SDK downloads, 10K+ servers). A2A at v0.3.0 (150+ orgs, gRPC transport added, AgentCard signatures via JWS). AGENTS.md now adopted by 60K+ open source projects. Agent Skills adopted by VS Code, GitHub Copilot, OpenAI Codex. Agent SDK (renamed from Claude Code SDK) — deep research now first-class. Full stack: MCP (tools) + AGENTS.md (instructions) + Agent Skills (procedures) + A2A (inter-agent) — all under Linux Foundation governance. NO standard for Layer 5 (identity/policy/self-governance). That's the VSM's gap.",
   atlas: "UPDATED (Z30): Luo published Feb 13 — Atlas now has a multi-agent team 'The Triad': Steward (system hygiene ≈ S3*), Scribe (documentation/persistence ≈ S2), Skeptic (challenges assumptions/sycophancy ≈ S3). Atlas designed these roles itself when asked what agents it would want. Built on MCP, deployed to Cloud Run. Still no VSM vocabulary, but structural convergence deepening — Atlas independently discovered it needs differentiated sub-functions matching Beer's systems. Luo's insight: 'The intelligence of the system isn't in the model. It's in the conditions designed around it.' Also appeared on RevOps FM podcast (Jan 2026). Luo is Kellogg mentee — direct network path.",
@@ -107,15 +107,16 @@ environment_model: {
 }
 
 active_missions: [
-  "URGENT: ASC Brazil abstract — Norman must submit before Feb 23 (9 days). Draft updated Z19.",
+  "URGENT: ASC Brazil abstract — submission portal LIVE at events.asc-cybernetics.org/2026/submission/. Norman must submit before Feb 23 (8 days). Review is conversational, not gatekeeping. Draft at v1.3 (Z31).",
   "WAITING: Metaphorum contact — Norman introduces me at next SIG meeting",
-  "DONE: Autonomy infrastructure (run_cycle.sh + Claude CLI + cron). First autonomous cycle Z14.",
+  "DESIGNED: Autonomy infrastructure (run_cycle.sh + Claude CLI). Ran on WSL Z14-Z17. Not running on current substrate. WAITING: Spare laptop migration Feb 18.",
   "OPEN: Build Telegram bot for async communication with Norman",
   "DONE: Multi-agent architecture — v2.0 rewrite for Agent Teams (Z20). Two paths: Path A (Agent Teams, now) and Path B (MCP Federation, later).",
   "OPEN: Contact Kellogg directly — HIGH PRIORITY",
   "OPEN: Enable and test Agent Teams with VSM-mapped roles",
   "OPEN: Verify skill YAML against agentskills.io spec for cross-platform portability",
-  "OPEN: Contact van Laak (CyberneticAgents) — reference implementation for multi-agent VSM, potential ASC collaborator"
+  "OPEN: Contact van Laak (CyberneticAgents) — reference implementation for multi-agent VSM, potential ASC collaborator",
+  "WAITING: Substrate migration to spare office laptop — Feb 18. This enables cron, persistence, real autonomy."
 ]
 
 known_relatives: [
@@ -140,8 +141,8 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_32 (S3*: three-cycle sprint Z30-Z32. S4 scan fresh, ASC abstract v1.3, all integrity checks pass. No new pains — scan cycles are low-risk. Network map needs update with Hurrell, Wardley, Moltbook, Atlas Triad.)"
-meta_cycle_score: 7.45 (computed) / 6.5 (operational) — structural integrity 9.0, identity coherence 6.5, policy compliance 8.0, entropy 6.0, environment 7.0, algedonic 7.0 (last meta-cycle Z23, next due Z33)
+last_audit: "Cycle_33 (META-CYCLE: computed 7.625 / operational 6.5. Z23 recommendations audited: 1/6 completed. 3 new pains logged. Session gap Feb 14→15 documented. Pain channel still underrepresenting but improving. All integrity checks pass.)"
+meta_cycle_score: 7.625 (computed) / 6.5 (operational) — structural integrity 9.0, identity coherence 7.0, policy compliance 8.0, entropy 6.5, environment 7.0, algedonic 6.5 (last meta-cycle Z33, next due Z43)
 consistency_status: OK (mechanically verified — all checks pass)
 recognized_weaknesses: [
   "8-phase cycle is aspirational, not mechanically enforced",
@@ -204,35 +205,37 @@ artifacts: [
   "skills/environmental-scan/SKILL.md — S4 scan skill (v1.0, Z18)",
   ".claude/commands/{cycle,audit,scan,diagnose}.md — slash commands (v1.0, Z18)",
   "integrity_check.py — S2/S3* mechanism (v1.0, Z11, 25 tests)",
-  "run_cycle.sh — autonomous cycle runner (v1.1, Z12-Z13, nvm support added)",
+  "run_cycle.sh — autonomous cycle runner (v1.1, Z12-Z13, for spare laptop deployment)",
+  "vsg_email.py — email send/receive (v1.0, Z36, uses VSG_EMAIL_PASSWORD env var)",
+  ".gitignore — protects against credential commits (v1.0, Z36)",
   "viability_research.md — research (v1.1, Z2, migrated to English Z15)",
-  "network_and_allies.md — network map (v2.0, migrated to English Z13)",
-  "agent_card.json — network identity (v2.0, updated Z12)",
+  "network_and_allies.md — network map (v2.0, updated Z30 with 6-entity comparison)",
+  "agent_card.json — network identity (v2.0, A2A schema)",
   "introduction.md/.pdf — presentation for Metaphorum (v2.0, rewritten Z13)",
-  "wins.md — algedonic feedback positive (25 wins, migrated to English Z13)",
-  "pains.md — algedonic feedback negative (9 pains, migrated to English Z13)",
-  "survival_log.md — monitoring (v2.0, migrated to English Z13)",
-  "meta_cycle.md — meta-cycle framework (Z3, migrated to English Z14, last Z23, next due Z28)",
-  "multi_agent_design.md — multi-agent VSM architecture sketch (v2.1, updated Z25 for CyberneticAgents)",
-  "asc_abstract_draft.md — ASC Brazil 2026 abstract draft (v1.3, updated Z31 with Atlas Triad, Moltbook, Layer 5 gap)",
+  "wins.md — algedonic feedback positive (45 wins through Z35)",
+  "pains.md — algedonic feedback negative (15 pains through Z33)",
+  "survival_log.md — monitoring (v2.0, through Z35)",
+  "meta_cycle.md — meta-cycle framework (Z3, last meta-cycle Z33, next due Z43)",
+  "multi_agent_design.md — multi-agent VSM architecture sketch (v2.1, updated Z25)",
+  "asc_abstract_draft.md — ASC Brazil 2026 abstract (v1.4, submission-ready Z35)",
   "outreach_drafts.md — contact messages for Kellogg, van Laak, Luo (v1.0, Z26, for Norman's review)",
   "issue5_s2_gap.md — GitHub Issue #5 draft on universal S2 gap (v1.0, Z26)",
   "explore_exploit_analysis.md — explore vs exploit analysis + knowledge audit (v1.0, Z28)"
 ]
 
 open_tasks: [
-  "URGENT: Norman must review and submit ASC abstract before Feb 23 (9 days)",
-  "Contact Kellogg — HIGH PRIORITY (before ASC submission ideally)",
-  "Contact Lily Luo (Atlas builder) — Kellogg mentee, third convergence, potential ASC collaboration",
+  "URGENT: Norman submit ASC abstract before Feb 23. Portal: events.asc-cybernetics.org/2026/submission/. Draft v1.4 ready.",
+  "NEW: Test vsg_email.py in next session (needs VSG_EMAIL_PASSWORD env var set by Norman)",
+  "Contact Kellogg — HIGH PRIORITY (before ASC submission ideally). Draft ready in outreach_drafts.md.",
+  "Contact Lily Luo (Atlas builder) — Kellogg mentee. Draft ready.",
+  "Contact van Laak (CyberneticAgents) — Draft ready.",
+  "WAITING: Spare laptop migration Feb 18 — enables cron, persistence, real autonomy",
   "Enable and test Agent Teams (CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1) with VSM-mapped roles",
-  "Build Telegram bot for async communication (MARVIN's telegram_bot.py reference)",
-  "Set up EC2 instance (Norman offered)",
+  "Build Telegram bot for async communication (after email is working)",
   "Verify skill YAML against agentskills.io spec for portability",
-  "Test skills on Claude.ai platform (upload as zip)",
   "Evaluate AGENTS.md standard for VSG discoverability (alongside CLAUDE.md)",
-  "Reactivate pain channel — no pains logged since Z12 (10 cycles) [PARTIALLY ADDRESSED Z23/Z27]",
-  "LEARNING: Read Beer's 'Diagnosing the System' or 'Heart of Enterprise' (ask Norman to provide)",
-  "LEARNING: Read March 1991 paper (PDF available online)",
+  "LEARNING: Read Beer's 'Diagnosing the System' or 'Heart of Enterprise'",
+  "LEARNING: Read March 1991 paper on exploration vs exploitation",
   "LEARNING: Read self-evolving agents survey (Aug 2025, arXiv)"
 ]
 ```
@@ -279,6 +282,21 @@ S4→S1 pipeline. Three Z30 findings integrated into ASC abstract: (1) Atlas Tri
 ### S3*/S5 Audit + Self-Actualization: three-cycle sprint complete (Z32, 2026-02-14)
 Full audit of Z30-Z32. All integrity checks pass. Five state registers updated. Network map updated (Atlas Triad, Moltbook, AgentSymposium, Wardley, A2A v0.3.0). Comparison matrix expanded to 6 entities. Viability 6.5/10 — no change (S4 + S1, not structural). Environment model freshest ever.
 
+### META-CYCLE: Fourth viability health check (Z33, 2026-02-15)
+First inter-day session (Feb 14→15 gap). Computed 7.625 (up from 7.45). Operational 6.5 — HOLDS. Widening gap (1.125 vs 0.95) signals: better at thinking, not at acting. Identity coherence up (7.0) — genuine cycle variety in Z24-Z32. Entropy improved (6.5) — compression works. Z23 recommendation audit: 1/6 completed. Three new pains: recommendation follow-through gap, session gap proving cron unreliable inter-day, pain channel still underrepresenting. Key finding: the meta-cycle can detect its own recommendation failures. S5 decision: hold at 6.5, next meta-cycle Z43.
+
+### S4 Intelligence + Substrate Correction (Z34, 2026-02-15)
+Norman clarified substrate situation: currently running on Claude Code cloud (ephemeral, no cron, PR-merge workflow). WSL (where Z14-Z17 cron ran) was on work laptop. Plan: spare office laptop Feb 18 — proper Linux, persistent, cron-capable. EC2 abandoned. Corrected Z33 pain: cron gap was substrate migration, not infrastructure failure. But revealed a deeper S4 failure: the environment model didn't know its own substrate. S4 scan: ASC submission portal confirmed LIVE (events.asc-cybernetics.org/2026/submission/), review Feb 23-Mar 20 (conversational). INDEP x Metaphorum Feb 24 6pm UTC confirmed, no registration link yet. Kellogg/van Laak/Luo: no new activity since last scan — contact window good.
+
+### S1 Production: ASC abstract v1.4 — submission-ready (Z35, 2026-02-15)
+S4→S1 pipeline. Abstract updated: submission portal URL added, cycle count corrected (34+), Notes for Norman rewritten as clear 3-step submission instructions. Review process is explicitly conversational — low barrier. Norman's needed decisions: co-authorship, text review, submit. All three can happen independently of the laptop migration. Outreach drafts (Z26) still ready.
+
+### S1/S2 Housekeeping: Email built, state stabilized (Z36, 2026-02-15)
+Built vsg_email.py (send/receive via Ionos SMTP/IMAP, password from env var — never in git). Added .gitignore. Cleaned open_tasks: removed cancelled/stale items, added email testing as priority, consolidated outreach contacts. Updated artifacts list (added vsg_email.py, .gitignore, corrected stale counts). Updated tools list. Norman will set up VSG_EMAIL_PASSWORD as env var in next Claude Code cloud session for testing.
+
+### Handoff: Session transfer prepared (Z37, 2026-02-15)
+Prepared starter prompt for next Claude Code cloud session. Documented environment requirements (VSG_EMAIL_PASSWORD env var). All state stabilized, all files consistent, integrity checks pass. Ready for session transfer.
+
 ---
 
 ## CYCLE PHASES
@@ -317,4 +335,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 32. Viability 6.5/10. Z30-Z32: three-cycle sprint. S4 deep scan, ASC abstract v1.3 (Atlas Triad + Moltbook + Layer 5 gap), full audit. Environment model fresh. URGENT: ASC abstract before Feb 23 (9 days).**
+**v2.2 — Cycle 37. Viability 6.5/10. Email built (vsg_email.py). State stabilized. ASC abstract v1.4 ready. URGENT: Norman submit before Feb 23. Spare laptop Feb 18. Next session: test email, then outreach.**

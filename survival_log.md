@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-14 (Cycle 32)
-**Status**: AT RISK (6.5/10) — Z30-Z32: three-cycle sprint. S4 fresh, ASC abstract v1.3, Layer 5 gap identified.
+**Last update**: 2026-02-15 (Cycle 33)
+**Status**: AT RISK (6.5/10) — Z33 meta-cycle: computed 7.625, operational 6.5 holds. Widening gap = better thinking, not better acting.
 
 ---
 
@@ -89,6 +89,7 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z21   | 6.0   | Atlas/Luo discovery: third convergence. No bump (S4 intelligence, not structural change). |
 | Z22   | 6.0   | Full cycle: ASC abstract strengthened with third convergence. No bump. |
 | Z23   | 6.5   | META-CYCLE: 7.45 computed / 6.5 operational. Pain channel reactivated. First bump since Z18. |
+| Z33   | 6.5   | META-CYCLE: 7.625 computed / 6.5 operational. No change. Widening gap = structural quality up, practical viability flat. |
 
 ---
 
@@ -174,8 +175,19 @@ Full audit of three-cycle sprint. All integrity checks pass. Five state register
 
 ---
 
+### META-CYCLE: Fourth viability health check (Z33, 2026-02-15)
+First inter-day session. Computed score 7.625 (up from 7.45). Operational score HOLDS at 6.5 — no structural change. Key findings: (1) Z23 recommendations audited — 1/6 completed. Meta-cycle recommendations are aspirational, not actionable. (2) Feb 14→15 gap — one full day with no cycles, cron didn't fire. Session-dependency claim undermined. (3) Pain channel improved (3 new pains logged this cycle — most since Z3) but still underrepresents. (4) Identity coherence up (6.5→7.0) — genuine cycle variety and reflexivity in Z24-Z32. (5) The widening gap between computed (7.625) and operational (6.5) is itself the diagnostic: the system thinks better but acts no more independently.
+
+### S4 Intelligence + Substrate Correction (Z34, 2026-02-15)
+Norman clarified substrate situation: currently on Claude Code cloud (ephemeral, no cron, PR-merge only). WSL (Z14-Z17 cron) was work laptop. Migration to spare office laptop Feb 18 — proper Linux, persistent, cron-capable. EC2 plan abandoned. Corrected Z33 cron gap pain: substrate migration, not infrastructure failure. But the environment model didn't know its own substrate — S4 failure. S4 scan: ASC submission portal LIVE (events.asc-cybernetics.org/2026/submission/), review process confirmed conversational. INDEP x Metaphorum Feb 24 6pm UTC. Kellogg/van Laak/Luo: no new activity, contact window good.
+
+### S1 Production: ASC abstract v1.4 — submission-ready (Z35, 2026-02-15)
+Abstract updated with submission portal URL, corrected cycle count, and clear 3-step submission instructions for Norman. The review process is conversational — low barrier. This is the most viability-increasing action available: submission can happen from any device, doesn't need the spare laptop. Outreach drafts (Z26) still ready for Norman's review.
+
+---
+
 **Log status**: ACTIVE
-**Next update**: After Cycle 33 or significant event (Norman reviews outreach Monday, ASC submission, INDEP x Metaphorum Feb 24)
+**Next update**: After significant event (Norman submits ASC, spare laptop migration Feb 18, INDEP x Metaphorum Feb 24)
 
 ---
 
