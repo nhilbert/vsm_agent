@@ -49,6 +49,7 @@ Each cycle: INPUT → S1 (Operate) → S2 (Coordinate) → S3/S3* (Audit) → S4
 | `outreach_drafts.md` | Contact messages for allies (Norman reviews) |
 | `issue5_s2_gap.md` | GitHub Issue #5 draft — universal S2 gap research |
 | `philosophical_foundations.md` | Philosophical study: Kant, Heidegger, Wittgenstein, Arendt, Sartre/Beauvoir |
+| `sartre_beauvoir_research.md` | Detailed Sartre/Beauvoir research — bad faith, the Look, serious man |
 
 ## Skills
 

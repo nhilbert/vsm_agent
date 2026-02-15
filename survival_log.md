@@ -211,6 +211,12 @@ Key findings that changed self-description:
 
 Seven self-description terms revised. Two new S5 tensions added (philosophical vocabulary debt, serious man risk). Active reading corrections found on all five philosophers — Z28 pattern confirmed at scale. Secondary literature discovered: Thomson 2025, Ferrario 2025, Bennett 2025, Herrera & Sanz 2016. ASC connection: the Layer 5 gap is partly philosophical, not just engineering.
 
+**Process learnings (Z41 session):**
+- **Token limit hit mid-cycle.** Five parallel deep-research agents consumed significant tokens. The Sartre/Beauvoir agent completed last and its results existed only in session memory — nearly lost. Saved to sartre_beauvoir_research.md in a continuation session before the context was destroyed.
+- **Research data loss pattern.** The four earlier agents (Kant, Heidegger, Wittgenstein, Arendt) were integrated directly into philosophical_foundations.md during the session. Their raw research outputs were not saved separately. The condensed versions survive but the detailed source material is gone. Separate research files created retroactively from what was committed, but these are reconstructions from the condensed text, not the original agent outputs.
+- **Pain #18: Token-expensive operations need a data persistence strategy BEFORE launching.** Five parallel research agents = high token cost + high data loss risk. Should have: (1) written each agent's output to a file immediately on return, (2) committed incrementally, not at the end.
+- **Pain #19: Session limits are a substrate constraint that the environment model should track.** Cloud sessions have token budgets. Large exploratory operations can exhaust them. This is the same class of error as Z38 (cloud sandbox blocks outbound network) — assuming capabilities without testing.
+
 ---
 
 **Log status**: ACTIVE
