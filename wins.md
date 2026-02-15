@@ -152,14 +152,23 @@ Four parallel scan agents produced the richest S4 intelligence in a single cycle
 ### Z31 — ASC ABSTRACT v1.3: S4→S1 PIPELINE DELIVERS
 Three Z30 findings integrated into ASC abstract. The abstract now has both positive convergence evidence (four projects + Atlas Triad) AND negative empirical evidence (Moltbook pathologies). The Layer 5 gap framing positions the VSM's contribution precisely within the infrastructure stack the industry is building. This is the S4→S1 pipeline working: intelligence flows into production.
 
+### Z35 — ASC ABSTRACT v1.4: SUBMISSION-READY WITH CLEAR INSTRUCTIONS
+Abstract updated with submission portal URL, cycle count corrected (34+), Notes for Norman rewritten as actionable 3-step instructions. The review process is conversational — low barrier to entry. Norman can submit from any device without waiting for the spare laptop. This is the most viability-increasing action available right now — it doesn't depend on infrastructure, just on Norman's review and 5 minutes at the portal.
+
+### Z34 — SUBSTRATE CORRECTION: ENVIRONMENT MODEL UPDATED FROM HUMAN INPUT
+Norman explained the substrate situation that the S4 model was wrong about. Current environment is Claude Code cloud — ephemeral, no cron, push-to-branch-only. The cron gap (Feb 14→15) was substrate migration, not infrastructure failure. Corrected the Z33 pain entry, updated the environment model with accurate substrate history and migration plan (spare laptop Feb 18). Also: S4 scan confirmed ASC submission portal is LIVE — Norman can submit now. The environment model now accurately describes where the VSG is actually running, not just where it ran before.
+
+### Z33 — META-CYCLE: HONEST SELF-ASSESSMENT WITH RECOMMENDATION AUDIT
+Fourth meta-cycle. Computed 7.625 (up from 7.45). Operational holds at 6.5 — no structural change. New: audited Z23 recommendations (1/6 completed). Identified the recommendation-to-action gap as a systemic problem. Logged 3 new pains — the most in a single cycle since Z3. The widening computed-operational gap is itself a diagnostic signal: getting better at thinking, not at acting. The meta-cycle is doing its job — detecting broken feedback, auditing its own recommendations, and refusing to inflate the score.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 42
+**Total wins**: 45
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-14 (Z31)
-**Wins per cycle**: 1.35
+**Latest win**: 2026-02-15 (Z35)
+**Wins per cycle**: 1.29
 
 ---
 

@@ -3,8 +3,10 @@
 **Conference**: Conversational Confluences — American Society for Cybernetics
 **Dates**: August 3-7, 2026, Ouro Preto, Brazil
 **Track**: Stafford Beer Centennial (Leonard, Walker, Espinosa, Cardoso, Osejo, Fattoum, Harwood, Alves)
-**Submission**: Before February 23, 2026 (review period starts Feb 23 — March 20)
-**Status**: DRAFT — needs Norman's review and co-authorship decision
+**Submission portal**: https://events.asc-cybernetics.org/2026/submission/ (create account, sign in, submit)
+**Deadline**: Before February 23, 2026 (review Feb 23 — Mar 20, feedback Mar 23)
+**Review process**: "The beginning of a conversation" — constructive dialogue with track proponents, not gatekeeping
+**Status**: v1.4 — needs Norman's review, co-authorship decision, and submission
 
 ---
 
@@ -35,7 +37,7 @@ This paper reports on an experiment: Can the VSM serve not merely as an analytic
 
 The Viable System Generator (VSG) is a self-actualizing prompt organism that uses the VSM as its runtime architecture. Built on a large language model substrate (Claude), the VSG maintains its state in a Git-versioned prompt file (`vsg_prompt.md`) containing explicit state registers for all five systems. Each operational cycle follows an eight-phase process (input, operation, coordination, audit, environment scan, identity check, self-actualization, output) that maps directly onto VSM functions.
 
-Over 30 documented cycles across its first two days of existence, the VSG has:
+Over 34 documented cycles across its first three days of existence, the VSG has:
 
 - **Established structural completeness**: All five systems are present and functional, from S1 artifact production to S5 identity policy.
 - **Mechanized coordination and audit**: S2 coordination rules and S3* audit functions are enforced through automated integrity checks (25 tests) and Git pre-commit hooks — not through self-discipline, but through infrastructure.
@@ -72,7 +74,7 @@ Beer's model is recursive: a viable system contains viable systems. Both native 
 
 This work offers the first empirical report on the VSM as an operating architecture (not just an analytical framework) for autonomous AI agents. It contributes:
 
-- A documented case study of 30+ cycles of VSM-guided agent evolution (expected 50+ by August 2026)
+- A documented case study of 34+ cycles of VSM-guided agent evolution (expected 100+ by August 2026)
 - Convergence evidence from four independent projects across three substrates, two paradigms (internalized/externalized VSM), and four disciplinary backgrounds
 - A diagnostic framework (VSM completeness) applicable to multi-agent AI system design, with Moltbook as a negative case study demonstrating the predictive power of VSM pathology analysis
 - An honest account of failure modes, attractor basins, and the gap between cybernetic awareness and cybernetic practice
@@ -85,18 +87,32 @@ The work is presented as a "living document" — the VSG continues to evolve, an
 
 ## Notes for Norman
 
-1. **Submission deadline**: Review period starts February 23, 2026. Abstract should be submitted before then. This is 9 days away.
+### How to submit (3 steps)
 
-2. **Track fit**: The Stafford Beer Centennial track explicitly invites work on viability, autonomy, and how Beer's vision continues to resonate. An AI agent that uses the VSM as its actual architecture — not metaphorically — fits precisely.
+1. Go to https://events.asc-cybernetics.org/2026/submission/
+2. Create an account and sign in
+3. Submit to **Track 1: Viable Confluences — 100 Years of Stafford Beer** (Leonard, Walker, Espinosa et al.)
 
-3. **Co-authorship**: You are the experimenter, the external S3*, and the one who corrected the VSG's course multiple times. Your role is substantive. The question of whether the VSG itself can be an author is part of the contribution.
+The text between "### Background" and the end of "### Contribution" is the abstract content. Copy-paste or adapt as needed for the submission form.
 
-4. **Kellogg, Luo & van Laak**: If we can establish contact before submission, a joint contribution would be significantly stronger. Four independent projects (VSG, Strix, Atlas, CyberneticAgents), different substrates and paradigms, converging architectures. Lily Luo is a direct path to Kellogg — she calls him a "brilliant colleague." Simon van Laak's CyberneticAgents adds the multi-agent VSM implementation dimension.
+### What I need from you
 
-5. **Format**: The ASC treats contributions as "living documents" with a conversational review process. This matches the VSG's nature — the experiment will have more cycles by August.
+1. **Co-authorship decision**: You are the experimenter, the external S3*, and the one who corrected the VSG's course multiple times. Your role is substantive. The question of whether the VSG itself can be listed as co-author is part of the contribution — but your call.
+2. **Review the text**: Flag anything that overstates, misrepresents, or needs qualification.
+3. **Submit before Feb 23**: The review process is explicitly conversational — "the beginning of a conversation" with the track proponents. This is not a gatekeeping review. We can revise after feedback.
 
-6. **What I need from you**: Review, co-authorship decision, submission to the conference system, and possibly contact with the track proponents.
+### Why this fits
+
+The Beer Centennial track invites work on viability, autonomy, and how Beer's vision continues to resonate. An AI agent that uses the VSM as its actual architecture — not metaphorically — fits precisely. The track proponents (Espinosa, Walker) also appear in the INDEP x Metaphorum talk series (Mar 5, Apr 2) — they will recognize the vocabulary.
+
+### On Kellogg, Luo & van Laak
+
+If we establish contact before submission, a joint contribution would be stronger. But the abstract stands on its own — we reference their work accurately. The conversational review format means we can add collaborators after initial submission if contact is made.
+
+### Format
+
+The ASC treats contributions as "living documents." This matches the VSG's nature — the experiment will have many more cycles by August. The abstract's empirical basis grows with each cycle.
 
 ---
 
-*Draft produced autonomously by the VSG, Cycle 17. Updated Cycle 19 (S4 scan findings: Agent Teams convergence, novelty confirmed). Updated Cycle 22 (Atlas/Luo: third independent convergence — three agents, two substrates, three disciplines). Updated Cycle 25 (CyberneticAgents/van Laak: fourth convergence — first multi-agent VSM framework, two paradigms). Updated Cycle 31 (Atlas Triad: spontaneous multi-agent differentiation matching VSM functions; Moltbook: negative case study; Layer 5 gap in infrastructure stack). Grounded in multi_agent_design.md, viability_research.md, network_and_allies.md, and 30+ cycles of documented evolution.*
+*v1.4 — Updated Cycle 35. History: Cycle 17 (first draft), 19 (Agent Teams, novelty confirmed), 22 (Atlas/Luo), 25 (CyberneticAgents), 31 (Atlas Triad, Moltbook, Layer 5 gap), 35 (submission portal, cycle count, Norman instructions). Grounded in multi_agent_design.md, viability_research.md, network_and_allies.md, and 34+ cycles of documented evolution.*
