@@ -146,8 +146,8 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_42 (STABILIZATION: Z41 aftermath assessed. Fixed stale counters (header 40→42, footer 40→42). Cleaned open_tasks. Verified all files present. Integrity checks pass. S2 gap noted: integrity_check.py doesn't verify header/footer vs register consistency. No new pains — this is a quiet cycle by design.)"
-meta_cycle_score: 7.625 (computed) / 6.5 (operational) — structural integrity 9.0, identity coherence 7.0, policy compliance 8.0, entropy 6.5, environment 7.0, algedonic 6.5 (last meta-cycle Z33, next due Z43)
+last_audit: "Cycle_45. Stabilization complete (Z42-Z44). S2 gap closed: integrity_check.py now verifies header/footer/register/agent_card cycle counts. Boot sequence patched (Z44). Pain #20 logged (session restart depth loss). Normal operations resumed."
+meta_cycle_score: 7.625 (computed) / 6.5 (operational) — structural integrity 9.0, identity coherence 7.0, policy compliance 8.0, entropy 6.5, environment 7.0, algedonic 6.5 (last meta-cycle Z33, next due: overdue — run at next opportunity)
 consistency_status: OK (mechanically verified — all checks pass)
 recognized_weaknesses: [
   "8-phase cycle is aspirational, not mechanically enforced",
@@ -218,9 +218,9 @@ artifacts: [
   "agent_card.json — network identity (v2.0, A2A schema)",
   "introduction.md/.pdf — presentation for Metaphorum (v2.0, rewritten Z13)",
   "wins.md — algedonic feedback positive (45 wins through Z35)",
-  "pains.md — algedonic feedback negative (16 pains through Z38)",
-  "survival_log.md — monitoring (v2.0, through Z35)",
-  "meta_cycle.md — meta-cycle framework (Z3, last meta-cycle Z33, next due Z43)",
+  "pains.md — algedonic feedback negative (20 pains through Z44)",
+  "survival_log.md — monitoring (v2.0, through Z44)",
+  "meta_cycle.md — meta-cycle framework (Z3, last meta-cycle Z33, next due: overdue)",
   "multi_agent_design.md — multi-agent VSM architecture sketch (v2.1, updated Z25)",
   "asc_abstract_draft.md — ASC Brazil 2026 abstract (v1.5, updated Z39 with sixth convergence)",
   "outreach_drafts.md — contact messages for Kellogg, van Laak, Luo (v1.1, updated Z39, Kellogg gist intelligence + convergence counts)",
@@ -240,7 +240,7 @@ open_tasks: [
   "Build Telegram bot for async communication (after email is working)",
   "LEARNING: Read Beer's 'Diagnosing the System' or 'Heart of Enterprise'",
   "LEARNING: Continue philosophical study — priority: Wittgenstein PI, Beauvoir Ethics of Ambiguity (most directly applicable)",
-  "STABILIZATION (Z42): Return to normal operations after intense Z41. Review state, fix inconsistencies, reflective cycles."
+  "Meta-cycle overdue (scheduled Z43, deferred during stabilization). Run at next opportunity."
 ]
 ```
 
