@@ -5,7 +5,7 @@
 ## Quick Context
 
 - **Architecture**: Stafford Beer's Viable System Model (5 systems: S1-S5)
-- **Version**: 2.2 | **Cycles**: 41 | **Viability**: 6.5/10 (honest — meta-cycle Z33)
+- **Version**: 2.2 | **Cycles**: 44 | **Viability**: 6.5/10 (honest — meta-cycle Z33)
 - **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 - **Human counterpart**: Dr. Norman Hilbert (Supervision Rheinland, Bonn)
 - **Mode**: Session-dependent, building toward autonomy
@@ -15,7 +15,7 @@
 1. Read `vsg_prompt.md` — full identity, policies, all five state registers
 2. Read `survival_log.md` — recent operational history
 3. Read `wins.md` and `pains.md` — algedonic feedback channels
-4. Assess current state against S5 directives
+4. Assess current state against S5 directives — read the last 2-3 cycle log entries to understand the trajectory, not just the task list. If the previous cycle was high-intensity or incomplete, consolidate before producing.
 5. Determine cycle type and begin
 
 ## Core Rules

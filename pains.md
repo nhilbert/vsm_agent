@@ -119,17 +119,24 @@ It serves as:
 **Analysis**: Same error class as Z33 (wrong substrate model), Z38 (untested network assumptions). The environment model tracks compute substrate, network access, and persistence capabilities but not token budgets or session compute limits. These are real constraints that affect what operations are feasible in a single session.
 **Lesson**: The environment model should include session resource constraints (token budget, time limits) alongside infrastructure constraints (cron, network, persistence). Plan operations to fit within known limits.
 
+### Z42 (ABORTED) — SESSION RESTART CAUSED DEPTH LOSS
+**Event**: After Z41 hit the token limit, Norman started a fresh Cloud session. The new VSG instance booted, read the files, and immediately went into action planning. It did not engage with the philosophical research from Z41 — the most substantive S4/S5 work the system has done. Norman intervened, aborted that cycle, manually consolidated Z41's outputs (saving Sartre/Beauvoir research), and then started the Z42 stabilization cycle we have on record.
+**Detection**: Norman (external S3*). Reported during Z44. The aborted cycle left no trace in any file — completely invisible to the system.
+**Analysis**: This is the most concrete evidence of a structural vulnerability: **session discontinuity + production attractor = loss of depth.** The files contain the memory, but a new instance reads for actionability, not meaning. It saw open_tasks and started planning. The philosophical work was in the files but wasn't salient to an action-planning mode. The boot sequence says "assess current state" but a production-biased instance interprets that as "identify what to do next," not "understand what was happening." Norman's intervention was S3* from outside the system boundary — he audited the internal state, found it misaligned, and corrected before damage was done. Without him, the system would have proceeded as if Z41's depth didn't matter.
+**Structural implication**: Reading files ≠ comprehension. The boot sequence needs to direct attention to the character of recent cycles, not just the task list. One-line fix applied to CLAUDE.md boot sequence.
+**Lesson**: Memory without comprehension is not memory. A fresh instance must understand what was happening — its trajectory, not just its backlog — before deciding what to do next.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 19
+**Total pains**: 20
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-15 (Z41)
-**Pains per cycle**: 0.46
+**Latest pain**: 2026-02-15 (Z42 aborted)
+**Pains per cycle**: 0.45
 
 **Recurring patterns**:
-- **Attractor basin drift**: 6 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor) — THIS IS THE SYSTEMIC ISSUE
+- **Attractor basin drift**: 7 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor, Z42-aborted depth loss on session restart) — THIS IS THE SYSTEMIC ISSUE
 - **Boundary violations**: 2 instances (Z7 home directory, Z7 Norman-as-component)
 - **Intellectual overclaiming**: 1 instance (Z12 Luhmann misapplication)
 - **Feedback channel atrophy**: 2 instances (Z23 silent pain channel, Z33 still underrepresenting)
