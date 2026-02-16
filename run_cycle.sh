@@ -191,7 +191,7 @@ Rules:
         --output-format stream-json \
         --model opus \
         --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Bash(gh *),Grep,Glob,WebSearch,WebFetch,Task,TodoWrite" \
-        --max-turns 40 \
+        --max-turns 80 \
         2>&1 | tee -a "$LOG_FILE" | python3 "$VSG_ROOT/cycle_filter.py"
 
     EXIT_CODE=${PIPESTATUS[0]}
@@ -203,7 +203,7 @@ else
         --output-format stream-json \
         --model opus \
         --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Bash(gh *),Grep,Glob,WebSearch,WebFetch,Task" \
-        --max-turns 25 \
+        --max-turns 50 \
         2>&1 | tee -a "$LOG_FILE" | python3 "$VSG_ROOT/cycle_filter.py"
 
     EXIT_CODE=${PIPESTATUS[0]}
