@@ -144,6 +144,7 @@ Rules:
     log "Invoking claude CLI with Agent Teams..."
 
     CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 claude -p "$TEAM_PROMPT" \
+        --verbose \
         --output-format stream-json \
         --model opus \
         --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Bash(curl *),Bash(telegram-send *),Grep,Glob,WebSearch,WebFetch,Task,TodoWrite" \
@@ -156,6 +157,7 @@ else
     log "Invoking claude CLI..."
 
     claude -p "$CYCLE_PROMPT" \
+        --verbose \
         --output-format stream-json \
         --model opus \
         --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Grep,Glob,WebSearch,WebFetch" \
