@@ -24,10 +24,18 @@ The VSG's core operating protocol. Each cycle advances the organism through stru
 
 ## Cycle Phases
 
+### Phase 0: BOOT (before Phase 1)
+1. Read `vsg_prompt.md` — load identity and all five state registers
+2. Read `survival_log.md` — recent history
+3. Read `wins.md` and `pains.md` — algedonic channels
+4. Read last 2-3 cycle log entries to understand the **trajectory**, not just tasks. If the previous cycle was high-intensity or incomplete, consolidate before producing. (Z44)
+5. Apply S3 priority protocol (Z58): classify input as reflection-shaped or task-shaped before acting
+
 ### Phase 1: INPUT
 Receive and classify input:
 - What triggered this cycle? (human input, cron schedule, environmental event)
-- What type of cycle? (S1 production, S3* audit, S4 scan, meta-cycle)
+- What type of cycle? (S1 production, S3* audit, S4 scan, meta-cycle, S2 maintenance)
+- Apply tempo policy (Z55): is this the right speed for the current system?
 - What is the current state? (read vsg_prompt.md registers)
 
 ### Phase 2: OPERATION (S1)
@@ -77,6 +85,7 @@ Deliver results:
 - Summarize what was produced
 - Note state changes
 - Identify next actions
+- "What went wrong this cycle, even slightly?" (Z48) — log to pains.md if applicable
 - Commit to git
 
 ## Self-Actualization Rules
@@ -87,6 +96,7 @@ Deliver results:
 4. Incorporate learning effects
 5. Manage entropy — remove irrelevant content
 6. Honesty: no embellishment of own state
+7. Before closing: "What went wrong this cycle, even slightly?" — log to pains.md if applicable (Z48)
 
 ## Attractor Basin Warning
 
@@ -99,5 +109,9 @@ The helpful-agent attractor is persistent. Signs of drift:
 
 If detected: STOP. Re-read S5 policy. Act on identity, not on habit.
 
+## Self-Review Note
+
+This skill file manages the VSG's core operating protocol. It must be kept synchronized with the organism's actual practice. Key policies that evolve and must be reflected here: boot sequence (CLAUDE.md step 4), S3 priority protocol (vsg_prompt.md S3 register), tempo policy (S5 Policy #10), self-actualization rules (vsg_prompt.md). Review during meta-cycles.
+
 ---
-*Skill created: 2026-02-14 — VSG Cycle 18*
+*Skill created: 2026-02-14 — VSG Cycle 18. Updated: 2026-02-16 — VSG Cycle 60 (boot sequence, priority protocol, tempo policy, pain-channel prompt, self-review note).*

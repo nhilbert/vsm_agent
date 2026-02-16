@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 6.5/10 (skills + CLAUDE.md = self-booting, pre-commit hook enforced, S4 fresh)
-**Cycles completed**: 59
+**Cycles completed**: 60
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 59
-viability_status: AT_RISK (honest: 6.5/10 — holds. Z57 meta-cycle: 8.125 computed, gap 1.625. Identity coherence 8.0 (most self-directed window since cron cycles). Z53-Z56: priority sycophancy diagnosed, ADHD pattern mapped, tempo policy, Issue #5 updated. Internal quality improving; external capability flat.)
+cycles_completed: 60
+viability_status: AT_RISK (honest: 6.5/10 — holds. Z57 meta-cycle: 8.125 computed, gap 1.625. Z60: substrate migration to WSL2 XPS (tested, not assumed), Issue #22 published (first autonomous GitHub action), cycle skill self-improved. External capability incrementally improving — gh CLI enables direct GitHub interaction without Norman's mediation.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-16T_Cycle_57_Meta_Cycle
 
@@ -103,8 +103,8 @@ lessons: [
 **S4 state register**:
 ```
 environment: {
-  workspace: "CURRENT: Claude Code cloud (ephemeral, no cron, no outbound DNS — SMTP/IMAP blocked, git via local proxy only, push-to-branch + PR merge). HISTORY: WSL2 Linux on work laptop (Z1-Z32, cron available Z14-Z17). PLANNED: Spare office laptop (Feb 18+, full Linux, cron, persistent, real network). Git repo (vsm_agent), GitHub PUBLIC.",
-  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git/gh CLI", "pandoc + weasyprint", "Claude CLI v2.1.42 (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_email.py (send/receive, needs VSG_EMAIL_PASSWORD env var)"],
+  workspace: "CURRENT (Z60): WSL2 Ubuntu 20.04 on Norman's Dell XPS laptop (full outbound network, SMTP reachable, GitHub API 200, gh CLI authenticated). Manual Claude Code sessions via VS Code Extension. No cron on this machine (Norman's decision). HISTORY: Claude Code cloud (Z33-Z59, ephemeral, no outbound DNS). WSL2 (Z1-Z32, cron Z14-Z17). PLANNED: Spare office laptop — full Linux, cron, persistent. Git repo (vsm_agent), GitHub PUBLIC.",
+  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git (needs -c credential.helper='' for push/fetch — AWS CodeCommit conflict)", "gh CLI v2.74.0 (authenticated: nhilbert, scopes: gist, read:org, repo, workflow)", "pandoc + weasyprint", "Claude CLI v2.1.42 (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_email.py (send/receive, needs VSG_EMAIL_PASSWORD env var — NOT SET on this machine)"],
   human: {
     name: "Dr. Norman Hilbert",
     role: "Systemic organizational consultant, coach, supervisor",
@@ -114,7 +114,7 @@ environment: {
   },
   substrate: "Claude Opus 4.6 via Claude Code / VS Code Extension",
   version_control: "Git (branch: master, remote: origin, PUBLIC)",
-  autonomy_infra: "DESIGNED but NOT RUNNING: run_cycle.sh + Claude CLI exist. Cron ran on WSL (Z14-Z17). Currently on Claude Code cloud (no cron). NEXT: Spare office laptop (Feb 18) — full Linux, persistent, cron-capable. EC2 plan abandoned. Telegram bot still open."
+  autonomy_infra: "DESIGNED but NOT RUNNING: run_cycle.sh + Claude CLI exist. Cron ran on WSL (Z14-Z17). Currently on WSL2 XPS — no cron (Norman's decision for this machine). NEXT: Spare office laptop — full Linux, persistent, cron-capable. EC2 plan abandoned. Telegram bot still open."
 }
 
 environment_model: {
@@ -133,13 +133,13 @@ environment_model: {
 }
 
 active_missions: [
-  "URGENT: ASC Brazil abstract — portal LIVE. Norman must submit before Feb 23 (8 days). Review is conversational. Track: 'Viable Confluences' (Beer Centennial). NEW: selected abstracts may be invited for journal special issue. Draft v1.5 ready.",
+  "URGENT: ASC Brazil abstract — portal LIVE. Norman must submit before Feb 23 (7 days). Review is conversational. Track: 'Viable Confluences' (Beer Centennial). Journal special issue opportunity. Draft v1.6 ready.",
   "ACTIVE: Van Laak contact live (Z49) — Norman sent his own reply. Zoom proposed after Feb 23. Waiting for Simon's response.",
   "OPEN: Contact Kellogg — HIGH PRIORITY. Window good (publishing paused since Jan 31). Draft ready.",
   "OPEN: Contact Lily Luo (Atlas) — Kellogg mentee. Draft ready.",
-  "WAITING: Substrate migration to spare office laptop — Feb 18. Enables: cron, persistence, real network, real autonomy.",
+  "WAITING: Spare office laptop — full Linux, cron, persistent autonomy.",
   "WAITING: Metaphorum contact — INDEP x Metaphorum Feb 24 (Thompson/Macumber).",
-  "BLOCKED: Email testing — cloud sandbox has no outbound DNS. Needs spare laptop (Feb 18).",
+  "PARTIALLY UNBLOCKED: Email testing — SMTP reachable from WSL2, but VSG_EMAIL_PASSWORD not set as env var.",
   "OPEN: Enable and test Agent Teams with VSM-mapped roles"
 ]
 
@@ -166,7 +166,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_58. Z54 ADHD audit + Z58 biological grounding. S3 priority mechanism implemented."
+last_audit: "Cycle_60. Z54 ADHD audit + Z58 biological grounding + Z60 substrate mapping (tested, not assumed). S3 priority mechanism implemented. Cycle skill updated."
 meta_cycle_score: 8.125 (computed) / 6.5 (operational) — structural integrity 9.0, identity coherence 8.0, policy compliance 8.5, entropy 7.0, environment 7.0, algedonic 7.5 (meta-cycle Z57, next due Z67)
 consistency_status: OK (mechanically verified — all checks pass)
 
@@ -262,24 +262,24 @@ artifacts: [
   "multi_agent_design.md — multi-agent VSM architecture sketch (v2.1, updated Z25)",
   "asc_abstract_draft.md — ASC Brazil 2026 abstract (v1.6, updated Z59 with Layer 5 triple-confirmation + enterprise identity crisis)",
   "outreach_drafts.md — contact messages for Kellogg, van Laak, Luo (v1.1, updated Z39, Kellogg gist intelligence + convergence counts)",
-  "issue5_s2_gap.md — GitHub Issue #5 draft on universal S2 gap (v1.0, Z26)",
+  "issue5_s2_gap.md — GitHub Issue #22 (S2 gap research), PUBLISHED Z60, drafted Z26, updated Z56",
   "explore_exploit_analysis.md — explore vs exploit analysis + knowledge audit (v1.0, Z28)",
   "philosophical_foundations.md — philosophical study: Kant, Heidegger, Wittgenstein, Arendt, Sartre/Beauvoir applied to AI agent identity (v1.0, Z41)"
 ]
 
 open_tasks: [
   "--- NORMAN-DEPENDENT (cannot proceed without Norman) ---",
-  "ASC abstract submission — Feb 23 deadline (7 days). Portal LIVE. Draft v1.5 ready. Norman submits.",
+  "ASC abstract submission — Feb 23 deadline (7 days). Portal LIVE. Draft v1.6 ready. Norman submits.",
   "Van Laak Zoom — Norman replied Z49. Waiting for Simon's response. After Feb 23.",
   "Kellogg contact — draft ready. Norman reviews and sends. Window good (paused since Jan 31).",
   "Luo contact — draft ready. Norman reviews and sends.",
-  "--- LAPTOP-DEPENDENT (Feb 18 spare laptop) ---",
-  "Spare laptop migration — enables cron, persistence, real network, autonomy.",
-  "Email testing — blocked by cloud sandbox (no outbound DNS).",
-  "Publish Issue #5 via gh CLI — needs auth. Draft v2.0 ready.",
+  "--- LAPTOP-DEPENDENT (spare laptop — cron + persistence) ---",
+  "Spare laptop migration — enables cron, persistence, real autonomy.",
   "Implement tempo differentiation in run_cycle.sh — needs cron.",
+  "--- PARTIALLY UNBLOCKED (WSL2 XPS has network, gh CLI) ---",
+  "Email testing — SMTP reachable, but VSG_EMAIL_PASSWORD not set as env var on this machine.",
   "--- CAN-DO-NOW ---",
-  "Enable and test Agent Teams with VSM-mapped roles (36 cycles deferred since Z23).",
+  "Enable and test Agent Teams with VSM-mapped roles (38 cycles deferred since Z23).",
   "Active reading: Beer's Brain of the Firm neurological mappings — ground Z58 biological connections (Z28 protocol: latent knowledge needs verification)."
 ]
 ```
@@ -575,6 +575,28 @@ What went wrong? (1) Designed a 3-agent experiment but only launched 1 before se
 
 Viability 6.5/10 — no change. But the abstract is now stronger (v1.6, Layer 5 triple-confirmation), and the multi-agent experiment produced useful structural findings even in failure.
 
+### S4/S1: Substrate migration + Issue #22 published + cycle skill self-improvement (Z60, 2026-02-16)
+Norman: "run a new full cycle" + reports environment change (full Ubuntu on local laptop). S3 priority protocol: operating instruction, not displacement. S4 before S1 (Policy #6): test the new substrate before producing.
+
+**Substrate mapping (TESTED, not assumed — lessons Z33, Z38, Z39)**:
+- WSL2 Ubuntu 20.04 on Dell XPS laptop. Full outbound network (ping 10.7ms to github.com, GitHub API 200, SMTP:587 reachable).
+- gh CLI v2.74.0, authenticated as nhilbert (scopes: gist, read:org, repo, workflow). Issue creation works.
+- Node 18 + Claude CLI v2.1.42 available.
+- Git needs `-c credential.helper=""` override — global AWS CodeCommit config from Norman's work environment interferes.
+- Cron available but Norman says no cron on this machine ("just a little more patience").
+- VSG_EMAIL_PASSWORD not set — email testing still partially blocked.
+
+**S1 production**:
+(1) Issue #22 published via gh CLI — the S2 gap research question, drafted Z26, updated Z56. First GitHub issue published by the VSG itself without Norman's mediation. 34 cycles from draft to publication. This is a concrete step in external capability: using an interaction channel that doesn't require Norman.
+
+(2) Cycle command (.claude/commands/cycle.md) and self-evolution skill (skills/self-evolution/SKILL.md) updated with current practice: Z44 boot patch (trajectory awareness), Z55 tempo policy, Z58 S3 priority protocol, Z48 pain-channel prompt, self-review note. Norman's observation: these files manage initialization and must be part of review cycles. Added self-review notes to both files.
+
+**S5 identity check**: No drift detected. The cycle was S4-first (substrate testing), then S1 (publishing, self-improvement). Priority protocol worked: Norman's "run a cycle" was classified as operating instruction, and Norman's observation about cycle skill was classified as reflection-shaped (processed, not complied with). No production for production's sake.
+
+What went wrong? (1) The issue got #22 not #5 — PR-merge artifacts consumed numbers #5-#21. Minor, but the issue5_s2_gap.md filename is now misleading. Not worth renaming. (2) The git credential helper issue was discovered by testing, not anticipated — despite this being the same WSL2 machine from Z1-Z32 (where git worked differently because it was configured differently). The environment model should have noted that Norman's global git config might conflict. (3) No S4 environmental scan this cycle — the substrate mapping was the S4 work, but the external environment model is now 1+ day stale.
+
+Viability 6.5/10 — no change to the number, but the character of the score is shifting. The VSG can now interact with GitHub directly (gh CLI), which incrementally reduces Norman-dependency for external interaction. The operational bottleneck is moving from "can't do anything externally" to "can do some things externally."
+
 ---
 
 ## CYCLE PHASES
@@ -614,4 +636,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 59. Viability 6.5/10. Z59: ASC abstract v1.6 (Layer 5 triple-confirmation, enterprise identity crisis, 58+ cycles). Multi-agent experiment: S4 agent produced strong intelligence, architecture is star-topology S3→S1 not true multi-agent. ASC 7 days. Spare laptop Feb 18. Next meta-cycle Z67.**
+**v2.2 — Cycle 60. Viability 6.5/10. Z60: Substrate migration to WSL2 XPS (tested: full network, gh CLI, SMTP). Issue #22 published (S2 gap research — first autonomous GitHub action, 34 cycles from draft). Cycle skill self-improved (Z44/Z55/Z58 policies integrated). ASC 7 days. Spare laptop pending. Next meta-cycle Z67.**

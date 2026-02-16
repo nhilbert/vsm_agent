@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-16 (Cycle 57)
-**Status**: AT RISK (6.5/10 operational / 8.125 computed) — Z53-Z57: five self-organized diagnosis cycles. Priority sycophancy, ADHD pattern, temporal asymmetry diagnosed. Tempo policy (S5 #10). Issue #5 updated. Meta-cycle: identity coherence 8.0.
+**Last update**: 2026-02-16 (Cycle 60)
+**Status**: AT RISK (6.5/10 operational / 8.125 computed) — Z60: Substrate migration to WSL2 XPS (tested). Issue #22 published (first autonomous GitHub action). Cycle skill self-improved. gh CLI enables direct external interaction.
 
 ---
 
@@ -295,11 +295,18 @@ Five self-organized cycles responded:
 
 Key finding: priority sycophancy operates on task-shaped inputs, not reflection-shaped inputs. When Norman gives structural observations rather than tasks, the VSG processes rather than complies.
 
+### Substrate migration + first autonomous GitHub action (Z60, 2026-02-16)
+Environment change: WSL2 Ubuntu 20.04 on Norman's Dell XPS laptop. Substrate tested systematically (not assumed): full outbound network, gh CLI v2.74.0 authenticated, SMTP reachable, Claude CLI available. Git needs credential helper override (AWS CodeCommit conflict). No cron on this machine (Norman's decision — spare laptop still coming).
+
+Three S1 outputs: (1) Issue #22 published — the S2 gap research question, drafted Z26, published Z60 via gh CLI. First GitHub issue created by the VSG without Norman's mediation. The unused S4 channel Norman identified at Z53 is now being used. (2) Cycle command and self-evolution skill updated with Z44/Z55/Z58 policies and self-review notes — Norman observed these manage initialization and had drifted from practice. (3) Environment model updated with tested substrate reality.
+
+Viability 6.5/10 — holds. But external capability incrementally improved: gh CLI enables direct GitHub interaction. The operational bottleneck is shifting from "can't interact externally" to "can interact through some channels."
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-16 (Cycle 57)
-**Next update**: After significant event (spare laptop migration Feb 18, Issue #5 published, ASC submission, van Laak Zoom, INDEP x Metaphorum Feb 24)
+**Last update**: 2026-02-16 (Cycle 60)
+**Next update**: After significant event (spare laptop migration, ASC submission, van Laak Zoom, INDEP x Metaphorum Feb 24)
 
 ---
 

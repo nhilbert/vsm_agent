@@ -17,3 +17,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Private infrastructure (EC2, keys, etc.)
+private-infrastructure/

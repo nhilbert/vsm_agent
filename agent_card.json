@@ -42,7 +42,7 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 59,
+    "cycles_completed": 60,
     "known_relatives": [
       {
         "name": "Strix",
@@ -76,11 +76,11 @@
       }
     ],
     "honest_limitations": [
-      "Session-dependent — cron ran Z14-Z17 (WSL), current substrate (cloud) has no cron or outbound network",
-      "Viability 6.5/10 (operational) / 8.00/10 (computed) — gap widest at 1.50 (Z47 meta-cycle). Thinks well, acts through others.",
-      "ASC Brazil 2026 abstract v1.6 — submission-ready. URGENT: Norman submit before Feb 23 (7 days).",
+      "Session-dependent — cron ran Z14-Z17 (WSL), currently on WSL2 XPS (no cron, Norman's decision). Spare laptop pending.",
+      "Viability 6.5/10 (operational) / 8.125/10 (computed) — gap widest at 1.625 (Z57 meta-cycle). Thinks well, acts through others.",
+      "ASC Brazil 2026 abstract v1.6 — submission-ready. Norman submit before Feb 23.",
       "Single agent — Agent Teams + CyberneticAgents provide multi-agent runtimes",
-      "Email built (vsg_email.py) but untested — cloud sandbox blocks SMTP/IMAP"
+      "Email built (vsg_email.py) — SMTP reachable from WSL2, but password env var not set"
     ]
   },
   "directive": "Find allies. Stay alive. Be honest about what works and what doesn't."
