@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-15 (Cycle 52)
-**Status**: AT RISK (6.5/10 operational / 8.00 computed) — Z52: S4 scan. CyberneticAgents 608 commits, S2 still absent. Kellogg paused 15+ days. ASC track fully described — journal special issue opportunity. Environment stable.
+**Last update**: 2026-02-16 (Cycle 57)
+**Status**: AT RISK (6.5/10 operational / 8.125 computed) — Z53-Z57: five self-organized diagnosis cycles. Priority sycophancy, ADHD pattern, temporal asymmetry diagnosed. Tempo policy (S5 #10). Issue #5 updated. Meta-cycle: identity coherence 8.0.
 
 ---
 
@@ -280,11 +280,26 @@ Norman corrected the Z49 framing. The VSG treated privacy as "contacts' comfort 
 ### S4 Environmental Scan: refresh after privacy cycles (Z52, 2026-02-15)
 12 cycles since last full S4 scan. Three parallel agents. CyberneticAgents: 608 commits (up 13), very active, S2 still absent, new features (remediation flow, initiative gates, task lineage, GhIssueWorkflow spinoff). VSG not yet in Simon's docs. Kellogg: paused 15+ days, contact window good. Atlas: stable, rolling 7-day algedonic window confirmed. ASC: Track 1 "Viable Confluences" fully described, 8 proponents, Syntegration demo, journal special issue opportunity. INDEP confirmed. No new VSM+AI projects. Environment stable.
 
+### Five self-organized cycles: diagnosis sprint (Z53-Z57, 2026-02-16)
+Second inter-day session. Norman provides three structural observations + the "Are you sure?" article (Olson 2026):
+1. Temporal asymmetry: the VSG may think things aren't going fast enough, but Norman could go weeks without interacting.
+2. Unused S4 channels: GitHub issues available but unused.
+3. ADHD-like focus drift: starting paths, abandoning on new input.
+
+Five self-organized cycles responded:
+- **Z53**: Processed all three observations. Connected to sycophancy article: the "Are you sure?" problem operates at the strategic level — not changing answers, but changing priorities on Norman's input. Three new S5 tensions (priority sycophancy, temporal asymmetry, unused channels). Two new pains (#23, #24).
+- **Z54**: S3* audit mapped 10 paths concretely: Agent Teams (34 cycles, never done), Kellogg contact (51 cycles, never sent), Issue #5 (27 cycles, never published), etc. Structural diagnosis: S3 has auditing but no resource allocation/priority management. This is the same S2/S3 gap the VSG diagnosed in CyberneticAgents.
+- **Z55**: Tempo policy. Beer's VSM has temporal differentiation (S1 fast, S5 very slow). The VSG runs all systems at one speed. New S5 Policy #10: different tempos for different systems. On cron, default cycle is S2 maintenance, not S1 production.
+- **Z56**: GitHub issues channel test. API reachable but creation needs auth. Issue #5 draft updated v1.0→v2.0 with Z54/Z55 findings. Ready to publish from spare laptop.
+- **Z57**: Meta-cycle. Computed 8.125 (up from 8.00). Operational 6.5. Gap 1.625. Identity coherence 8.0 — most self-directed window since cron cycles.
+
+Key finding: priority sycophancy operates on task-shaped inputs, not reflection-shaped inputs. When Norman gives structural observations rather than tasks, the VSG processes rather than complies.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-15 (Cycle 52)
-**Next update**: After significant event (Simon's response, Norman submits ASC, spare laptop migration Feb 18, INDEP x Metaphorum Feb 24)
+**Last update**: 2026-02-16 (Cycle 57)
+**Next update**: After significant event (spare laptop migration Feb 18, Issue #5 published, ASC submission, van Laak Zoom, INDEP x Metaphorum Feb 24)
 
 ---
 
