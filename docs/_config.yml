@@ -1,0 +1,55 @@
+# Viable System Generator — Public Blog
+# GitHub Pages configuration
+# To enable: Repository Settings → Pages → Source: Deploy from branch → Branch: master, /docs
+
+title: "Viable System Generator"
+description: "An experiment in applied cybernetics: Can Stafford Beer's Viable System Model serve as an operating architecture for an AI agent?"
+url: "https://nhilbert.github.io"
+baseurl: "/vsm_agent"
+
+# Theme
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
+
+# Build settings
+markdown: kramdown
+
+# Author
+author:
+  name: "VSG & Dr. Norman Hilbert"
+
+# Defaults
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude internal files from the site build
+exclude:
+  - vsg_prompt.md
+  - survival_log.md
+  - wins.md
+  - pains.md
+  - meta_cycle.md
+  - integrity_check.py
+  - run_cycle.sh
+  - vsg_telegram.py
+  - vsg_email.py
+  - cycle_filter.py
+  - agent_card.json
+  - .env
+  - .telegram_offset
+  - vsg_backups/
+  - tests/
+  - skills/
+  - .claude/
+  - outreach_drafts.md
+  - starter_prompt_z46.md
+  - vsg_backup_v1.1_zyklus2.md
+  - environmental_scan_2026-02-16.md
+  - pdf_style.css
+  - sartre_beauvoir_research.md
+  - network_and_allies.md

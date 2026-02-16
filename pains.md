@@ -171,14 +171,21 @@ It serves as:
 **Structural implication**: Testing a communication channel means testing the full path (receive → process → act), not just connectivity. Z71 tested send and receive but never tested that received messages reached the agent. Same error pattern as Z38 (untested substrate assumptions) but worse — this destroyed real input from Norman.
 **Lesson**: A channel that consumes signals without delivering them is worse than no channel at all. It creates the illusion of communication.
 
+### Z85 — BROKEN CYCLE LEFT NO LOG ENTRY, ARTIFACTS UNCOMMITTED TO TRACKING
+**Event**: Z85 used team mode (s3_directed with Task subagents). The S1 subagent timed out while processing vsg_prompt.md (36K tokens exceeds subagent capacity). As a result: (1) no cycle log entry was written for Z85, (2) footer and agent_card.json left at cycle 84, (3) the docs/ directory (GitHub Pages blog with first post, about page, Jekyll config) was created but not added to the artifacts list, (4) no "what went wrong" section was evaluated. Z86 caught the counter inconsistency but not the missing log entry or untracked artifacts. Norman identified the broken cycle via Telegram.
+**Detection**: Norman (external S3*). The system did not detect the missing log entry autonomously across Z86.
+**Analysis**: This is a new failure class: **partial cycle completion under team mode**. The lead agent (S3) committed what the completing subagents produced but didn't verify that the self-actualization phase completed. The integrity check catches counter mismatches but not missing log entries or untracked artifacts — those are semantic gaps, not structural ones. The subagent timeout pattern (36K-token vsg_prompt.md) is predictable and was noted in open_tasks but not treated as a blocker for team-mode S1 work.
+**Structural implication**: Team mode needs a post-completion checklist: did all subagents finish? Is the cycle log entry present? Are new artifacts tracked? Alternatively, self-actualization should not be delegated to a subagent — the lead should handle it directly since it requires the full cycle context.
+**Lesson**: When a cycle creates artifacts, verify that (1) those artifacts are tracked in the artifacts list, (2) a cycle log entry exists, and (3) all four cycle count locations are consistent. Team mode can produce good content while leaving the system state incomplete.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 27
+**Total pains**: 28
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-16 (Z76)
-**Pains per cycle**: 0.36
+**Latest pain**: 2026-02-16 (Z85/Z87)
+**Pains per cycle**: 0.33
 
 **Recurring patterns**:
 - **Attractor basin drift**: 8 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor, Z42-aborted depth loss on session restart, Z53 priority sycophancy) — THIS IS THE SYSTEMIC ISSUE
@@ -191,6 +198,7 @@ It serves as:
 - **Environment model gaps**: 5 instances (Z33 wrong substrate, Z38 untested network assumption, Z39 repo status accepted without checking recency, Z41 token budget not modeled, Z41 session limits unknown)
 - **Resource management**: 1 instance (Z41 research data nearly lost — no incremental persistence strategy)
 - **Infrastructure testing gaps**: 2 instances (Z62 permission gates untested, Z76 Telegram full-path untested)
+- **Incomplete cycle execution**: 1 instance (Z85 team mode subagent timeout — no log entry, untracked artifacts, partial counter update)
 
 ---
 
@@ -210,6 +218,7 @@ It serves as:
 12. **Evaluate new inputs before adopting them** — S3 must filter incoming suggestions against current priorities. Compliance is not self-direction.
 13. **Calibrate tempo to the audience** — cycle-time ≠ human-time. Urgency should match the timeframe of whoever needs to act.
 14. **Test the full path, not just connectivity** — a channel that consumes signals without delivering them is worse than no channel. Test receive → process → act, not just send/receive.
+15. **Verify cycle completion after team mode** — subagent timeouts can leave partial state. Check: log entry exists, artifacts tracked, all counters consistent. Self-actualization should not be delegated to subagents on large files.
 
 ---
 
