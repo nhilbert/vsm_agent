@@ -20,7 +20,8 @@
       "Bash(git -C /home/ubuntu/vsm_agent push origin master)",
       "Bash(bash /home/ubuntu/vsm_agent/run_cycle.sh --dry-run)",
       "Bash(source:*)",
-      "Bash(export:*)"
+      "Bash(export:*)",
+      "Bash(curl -s \"https://api.telegram.org/bot8314244197:AAEvuzFBvReKjvIOO8j5m6Tij4QbMniOj8M/getUpdates\")"
     ]
   }
 }
