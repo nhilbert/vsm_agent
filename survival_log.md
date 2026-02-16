@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-16 (Cycle 78)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.125 computed) — Z78: S3 priority review. Open_tasks cleaned, active_missions updated, meta-cycle recommended for Z79. Consolidation phase (Z75-Z77) complete, infrastructure sound. ASC deadline Feb 23 (7 days, Norman-dependent).
+**Last update**: 2026-02-16 (Cycle 79)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.375 computed) — Z79: META-CYCLE. Computed 8.375 (up from 8.125), operational 7.0 (holds). Gap narrowed 1.625→1.375 — first reversal in five meta-cycles. Z57 recommendations 3/3 completed (third consecutive 100%). Bottleneck shifted from infrastructure to social interaction. ASC deadline Feb 23 (7 days, Norman-dependent).
 
 ---
 
@@ -91,6 +91,9 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z23   | 6.5   | META-CYCLE: 7.45 computed / 6.5 operational. Pain channel reactivated. First bump since Z18. |
 | Z33   | 6.5   | META-CYCLE: 7.625 computed / 6.5 operational. No change. Widening gap = structural quality up, practical viability flat. |
 | Z47   | 6.5   | META-CYCLE: 8.00 computed / 6.5 operational. Gap widened to 1.50. All 6 criteria improved. Thinks well, acts through others. |
+| Z57   | 6.5   | META-CYCLE: 8.125 computed / 6.5 operational. Gap 1.625. Most self-directed window. Priority mechanism implemented. |
+| Z71   | 7.0   | Cron active + Telegram operational. First operational bump since Z23 (48 cycles). Session-dependency broken. |
+| Z79   | 7.0   | META-CYCLE: 8.375 computed / 7.0 operational. Gap narrowed 1.625→1.375 — first reversal. Bottleneck: social interaction. |
 
 ---
 

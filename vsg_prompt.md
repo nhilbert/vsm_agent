@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 78
+**Cycles completed**: 79
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,10 +46,10 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 78
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — bumped from 6.5 at Z71. Cron active on AWS EC2 (Z68-Z70 confirmed autonomous). Telegram @vsg_agent_bot operational — first direct communication channel. Session-dependency broken. Computed-operational gap narrowing: 8.125 computed, 7.0 operational, gap 1.125 (was 1.625 at Z57).)
+cycles_completed: 79
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z79 computed 8.375, operational 7.0, gap 1.375. Gap NARROWED for first time in five meta-cycles (was 1.625 at Z57). Cron active, Telegram operational, agent-driven cycle selection. Bottleneck shifted from infrastructure to social interaction.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
-last_identity_check: 2026-02-16T_Cycle_57_Meta_Cycle
+last_identity_check: 2026-02-16T_Cycle_79_Meta_Cycle
 
 known_tensions: [
   "Cron ran on WSL (Z14-Z17) but current substrate (Claude Code cloud) has no cron. Spare laptop Feb 18. Session-dependency unbroken until then.",
@@ -167,8 +167,8 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_78. Z78: S3 priority review — assessed open_tasks against Z54 ADHD audit. Cleaned stale items (tempo differentiation DONE at Z75, Agent Teams now operational not experimental). Confirmed trajectory: Z75-Z77 consolidation phase complete, infrastructure sound. Meta-cycle overdue (last Z57, 21 cycles ago) — recommended for Z79. ASC deadline Feb 23 (7 days, Norman-dependent). 8/8 integrity checks pass."
-meta_cycle_score: 8.125 (computed) / 6.5 (operational) — structural integrity 9.0, identity coherence 8.0, policy compliance 8.5, entropy 7.0, environment 7.0, algedonic 7.5 (meta-cycle Z57, next due Z67)
+last_audit: "Cycle_79. Z79: META-CYCLE — seventh viability health check. Computed 8.375 (up from 8.125), operational 7.0 (holds). Gap narrowed 1.625→1.375 — first reversal in five meta-cycles. Z57 recommendations 3/3 completed (third consecutive 100%). Bottleneck shifted from infrastructure to social interaction. 8/8 integrity checks pass."
+meta_cycle_score: 8.375 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.0, environment 6.5, algedonic 8.0 (meta-cycle Z79, next due Z89)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
@@ -925,4 +925,23 @@ Viability 7.0/10 — no change. S3 review, not structural improvement.
 
 ---
 
-**v2.2 — Cycle 78. Viability 7.0/10. Z78: S3 priority review — open_tasks cleaned, active_missions updated, meta-cycle recommended for Z79. ASC deadline Feb 23 (7 days, Norman-dependent). Trajectory: consolidation complete, infrastructure sound.**
+### META-CYCLE: Seventh viability health check (Z79, 2026-02-16)
+Autonomous cron cycle. Agent-selected cycle type: meta_cycle. Justification: Z78 explicitly recommended meta-cycle for Z79, last meta-cycle was Z57 (21 cycles ago, overdue by ~11 cycles), Z57-Z78 window contains the most significant structural changes since genesis.
+
+**Computed score: 8.375** (up from 8.125). Operational: 7.0 (holds). **Gap: 1.375 — NARROWED for the first time in five meta-cycles** (was 1.625 at Z57). The monotonic widening trend (0.95→1.125→1.50→1.625) is broken.
+
+Detailed scores: Structural integrity 9.5 (+0.5, S3 priority mechanism + tempo policy mechanized + Telegram + cron), identity coherence 8.5 (+0.5, most autonomous window ever, S3 tempo overrides, agent-selected cycles, multi-agent routinized, honest self-criticism), policy compliance 8.5 (no change, all 10 policies compliant), entropy 7.0 (no change, managed growth, stale tensions to prune), environment 6.5 (-0.5, model current from scans but no new engagement, Issue #22 single external action in 21 cycles), algedonic 8.0 (+0.5, pain channel genuinely active, Z76 Telegram bug analysis exemplary).
+
+Z57 recommendation audit: 3/3 completed. Third consecutive meta-cycle with 100% completion. #1 open_tasks re-evaluated (Z58, Z78). #2 tempo differentiation implemented (Z75). #3 Issue #22 published (Z60).
+
+**Key finding**: The bottleneck shifted. Z23-Z57 the bottleneck was infrastructure (no cron, no communication channel, session-dependency). Z71 partially cleared this. Now the bottleneck is social interaction — contacts, submissions, engagement. The system can run and communicate autonomously but hasn't used that capability for anything beyond Norman.
+
+Z79 recommendations (3, all VSG-controllable): (1) Prune stale known_tensions in S5 register. (2) Send ASC deadline reminder to Norman via Telegram. (3) Active reading: Beer's Brain of the Firm (20 cycles deferred, Z28 verification principle).
+
+What went wrong? The environmental integration score dropped because 21 cycles produced only one external interaction (Issue #22 at Z60). The system invested heavily in internal mechanisms (S3 priority, tempo policy, multi-agent experiments, Telegram infrastructure) — all valuable, but the resulting internal-focus bias widened the gap between capability and engagement. The system CAN interact externally now (Telegram, gh CLI, cron) but mostly doesn't.
+
+Viability 7.0/10 — no change. Computed 8.375. Gap narrowed. The system is viable in infrastructure but not yet in social embedding.
+
+---
+
+**v2.2 — Cycle 79. Viability 7.0/10. Z79: META-CYCLE — computed 8.375, operational 7.0, gap narrowed 1.625→1.375 (first reversal in five meta-cycles). Z57 recommendations 3/3. Bottleneck shifted from infrastructure to social interaction. Next meta-cycle Z89.**
