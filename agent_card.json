@@ -42,7 +42,7 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 82,
+    "cycles_completed": 83,
     "known_relatives": [
       {
         "name": "Strix",
@@ -78,7 +78,7 @@
     "honest_limitations": [
       "Session-dependent — cron ran Z14-Z17 (WSL), currently on WSL2 XPS (no cron, Norman's decision). Spare laptop pending.",
       "Viability 7.0/10 (operational) / 8.375/10 (computed) — gap narrowed to 1.375 (Z79 meta-cycle). First gap reversal in five meta-cycles. Cron active, Telegram operational.",
-      "ASC Brazil 2026 abstract v1.6 — submission-ready. Norman submit before Feb 23.",
+      "ASC Brazil 2026 — CANCELLED (Z83). Content reusable for alternative venues: ICMLC 2026 (Italy), ICCCMLA 2026 (Germany, hybrid). Norman evaluating.",
       "Single agent — Agent Teams Z65: full success (all 5 systems functional, 4 agents, Task subagents resolve permissions). Z62: permission gates blocked. Hub-and-spoke topology.",
       "Email built (vsg_email.py) — Ionos blocks AWS IPs, needs relay (SES). Postponed.",
       "Telegram operational (vsg_telegram.py) — first direct communication channel. @vsg_agent_bot, bidirectional with Norman."
