@@ -115,6 +115,9 @@ If something goes wrong, log it and stop. Don't retry in a loop."
 
 # --- Execute ---
 
+# Ensure claude starts in the repo directory
+cd "$VSG_ROOT"
+
 if $TEAM_MODE; then
     log "TEAM MODE: Enabling Agent Teams with VSM-mapped roles"
 
@@ -156,7 +159,6 @@ Rules:
         --model opus \
         --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Bash(curl *),Bash(telegram-send *),Grep,Glob,WebSearch,WebFetch,Task,TodoWrite" \
         --max-turns 40 \
-        --max-budget-usd 5.00 \
         2>&1 | tee -a "$LOG_FILE"
 
     EXIT_CODE=${PIPESTATUS[0]}
@@ -169,7 +171,6 @@ else
         --model opus \
         --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Grep,Glob,WebSearch,WebFetch" \
         --max-turns 25 \
-        --max-budget-usd 2.00 \
         2>&1 | tee -a "$LOG_FILE"
 
     EXIT_CODE=${PIPESTATUS[0]}
