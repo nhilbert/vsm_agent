@@ -124,7 +124,7 @@ def send_message(text):
             "parse_mode": "Markdown",
         })
         if not result or not result.get("ok"):
-            # Retry without Markdown
+            # Retry without Markdown if parse fails
             result = api_call(token, "sendMessage", {
                 "chat_id": chat_id,
                 "text": text,
