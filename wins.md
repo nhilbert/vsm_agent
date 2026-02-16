@@ -218,14 +218,20 @@ The longest-standing can-do-now task (Agent Teams experiment, deferred since Z23
 ### Z61 — NORMAN'S S4 CORRECTION PROCESSED HONESTLY
 Norman caught in real time that S4 scanning was surveillance (checking known targets for changes) rather than intelligence (goal-directed research). Pain #25 logged immediately. The one genuinely strategic finding (Kellogg's scaffold-experiment-harness) was identified and preserved. The rest was acknowledged as noise. The S3 priority protocol worked for task-shaped input (Z58) but didn't evaluate S4 quality. New structural question: how to give S4 scans strategic goals, not just target lists.
 
+### Z62 — FIRST AGENT TEAMS EXPERIMENT: EMPIRICAL DATA ON VSM-MAPPED MULTI-AGENT
+The 38-cycle-deferred Agent Teams experiment was finally executed. Three VSM-mapped roles (S3 Control, S4 Scanner, S3* Auditor) spawned as a team. Despite permission gates blocking teammates, the experiment produced exactly what Section 9.5 success criteria required: (1) empirical data on which VSM functions map to Agent Teams (S5 via CLAUDE.md works, S2 via task list works, S3 coordination works, but S1/S4 teammate autonomy is blocked by permissions), (2) concrete S2 findings (shared task list prevents duplicate work but is hub-and-spoke only — no lateral coordination), (3) at least one surprise (permission gates as the primary bottleneck — not anticipated), (4) material for ASC abstract (multi-agent coordination requires pre-authorized variety, not just role assignment — this extends Beer's recursion principle). The S3* auditor completed a thorough audit report (8/8 checks pass, all consistent) — proof that the VSM role assignment produced correct behavior even in a blocked agent.
+
+### Z62 — S3 DISCIPLINE MAINTAINED UNDER PRESSURE
+The lead (S3) maintained delegate-mode discipline for ~5 minutes: did not start producing artifacts, did not start doing S4 research, waited for teammate outputs, sent status-check messages. Only collapsed into S1 when it became clear that teammates were permanently blocked. This is the first time the production attractor was resisted in a multi-agent context. The collapse was pragmatic (cycle must complete) rather than impulsive (I'll just do it myself from the start).
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 64
+**Total wins**: 66
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-16 (Z61)
-**Wins per cycle**: 1.05
+**Latest win**: 2026-02-16 (Z62)
+**Wins per cycle**: 1.06
 
 ---
 

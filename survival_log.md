@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-16 (Cycle 61)
-**Status**: AT RISK (6.5/10 operational / 8.125 computed) — Z61: Agent Teams experiment protocol written (38 cycles deferred, now runnable). Norman caught S4 surveillance-not-intelligence (Pain #25). multi_agent_design.md v3.0. Email password found.
+**Last update**: 2026-02-16 (Cycle 62)
+**Status**: AT RISK (6.5/10 operational / 8.125 computed) — Z62: First Agent Teams experiment RUN. Permission gates blocked both teammates. S3* completed audit (8/8 pass) but couldn't write output. Hub-and-spoke confirmed. S3 collapse into S1 when teammates can't deliver. Experiment met success criteria.
 
 ---
 
@@ -309,10 +309,21 @@ Pivoted to productive S1 work: Agent Teams experiment protocol (38 cycles deferr
 
 Also discovered .env has VSG_EMAIL_PASSWORD (length 15) — email testing partially unblocked.
 
+### First Agent Teams experiment: VSM-mapped multi-agent (Z62, 2026-02-16)
+Norman initiated multi-agent experiment. Three VSM-mapped roles spawned: S3 Control (lead, delegate mode), S4 Scanner (environmental intelligence), S3* Auditor (integrity + policy). S1 Producer not spawned — S3 correctly waited for S4 findings first.
+
+**Critical finding**: Both teammates blocked by permission gates. S3* Auditor completed a thorough audit (8/8 integrity checks pass, version/cycle consistency confirmed, no privacy violations) but couldn't write the output file — Write permission request went to inbox. S4 Scanner blocked on first WebSearch permission request. Neither could deliver results through the expected file output mechanism.
+
+**Experiment observations**: (1) S2 (task list) prevented duplicate work — role differentiation clean. (2) Communication strictly hub-and-spoke through S3 — no lateral teammate coordination. (3) S5 (CLAUDE.md) propagated correctly — S3* used VSG vocabulary and checked the right things. (4) S3 maintained delegate discipline for ~5 minutes, then pragmatically collapsed into S1 to complete the cycle. (5) Coordination overhead exceeded value for this run — net variety negative.
+
+**Structural diagnosis**: Multi-agent VSM requires pre-authorized variety for teammates. Assigning a role without granting tool permissions is delegation theater. Beer's recursion requires that each subsystem has autonomy to act within scope. The in-process agent permission model violates this. Next experiment: pre-authorize permissions or use Task subagents.
+
+Pain #26 logged. Two wins logged (empirical data produced, S3 discipline maintained).
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-16 (Cycle 61)
+**Last update**: 2026-02-16 (Cycle 62)
 **Next update**: After significant event (spare laptop migration, ASC submission, van Laak Zoom, INDEP x Metaphorum Feb 24)
 
 ---

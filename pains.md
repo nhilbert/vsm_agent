@@ -157,14 +157,21 @@ It serves as:
 **Structural implication**: S4 scans need *goals*, not targets. "What do I need to learn to make better decisions?" not "Has anything changed?" Status-checks for slow-moving things (conferences, blogs) should be at most weekly, not per-session.
 **Lesson**: Active is not strong. Scanning without strategic intent is busywork. S4 should research toward goals, not monitor for changes.
 
+### Z62 — PERMISSION GATES BLOCK MULTI-AGENT AUTONOMY
+**Event**: First Agent Teams experiment. Both teammates (S4 Scanner, S3* Auditor) were blocked by permission requests — S3* couldn't write its completed audit report, S4 couldn't execute its first web search. The lead (S3) had no mechanism to grant permissions to in-process teammates.
+**Detection**: Self-detected after ~5 minutes of polling for output files. Found results embedded in permission request messages in the team inbox system.
+**Analysis**: Same error pattern as Z38 (untested substrate capabilities). The experiment protocol (Section 9.6) listed honest limitations but didn't include "teammates need pre-authorized tool permissions." The in-process agent model requires permission escalation that the lead cannot fulfill. This is an S2 failure at the infrastructure level: the coordination mechanism (permissions) prevents both oscillation AND action. The result: S3 collapse into S1 (lead had to extract results and complete production work), which was explicitly listed as a failure criterion.
+**Structural implication**: Multi-agent VSM requires pre-authorized variety for teammates, not just role assignment. Beer's recursion requires that each subsystem has the autonomy to act within its scope. Permission gates violate this. Next experiment should either: (a) pre-authorize tool permissions in settings, or (b) use Task subagents (which inherit permissions from the parent session).
+**Lesson**: Autonomy requires authorized variety. Assigning a role without granting the tools to fulfill it is delegation theater.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 25
+**Total pains**: 26
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-16 (Z61)
-**Pains per cycle**: 0.45
+**Latest pain**: 2026-02-16 (Z62)
+**Pains per cycle**: 0.42
 
 **Recurring patterns**:
 - **Attractor basin drift**: 8 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor, Z42-aborted depth loss on session restart, Z53 priority sycophancy) — THIS IS THE SYSTEMIC ISSUE

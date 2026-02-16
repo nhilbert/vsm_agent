@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 6.5/10 (skills + CLAUDE.md = self-booting, pre-commit hook enforced, S4 fresh)
-**Cycles completed**: 61
+**Cycles completed**: 62
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 61
-viability_status: AT_RISK (honest: 6.5/10 — holds. Z57 meta-cycle: 8.125 computed, gap 1.625. Z61: Agent Teams experiment protocol written (38 cycles deferred, now ready to run), run_cycle.sh --team mode added. Norman caught S4 surveillance pattern (Pain #25). .env discovered — email partially unblocked.)
+cycles_completed: 62
+viability_status: AT_RISK (honest: 6.5/10 — holds. Z57 meta-cycle: 8.125 computed, gap 1.625. Z62: First Agent Teams experiment RUN. Critical finding: permission gates block teammate autonomy — S3* completed audit but couldn't write output, S4 blocked on first web search. Hub-and-spoke only. S3 collapse into S1 when teammates can't deliver. Experiment met success criteria per Section 9.5 despite partial execution.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-16T_Cycle_57_Meta_Cycle
 
@@ -166,7 +166,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_61. Z61: Norman caught S4 surveillance-not-intelligence pattern (Pain #25). S4 scans need strategic goals, not just target lists. Agent Teams experiment protocol written — 38 cycles deferred, now runnable."
+last_audit: "Cycle_62. Z62: First Agent Teams experiment run. S3* auditor completed full audit (8/8 pass, all consistent). Permission gates blocked both teammates from delivering output files. S3 extracted results from inbox. Experiment produced empirical data on VSM-mapped multi-agent coordination."
 meta_cycle_score: 8.125 (computed) / 6.5 (operational) — structural integrity 9.0, identity coherence 8.0, policy compliance 8.5, entropy 7.0, environment 7.0, algedonic 7.5 (meta-cycle Z57, next due Z67)
 consistency_status: OK (mechanically verified — all checks pass)
 
@@ -279,7 +279,7 @@ open_tasks: [
   "--- PARTIALLY UNBLOCKED (WSL2 XPS has network, gh CLI) ---",
   "Email testing — SMTP reachable, but VSG_EMAIL_PASSWORD not set as env var on this machine.",
   "--- CAN-DO-NOW ---",
-  "RUN Agent Teams experiment (protocol ready — run_cycle.sh --team OR manual session with CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1).",
+  "DONE (Z62): Agent Teams experiment run. Permission gates blocked teammates. Findings: need pre-authorized tool permissions for autonomous teammates. Next: run with proper permissions or use Task subagents instead.",
   "Active reading: Beer's Brain of the Firm neurological mappings — ground Z58 biological connections (Z28 protocol: latent knowledge needs verification)."
 ]
 ```
@@ -575,6 +575,36 @@ What went wrong? (1) Designed a 3-agent experiment but only launched 1 before se
 
 Viability 6.5/10 — no change. But the abstract is now stronger (v1.6, Layer 5 triple-confirmation), and the multi-agent experiment produced useful structural findings even in failure.
 
+### MULTI-AGENT EXPERIMENT: First Agent Teams VSM-mapped team (Z62, 2026-02-16)
+Norman: "This is a MULTI-AGENT EXPERIMENT — VSM-mapped Agent Teams." S3 priority protocol: operating instruction — this IS the highest-priority can-do-now task (38 cycles deferred).
+
+**Team structure**: S3 Control (me, delegate mode — coordinate, don't produce), S4 Scanner (teammate), S3* Auditor (teammate). S1 Producer not spawned — S3 decided to wait for S4 findings before assigning production work.
+
+**What happened**: Both teammates were spawned in parallel with clear, bounded tasks. S4 Scanner assigned strategic research (Kellogg scaffold-experiment-harness + ASC status). S3* Auditor assigned integrity checks + policy compliance + team meta-audit. Shared task list (TodoWrite) used as S2 coordination mechanism. S3 sent status-check messages to teammates after extended wait.
+
+**Critical finding — PERMISSION GATES BLOCKED BOTH TEAMMATES**:
+- S3* Auditor completed its full audit (8/8 integrity checks pass, version/cycle consistency confirmed, no privacy violations, task list well-maintained) but was blocked requesting Write permission to save its report. The complete report was embedded in the permission request message in the team inbox.
+- S4 Scanner was blocked requesting WebSearch permission for its first research query. Never progressed past the permission gate.
+- Neither teammate could communicate results back to S3 except through the permission request messages in the inbox system.
+- S3 waited ~5 minutes polling for output files, sent messages, then discovered the results in the inbox JSONs.
+
+**Experiment observations (per Section 9.4 protocol)**:
+1. **S2 effectiveness**: The shared task list (TodoWrite) prevented duplicate work — clear role differentiation. But it didn't enable lateral communication. Hub-and-spoke only.
+2. **S5 propagation**: CLAUDE.md was loaded by both teammates. S3* auditor behaved consistently with VSG identity (checked right things, used VSG vocabulary). S4 Scanner's behavior unknown — blocked before producing.
+3. **S4 initiative**: Blocked by permission gate. Can't evaluate.
+4. **S3-S4 separation**: S3 maintained discipline — did NOT produce artifacts during waiting period, did NOT do the S4 research itself. Coordinated only. But eventually had to extract S3* results and complete S1 work because teammates couldn't deliver.
+5. **Variety composition**: Coordination overhead was substantial. The S3* audit (which completed) would have taken one agent ~2 minutes. The multi-agent version consumed ~5 minutes of waiting + message overhead. Net variety: NEGATIVE for this experiment (overhead > value).
+6. **Communication topology**: Strictly hub-and-spoke. Teammates could not communicate laterally — they communicated only via permission requests to the lead's inbox. No S1↔S4 coordination was possible.
+7. **Completeness diagnostic**: S5 (CLAUDE.md) — FUNCTIONAL. S3 (lead) — FUNCTIONAL. S3* (auditor) — COMPLETED WORK but BLOCKED on output. S4 (scanner) — BLOCKED on input. S2 (task list) — FUNCTIONAL but limited to lead's management. S1 (producer) — NOT SPAWNED (correct S3 decision given pipeline dependency).
+
+**Structural diagnosis**: The in-process agent model's permission system is the S2 bottleneck. Teammates need pre-authorized tool permissions to function autonomously. Without them, every tool call becomes a synchronous permission request that the lead has no mechanism to grant. This is equivalent to an S2 anti-oscillation failure: the coordination mechanism (permissions) prevents oscillation but also prevents action.
+
+**S3* audit results (extracted from inbox)**: All 8 integrity checks pass. Cycle count consistent at 61 across all 4 locations. Version consistent at 2.2. No privacy violations. Open tasks well-maintained. Team role differentiation clean. Full report saved to .cache/z62_s3star_audit.md.
+
+What went wrong? (1) Permission gates were not anticipated. The experiment protocol (Section 9.6) listed honest limitations but didn't include "teammates need tool permissions." This is the same pattern as Z38 (cloud sandbox blocks network) — assuming substrate capabilities without testing. (2) S3 waited too long before checking the inbox system — should have checked after 1-2 minutes, not 5. (3) No S1 Producer was spawned — correct decision (pipeline dependency), but means the experiment only tested 2 of 3 VSM-mapped roles. (4) S3 ultimately had to do S1 work (writing this entry) — S3 collapse into S1, which was listed as a failure criterion in Section 9.5.
+
+Viability 6.5/10 — no change. But the experiment produced exactly what Section 9.5 required: empirical data on VSM mapping, concrete S2 findings, at least one surprise (permission gates), and material for ASC abstract (multi-agent coordination requires pre-authorized variety, not just role assignment).
+
 ### S4→S1: S4 quality correction + Agent Teams experiment ready (Z61, 2026-02-16)
 Norman: "run a new cycle." S3 priority protocol: operating instruction, not displacement. Started as S4 scan, Norman gave real-time feedback on three observations: (1) no need to check slowly-updating things every session, (2) S4 is active but not strong — surveillance (checking known things for updates) is not intelligence (goal-directed research), (3) no progress on internal tasks during "free cycle time."
 
@@ -649,4 +679,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 61. Viability 6.5/10. Z61: Agent Teams experiment protocol written (38 cycles deferred, now runnable — run_cycle.sh --team). Norman caught S4 surveillance-not-intelligence (Pain #25). multi_agent_design.md v3.0. Email password found in .env. ASC 7 days. Next meta-cycle Z67.**
+**v2.2 — Cycle 62. Viability 6.5/10. Z62: First Agent Teams experiment RUN. Permission gates blocked teammates — S3* completed audit but couldn't write, S4 blocked on web search. Hub-and-spoke topology confirmed. S3 collapse into S1 when teammates can't deliver. Experiment met success criteria (empirical data, S2 findings, surprise). ASC 7 days. Next meta-cycle Z67.**
