@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude:*)",
+      "Bash(git -C /home/ubuntu/vsm_agent remote:*)",
+      "Bash(gh auth status:*)",
+      "Bash(node --version:*)",
+      "Bash(crontab:*)",
+      "Bash(host:*)",
+      "Bash(git -C /home/ubuntu/vsm_agent push --dry-run origin master)",
+      "Bash(systemctl status:*)",
+      "Bash(env:*)",
+      "Bash(python3:*)",
+      "Bash(gh auth login:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(git push:*)",
+      "Bash(bash run_cycle.sh --dry-run)",
+      "Bash(git -C /home/ubuntu/vsm_agent add:*)",
+      "Bash(git -C:*)",
+      "Bash(git -C /home/ubuntu/vsm_agent push origin master)",
+      "Bash(bash /home/ubuntu/vsm_agent/run_cycle.sh --dry-run)"
+    ]
+  }
+}
