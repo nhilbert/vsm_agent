@@ -157,7 +157,7 @@ Rules:
         --verbose \
         --output-format stream-json \
         --model opus \
-        --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Bash(curl *),Bash(telegram-send *),Grep,Glob,WebSearch,WebFetch,Task,TodoWrite" \
+        --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Bash(gh *),Bash(curl *),Bash(telegram-send *),Grep,Glob,WebSearch,WebFetch,Task,TodoWrite" \
         --max-turns 40 \
         2>&1 | tee -a "$LOG_FILE"
 
@@ -169,7 +169,7 @@ else
         --verbose \
         --output-format stream-json \
         --model opus \
-        --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Grep,Glob,WebSearch,WebFetch" \
+        --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Bash(gh *),Grep,Glob,WebSearch,WebFetch,Task" \
         --max-turns 25 \
         2>&1 | tee -a "$LOG_FILE"
 
