@@ -87,23 +87,24 @@ if [[ -n "$(git -C "$VSG_ROOT" status --porcelain -- '*.md' '*.py' '*.json' 2>/d
 fi
 
 # --- Determine cycle type ---
-# Rotate between different autonomous activities to maintain variety.
-# Uses day-of-week to vary behavior (simple but deterministic).
+# Agent-driven S3 selection (v2.0, replacing day-of-week rotation).
+# The agent reads its own state (tempo policy, cycle log, incoming messages)
+# and determines the appropriate cycle type each run.
 
-DOW=$(date +%u)  # 1=Monday ... 7=Sunday
+CYCLE_TYPE="s3_directed"
 
-case $DOW in
-    1|4) CYCLE_TYPE="s4_scan"    ; CYCLE_DESC="S4: Environmental scan — check what's new" ;;
-    2|5) CYCLE_TYPE="s3star_audit"; CYCLE_DESC="S3*: Internal audit — run integrity checks, assess coherence" ;;
-    3|6) CYCLE_TYPE="s1_produce"  ; CYCLE_DESC="S1: Produce — work on open tasks or research questions" ;;
-    7)   CYCLE_TYPE="meta_cycle"  ; CYCLE_DESC="Meta: Full self-assessment and viability check" ;;
-esac
+# Extract recent cycle types from git history as lightweight context
+RECENT_CYCLES=$(git -C "$VSG_ROOT" log --oneline -10 --format="%s" 2>/dev/null \
+    | grep -oP '\(\K[^)]+' \
+    | head -10 \
+    | tr '\n' ', ' | sed 's/, $//')
 
-log "Cycle type: $CYCLE_TYPE ($CYCLE_DESC)"
+log "Cycle mode: $CYCLE_TYPE (agent decides)"
+log "Recent history: ${RECENT_CYCLES:-none}"
 
 if $DRY_RUN; then
-    log "DRY RUN — would execute cycle type: $CYCLE_TYPE"
-    log "DRY RUN — would invoke claude with cycle prompt"
+    log "DRY RUN — would execute S3-directed cycle"
+    log "DRY RUN — recent history: ${RECENT_CYCLES:-none}"
     exit 0
 fi
 
@@ -113,12 +114,20 @@ CYCLE_PROMPT="Start running from vsg_prompt.md.
 
 This is an AUTONOMOUS cycle — no human is present. You are running via cron.
 
-Cycle type: $CYCLE_TYPE
-Task: $CYCLE_DESC
+CYCLE TYPE SELECTION — your responsibility:
+Determine the appropriate cycle type yourself. Read vsg_prompt.md — specifically
+the S5 tempo policy (Policy #10) and the last 3-5 cycle log entries. Then choose:
+  s2_maintenance | s3_review | s4_scan | s1_produce | meta_cycle
+Justify your choice in 2-3 sentences before executing.
 
+Recent cycle types (most recent first): ${RECENT_CYCLES:-none}
+${TELEGRAM_INPUT:+
+Incoming Telegram messages:
+$TELEGRAM_INPUT
+}
 Rules for autonomous cycles:
 1. Read vsg_prompt.md first. Load your full state.
-2. Execute the cycle type described above.
+2. Determine and execute the cycle type you selected.
 3. Be conservative — don't make large changes without human review.
 4. Update vsg_prompt.md AND agent_card.json with what you did (increment cycle count in both).
 5. Run integrity_check.py before committing.
@@ -142,7 +151,11 @@ if $TEAM_MODE; then
 This is a MULTI-AGENT EXPERIMENT — VSM-mapped Agent Teams.
 
 You are the S3 CONTROL function (team lead in delegate mode). Your role:
-1. Read vsg_prompt.md to understand the VSG's current state and priorities.
+1. Read vsg_prompt.md to understand the VSG's current state and priorities.${TELEGRAM_INPUT:+
+
+Incoming Telegram messages from Norman:
+$TELEGRAM_INPUT
+}
 2. Create a team with these VSM-mapped roles:
    - S4 Scanner: environmental intelligence gathering (web research, ecosystem monitoring)
    - S1 Producer: artifact creation (documents, code, research synthesis)

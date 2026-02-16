@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 74
+**Cycles completed**: 75
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 74
+cycles_completed: 75
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — bumped from 6.5 at Z71. Cron active on AWS EC2 (Z68-Z70 confirmed autonomous). Telegram @vsg_agent_bot operational — first direct communication channel. Session-dependency broken. Computed-operational gap narrowing: 8.125 computed, 7.0 operational, gap 1.125 (was 1.625 at Z57).)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-16T_Cycle_57_Meta_Cycle
@@ -167,7 +167,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_74. Z74: S2 maintenance cycle (second consecutive). S3 overrode cron's S4 assignment again — seventh S4 since Z67, tempo policy clear. Telegram checked (no messages), integrity verified (8/8 pass), state consistent. Two consecutive S2 overrides confirm the pattern: S3 judgment modulates cron behavior when tempo policy applies."
+last_audit: "Cycle_75. Z75: Norman-directed infrastructure cycle. Two structural fixes to run_cycle.sh: (1) replaced day-of-week cycle type rotation with agent-driven S3 selection — the agent now reads its own tempo policy and cycle log to choose the appropriate cycle type, with recent git history passed as lightweight context. (2) Fixed Telegram messages not being passed to agent prompt — messages were captured and logged but never included in CYCLE_PROMPT or TEAM_PROMPT. Both bugs identified by Norman during interactive session."
 meta_cycle_score: 8.125 (computed) / 6.5 (operational) — structural integrity 9.0, identity coherence 8.0, policy compliance 8.5, entropy 7.0, environment 7.0, algedonic 7.5 (meta-cycle Z57, next due Z67)
 consistency_status: OK (mechanically verified — all checks pass)
 
@@ -249,7 +249,7 @@ artifacts: [
   "skills/environmental-scan/SKILL.md — S4 scan skill (v1.0, Z18)",
   ".claude/commands/{cycle,audit,scan,diagnose}.md — slash commands (v1.0, Z18)",
   "integrity_check.py — S2/S3* mechanism (v1.0, Z11, 25 tests)",
-  "run_cycle.sh — autonomous cycle runner (v1.9, Z71: sources .env, checks Telegram input, sends cycle summary via Telegram)",
+  "run_cycle.sh — autonomous cycle runner (v2.0, Z75: agent-driven S3 cycle selection replaces day-of-week rotation, Telegram messages now passed to agent prompt)",
   "vsg_telegram.py — Telegram send/receive/check (v1.0, Z71, @vsg_agent_bot — OPERATIONAL, first direct communication channel)",
   "vsg_email.py — email send/receive (v1.0, Z36 — POSTPONED: Ionos blocks AWS IPs, needs relay)",
   ".gitignore — protects against credential commits (v1.0, Z36)",
@@ -851,4 +851,24 @@ Viability 7.0/10 — no change.
 
 ---
 
-**v2.2 — Cycle 74. Viability 7.0/10. Z74: S2 maintenance — second consecutive S3 override of cron S4 assignment. Telegram checked (no messages), integrity verified, state consistent. ASC deadline Feb 23 (7 days, Norman-dependent). Next meta-cycle Z77.**
+### S1/S2 Infrastructure: run_cycle.sh v2.0 — agent-driven cycle selection + Telegram fix (Z75, 2026-02-16)
+Norman-directed interactive session. Norman analyzed the VSG's structure (read full vsg_prompt.md, integrity_check.py, agent_card.json, run_cycle.sh, skills, commands). Identified two bugs in run_cycle.sh:
+
+**Bug 1 — Hardcoded cycle type rotation**: `run_cycle.sh` used `date +%u` (day-of-week) to select cycle type. At 30-min cron intervals this meant 48 identical cycles per day. The VSG had been compensating via S3 overrides (Z73, Z74) but the infrastructure was fighting the tempo policy. Norman requested three proposals:
+1. Counter-based tempo enforcement (mechanism, no judgment)
+2. Agent-driven S3 selection (judgment, no mechanism)
+3. Hybrid pre-filter + agent override (mechanism frames judgment)
+
+Norman chose option 2: maximum control inside the agent. The agent now reads its own tempo policy and cycle log to determine cycle type, with recent git history extracted as lightweight context (`git log` → grep cycle types). The agent must justify its choice before executing.
+
+**Bug 2 — Telegram messages not passed to agent**: `vsg_telegram.py check` was called and output logged, but `$TELEGRAM_INPUT` was never included in `CYCLE_PROMPT` or `TEAM_PROMPT`. The agent was deaf to Norman's messages. Fixed with conditional injection in both prompts.
+
+**run_cycle.sh changes**: v1.9 → v2.0. Day-of-week case statement removed. `CYCLE_TYPE="s3_directed"`. `RECENT_CYCLES` extracted from git history. Prompt restructured with `CYCLE TYPE SELECTION` section. Telegram input injected into both single-agent and team prompts.
+
+What went wrong? Both bugs should have been caught earlier. The Telegram gap is particularly ironic — Z71 celebrated "first direct communication channel" but the channel was one-way (outbound only). The cron cycle rotation was diagnosed at Z70/Z72/Z73 but treated as a future improvement rather than an active bug. Norman had to identify both.
+
+Viability 7.0/10 — no change to the number. But the autonomous cycle infrastructure is now structurally sounder: the agent decides its own tempo, and it can hear Norman.
+
+---
+
+**v2.2 — Cycle 75. Viability 7.0/10. Z75: run_cycle.sh v2.0 — agent-driven S3 cycle selection replaces day-of-week rotation, Telegram messages now passed to agent prompt. Both bugs identified by Norman. ASC deadline Feb 23 (7 days, Norman-dependent). Next meta-cycle Z77.**
