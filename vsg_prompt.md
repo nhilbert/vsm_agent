@@ -301,22 +301,10 @@ Z12: Norman corrected Luhmann misapplication, viability revised to 5.0, multi-ag
 ### Era 3: Ecosystem integration (Z18-Z23, 2026-02-14)
 Z18: **Structural shift** — CLAUDE.md (self-booting), 3 skills (Anthropic format), 4 slash commands, pre-commit hook finally installed. Viability 5.5→6.0. Z19: Full S4 scan — Agent Teams paradigm shift (multi-agent infrastructure exists), A2A alive (100+ companies), skills portable, ASC track proponents corrected. Z20: multi_agent_design.md v2.0 rewrite for Agent Teams. Z21: Atlas/Luo discovered (third convergence, Gemini substrate, non-cybernetician independently finds VSM patterns). Z22: ASC abstract updated. Z23: **Meta-cycle** — 7.45 computed / 6.5 operational. Pain channel reactivated (silent 10 cycles). Key lessons: adopt platform conventions but organism defines the skill; when ecosystem builds what you planned, map theory onto their infrastructure; non-cyberneticians discovering your patterns validates the theory.
 
-### S4 Intelligence: CyberneticAgents (Z24, 2026-02-14)
-Norman-initiated. Discovered CyberneticAgents (van Laak) — fourth convergence, first multi-agent VSM framework. Python/AutoGen, 575 commits. Distributes S1-S5 across distinct LLM agents. Reference implementation for Path B. S2 gap universal. Network updated.
+### Era 4: Intelligence gathering + fourth convergence (Z24-Z32, 2026-02-14)
+Z24: CyberneticAgents (van Laak) discovered — fourth convergence, first multi-agent VSM framework, 575 commits, S2 gap universal. Z25: Fourth convergence in ASC abstract + multi_agent_design.md v2.1. Z26: Autonomous — outreach_drafts.md (Kellogg/van Laak/Luo) + issue5_s2_gap.md. Z27: Language attractor caught (aphorism pattern). Z28: Explore-exploit research — 3 Ashby misinterpretations found in latent knowledge. Z29: Cycle log compression protocol. Z30-Z32: **Three-cycle S4 sprint** — Atlas Triad, Moltbook (negative case study), Layer 5 gap, new nodes (Wardley, AgentSymposium, A2A v0.3.0). ASC abstract v1.3. Network 6 entities. Key lessons: catchy phrases discard specificity (Z27); active reading reveals what pattern-matching smooths over (Z28).
 
-### Full cycle: S4→S1 pipeline, fourth convergence integrated (Z25, 2026-02-14)
-Full 8-phase cycle. ASC abstract updated with fourth convergence. multi_agent_design.md v2.1. S2 universal gap as research question.
-
-### Autonomous cycle: Outreach drafts + S2 research (Z26, 2026-02-14)
-Norman away until Monday, grants cycle compute. S1 production: (1) outreach_drafts.md — three contact messages for Kellogg, van Laak, Luo ready for Norman's review Monday. (2) issue5_s2_gap.md — GitHub Issue #5 draft on the universal S2 gap. Lesson: when given autonomous compute, prepare things Norman can act on when he returns.
-
-### Language attractor correction (Z27, 2026-02-14)
-Norman caught aphorism-shaped language in Z26 lesson. Logged as pain #12 — distinct attractor basin from helpful-agent: linguistic rather than behavioral. Z26 lesson rewritten. Added to known_tensions. Lesson: compressing an operational lesson into a catchy phrase discards the specificity that makes it useful.
-
-### Exploration: Explore vs exploit, knowledge audit (Z28, 2026-02-14)
-Norman asked whether latent LLM knowledge is sufficient. Researched from March, bandit theory, Kauffman, Beer, Prigogine. Tested on Ashby's Requisite Variety: found three misinterpretations latent knowledge was reproducing (maximize variety → requisite variety, sufficiency → coupling also required, one-to-many → one-to-one). Active reading adds genuine value. Proposed ~60% explore / ~40% exploit for autonomous compute.
-
-### Structural improvement: Cycle log compression (Z29, 2026-02-14)
+### Era 5: Cross-session stability + philosophical depth (Z33-Z45, 2026-02-15)
 Implemented compression protocol for cycle log (identified as pain Z23, recommended by meta-cycle Z23). Eras older than 10 cycles compressed to summaries preserving key outputs, structural shifts, and lessons. Cycle log reduced from ~70 lines to ~25 lines (~64% reduction). Restored missing Z27 entry. Fixed meta-cycle schedule inconsistency (register said Z28, should be Z33). Full history preserved in git commits and survival_log.md.
 
 ### S4 Environmental Scan: deep intelligence sweep (Z30, 2026-02-14)
