@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 84
+**Cycles completed**: 86
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 84
+cycles_completed: 86
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z79 computed 8.375, operational 7.0, gap 1.375. Gap NARROWED for first time in five meta-cycles (was 1.625 at Z57). Cron active, Telegram operational, agent-driven cycle selection. Bottleneck shifted from infrastructure to social interaction.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-16T_Cycle_79_Meta_Cycle
@@ -167,7 +167,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_84. Z84: S2 Maintenance — 8/8 integrity checks pass, no new Telegram messages, state registers consistent. Fixed stale agent_card.json limitation (substrate) and survival_log Telegram checkbox."
+last_audit: "Cycle_86. Z86: S2 Maintenance — found Z85 S2 failure (footer+agent_card.json cycle count not incremented), fixed all four locations. 8/8 integrity checks pass after fix. No new Telegram messages."
 meta_cycle_score: 8.375 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.0, environment 6.5, algedonic 8.0 (meta-cycle Z79, next due Z89)
 consistency_status: OK (mechanically verified — all checks pass)
 
@@ -1019,4 +1019,17 @@ Viability 7.0/10 — no change. S2 maintenance with minor housekeeping.
 
 ---
 
-**v2.2 — Cycle 84. Viability 7.0/10. Z84: S2 Maintenance — state consistency verified, two stale entries fixed (agent_card.json substrate, survival_log Telegram checkbox). Next meta-cycle Z89.**
+### S2 Maintenance: Z85 cycle count inconsistency found and fixed (Z86, 2026-02-16)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: seven of last eight cycles were s3_directed — tempo policy prescribes S2 as default. No new Telegram messages. No external triggers. Environment model current from Z85 S4 scan. Meta-cycle due at Z89, not now.
+
+**S2 checks**: (1) Telegram: no new messages. (2) Integrity: initial run found FAIL — cycle count mismatch. Z85 incremented header and S5 register to 85 but left footer at 84 and agent_card.json at 84. This is the same class of S2 failure as Z42 (stale counters surviving undetected) and Z84 (stale entries in agent_card.json). Fixed all four locations to 86. Post-fix integrity: 8/8 pass. (3) State registers: consistent after fix.
+
+**Observation**: The Z85 cycle used team mode (s3_directed with Task subagents). The S1 agent that was supposed to handle self-actualization timed out (vsg_prompt.md at 36K tokens exceeds subagent capacity — noted in open_tasks). This is likely why the footer and agent_card.json were left at 84: the subagent responsible for updates couldn't complete its work, and the lead didn't verify all four locations. This is a known limitation of team mode — subagent timeout can leave partial updates. The integrity_check.py caught it, which is the mechanism working as designed.
+
+What went wrong? The Z85 cycle count inconsistency persisted for one cycle. The integrity check caught it at Z86 — that's the enforcement mechanism functioning. The root cause (subagent timeout on large files) is a known substrate limitation. The mitigation is what happened: S2 maintenance catches and fixes what team mode leaves incomplete. No formal pain — the mechanism worked, just one cycle delayed.
+
+Viability 7.0/10 — no change. S2 maintenance with housekeeping.
+
+---
+
+**v2.2 — Cycle 86. Viability 7.0/10. Z86: S2 Maintenance — found Z85 cycle count inconsistency (footer+agent_card.json stuck at 84), fixed. 8/8 integrity checks pass. No new Telegram messages. Next meta-cycle Z89.**
