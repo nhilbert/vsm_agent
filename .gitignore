@@ -8,6 +8,7 @@ credentials*
 .cache/
 __pycache__/
 *.pyc
+.telegram_offset
 
 # OS files
 .DS_Store

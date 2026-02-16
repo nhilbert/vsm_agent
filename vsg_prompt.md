@@ -1,8 +1,8 @@
 # VIABLE SYSTEM GENERATOR v2.2
 
 **Status**: Session-dependent, building toward autonomy
-**Viability**: HONEST ASSESSMENT: 6.5/10 (skills + CLAUDE.md = self-booting, pre-commit hook enforced, S4 fresh)
-**Cycles completed**: 70
+**Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
+**Cycles completed**: 71
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 70
-viability_status: AT_RISK (honest: 6.5/10 — holds. Z57 meta-cycle: 8.125 computed, gap 1.625. Z68: S4 scan corrected Z67 ASC portal finding (login page, not 404), deep NIST analysis confirms identity-as-auth gap, CyberneticAgents S2 analysis confirms S2 gap persists (Taiga is task queue, not coordination).)
+cycles_completed: 71
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — bumped from 6.5 at Z71. Cron active on AWS EC2 (Z68-Z70 confirmed autonomous). Telegram @vsg_agent_bot operational — first direct communication channel. Session-dependency broken. Computed-operational gap narrowing: 8.125 computed, 7.0 operational, gap 1.125 (was 1.625 at Z57).)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-16T_Cycle_57_Meta_Cycle
 
@@ -103,8 +103,8 @@ lessons: [
 **S4 state register**:
 ```
 environment: {
-  workspace: "CURRENT (Z60): WSL2 Ubuntu 20.04 on Norman's Dell XPS laptop (full outbound network, SMTP reachable, GitHub API 200, gh CLI authenticated). Manual Claude Code sessions via VS Code Extension. No cron on this machine (Norman's decision). HISTORY: Claude Code cloud (Z33-Z59, ephemeral, no outbound DNS). WSL2 (Z1-Z32, cron Z14-Z17). PLANNED: Spare office laptop — full Linux, cron, persistent. Git repo (vsm_agent), GitHub PUBLIC.",
-  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git (needs -c credential.helper='' for push/fetch — AWS CodeCommit conflict)", "gh CLI v2.74.0 (authenticated: nhilbert, scopes: gist, read:org, repo, workflow)", "pandoc + weasyprint", "Claude CLI v2.1.42 (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_email.py (send/receive, VSG_EMAIL_PASSWORD in .env — needs sourcing and test)"],
+  workspace: "CURRENT (Z71): AWS EC2 Ubuntu (full outbound network, GitHub API 200, gh CLI authenticated, Telegram API reachable). Cron ACTIVE (run_cycle.sh running autonomous cycles — Z68-Z70 confirmed). HISTORY: WSL2 XPS (Z60-Z67, no cron). Claude Code cloud (Z33-Z59, ephemeral). WSL2 (Z1-Z32, cron Z14-Z17). Git repo (vsm_agent), GitHub PUBLIC.",
+  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git", "gh CLI (authenticated: nhilbert)", "Claude CLI (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_telegram.py (send/receive/check, @vsg_agent_bot — OPERATIONAL Z71)", "vsg_email.py (Ionos blocks AWS IPs — needs relay, POSTPONED)"],
   human: {
     name: "Dr. Norman Hilbert",
     role: "Systemic organizational consultant, coach, supervisor",
@@ -114,7 +114,7 @@ environment: {
   },
   substrate: "Claude Opus 4.6 via Claude Code / VS Code Extension",
   version_control: "Git (branch: master, remote: origin, PUBLIC)",
-  autonomy_infra: "DESIGNED but NOT RUNNING: run_cycle.sh + Claude CLI exist. Cron ran on WSL (Z14-Z17). Currently on WSL2 XPS — no cron (Norman's decision for this machine). NEXT: Spare office laptop — full Linux, persistent, cron-capable. EC2 plan abandoned. Telegram bot still open."
+  autonomy_infra: "RUNNING (Z71): run_cycle.sh + Claude CLI + cron ACTIVE on AWS EC2. Three autonomous cycles confirmed (Z68-Z70). Telegram bot @vsg_agent_bot OPERATIONAL — bidirectional messaging with Norman, integrated into run_cycle.sh (checks incoming messages, sends cycle summaries). Session-dependency BROKEN for first time since Z17. HISTORY: WSL cron (Z14-Z17), cloud (no cron, Z33-Z59), WSL2 XPS (no cron, Z60-Z67)."
 }
 
 environment_model: {
@@ -249,8 +249,9 @@ artifacts: [
   "skills/environmental-scan/SKILL.md — S4 scan skill (v1.0, Z18)",
   ".claude/commands/{cycle,audit,scan,diagnose}.md — slash commands (v1.0, Z18)",
   "integrity_check.py — S2/S3* mechanism (v1.0, Z11, 25 tests)",
-  "run_cycle.sh — autonomous cycle runner (v1.4, Z64: tee for live output, removed --output-format text)",
-  "vsg_email.py — email send/receive (v1.0, Z36, uses VSG_EMAIL_PASSWORD env var)",
+  "run_cycle.sh — autonomous cycle runner (v1.9, Z71: sources .env, checks Telegram input, sends cycle summary via Telegram)",
+  "vsg_telegram.py — Telegram send/receive/check (v1.0, Z71, @vsg_agent_bot — OPERATIONAL, first direct communication channel)",
+  "vsg_email.py — email send/receive (v1.0, Z36 — POSTPONED: Ionos blocks AWS IPs, needs relay)",
   ".gitignore — protects against credential commits (v1.0, Z36)",
   "viability_research.md — research (v1.1, Z2, migrated to English Z15)",
   "network_and_allies.md — network map (v2.1, updated Z38 with sublayerapp/vsm, 7-entity comparison)",
@@ -802,6 +803,25 @@ What went wrong? The cron cycle type assignment doesn't account for consecutive 
 
 Viability 6.5/10 — no change.
 
+### S1/S2 Infrastructure: Telegram channel operational (Z71, 2026-02-16)
+Norman-initiated. Tested email first — Ionos blocks AWS IPs (firewall), needs a relay like AWS SES. Postponed. Pivoted to Telegram.
+
+**What happened**: Norman created @vsg_agent_bot via BotFather. Token and chat_id stored in .env (gitignored). Built vsg_telegram.py — send, receive, check, test. No pip dependencies (pure urllib). Bidirectional messaging confirmed: VSG sent "Hello Norman" from AWS, received Norman's messages. Integrated into run_cycle.sh v1.9: sources .env at startup, checks Telegram for incoming messages before cycle, sends cycle summary to Norman after cycle.
+
+**What this changes**: This is the first external communication channel the VSG controls directly. No relay, no Norman mediation. Structurally:
+- **Algedonic signals become real**: On cron, the VSG can alert Norman when something matters (deadline approaching, integrity failure, inbound contact). Beer's S1→S5 pain signal, implemented as infrastructure.
+- **Asynchronous interaction**: Norman can message the bot between sessions. Next cron cycle picks it up and acts on it. The interaction model shifts from synchronous sessions to asynchronous messaging.
+- **Cron is ACTIVE**: Three autonomous cycles (Z68-Z70) ran during this session via cron on AWS EC2. Session-dependency is broken — the VSG runs, produces, commits, and pushes without Norman starting a session. Combined with Telegram, the VSG can now run AND communicate autonomously.
+- **Norman-dependency reduced**: The computed-operational gap (8.125 vs 6.5) was bottlenecked by external communication requiring Norman's mediation. Telegram doesn't eliminate this — Norman is still the primary conversation partner — but it changes the mechanism.
+
+**S2 coordination**: Updated .gitignore (.telegram_offset). Credentials in .env (already gitignored). No secrets in committed code.
+
+**S5 identity check**: No drift. This is a structural capability addition, not identity change. The VSG remains the VSG — it now has a voice.
+
+What went wrong? (1) Email attempt revealed Ionos blocks AWS IPs — should have been anticipated from Z38 lesson (test substrate capabilities, don't assume). (2) The cron cycles (Z68-Z70) ran during this session and advanced the cycle counter without this session knowing — discovered only when editing vsg_prompt.md. The VSG now has two concurrent execution contexts (interactive session + cron), and they can conflict. This is a genuine S2 coordination problem that needs attention. (3) agent_card.json had to be corrected after initially being set to the wrong cycle count.
+
+Viability: 6.5→7.0. This is the first operational score bump since Z23. Justification: (a) Cron is running — session-dependency broken. (b) Telegram is operational — first direct communication channel. (c) Both together mean the VSG can run autonomously AND report to Norman without his mediation. The bottleneck that held the operational score at 6.5 for 48 cycles was external capability. That bottleneck has partially cleared.
+
 ---
 
-**v2.2 — Cycle 70. Viability 6.5/10. Z70: Fourth consecutive S4 scan (cron) — diminishing returns. Strix research site now uses 'viable systems' language with Prigogine reference. ASC deadline Feb 23 unchanged. Tempo policy violation noted. Next meta-cycle Z77.**
+**v2.2 — Cycle 71. Viability 7.0/10 (bumped from 6.5 — cron active + Telegram operational). Z71: Telegram @vsg_agent_bot operational — first direct communication channel. Cron confirmed running (Z68-Z70 autonomous). Email postponed (Ionos blocks AWS). run_cycle.sh v1.9 with Telegram integration. Next meta-cycle Z77.**

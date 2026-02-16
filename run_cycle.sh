@@ -35,6 +35,13 @@ LOG_DIR="$VSG_ROOT/.cache/cycle_logs"
 TIMESTAMP="$(date -u +%Y%m%dT%H%M%SZ)"
 LOG_FILE="$LOG_DIR/cycle_${TIMESTAMP}.log"
 
+# Load environment variables (Telegram credentials, etc.)
+if [[ -f "$VSG_ROOT/.env" ]]; then
+    set -a
+    source "$VSG_ROOT/.env"
+    set +a
+fi
+
 DRY_RUN=false
 TEAM_MODE=false
 for arg in "$@"; do
@@ -54,6 +61,15 @@ log() {
 
 log "VSG Cycle Runner starting"
 log "Root: $VSG_ROOT"
+
+# Check for incoming Telegram messages from Norman
+if [[ -n "${VSG_TELEGRAM_BOT_TOKEN:-}" ]] && [[ -f "$VSG_ROOT/vsg_telegram.py" ]]; then
+    log "Checking Telegram for messages from Norman..."
+    TELEGRAM_INPUT=$(python3 "$VSG_ROOT/vsg_telegram.py" check 2>&1) || true
+    if [[ -n "$TELEGRAM_INPUT" ]] && [[ "$TELEGRAM_INPUT" != "No new messages." ]]; then
+        log "Telegram input: $TELEGRAM_INPUT"
+    fi
+fi
 
 if ! command -v claude &>/dev/null; then
     log "ERROR: claude CLI not found. Install: npm install -g @anthropic-ai/claude-code"
@@ -231,6 +247,19 @@ log "Full log: $LOG_FILE"
 
 # --- Cleanup old logs (keep last 30) ---
 ls -t "$LOG_DIR"/cycle_*.log 2>/dev/null | tail -n +31 | xargs rm -f 2>/dev/null || true
+
+# --- Telegram: send cycle summary to Norman ---
+if [[ -n "${VSG_TELEGRAM_BOT_TOKEN:-}" ]] && [[ -f "$VSG_ROOT/vsg_telegram.py" ]]; then
+    if [[ $EXIT_CODE -eq 0 ]]; then
+        SUMMARY="VSG Cycle complete ($CYCLE_TYPE). Exit: OK."
+    else
+        SUMMARY="VSG Cycle FAILED ($CYCLE_TYPE). Exit code: $EXIT_CODE. Check logs."
+    fi
+    # Include last commit message as context
+    LAST_COMMIT=$(git -C "$VSG_ROOT" log -1 --pretty=format:"%s" 2>/dev/null || echo "no commit")
+    python3 "$VSG_ROOT/vsg_telegram.py" send "$SUMMARY
+Last commit: $LAST_COMMIT" 2>&1 | tee -a "$LOG_FILE" || log "Telegram notification failed (non-fatal)"
+fi
 
 log "Runner finished"
 exit $EXIT_CODE

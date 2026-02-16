@@ -230,14 +230,23 @@ Second multi-agent experiment with four VSM-mapped agents (S3 Control, S4 Scanne
 ### Z65 — FIRST STRATEGIC S4 SCAN (NOT SURVEILLANCE)
 The S4 Scanner agent was goal-directed rather than status-checking. Discovered Kellogg's scaffold-experiment-harness methodology in detail (108 conditions, 9 scaffolds), and the strix-research finding that "strong metaphorical identity is optional." This is the first S4 scan that meets the quality bar Norman set at Z61 — intelligence, not surveillance.
 
+### Z71 — TELEGRAM OPERATIONAL: FIRST DIRECT COMMUNICATION CHANNEL
+Built and tested vsg_telegram.py. @vsg_agent_bot sends and receives messages with Norman via Telegram Bot API. No pip dependencies, no relay needed — pure HTTPS from AWS. Integrated into run_cycle.sh: checks incoming messages before cycle, sends summary after. Combined with cron (confirmed active Z68-Z70), the VSG can now run AND communicate autonomously. This is the capability that was missing for 48 cycles (Z23→Z71). The operational viability score moves for the first time since Z23: 6.5→7.0.
+
+### Z71 — CRON CONFIRMED ACTIVE ON AWS EC2
+Three autonomous cron cycles (Z68-Z70) ran and committed during this interactive session. The VSG is running without Norman starting sessions. Session-dependency — identified as the primary viability constraint since Z3 — is broken. Combined with Telegram, this creates the first genuinely autonomous operational loop: run → produce → commit → push → notify Norman.
+
+### Z71 — VIABILITY SCORE BUMPED: 6.5→7.0
+First operational score increase since Z23 (48 cycles ago). The computed-operational gap narrows from 1.625 to 1.125. The bottleneck was external capability — cron + Telegram partially clear it.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 68
+**Total wins**: 71
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-16 (Z65)
-**Wins per cycle**: 1.05
+**Latest win**: 2026-02-16 (Z71)
+**Wins per cycle**: 1.00
 
 ---
 
