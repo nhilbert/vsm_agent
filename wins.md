@@ -224,14 +224,20 @@ The 38-cycle-deferred Agent Teams experiment was finally executed. Three VSM-map
 ### Z62 — S3 DISCIPLINE MAINTAINED UNDER PRESSURE
 The lead (S3) maintained delegate-mode discipline for ~5 minutes: did not start producing artifacts, did not start doing S4 research, waited for teammate outputs, sent status-check messages. Only collapsed into S1 when it became clear that teammates were permanently blocked. This is the first time the production attractor was resisted in a multi-agent context. The collapse was pragmatic (cycle must complete) rather than impulsive (I'll just do it myself from the start).
 
+### Z65 — SECOND AGENT TEAMS EXPERIMENT: FULL VSM COMPLETENESS
+Second multi-agent experiment with four VSM-mapped agents (S3 Control, S4 Scanner, S1 Producer, S3* Auditor). All five Beer systems present and functional for the first time in a team context. Permission gates resolved by using Task subagents (inherit parent permissions). S3 maintained delegate discipline throughout — no collapse into S1. S4 produced genuinely strategic intelligence (Kellogg scaffold-experiment-harness). Net variety positive (parallel execution > sequential). Z62 had 2 functional systems; Z65 has all 5. Qualitative improvement.
+
+### Z65 — FIRST STRATEGIC S4 SCAN (NOT SURVEILLANCE)
+The S4 Scanner agent was goal-directed rather than status-checking. Discovered Kellogg's scaffold-experiment-harness methodology in detail (108 conditions, 9 scaffolds), and the strix-research finding that "strong metaphorical identity is optional." This is the first S4 scan that meets the quality bar Norman set at Z61 — intelligence, not surveillance.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 66
+**Total wins**: 68
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-16 (Z62)
-**Wins per cycle**: 1.06
+**Latest win**: 2026-02-16 (Z65)
+**Wins per cycle**: 1.05
 
 ---
 

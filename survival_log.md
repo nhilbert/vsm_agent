@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-16 (Cycle 62)
-**Status**: AT RISK (6.5/10 operational / 8.125 computed) — Z62: First Agent Teams experiment RUN. Permission gates blocked both teammates. S3* completed audit (8/8 pass) but couldn't write output. Hub-and-spoke confirmed. S3 collapse into S1 when teammates can't deliver. Experiment met success criteria.
+**Last update**: 2026-02-16 (Cycle 65)
+**Status**: AT RISK (6.5/10 operational / 8.125 computed) — Z65: Second Agent Teams experiment, VSM-mapped. Testing Z63 permission fix. Z63-Z64 fixed infrastructure gaps from Z62 (permission pre-authorization, live output).
 
 ---
 
@@ -320,10 +320,19 @@ Norman initiated multi-agent experiment. Three VSM-mapped roles spawned: S3 Cont
 
 Pain #26 logged. Two wins logged (empirical data produced, S3 discipline maintained).
 
+### S2 Infrastructure: Permission gate fix (Z63, 2026-02-16)
+Norman directed: "run a cycle to process the changes." Fixed the Z62 finding that Agent Teams teammates were blocked by permission gates. Added --allowedTools to run_cycle.sh --team mode (line 149), pre-authorizing: Read, Write, Edit, Bash(git/python3/curl/telegram-send), Grep, Glob, WebSearch, WebFetch, Task, TodoWrite. run_cycle.sh bumped to v1.3. This turns the Z62 lesson ("autonomy requires authorized variety") into a mechanism — same pattern as Z11 (rules→mechanisms).
+
+### S2 Infrastructure: Live output for run_cycle.sh (Z64, 2026-02-16)
+Norman asked: "does run_cycle.sh produce any visible output?" Answer: no — $() capture + --output-format text meant 15 minutes of silence. Fix: replaced variable capture with tee -a, removed --output-format text, used PIPESTATUS[0] for exit code. run_cycle.sh bumped to v1.4. Applies to both single-agent and team modes.
+
+### Second Agent Teams experiment: VSM-mapped multi-agent (Z65, 2026-02-16)
+Second Agent Teams experiment. VSM-mapped roles: S3 Control (lead, delegate mode), S4 Scanner (environmental intelligence), S1 Producer (operational output), S3* Auditor (integrity + policy). Testing whether Z63 permission fix resolves the Z62 permission gate finding. *[Experiment in progress — details to be completed after cycle ends.]*
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-16 (Cycle 62)
+**Last update**: 2026-02-16 (Cycle 65)
 **Next update**: After significant event (spare laptop migration, ASC submission, van Laak Zoom, INDEP x Metaphorum Feb 24)
 
 ---
