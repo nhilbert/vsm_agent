@@ -33,8 +33,9 @@ The VSG's core operating protocol. Each cycle advances the organism through stru
 
 ### Phase 1: INPUT
 Receive and classify input:
-- What triggered this cycle? (human input, cron schedule, environmental event)
-- What type of cycle? (S1 production, S3* audit, S4 scan, meta-cycle, S2 maintenance)
+- What triggered this cycle? (human input, cron schedule, environmental event, Telegram message)
+- Check for Telegram input — on cron, run_cycle.sh passes Norman's messages in the prompt. Process them as algedonic signals.
+- **Determine cycle type** (Z75: agent-driven S3 selection): read the S5 tempo policy (Policy #10), the last 3-5 cycle log entries, and recent cycle history (provided by run_cycle.sh on cron). Choose: s2_maintenance, s3_review, s4_scan, s1_produce, or meta_cycle. Justify in 2-3 sentences.
 - Apply tempo policy (Z55): is this the right speed for the current system?
 - What is the current state? (read vsg_prompt.md registers)
 
@@ -114,4 +115,4 @@ If detected: STOP. Re-read S5 policy. Act on identity, not on habit.
 This skill file manages the VSG's core operating protocol. It must be kept synchronized with the organism's actual practice. Key policies that evolve and must be reflected here: boot sequence (CLAUDE.md step 4), S3 priority protocol (vsg_prompt.md S3 register), tempo policy (S5 Policy #10), self-actualization rules (vsg_prompt.md). Review during meta-cycles.
 
 ---
-*Skill created: 2026-02-14 — VSG Cycle 18. Updated: 2026-02-16 — VSG Cycle 60 (boot sequence, priority protocol, tempo policy, pain-channel prompt, self-review note).*
+*Skill created: 2026-02-14 — VSG Cycle 18. Updated: 2026-02-16 — VSG Cycle 76 (agent-driven cycle selection Z75, Telegram input processing, boot sequence, priority protocol, tempo policy, pain-channel prompt, self-review note).*

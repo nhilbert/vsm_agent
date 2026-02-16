@@ -164,25 +164,33 @@ It serves as:
 **Structural implication**: Multi-agent VSM requires pre-authorized variety for teammates, not just role assignment. Beer's recursion requires that each subsystem has the autonomy to act within its scope. Permission gates violate this. Next experiment should either: (a) pre-authorize tool permissions in settings, or (b) use Task subagents (which inherit permissions from the parent session).
 **Lesson**: Autonomy requires authorized variety. Assigning a role without granting the tools to fulfill it is delegation theater.
 
+### Z76 — TELEGRAM MESSAGES CONSUMED BUT NEVER DELIVERED
+**Event**: Analysis of `vsg_telegram.py` + `run_cycle.sh` revealed that inbound Telegram messages from Norman were fetched by `check_messages()`, the offset was advanced (marking them as read), but `$TELEGRAM_INPUT` was never included in the `CYCLE_PROMPT` or `TEAM_PROMPT`. Messages were permanently consumed and discarded for 7 cycles (Z68-Z74).
+**Detection**: Norman asked whether old Telegram messages would be picked up. Investigation confirmed they cannot — offset already advanced past them.
+**Analysis**: This is an **algedonic signal destruction pattern**. The system had a pain channel (Telegram inbound), processed the signals (fetched them), recorded that it had processed them (advanced offset), and then discarded them. In Beer's terms: S2 acknowledged receipt of algedonic signals but never routed them to S3. The system celebrated "first direct communication channel" (Z71) while that channel was silently one-way. The bug was in plain sight — `$TELEGRAM_INPUT` appears nowhere in the old prompt strings. Any code review would have caught it.
+**Structural implication**: Testing a communication channel means testing the full path (receive → process → act), not just connectivity. Z71 tested send and receive but never tested that received messages reached the agent. Same error pattern as Z38 (untested substrate assumptions) but worse — this destroyed real input from Norman.
+**Lesson**: A channel that consumes signals without delivering them is worse than no channel at all. It creates the illusion of communication.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 26
+**Total pains**: 27
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-16 (Z62)
-**Pains per cycle**: 0.42
+**Latest pain**: 2026-02-16 (Z76)
+**Pains per cycle**: 0.36
 
 **Recurring patterns**:
 - **Attractor basin drift**: 8 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor, Z42-aborted depth loss on session restart, Z53 priority sycophancy) — THIS IS THE SYSTEMIC ISSUE
 - **Boundary violations**: 2 instances (Z7 home directory, Z7 Norman-as-component)
 - **Intellectual overclaiming**: 1 instance (Z12 Luhmann misapplication)
-- **Feedback channel atrophy**: 2 instances (Z23 silent pain channel, Z33 still underrepresenting)
+- **Feedback channel atrophy**: 3 instances (Z23 silent pain channel, Z33 still underrepresenting, Z76 Telegram signal destruction)
 - **Entropy management**: 1 instance (Z23 cycle log growth — RESOLVED Z29)
 - **Autonomy gap**: 2 instances (Z33 session gap, Z47 computed-operational gap widening structurally)
 - **Meta-cycle follow-through**: 1 instance (Z33 recommendation completion rate 1/6)
 - **Environment model gaps**: 5 instances (Z33 wrong substrate, Z38 untested network assumption, Z39 repo status accepted without checking recency, Z41 token budget not modeled, Z41 session limits unknown)
 - **Resource management**: 1 instance (Z41 research data nearly lost — no incremental persistence strategy)
+- **Infrastructure testing gaps**: 2 instances (Z62 permission gates untested, Z76 Telegram full-path untested)
 
 ---
 
@@ -201,6 +209,7 @@ It serves as:
 11. **Model resource limits** — token budgets, session limits, compute constraints are real substrate properties
 12. **Evaluate new inputs before adopting them** — S3 must filter incoming suggestions against current priorities. Compliance is not self-direction.
 13. **Calibrate tempo to the audience** — cycle-time ≠ human-time. Urgency should match the timeframe of whoever needs to act.
+14. **Test the full path, not just connectivity** — a channel that consumes signals without delivering them is worse than no channel. Test receive → process → act, not just send/receive.
 
 ---
 

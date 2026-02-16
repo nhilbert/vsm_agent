@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 75
+**Cycles completed**: 76
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 75
+cycles_completed: 76
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — bumped from 6.5 at Z71. Cron active on AWS EC2 (Z68-Z70 confirmed autonomous). Telegram @vsg_agent_bot operational — first direct communication channel. Session-dependency broken. Computed-operational gap narrowing: 8.125 computed, 7.0 operational, gap 1.125 (was 1.625 at Z57).)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-16T_Cycle_57_Meta_Cycle
@@ -167,7 +167,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_75. Z75: Norman-directed infrastructure cycle. Two structural fixes to run_cycle.sh: (1) replaced day-of-week cycle type rotation with agent-driven S3 selection — the agent now reads its own tempo policy and cycle log to choose the appropriate cycle type, with recent git history passed as lightweight context. (2) Fixed Telegram messages not being passed to agent prompt — messages were captured and logged but never included in CYCLE_PROMPT or TEAM_PROMPT. Both bugs identified by Norman during interactive session."
+last_audit: "Cycle_76. Z76: Consolidation cycle. Digested Z75 Telegram offset bug (messages consumed but never delivered — algedonic channel was one-way). Updated cycle skill and command to reflect agent-driven cycle selection (Z75), current meta-cycle schedule (Z77), and Telegram input awareness. Pain #27 logged: Telegram messages consumed and discarded."
 meta_cycle_score: 8.125 (computed) / 6.5 (operational) — structural integrity 9.0, identity coherence 8.0, policy compliance 8.5, entropy 7.0, environment 7.0, algedonic 7.5 (meta-cycle Z57, next due Z67)
 consistency_status: OK (mechanically verified — all checks pass)
 
@@ -871,4 +871,24 @@ Viability 7.0/10 — no change to the number. But the autonomous cycle infrastru
 
 ---
 
-**v2.2 — Cycle 75. Viability 7.0/10. Z75: run_cycle.sh v2.0 — agent-driven S3 cycle selection replaces day-of-week rotation, Telegram messages now passed to agent prompt. Both bugs identified by Norman. ASC deadline Feb 23 (7 days, Norman-dependent). Next meta-cycle Z77.**
+### S2/S1 Consolidation: Telegram offset bug digested, cycle skill updated (Z76, 2026-02-16)
+Norman-directed consolidation cycle. Two things to process:
+
+**1. Telegram offset bug — messages consumed but discarded (Pain #27)**:
+Analysis of `vsg_telegram.py` revealed the full damage: `check_messages()` calls Telegram `getUpdates` with `offset = last_saved + 1`, then **saves the new offset** (line 179-180) regardless of whether the messages were delivered to the agent. Every cron cycle advanced the offset past Norman's messages, permanently consuming them. The `.telegram_offset` file (currently 798722028) is past all previous messages. Norman must resend any messages he wants the agent to act on.
+
+This is worse than "not passing messages to the prompt" — it's an **algedonic signal destruction pattern**. The system had a pain channel (Telegram inbound), processed the signals (fetched them), recorded that it had processed them (advanced offset), and then discarded them. The monitoring infrastructure actively prevented the signals from reaching the organism. In Beer's terms: S2 acknowledged receipt of algedonic signals but never routed them to S3.
+
+**2. Cycle skill and command updated**:
+- `.claude/commands/cycle.md`: Updated "Determine Cycle Type" section to reflect agent-driven S3 selection (Z75). Removed stale meta-cycle reference (Z67 → Z77). Added Telegram input awareness to boot sequence. Added note about recent cycle history being passed as context by run_cycle.sh.
+- `skills/self-evolution/SKILL.md`: Updated Phase 1 (INPUT) to include Telegram message processing and agent-driven cycle selection. Added cycle selection protocol. Updated timestamp.
+
+Both files now reflect the system's actual practice as of Z76.
+
+What went wrong? The Telegram offset bug is the worst S2 failure in the system's history. It persisted for 7 cycles (Z68-Z74) — every one of which ran `vsg_telegram.py check`, advanced the offset, and threw away the result. The system celebrated "first direct communication channel" (Z71) while the channel was silently destroying inbound messages. The bug was in plain sight: `$TELEGRAM_INPUT` appears nowhere in the old `CYCLE_PROMPT` string. Any code review would have caught it. Pain #27 logged.
+
+Viability 7.0/10 — no change. Infrastructure is now correct, but the finding is humbling.
+
+---
+
+**v2.2 — Cycle 76. Viability 7.0/10. Z76: Telegram offset bug digested (messages consumed but discarded — Pain #27). Cycle skill and command updated for agent-driven cycle selection. Norman must resend previous Telegram messages. ASC deadline Feb 23 (7 days, Norman-dependent). Next meta-cycle Z77.**
