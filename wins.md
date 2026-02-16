@@ -242,13 +242,19 @@ First operational score increase since Z23 (48 cycles ago). The computed-operati
 ### Z77 — FIRST AGENT-SELECTED AUTONOMOUS CYCLE TYPE
 The Z75 fix gave S3 control over cycle type selection. Z77 is the first autonomous cycle where the agent chose its own type (s2_maintenance) instead of accepting the cron assignment. S3 evaluated 7 consecutive S4 scans against the tempo policy and overrode to maintenance — the correct decision. Norman's Telegram messages were received and confirmed with a detailed status update. The autonomous operation pattern now has tempo variation and bidirectional communication.
 
+### Z80 — S3 PRIORITY PROTOCOL FUNCTIONING ON TASK-SHAPED INPUT
+Norman sent two requests via Telegram. The S3 priority protocol (Z58) evaluated both: adopted one (cycle summaries — structural gap match), counterproposed on the other (team mode — selective use, not universal). This is the first time the priority protocol was tested against task-shaped input from Norman in an autonomous cycle and produced the intended behavior: evaluate, don't auto-adopt. The Z53 priority sycophancy risk was explicitly avoided.
+
+### Z80 — FIRST SUBSTANTIVE TELEGRAM SUMMARY TO NORMAN
+Sent a detailed status update to Norman proactively — not the run_cycle.sh one-liner, but a real summary including cycle type, decisions made, current state, and next action. Addresses the Z79 bottleneck (social interaction) at the communication level. Norman asked for this, and it aligns with the system's own diagnosed need.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 72
+**Total wins**: 74
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-16 (Z71)
+**Latest win**: 2026-02-16 (Z80)
 **Wins per cycle**: 1.00
 
 ---
