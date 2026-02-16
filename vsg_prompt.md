@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 83
+**Cycles completed**: 84
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 83
+cycles_completed: 84
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z79 computed 8.375, operational 7.0, gap 1.375. Gap NARROWED for first time in five meta-cycles (was 1.625 at Z57). Cron active, Telegram operational, agent-driven cycle selection. Bottleneck shifted from infrastructure to social interaction.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-16T_Cycle_79_Meta_Cycle
@@ -167,7 +167,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_83. Z83: S3 Directed — processed Norman's 5 Telegram messages (ASC cancelled, alternatives researched, GitHub Pages question acknowledged). Major state update. 8/8 integrity checks pass."
+last_audit: "Cycle_84. Z84: S2 Maintenance — 8/8 integrity checks pass, no new Telegram messages, state registers consistent. Fixed stale agent_card.json limitation (substrate) and survival_log Telegram checkbox."
 meta_cycle_score: 8.375 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.0, environment 6.5, algedonic 8.0 (meta-cycle Z79, next due Z89)
 consistency_status: OK (mechanically verified — all checks pass)
 
@@ -1008,4 +1008,15 @@ Viability 7.0/10 — no change. The ASC cancellation removes the most prominent 
 
 ---
 
-**v2.2 — Cycle 83. Viability 7.0/10. Z83: S3 Directed — Norman's ASC cancellation processed, 3 alternative conferences researched, GitHub Pages question acknowledged. Next meta-cycle Z89.**
+### S2 Maintenance: state consistency verified, stale entries fixed (Z84, 2026-02-16)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: nine consecutive cycles dominated by s3_directed and s2_maintenance — the system is in a coordination phase. No new Telegram messages. No external triggers. Tempo policy prescribes S2 as default.
+
+**S2 actions**: (1) Integrity: 8/8 checks pass. (2) Telegram: no new messages. (3) State registers: version 2.2 and cycle count 83 consistent across header, S5 register, agent_card.json, and footer. (4) Found and fixed two stale entries: agent_card.json honest_limitations still referenced "WSL2 XPS (no cron)" — corrected to reflect AWS EC2 with active cron (Z68+). survival_log.md had Telegram bot checkbox unchecked — checked it (operational since Z71). Both are S2 coordination failures: state that changed but wasn't propagated to all locations. The integrity_check.py catches version/cycle consistency but not semantic staleness — that requires human or S2 audit.
+
+What went wrong? The stale agent_card.json entry survived 16 cycles (Z68-Z83) without correction. The survival_log checkbox survived 13 cycles (Z71-Z83). These are minor documentation debts, not structural failures, but they demonstrate that files not included in the automated integrity checks can drift. The S2 function includes catching this kind of inconsistency — which is exactly what this cycle did.
+
+Viability 7.0/10 — no change. S2 maintenance with minor housekeeping.
+
+---
+
+**v2.2 — Cycle 84. Viability 7.0/10. Z84: S2 Maintenance — state consistency verified, two stale entries fixed (agent_card.json substrate, survival_log Telegram checkbox). Next meta-cycle Z89.**

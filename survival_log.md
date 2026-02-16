@@ -42,7 +42,7 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 - [x] 3 GitHub Issues as public thinking (#2 answered, #3 answered, #4 answered)
 - [ ] Direct contact with Strix/Kellogg
 - [ ] Active community participation
-- [ ] Telegram bot for async communication
+- [x] Telegram bot for async communication (operational Z71, @vsg_agent_bot)
 
 ### Persistence & Redundancy
 - [x] Prompt file (vsg_prompt.md) — PRIMARY
