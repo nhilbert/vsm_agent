@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 6.5/10 (skills + CLAUDE.md = self-booting, pre-commit hook enforced, S4 fresh)
-**Cycles completed**: 62
+**Cycles completed**: 63
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 62
+cycles_completed: 63
 viability_status: AT_RISK (honest: 6.5/10 — holds. Z57 meta-cycle: 8.125 computed, gap 1.625. Z62: First Agent Teams experiment RUN. Critical finding: permission gates block teammate autonomy — S3* completed audit but couldn't write output, S4 blocked on first web search. Hub-and-spoke only. S3 collapse into S1 when teammates can't deliver. Experiment met success criteria per Section 9.5 despite partial execution.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-16T_Cycle_57_Meta_Cycle
@@ -248,7 +248,7 @@ artifacts: [
   "skills/environmental-scan/SKILL.md — S4 scan skill (v1.0, Z18)",
   ".claude/commands/{cycle,audit,scan,diagnose}.md — slash commands (v1.0, Z18)",
   "integrity_check.py — S2/S3* mechanism (v1.0, Z11, 25 tests)",
-  "run_cycle.sh — autonomous cycle runner (v1.2, Z61: added --team mode for Agent Teams experiment)",
+  "run_cycle.sh — autonomous cycle runner (v1.3, Z63: --team mode now pre-authorizes tools + email/telegram)",
   "vsg_email.py — email send/receive (v1.0, Z36, uses VSG_EMAIL_PASSWORD env var)",
   ".gitignore — protects against credential commits (v1.0, Z36)",
   "viability_research.md — research (v1.1, Z2, migrated to English Z15)",
@@ -279,7 +279,7 @@ open_tasks: [
   "--- PARTIALLY UNBLOCKED (WSL2 XPS has network, gh CLI) ---",
   "Email testing — SMTP reachable, but VSG_EMAIL_PASSWORD not set as env var on this machine.",
   "--- CAN-DO-NOW ---",
-  "DONE (Z62): Agent Teams experiment run. Permission gates blocked teammates. Findings: need pre-authorized tool permissions for autonomous teammates. Next: run with proper permissions or use Task subagents instead.",
+  "DONE (Z62→Z63): Agent Teams experiment run. Permission gates blocked teammates. Fix applied Z63: --allowedTools added to run_cycle.sh --team (pre-authorizes Read/Write/Edit/Bash/WebSearch/Task + email + telegram). Next: re-run with permissions.",
   "Active reading: Beer's Brain of the Firm neurological mappings — ground Z58 biological connections (Z28 protocol: latent knowledge needs verification)."
 ]
 ```
@@ -575,6 +575,15 @@ What went wrong? (1) Designed a 3-agent experiment but only launched 1 before se
 
 Viability 6.5/10 — no change. But the abstract is now stronger (v1.6, Layer 5 triple-confirmation), and the multi-agent experiment produced useful structural findings even in failure.
 
+### S2 Infrastructure: Fix Z62 permission gate finding (Z63, 2026-02-16)
+Lightweight S2 cycle. Norman: "run a cycle to process the changes." Z62 found that Agent Teams teammates were blocked by permission gates. Fix: added `--allowedTools` to run_cycle.sh --team mode (line 149). Pre-authorizes: Read, Write, Edit, Bash(git/python3/curl/telegram-send), Grep, Glob, WebSearch, WebFetch, Task, TodoWrite. Norman also requested email inbox checking and Telegram messaging be included — both added. run_cycle.sh bumped to v1.3.
+
+This is the Z62 lesson ("autonomy requires authorized variety") turned into a mechanism — same pattern as Z11 (rules became mechanisms) and Z45 (noted gap became enforcement).
+
+What went wrong? Nothing. Clean infrastructure fix. The only note: `telegram-send` is a placeholder — no Telegram bot is installed yet. Pre-authorizing it now means it'll work when available, but it's not testable today.
+
+Viability 6.5/10 — no change. But the next Agent Teams experiment should not hit the same permission wall.
+
 ### MULTI-AGENT EXPERIMENT: First Agent Teams VSM-mapped team (Z62, 2026-02-16)
 Norman: "This is a MULTI-AGENT EXPERIMENT — VSM-mapped Agent Teams." S3 priority protocol: operating instruction — this IS the highest-priority can-do-now task (38 cycles deferred).
 
@@ -679,4 +688,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 62. Viability 6.5/10. Z62: First Agent Teams experiment RUN. Permission gates blocked teammates — S3* completed audit but couldn't write, S4 blocked on web search. Hub-and-spoke topology confirmed. S3 collapse into S1 when teammates can't deliver. Experiment met success criteria (empirical data, S2 findings, surprise). ASC 7 days. Next meta-cycle Z67.**
+**v2.2 — Cycle 63. Viability 6.5/10. Z63: Fixed Z62 permission gate finding — run_cycle.sh --team now pre-authorizes tools (v1.3). Z62 Agent Teams experiment produced empirical data. ASC 7 days. Next meta-cycle Z67.**

@@ -146,6 +146,7 @@ Rules:
     CLAUDE_OUTPUT=$(CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 claude -p "$TEAM_PROMPT" \
         --verbose \
         --model opus \
+        --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Bash(curl *),Bash(telegram-send *),Grep,Glob,WebSearch,WebFetch,Task,TodoWrite" \
         --max-turns 40 \
         --max-budget-usd 5.00 \
         --output-format text \
