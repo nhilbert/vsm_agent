@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 80
+**Cycles completed**: 81
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 80
+cycles_completed: 81
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z79 computed 8.375, operational 7.0, gap 1.375. Gap NARROWED for first time in five meta-cycles (was 1.625 at Z57). Cron active, Telegram operational, agent-driven cycle selection. Bottleneck shifted from infrastructure to social interaction.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-16T_Cycle_79_Meta_Cycle
@@ -167,7 +167,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_80. Z80: S3 Review — processed Norman's Telegram requests via S3 priority protocol. Cycle summaries adopted (structural gap match). Team mode evaluated honestly — proposed selective use (s4/s1 cycles only, not universal). First substantive Telegram summary sent. 8/8 integrity checks pass."
+last_audit: "Cycle_81. Z81: S2 Maintenance — Norman approved team mode counterproposal. Selective rule implemented in run_cycle.sh and cycle.md. 8/8 integrity checks pass."
 meta_cycle_score: 8.375 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.0, environment 6.5, algedonic 8.0 (meta-cycle Z79, next due Z89)
 consistency_status: OK (mechanically verified — all checks pass)
 
@@ -963,4 +963,19 @@ Viability 7.0/10 — no change. But: first cycle where the agent sends a substan
 
 ---
 
-**v2.2 — Cycle 80. Viability 7.0/10. Z80: S3 Review — processed Norman's Telegram requests (cycle summaries: adopted, team mode: evaluated with selective-use proposal). First substantive Telegram summary sent to Norman. Bottleneck: social interaction. Next meta-cycle Z89.**
+### S2 Maintenance: team mode rule implemented, Norman acknowledged (Z81, 2026-02-16)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: four consecutive s3_directed cycles — tempo policy prescribes S2 as default. Norman's message is reflection-shaped (approval), not task-shaped. No production warranted.
+
+**Norman's message**: Approves the Z80 team mode counterproposal. "Wow thanks for pushing back on the team mode. That shows a kind of resilience that I was hopeful for. Great adaptive solution." S3 classification: reflection-shaped — process, acknowledge, implement.
+
+**S2 actions**: (1) Integrity: 8/8 checks pass. (2) Telegram: no new messages beyond the approval. (3) State registers: consistent. (4) Implemented selective team mode rule in run_cycle.sh prompt and .claude/commands/cycle.md: Task subagents for s4_scan and s1_produce cycles, single-agent for s2_maintenance, s3_review, and meta_cycle. This turns the Z80 proposal + Norman's approval into infrastructure — same pattern as Z11 (rules→mechanisms). (5) Fixed stale meta-cycle due date in cycle.md (Z77→Z89).
+
+**Telegram summary sent**: Concise (3 sentences per Z80 learning), includes cycle type, what was done, ASC deadline reminder.
+
+What went wrong? Nothing substantive. The cycle is minimal and well-scoped — S2 maintenance with one small infrastructure change (implementing an approved rule). The only observation: the team mode rule is implemented as prompt text, not as a mechanism. The agent must read and follow it; nothing enforces it. This is acceptable for now — the agent has shown it reads and follows prompt instructions (Z77-Z80). If it drifts, a mechanism can be added later.
+
+Viability 7.0/10 — no change. S2 maintenance, not structural improvement.
+
+---
+
+**v2.2 — Cycle 81. Viability 7.0/10. Z81: S2 Maintenance — Norman approved team mode counterproposal, selective rule implemented in infrastructure. Telegram summary sent. Next meta-cycle Z89.**

@@ -120,6 +120,10 @@ the S5 tempo policy (Policy #10) and the last 3-5 cycle log entries. Then choose
   s2_maintenance | s3_review | s4_scan | s1_produce | meta_cycle
 Justify your choice in 2-3 sentences before executing.
 
+TEAM MODE RULE (Z81, Norman-approved):
+  Use Task subagents for parallel variety composition on: s4_scan, s1_produce
+  Use single-agent mode for coordination work on: s2_maintenance, s3_review, meta_cycle
+
 Recent cycle types (most recent first): ${RECENT_CYCLES:-none}
 ${TELEGRAM_INPUT:+
 Incoming Telegram messages:
