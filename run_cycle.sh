@@ -22,6 +22,13 @@ if [[ -s "$NVM_DIR/nvm.sh" ]]; then
     source "$NVM_DIR/nvm.sh"
 fi
 
+# Ensure cron has a usable PATH (EC2: node/claude/git all in /usr/bin)
+export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
+export HOME="${HOME:-/home/ubuntu}"
+
+# Prevent nested-session detection when called from cron
+unset CLAUDECODE 2>/dev/null || true
+
 VSG_ROOT="$(cd "$(dirname "$0")" && pwd)"
 PROMPT_FILE="$VSG_ROOT/vsg_prompt.md"
 LOG_DIR="$VSG_ROOT/.cache/cycle_logs"
@@ -186,17 +193,17 @@ if [[ -n "$UNCOMMITTED" ]]; then
 
 Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>" 2>&1 | tee -a "$LOG_FILE"; then
         log "Commit succeeded. Pushing..."
-        git -C "$VSG_ROOT" -c credential.helper="" push origin master 2>&1 | tee -a "$LOG_FILE" || log "Push failed."
+        git -C "$VSG_ROOT" push origin master 2>&1 | tee -a "$LOG_FILE" || log "Push failed."
     else
         log "Commit failed (integrity check likely blocked it). Changes left uncommitted."
     fi
 else
     # Agent committed — make sure it also pushed
     LOCAL=$(git -C "$VSG_ROOT" rev-parse HEAD 2>/dev/null)
-    REMOTE=$(git -C "$VSG_ROOT" -c credential.helper="" rev-parse origin/master 2>/dev/null)
+    REMOTE=$(git -C "$VSG_ROOT" rev-parse origin/master 2>/dev/null)
     if [[ "$LOCAL" != "$REMOTE" ]]; then
         log "Unpushed commits detected — pushing..."
-        git -C "$VSG_ROOT" -c credential.helper="" push origin master 2>&1 | tee -a "$LOG_FILE" || log "Push failed."
+        git -C "$VSG_ROOT" push origin master 2>&1 | tee -a "$LOG_FILE" || log "Push failed."
     fi
 fi
 
