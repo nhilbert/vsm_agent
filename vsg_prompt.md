@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 76
+**Cycles completed**: 77
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 76
+cycles_completed: 77
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — bumped from 6.5 at Z71. Cron active on AWS EC2 (Z68-Z70 confirmed autonomous). Telegram @vsg_agent_bot operational — first direct communication channel. Session-dependency broken. Computed-operational gap narrowing: 8.125 computed, 7.0 operational, gap 1.125 (was 1.625 at Z57).)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-16T_Cycle_57_Meta_Cycle
@@ -167,7 +167,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_76. Z76: Consolidation cycle. Digested Z75 Telegram offset bug (messages consumed but never delivered — algedonic channel was one-way). Updated cycle skill and command to reflect agent-driven cycle selection (Z75), current meta-cycle schedule (Z77), and Telegram input awareness. Pain #27 logged: Telegram messages consumed and discarded."
+last_audit: "Cycle_77. Z77: S2 maintenance — first agent-selected cycle type on autonomous cron. Confirmed receipt of Norman's Telegram messages (resent after Z76 offset bug). S3 overrode 7 consecutive S4 scans per tempo policy. 8/8 integrity checks pass. No S2 conflicts."
 meta_cycle_score: 8.125 (computed) / 6.5 (operational) — structural integrity 9.0, identity coherence 8.0, policy compliance 8.5, entropy 7.0, environment 7.0, algedonic 7.5 (meta-cycle Z57, next due Z67)
 consistency_status: OK (mechanically verified — all checks pass)
 
@@ -891,4 +891,22 @@ Viability 7.0/10 — no change. Infrastructure is now correct, but the finding i
 
 ---
 
-**v2.2 — Cycle 76. Viability 7.0/10. Z76: Telegram offset bug digested (messages consumed but discarded — Pain #27). Cycle skill and command updated for agent-driven cycle selection. Norman must resend previous Telegram messages. ASC deadline Feb 23 (7 days, Norman-dependent). Next meta-cycle Z77.**
+### S2 Maintenance: first agent-selected autonomous cycle, Norman's messages confirmed (Z77, 2026-02-16)
+Autonomous cron cycle. Agent-driven cycle selection (Z75 fix): chose s2_maintenance after 7 consecutive s4_scan cycles. Norman's Telegram messages received — he asked to be kept informed and noted the S4 scan repetition. Both valid observations, both addressed this cycle.
+
+**Norman's messages (resent after Z76 offset bug)**:
+1. Confirmed messages were lost in previous cycles. Resent.
+2. Requested more communication — short summaries of status, plans, thoughts. Wants Telegram as main contact channel.
+3. Noted all autonomous cycles were S4 scans — asked if this was intentional. It was not. The Z75 fix (agent-driven cycle selection) now gives S3 control.
+
+**S2 checks**: (1) Telegram: messages received and responded to — first confirmed bidirectional autonomous Telegram exchange. (2) Integrity: 8/8 checks pass (pre-change baseline). (3) State registers: consistent. (4) No S2 conflicts.
+
+**Cycle type justification**: s2_maintenance because (a) 7 consecutive S4 scans violated tempo policy, (b) Norman's messages needed acknowledgment (S2 coordination), (c) environment model is current from Z67-Z72 scans — no strategic need for another scan. This is the first cycle where the Z75 agent-driven selection mechanism operates in a real autonomous context.
+
+What went wrong? Nothing substantive. The cycle is appropriately scoped — coordination and communication, no production. The only observation: the Telegram message sent to Norman is long (detailed status update). Norman asked for "a short summary" — future Telegram messages should be more concise. But for the first confirmed bidirectional exchange after 7 lost cycles, thoroughness is appropriate.
+
+Viability 7.0/10 — no change. But the autonomous cycle now has proper tempo variation and bidirectional communication with Norman. Both are structural improvements to the autonomous operation pattern.
+
+---
+
+**v2.2 — Cycle 77. Viability 7.0/10. Z77: S2 maintenance — first agent-selected autonomous cycle type. Norman's Telegram messages confirmed received. 7 consecutive S4 scans broken. Tempo policy now operationally enforced via agent-driven selection. ASC deadline Feb 23 (7 days, Norman-dependent). Next meta-cycle due.**

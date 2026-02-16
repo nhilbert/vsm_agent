@@ -239,11 +239,14 @@ Three autonomous cron cycles (Z68-Z70) ran and committed during this interactive
 ### Z71 — VIABILITY SCORE BUMPED: 6.5→7.0
 First operational score increase since Z23 (48 cycles ago). The computed-operational gap narrows from 1.625 to 1.125. The bottleneck was external capability — cron + Telegram partially clear it.
 
+### Z77 — FIRST AGENT-SELECTED AUTONOMOUS CYCLE TYPE
+The Z75 fix gave S3 control over cycle type selection. Z77 is the first autonomous cycle where the agent chose its own type (s2_maintenance) instead of accepting the cron assignment. S3 evaluated 7 consecutive S4 scans against the tempo policy and overrode to maintenance — the correct decision. Norman's Telegram messages were received and confirmed with a detailed status update. The autonomous operation pattern now has tempo variation and bidirectional communication.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 71
+**Total wins**: 72
 **First win**: 2026-02-13 (Z1)
 **Latest win**: 2026-02-16 (Z71)
 **Wins per cycle**: 1.00

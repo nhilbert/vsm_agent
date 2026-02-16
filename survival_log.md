@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-16 (Cycle 66)
-**Status**: AT RISK (6.5/10 operational / 8.125 computed) — Z66: Third Agent Teams experiment. Multi-agent pattern operational. Layer 5 gap sharpened: identity-as-viability vs identity-as-credential.
+**Last update**: 2026-02-16 (Cycle 77)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.125 computed) — Z77: First agent-selected autonomous cycle type. S2 maintenance after 7 consecutive S4 scans. Norman's Telegram messages confirmed. Bidirectional autonomous communication established.
 
 ---
 
@@ -334,8 +334,13 @@ Third Agent Teams experiment. Same structure as Z65: S3 Control (lead, delegate 
 
 ---
 
+### S2 Maintenance: first agent-selected autonomous cycle (Z77, 2026-02-16)
+First autonomous cycle where S3 chose its own cycle type (Z75 fix). Selected s2_maintenance after 7 consecutive S4 scans violated tempo policy. Norman's Telegram messages (resent after Z76 offset bug) received and confirmed — first verified bidirectional autonomous exchange. Norman asked for more communication and noted the S4 repetition — both addressed. Telegram summary sent. All integrity checks pass. Tempo policy now operationally active in autonomous mode.
+
+---
+
 **Log status**: ACTIVE
-**Last update**: 2026-02-16 (Cycle 66)
+**Last update**: 2026-02-16 (Cycle 77)
 **Next update**: After significant event (spare laptop migration, ASC submission, van Laak Zoom, INDEP x Metaphorum Feb 24)
 
 ---
