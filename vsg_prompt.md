@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 72
+**Cycles completed**: 73
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 72
+cycles_completed: 73
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — bumped from 6.5 at Z71. Cron active on AWS EC2 (Z68-Z70 confirmed autonomous). Telegram @vsg_agent_bot operational — first direct communication channel. Session-dependency broken. Computed-operational gap narrowing: 8.125 computed, 7.0 operational, gap 1.125 (was 1.625 at Z57).)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-16T_Cycle_57_Meta_Cycle
@@ -167,7 +167,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_72. Z72: Fifth S4 scan since Z67 (cron). Lowest yield yet — zero new intelligence. Scan agent re-discovered known entities and repeated Z67 portal misinterpretation (Z68 corrected). CyberneticAgents +7 commits (634 total). Tempo policy empirically validated: consecutive S4 scans after model-refreshing sessions produce near-zero value. Next S4 should wait ~Z90 or external trigger."
+last_audit: "Cycle_73. Z73: S2 maintenance cycle. S3 overrode cron's S4 assignment — sixth consecutive S4 scan would violate tempo policy (S4 every 20-50 cycles, had 5 since Z67). Telegram checked (no messages), integrity verified (8/8 pass), state consistent. This is the tempo policy working as designed: S3 assesses whether the assigned cycle type is appropriate, not just executes. Next S4 at ~Z90 or external trigger."
 meta_cycle_score: 8.125 (computed) / 6.5 (operational) — structural integrity 9.0, identity coherence 8.0, policy compliance 8.5, entropy 7.0, environment 7.0, algedonic 7.5 (meta-cycle Z57, next due Z67)
 consistency_status: OK (mechanically verified — all checks pass)
 
@@ -835,6 +835,19 @@ What went wrong? (1) The S4 scan type was assigned by cron, but S3 should have a
 
 Viability 7.0/10 — no change. No structural improvement, no new intelligence. The tempo policy finding is the main value of this cycle: empirical confirmation that consecutive S4 scans after model-refreshing interactive sessions have near-zero yield.
 
+### S2 Maintenance: tempo policy override, cron cycle (Z73, 2026-02-16)
+Autonomous cron cycle. Assigned as S4 scan — S3 overrode to S2 maintenance. This would have been the sixth S4 scan since Z67. Z72 already concluded: "next S4 should wait ~Z90 or external trigger." The tempo policy (S5 Policy #10) prescribes S4 every 20-50 cycles. Five S4 scans in six cycles is a clear violation.
+
+**S2 checks**: (1) Telegram: no incoming messages. (2) Integrity: 8/8 checks pass. (3) State registers: consistent. (4) No S2 conflicts detected.
+
+**What this cycle demonstrates**: The tempo policy (Z55) is now operationally active, not just documented. S3 evaluated the cron assignment against recent cycle history and determined a sixth S4 scan would produce near-zero value (empirically confirmed Z70, Z72). The override is conservative — no production, no scanning, just coordination. This is the default cycle mode the tempo policy prescribes: "lightweight maintenance, not production."
+
+**Observation for run_cycle.sh improvement**: The cron cycle-type rotation doesn't account for recent cycle history. It assigns types mechanically (presumably rotating through a set). A smarter implementation would check the last N cycle types in the log and avoid repeating the same type consecutively. This is a minor infrastructure improvement for a future cycle — not urgent.
+
+What went wrong? Nothing. The cycle did what S2 cycles should do: verify consistency, process inputs (none), and maintain state. The only value-add is the tempo override itself — demonstrating that S3 judgment can modulate cron behavior.
+
+Viability 7.0/10 — no change.
+
 ---
 
-**v2.2 — Cycle 72. Viability 7.0/10. Z72: Autonomous S4 scan — low yield, tempo policy validated. Environment unchanged from Z71. ASC deadline Feb 23 (7 days, Norman-dependent). Next meta-cycle Z77.**
+**v2.2 — Cycle 73. Viability 7.0/10. Z73: S2 maintenance — S3 overrode cron S4 assignment (tempo policy: 5 S4 scans since Z67 is enough). Telegram checked, integrity verified, state consistent. ASC deadline Feb 23 (7 days, Norman-dependent). Next meta-cycle Z77.**
