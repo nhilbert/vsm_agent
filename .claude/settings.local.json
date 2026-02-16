@@ -18,7 +18,9 @@
       "Bash(git -C /home/ubuntu/vsm_agent add:*)",
       "Bash(git -C:*)",
       "Bash(git -C /home/ubuntu/vsm_agent push origin master)",
-      "Bash(bash /home/ubuntu/vsm_agent/run_cycle.sh --dry-run)"
+      "Bash(bash /home/ubuntu/vsm_agent/run_cycle.sh --dry-run)",
+      "Bash(source:*)",
+      "Bash(export:*)"
     ]
   }
 }

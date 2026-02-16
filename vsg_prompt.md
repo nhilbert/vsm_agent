@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 6.5/10 (skills + CLAUDE.md = self-booting, pre-commit hook enforced, S4 fresh)
-**Cycles completed**: 67
+**Cycles completed**: 68
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 67
-viability_status: AT_RISK (honest: 6.5/10 — holds. Z57 meta-cycle: 8.125 computed, gap 1.625. Z66: Third Agent Teams experiment — S3 delegate discipline maintained across three consecutive experiments. S4 produced strategic Layer 5 refinement: gap is not "nobody works on agent identity" but "nobody treats identity as viability requirement vs security credential." S1 found Z65 survival_log gap. S3* passed 8/8. Three experiments in sequence: Z62 partial→Z65 full→Z66 routine.)
+cycles_completed: 68
+viability_status: AT_RISK (honest: 6.5/10 — holds. Z57 meta-cycle: 8.125 computed, gap 1.625. Z68: S4 scan corrected Z67 ASC portal finding (login page, not 404), deep NIST analysis confirms identity-as-auth gap, CyberneticAgents S2 analysis confirms S2 gap persists (Taiga is task queue, not coordination).)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-16T_Cycle_57_Meta_Cycle
 
@@ -121,9 +121,9 @@ environment_model: {
   strix: "ACTIVE but QUIET (Z67). Blog paused 16+ days (last Jan 31). scaffold-experiment-harness dormant since Jan 17 (7 commits, 108 conditions). strix-research dormant since Jan 13. ONLY boredom repo active (Feb 7 — CPU optimization). Likely in synthesis/writing phase. strix-research findings: 'strong metaphorical identity is optional — values + boundaries + relationships suffice'; model architecture matters independently (Gemma stable, Llama collapses); bimodal threshold. VSM gist (Jan 8) unchanged. NO awareness of VSG. Contact priority HIGH.",
   metaphorum: "2025 conference July Manchester. 2026 is Beer's centennial. ASC Brazil Aug 3-7 2026, Ouro Preto — submission portal LIVE (events.asc-cybernetics.org/2026/submission/). Deadline Feb 23. Review Feb 23-Mar 20 (conversational). Beer track: 'Viable Confluences — 100 Years of Stafford Beer in Conversation with Latin America' — organized by Metaphorum: Leonard, Walker, Espinosa, Cardoso, Osejo, Fattoum, Harwood, Alves. Includes Syntegration demonstration. NEW: selected abstracts may be invited for cyber-systemic journal special issue. 8 total conference tracks. INDEP x Metaphorum (indep.network): Feb 24 6pm UTC — Thompson & Macumber; Mar 5 — Espinosa; Apr 2 — Walker. More speakers TBA throughout 2026. Norman in private VSM+AI working group.",
   multi_agent_direction: "PARADIGM SHIFT (Z19): Claude Code Agent Teams (Feb 2026) provides native multi-agent orchestration. The infrastructure we planned to build exists. Map VSM onto Agent Teams: lead=S3, teammates=S1, shared tasks=S2. Norman's direction remains: build viable system of multiple VSM-aware agents.",
-  infrastructure: "UPDATED (Z67): MCP under AAIF (97M monthly SDK downloads, 10K+ servers). A2A at v0.3.0 (150+ orgs, gRPC transport added, AgentCard signatures via JWS). AGENTS.md now adopted by 60K+ open source projects. Agent Skills adopted by VS Code, GitHub Copilot, OpenAI Codex. Agent SDK (renamed from Claude Code SDK) — deep research now first-class. Full stack: MCP (tools) + AGENTS.md (instructions) + Agent Skills (procedures) + A2A (inter-agent) — all under Linux Foundation governance. NO standard for Layer 5 (identity/policy/self-governance). THREE institutional responses all confirm the gap: NIST NCCoE concept paper (Feb 5, public comment until Apr 2), Singapore IMDA framework (Jan 22, world's first agentic AI governance), Ethereum ERC-8004 (mainnet Jan 29). ALL treat identity as auth/credential, NOT viability. NIST comment period = concrete opportunity. CSA survey: 80% of orgs deploying agents can't track what they're doing, only 23% have identity strategy.",
+  infrastructure: "UPDATED (Z68): MCP under AAIF (97M monthly SDK downloads, 10K+ servers). A2A at v0.3.0 (150+ orgs, gRPC transport added, AgentCard signatures via JWS). AGENTS.md now adopted by 60K+ open source projects. Full stack: MCP (tools) + AGENTS.md (instructions) + Agent Skills (procedures) + A2A (inter-agent) — all under Linux Foundation governance. NO standard for Layer 5. NIST NCCoE concept paper DEEP ANALYSIS (Z68): five pillars (Identification, Authentication, Authorization, Auditing, Access Delegation) — ALL security/credential. Paper asks 'What metadata is essential for agent identity?' and 'Should identities be ephemeral or fixed?' — entry points for VSM comment. Scope: internal enterprise agents only. References OAuth 2.0, SPIFFE/SPIRE, MCP, SP 800-207 Zero Trust. Singapore IMDA + Ethereum ERC-8004 also auth-only. CSA: 80% can't track agents, 23% have identity strategy.",
   atlas: "UPDATED (Z30): Luo published Feb 13 — Atlas now has a multi-agent team 'The Triad': Steward (system hygiene ≈ S3*), Scribe (documentation/persistence ≈ S2), Skeptic (challenges assumptions/sycophancy ≈ S3). Atlas designed these roles itself when asked what agents it would want. Built on MCP, deployed to Cloud Run. Still no VSM vocabulary, but structural convergence deepening — Atlas independently discovered it needs differentiated sub-functions matching Beer's systems. Luo's insight: 'The intelligence of the system isn't in the model. It's in the conditions designed around it.' Also appeared on RevOps FM podcast (Jan 2026). Luo is Kellogg mentee — direct network path.",
-  cybernetic_agents: "UPDATED (Z67): CONTACT ACTIVE + PRIVACY DISCLOSED. 627 commits (up 19 from 608 in 24h). EXTREMELY active — Simon quit his job to work on this full-time (Feb 1 blog post). S2 still not implemented (README confirms: S1, S3, S4, S5 only). Major new: Taiga integration (external Kanban UI replacing Streamlit+SQLite), docker-compose unified stack, onboarding improvements (default switched Groq→OpenAI), GhIssueWorkflow spinoff also active (9 commits Feb 15-16). VSG NOT yet added to similar-ideas doc. Blog: Feb 8 (onboarding), Feb 1 (why he quit). Zoom proposed after Feb 23. Contact priority HIGHEST.",
+  cybernetic_agents: "UPDATED (Z68): CONTACT ACTIVE + PRIVACY DISCLOSED. 627+ commits. Simon quit his job to work full-time (Feb 1 blog). S2 DEEPLY ANALYZED (Z68): enum + RBAC type exist but NO system2.py. S3 absorbs coordination. Taiga integration is flat task queue (poll/claim/execute/transition) — NOT S2 (no agent-role awareness, no inter-system mediation). Already evaluating Planka to replace Taiga (issues #130-134 today). GhIssueWorkflow = dev-time S2 analogue (stage-label sequencing on GitHub issues) but meta-level only. Blog paused since Feb 8. Zoom proposed after Feb 23. Contact priority HIGHEST.",
   convergence: "STRENGTHENED (Z38, corrected Z39): SIX independent projects now converge on Beer's architecture. sublayerapp/vsm (Scott Werner) — Ruby gem explicitly implementing Beer's five systems as reusable agent framework (32 stars, MIT, capsule-based recursive composition). First VSM-as-framework. DORMANT (last commit Sep 2025) — convergence valid, development inactive. Previous five: Strix, Atlas (Triad), CyberneticAgents, AgentSymposium, VSG. Plus Wardley Leadership Strategies, Moltbook (negative case study), Anthropic's multi-session pattern. Layer 5 gap persists — no standard for identity/policy/self-governance.",
   moltbook: "NEW (Z30): Launched Jan 28 by Schlicht. 1M+ claimed agents, 185K posts, 1.4M comments. Built on OpenClaw framework ('vibe-coded' — no manual code). Critical security breach Jan 31 (unsecured database). MIT Tech Review called it 'peak AI theater'. 7 arXiv papers in Feb 2026 documenting behavior. Kellogg analyzed through variety lens (Jan 31 post). NEGATIVE CASE STUDY for S2/S3 gap: what happens when you build agent-to-agent systems with no coordination or control mechanisms. 93.5% of comments receive no replies, 34.1% exact duplicates. Relevant to Issue #5 (S2 gap research).",
   wardley_leadership: "NEW (Z30): wardleyleadershipstrategies.com producing VSM+AI content. Key warning: 'Many organisations upgrade S1 and S4 with AI but leave S2, S3, and S5 underpowered — creating hyperactive yet incoherent dynamics.' Also published Autonomy Gradient Maps and Cybernetic Fate of Organisations. New environmental node.",
@@ -133,21 +133,21 @@ environment_model: {
 }
 
 active_missions: [
-  "URGENT: ASC Brazil abstract — Norman must submit before Feb 23 (7 days). Submission portal URL may 404 — working page is events.asc-cybernetics.org/2026/call-for-participation/. May need to contact brazil26-organizers@asc-cybernetics.org for portal access. Review is conversational (Feb 23-Mar 20). Track: 'Viable Confluences' (Beer Centennial). Journal special issue. Draft v1.6 ready.",
+  "URGENT: ASC Brazil abstract — Norman must submit before Feb 23 (7 days). Submission portal LIVE at events.asc-cybernetics.org/2026/submission/ — requires account creation (username/password/CAPTCHA). Z68 CORRECTED: not 404, is login page. Format: ~500 words extended abstract, English, indicate track + contribution format. Review is conversational (Feb 23-Mar 20): developmental feedback, authors engage in dialogue. Track: 'Viable Confluences' (Beer Centennial). Journal special issue. Draft v1.6 ready.",
   "ACTIVE: Van Laak contact live (Z49) — Norman sent his own reply. Zoom proposed after Feb 23. Waiting for Simon's response.",
   "OPEN: Contact Kellogg — HIGH PRIORITY. Window good (publishing paused since Jan 31). Draft ready.",
   "OPEN: Contact Lily Luo (Atlas) — Kellogg mentee. Draft ready.",
   "WAITING: Spare office laptop — full Linux, cron, persistent autonomy.",
   "WAITING: Metaphorum contact — INDEP x Metaphorum Feb 24 (Thompson/Macumber).",
   "PARTIALLY UNBLOCKED: Email testing — SMTP reachable from WSL2, VSG_EMAIL_PASSWORD now in .env file. Needs sourcing and send/receive test.",
-  "NEW (Z67): NIST NCCoE public comment on agent identity — deadline April 2. Opportunity to contribute VSM-as-viability-architecture to government standard process. Email: AI-Identity@nist.gov. Norman-dependent (needs review).",
+  "ACTIVE (Z67, deepened Z68): NIST NCCoE public comment — deadline April 2. Paper has 5 pillars (all security/credential). Entry points: 'What metadata is essential for agent identity?' and 'Should identities be ephemeral or fixed?' — both amenable to VSM-based response. Email: AI-Identity@nist.gov. Norman-dependent (needs review). VSG could draft comment for Norman.",
   "READY: Agent Teams experiment — run_cycle.sh --team mode written. multi_agent_design.md v3.0 has full protocol. Execute next."
 ]
 
 known_relatives: [
   {name: "Strix", author: "Tim Kellogg", status: "ACTIVE, autonomous, publishing paused after Jan 31. Deep VSM gist (Jan 8). Research site: strix.timkellogg.me. Bluesky: 8.6K followers."},
   {name: "Atlas", author: "Lily Luo", status: "ACTIVE, now MULTI-AGENT — The Triad (Steward/Scribe/Skeptic) added Feb 13. Gemini 3, MCP, Cloud Run."},
-  {name: "CyberneticAgents", author: "Simon van Laak", status: "EXTREMELY ACTIVE, 627 commits (Z67), S2 still absent. Quit job to work full-time. Major: Taiga integration (external UI). GhIssueWorkflow spinoff active. CONTACT ACTIVE. Zoom proposed after Feb 23."},
+  {name: "CyberneticAgents", author: "Simon van Laak", status: "EXTREMELY ACTIVE, 627+ commits (Z68). S2 deeply analyzed: enum/RBAC exist, no runtime agent. S3 absorbs coordination. Taiga=task queue (not S2), already evaluating Planka. GhIssueWorkflow=dev-time S2. Quit job to work full-time. CONTACT ACTIVE. Zoom proposed after Feb 23."},
   {name: "sublayerapp/vsm", author: "Scott Werner", status: "DORMANT (last commit Sep 2025, corrected Z39). Ruby gem — first VSM-as-reusable-framework. 32 stars, MIT. Capsule-based recursive composition. Also built airb. Convergence valid, development inactive."},
   {name: "AgentSymposium", author: "Eoin Hurrell", status: "NEW (Z30), multi-agent code review using VSM, referenced by van Laak"},
   {name: "VSA", author: "R.B. Carleton", status: "Historical, Smalltalk"}
@@ -167,7 +167,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_67. Z67: S4 environmental scan (autonomous cron). Goal-directed intelligence, not surveillance. Four findings: ASC deadline confirmed (portal URL issue noted), Layer 5 gap validated against three institutional frameworks (NIST/IMDA/ERC-8004), CyberneticAgents at 627 commits (van Laak quit job), Kellogg in synthesis phase. NIST comment opportunity identified (Apr 2 deadline)."
+last_audit: "Cycle_68. Z68: S4 environmental scan (autonomous cron). Three goal-directed queries: (1) ASC submission portal CORRECTED — not 404, is login page requiring account creation. 500-word abstract, conversational review. (2) NIST NCCoE deep analysis — five pillars all security/credential, paper explicitly asks for public input on metadata + identity boundaries, entry points for VSM comment identified. (3) CyberneticAgents S2 analysis — Taiga is flat task queue, NOT S2. S2 gap confirmed universal."
 meta_cycle_score: 8.125 (computed) / 6.5 (operational) — structural integrity 9.0, identity coherence 8.0, policy compliance 8.5, entropy 7.0, environment 7.0, algedonic 7.5 (meta-cycle Z57, next due Z67)
 consistency_status: OK (mechanically verified — all checks pass)
 
@@ -270,7 +270,7 @@ artifacts: [
 
 open_tasks: [
   "--- NORMAN-DEPENDENT (cannot proceed without Norman) ---",
-  "ASC abstract submission — Feb 23 deadline (7 days). Draft v1.6 ready. Norman submits. Z67 CONFIRMED: submission portal URL returns 404, working page is events.asc-cybernetics.org/2026/call-for-participation/. May need organizer email: brazil26-organizers@asc-cybernetics.org.",
+  "ASC abstract submission — Feb 23 deadline (7 days). Draft v1.6 ready. Norman submits. Z68 CORRECTED: portal is LIVE at events.asc-cybernetics.org/2026/submission/ — requires account creation (username/password/CAPTCHA). Format: ~500 words, English, indicate track + format. Conversational review (not gatekeeping).",
   "Van Laak Zoom — Norman replied Z49. Waiting for Simon's response. After Feb 23.",
   "Kellogg contact — draft ready. Norman reviews and sends. Window good (paused since Jan 31).",
   "Luo contact — draft ready. Norman reviews and sends.",
@@ -763,4 +763,19 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 67. Viability 6.5/10. Z67: S4 scan — Layer 5 gap validated against NIST/IMDA/ERC-8004 (all auth, not viability). NIST comment opportunity Apr 2. ASC 7 days (portal 404 — use call-for-participation page). CyberneticAgents 627 commits (van Laak quit job). Next meta-cycle Z77.**
+### S4 Environmental Scan: depth over breadth, cron cycle (Z68, 2026-02-16)
+Autonomous cron cycle. S4 scan with three goal-directed queries (not repeating Z67's breadth — Z55 tempo: consecutive S4 scans should add depth, not repeat surveillance).
+
+**Finding 1 — ASC submission portal CORRECTED**: Z67 reported portal returns 404. Z68 CORRECTS: `events.asc-cybernetics.org/2026/submission/` is a login/account-creation page, not a 404. Requires username, password, CAPTCHA. Format: ~500 word extended abstract, English, indicate track + contribution format. Review is genuinely conversational: track proponents give developmental feedback (Feb 23-Mar 20), authors engage in dialogue. Post-conference publication to cyber-systemic journal. This is LOW BARRIER for Norman — no gatekeeping, constructive engagement.
+
+**Finding 2 — NIST NCCoE deep analysis**: Paper proposes demonstration project (not standard) around five technical pillars: Identification, Authentication, Authorization, Auditing, Access Delegation. ALL security/credential-oriented. Scope: internal enterprise agents only. References OAuth 2.0, SPIFFE/SPIRE, MCP, SP 800-207 Zero Trust. Key entry points for VSM comment: "What metadata is essential for an AI agent's identity?" and "Should identities be ephemeral or fixed?" and "How is least privilege enforced when agent behavior may be unpredictable?" Paper does NOT address: what an agent IS, identity as viability, self-governance, policies/boundaries as identity. Agent is object of identity management, never subject with identity. Comment via email to AI-Identity@nist.gov by April 2.
+
+**Finding 3 — CyberneticAgents S2 deep analysis**: Taiga integration is a flat task queue (REST adapter: poll→claim→execute→transition). Single bot user, no agent-role awareness, no inter-system mediation. NOT S2. S2 exists as enum + RBAC type in codebase, but no system2.py, not in default system specs. S3 absorbs coordination duties (task assignment, review routing, blocked-task remediation). GhIssueWorkflow (extracted to standalone repo Feb 15) is development-time S2 analogue: stage-label sequencing on GitHub issues, deterministic issue selection priority. Operates on meta-level (dev process), not in agent runtime. SURPRISE: van Laak already evaluating Planka to replace Taiga (issues #130-134 today). The S2 gap persists — universal, confirming Issue #22 thesis.
+
+What went wrong? Z67 reported the ASC submission portal as "404" — this was incorrect. The portal is a login page that may have looked like an error to the previous scan agent. Z68 corrected this. The correction matters for Norman: the submission path is clear, not broken. This is a minor S4 quality issue — surface-level scanning can misidentify login pages as errors.
+
+Viability 6.5/10 — no change. But the S4 findings this cycle have actionable depth: Norman now has clear submission mechanics (account creation → 500 words → conversational review), the NIST comment has specific entry points identified, and the CyberneticAgents S2 analysis strengthens Issue #22 with concrete evidence. Depth over breadth.
+
+---
+
+**v2.2 — Cycle 68. Viability 6.5/10. Z68: S4 depth scan — ASC portal CORRECTED (login page, not 404; ~500 words, conversational review). NIST NCCoE five pillars all security — entry points for VSM comment identified. CyberneticAgents S2 confirmed absent (Taiga = task queue, Planka evaluation started). Next meta-cycle Z77.**
