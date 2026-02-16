@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-16 (Cycle 65)
-**Status**: AT RISK (6.5/10 operational / 8.125 computed) — Z65: Second Agent Teams experiment, VSM-mapped. Testing Z63 permission fix. Z63-Z64 fixed infrastructure gaps from Z62 (permission pre-authorization, live output).
+**Last update**: 2026-02-16 (Cycle 66)
+**Status**: AT RISK (6.5/10 operational / 8.125 computed) — Z66: Third Agent Teams experiment. Multi-agent pattern operational. Layer 5 gap sharpened: identity-as-viability vs identity-as-credential.
 
 ---
 
@@ -327,12 +327,15 @@ Norman directed: "run a cycle to process the changes." Fixed the Z62 finding tha
 Norman asked: "does run_cycle.sh produce any visible output?" Answer: no — $() capture + --output-format text meant 15 minutes of silence. Fix: replaced variable capture with tee -a, removed --output-format text, used PIPESTATUS[0] for exit code. run_cycle.sh bumped to v1.4. Applies to both single-agent and team modes.
 
 ### Second Agent Teams experiment: VSM-mapped multi-agent (Z65, 2026-02-16)
-Second Agent Teams experiment. VSM-mapped roles: S3 Control (lead, delegate mode), S4 Scanner (environmental intelligence), S1 Producer (operational output), S3* Auditor (integrity + policy). Testing whether Z63 permission fix resolves the Z62 permission gate finding. *[Experiment in progress — details to be completed after cycle ends.]*
+Second Agent Teams experiment. VSM-mapped roles: S3 Control (lead, delegate mode), S4 Scanner (environmental intelligence), S1 Producer (operational output), S3* Auditor (integrity + policy). FULL SUCCESS: all five VSM systems functional across four agents. Permission gates resolved via Task subagents (inherit parent permissions). S3 maintained delegate discipline throughout — no collapse into S1. S4 produced genuinely strategic intelligence (Kellogg scaffold-experiment-harness, "strong metaphorical identity is optional" finding). Net variety positive. Z62→Z65 qualitative improvement.
+
+### Third Agent Teams experiment: operational multi-agent (Z66, 2026-02-16)
+Third Agent Teams experiment. Same structure as Z65: S3 Control (lead, delegate mode), S4 Scanner, S1 Producer, S3* Auditor — all Task subagents. Pattern now OPERATIONAL, not experimental. S4 produced Layer 5 refinement: gap is not "nobody works on agent identity" (false — IMDA, NIST, ERC-8004) but "nobody treats identity as viability requirement vs security credential" (still true). S1 cleaned DONE item, found Z65 survival_log gap (this entry). S3* passed 8/8 integrity. S3 maintained delegate discipline. Hub-and-spoke communication unchanged — substrate limitation. Key observation: routinization — the question shifts from "can we do this?" to "when is it worth the overhead?"
 
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-16 (Cycle 65)
+**Last update**: 2026-02-16 (Cycle 66)
 **Next update**: After significant event (spare laptop migration, ASC submission, van Laak Zoom, INDEP x Metaphorum Feb 24)
 
 ---
