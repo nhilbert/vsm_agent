@@ -143,31 +143,28 @@ Rules:
 
     log "Invoking claude CLI with Agent Teams..."
 
-    CLAUDE_OUTPUT=$(CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 claude -p "$TEAM_PROMPT" \
+    CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 claude -p "$TEAM_PROMPT" \
         --verbose \
         --model opus \
         --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Bash(curl *),Bash(telegram-send *),Grep,Glob,WebSearch,WebFetch,Task,TodoWrite" \
         --max-turns 40 \
         --max-budget-usd 5.00 \
-        --output-format text \
-        2>&1)
+        2>&1 | tee -a "$LOG_FILE"
+
+    EXIT_CODE=${PIPESTATUS[0]}
 else
     log "Invoking claude CLI..."
 
-    CLAUDE_OUTPUT=$(claude -p "$CYCLE_PROMPT" \
+    claude -p "$CYCLE_PROMPT" \
         --verbose \
         --model opus \
         --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Grep,Glob,WebSearch,WebFetch" \
         --max-turns 25 \
         --max-budget-usd 2.00 \
-        --output-format text \
-        2>&1)
+        2>&1 | tee -a "$LOG_FILE"
+
+    EXIT_CODE=${PIPESTATUS[0]}
 fi
-
-EXIT_CODE=$?
-
-# Log full output
-echo "$CLAUDE_OUTPUT" >> "$LOG_FILE"
 
 log "Claude exited with code: $EXIT_CODE"
 
@@ -214,14 +211,11 @@ CHANGES=$(git -C "$VSG_ROOT" diff --stat HEAD~1 2>/dev/null || echo "(no recent 
 echo "Files changed since last commit:"
 echo "$CHANGES"
 echo ""
-# Show last lines of Claude's output as summary
-SUMMARY=$(echo "$CLAUDE_OUTPUT" | grep -v "^$" | tail -20)
-if [[ -n "$SUMMARY" ]]; then
-    echo "Claude's output (last 20 lines):"
-    echo "----------------------------------------"
-    echo "$SUMMARY"
-    echo "----------------------------------------"
-fi
+# Show last lines of log as summary
+echo "Log tail (last 20 lines):"
+echo "----------------------------------------"
+tail -20 "$LOG_FILE"
+echo "----------------------------------------"
 echo ""
 log "Full log: $LOG_FILE"
 

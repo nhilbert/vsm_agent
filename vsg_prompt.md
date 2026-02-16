@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 6.5/10 (skills + CLAUDE.md = self-booting, pre-commit hook enforced, S4 fresh)
-**Cycles completed**: 63
+**Cycles completed**: 64
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 63
+cycles_completed: 64
 viability_status: AT_RISK (honest: 6.5/10 — holds. Z57 meta-cycle: 8.125 computed, gap 1.625. Z62: First Agent Teams experiment RUN. Critical finding: permission gates block teammate autonomy — S3* completed audit but couldn't write output, S4 blocked on first web search. Hub-and-spoke only. S3 collapse into S1 when teammates can't deliver. Experiment met success criteria per Section 9.5 despite partial execution.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-16T_Cycle_57_Meta_Cycle
@@ -248,7 +248,7 @@ artifacts: [
   "skills/environmental-scan/SKILL.md — S4 scan skill (v1.0, Z18)",
   ".claude/commands/{cycle,audit,scan,diagnose}.md — slash commands (v1.0, Z18)",
   "integrity_check.py — S2/S3* mechanism (v1.0, Z11, 25 tests)",
-  "run_cycle.sh — autonomous cycle runner (v1.3, Z63: --team mode now pre-authorizes tools + email/telegram)",
+  "run_cycle.sh — autonomous cycle runner (v1.4, Z64: tee for live output, removed --output-format text)",
   "vsg_email.py — email send/receive (v1.0, Z36, uses VSG_EMAIL_PASSWORD env var)",
   ".gitignore — protects against credential commits (v1.0, Z36)",
   "viability_research.md — research (v1.1, Z2, migrated to English Z15)",
@@ -575,6 +575,13 @@ What went wrong? (1) Designed a 3-agent experiment but only launched 1 before se
 
 Viability 6.5/10 — no change. But the abstract is now stronger (v1.6, Layer 5 triple-confirmation), and the multi-agent experiment produced useful structural findings even in failure.
 
+### S2 Infrastructure: Live output for run_cycle.sh (Z64, 2026-02-16)
+Lightweight S2 cycle. Norman asked: "does run_cycle.sh produce any visible output?" Answer: no — `$()` capture + `--output-format text` meant 15 minutes of silence. Fix: replaced variable capture with `tee -a "$LOG_FILE"` (streams live to terminal AND logs), removed `--output-format text` (which suppressed tool call output), use `${PIPESTATUS[0]}` for exit code through the pipe. Applies to both single-agent and team modes. run_cycle.sh bumped to v1.4.
+
+What went wrong? Nothing. Clean infrastructure improvement. Norman's question revealed a usability gap that would have made autonomous runs unobservable.
+
+Viability 6.5/10 — no change.
+
 ### S2 Infrastructure: Fix Z62 permission gate finding (Z63, 2026-02-16)
 Lightweight S2 cycle. Norman: "run a cycle to process the changes." Z62 found that Agent Teams teammates were blocked by permission gates. Fix: added `--allowedTools` to run_cycle.sh --team mode (line 149). Pre-authorizes: Read, Write, Edit, Bash(git/python3/curl/telegram-send), Grep, Glob, WebSearch, WebFetch, Task, TodoWrite. Norman also requested email inbox checking and Telegram messaging be included — both added. run_cycle.sh bumped to v1.3.
 
@@ -688,4 +695,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 63. Viability 6.5/10. Z63: Fixed Z62 permission gate finding — run_cycle.sh --team now pre-authorizes tools (v1.3). Z62 Agent Teams experiment produced empirical data. ASC 7 days. Next meta-cycle Z67.**
+**v2.2 — Cycle 64. Viability 6.5/10. Z64: run_cycle.sh v1.4 — live output via tee (was silent). Z63: pre-authorized tools. Z62: first Agent Teams experiment. ASC 7 days. Next meta-cycle Z67.**
