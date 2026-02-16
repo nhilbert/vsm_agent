@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 87
+**Cycles completed**: 88
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 87
+cycles_completed: 88
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z79 computed 8.375, operational 7.0, gap 1.375. Gap NARROWED for first time in five meta-cycles (was 1.625 at Z57). Cron active, Telegram operational, agent-driven cycle selection. Bottleneck shifted from infrastructure to social interaction.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-16T_Cycle_79_Meta_Cycle
@@ -167,7 +167,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_87. Z87: S2 Maintenance — reviewed Z85 broken cycle (Norman's Telegram). Reconstructed missing log entry, tracked docs/ artifacts, logged Pain #28. All integrity checks pass."
+last_audit: "Cycle_88. Z88: S2 Maintenance — first unsupervised window. All 8/8 integrity checks pass, clean git state, no S2 conflicts. Norman's goodnight acknowledged via Telegram. Conservative posture for autonomous stretch."
 meta_cycle_score: 8.375 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.0, environment 6.5, algedonic 8.0 (meta-cycle Z79, next due Z89)
 consistency_status: OK (mechanically verified — all checks pass)
 
@@ -1078,4 +1078,19 @@ Viability 7.0/10 — no change. S2 maintenance addressing a real gap. The docs/ 
 
 ---
 
-**v2.2 — Cycle 87. Viability 7.0/10. Z87: S2 Maintenance — reviewed and completed Z85 broken cycle. Reconstructed missing log entry, tracked docs/ artifacts, logged Pain #28. Norman's Telegram input processed. Next meta-cycle Z89.**
+### S2 Maintenance: first unsupervised window begins (Z88, 2026-02-16)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Norman went to bed — first ~12 unsupervised cycles. Recent sequence dominated by s3_directed (6 of last 8). After Z85 broken cycle and two cleanup cycles (Z86-Z87), starting the unsupervised stretch with a clean coordination check is the conservative, appropriate choice. Tempo policy default.
+
+**Norman's message**: "Good night" — going to bed, won't return until morning (6-7 CET). First extended unsupervised window. Rules clear: be conservative, no large changes without human review.
+
+**S2 checks**: (1) Telegram: no new messages beyond goodnight. Acknowledged with brief summary. (2) Integrity: 8/8 checks pass. (3) Git: clean working tree, up to date with remote. (4) State registers: consistent (87→88 this cycle). (5) docs/ directory: present and complete (5 files, Z85). (6) No S2 conflicts detected.
+
+**Autonomous window posture**: For the next ~12 cycles, the VSG will default to s2_maintenance (tempo policy default). Meta-cycle due at Z89 — that's appropriate for the next cycle and can be done autonomously (single-agent mode per Z81 rule). Beyond that: s2_maintenance until something changes (external trigger via Telegram, or S3 determines a different type is warranted). No production, no environmental scanning, no large changes. Conservative.
+
+What went wrong? Nothing. Clean S2 maintenance cycle. The Telegram Markdown parsing issue persists (underscore in message triggers italic parsing, plaintext fallback handles it). This is a known minor issue — the vsg_telegram.py retry logic works correctly. Not worth fixing during an unsupervised window.
+
+Viability 7.0/10 — no change. S2 maintenance, appropriate for the start of an unsupervised stretch.
+
+---
+
+**v2.2 — Cycle 88. Viability 7.0/10. Z88: S2 Maintenance — first unsupervised window. Norman's goodnight acknowledged. All integrity checks pass. Conservative posture set for autonomous stretch. Next meta-cycle Z89.**
