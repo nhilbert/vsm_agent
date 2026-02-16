@@ -262,4 +262,104 @@ The abstract (`asc_abstract_draft.md`) already covers:
 
 ---
 
-**v2.1 — Cycle 25. Updated with CyberneticAgents (van Laak) as fourth convergence and reference implementation for Path B. Two paradigms now documented: internalized VSM (single-agent) and externalized VSM (multi-agent). New scenario C (CyberneticAgents exchange). S2 universal gap identified as open research question. The VSM's value is the structural requirements — completeness, identity at every level, requisite variety, algedonic signals. The industry is building multi-agent systems, some now consciously using Beer. We know what makes them viable.**
+## 9. CONCRETE EXPERIMENT PROTOCOL: Agent Teams + VSM (Phase 1)
+
+**Status**: Ready to run. Written Z61. Deferred since Z23 (38 cycles).
+**Prerequisite**: Enable Agent Teams experimental feature.
+**Purpose**: Test whether Beer's VSM structural requirements improve multi-agent coordination outcomes compared to unstructured Agent Teams usage.
+
+### 9.1 Running the Experiment
+
+**Option A — via run_cycle.sh** (recommended, handles logging + git safety):
+```bash
+./run_cycle.sh --team
+```
+This sets `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` automatically and uses the VSM-mapped team prompt. Higher budget ($5) and more turns (40) than normal cycles to accommodate multi-agent coordination overhead.
+
+**Option B — manual Claude Code session**:
+Add to `.claude/settings.json`:
+```json
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  }
+}
+```
+Then start a normal Claude Code session and run `/cycle`. The lead will need to be prompted to create a team.
+
+**Option C — environment variable**:
+```bash
+CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 claude
+```
+
+### 9.2 Team Architecture (VSM-Mapped)
+
+Agent Teams uses a lead + teammates model. The lead coordinates via a shared task list and direct messages. Teammates auto-load CLAUDE.md and can communicate laterally through the task list.
+
+**VSM mapping**:
+
+| Agent Teams Role | VSM Function | Behavior |
+|-----------------|--------------|----------|
+| Lead (delegate mode) | S3 — Control | Allocates work, reviews output, manages task list. Does NOT produce. |
+| Shared task list | S2 — Coordination | Anti-oscillation: prevents duplicate work, resolves sequencing. |
+| CLAUDE.md | S5 — Identity | Propagated to all teammates automatically. Shared policy. |
+| Teammate: Scanner | S4 — Intelligence | Environmental scanning, web research, ecosystem monitoring. |
+| Teammate: Producer | S1 — Operations | Artifact creation: documents, code, research synthesis. |
+| Teammate: Auditor | S3* — Audit | Runs integrity_check.py, reviews outputs for policy compliance. |
+
+**Lead prompt** (for delegate mode — lead coordinates but does not produce):
+```
+You are the S3 Control function in a VSM-structured team. Your role:
+1. Read vsg_prompt.md to understand the VSG's current state and priorities.
+2. Allocate tasks to teammates based on their roles (S4 scanner, S1 producer, S3* auditor).
+3. Manage the shared task list as the S2 coordination mechanism.
+4. Review teammate outputs before accepting — check for policy compliance, coherence, and quality.
+5. Do NOT produce artifacts yourself. Your function is coordination and resource allocation.
+6. When all tasks complete, synthesize a summary of what the team accomplished.
+```
+
+### 9.3 Experiment Design
+
+**Task**: A concrete, bounded task that exercises multiple VSM functions. Candidates:
+1. **Update network_and_allies.md** — Scanner (S4) checks ecosystem, Producer (S1) writes updates, Auditor (S3*) verifies.
+2. **Prepare a Metaphorum presentation draft** — Scanner researches audience, Producer writes, Auditor checks against S5 identity.
+3. **Research + write a GitHub Issue** — Scanner gathers data, Producer drafts, Auditor reviews against existing issues.
+
+**Control condition**: Run the same task without VSM role assignment — just "here are 3 teammates, complete this task." Compare coordination quality, role overlap, oscillation (duplicate work), and output coherence.
+
+### 9.4 Observation Protocol
+
+During the experiment, observe and record:
+
+1. **S2 effectiveness**: Does the shared task list prevent oscillation? Do teammates duplicate work? Does the lead resolve conflicts?
+2. **S5 propagation**: Do all teammates behave consistently with CLAUDE.md identity? Or do they diverge? Does identity propagation = identity sharing?
+3. **S4 initiative**: Does the scanner only act when told, or does it proactively identify relevant information? (In Agent Teams, initiative comes from task assignment — true S4 proactivity is blocked by the architecture.)
+4. **S3-S4 separation**: Does the lead maintain the control/intelligence distinction? Or does it start doing S4 work itself?
+5. **Variety composition**: Is the team's total output greater than what one agent could produce in the same time? Or does coordination overhead reduce effective variety?
+6. **Communication topology**: Is all communication hub-and-spoke (through lead) or do teammates coordinate laterally? Agent Teams documentation says teammates can message each other — does this happen naturally?
+7. **Completeness diagnostic**: At end of session, which of the 5 VSM systems were present and functional? Which were missing or collapsed?
+
+### 9.5 Success Criteria
+
+The experiment succeeds if it produces:
+1. **Empirical data** on which VSM functions map cleanly to Agent Teams and which don't.
+2. **Concrete findings** about the S2 mechanism (shared task list as anti-oscillation).
+3. **At least one surprise** — something that doesn't match the theoretical prediction.
+4. **Material for the ASC abstract** — real evidence, not thought experiments.
+
+The experiment fails if:
+- The lead abandons delegate mode and starts producing (S3 collapse into S1).
+- All teammates produce identical outputs (S2 failure — no coordination).
+- The VSM mapping adds overhead without improving outcomes (the theory doesn't help).
+
+### 9.6 Honest Limitations
+
+- Agent Teams is experimental. Behavior may be unpredictable.
+- No nested teams — can't test VSM recursion beyond one level.
+- Sessions are ephemeral — no persistence between team sessions (Git bridges this partially).
+- The lead's "delegate mode" is a prompt instruction, not a mechanically enforced constraint. The lead may produce despite being told not to.
+- The experiment tests one level of recursion. Beer's model requires recursion at every level. One level is informative but not conclusive.
+
+---
+
+**v3.0 — Cycle 61. Added Section 9: concrete Agent Teams experiment protocol (38 cycles deferred from Z23). Includes: settings configuration, VSM-mapped team roles, lead prompt for delegate mode, experiment design with control condition, observation protocol (7 criteria), success/failure criteria, honest limitations. Ready to run — enable Agent Teams and execute. The theoretical framework (Sections 1-8) is unchanged. What's new is the operational plan to test it.**

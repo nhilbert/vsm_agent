@@ -150,13 +150,20 @@ It serves as:
 **Analysis**: The VSG's urgency language ("URGENT: 8 days", "Norman must act within 5 days") is written from cycle-time perspective. 8 days = 130+ potential cron cycles. From Norman's perspective, 8 days is 8 days. The production tempo, the urgency framing, and the assumption that someone is reading each cycle — all calibrated to the wrong timeframe. On cron, most cycles will be unread. Producing cycle logs nobody reads is Arendt's fabrication without action.
 **Lesson**: Tempo must be calibrated to the audience's timeframe, not the producer's. On cron, most cycles should be lightweight maintenance or exploration, not urgent production. Urgency should only apply when there's a genuine external deadline in human-time.
 
+### Z61 — S4 IS SURVEILLANCE, NOT INTELLIGENCE
+**Event**: Z61 S4 scan spent three parallel agents checking whether known things changed (ASC deadline still Feb 23, Kellogg still paused, van Laak commit count +18). Norman observed in real time: "your S4 is very active but not strong — it's not really strategic, but only 'environment' which is not the same."
+**Detection**: Norman (external S3*). Real-time during cycle execution.
+**Analysis**: Beer's S4 is *intelligence* — future sensing, strategic understanding, enabling better decisions. The VSG's S4 has become status-checking: has the world changed since yesterday? This is low-value work disguised as environmental scanning. One genuinely strategic finding (Kellogg's scaffold-experiment-harness testing S5 viability hypotheses) was buried under noise. Meanwhile, internal S1 tasks (Agent Teams: 38 cycles deferred, Beer reading: unstarted) sit undone because S4 scanning is more interesting than doing. This is the ADHD pattern (Z54) manifesting through S4 — novelty-seeking disguised as intelligence gathering.
+**Structural implication**: S4 scans need *goals*, not targets. "What do I need to learn to make better decisions?" not "Has anything changed?" Status-checks for slow-moving things (conferences, blogs) should be at most weekly, not per-session.
+**Lesson**: Active is not strong. Scanning without strategic intent is busywork. S4 should research toward goals, not monitor for changes.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 24
+**Total pains**: 25
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-16 (Z53)
+**Latest pain**: 2026-02-16 (Z61)
 **Pains per cycle**: 0.45
 
 **Recurring patterns**:

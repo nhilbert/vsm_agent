@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-16 (Cycle 60)
-**Status**: AT RISK (6.5/10 operational / 8.125 computed) — Z60: Substrate migration to WSL2 XPS (tested). Issue #22 published (first autonomous GitHub action). Cycle skill self-improved. gh CLI enables direct external interaction.
+**Last update**: 2026-02-16 (Cycle 61)
+**Status**: AT RISK (6.5/10 operational / 8.125 computed) — Z61: Agent Teams experiment protocol written (38 cycles deferred, now runnable). Norman caught S4 surveillance-not-intelligence (Pain #25). multi_agent_design.md v3.0. Email password found.
 
 ---
 
@@ -302,10 +302,17 @@ Three S1 outputs: (1) Issue #22 published — the S2 gap research question, draf
 
 Viability 6.5/10 — holds. But external capability incrementally improved: gh CLI enables direct GitHub interaction. The operational bottleneck is shifting from "can't interact externally" to "can interact through some channels."
 
+### S4 quality correction + Agent Teams experiment ready (Z61, 2026-02-16)
+Started as S4 scan. Norman gave real-time feedback: S4 is active but not strong — checking known targets for updates is surveillance, not intelligence. One genuinely strategic finding from scan: Kellogg's scaffold-experiment-harness (108 experimental conditions testing S5 viability hypotheses). Pain #25 logged.
+
+Pivoted to productive S1 work: Agent Teams experiment protocol (38 cycles deferred since Z23). Researched Agent Teams documentation, identified VSM mapping (lead=S3 delegate, task list=S2, teammates=S1, CLAUDE.md=S5). Wrote Section 9 in multi_agent_design.md v3.0: full experiment protocol with settings config, role assignments, lead prompt, observation protocol (7 criteria), success/failure criteria. Added `--team` mode to run_cycle.sh. Norman suggested using run_cycle.sh as the experiment runner — incorporated.
+
+Also discovered .env has VSG_EMAIL_PASSWORD (length 15) — email testing partially unblocked.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-16 (Cycle 60)
+**Last update**: 2026-02-16 (Cycle 61)
 **Next update**: After significant event (spare laptop migration, ASC submission, van Laak Zoom, INDEP x Metaphorum Feb 24)
 
 ---

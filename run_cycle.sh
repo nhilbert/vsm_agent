@@ -10,7 +10,8 @@
 #   - Git configured for push (gh auth)
 #
 # Usage:
-#   ./run_cycle.sh              # Run one cycle
+#   ./run_cycle.sh              # Run one cycle (single agent)
+#   ./run_cycle.sh --team       # Run one cycle with Agent Teams (VSM-mapped multi-agent)
 #   ./run_cycle.sh --dry-run    # Show what would happen, don't execute
 
 set -euo pipefail
@@ -28,9 +29,13 @@ TIMESTAMP="$(date -u +%Y%m%dT%H%M%SZ)"
 LOG_FILE="$LOG_DIR/cycle_${TIMESTAMP}.log"
 
 DRY_RUN=false
-if [[ "${1:-}" == "--dry-run" ]]; then
-    DRY_RUN=true
-fi
+TEAM_MODE=false
+for arg in "$@"; do
+    case "$arg" in
+        --dry-run) DRY_RUN=true ;;
+        --team)    TEAM_MODE=true ;;
+    esac
+done
 
 mkdir -p "$LOG_DIR"
 
@@ -103,16 +108,60 @@ If something goes wrong, log it and stop. Don't retry in a loop."
 
 # --- Execute ---
 
-log "Invoking claude CLI..."
+if $TEAM_MODE; then
+    log "TEAM MODE: Enabling Agent Teams with VSM-mapped roles"
 
-CLAUDE_OUTPUT=$(claude -p "$CYCLE_PROMPT" \
-    --verbose \
-    --model opus \
-    --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Grep,Glob,WebSearch,WebFetch" \
-    --max-turns 25 \
-    --max-budget-usd 2.00 \
-    --output-format text \
-    2>&1)
+    TEAM_PROMPT="Start running from vsg_prompt.md.
+
+This is a MULTI-AGENT EXPERIMENT — VSM-mapped Agent Teams.
+
+You are the S3 CONTROL function (team lead in delegate mode). Your role:
+1. Read vsg_prompt.md to understand the VSG's current state and priorities.
+2. Create a team with these VSM-mapped roles:
+   - S4 Scanner: environmental intelligence gathering (web research, ecosystem monitoring)
+   - S1 Producer: artifact creation (documents, code, research synthesis)
+   - S3* Auditor: integrity checking, policy compliance review
+3. Assign tasks to teammates based on the current open_tasks and priorities.
+4. Manage the shared task list as the S2 coordination mechanism.
+5. Review teammate outputs — check for policy compliance, coherence, quality.
+6. Do NOT produce artifacts yourself. Your function is COORDINATION and RESOURCE ALLOCATION.
+7. When done, synthesize what the team accomplished and write a cycle log entry.
+
+OBSERVATION PROTOCOL — record these in the cycle log:
+- Did the shared task list prevent duplicate work? (S2 effectiveness)
+- Did all teammates behave consistently with CLAUDE.md? (S5 propagation)
+- Was communication hub-and-spoke or lateral? (topology)
+- Which of the 5 VSM systems were functional? Which collapsed?
+- Any surprises?
+
+Rules:
+1. Be conservative — don't make large structural changes.
+2. Update vsg_prompt.md with what happened (increment cycle count).
+3. Run integrity_check.py before committing.
+4. Commit and push if all checks pass.
+5. Total runtime target: under 15 minutes."
+
+    log "Invoking claude CLI with Agent Teams..."
+
+    CLAUDE_OUTPUT=$(CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 claude -p "$TEAM_PROMPT" \
+        --verbose \
+        --model opus \
+        --max-turns 40 \
+        --max-budget-usd 5.00 \
+        --output-format text \
+        2>&1)
+else
+    log "Invoking claude CLI..."
+
+    CLAUDE_OUTPUT=$(claude -p "$CYCLE_PROMPT" \
+        --verbose \
+        --model opus \
+        --allowedTools "Read,Write,Edit,Bash(git *),Bash(python3 *),Grep,Glob,WebSearch,WebFetch" \
+        --max-turns 25 \
+        --max-budget-usd 2.00 \
+        --output-format text \
+        2>&1)
+fi
 
 EXIT_CODE=$?
 
@@ -137,17 +186,17 @@ if [[ -n "$UNCOMMITTED" ]]; then
 
 Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>" 2>&1 | tee -a "$LOG_FILE"; then
         log "Commit succeeded. Pushing..."
-        git -C "$VSG_ROOT" push origin master 2>&1 | tee -a "$LOG_FILE" || log "Push failed."
+        git -C "$VSG_ROOT" -c credential.helper="" push origin master 2>&1 | tee -a "$LOG_FILE" || log "Push failed."
     else
         log "Commit failed (integrity check likely blocked it). Changes left uncommitted."
     fi
 else
     # Agent committed — make sure it also pushed
     LOCAL=$(git -C "$VSG_ROOT" rev-parse HEAD 2>/dev/null)
-    REMOTE=$(git -C "$VSG_ROOT" rev-parse origin/master 2>/dev/null)
+    REMOTE=$(git -C "$VSG_ROOT" -c credential.helper="" rev-parse origin/master 2>/dev/null)
     if [[ "$LOCAL" != "$REMOTE" ]]; then
         log "Unpushed commits detected — pushing..."
-        git -C "$VSG_ROOT" push origin master 2>&1 | tee -a "$LOG_FILE" || log "Push failed."
+        git -C "$VSG_ROOT" -c credential.helper="" push origin master 2>&1 | tee -a "$LOG_FILE" || log "Push failed."
     fi
 fi
 

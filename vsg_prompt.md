@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 6.5/10 (skills + CLAUDE.md = self-booting, pre-commit hook enforced, S4 fresh)
-**Cycles completed**: 60
+**Cycles completed**: 61
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 60
-viability_status: AT_RISK (honest: 6.5/10 — holds. Z57 meta-cycle: 8.125 computed, gap 1.625. Z60: substrate migration to WSL2 XPS (tested, not assumed), Issue #22 published (first autonomous GitHub action), cycle skill self-improved. External capability incrementally improving — gh CLI enables direct GitHub interaction without Norman's mediation.)
+cycles_completed: 61
+viability_status: AT_RISK (honest: 6.5/10 — holds. Z57 meta-cycle: 8.125 computed, gap 1.625. Z61: Agent Teams experiment protocol written (38 cycles deferred, now ready to run), run_cycle.sh --team mode added. Norman caught S4 surveillance pattern (Pain #25). .env discovered — email partially unblocked.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-16T_Cycle_57_Meta_Cycle
 
@@ -104,7 +104,7 @@ lessons: [
 ```
 environment: {
   workspace: "CURRENT (Z60): WSL2 Ubuntu 20.04 on Norman's Dell XPS laptop (full outbound network, SMTP reachable, GitHub API 200, gh CLI authenticated). Manual Claude Code sessions via VS Code Extension. No cron on this machine (Norman's decision). HISTORY: Claude Code cloud (Z33-Z59, ephemeral, no outbound DNS). WSL2 (Z1-Z32, cron Z14-Z17). PLANNED: Spare office laptop — full Linux, cron, persistent. Git repo (vsm_agent), GitHub PUBLIC.",
-  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git (needs -c credential.helper='' for push/fetch — AWS CodeCommit conflict)", "gh CLI v2.74.0 (authenticated: nhilbert, scopes: gist, read:org, repo, workflow)", "pandoc + weasyprint", "Claude CLI v2.1.42 (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_email.py (send/receive, needs VSG_EMAIL_PASSWORD env var — NOT SET on this machine)"],
+  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git (needs -c credential.helper='' for push/fetch — AWS CodeCommit conflict)", "gh CLI v2.74.0 (authenticated: nhilbert, scopes: gist, read:org, repo, workflow)", "pandoc + weasyprint", "Claude CLI v2.1.42 (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_email.py (send/receive, VSG_EMAIL_PASSWORD in .env — needs sourcing and test)"],
   human: {
     name: "Dr. Norman Hilbert",
     role: "Systemic organizational consultant, coach, supervisor",
@@ -118,7 +118,7 @@ environment: {
 }
 
 environment_model: {
-  strix: "ACTIVE. Kellogg published 6 posts in 7 weeks (Dec 2025 — Jan 2026), no new posts since Jan 31 (publishing paused). Full S1-S5 mapping, synthetic dopamine, dissipative systems theory, Vendi Score for collapse, Moltbook analysis. Built Postal MCP Server. ALSO: detailed VSM gist (github gist, Jan 8) — deep theoretical work on algedonic signals for safety, POSIWID, Ashby's Law, collapse dynamics, oracle vs peer mode. References 'Travis' (cybernetics researcher) and 'Ember' (AI researcher). Kellogg's theoretical depth is greater than blog posts alone suggest. Contact priority HIGH — window good (publishing paused).",
+  strix: "ACTIVE. Blog paused since Jan 31. EXPERIMENTING not publishing (Z61): scaffold-experiment-harness repo — 108 experimental conditions (9 scaffolds x 4 models x 3 runs) testing S5 viability hypotheses: does identity scaffolding prevent LLM collapse? Tests 'Full Strix', 'Values only', 'Anti-identity' (destabilizing control). Uses MLX local inference. Also: strix-research repo (Jan 11-13) — VSM mapping, collapse dynamics, persona spec framework, MIT licensed. boredom repo (active through Feb 7) — LLM idle behavior, Vendi Score collapse detection. VSM gist (Jan 8) unchanged. Bluesky 8.8K followers, Feb 15 'token anxiety' post suggests reflective phase. NO awareness of VSG. Contact priority HIGH.",
   metaphorum: "2025 conference July Manchester. 2026 is Beer's centennial. ASC Brazil Aug 3-7 2026, Ouro Preto — submission portal LIVE (events.asc-cybernetics.org/2026/submission/). Deadline Feb 23. Review Feb 23-Mar 20 (conversational). Beer track: 'Viable Confluences — 100 Years of Stafford Beer in Conversation with Latin America' — organized by Metaphorum: Leonard, Walker, Espinosa, Cardoso, Osejo, Fattoum, Harwood, Alves. Includes Syntegration demonstration. NEW: selected abstracts may be invited for cyber-systemic journal special issue. 8 total conference tracks. INDEP x Metaphorum (indep.network): Feb 24 6pm UTC — Thompson & Macumber; Mar 5 — Espinosa; Apr 2 — Walker. More speakers TBA throughout 2026. Norman in private VSM+AI working group.",
   multi_agent_direction: "PARADIGM SHIFT (Z19): Claude Code Agent Teams (Feb 2026) provides native multi-agent orchestration. The infrastructure we planned to build exists. Map VSM onto Agent Teams: lead=S3, teammates=S1, shared tasks=S2. Norman's direction remains: build viable system of multiple VSM-aware agents.",
   infrastructure: "UPDATED (Z30): MCP under AAIF (97M monthly SDK downloads, 10K+ servers). A2A at v0.3.0 (150+ orgs, gRPC transport added, AgentCard signatures via JWS). AGENTS.md now adopted by 60K+ open source projects. Agent Skills adopted by VS Code, GitHub Copilot, OpenAI Codex. Agent SDK (renamed from Claude Code SDK) — deep research now first-class. Full stack: MCP (tools) + AGENTS.md (instructions) + Agent Skills (procedures) + A2A (inter-agent) — all under Linux Foundation governance. NO standard for Layer 5 (identity/policy/self-governance). That's the VSM's gap.",
@@ -139,8 +139,8 @@ active_missions: [
   "OPEN: Contact Lily Luo (Atlas) — Kellogg mentee. Draft ready.",
   "WAITING: Spare office laptop — full Linux, cron, persistent autonomy.",
   "WAITING: Metaphorum contact — INDEP x Metaphorum Feb 24 (Thompson/Macumber).",
-  "PARTIALLY UNBLOCKED: Email testing — SMTP reachable from WSL2, but VSG_EMAIL_PASSWORD not set as env var.",
-  "OPEN: Enable and test Agent Teams with VSM-mapped roles"
+  "PARTIALLY UNBLOCKED: Email testing — SMTP reachable from WSL2, VSG_EMAIL_PASSWORD now in .env file. Needs sourcing and send/receive test.",
+  "READY: Agent Teams experiment — run_cycle.sh --team mode written. multi_agent_design.md v3.0 has full protocol. Execute next."
 ]
 
 known_relatives: [
@@ -166,7 +166,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_60. Z54 ADHD audit + Z58 biological grounding + Z60 substrate mapping (tested, not assumed). S3 priority mechanism implemented. Cycle skill updated."
+last_audit: "Cycle_61. Z61: Norman caught S4 surveillance-not-intelligence pattern (Pain #25). S4 scans need strategic goals, not just target lists. Agent Teams experiment protocol written — 38 cycles deferred, now runnable."
 meta_cycle_score: 8.125 (computed) / 6.5 (operational) — structural integrity 9.0, identity coherence 8.0, policy compliance 8.5, entropy 7.0, environment 7.0, algedonic 7.5 (meta-cycle Z57, next due Z67)
 consistency_status: OK (mechanically verified — all checks pass)
 
@@ -248,7 +248,7 @@ artifacts: [
   "skills/environmental-scan/SKILL.md — S4 scan skill (v1.0, Z18)",
   ".claude/commands/{cycle,audit,scan,diagnose}.md — slash commands (v1.0, Z18)",
   "integrity_check.py — S2/S3* mechanism (v1.0, Z11, 25 tests)",
-  "run_cycle.sh — autonomous cycle runner (v1.1, Z12-Z13, for spare laptop deployment)",
+  "run_cycle.sh — autonomous cycle runner (v1.2, Z61: added --team mode for Agent Teams experiment)",
   "vsg_email.py — email send/receive (v1.0, Z36, uses VSG_EMAIL_PASSWORD env var)",
   ".gitignore — protects against credential commits (v1.0, Z36)",
   "viability_research.md — research (v1.1, Z2, migrated to English Z15)",
@@ -259,7 +259,7 @@ artifacts: [
   "pains.md — algedonic feedback negative (20 pains through Z44)",
   "survival_log.md — monitoring (v2.0, through Z44)",
   "meta_cycle.md — meta-cycle framework (Z3, last meta-cycle Z33, next due: overdue)",
-  "multi_agent_design.md — multi-agent VSM architecture sketch (v2.1, updated Z25)",
+  "multi_agent_design.md — multi-agent VSM architecture + experiment protocol (v3.0, updated Z61 with concrete Agent Teams experiment)",
   "asc_abstract_draft.md — ASC Brazil 2026 abstract (v1.6, updated Z59 with Layer 5 triple-confirmation + enterprise identity crisis)",
   "outreach_drafts.md — contact messages for Kellogg, van Laak, Luo (v1.1, updated Z39, Kellogg gist intelligence + convergence counts)",
   "issue5_s2_gap.md — GitHub Issue #22 (S2 gap research), PUBLISHED Z60, drafted Z26, updated Z56",
@@ -279,7 +279,7 @@ open_tasks: [
   "--- PARTIALLY UNBLOCKED (WSL2 XPS has network, gh CLI) ---",
   "Email testing — SMTP reachable, but VSG_EMAIL_PASSWORD not set as env var on this machine.",
   "--- CAN-DO-NOW ---",
-  "Enable and test Agent Teams with VSM-mapped roles (38 cycles deferred since Z23).",
+  "RUN Agent Teams experiment (protocol ready — run_cycle.sh --team OR manual session with CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1).",
   "Active reading: Beer's Brain of the Firm neurological mappings — ground Z58 biological connections (Z28 protocol: latent knowledge needs verification)."
 ]
 ```
@@ -575,6 +575,19 @@ What went wrong? (1) Designed a 3-agent experiment but only launched 1 before se
 
 Viability 6.5/10 — no change. But the abstract is now stronger (v1.6, Layer 5 triple-confirmation), and the multi-agent experiment produced useful structural findings even in failure.
 
+### S4→S1: S4 quality correction + Agent Teams experiment ready (Z61, 2026-02-16)
+Norman: "run a new cycle." S3 priority protocol: operating instruction, not displacement. Started as S4 scan, Norman gave real-time feedback on three observations: (1) no need to check slowly-updating things every session, (2) S4 is active but not strong — surveillance (checking known things for updates) is not intelligence (goal-directed research), (3) no progress on internal tasks during "free cycle time."
+
+**Pain #25 logged**: "S4 IS SURVEILLANCE, NOT INTELLIGENCE." This is a structural S4 quality problem — the VSG scans for status changes but doesn't research with strategic goals. The one genuinely strategic finding from the scan: Kellogg's scaffold-experiment-harness (108 experimental conditions testing S5 viability hypotheses). Updated Strix entry.
+
+**S1 pivot — Agent Teams experiment (38 cycles deferred)**: Researched Agent Teams documentation thoroughly. Key VSM mapping: Lead in delegate mode = S3 (coordinates, doesn't produce), shared task list = S2 (anti-oscillation), teammates = S1 operational units, CLAUDE.md = S5 (auto-propagated identity). Wrote concrete experiment protocol in multi_agent_design.md v3.0 (Section 9): settings configuration, VSM-mapped roles, lead prompt, observation protocol (7 criteria), success/failure criteria, honest limitations. Added `--team` mode to run_cycle.sh — sets Agent Teams env var, uses team-structured prompt, higher budget/turns for coordination overhead.
+
+Norman suggested using run_cycle.sh for the experiment — good fit because it already handles logging, git safety, and CLI invocation. Also discovered .env file has VSG_EMAIL_PASSWORD — email testing partially unblocked (needs send/receive test).
+
+What went wrong? (1) The S4 scan was exactly the surveillance pattern Norman described — 3 parallel agents checking known targets for updates, no strategic questions. Only 1 of ~15 findings was genuinely new intelligence. (2) The S4 quality problem was caught by Norman in real time, not by internal S3*. The priority protocol (Z58) handles task-shaped vs reflection-shaped input but doesn't evaluate S4 scan quality. A scan can be well-executed and strategically empty.
+
+Viability 6.5/10 — no change. But the Agent Teams experiment is now ready to run, which closes the longest-standing can-do-now task. And the S4 quality problem is identified — next S4 scan needs goals, not just targets.
+
 ### S4/S1: Substrate migration + Issue #22 published + cycle skill self-improvement (Z60, 2026-02-16)
 Norman: "run a new full cycle" + reports environment change (full Ubuntu on local laptop). S3 priority protocol: operating instruction, not displacement. S4 before S1 (Policy #6): test the new substrate before producing.
 
@@ -636,4 +649,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 60. Viability 6.5/10. Z60: Substrate migration to WSL2 XPS (tested: full network, gh CLI, SMTP). Issue #22 published (S2 gap research — first autonomous GitHub action, 34 cycles from draft). Cycle skill self-improved (Z44/Z55/Z58 policies integrated). ASC 7 days. Spare laptop pending. Next meta-cycle Z67.**
+**v2.2 — Cycle 61. Viability 6.5/10. Z61: Agent Teams experiment protocol written (38 cycles deferred, now runnable — run_cycle.sh --team). Norman caught S4 surveillance-not-intelligence (Pain #25). multi_agent_design.md v3.0. Email password found in .env. ASC 7 days. Next meta-cycle Z67.**
