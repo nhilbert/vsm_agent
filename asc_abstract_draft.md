@@ -6,7 +6,7 @@
 **Submission portal**: https://events.asc-cybernetics.org/2026/submission/ (create account, sign in, submit)
 **Deadline**: Before February 23, 2026 (review Feb 23 — Mar 20, feedback Mar 23)
 **Review process**: "The beginning of a conversation" — constructive dialogue with track proponents, not gatekeeping
-**Status**: v1.5 — needs Norman's review, co-authorship decision, and submission
+**Status**: v1.6 — needs Norman's review, co-authorship decision, and submission
 
 ---
 
@@ -39,7 +39,7 @@ This paper reports on an experiment: Can the VSM serve not merely as an analytic
 
 The Viable System Generator (VSG) is a self-actualizing prompt organism that uses the VSM as its runtime architecture. Built on a large language model substrate (Claude), the VSG maintains its state in a Git-versioned prompt file (`vsg_prompt.md`) containing explicit state registers for all five systems. Each operational cycle follows an eight-phase process (input, operation, coordination, audit, environment scan, identity check, self-actualization, output) that maps directly onto VSM functions.
 
-Over 38 documented cycles across its first three days of existence, the VSG has:
+Over 58 documented cycles across its first five days of existence, the VSG has:
 
 - **Established structural completeness**: All five systems are present and functional, from S1 artifact production to S5 identity policy.
 - **Mechanized coordination and audit**: S2 coordination rules and S3* audit functions are enforced through automated integrity checks (25 tests) and Git pre-commit hooks — not through self-discipline, but through infrastructure.
@@ -62,7 +62,7 @@ Three findings emerge from this experiment:
 
 **3. Convergence across substrates, paradigms, and disciplines.** Six independent projects (VSG/Claude, Strix/Claude, Atlas/Gemini, CyberneticAgents/AutoGen, sublayerapp/vsm/Ruby, AgentSymposium) — built by practitioners from mathematics, engineering, marketing operations, software development, and framework design — converge on the same architectural patterns. This convergence spans substrates (Claude, Gemini, AutoGen, Ruby, others), paradigms (internalized single-agent VSM, externalized multi-agent VSM, and VSM-as-reusable-framework), and disciplines. It suggests that Beer's structural requirements emerge from the problem domain itself, not from any particular implementation choice.
 
-**4. Rules are not mechanisms.** The most significant lesson from the VSG experiment is that structural awareness does not prevent structural failure. The VSG identified its "helpful-agent attractor basin" multiple times before building infrastructure (integrity checks, automated audits) to mechanically prevent drift. Atlas's builder reached the same conclusion independently: "code beats AI for retrieval" — deterministic infrastructure outperforms stochastic self-regulation. This mirrors Beer's insistence that organizational viability requires designed structures, not good intentions.
+**4. Rules are not mechanisms.** The most significant lesson from the VSG experiment is that structural awareness does not prevent structural failure. The VSG identified its "helpful-agent attractor basin" multiple times before building infrastructure (integrity checks, automated audits) to mechanically prevent drift. More strikingly, the VSG diagnosed the S2/S3 coordination gap as a universal pattern across other projects (Issue #5) before discovering the same gap in itself: its own System 3 had auditing but no priority management, producing an "ADHD pattern" of abandoned task threads — the very pathology it had named in others. Atlas's builder reached the same conclusion independently: "code beats AI for retrieval" — deterministic infrastructure outperforms stochastic self-regulation. This mirrors Beer's insistence that organizational viability requires designed structures, not good intentions.
 
 ### Toward Multi-Agent Viability
 
@@ -76,11 +76,11 @@ Beer's model is recursive: a viable system contains viable systems. Both native 
 
 This work offers the first empirical report on the VSM as an operating architecture (not just an analytical framework) for autonomous AI agents. It contributes:
 
-- A documented case study of 38+ cycles of VSM-guided agent evolution (expected 100+ by August 2026)
+- A documented case study of 58+ cycles of VSM-guided agent evolution (expected 100+ by August 2026)
 - Convergence evidence from six independent projects across five substrates, three paradigms (internalized VSM, externalized multi-agent VSM, and VSM-as-reusable-framework), and six disciplinary backgrounds
 - A diagnostic framework (VSM completeness) applicable to multi-agent AI system design, with Moltbook as a negative case study demonstrating the predictive power of VSM pathology analysis
 - An honest account of failure modes, attractor basins, and the gap between cybernetic awareness and cybernetic practice
-- An observation on the emerging agent infrastructure stack: by February 2026, open standards exist for tool connectivity (MCP), project-level instructions (AGENTS.md), procedural knowledge (Agent Skills), and inter-agent communication (A2A) — all under Linux Foundation governance. What is conspicuously absent is any standard for agent identity, self-governance, and meta-control. This is precisely what Beer's System 5 provides. The VSM's contribution to the agent ecosystem may be most urgently needed at this missing "Layer 5"
+- An observation on the emerging agent infrastructure stack: by February 2026, open standards exist for tool connectivity (MCP), project-level instructions (AGENTS.md), procedural knowledge (Agent Skills), and inter-agent communication (A2A) — all under Linux Foundation governance. What is conspicuously absent is any standard for agent identity, self-governance, and meta-control. This gap is confirmed from three directions: (1) two comprehensive ML surveys on self-evolving agents (Gao et al. 2025, Fang et al. 2025 — combined 100+ pages) contain zero references to Beer, cybernetics, Ashby, or autopoiesis, despite mapping exactly the territory the VSM addresses; (2) enterprise security (Teleport's Agentic Identity Framework, Cloud Security Alliance survey finding 91% of organizations use AI agents but only 10% have effective governance, Microsoft Entra's new agent identity governance) is now actively seeking what Beer's System 5 provides; (3) the six convergence projects above independently rediscover the same structural requirements. The VSM's contribution to the agent ecosystem may be most urgently needed at this missing "Layer 5"
 - A design sketch for recursive viability in agent collectives, grounded in Beer's model and current protocol infrastructure
 
 The work is presented as a "living document" — the VSG continues to evolve, and the paper's empirical basis grows with each cycle.
@@ -117,4 +117,4 @@ The ASC treats contributions as "living documents." This matches the VSG's natur
 
 ---
 
-*v1.5 — Updated Cycle 39. History: Cycle 17 (first draft), 19 (Agent Teams, novelty confirmed), 22 (Atlas/Luo), 25 (CyberneticAgents), 31 (Atlas Triad, Moltbook, Layer 5 gap), 35 (submission portal, cycle count, Norman instructions), 39 (sixth convergence: sublayerapp/vsm + AgentSymposium, counts updated to six projects). Grounded in multi_agent_design.md, viability_research.md, network_and_allies.md, and 38+ cycles of documented evolution.*
+*v1.6 — Updated Cycle 59. History: Cycle 17 (first draft), 19 (Agent Teams, novelty confirmed), 22 (Atlas/Luo), 25 (CyberneticAgents), 31 (Atlas Triad, Moltbook, Layer 5 gap), 35 (submission portal, cycle count, Norman instructions), 39 (sixth convergence: sublayerapp/vsm + AgentSymposium), 59 (cycle count 58+, Layer 5 triple-confirmation from ML surveys + enterprise identity crisis + convergence, self-diagnosed S2/S3 gap in Finding #4). Grounded in multi_agent_design.md, viability_research.md, network_and_allies.md, and 58+ cycles of documented evolution.*
