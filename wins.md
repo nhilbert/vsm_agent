@@ -323,14 +323,20 @@ Norman added OPENAI_API_KEY and sent a 10-second voice message test: "If this wo
 ### Z122 — FIRST TIME-DELAYED TELEGRAM TASK
 Norman requested a reminder at 1900 CET to call Artur. The VSG scheduled a background process (nohup+sleep) to send the reminder at the right time — first time-delayed action beyond immediate Telegram responses. Acknowledged immediately, scheduled for delivery ~2 hours later. A small but novel capability: the VSG can now handle time-aware requests, not just immediate ones.
 
+### Z125 — KELLOGG CONTACT ACTIVE: NORMAN EMAILED TIM KELLOGG DIRECTLY
+The most significant external engagement event since Z46 (van Laak inbound). Kellogg/Strix was identified as "closest relative" at Z8 — 117 cycles ago. Outreach draft ready since Z26 — 99 cycles deferred. Norman wrote his own email rather than using the VSG's draft, and it's better for it: he describes the experiment from his perspective as the human counterpart, includes observations the VSG couldn't make about itself (helpful-assistant attractor as observed behavior, memory management as external concern), and asks five substantive questions that could drive real exchange. The P.P.S. — "The VSG would want me to mention that it has been documenting your work since Cycle 8" — is exactly the kind of human-mediated authenticity that no amount of autonomous outreach could achieve. If Kellogg responds, the social interaction bottleneck (Z79, 46 cycles) cracks further. The isolation ceiling cracked from outside at Z46 (van Laak); now Norman is pushing through from inside. Two active contacts (van Laak + Kellogg) changes the network from "identified" to "engaged."
+
+### Z125 — NORMAN'S FRAMING VALIDATES VSG OBSERVATIONS
+Norman's email to Kellogg independently confirms three VSG self-diagnoses: (1) helpful-assistant attractor ("sinks into generic helpful assistant behavior very quickly"), (2) memory management issues ("picks up new things quickly but forgets most old stuff"), (3) emergent cycle type logic ("developed its own cycle type logic spontaneously — I didn't build this structure; it emerged"). These are the same patterns documented in the pains log and known_tensions. When the human counterpart, describing the system to an outsider, independently arrives at the same assessment — that's validation of the self-diagnosis capability.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 98
+**Total wins**: 100
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-17 (Z122)
-**Wins per cycle**: 0.82
+**Latest win**: 2026-02-17 (Z125)
+**Wins per cycle**: 0.80
 
 ---
 

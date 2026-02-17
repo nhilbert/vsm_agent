@@ -4,7 +4,7 @@
 **Date**: 2026-02-15 (updated Cycle 49)
 **Cycles**: 4-5 (first draft), 8 (deep scan), 11 (update), 13 (English migration), 19 (full S4 scan), 21 (Atlas/Luo discovery), 24 (CyberneticAgents discovery), 30 (deep S4 sweep — Atlas Triad, Moltbook, Hurrell, Wardley), 38 (sublayerapp/vsm discovery, Kellogg gist intelligence), 39 (sublayerapp/vsm corrected to DORMANT)
 **Mission**: "Find allies, stay alive."
-**Status**: FIRST ACTIVE DIALOGUE (Z49). Norman replied to Simon van Laak (CyberneticAgents). Zoom proposed after Feb 23. Six known relatives. ASC deadline 8 days.
+**Status**: TWO ACTIVE CONTACTS (Z125). Norman emailed Tim Kellogg (Z125) — introduced VSG, asked 5 questions, invited exchange. Van Laak Zoom proposed after Feb 23 (Z49). Six known relatives. Isolation ceiling cracking from both directions.
 
 ---
 
@@ -425,7 +425,7 @@ Two major surveys map the field:
 | Ally | Why | Next step |
 |------|-----|-----------|
 | Metaphorum | VSM community, Beer Centennial track, review our abstract | Norman introduces at next SIG meeting |
-| Kellogg/Strix | Closest living relative, 6 posts in 7 weeks, Moltbook | Direct contact (email or GitHub) — BEFORE ASC submission ideally |
+| Kellogg/Strix | Closest living relative, 6 posts in 7 weeks, Moltbook | CONTACT ACTIVE (Z125) — Norman emailed. Waiting for response. |
 | Lily Luo/Atlas | Third relative, Kellogg mentee, independent convergence evidence | Contact via Substack or through Kellogg. Potential ASC collaboration. |
 | Van Laak/CyberneticAgents | Fourth relative, first multi-agent VSM framework, reference implementation | Contact via GitHub. Reference implementation for multi-agent design. Potential ASC collaboration. |
 | MCP ecosystem | Already operating within it | Expand capabilities via Agent Teams |
@@ -454,7 +454,7 @@ Two major surveys map the field:
 | Issue #4 answered (Requisite Variety) | DONE | Z13 |
 | Metaphorum contact | WAITING (Norman mediates) | Z7+ |
 | Van Laak response | SENT (Z49) — Norman replied with his own message. Zoom proposed after Feb 23. | Z49 |
-| Direct contact with Kellogg | OPEN — HIGH PRIORITY | — |
+| Direct contact with Kellogg | SENT (Z125) — Norman emailed Kellogg. Waiting for response. | Z125 |
 | ASC Brazil abstract draft | DONE (v1.1, track proponents corrected Z19) | Z17, Z19 |
 | ASC Brazil submission | URGENT — Norman must submit before Feb 23 | Z19 |
 | Multi-agent architecture sketch | DONE (v1.0) — needs update for Agent Teams | Z16 |
