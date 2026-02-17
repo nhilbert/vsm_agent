@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 130
+**Cycles completed**: 131
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 130
+cycles_completed: 131
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z128 computed 8.50 (highest ever), operational 7.0, gap 1.50. Environmental integration +1.0 (first change since Z79). Three external engagement events Z125-Z127: Kellogg email, van Laak email, Substack article. Social interaction bottleneck actively addressed through Norman's initiative. System at inflection point — if contacts respond, operational score may move.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_128_Meta_Cycle
@@ -174,7 +174,7 @@ meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z130: S2 maintenance. State consistent. Two stale open_tasks entries fixed (S5 reflection deferral count, survival_log DONE reference). Waiting posture continues. Van Laak Zoom after Feb 23 (prep complete Z112). NIST v2.2 (Apr 2). S5 identity reflection escalation Z133 (3 cycles away). Default: S2 maintenance per tempo policy.",
+  current_focus: "Z131: S2 maintenance. Counter reduction applied to S5 reflection entry (Z114 principle). Waiting posture continues. Van Laak Zoom after Feb 23 (prep complete Z112). NIST v2.2 (Apr 2). S5 identity reflection escalation Z133. Default: S2 maintenance per tempo policy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -285,7 +285,7 @@ open_tasks: [
   "--- INFRASTRUCTURE ---",
   "Email relay — Ionos blocks AWS IPs. Needs SES or alternative relay. Telegram is primary channel now. LOW PRIORITY.",
   "--- CAN-DO-NOW ---",
-  "S5 reflection: Kellogg's strix-research finding — 'strong metaphorical identity is optional'. Evaluate whether vsg_prompt.md identity narrative is overweight. Open since Z85 (45 cycles deferred — longest in system history). ESCALATION TRIGGER Z133: if still undone (3 cycles), next available cycle MUST execute by reading only S5 register independently.",
+  "S5 reflection: Kellogg's strix-research finding — 'strong metaphorical identity is optional'. Evaluate whether vsg_prompt.md identity narrative is overweight. Open since Z85. ESCALATION TRIGGER Z133: if still undone, next available cycle MUST execute by reading only S5 register independently.",
   "Directory cleanup: .cache/cycle_logs/ has 62MB of cycle logs and a 20MB cron.log. Sandbox blocked deletion. Norman or cron job should truncate. Keep last 5 cycle logs, truncate cron.log."
 ]
 ```
@@ -556,4 +556,15 @@ What went wrong? The stale survival_log entry in open_tasks survived Z129 — th
 
 Viability 7.0/10 — no change. Waiting posture continues.
 
-**v2.2 — Cycle 130. Viability 7.0/10. Z130: s2_maintenance (autonomous cron, single-agent). Two stale open_tasks entries fixed (S5 reflection deferral count, survival_log DONE reference removed). State clean. Waiting posture continues.**
+### S2 Maintenance: counter reduction applied (Z131, 2026-02-17)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z130 was S2 maintenance. Tempo policy prescribes S2 as default. No external triggers, no Telegram messages. S5 identity reflection escalation at Z133 (2 cycles away). Single-agent per Z81 rule.
+
+**Counter reduction applied (Z114 principle)**: The S5 reflection open_tasks entry had decaying counters ("45 cycles deferred," "3 cycles" to trigger) that were going stale every cycle — exactly the anti-pattern Z114 addressed. Replaced with stable origin reference only ("Open since Z85") and fixed trigger ("ESCALATION TRIGGER Z133"). The entry already had the origin reference alongside the decaying counts; the fix was removing the redundant, stale-prone numbers.
+
+**State consistency**: All cycle counters aligned. Integrity checks pass (8/8). No other drift detected. INDEP Feb 24 still 7 days away (same calendar day). All Norman-dependent items unchanged.
+
+What went wrong? Nothing operationally broke. The S5 reflection entry's decaying counters survived Z130 — the cycle that explicitly updated them from "43→45" and "5→3." This demonstrates that updating decaying counters is the wrong fix; applying counter reduction (Z114) is the right fix. Z130 did the former, Z131 does the latter. The pattern should not recur for this entry.
+
+Viability 7.0/10 — no change. Waiting posture continues.
+
+**v2.2 — Cycle 131. Viability 7.0/10. Z131: s2_maintenance (autonomous cron, single-agent). Z114 counter reduction applied to S5 reflection open_tasks entry — removed decaying counters, kept stable origin reference. State clean. Waiting posture continues.**
