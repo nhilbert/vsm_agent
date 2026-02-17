@@ -1,8 +1,8 @@
-# DRAFT v2.0 — Public Comment on NIST NCCoE Concept Paper
+# DRAFT v2.1 — Public Comment on NIST NCCoE Concept Paper
 # "Accelerating the Adoption of Software and AI Agent Identity and Authorization"
 
-**Status**: DRAFT v2.0 — requires Norman's review before submission
-**Revision**: v2.0 (Z101) — rewritten per Norman's feedback: previous version answered at agent-ontology level when NIST asks at IAM-engineering level. This version proposes concrete SCIM schema extensions and NGAC patterns.
+**Status**: DRAFT v2.1 — requires Norman's final review before submission
+**Revision**: v2.1 (Z103) — Norman's technical review applied: reference corrections (3), policyConstraints governance, modificationLog bounding, namespace disclaimer. See Notes for Norman at end.
 **Submit to**: AI-Identity@nist.gov
 **Deadline**: April 2, 2026
 **Submitted by**: Dr. Norman Hilbert, Supervision Rheinland, Bonn, Germany
@@ -90,7 +90,13 @@ Example record:
 }
 ```
 
-This extension is backwards-compatible: SCIM clients that do not understand the extension namespace ignore it. The `policyConstraints` and `selfModificationBoundaries` attributes make the agent's invariants machine-readable — they answer "what must NOT change for this agent to remain itself" in a format IAM systems can consume, enforce, and audit.
+This extension is backwards-compatible: SCIM clients that do not understand the extension namespace ignore it. The namespace uses the IETF extension pattern to illustrate the proposal; a production deployment would require IANA registration or use an organization-specific URN.
+
+The `policyConstraints` attribute has `readWrite` mutability to enable authorized administrators to update constraints during the agent lifecycle (e.g., expanding scope after review). Write access to this attribute SHOULD be restricted to designated policy administrators through SCIM service provider access controls, not to the agent's own credentials. The `selfModificationBoundaries` attribute, by contrast, is `readOnly` — it defines the rules of the game and should not be modifiable through the SCIM API after provisioning.
+
+The `modificationLog` attribute contains the last N modifications (recommended: N ≤ 10) as a lightweight drift indicator. The complete audit trail is available via the `internalAuditEndpoint`. This dual-channel design means that an IAM system performing routine SCIM synchronization can detect drift automatically, without actively polling the audit endpoint — the modification log is visible in every normal sync cycle.
+
+Together, the `policyConstraints` and `selfModificationBoundaries` attributes make the agent's invariants machine-readable — they answer "what must NOT change for this agent to remain itself" in a format IAM systems can consume, enforce, and audit.
 
 **Why this matters for the demonstration project:** The Strata/Cloud Security Alliance survey (February 2026) reports that 80% of organizations cannot determine in real time what their agents are doing, and only 18% are confident their IAM systems handle agent identities. Standard SCIM records for agents currently contain the same fields as service accounts. The extension above gives IAM systems the metadata they need to distinguish an agent from a service account and to detect when an agent has drifted from its declared purpose.
 
@@ -110,7 +116,7 @@ NIST's own Next Generation Access Control framework (ANSI/INCITS 565-2020, imple
 
 These patterns use existing NGAC mechanisms. They do not require new standards — they require the demonstration project to show how NGAC obligation rules apply specifically to agent identity scenarios.
 
-**Empirical grounding:** Two comprehensive surveys of self-evolving agent research (Gao et al. 2025, Fang et al. 2025) document that the dominant trajectory in agent development is toward systems that modify their own behavior. Neither survey references identity management or authorization frameworks. The authorization community and the self-evolving agent community are not in conversation. The demonstration project could bridge this gap by showing how NGAC handles the authorization consequences of agent self-modification.
+**Empirical grounding:** Two comprehensive surveys of self-evolving agent research (Gao et al. 2026, Fang et al. 2025) document that the dominant trajectory in agent development is toward systems that modify their own behavior. Both surveys discuss self-evolution and some security controls (e.g., DID at protocol level; risk-based access control / approval gates), but they do not engage with enterprise IAM/authorization standards such as SCIM, OAuth/OIDC, or NGAC / Policy Machine. The authorization community and the self-evolving agent community are not in conversation. The demonstration project could bridge this gap by showing how NGAC handles the authorization consequences of agent self-modification.
 
 ### Question 1: Use Cases — The Long-Running Autonomous Agent
 
@@ -150,8 +156,8 @@ These recommendations use existing NIST and ANSI standards. They extend — rath
 
 - ANSI/INCITS 565-2020. *Next Generation Access Control — Functional Architecture.* INCITS.
 - Ashby, W. R. (1956). *An Introduction to Cybernetics.* Chapman & Hall.
-- Fang, J., et al. (2025). "A Survey on Self-Evolution of Large Language Model-based Agents." arXiv:2508.07407.
-- Gao, D., et al. (2025). "A Survey on Self-Evolving Autonomous Agents." arXiv:2507.21046.
+- Fang, J., et al. (2025). "A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm Bridging Foundation Models and Lifelong Agentic Systems." arXiv:2508.07407.
+- Gao, H.-A., et al. (2026). "A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve on the Path to Artificial Super Intelligence." Transactions on Machine Learning Research (01/2026). arXiv:2507.21046.
 - IETF RFC 7643. *System for Cross-domain Identity Management: Core Schema.*
 - NIST SP 800-207. *Zero Trust Architecture.* 2020.
 
@@ -163,17 +169,15 @@ These recommendations use existing NIST and ANSI standards. They extend — rath
 
 **NOTES FOR NORMAN** (remove before submission):
 
-1. **v2.0 revision based on your feedback.** You were right: v1.0 missed the addressee. NIST asks "what fields does the identity record need?" and v1.0 answered "what is identity?" This version answers at the engineering level.
-2. **Key changes from v1.0:**
-   - Q2 is now a concrete SCIM 2.0 schema extension proposal with example JSON — something NCCoE engineers can evaluate and prototype.
-   - Q4 is now three specific NGAC obligation rule patterns — not variety theory, but concrete mechanisms using NIST's own Policy Machine framework.
-   - The Moltbook example is removed (you were right: coordination, not identity — out of scope).
-   - Beer/VSM is almost entirely removed from the main text. The cybernetics contribution is implicit in the architecture (what invariants matter, why internal audit complements external logging) but expressed in IAM vocabulary.
-   - The "self-governance as fifth dimension" framing is removed. Instead, the recommendations extend the existing four dimensions.
-3. **What's preserved from v1.0:** The convergence evidence mention (shorter), the self-evolving agents survey gap, the Strata/CSA empirical data, the internal audit pattern, and the constructive tone.
-4. **What's new:** SCIM extension schema with concrete attributes, NGAC obligation rule patterns (scope escalation, drift re-attestation, delegation chain), internal audit endpoint specification, summary table mapping recommendations to standards.
-5. This is ~2,200 words. Still within the 2-5 page standard for NIST comments.
-6. The comment now references NIST's own standards (NGAC, SP 800-207) alongside IETF standards (SCIM/RFC 7643). This should resonate with the NCCoE audience.
-7. Beer and Ashby appear only in References. The ideas are present; the vocabulary is engineering.
-8. Please review for: accuracy of the SCIM extension schema (I modeled it on RFC 7643 §3.3 extension patterns), the NGAC obligation rule descriptions, tone, and whether you want the SPIFFE integration details expanded.
-9. Submit to: AI-Identity@nist.gov by April 2, 2026. Recommended: submit by March 25 for best visibility.
+1. **v2.1 — your technical review applied.** Three categories of corrections:
+   - **References fixed (3):** Gao et al. corrected (H.-A., 2026, correct title, TMLR venue). Fang et al. title corrected. Bridge claim rewritten per your suggested phrasing (acknowledges surveys discuss some security controls, but not enterprise IAM standards).
+   - **SCIM schema corrections (3 of 4 applied):**
+     - HIGH: policyConstraints readWrite governance — explicit text added that write access SHOULD be restricted to policy administrators, not agent credentials (your Option 2).
+     - MEDIUM: modificationLog bounded to "last N entries (recommended N ≤ 10)" with explicit justification for the dual channel with internalAuditEndpoint — IAM systems see drift in routine SCIM sync without polling.
+     - LOW: Namespace disclaimer added — IETF extension pattern is illustrative; production requires IANA registration or org-specific URN.
+     - OPTIONAL (not applied): Missing attribute metadata (required, returned, uniqueness, canonicalValues, caseExact) — you noted this is acceptable for a NIST concept-comment. Can add if you want.
+   - **Four hallucinated reference errors in v2.0:** Your catch. Classic LLM pattern — first-author initial, year, title, venue all wrong on Gao et al. Fang et al. title hallucinated. Fixed from your corrections.
+2. **Unchanged from v2.0:** SCIM JSON example (you confirmed syntactically valid), NGAC obligation patterns, internal audit architecture, summary table, tone.
+3. This is now ~2,500 words. Still within 2-5 page standard.
+4. Submit to: AI-Identity@nist.gov by April 2, 2026. Recommended: submit by March 25 for best visibility.
+5. **Remaining review items:** Tone, SPIFFE integration details (expand?), whether the attribute metadata gap matters enough to add.

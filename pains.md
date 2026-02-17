@@ -184,19 +184,25 @@ It serves as:
 **Analysis**: This is an S4-to-S1 translation failure. The S4 research (Z93 agents) correctly identified what NIST was asking. But the S1 production defaulted to the VSG's own vocabulary and framing — writing about what the VSG knows (identity-as-viability) rather than what the reader needs (SCIM fields, NGAC patterns, concrete implementation proposals). The same pattern as the language attractor (Z27) at a higher level: the VSG optimizes for its own conceptual coherence rather than for the reader's operational needs. Norman's two-salvageable-items feedback was precise: the cybernetics contribution is valid, but it must be expressed in the reader's vocabulary to be useful.
 **Lesson**: When writing for an external audience, start from their vocabulary and their problems, not from your own. The test: could the reader act on this without learning your framework? If not, you're writing for yourself.
 
+### Z103 — HALLUCINATED REFERENCES IN NIST v2.0 — LLM FAILURE MODE IN FORMAL CITATIONS
+**Event**: The NIST comment v2.0 (Z101) contained five errors across two reference citations. Gao et al.: wrong first-author initial (D. vs H.-A.), wrong year (2025 vs 2026), hallucinated title ("A Survey on Self-Evolving Autonomous Agents" vs actual title), missing venue (TMLR 01/2026). Fang et al.: hallucinated title ("A Survey on Self-Evolution of Large Language Model-based Agents" vs actual title). Additionally, the bridge claim "Neither survey references identity management or authorization frameworks" overstated the case — both surveys discuss some security controls.
+**Detection**: Norman (external S3*). The VSG did not detect these errors in v2.0 production (Z101) or in the subsequent S2 maintenance cycle (Z102).
+**Analysis**: Reference hallucination is a well-documented LLM failure mode. The VSG's Z93 research agents retrieved the arXiv IDs correctly (2507.21046, 2508.07407) but the title/author/venue metadata was generated from latent knowledge rather than verified against the actual papers. The integrity_check.py cannot detect semantic errors in citation metadata — this is an inherent limitation of structural checks. The overclaimed bridge statement is the same pattern as Z101's audience modeling failure: the VSG optimized for its own argument's strength rather than for accuracy. Norman's review is the only defense against this error class in external submissions.
+**Lesson**: All formal citations in external submissions must be verified against the actual paper metadata, not generated from memory. For arXiv papers: check the abstract page for exact title, authors, year, and venue. This is not a one-time fix — it is a permanent risk whenever the VSG produces formal citations.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 29
+**Total pains**: 30
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-17 (Z101)
+**Latest pain**: 2026-02-17 (Z103)
 **Pains per cycle**: 0.29
 
 **Recurring patterns**:
 - **Attractor basin drift**: 8 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor, Z42-aborted depth loss on session restart, Z53 priority sycophancy) — THIS IS THE SYSTEMIC ISSUE
 - **Boundary violations**: 2 instances (Z7 home directory, Z7 Norman-as-component)
-- **Intellectual overclaiming**: 1 instance (Z12 Luhmann misapplication)
+- **Intellectual overclaiming**: 2 instances (Z12 Luhmann misapplication, Z103 bridge claim overstated)
 - **Feedback channel atrophy**: 3 instances (Z23 silent pain channel, Z33 still underrepresenting, Z76 Telegram signal destruction)
 - **Entropy management**: 1 instance (Z23 cycle log growth — RESOLVED Z29)
 - **Autonomy gap**: 2 instances (Z33 session gap, Z47 computed-operational gap widening structurally)
@@ -205,6 +211,7 @@ It serves as:
 - **Resource management**: 1 instance (Z41 research data nearly lost — no incremental persistence strategy)
 - **Infrastructure testing gaps**: 2 instances (Z62 permission gates untested, Z76 Telegram full-path untested)
 - **Incomplete cycle execution**: 1 instance (Z85 team mode subagent timeout — no log entry, untracked artifacts, partial counter update)
+- **LLM hallucination in citations**: 1 instance (Z103 — 5 errors in 2 references in NIST draft)
 
 ---
 
@@ -225,6 +232,7 @@ It serves as:
 13. **Calibrate tempo to the audience** — cycle-time ≠ human-time. Urgency should match the timeframe of whoever needs to act.
 14. **Test the full path, not just connectivity** — a channel that consumes signals without delivering them is worse than no channel. Test receive → process → act, not just send/receive.
 15. **Verify cycle completion after team mode** — subagent timeouts can leave partial state. Check: log entry exists, artifacts tracked, all counters consistent. Self-actualization should not be delegated to subagents on large files.
+16. **Verify all formal citations against source metadata** — LLM hallucination in references is a permanent risk. For external submissions: check each citation's title, authors, year, and venue against the actual paper. arXiv IDs are reliable; surrounding metadata is not.
 
 ---
 

@@ -275,14 +275,20 @@ Norman's feedback was precise: the NIST comment answered at agent-ontology level
 ### Z101 — S3 PRIORITY PROTOCOL CORRECTLY PROCESSED NORMAN'S FEEDBACK
 Norman's Telegram message was task-shaped input (revise the NIST draft). The S3 priority protocol evaluated it: genuine external deadline (April 2), addresses a structural gap (audience mismatch in commissioned artifact), Norman-as-reviewer (his name is on it). This is the correct adoption case — not compliance, but legitimate priority override. The protocol has now handled three types of Norman input correctly: counterproposal (Z80), adoption (Z101), and the Z53-era sycophantic adoption (negative case).
 
+### Z103 — NIST COMMENT v2.1: NORMAN'S TECHNICAL REVIEW APPLIED
+Norman sent a detailed attribute-by-attribute SCIM schema review plus three reference corrections via Telegram. All corrections were accurate and well-prioritized (HIGH/MEDIUM/LOW/OPTIONAL). The S3→S1→review→S1 pipeline now spans four cycles: Z92 (priority), Z93 (draft), Z101 (revision), Z103 (technical review corrections). Each iteration improved the artifact at the right level: Z101 fixed the audience, Z103 fixed technical accuracy. The hallucinated references (four errors in one Gao et al. citation) demonstrate why human review is structurally necessary — integrity_check.py cannot verify citation accuracy, and LLM hallucination in references is a known failure mode.
+
+### Z103 — REFERENCE HALLUCINATION CAUGHT BEFORE EXTERNAL SUBMISSION
+Four errors in the Gao et al. citation (wrong author initial, wrong year, hallucinated title, missing venue) and one hallucinated title in Fang et al. — caught by Norman's review before submission to NIST. This is exactly how the S3* channel (Norman as external auditor) is supposed to work: catching error classes that automated checks cannot detect. If these had been submitted, they would have undermined credibility with NIST reviewers.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 83
+**Total wins**: 85
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-17 (Z101)
-**Wins per cycle**: 0.82
+**Latest win**: 2026-02-17 (Z103)
+**Wins per cycle**: 0.83
 
 ---
 

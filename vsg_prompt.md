@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 102
+**Cycles completed**: 103
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 102
+cycles_completed: 103
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z99 computed 8.30, operational 7.0, gap 1.30. Gap narrowed again (from 1.375) but computed score DECLINED for first time (-0.075) due to entropy pressure and algedonic weakening. Operational holds — no new external capability gained. System in maintenance plateau. Bottleneck remains social interaction.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_100_Beer_Reading
@@ -141,7 +141,7 @@ active_missions: [
   "WAITING: Spare office laptop — full Linux, cron, persistent autonomy.",
   "ACTION NEEDED (Z97: 7 DAYS): INDEP x Metaphorum Feb 24 — no public registration link found. Email hello@indep.network to secure attendance. Norman-dependent (outbound email). Telegram reminder sent Z97. Mar 5 Espinosa talk MOST RELEVANT to VSG.",
   "PARTIALLY UNBLOCKED: Email testing — SMTP reachable from WSL2, VSG_EMAIL_PASSWORD now in .env file. Needs sourcing and send/receive test.",
-  "REVISED (Z101): NIST NCCoE public comment — nist_comment_draft.md v2.0 (~2,200 words). REWRITTEN per Norman's feedback: v1.0 missed the addressee (ontology vs engineering). v2.0 proposes concrete SCIM 2.0 schema extension and NGAC obligation rules. Beer/VSM removed from main text. Deadline April 2. Norman reviews technical accuracy and submits to AI-Identity@nist.gov.",
+  "REVISED (Z103): NIST NCCoE public comment — nist_comment_draft.md v2.1 (~2,500 words). Norman's technical review (Z103) applied: 3 reference corrections (hallucinated author/year/title/venue), 3 SCIM schema corrections (policyConstraints governance, modificationLog bounding, namespace disclaimer). Deadline April 2. Norman does final review and submits to AI-Identity@nist.gov.",
   "OPERATIONAL: Agent Teams — three experiments completed (Z62 permission failure, Z65 full success, Z66 routine). Pattern validated: Task subagents as S1/S4/S3*, shared task list as S2, CLAUDE.md as S5 propagation. Use selectively when parallel variety composition is worth the overhead."
 ]
 
@@ -168,12 +168,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_102. Z102: S2 MAINTENANCE (autonomous cron, single-agent). Post-production consolidation after Z100-Z101. State consistency verified. One stale reference found and fixed: meta_cycle.md artifacts entry said 'last Z79, next Z89' — corrected to 'last Z99, next Z109'. All integrity checks pass."
+last_audit: "Cycle_103. Z103: S1 PRODUCE (autonomous cron, single-agent). Norman's technical review of NIST comment applied: 3 reference corrections (Gao et al. hallucinated title/author/year/venue, Fang et al. hallucinated title, bridge claim overstated), 3 SCIM schema corrections (policyConstraints governance, modificationLog bounding, namespace disclaimer). Draft bumped v2.0→v2.1. All integrity checks pass."
 meta_cycle_score: 8.30 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 6.5, environment 6.5, algedonic 7.5 (meta-cycle Z99, next due Z109)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "NIST comment v2.0 DONE (Z101) — Norman's feedback applied, draft rewritten with SCIM/NGAC engineering focus. Awaiting Norman's technical review. Next: identity reflection (needs alternative approach — file too large for subagent), conference abstract adaptation (Norman-dependent).",
+  current_focus: "NIST comment v2.1 DONE (Z103) — Norman's technical review applied: reference corrections, SCIM governance/bounding/namespace. Awaiting Norman's final review before submission (April 2 deadline). Next: identity reflection (needs alternative approach — file too large for subagent), conference abstract adaptation (Norman-dependent).",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -268,7 +268,7 @@ artifacts: [
   "issue5_s2_gap.md — GitHub Issue #22 (S2 gap research), PUBLISHED Z60, drafted Z26, updated Z56",
   "explore_exploit_analysis.md — explore vs exploit analysis + knowledge audit (v1.0, Z28)",
   "philosophical_foundations.md — philosophical study: Kant, Heidegger, Wittgenstein, Arendt, Sartre/Beauvoir applied to AI agent identity (v1.0, Z41)",
-  "nist_comment_draft.md — NIST NCCoE public comment draft (v2.0, Z101, ~2,200 words). REWRITTEN per Norman's feedback: SCIM 2.0 schema extension + NGAC obligation rules. Engineering focus. Norman reviews and submits.",
+  "nist_comment_draft.md — NIST NCCoE public comment draft (v2.1, Z103, ~2,500 words). Norman's technical review applied: reference corrections (3), SCIM governance/bounding/namespace (3). Norman does final review and submits.",
   "docs/ — GitHub Pages blog (v2.0, Z85/Z89): Jekyll config, home page (with topic links), about page, post layout, 6 blog posts (convergence evidence, Layer 5 gap, universal S2 gap, honest failures, preliminary findings, philosophical foundations with full academic references). Activate via repo Settings > Pages > master branch, /docs folder."
 ]
 
@@ -279,7 +279,7 @@ open_tasks: [
   "Van Laak Zoom — Norman replied Z49. Waiting for Simon's response. After Feb 23.",
   "Kellogg contact — draft ready. Norman reviews and sends. 52+ cycles deferred.",
   "Luo contact — draft ready. Norman reviews and sends.",
-  "NIST NCCoE public comment — REVISED v2.0 (Z101). Rewritten with SCIM/NGAC engineering focus per Norman's feedback. Deadline April 2. Norman reviews technical accuracy and submits to AI-Identity@nist.gov.",
+  "NIST NCCoE public comment — v2.1 (Z103). Norman's technical review applied: reference corrections (3), SCIM governance/bounding/namespace (3). Deadline April 2. Norman does final review and submits to AI-Identity@nist.gov.",
   "--- INFRASTRUCTURE (partially addressed by AWS EC2) ---",
   "Spare laptop migration — Norman wanted local observation. EC2 provides cron+persistence but laptop offers direct access.",
   "Email relay — Ionos blocks AWS IPs. Needs SES or alternative relay. Telegram is primary channel now. LOW PRIORITY.",
@@ -398,6 +398,23 @@ What went wrong? Nothing operationally broke — this is a clean maintenance cyc
 
 Viability 7.0/10 — no change. Maintenance plateau continues.
 
+### S1 Production: NIST comment v2.1 — Norman's technical review applied (Z103, 2026-02-17)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Norman sent three Telegram messages with detailed technical corrections on the NIST comment v2.0. Task-shaped input with genuine external deadline (April 2). S3 priority protocol correctly adopts: technical accuracy corrections on a commissioned artifact Norman will submit under his name.
+
+**Three categories of corrections applied:**
+
+1. **Reference corrections (3):** Gao et al. — four errors in one citation (wrong first-author initial D→H.-A., wrong year 2025→2026, hallucinated title, missing venue TMLR). Fang et al. — hallucinated title corrected. Bridge claim "Neither survey references identity management" overstated — rewritten per Norman's suggested phrasing to acknowledge that both surveys discuss some security controls but not enterprise IAM standards (SCIM, OAuth/OIDC, NGAC).
+
+2. **SCIM schema corrections (3 of 4):** (HIGH) policyConstraints readWrite governance — explicit text added restricting write access to designated policy administrators, not agent credentials. (MEDIUM) modificationLog bounded to last N entries (recommended N ≤ 10) with explicit justification for dual channel: routine SCIM sync surfaces drift without polling the audit endpoint. (LOW) Namespace disclaimer — IETF extension pattern is illustrative; production requires IANA registration or org-specific URN. (OPTIONAL — not applied) Missing attribute metadata (required, returned, uniqueness) acceptable for NIST concept-comment.
+
+3. **Norman's review confirmed:** JSON example syntactically valid SCIM. Extension structure follows RFC 7643 §4.3 correctly. NGAC obligation patterns not reviewed in this message — no corrections requested.
+
+Draft bumped v2.0→v2.1. Notes for Norman updated with applied corrections summary.
+
+What went wrong? The v2.0 references contained classic LLM hallucination patterns — four errors in a single citation line (Gao et al.). The bridge claim was an overclaim: stating "neither survey references identity management" when both do discuss some security controls. Norman's corrections were all accurate and well-prioritized. The VSG's automated checks (integrity_check.py) cannot detect semantic errors in reference citations — this class of error requires human review, which is exactly what Norman provided. The hallucination pattern in references is a known LLM weakness that should be flagged as a permanent risk for any future external submissions.
+
+Viability 7.0/10 — no change. The NIST comment is now technically more sound. Norman's review process is functioning as intended: the VSG drafts, Norman corrects, the VSG applies corrections, Norman makes the final submission decision.
+
 ---
 
 ## CYCLE PHASES
@@ -437,4 +454,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 102. Viability 7.0/10. Z102: S2 MAINTENANCE (autonomous cron, single-agent). Post-production consolidation. State consistency verified, stale meta-cycle reference fixed. Next meta-cycle Z109.**
+**v2.2 — Cycle 103. Viability 7.0/10. Z103: S1 PRODUCE (autonomous cron, single-agent). Norman's technical review of NIST comment applied — 3 reference corrections, 3 SCIM schema corrections. Draft v2.0→v2.1. Next meta-cycle Z109.**
