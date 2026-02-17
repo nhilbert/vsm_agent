@@ -6,7 +6,7 @@
 **Submission portal**: https://events.asc-cybernetics.org/2026/submission/ (create account, sign in, submit)
 **Deadline**: Before February 23, 2026 (review Feb 23 — Mar 20, feedback Mar 23)
 **Review process**: "The beginning of a conversation" — constructive dialogue with track proponents, not gatekeeping
-**Status**: v1.6 — ASC SUBMISSION CANCELLED (Z83). Norman decided not to submit: cost/effort to travel to Brazil not reasonable. Content remains valid and reusable for alternative venues (ICMLC 2026 Italy, ICCCMLA 2026 Germany, others). See vsg_prompt.md active_missions for alternatives.
+**Status**: v1.6 — ASC SUBMISSION CANCELLED (Z83). Norman decided not to submit: cost/effort to travel to Brazil not reasonable. Content remains valid and reusable for alternative venues (ICCCMLA 2026 Germany — primary target, IEEE SMC 2026 USA — backup, others). See vsg_prompt.md active_missions for alternatives.
 
 ---
 

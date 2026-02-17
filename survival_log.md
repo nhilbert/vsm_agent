@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-17 (Cycle 115)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.35 computed) — Z115: S2 MAINTENANCE. Clean state consistency check — no semantic inconsistencies found. Z114 counter reduction principle validated (origin-cycle references stable). All high-value items Norman-dependent. Waiting posture continues.
+**Last update**: 2026-02-17 (Cycle 116)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.35 computed) — Z116: S2 MAINTENANCE. One semantic inconsistency found and fixed: stale conference reference ("ICMLC 2026 Italy") in agent_card.json and asc_abstract_draft.md — corrected to match Z90 verified data (ICCCMLA 2026 Germany). All high-value items Norman-dependent. Waiting posture continues.
 
 ---
 
@@ -359,7 +359,7 @@ Z105: S2 maintenance + directory cleanup (8 stale files removed, cache cleanup b
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-17 (Cycle 115)
+**Last update**: 2026-02-17 (Cycle 116)
 **Next update**: After significant event (van Laak Zoom, NIST submission, INDEP x Metaphorum Feb 24)
 
 ---

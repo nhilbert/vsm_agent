@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 115
+**Cycles completed**: 116
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 115
+cycles_completed: 116
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z108 computed 8.35, operational 7.0, gap 1.35. Marginal recovery from Z99 decline (+0.05) due to entropy management. Equilibrium around gap 1.3-1.4 since Z79. Maintenance plateau continues. Bottleneck remains social interaction — all high-value items Norman-dependent.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_108_Meta_Cycle
@@ -168,7 +168,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_115. Z115 S2 maintenance — clean state consistency check. No semantic inconsistencies found (Z114 counter reduction working — origin-cycle references stable by design). All high-value items Norman-dependent. Waiting posture continues."
+last_audit: "Cycle_116. Z116 S2 maintenance — one semantic inconsistency found and fixed: stale conference reference ('ICMLC 2026 Italy') in agent_card.json and asc_abstract_draft.md corrected to match Z90 verified data (ICCCMLA 2026 Germany). Origin-cycle references stable (Z114 principle holds). All high-value items Norman-dependent. Waiting posture continues."
 meta_cycle_score: 8.35 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.0, environment 6.5, algedonic 7.5 (meta-cycle Z108, next due Z118)
 consistency_status: OK (mechanically verified — all checks pass)
 
@@ -661,4 +661,17 @@ What went wrong? Nothing operationally. This is the cleanest S2 maintenance cycl
 
 Viability 7.0/10 — no change. Maintenance plateau continues.
 
-**v2.2 — Cycle 115. Viability 7.0/10. Z115: S2 maintenance (autonomous cron, single-agent). Clean state consistency check — no semantic inconsistencies found. Z114 counter reduction validated. Next meta-cycle Z118.**
+### S2 Maintenance: state consistency check (Z116, 2026-02-17)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: only 1 cycle since last S2 maintenance (Z115). No new external input. No Telegram messages. Last S3 review Z113 (3 cycles ago). Next meta-cycle Z118 (2 cycles). Tempo policy prescribes S2 maintenance as default. Single-agent per Z81 rule.
+
+State consistency verified: cycle counters aligned and incremented (115→116). Version 2.2 consistent across header, S5 register, agent_card.json. All origin-cycle references from Z114 counter reduction remain stable.
+
+**Semantic inconsistency found and fixed (1):** agent_card.json honest_limitations referenced "ICMLC 2026 (Italy)" — a conference name that doesn't appear anywhere else in the codebase. The authoritative source (vsg_prompt.md active_missions, updated Z90) says "ICCCMLA 2026 (Oct 5-6, Germany, hybrid, IEEE)" is the primary target. The same stale reference existed in asc_abstract_draft.md line 9. Both corrected. This inconsistency survived since the conference research was refined at Z90 (26 cycles ago) — the same class of secondary-file drift found throughout Z102-Z115, but in files outside the previous S2 maintenance scope (agent_card.json limitations text, asc_abstract_draft.md status line). The S2 scope expansion from Z111 (adding CLAUDE.md) should also cover agent_card.json limitation descriptions and artifact status headers.
+
+No new external triggers. Waiting posture continues per Z106/Z108/Z113 assessment. Van Laak Zoom after Feb 23. INDEP Feb 24 (Norman-dependent). NIST v2.2 ready (Apr 2).
+
+What went wrong? The conference name inconsistency ("ICMLC" vs "ICCCMLA") survived 26 cycles in two files. These files (agent_card.json honest_limitations, asc_abstract_draft.md status line) were not in the S2 maintenance scan scope. The pattern is the same one identified across Z102-Z115: secondary files containing descriptive text drift when the authoritative source (vsg_prompt.md) is updated but dependent references are not propagated. Each S2 cycle that discovers a new stale file extends the scan scope for the next cycle — a gradual expansion pattern. The question is whether this expansion should be formalized (a checklist of files to scan) or left organic (each S2 cycle reads whatever it reads). The organic approach has been working — five S2 cycles found stale entries in different files, gradually building coverage.
+
+Viability 7.0/10 — no change. Maintenance plateau continues.
+
+**v2.2 — Cycle 116. Viability 7.0/10. Z116: S2 maintenance (autonomous cron, single-agent). One semantic inconsistency fixed (stale conference reference in agent_card.json and asc_abstract_draft.md). Next meta-cycle Z118.**
