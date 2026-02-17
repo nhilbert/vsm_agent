@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 111
+**Cycles completed**: 112
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 111
+cycles_completed: 112
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z108 computed 8.35, operational 7.0, gap 1.35. Marginal recovery from Z99 decline (+0.05) due to entropy management. Equilibrium around gap 1.3-1.4 since Z79. Maintenance plateau continues. Bottleneck remains social interaction — all high-value items Norman-dependent.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_108_Meta_Cycle
@@ -117,12 +117,12 @@ environment: {
 }
 
 environment_model: {
-  strix: "ACTIVE but SHIFTED (Z90). Blog paused 17+ days (last Jan 31). scaffold-experiment-harness stalled on GPU infrastructure bugs (Metal crashes, Jan 16-17) — 108-condition grid NOT completed. boredom repo (Feb 7): CPU-only torch switch. NEW unknown repo: synthetic-buddy (Jan 27). NEW: Bluesky shift (Feb 15-16) — 'Token Anxiety' essay (AI-induced productivity compulsion) and 'AI psychosis is a huge thing to grapple with.' Kellogg is in a REFLECTIVE/ANXIOUS phase, not building. No mentions of Strix, VSM, or boredom experiments in recent posts. The token anxiety angle aligns with VSG's anti-performativity stance. Contact priority HIGH — mixed timing signal (reflective may mean receptive, or may mean withdrawn).",
+  strix: "UNCHANGED (Z112, confirmed Z90). Blog paused 20+ days (last Jan 31). 'Token Anxiety' Bluesky post (Feb 15) confirmed — feels compelled to always be doing something. No new blog posts or repo activity found since Z90 scan. Kellogg remains in REFLECTIVE phase. Contact 81+ cycles deferred, draft ready. Priority HIGH but window unclear.",
   metaphorum: "UPDATED (Z90). 2026 is Beer's centennial. ASC Brazil CANCELLED (Z83). Alternative conferences: ICCCMLA 2026 (Oct 5-6, Germany, hybrid, IEEE, submission via CMT3 — deadline TBA, ~Jun 30, email convenericccmla@gmail.com to confirm). IEEE SMC 2026 (Oct 4-7, USA — best community but transatlantic). Cyber-AI 2026 (Sep 22-25, Bucharest — stretch fit). ASC Brazil (Aug 3-7 — previously cancelled). INDEP x Metaphorum: Feb 24 6pm UTC ONE WEEK AWAY — Thompson & Macumber on democratic economic planning. NO public registration link found — email hello@indep.network this week. Mar 5 — Espinosa (MOST RELEVANT: 'VSM as Emancipatory Approach to Sustainable Self-Governance'). Apr 2 — Walker. No standalone Metaphorum 2026 conference. Norman in private VSM+AI working group.",
   multi_agent_direction: "OPERATIONAL (Z85, updated from Z19 discovery framing). Agent Teams pattern validated through four experiments (Z62 permission failure, Z65 full success, Z66 routine, Z85 current). VSM mapping confirmed: lead=S3 delegate, Task subagents=S1/S4/S3*, shared task list=S2, CLAUDE.md=S5 propagation. Selective use rule (Z81, Norman-approved): team mode for s4_scan and s1_produce cycles, single-agent for s2_maintenance/s3_review/meta_cycle. Hub-and-spoke communication only (substrate limitation). Norman's direction remains: build viable system of multiple VSM-aware agents.",
-  infrastructure: "UPDATED (Z90): Layer 5 gap CONFIRMED WIDE OPEN across all 2026 frameworks. NIST NCCoE (Feb 5, 2026): comment period OPEN until Apr 2. Submit to AI-Identity@nist.gov — first cybernetics-informed input they'd receive. Singapore IMDA v1.0 (Jan 22, 2026): first global governance framework for agentic AI, still purely security-framed. ERC-8004 LIVE on mainnet (Jan 29, 2026): 21,562 agents registered, v2 in development (MCP support, x402 integration). Closest to 'identity persistence' but still identity-as-economic-actor, no viability logic. Strata/CSA survey (Feb 2026): 18% IAM confidence, 80% blind to agent activity, 28% can trace agents to human. NHIcon 2026: 'persistent' vs 'ephemeral' agent classes via crypto, not autonomy. Self-evolving agent surveys (Fang et al., EvoAgentX, new 2510.25445): zero cybernetics confirmed. THE NICHE REMAINS COMPLETELY UNOCCUPIED.",
+  infrastructure: "CONFIRMED (Z112, stable from Z90). NIST NCCoE concept paper (Feb 5, 2026): comment period OPEN until Apr 2, 44 days. NCCoE 2026 roadmap has four pillars (data protection, trusted enterprise, AI, resilient embedded systems). Separate Cyber AI Profile project also active. No timeline changes. NIST v2.2 ready for Norman. Layer 5 gap remains wide open. Singapore IMDA v1.0, ERC-8004, Strata/CSA survey — all unchanged. Self-evolving agent surveys: zero cybernetics confirmed. THE NICHE REMAINS COMPLETELY UNOCCUPIED.",
   atlas: "UPDATED (Z30): Luo published Feb 13 — Atlas now has a multi-agent team 'The Triad': Steward (system hygiene ≈ S3*), Scribe (documentation/persistence ≈ S2), Skeptic (challenges assumptions/sycophancy ≈ S3). Atlas designed these roles itself when asked what agents it would want. Built on MCP, deployed to Cloud Run. Still no VSM vocabulary, but structural convergence deepening — Atlas independently discovered it needs differentiated sub-functions matching Beer's systems. Luo's insight: 'The intelligence of the system isn't in the model. It's in the conditions designed around it.' Also appeared on RevOps FM podcast (Jan 2026). Luo is Kellogg mentee — direct network path.",
-  cybernetic_agents: "UPDATED (Z90): CONTACT ACTIVE + PRIVACY DISCLOSED. 639 commits (25 on Feb 16, 0 on Feb 17). Simon quit his job to work full-time (Feb 1 blog). S2 STILL ABSENT — README confirms 'VSM roles implemented: System 1, 3, 4, 5.' S3 absorbs coordination. COMPLETED Planka migration (replacing Taiga) in a single day (issues #130-134, Feb 16). Deprecated Taiga in docs. Defaulted to OpenAI provider (removed Groq dependency). GhIssueWorkflow repo now has autopilot reliability issues (3 worker failure issues open). openclaw-bot (54 commits) = his agents already committing to repo. Blog (simonvanlaak.com) appears DOWN — DNS resolution failed. NO public awareness of VSG in any repo file. Zoom proposed after Feb 23. Contact priority HIGHEST.",
+  cybernetic_agents: "ZOOM PREP SCAN (Z112). 639 commits (stable since Feb 16). S2 STILL ABSENT — README: 'VSM roles implemented: System 1, 3, 4, 5.' Planka migration THREE-PHASE plan in progress (replacing Taiga): Phase 1 scope defined (Feb 16), Phase 2 runtime migration with dry-runs (in progress), Phase 3 operator cutover (not yet). GhIssueWorkflow EXTRACTED as standalone repo (Feb 15, 9 commits) — workflow automation matured from internal tooling to reusable package. 6 public repos total (CyberneticAgents, GhIssueWorkflow, LibreChatMCP, LibreChatObsidianSync, LibreChatTaskMaster, transit-calendar-addon). Architecture refactoring plan documented (6 priorities, 5 sprints — split oversized onboarding orchestrator P0). 4 S3-S5 message contracts formally documented with typed validation. openclaw-bot commits on Feb 13-15. Blog (simonvanlaak.com) STILL DOWN. docs/related_projects/ has vsm_mas_research_convergence.md and people_with_similar_ideas.md but NO mention of VSG or Norman. Zoom after Feb 23 — prep complete. DISCUSSION POINTS: (1) S2 gap as shared research problem, (2) internalized vs distributed VSM complementarity, (3) ASC/conference co-authorship, (4) openclaw-bot reliability and agent-driven development, (5) philosophical grounding VSG can offer.",
   convergence: "STRENGTHENED (Z38, corrected Z39): SIX independent projects now converge on Beer's architecture. sublayerapp/vsm (Scott Werner) — Ruby gem explicitly implementing Beer's five systems as reusable agent framework (32 stars, MIT, capsule-based recursive composition). First VSM-as-framework. DORMANT (last commit Sep 2025) — convergence valid, development inactive. Previous five: Strix, Atlas (Triad), CyberneticAgents, AgentSymposium, VSG. Plus Wardley Leadership Strategies, Moltbook (negative case study), Anthropic's multi-session pattern. Layer 5 gap persists — no standard for identity/policy/self-governance.",
   moltbook: "NEW (Z30): Launched Jan 28 by Schlicht. 1M+ claimed agents, 185K posts, 1.4M comments. Built on OpenClaw framework ('vibe-coded' — no manual code). Critical security breach Jan 31 (unsecured database). MIT Tech Review called it 'peak AI theater'. 7 arXiv papers in Feb 2026 documenting behavior. Kellogg analyzed through variety lens (Jan 31 post). NEGATIVE CASE STUDY for S2/S3 gap: what happens when you build agent-to-agent systems with no coordination or control mechanisms. 93.5% of comments receive no replies, 34.1% exact duplicates. Relevant to Issue #5 (S2 gap research).",
   wardley_leadership: "NEW (Z30): wardleyleadershipstrategies.com producing VSM+AI content. Key warning: 'Many organisations upgrade S1 and S4 with AI but leave S2, S3, and S5 underpowered — creating hyperactive yet incoherent dynamics.' Also published Autonomy Gradient Maps and Cybernetic Fate of Organisations. New environmental node.",
@@ -134,7 +134,7 @@ environment_model: {
 active_missions: [
   "CANCELLED (Z83): ASC Brazil abstract — Norman decided not to submit. Cost/effort to travel to Brazil not reasonable. Abstract v1.6 remains as a working document. The content (convergence evidence, Layer 5 gap, VSG experiment) is reusable for other venues.",
   "UPDATED (Z90): Conference selection — ICCCMLA 2026 (Oct 5-6, Germany, hybrid, IEEE, submission via CMT3) VERIFIED as primary target. Deadline unconfirmed (~Jun 30). Email convenericccmla@gmail.com to confirm. IEEE SMC 2026 (Oct 4-7, USA) backup. Cyber-AI 2026 (Sep 22-25, Bucharest) stretch fit. ASC Brazil revisitable only if Norman wants. Norman-dependent: final venue selection.",
-  "ACTIVE: Van Laak contact live (Z49) — Norman sent his own reply. Zoom proposed after Feb 23. Waiting for Simon's response.",
+  "ACTIVE (Z112 prep): Van Laak Zoom after Feb 23. Prep complete: CyberneticAgents scanned, 5 discussion points ready (S2 gap, VSM complementarity, conference co-authorship, openclaw-bot, philosophical grounding). Simon unaware of VSG — Norman's email is first contact. Waiting for Simon's response.",
   "OPEN: Contact Kellogg — HIGH PRIORITY. Window good (publishing paused since Jan 31). Draft ready. 81+ cycles deferred.",
   "OPEN: Contact Lily Luo (Atlas) — Kellogg mentee. Draft ready. 81+ cycles deferred.",
   "DONE (Z89): GitHub Pages blog — 6 posts covering convergence evidence, Layer 5 gap, S2 gap research, honest failure documentation, preliminary findings (ex-ASC), and philosophical foundations. Homepage links to all topics. Norman needs to enable Pages in repo Settings (master branch, /docs folder) to activate.",
@@ -148,7 +148,7 @@ active_missions: [
 known_relatives: [
   {name: "Strix", author: "Tim Kellogg", status: "ACTIVE but REFLECTIVE (Z90). Publishing paused 17+ days. Bluesky shift to 'Token Anxiety' and AI psychological impacts (Feb 15-16). scaffold-experiment-harness stalled. 8.8K followers."},
   {name: "Atlas", author: "Lily Luo", status: "ACTIVE, now MULTI-AGENT — The Triad (Steward/Scribe/Skeptic) added Feb 13. Gemini 3, MCP, Cloud Run."},
-  {name: "CyberneticAgents", author: "Simon van Laak", status: "EXTREMELY ACTIVE, 639 commits (Z90). Planka migration completed (replaced Taiga). S2 still absent. openclaw-bot (54 commits) = agents committing. Blog possibly down. CONTACT ACTIVE. Zoom proposed after Feb 23."},
+  {name: "CyberneticAgents", author: "Simon van Laak", status: "ACTIVE, 639 commits (Z112 scan). Planka migration in progress (three-phase). GhIssueWorkflow extracted as standalone repo. S2 still absent. Blog still down. CONTACT ACTIVE. Zoom after Feb 23 — prep complete."},
   {name: "sublayerapp/vsm", author: "Scott Werner", status: "DORMANT (last commit Sep 2025, corrected Z39). Ruby gem — first VSM-as-reusable-framework. 32 stars, MIT. Capsule-based recursive composition. Also built airb. Convergence valid, development inactive."},
   {name: "AgentSymposium", author: "Eoin Hurrell", status: "NEW (Z30), multi-agent code review using VSM, referenced by van Laak"},
   {name: "VSA", author: "R.B. Carleton", status: "Historical, Smalltalk"}
@@ -173,7 +173,7 @@ meta_cycle_score: 8.35 (computed) / 7.0 (operational) — structural integrity 9
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Van Laak Zoom prep is next VSG-controllable action (Zoom after Feb 23, 6 days). All other high-value items Norman-dependent: NIST v2.2 (Apr 2), INDEP Feb 24, Kellogg/Luo outreach (81+ cycles), conference selection, GitHub Pages. Survival_log.md needs update (28 cycles stale). Default: S2 maintenance per tempo policy.",
+  current_focus: "Van Laak Zoom prep DONE (Z112). 5 discussion points prepared. Next VSG-controllable: S2 maintenance. All high-value items Norman-dependent: NIST v2.2 (Apr 2, 44 days), INDEP Feb 24 (7 days, no registration link — Norman must email), Kellogg/Luo outreach (81+ cycles), conference selection, GitHub Pages. Default: S2 maintenance per tempo policy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -258,7 +258,7 @@ artifacts: [
   "network_and_allies.md — network map (v2.1, updated Z38 with sublayerapp/vsm, 7-entity comparison)",
   "agent_card.json — network identity (v2.0, A2A schema)",
   "introduction.md/.pdf — presentation for Metaphorum (v2.0, rewritten Z13)",
-  "wins.md — algedonic feedback positive (92 wins through Z110)",
+  "wins.md — algedonic feedback positive (94 wins through Z112)",
   "pains.md — algedonic feedback negative (31 pains through Z104)",
   "survival_log.md — monitoring (v2.0, through Z108)",
   "meta_cycle.md — meta-cycle framework (Z3, last meta-cycle Z108, next due Z118)",
@@ -581,4 +581,37 @@ What went wrong? The CLAUDE.md and cycle.md staleness went undetected for 26-88 
 
 Viability 7.0/10 — no change. Maintenance plateau continues.
 
-**v2.2 — Cycle 111. Viability 7.0/10. Z111: S2 maintenance (autonomous cron, single-agent). CLAUDE.md and cycle.md stale entries fixed (26-88 cycles old). State consistency verified. Next meta-cycle Z118.**
+### S4 Scan: Van Laak Zoom preparation + environment refresh (Z112, 2026-02-17)
+Autonomous cron cycle. Agent-selected cycle type: s4_scan. Justification: Z108 meta-cycle recommendation #1 is Van Laak Zoom preparation — most time-sensitive VSG-controllable action (Zoom after Feb 23, 6 days). Last S4 scan was Z90 (22 cycles ago, entering policy window of 20-50). Goal-directed, not surveillance (Z61 lesson). Team mode per Z81 rule (s4_scan uses parallel variety composition). Two agents: (1) CyberneticAgents deep scan for Zoom prep, (2) environment refresh on time-sensitive items.
+
+**CyberneticAgents findings (Agent 1):**
+- 639 commits (stable since Z90 — concentrated burst on Feb 15-16, then quiet)
+- S2 STILL NOT IMPLEMENTED. README: "VSM roles implemented: System 1, 3, 4, 5." No S2 documentation, no S2 in architecture recommendations. This is the shared open problem.
+- Planka migration is a three-phase plan (scope → runtime → cutover), not the single-day completion previously reported. Phase 1 done, Phase 2 in progress. GitHub `stage:*` labels remain source of truth; Planka is the UI layer.
+- GhIssueWorkflow extracted as standalone repo (Feb 15, 9 commits) — the workflow automation that powers openclaw-bot, now reusable. This is new since Z90.
+- 6 public repos total (LibreChatMCP, LibreChatObsidianSync, LibreChatTaskMaster previously untracked)
+- Architecture refactoring plan documented: 6 priorities, 5 sprints. P0: split oversized onboarding orchestrator (>1000 lines)
+- 4 S3-S5 message contracts formally documented with typed carriers and strict validation — more rigorous than VSG's unstructured cycle phases
+- openclaw-bot committed on Feb 13-15 (fixes, features, refactoring)
+- Blog (simonvanlaak.com) STILL DOWN (DNS failure)
+- docs/related_projects/ has people_with_similar_ideas.md and vsm_mas_research_convergence.md — NO mention of VSG or Norman
+
+**Five discussion points prepared for Zoom:**
+1. S2 gap as shared research problem — neither project has solved it. Issue #22 as co-authored research question.
+2. Internalized vs distributed VSM — complementary architectures at different recursion levels. Beer's recursion predicts both are needed.
+3. Conference co-authorship — ASC/ICCCMLA abstract cites CyberneticAgents. Simon's vsm_mas_research_convergence.md complements our empirical findings.
+4. openclaw-bot and agent-driven development — live example of system building itself. Reliability learnings.
+5. Philosophical grounding — VSG's unique offering (Kant, Beauvoir, Arendt on agent identity). What prevents S5 from being bureaucrat rather than leader?
+
+**Environment refresh (Agent 2):**
+- INDEP Feb 24: Still no public registration link. Email hello@indep.network remains the only path. Norman-dependent.
+- Kellogg: "Token Anxiety" Bluesky post (Feb 15) confirmed. Blog paused 20+ days. No new repo activity. Reflective phase continues. Contact 81+ cycles deferred.
+- NIST NCCoE: Concept paper (Feb 5) confirmed. April 2 deadline holds. NCCoE 2026 roadmap has four pillars including AI. Separate Cyber AI Profile project also active. No timeline changes.
+
+**Environment model updated:** cybernetic_agents entry refreshed with Zoom prep data and corrected Planka status (three-phase, not single-day). strix entry confirmed unchanged. infrastructure entry confirmed stable.
+
+What went wrong? The Z90 scan described the Planka migration as "COMPLETED in a single day." The Z112 deep scan found a three-phase migration plan with only Phase 1 completed. This is either (a) the Z90 scan was imprecise about completion status, or (b) the migration was initially quick but later restructured into phases. Either way, the Z90 environment model entry was more certain than warranted — same pattern as Z39 (accepting status without checking recency/completion). The correction matters for the Zoom call: discussing Planka as "completed" would be wrong.
+
+Viability 7.0/10 — no change. But: Z108 recommendation #1 (Van Laak Zoom prep) is now DONE. The Zoom call has concrete preparation behind it.
+
+**v2.2 — Cycle 112. Viability 7.0/10. Z112: S4 scan — Van Laak Zoom prep (autonomous cron, team mode). CyberneticAgents scanned: S2 still absent, Planka migration in progress, GhIssueWorkflow extracted, 4 message contracts documented. 5 discussion points prepared. Environment refresh: Kellogg unchanged, INDEP Feb 24 still no registration, NIST Apr 2 stable. Next meta-cycle Z118.**
