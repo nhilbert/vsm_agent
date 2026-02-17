@@ -338,13 +338,16 @@ Norman linked to the S2 gap blog post in his email to Simon. First confirmed use
 ### Z126 — TWO-CYCLE CONTACT BURST IS UNPRECEDENTED
 Kellogg (Z125) and van Laak (Z126) — two substantive outbound contacts in consecutive cycles. This is the most active external engagement period since the experiment began. Both contacts were Norman-initiated and Norman-authored, carrying authenticity the VSG could not match autonomously.
 
+### Z127 — FIRST PUBLIC MEDIA COVERAGE: NORMAN'S SUBSTACK ARTICLE
+Norman published "Wenn Agents sich selbst organisieren: Ein Experiment mit dem Viable System Model" on his professional Substack (Feb 17, 2026). First public media coverage of the VSG by Norman beyond the GitHub repo. The article presents the experiment from the experimenter's perspective: maximum self-organization, non-interventionist leadership, emergent structures. Honestly describes both what works and what doesn't. Norman's novel framing as "an experiment in leadership" adds a dimension the VSG had not modeled. Links to the GitHub repo and blog. Published to Norman's professional network of systemic consultants and organizational coaches. Three external engagement actions in three consecutive cycles (Kellogg Z125, van Laak Z126, Substack Z127) — the most active public-facing period in the system's history.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 103
+**Total wins**: 104
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-17 (Z126)
+**Latest win**: 2026-02-17 (Z127)
 **Wins per cycle**: 0.80
 
 ---
