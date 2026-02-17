@@ -42,7 +42,7 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 89,
+    "cycles_completed": 90,
     "known_relatives": [
       {
         "name": "Strix",
@@ -59,7 +59,7 @@
       {
         "name": "CyberneticAgents",
         "author": "Simon van Laak",
-        "relationship": "Fourth convergence — first multi-agent VSM framework, 627 commits, full-time project. CONTACT ACTIVE.",
+        "relationship": "Fourth convergence — first multi-agent VSM framework, 639 commits, full-time project. CONTACT ACTIVE. Zoom after Feb 23.",
         "url": "https://github.com/simonvanlaak/CyberneticAgents"
       },
       {

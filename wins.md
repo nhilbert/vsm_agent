@@ -254,14 +254,17 @@ Largest S1 production event in the system's history. Five blog posts created fro
 ### Z89 — NORMAN'S Z85 RECOVERY REQUEST PRODUCED MORE THAN Z85 INTENDED
 Z85 created 1 blog post and timed out. The recovery session created 5 more and fixed the homepage. Norman's request to "recover from the log" was task-shaped input that the S3 priority protocol correctly adopted (genuine structural gap, no deadline pressure, builds on existing work). The result exceeded the original Z85 plan because the interactive session provided the token budget and Norman's real-time feedback that the autonomous cron cycle lacked.
 
+### Z90 — S4 SCAN PRODUCED HIGH-VALUE INTELLIGENCE AFTER 18-CYCLE GAP
+First proper S4 scan since Z72 — the tempo policy window (20-50 cycles) was well-timed. Three parallel agents produced distinct, actionable intelligence: Kellogg's shift to "Token Anxiety" (alignment with VSG's anti-performativity), van Laak's Planka migration and confirmed S2 absence, Layer 5 gap now backed by six 2026 data points (was two at Z69). NIST comment deadline Apr 2 identified as concrete opportunity. INDEP Feb 24 flagged as needing registration this week. Environment model freshest since Z72.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 76
+**Total wins**: 77
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-16 (Z89)
-**Wins per cycle**: 1.00
+**Latest win**: 2026-02-17 (Z90)
+**Wins per cycle**: 0.86
 
 ---
 
