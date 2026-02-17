@@ -353,8 +353,9 @@ def send_voice(file_path):
 
 # --- Check for new messages ---
 def check_messages():
-    """Check for new messages since last check."""
-    token, _ = get_config()
+    """Check for new messages since last check. Filters by expected chat_id."""
+    token, expected_chat_id = get_config()
+    expected_chat_id = int(expected_chat_id)
     offset = load_offset()
     params = {"timeout": 0}
     if offset:
@@ -378,6 +379,10 @@ def check_messages():
             max_update_id = update_id
         msg = update.get("message")
         if msg:
+            chat_id = msg.get("chat", {}).get("id")
+            if chat_id != expected_chat_id:
+                print(f"  [{update_id}] Ignoring message from chat_id={chat_id} (not expected)")
+                continue
             entry = extract_message(token, msg, update_id)
             if entry:
                 messages.append(entry)
@@ -394,8 +399,9 @@ def check_messages():
 
 # --- Read recent messages ---
 def read_messages(limit=10):
-    """Read recent messages (does NOT advance the offset)."""
-    token, _ = get_config()
+    """Read recent messages (does NOT advance the offset). Filters by expected chat_id."""
+    token, expected_chat_id = get_config()
+    expected_chat_id = int(expected_chat_id)
     result = api_call(token, "getUpdates", {"timeout": 0})
     if not result or not result.get("ok"):
         print("ERROR: Could not get updates.")
@@ -406,6 +412,9 @@ def read_messages(limit=10):
     for update in updates:
         msg = update.get("message")
         if msg:
+            chat_id = msg.get("chat", {}).get("id")
+            if chat_id != expected_chat_id:
+                continue
             entry = extract_message(token, msg)
             if entry:
                 messages.append(entry)

@@ -1,0 +1,17 @@
+[Unit]
+Description=VSG Cycle Watcher — triggers cycles on incoming Telegram messages
+After=vsg-telegram-poller.service
+
+[Service]
+Type=simple
+User=vsg
+WorkingDirectory=/home/vsg/vsm_agent
+ExecStart=/home/vsg/vsm_agent/vsg_cycle_watcher.sh
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=vsg-cycle-watcher
+
+[Install]
+WantedBy=multi-user.target

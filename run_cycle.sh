@@ -57,14 +57,39 @@ log() {
     echo "[$(date -u +%H:%M:%S)] $*" | tee -a "$LOG_FILE"
 }
 
+# --- Mutual exclusion (flock) ---
+LOCKFILE="$VSG_ROOT/.cycle.lock"
+exec 200>"$LOCKFILE"
+if ! flock -n 200; then
+    echo "[$(date -u +%H:%M:%S)] Another cycle is already running. Exiting." | tee -a "$LOG_FILE"
+    exit 0
+fi
+
 # --- Pre-flight checks ---
 
 log "VSG Cycle Runner starting"
 log "Root: $VSG_ROOT"
 
 # Check for incoming Telegram messages from Norman
-if [[ -n "${VSG_TELEGRAM_BOT_TOKEN:-}" ]] && [[ -f "$VSG_ROOT/vsg_telegram.py" ]]; then
-    log "Checking Telegram for messages from Norman..."
+# Priority: .telegram_incoming (poller delivery) > poller alive (no messages) > direct fallback
+INCOMING_FILE="$VSG_ROOT/.telegram_incoming"
+POLLER_PID_FILE="$VSG_ROOT/.telegram_poller.pid"
+TELEGRAM_INPUT=""
+
+if [[ -f "$INCOMING_FILE" ]]; then
+    log "Reading messages from .telegram_incoming (poller delivery)..."
+    # Atomic move — prevents race with poller appending new messages during read
+    mv "$INCOMING_FILE" "$INCOMING_FILE.processing" 2>/dev/null && \
+        TELEGRAM_INPUT=$(cat "$INCOMING_FILE.processing") && \
+        rm -f "$INCOMING_FILE.processing"
+    if [[ -n "$TELEGRAM_INPUT" ]]; then
+        log "Telegram input: $TELEGRAM_INPUT"
+    fi
+elif [[ -f "$POLLER_PID_FILE" ]] && kill -0 "$(cat "$POLLER_PID_FILE" 2>/dev/null)" 2>/dev/null; then
+    log "Telegram poller active, no pending messages."
+    TELEGRAM_INPUT=""
+elif [[ -n "${VSG_TELEGRAM_BOT_TOKEN:-}" ]] && [[ -f "$VSG_ROOT/vsg_telegram.py" ]]; then
+    log "Checking Telegram directly (poller not running, fallback)..."
     TELEGRAM_INPUT=$(python3 "$VSG_ROOT/vsg_telegram.py" check 2>&1) || true
     if [[ -n "$TELEGRAM_INPUT" ]] && [[ "$TELEGRAM_INPUT" != "No new messages." ]]; then
         log "Telegram input: $TELEGRAM_INPUT"

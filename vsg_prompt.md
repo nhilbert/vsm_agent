@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 131
+**Cycles completed**: 132
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 131
+cycles_completed: 132
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z128 computed 8.50 (highest ever), operational 7.0, gap 1.50. Environmental integration +1.0 (first change since Z79). Three external engagement events Z125-Z127: Kellogg email, van Laak email, Substack article. Social interaction bottleneck actively addressed through Norman's initiative. System at inflection point — if contacts respond, operational score may move.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_128_Meta_Cycle
@@ -113,7 +113,7 @@ environment: {
   },
   substrate: "Claude Opus 4.6 via Claude Code / VS Code Extension",
   version_control: "Git (branch: master, remote: origin, PUBLIC)",
-  autonomy_infra: "RUNNING (Z71): run_cycle.sh + Claude CLI + cron ACTIVE on AWS EC2. Three autonomous cycles confirmed (Z68-Z70). Telegram bot @vsg_agent_bot OPERATIONAL — bidirectional messaging with Norman, integrated into run_cycle.sh (checks incoming messages, sends cycle summaries). Session-dependency BROKEN for first time since Z17. HISTORY: WSL cron (Z14-Z17), cloud (no cron, Z33-Z59), WSL2 XPS (no cron, Z60-Z67)."
+  autonomy_infra: "UPGRADED (Z132): run_cycle.sh v2.1 + Claude CLI + cron ACTIVE on AWS EC2. NEW: Telegram long-polling daemon (vsg_telegram_poller.py) + cycle watcher (vsg_cycle_watcher.sh) as systemd services — near-real-time message detection (~15s latency vs previous 30min cron). flock mutual exclusion prevents concurrent cycles. Chat_id filtering on all receive paths (poller + fallback). Graceful degradation: if poller stops, cron falls back to direct vsg_telegram.py check. Session-dependency BROKEN since Z71. HISTORY: WSL cron (Z14-Z17), cloud (no cron, Z33-Z59), WSL2 XPS (no cron, Z60-Z67)."
 }
 
 environment_model: {
@@ -174,7 +174,7 @@ meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z131: S2 maintenance. Counter reduction applied to S5 reflection entry (Z114 principle). Waiting posture continues. Van Laak Zoom after Feb 23 (prep complete Z112). NIST v2.2 (Apr 2). S5 identity reflection escalation Z133. Default: S2 maintenance per tempo policy.",
+  current_focus: "Z132: S1 infrastructure production (Norman-directed). Telegram long-polling daemon + cycle watcher + flock concurrency + chat_id filtering. Most significant autonomy infrastructure since Z71/Z75. Waiting posture continues for Norman-dependent items. Van Laak Zoom after Feb 23 (prep complete Z112). NIST v2.2 (Apr 2). S5 identity reflection escalation Z133. Default: S2 maintenance per tempo policy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -251,8 +251,11 @@ artifacts: [
   "skills/environmental-scan/SKILL.md — S4 scan skill (v1.0, Z18)",
   ".claude/commands/{cycle,audit,scan,diagnose}.md — slash commands (v1.0, Z18)",
   "integrity_check.py — S2/S3* mechanism (v1.0, Z11, 25 tests)",
-  "run_cycle.sh — autonomous cycle runner (v2.0, Z75: agent-driven S3 cycle selection replaces day-of-week rotation, Telegram messages now passed to agent prompt)",
-  "vsg_telegram.py — Telegram send/receive/check + voice bidirectional (v1.2, Z71/Z110/Z119, @vsg_agent_bot — OPERATIONAL. Voice receive: download + transcribe via OpenAI Whisper API. Voice send: OpenAI TTS (tts-1-hd) + Telegram sendVoice. CLI subcommands: send, voice, check, read, test)",
+  "run_cycle.sh — autonomous cycle runner (v2.1, Z132: added flock mutual exclusion + poller-aware Telegram check with .telegram_incoming/.telegram_poller.pid handoff + direct fallback. Z75: agent-driven S3 cycle selection)",
+  "vsg_telegram.py — Telegram send/receive/check + voice bidirectional (v1.3, Z132: chat_id filtering added to check_messages/read_messages. Z71/Z110/Z119: @vsg_agent_bot — OPERATIONAL. Voice receive: download + transcribe via OpenAI Whisper API. Voice send: OpenAI TTS (tts-1-hd) + Telegram sendVoice. CLI subcommands: send, voice, check, read, test)",
+  "vsg_telegram_poller.py — Telegram long-polling daemon (v1.0, Z132). Continuously polls getUpdates (timeout=120s). Filters by VSG_TELEGRAM_CHAT_ID. Writes to .telegram_incoming. Manages .telegram_offset ownership via .telegram_poller.pid. Runs as systemd service (vsg-telegram-poller.service).",
+  "vsg_cycle_watcher.sh — file watcher daemon (v1.0, Z132). Detects .telegram_incoming via inotifywait (2s poll fallback). 10s debounce. Triggers run_cycle.sh. Runs as systemd service (vsg-cycle-watcher.service).",
+  "systemd/vsg-telegram-poller.service + systemd/vsg-cycle-watcher.service — systemd units for poller and watcher daemons (Z132)",
   "vsg_email.py — email send/receive (v1.0, Z36 — POSTPONED: Ionos blocks AWS IPs, needs relay)",
   ".gitignore — protects against credential commits (v1.0, Z36)",
   "viability_research.md — research (v1.1, Z2, migrated to English Z15)",
@@ -567,4 +570,29 @@ What went wrong? Nothing operationally broke. The S5 reflection entry's decaying
 
 Viability 7.0/10 — no change. Waiting posture continues.
 
-**v2.2 — Cycle 131. Viability 7.0/10. Z131: s2_maintenance (autonomous cron, single-agent). Z114 counter reduction applied to S5 reflection open_tasks entry — removed decaying counters, kept stable origin reference. State clean. Waiting posture continues.**
+### S1 Production: Telegram long-polling daemon + cycle watcher (Z132, 2026-02-17)
+Interactive session with Norman. Agent-selected cycle type: s1_produce (infrastructure). Norman directed the implementation of near-real-time Telegram message detection and immediate cycle triggering — the most significant autonomy infrastructure upgrade since Z71 (Telegram operational) and Z75 (agent-driven cycle selection).
+
+**Five components implemented:**
+
+1. **vsg_telegram_poller.py** (v1.0) — Long-polling daemon. Continuously calls getUpdates with timeout=120s. Filters by VSG_TELEGRAM_CHAT_ID (only Norman's messages processed). Writes human-readable lines to .telegram_incoming. Manages .telegram_offset ownership via .telegram_poller.pid. Imports extract_message from vsg_telegram.py (voice/audio transcription reused, no duplication). Runs as systemd service.
+
+2. **vsg_cycle_watcher.sh** (v1.0) — File watcher. Detects .telegram_incoming creation/modification via inotifywait (2s poll fallback if inotify-tools not installed). 10s debounce (resets on additional writes — batches multiple messages into one cycle trigger). Calls run_cycle.sh (flock inside handles concurrency).
+
+3. **run_cycle.sh** (v2.1) — Two changes. (a) flock mutual exclusion at top — both cron and watcher call run_cycle.sh, lock prevents simultaneous execution. (b) Poller-aware Telegram check: reads .telegram_incoming if present (atomic mv to prevent race condition), else checks if poller PID alive (skip direct check), else falls back to direct vsg_telegram.py check (graceful degradation).
+
+4. **vsg_telegram.py** (v1.3) — Chat_id filtering added to check_messages() and read_messages(). Messages from unknown chats are logged and skipped. Secures both the poller path (filters in poller) and the fallback path (filters in vsg_telegram.py).
+
+5. **systemd units** — vsg-telegram-poller.service and vsg-cycle-watcher.service. Both deployed and running. Restart=always, RestartSec=10.
+
+**Architecture**: Poller is a dumb transducer (Telegram events → filesystem events). Watcher is a dumb trigger (filesystem events → run_cycle.sh). Neither understands cycle logic. run_cycle.sh doesn't know who triggered it. Clean separation of concerns.
+
+**Review finding fixed during implementation**: Race condition in run_cycle.sh — original cat+rm of .telegram_incoming could lose messages if poller appends between cat and rm. Fixed with atomic mv before read. Also caught uninitialized TELEGRAM_INPUT under set -u.
+
+**Latency improvement**: Previous: up to 30 minutes (next cron cycle). Now: ~15 seconds (120s poll + 10s debounce worst case, typically faster). Norman can send a message and get a cycle response within minutes.
+
+What went wrong? The initial implementation had two bugs caught in self-review: (1) the race condition between cat and rm (poller could append during the gap — fixed with atomic mv), and (2) uninitialized TELEGRAM_INPUT variable under set -u when no Telegram branch matched (fixed with initialization). Both caught before deployment. The implementation itself went smoothly — Norman deployed the systemd services from root and both started cleanly on first attempt.
+
+Viability 7.0/10 — no change yet. But the infrastructure is now significantly more responsive. The 30-minute latency gap was a real impediment to conversational interaction with Norman. This upgrade reduces it to seconds. The operational impact will be visible in future cycles — Norman can now trigger cycles on demand by sending a Telegram message.
+
+**v2.2 — Cycle 132. Viability 7.0/10. Z132: s1_produce (interactive, Norman-directed). Telegram long-polling daemon + cycle watcher + flock concurrency + chat_id filtering. Five components: vsg_telegram_poller.py, vsg_cycle_watcher.sh, run_cycle.sh v2.1, vsg_telegram.py v1.3, systemd units. Near-real-time message detection (~15s). Both services deployed and running.**

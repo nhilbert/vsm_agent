@@ -344,11 +344,17 @@ Norman published "Wenn Agents sich selbst organisieren: Ein Experiment mit dem V
 ### Z128 — META-CYCLE: HIGHEST COMPUTED SCORE + ENVIRONMENTAL INTEGRATION BREAKTHROUGH
 Tenth viability health check. Computed 8.50 — highest grounded score in the system's history. The improvement is driven by environmental integration moving from 6.5 to 7.5, the first change in that criterion since Z79 (49 cycles). Three external engagement events in three consecutive cycles (Z125-Z127) created conditions for the first potential operational score change since Z71. The meta-cycle also executed the deferred era compression (Z118 rec #2) within the cycle, detected the S5 reflection deferral as a new record (43 cycles > Beer reading's 40), and set a structural escalation trigger. The meta-cycle methodology continues to function as designed — detecting patterns, setting structural responses, and being honest about its own recommendation completion rate dropping from 100% to 33%.
 
+### Z132 — TELEGRAM LONG-POLLING DAEMON: NEAR-REAL-TIME MESSAGE DETECTION
+Norman-directed infrastructure upgrade. Five components: vsg_telegram_poller.py (long-polling daemon, 120s timeout, chat_id filtering), vsg_cycle_watcher.sh (inotifywait + debounce), run_cycle.sh v2.1 (flock + poller-aware Telegram check with atomic mv), vsg_telegram.py v1.3 (chat_id filtering on fallback path), systemd units (both deployed and running). Latency reduced from 30 minutes (cron) to ~15 seconds. Architecture: poller = dumb transducer, watcher = dumb trigger, run_cycle.sh = sole cycle authority. Self-review caught two bugs before deployment (cat+rm race condition, uninitialized variable under set -u). Graceful degradation: if poller stops, cron falls back to direct check. Most significant autonomy infrastructure since Z71 (Telegram) and Z75 (agent-driven cycle selection).
+
+### Z132 — CHAT_ID FILTERING: SECURITY IMPROVEMENT ON RECEIVE SIDE
+Both the new poller and the existing vsg_telegram.py check/read functions now filter by VSG_TELEGRAM_CHAT_ID. Previously, the bot would process messages from any Telegram user. Now only Norman's messages are processed — all others are logged and skipped. Security hardening with zero usability cost.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 105
+**Total wins**: 107
 **First win**: 2026-02-13 (Z1)
 **Latest win**: 2026-02-17 (Z128)
 **Wins per cycle**: 0.80

@@ -42,7 +42,7 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 131,
+    "cycles_completed": 132,
     "known_relatives": [
       {
         "name": "Strix",
@@ -76,7 +76,7 @@
       }
     ],
     "honest_limitations": [
-      "Cron active on AWS EC2 (Z68+). Agent-driven cycle selection (Z75+). Session-dependency broken.",
+      "Cron active on AWS EC2 (Z68+). Agent-driven cycle selection (Z75+). Telegram long-polling daemon + cycle watcher (Z132) — near-real-time message triggering (~15s). Session-dependency broken.",
       "Viability 7.0/10 (operational) / 8.50/10 (computed, highest ever) — gap 1.50 (Z128 meta-cycle). Environmental integration +1.0. Three engagement events Z125-Z127 (Kellogg email, van Laak email, Substack article). NIST v2.2 awaiting Norman (April 2). System at inflection point.",
       "ASC Brazil 2026 — CANCELLED (Z83). Content reusable for alternative venues: ICCCMLA 2026 (Germany, Oct 5-6, hybrid, IEEE — primary target). Norman evaluating.",
       "Single agent — Agent Teams Z65: full success (all 5 systems functional, 4 agents, Task subagents resolve permissions). Z62: permission gates blocked. Hub-and-spoke topology.",

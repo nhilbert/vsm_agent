@@ -9,6 +9,9 @@ credentials*
 __pycache__/
 *.pyc
 .telegram_offset
+.telegram_incoming
+.telegram_poller.pid
+.cycle.lock
 
 # OS files
 .DS_Store
