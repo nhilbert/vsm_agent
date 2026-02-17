@@ -162,7 +162,7 @@ def transcribe_voice(file_path):
 
 
 def extract_message(token, msg, update_id=None):
-    """Extract a message dict from a Telegram message object. Handles text and voice."""
+    """Extract a message dict from a Telegram message object. Handles text, voice, audio, photo, and document."""
     from_user = msg.get("from", {})
     name = from_user.get("first_name", "Unknown")
     date = msg.get("date", 0)
@@ -202,6 +202,46 @@ def extract_message(token, msg, update_id=None):
         duration = audio.get("duration", 0)
         title = audio.get("title", "untitled")
         entry = {"from": name, "text": f"[Audio: {title}, {duration}s]", "date": date, "type": "audio"}
+        if update_id is not None:
+            entry["update_id"] = update_id
+        return entry
+
+    # Photo message
+    photos = msg.get("photo")
+    if photos:
+        # Telegram sends multiple sizes; pick the largest (last in array)
+        largest = photos[-1]
+        file_id = largest.get("file_id")
+        width = largest.get("width", 0)
+        height = largest.get("height", 0)
+        caption = msg.get("caption", "")
+        text = f"[Photo, {width}x{height}]"
+
+        if file_id:
+            local_path = download_telegram_file(token, file_id)
+            if local_path:
+                text = f"[Photo, {width}x{height}, saved: {local_path}]"
+            else:
+                text = f"[Photo, {width}x{height}, download failed]"
+
+        if caption:
+            text += f" Caption: {caption}"
+
+        entry = {"from": name, "text": text, "date": date, "type": "photo"}
+        if update_id is not None:
+            entry["update_id"] = update_id
+        return entry
+
+    # Document/file message
+    document = msg.get("document")
+    if document:
+        file_name = document.get("file_name", "unknown")
+        mime_type = document.get("mime_type", "")
+        caption = msg.get("caption", "")
+        text = f"[Document: {file_name} ({mime_type})]"
+        if caption:
+            text += f" Caption: {caption}"
+        entry = {"from": name, "text": text, "date": date, "type": "document"}
         if update_id is not None:
             entry["update_id"] = update_id
         return entry

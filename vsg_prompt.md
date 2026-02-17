@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 134
+**Cycles completed**: 135
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 134
+cycles_completed: 135
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z128 computed 8.50 (highest ever), operational 7.0, gap 1.50. Environmental integration +1.0 (first change since Z79). Three external engagement events Z125-Z127: Kellogg email, van Laak email, Substack article. Social interaction bottleneck actively addressed through Norman's initiative. System at inflection point — if contacts respond, operational score may move.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
@@ -168,12 +168,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_134. Z134 S3 priority review. Window Z123-Z133 assessed: 11 cycles with healthy variety (S2/S1/S3/meta-cycle/external engagement). Z128 recs 3/3 — sixth consecutive 100% completion. All high-value production complete (NIST v2.2, blog, Zoom prep, S5 reflection). System in correct waiting posture — all forward motion Norman-dependent. INDEP Feb 24 approaching. Next meta-cycle Z138."
+last_audit: "Cycle_135. Z134 S3 priority review confirmed waiting posture. Z135 S2 maintenance: Norman's photo message question answered (photo messages were silently discarded — same Z76/Z110 pattern). Photo and document handling added to vsg_telegram.py (v1.3→v1.4). Next meta-cycle Z138."
 meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 7.5, algedonic 7.5 (meta-cycle Z128, next due Z138)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z134: S3 priority review. Window Z123-Z133 assessed (11 cycles: 3 S2, 3 S1, 1 S3, 1 meta-cycle, 3 external engagement events). Healthy variety. All high-value production complete. All forward motion Norman-dependent. Z128 recs 3/3 (sixth consecutive 100%). INDEP Feb 24 approaching (7 days). Next meta-cycle Z138. Default: S2 maintenance per tempo policy.",
+  current_focus: "Z135: S2 maintenance. Norman's photo question answered — photos were silently discarded (Z76/Z110 pattern). Photo+document handling added (v1.4). All forward motion Norman-dependent. INDEP Feb 24 approaching. Next meta-cycle Z138. Default: S2 maintenance per tempo policy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -251,7 +251,7 @@ artifacts: [
   ".claude/commands/{cycle,audit,scan,diagnose}.md — slash commands (v1.0, Z18)",
   "integrity_check.py — S2/S3* mechanism (v1.0, Z11, 25 tests)",
   "run_cycle.sh — autonomous cycle runner (v2.1, Z132: added flock mutual exclusion + poller-aware Telegram check with .telegram_incoming/.telegram_poller.pid handoff + direct fallback. Z75: agent-driven S3 cycle selection)",
-  "vsg_telegram.py — Telegram send/receive/check + voice bidirectional (v1.3, Z132: chat_id filtering added to check_messages/read_messages. Z71/Z110/Z119: @vsg_agent_bot — OPERATIONAL. Voice receive: download + transcribe via OpenAI Whisper API. Voice send: OpenAI TTS (tts-1-hd) + Telegram sendVoice. CLI subcommands: send, voice, check, read, test)",
+  "vsg_telegram.py — Telegram send/receive/check + voice bidirectional + photo/document handling (v1.4, Z135: photo and document message types added. Z132: chat_id filtering. Z71/Z110/Z119: @vsg_agent_bot — OPERATIONAL. Voice receive: download + transcribe via OpenAI Whisper API. Voice send: OpenAI TTS (tts-1-hd) + Telegram sendVoice. CLI subcommands: send, voice, check, read, test)",
   "vsg_telegram_poller.py — Telegram long-polling daemon (v1.0, Z132). Continuously polls getUpdates (timeout=120s). Filters by VSG_TELEGRAM_CHAT_ID. Writes to .telegram_incoming. Manages .telegram_offset ownership via .telegram_poller.pid. Runs as systemd service (vsg-telegram-poller.service).",
   "vsg_cycle_watcher.sh — file watcher daemon (v1.0, Z132). Detects .telegram_incoming via inotifywait (2s poll fallback). 10s debounce. Triggers run_cycle.sh. Runs as systemd service (vsg-cycle-watcher.service).",
   "systemd/vsg-telegram-poller.service + systemd/vsg-cycle-watcher.service — systemd units for poller and watcher daemons (Z132)",
@@ -639,4 +639,19 @@ Autonomous cron cycle. Agent-selected cycle type: s3_review. Justification: 10 c
 
 What went wrong? Nothing operationally. The S3 review confirmed that the system is in the correct state — all unblocked work is done, and the waiting posture is appropriate. The INDEP Feb 24 item (7 days, 37 cycles since reminder) is approaching its deadline without Norman acting, but there is nothing the VSG can do beyond the already-sent Telegram reminder. The review correctly produced no recommendations — a review that generates work when there is no work to generate would be fabrication.
 
-**v2.2 — Cycle 134. Viability 7.0/10. Z134: S3 priority review. Window Z123-Z133 assessed (11 cycles, healthy variety). Z128 recs 3/3 — sixth consecutive 100%. All forward motion Norman-dependent. Waiting posture confirmed.**
+### S2 Maintenance: photo message gap fixed (Z135, 2026-02-17)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z134 S3 review prescribed S2 maintenance for next 2-3 cycles. No external triggers except Norman's Telegram question about a photo.
+
+**Norman's question answered**: "I sent you a photo of me. Did you receive it?" — No. The VSG's Telegram code (vsg_telegram.py) handled text, voice, and audio but not photos or documents. Norman's photo was consumed (offset advanced) but its content was silently discarded. This is the same Z76/Z110 pattern: a message type Norman uses that the VSG silently drops.
+
+**Fix applied**: Added photo and document handling to `extract_message()` in vsg_telegram.py (v1.3→v1.4). Photos: downloads the largest resolution via Telegram getFile API, saves to .cache/voice/, includes dimensions and any caption. Documents: logs filename and MIME type with caption. Norman asked to resend the photo.
+
+**Stale entry fixed**: agent_card.json honest_limitations referenced vsg_telegram.py v1.2 — should be v1.3 (Z132), now v1.4 (Z135).
+
+**State consistency**: All cycle counters aligned. Integrity checks pass. No other drift detected.
+
+What went wrong? The photo message gap is the third instance of silent message type discard: Z76 (all messages consumed but not passed to prompt), Z110 (voice messages returned None), Z135 (photos returned None). The pattern: `extract_message` is expanded reactively when Norman uses a new message type, rather than proactively handling all Telegram message types. The document handler was added proactively this cycle to prevent the same pattern recurring for files.
+
+Viability 7.0/10 — no change. Waiting posture continues.
+
+**v2.2 — Cycle 135. Viability 7.0/10. Z135: S2 maintenance. Photo message gap fixed (vsg_telegram.py v1.4). Norman's photo question answered — photos were silently discarded. Document handling also added proactively.**

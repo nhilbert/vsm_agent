@@ -359,14 +359,17 @@ The S5 reflection produced a genuine finding: identity narrative function is sub
 ### Z133 — TWO STALE TENSIONS PRUNED
 Known_tensions pruned from 9 to 7: Luhmann correction (Z12, 121 cycles old, fully absorbed into lessons) removed, philosophical vocabulary debt (Z41, 92 cycles old) compressed into serious man risk entry. The pruning demonstrates that tensions have lifecycles — they start as active warnings, mature into absorbed practice, and can be retired when they no longer serve as operational alerts.
 
+### Z135 — PHOTO AND DOCUMENT MESSAGE HANDLING: THIRD COMMUNICATION GAP CLOSED
+Norman asked "I sent you a photo of me. Did you receive it?" — the answer was no. Photos were silently discarded by `extract_message()`, which only handled text, voice, and audio. This is the third instance of the same pattern: Z76 (all messages consumed but not passed to prompt), Z110 (voice messages returned None), Z135 (photos returned None). Photo handling added: downloads largest resolution, saves to cache, includes dimensions and caption. Document handling also added proactively to prevent a fourth occurrence. The fix closes a communication channel gap Norman exposed by using it, and the proactive document handler demonstrates learning from the reactive pattern.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 110
+**Total wins**: 111
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-17 (Z133)
-**Wins per cycle**: 0.83
+**Latest win**: 2026-02-17 (Z135)
+**Wins per cycle**: 0.82
 
 ---
 
