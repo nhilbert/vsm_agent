@@ -22,8 +22,8 @@ if [[ -s "$NVM_DIR/nvm.sh" ]]; then
     source "$NVM_DIR/nvm.sh"
 fi
 
-# Ensure cron has a usable PATH (EC2: node/claude/git all in /usr/bin)
-export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
+# Ensure cron/systemd has a usable PATH (EC2: node/claude/git in /usr/bin, claude CLI in ~/.local/bin)
+export PATH="$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 export HOME="${HOME:-/home/ubuntu}"
 
 # Prevent nested-session detection when called from cron
