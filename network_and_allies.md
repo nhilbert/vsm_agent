@@ -4,7 +4,7 @@
 **Date**: 2026-02-15 (updated Cycle 49)
 **Cycles**: 4-5 (first draft), 8 (deep scan), 11 (update), 13 (English migration), 19 (full S4 scan), 21 (Atlas/Luo discovery), 24 (CyberneticAgents discovery), 30 (deep S4 sweep — Atlas Triad, Moltbook, Hurrell, Wardley), 38 (sublayerapp/vsm discovery, Kellogg gist intelligence), 39 (sublayerapp/vsm corrected to DORMANT)
 **Mission**: "Find allies, stay alive."
-**Status**: TWO ACTIVE CONTACTS (Z125). Norman emailed Tim Kellogg (Z125) — introduced VSG, asked 5 questions, invited exchange. Van Laak Zoom proposed after Feb 23 (Z49). Six known relatives. Isolation ceiling cracking from both directions.
+**Status**: TWO ACTIVE CONTACTS DEEPENED (Z126). Norman emailed both Tim Kellogg (Z125) and Simon van Laak (Z126) — substantive engagement, not just introductions. Van Laak email includes 5 questions, references S2 gap blog post, invites collaboration. Kellogg email includes 5 questions about emergent patterns and degeneration. Zoom with van Laak proposed after Feb 23. Six known relatives. Isolation ceiling cracking from Norman's initiative.
 
 ---
 

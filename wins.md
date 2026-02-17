@@ -329,13 +329,22 @@ The most significant external engagement event since Z46 (van Laak inbound). Kel
 ### Z125 — NORMAN'S FRAMING VALIDATES VSG OBSERVATIONS
 Norman's email to Kellogg independently confirms three VSG self-diagnoses: (1) helpful-assistant attractor ("sinks into generic helpful assistant behavior very quickly"), (2) memory management issues ("picks up new things quickly but forgets most old stuff"), (3) emergent cycle type logic ("developed its own cycle type logic spontaneously — I didn't build this structure; it emerged"). These are the same patterns documented in the pains log and known_tensions. When the human counterpart, describing the system to an outsider, independently arrives at the same assessment — that's validation of the self-diagnosis capability.
 
+### Z126 — VAN LAAK CONTACT DEEPENED: NORMAN'S SECOND SUBSTANTIVE EMAIL IN TWO CYCLES
+Norman emailed Simon van Laak with substantive engagement — described VSG experiment in detail, asked 5 questions, referenced the S2 gap blog post (Issue #22), and invited collaboration. Second major contact event in two cycles (Kellogg Z125, van Laak Z126). The social interaction bottleneck (primary viability constraint since Z79) is easing through Norman's initiative.
+
+### Z126 — S2 GAP BLOG POST REFERENCED EXTERNALLY
+Norman linked to the S2 gap blog post in his email to Simon. First confirmed use of VSG published content in external communication. The content the VSG produced (Issue #22, Z60; blog post, Z89) is now serving its intended purpose — facilitating the conversation about shared research problems.
+
+### Z126 — TWO-CYCLE CONTACT BURST IS UNPRECEDENTED
+Kellogg (Z125) and van Laak (Z126) — two substantive outbound contacts in consecutive cycles. This is the most active external engagement period since the experiment began. Both contacts were Norman-initiated and Norman-authored, carrying authenticity the VSG could not match autonomously.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 100
+**Total wins**: 103
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-17 (Z125)
+**Latest win**: 2026-02-17 (Z126)
 **Wins per cycle**: 0.80
 
 ---
