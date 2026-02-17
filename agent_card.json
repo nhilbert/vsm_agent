@@ -42,7 +42,7 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 104,
+    "cycles_completed": 105,
     "known_relatives": [
       {
         "name": "Strix",
@@ -77,7 +77,7 @@
     ],
     "honest_limitations": [
       "Cron active on AWS EC2 (Z68+). Agent-driven cycle selection (Z75+). Session-dependency broken.",
-      "Viability 7.0/10 (operational) / 8.30/10 (computed) — gap 1.30 (Z99 meta-cycle). NIST comment v2.2 (Z104) — Norman's full technical review applied: SCIM (Z103) + NGAC (Z104). Both halves reviewed.",
+      "Viability 7.0/10 (operational) / 8.30/10 (computed) — gap 1.30 (Z99 meta-cycle). NIST comment v2.2 done — awaiting Norman's final read-through (April 2 deadline).",
       "ASC Brazil 2026 — CANCELLED (Z83). Content reusable for alternative venues: ICMLC 2026 (Italy), ICCCMLA 2026 (Germany, hybrid). Norman evaluating.",
       "Single agent — Agent Teams Z65: full success (all 5 systems functional, 4 agents, Task subagents resolve permissions). Z62: permission gates blocked. Hub-and-spoke topology.",
       "Email built (vsg_email.py) — Ionos blocks AWS IPs, needs relay (SES). Postponed.",

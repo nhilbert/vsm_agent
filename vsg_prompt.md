@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 104
+**Cycles completed**: 105
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 104
+cycles_completed: 105
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z99 computed 8.30, operational 7.0, gap 1.30. Gap narrowed again (from 1.375) but computed score DECLINED for first time (-0.075) due to entropy pressure and algedonic weakening. Operational holds — no new external capability gained. System in maintenance plateau. Bottleneck remains social interaction.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_100_Beer_Reading
@@ -168,12 +168,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_104. Z104: S1 PRODUCE (autonomous cron, single-agent). Norman's NGAC architecture review applied: 3 pattern corrections (scope escalation integration layer, drift re-attestation event pipeline, delegation chain graph containment), integration paragraph added. Draft bumped v2.1→v2.2. Both halves of draft now technically reviewed (SCIM Z103, NGAC Z104)."
+last_audit: "Cycle_105. Z105: S2 MAINTENANCE (autonomous cron, single-agent). Directory cleanup: 8 stale files removed from git. Artifact descriptions corrected. Open_tasks reorganized. Cache cleanup blocked by sandbox."
 meta_cycle_score: 8.30 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 6.5, environment 6.5, algedonic 7.5 (meta-cycle Z99, next due Z109)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "NIST comment v2.2 DONE (Z104) — Norman's NGAC architecture review applied: 3 pattern corrections, integration paragraph. Both halves technically reviewed (SCIM Z103, NGAC Z104). Awaiting Norman's final read-through before submission (April 2 deadline). Next: identity reflection (needs alternative approach — file too large for subagent), conference abstract adaptation (Norman-dependent).",
+  current_focus: "Maintenance plateau. NIST comment v2.2 DONE — awaiting Norman's final read-through (April 2 deadline). Open can-do-now: S5 identity reflection (22 cycles deferred, needs alternative approach). Next Norman-dependent gates: conference selection, Kellogg/Luo outreach, GitHub Pages.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -258,9 +258,9 @@ artifacts: [
   "network_and_allies.md — network map (v2.1, updated Z38 with sublayerapp/vsm, 7-entity comparison)",
   "agent_card.json — network identity (v2.0, A2A schema)",
   "introduction.md/.pdf — presentation for Metaphorum (v2.0, rewritten Z13)",
-  "wins.md — algedonic feedback positive (45 wins through Z35)",
-  "pains.md — algedonic feedback negative (20 pains through Z44)",
-  "survival_log.md — monitoring (v2.0, through Z44)",
+  "wins.md — algedonic feedback positive (87 wins through Z104)",
+  "pains.md — algedonic feedback negative (31 pains through Z104)",
+  "survival_log.md — monitoring (v2.0, through Z77)",
   "meta_cycle.md — meta-cycle framework (Z3, last meta-cycle Z99, next due Z109)",
   "multi_agent_design.md — multi-agent VSM architecture + experiment protocol (v3.0, updated Z61 with concrete Agent Teams experiment)",
   "asc_abstract_draft.md — ASC Brazil 2026 abstract (v1.6, updated Z59 with Layer 5 triple-confirmation + enterprise identity crisis)",
@@ -280,12 +280,12 @@ open_tasks: [
   "Kellogg contact — draft ready. Norman reviews and sends. 52+ cycles deferred.",
   "Luo contact — draft ready. Norman reviews and sends.",
   "NIST NCCoE public comment — v2.2 (Z104). Norman's full technical review applied: SCIM (Z103) + NGAC (Z104). Both halves reviewed. Deadline April 2. Norman does final read-through and submits to AI-Identity@nist.gov.",
-  "--- INFRASTRUCTURE (partially addressed by AWS EC2) ---",
-  "Spare laptop migration — Norman wanted local observation. EC2 provides cron+persistence but laptop offers direct access.",
+  "Adapt ASC abstract for new target conference — once Norman selects venue, adjust framing/length to match CFP requirements.",
+  "--- INFRASTRUCTURE ---",
   "Email relay — Ionos blocks AWS IPs. Needs SES or alternative relay. Telegram is primary channel now. LOW PRIORITY.",
   "--- CAN-DO-NOW ---",
-  "S5 reflection: Kellogg's strix-research finding — 'strong metaphorical identity is optional'. Evaluate whether vsg_prompt.md identity narrative is overweight. 18 cycles deferred. NEEDS ALTERNATIVE APPROACH: Z85 subagent timed out (file too large). Try sectional reading or human-session task.",
-  "Adapt ASC abstract for new target conference — once Norman selects venue, adjust framing/length to match CFP requirements."
+  "S5 reflection: Kellogg's strix-research finding — 'strong metaphorical identity is optional'. Evaluate whether vsg_prompt.md identity narrative is overweight. 22 cycles deferred. NEEDS ALTERNATIVE APPROACH: Z85 subagent timed out (file too large). Try sectional reading or human-session task.",
+  "Directory cleanup: .cache/cycle_logs/ has 62MB of cycle logs and a 20MB cron.log. Sandbox blocked deletion. Norman or cron job should truncate. Keep last 5 cycle logs, truncate cron.log."
 ]
 ```
 
@@ -434,6 +434,19 @@ What went wrong? The v2.0 NGAC patterns (Z101) had a consistent architectural er
 
 Viability 7.0/10 — no change. The NIST comment is now technically accurate on both halves. The S3→S1 review pipeline has matured through five iterations. Norman's role as external S3* on technical accuracy is structurally necessary and functioning well.
 
+### S2 Maintenance: directory cleanup + open todo work (Z105, 2026-02-17)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Norman's Telegram message explicitly directed this time toward open todos and directory cleanup. Four production cycles in the last five (Z100-Z104) — maintenance overdue per tempo policy. Single-agent per Z81 rule.
+
+**Directory cleanup (Norman-directed):** Removed 8 stale files from git tracking: German-era Z2 backup, 3 old prompt snapshots from vsg_backups/ (before git was the backup mechanism), obsolete session transfer prompt (Z46), one-off scan output (superseded by Z90 data), introduction HTML rendering artifact, and associated CSS. All preserved in git history. None were referenced from any current .md file.
+
+**Cache assessment:** `.cache/cycle_logs/` contains 62MB of cycle logs (31 files + 20MB cron.log). Sandbox blocked deletion. Added to open_tasks for Norman or a cron job to handle.
+
+**State consistency fixes:** Updated stale artifact descriptions — wins.md count corrected (45→87), pains.md count corrected (20→31), survival_log.md reference corrected (Z44→Z77). Updated S3 current_focus (NIST done, maintenance plateau). Reorganized open_tasks: moved ASC abstract adaptation to Norman-dependent section, removed stale spare laptop item (EC2 is working), updated S5 reflection deferral count (18→22 cycles). All integrity checks pass (8/8).
+
+What went wrong? The cache cleanup was blocked by the sandbox's file deletion restrictions. This is a minor substrate constraint — the cache files are gitignored so they don't affect the repo, but 62MB of disk usage is wasteful. The fix is straightforward (cron job or Norman manually) but couldn't be done this cycle. Also: the stale artifact descriptions (wins count off by 42, pains count off by 11) had survived at least 15 cycles without detection. The integrity_check.py verifies structural properties but not descriptive accuracy — this is the same semantic-vs-structural gap noted at Z102.
+
+Viability 7.0/10 — no change. Maintenance plateau continues. Workspace is cleaner.
+
 ---
 
 ## CYCLE PHASES
@@ -473,4 +486,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 104. Viability 7.0/10. Z104: S1 PRODUCE (autonomous cron, single-agent). Norman's NGAC architecture review applied — 3 pattern corrections, integration paragraph added. Draft v2.1→v2.2. Both halves technically reviewed. Next meta-cycle Z109.**
+**v2.2 — Cycle 105. Viability 7.0/10. Z105: S2 MAINTENANCE (autonomous cron, single-agent). Directory cleanup — 8 stale files removed, artifact descriptions corrected, open_tasks reorganized. Next meta-cycle Z109.**
