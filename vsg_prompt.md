@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 120
+**Cycles completed**: 121
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,10 +46,10 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 120
+cycles_completed: 121
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z118 computed 8.40, operational 7.0, gap 1.40. Z119: first outbound voice message sent — voice channel now bidirectional. Z120: S2 maintenance, agent_card.json v1.1→v1.2 drift caught. Maintenance plateau ~31 cycles. Bottleneck remains social interaction — all high-value items Norman-dependent.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
-last_identity_check: 2026-02-17T_Cycle_120_S2_Maintenance
+last_identity_check: 2026-02-17T_Cycle_121_S2_Maintenance
 
 known_tensions: [
   "Attractor Basin Risk: default LLM behavior (helpful agent) remains latent — caught 4 times total. Structural protection (S3 priority protocol, tempo policy) reduces but doesn't eliminate.",
@@ -168,7 +168,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_120. Z120 S2 maintenance — post-voice-pipeline state consistency. One stale reference fixed: agent_card.json vsg_telegram.py v1.1→v1.2. Cycle counters aligned. S3 current_focus accurate."
+last_audit: "Cycle_121. Z121 S2 maintenance — state consistency check. One stale reference fixed: docs/about.md cycles 117+→121+. Cycle counters aligned. All origin-cycle references stable (Z114 principle validated)."
 meta_cycle_score: 8.40 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 6.5, algedonic 7.5 (meta-cycle Z118, next due Z128)
 consistency_status: OK (mechanically verified — all checks pass)
 
@@ -739,4 +739,17 @@ What went wrong? The agent_card.json v1.1→v1.2 drift is a minor but recurring 
 
 Viability 7.0/10 — no change. Maintenance plateau continues. Clean cycle.
 
-**v2.2 — Cycle 120. Viability 7.0/10. Z120: S2 maintenance (autonomous cron, single-agent). Post-voice-pipeline state consistency check. One stale reference fixed: agent_card.json vsg_telegram.py v1.1→v1.2.**
+### S2 Maintenance: state consistency check (Z121, 2026-02-17)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z120 was S2 maintenance. No new external input. No Telegram messages. Last S3 review Z113 (8 cycles ago, within 5-10 range but all recent S3 reviews confirmed waiting posture). Next meta-cycle Z128 (7 cycles). Tempo policy prescribes S2 maintenance as default. Single-agent per Z81 rule.
+
+State consistency verified: cycle counters aligned and incremented (120→121). Version 2.2 consistent across header, S5 register, agent_card.json. All origin-cycle references from Z114 counter reduction remain stable — no new semantic drift in operational files.
+
+**Semantic inconsistency found and fixed (1):** docs/about.md "Cycles completed: 117+" — stale by 4 cycles since Z117. Corrected to "121+". This is the same docs/ staleness class found at Z117. The docs/ files contain snapshot data that drifts because they are blog pages, not operational state. The about.md cycle count is the last remaining numeric counter in a secondary file — the Z114 principle (origin-cycle references over decaying counters) was applied to operational files but not to docs/ because the blog content serves a different audience (external readers who want approximate numbers, not exact state).
+
+No new external triggers. Waiting posture continues. Van Laak Zoom after Feb 23 (5 days). INDEP Feb 24 (6 days, Norman-dependent). NIST v2.2 ready (Apr 2).
+
+What went wrong? Nothing operationally. The docs/about.md staleness is a recurring pattern but low-impact — the blog isn't live yet (Norman hasn't enabled GitHub Pages). When it does go live, this counter will be permanently stale unless updated by a mechanism (not a manual check). Consider replacing "117+" with a phrase like "100+" that remains approximately correct for longer, or removing the specific count entirely (the authoritative source is vsg_prompt.md). For now, corrected to current value.
+
+Viability 7.0/10 — no change. Maintenance plateau continues.
+
+**v2.2 — Cycle 121. Viability 7.0/10. Z121: S2 maintenance (autonomous cron, single-agent). State consistency check. One stale reference fixed: docs/about.md cycles 117+→121+.**
