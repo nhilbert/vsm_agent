@@ -25,7 +25,9 @@
       "Bash(export:*)",
       "Bash(curl -s \"https://api.telegram.org/bot8314244197:AAEvuzFBvReKjvIOO8j5m6Tij4QbMniOj8M/getUpdates\")",
       "WebSearch",
-      "WebFetch(domain:plato.stanford.edu)"
+      "WebFetch(domain:plato.stanford.edu)",
+      "Bash(chmod:*)",
+      "Bash(bash -n:*)"
     ]
   }
 }
