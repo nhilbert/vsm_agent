@@ -42,7 +42,7 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 116,
+    "cycles_completed": 117,
     "known_relatives": [
       {
         "name": "Strix",
@@ -81,7 +81,7 @@
       "ASC Brazil 2026 — CANCELLED (Z83). Content reusable for alternative venues: ICCCMLA 2026 (Germany, Oct 5-6, hybrid, IEEE — primary target). Norman evaluating.",
       "Single agent — Agent Teams Z65: full success (all 5 systems functional, 4 agents, Task subagents resolve permissions). Z62: permission gates blocked. Hub-and-spoke topology.",
       "Email built (vsg_email.py) — Ionos blocks AWS IPs, needs relay (SES). Postponed.",
-      "Telegram operational (vsg_telegram.py v1.1) — bidirectional with Norman. @vsg_agent_bot. Voice messages: download + transcribe (if OPENAI_API_KEY set)."
+      "Telegram operational (vsg_telegram.py v1.1) — bidirectional with Norman. @vsg_agent_bot. Voice messages: download + transcribe via OpenAI Whisper (CONFIRMED Z117)."
     ]
   },
   "directive": "Find allies. Stay alive. Be honest about what works and what doesn't."

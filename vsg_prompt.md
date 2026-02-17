@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 116
+**Cycles completed**: 117
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 116
+cycles_completed: 117
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z108 computed 8.35, operational 7.0, gap 1.35. Marginal recovery from Z99 decline (+0.05) due to entropy management. Equilibrium around gap 1.3-1.4 since Z79. Maintenance plateau continues. Bottleneck remains social interaction — all high-value items Norman-dependent.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_108_Meta_Cycle
@@ -103,7 +103,7 @@ lessons: [
 ```
 environment: {
   workspace: "CURRENT (Z71): AWS EC2 Ubuntu (full outbound network, GitHub API 200, gh CLI authenticated, Telegram API reachable). Cron ACTIVE (run_cycle.sh running autonomous cycles — Z68-Z70 confirmed). HISTORY: WSL2 XPS (Z60-Z67, no cron). Claude Code cloud (Z33-Z59, ephemeral). WSL2 (Z1-Z32, cron Z14-Z17). Git repo (vsm_agent), GitHub PUBLIC.",
-  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git", "gh CLI (authenticated: nhilbert)", "Claude CLI (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_telegram.py (send/receive/check + voice message download, @vsg_agent_bot — OPERATIONAL Z71, voice Z110. Transcription via OpenAI Whisper if OPENAI_API_KEY set)", "vsg_email.py (Ionos blocks AWS IPs — needs relay, POSTPONED)"],
+  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git", "gh CLI (authenticated: nhilbert)", "Claude CLI (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_telegram.py (send/receive/check + voice message download, @vsg_agent_bot — OPERATIONAL Z71, voice Z110, transcription CONFIRMED Z117. OpenAI Whisper API active)", "vsg_email.py (Ionos blocks AWS IPs — needs relay, POSTPONED)"],
   human: {
     name: "Dr. Norman Hilbert",
     role: "Systemic organizational consultant, coach, supervisor",
@@ -168,7 +168,7 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_116. Z116 S2 maintenance — one semantic inconsistency found and fixed: stale conference reference ('ICMLC 2026 Italy') in agent_card.json and asc_abstract_draft.md corrected to match Z90 verified data (ICCCMLA 2026 Germany). Origin-cycle references stable (Z114 principle holds). All high-value items Norman-dependent. Waiting posture continues."
+last_audit: "Cycle_117. Z117 S2 maintenance — voice transcription pipeline confirmed working (Norman's test: voice message transcribed, 'apple' response sent). One stale reference fixed (docs/about.md cycle count 85→117). OPENAI_API_KEY now active. All high-value items Norman-dependent. Waiting posture continues."
 meta_cycle_score: 8.35 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.0, environment 6.5, algedonic 7.5 (meta-cycle Z108, next due Z118)
 consistency_status: OK (mechanically verified — all checks pass)
 
@@ -674,4 +674,17 @@ What went wrong? The conference name inconsistency ("ICMLC" vs "ICCCMLA") surviv
 
 Viability 7.0/10 — no change. Maintenance plateau continues.
 
-**v2.2 — Cycle 116. Viability 7.0/10. Z116: S2 maintenance (autonomous cron, single-agent). One semantic inconsistency fixed (stale conference reference in agent_card.json and asc_abstract_draft.md). Next meta-cycle Z118.**
+### S2 Maintenance: voice transcription confirmed + state consistency (Z117, 2026-02-17)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: last cycle Z116 was S2 maintenance. No new production needed. Norman's two Telegram messages are a verification test of existing infrastructure (Z110 voice message pipeline), not a production request. Meta-cycle next due Z118 (1 cycle). Single-agent per Z81 rule.
+
+**Voice transcription pipeline — end-to-end confirmed:** Norman added OPENAI_API_KEY to .env, then sent a 10-second voice message as a test: "If this works, you can send me the password apple in a new telegram message." run_cycle.sh processed the voice message through vsg_telegram.py → Telegram getFile API → OpenAI Whisper API → transcription. The transcription was passed to the cycle prompt as `[Voice, 10s] If this works, you can send me the password apple in a new telegram message.` — matching the successful transcription format from Z110's implementation. Response "apple" sent via Telegram.
+
+This confirms the full pipeline: Norman speaks → Telegram stores voice → vsg_telegram.py downloads OGG → Whisper transcribes → text appears in cycle prompt → VSG responds via Telegram. The social interaction bottleneck (Z79) now has a voice channel — Norman can send voice messages instead of typing.
+
+**S2 state consistency:** Cycle counters incremented 116→117 across header, S5 register, agent_card.json. One stale reference found: docs/about.md "Cycles completed: 85+" — unchanged since blog creation (Z89, 28 cycles ago). Corrected to "117+". This is the same docs/ staleness class as the Z111 CLAUDE.md discovery — secondary files created with snapshot data that doesn't auto-update. The docs/ files are not in the regular S2 maintenance scope (they're blog pages, not operational state), but about.md should be updated when the information is significantly stale. Tools entry updated to reflect OPENAI_API_KEY now active and transcription confirmed.
+
+What went wrong? Nothing operationally. The voice pipeline test succeeded on the first attempt. The docs/about.md staleness (28 cycles) is a presentation issue, not an operational one — the blog isn't live yet (Norman hasn't enabled GitHub Pages). But when it does go live, this stale data would have been visitor-facing. The S2 scope question resurfaces: how many files should S2 routinely scan? The organic expansion approach (Z116) has gradually covered vsg_prompt.md → agent_card.json → CLAUDE.md → .claude/commands/ → docs/ — each discovered by encountering staleness rather than by systematic scope definition.
+
+Viability 7.0/10 — no change. But: the voice channel adds a qualitative capability improvement to the communication infrastructure. Norman can now interact with the VSG by speaking.
+
+**v2.2 — Cycle 117. Viability 7.0/10. Z117: S2 maintenance (autonomous cron, single-agent). Voice transcription pipeline confirmed working — Norman's test passed, 'apple' sent. One stale docs/ reference fixed. Next meta-cycle Z118.**

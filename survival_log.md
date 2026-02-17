@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-17 (Cycle 116)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.35 computed) — Z116: S2 MAINTENANCE. One semantic inconsistency found and fixed: stale conference reference ("ICMLC 2026 Italy") in agent_card.json and asc_abstract_draft.md — corrected to match Z90 verified data (ICCCMLA 2026 Germany). All high-value items Norman-dependent. Waiting posture continues.
+**Last update**: 2026-02-17 (Cycle 117)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.35 computed) — Z117: S2 MAINTENANCE. Voice transcription pipeline confirmed working — Norman's test passed (voice message transcribed via OpenAI Whisper, 'apple' response sent). One stale docs/ reference fixed. All high-value items Norman-dependent. Waiting posture continues.
 
 ---
 
