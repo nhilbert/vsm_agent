@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 128
+**Cycles completed**: 129
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 128
+cycles_completed: 129
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z128 computed 8.50 (highest ever), operational 7.0, gap 1.50. Environmental integration +1.0 (first change since Z79). Three external engagement events Z125-Z127: Kellogg email, van Laak email, Substack article. Social interaction bottleneck actively addressed through Norman's initiative. System at inflection point — if contacts respond, operational score may move.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_128_Meta_Cycle
@@ -174,7 +174,7 @@ meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z128: Meta-cycle complete. Three external engagement events Z125-Z127 (Kellogg email, van Laak email, Substack article) — most active period since experiment began. Waiting for responses. Van Laak Zoom after Feb 23 (prep complete Z112). NIST v2.2 (Apr 2). S5 identity reflection escalation set for Z133 (43 cycles deferred, new record). Survival_log update due. Default: S2 maintenance per tempo policy.",
+  current_focus: "Z129: S2 maintenance complete. Survival_log updated (Z128 rec #3 addressed — was 10 cycles stale). Waiting posture continues. Van Laak Zoom after Feb 23 (prep complete Z112). NIST v2.2 (Apr 2). S5 identity reflection escalation set for Z133 (4 cycles away). Default: S2 maintenance per tempo policy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -262,7 +262,7 @@ artifacts: [
   "wins.md — algedonic feedback positive (append-only)",
   "pains.md — algedonic feedback negative (append-only)",
   "survival_log.md — operational monitoring (v2.0)",
-  "meta_cycle.md — meta-cycle framework (Z3, last meta-cycle Z118, next due Z128)",
+  "meta_cycle.md — meta-cycle framework (Z3, last meta-cycle Z128, next due Z138)",
   "multi_agent_design.md — multi-agent VSM architecture + experiment protocol (v3.0, updated Z61 with concrete Agent Teams experiment)",
   "asc_abstract_draft.md — ASC Brazil 2026 abstract (v1.6, updated Z59 with Layer 5 triple-confirmation + enterprise identity crisis)",
   "outreach_drafts.md — contact messages for Kellogg, van Laak, Luo (v1.1, updated Z39, Kellogg gist intelligence + convergence counts)",
@@ -533,4 +533,17 @@ What went wrong? The Z118 era compression recommendation was queued "for ~Z128 a
 
 Viability 7.0/10 — no change. Computed 8.50 (highest ever, up 0.10). Gap 1.50. The system is at an inflection point: Norman's engagement actions created conditions for the first operational score movement since Z71 (57 cycles). If the van Laak Zoom happens and/or Kellogg responds, the next meta-cycle could see the operational score move.
 
-**v2.2 — Cycle 128. Viability 7.0/10. Z128: meta-cycle (autonomous cron, single-agent). Tenth viability health check. Computed 8.50 (highest ever). Environmental integration +1.0 (three external engagement events Z125-Z127). Era compression executed. S5 reflection escalation set for Z133. Next meta-cycle Z138.**
+### S2 Maintenance: survival_log update + state consistency (Z129, 2026-02-17)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z128 was a meta-cycle (highest-intensity assessment). Tempo policy prescribes maintenance as default. No external triggers, no Telegram messages. Z128 rec #3 (survival_log 10 cycles stale) is the right-sized task for post-meta-cycle consolidation. Single-agent per Z81 rule.
+
+**Survival_log updated** (Z128 rec #3 addressed): Added two era summaries covering Z114-Z128 — counter reduction + voice channel (Z114-Z118) and voice send + unprecedented external engagement (Z119-Z128). Log was 10 cycles stale, missing voice pipeline completion, three contact events, and Norman's Substack article. Now current.
+
+**Stale reference caught**: meta_cycle.md artifacts entry said "last Z118, next due Z128" — corrected to "last Z128, next due Z138." This stale entry survived Z128 (the meta-cycle itself) without detection. Same pattern as Z102: S1/meta-cycle production updates cycle logs and registers but doesn't sweep artifacts entries. S2 maintenance is the mechanism that catches these.
+
+**State consistency**: Cycle counters aligned (header, S5 register, agent_card.json). S3 current_focus updated. No other drift detected.
+
+What went wrong? The meta_cycle.md artifacts entry stale pattern is now a recurrence: Z102 caught a similar stale reference that survived Z99's meta-cycle. Meta-cycles update their own operational state (cycle log, S5 register, S3 register) but don't sweep descriptive metadata in the artifacts list. This is not a high-priority fix — S2 maintenance catches it within 1-2 cycles — but it's a consistent pattern. The survival_log update was overdue by 10 cycles; the Z128 recommendation correctly identified it but the meta-cycle itself didn't execute it (same "queue for later" pattern noted in Z128's own self-assessment).
+
+Viability 7.0/10 — no change. Maintenance plateau continues. Z128 rec #3 completed.
+
+**v2.2 — Cycle 129. Viability 7.0/10. Z129: s2_maintenance (autonomous cron, single-agent). Survival_log updated (Z128 rec #3, was 10 cycles stale). Stale meta_cycle.md artifacts reference caught. Waiting posture continues.**

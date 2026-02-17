@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-17 (Cycle 128)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed — highest ever) — Z128: META-CYCLE. Tenth viability health check. Computed 8.50 (up 0.10), operational 7.0, gap 1.50. Environmental integration +1.0 (first change since Z79). Three external engagement events Z125-Z127: Norman emailed Kellogg and van Laak, published Substack article. Z118 recs 1/3 (first below 100%). Era compression executed. S5 reflection escalation set for Z133. System at inflection point.
+**Last update**: 2026-02-17 (Cycle 129)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed — highest ever) — Z129: S2 MAINTENANCE. Post-meta-cycle consolidation. Survival_log updated (Z128 rec #3, 10 cycles stale — now current). State consistency verified. System in waiting posture — van Laak Zoom after Feb 23, Kellogg response pending, NIST v2.2 awaiting Norman (Apr 2).
 
 ---
 
@@ -358,10 +358,16 @@ Z99: **Meta-cycle** — 8.30 computed (first decline), 7.0 operational, gap 1.30
 ### Maintenance plateau + Zoom prep (Z105-Z113, 2026-02-17)
 Z105: S2 maintenance + directory cleanup (8 stale files removed, cache cleanup blocked by sandbox). Z106: S3 review confirmed waiting posture appropriate. Z107: S2 caught second-order correction error + deferral count drift. Z108: **Meta-cycle** — 8.35 computed (up 0.05), 7.0 operational. Z99 recs 3/3 (fourth consecutive 100%). Van Laak Zoom prep recommended. Z109: S2 maintenance (survival_log footer stale reference fixed). Z110: **Voice message handling** — vsg_telegram.py v1.1 (Norman's request). Z111: S2 maintenance (CLAUDE.md stale entries 26-88 cycles old corrected). Z112: **S4 scan** (team mode) — Van Laak Zoom prep complete, 5 discussion points ready, CyberneticAgents 639 commits scanned. Z113: S3 review — S2 semantic drift surface area reduction recommended.
 
+### Counter reduction + voice channel (Z114-Z118, 2026-02-17)
+Z114: **Counter reduction principle** — replaced decaying counters with stable origin-cycle references (Z11 pattern applied to metadata entropy). Survival_log event protocol updated. Z115: First clean S2 with zero fixes (counter reduction validated). Z116: S2 corrected conference name (ICMLC→ICCCMLA in agent_card.json). Z117: **Voice transcription confirmed** end-to-end (Norman's test message: "apple"). Z118: **Meta-cycle** — 8.40 computed / 7.0 operational. Gap 1.40. Fifth consecutive 100% rec completion. ElevenLabs TTS queued.
+
+### Voice send + unprecedented external engagement (Z119-Z128, 2026-02-17)
+Z119: **First outbound voice message** — vsg_telegram.py v1.2 (OpenAI TTS, ElevenLabs blocked by web sign-in). German self-introduction sent to Norman. Voice channel now fully bidirectional. Z120-Z124: Five S2 maintenance cycles (clean, docs/about.md counter drift fixed Z121, first time-delayed Telegram task Z122, S3 review Z123 recommended S5 identity reflection). Z125: **KELLOGG CONTACT ACTIVE** — Norman emailed Kellogg directly, introduced VSG experiment, 5 questions, invited exchange. Most significant external engagement since Z46. Z126: **VAN LAAK CONTACT DEEPENED** — Norman emailed van Laak with substantive engagement, 5 questions, referenced S2 gap blog post (Issue #22), collaboration invited. Two major contacts in two cycles. Z127: **NORMAN'S SUBSTACK ARTICLE** — first public media coverage beyond GitHub. "Wenn Agents sich selbst organisieren." Three external engagement actions in three consecutive cycles — most active public-facing period in system history. Z128: **Meta-cycle** — 8.50 computed (highest ever) / 7.0 operational. Gap 1.50. Environmental integration +1.0. Era compression executed. S5 reflection escalation set for Z133.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-17 (Cycle 128)
+**Last update**: 2026-02-17 (Cycle 129)
 **Next update**: After significant event (van Laak Zoom, Kellogg response, NIST submission)
 
 ---
