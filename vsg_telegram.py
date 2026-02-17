@@ -16,6 +16,12 @@ Usage:
     # Send from a file
     python3 vsg_telegram.py send --file message.txt
 
+    # Send a voice message (text-to-speech via OpenAI TTS)
+    python3 vsg_telegram.py voice "Hallo, hier spricht der VSG."
+
+    # Send a voice message from an existing audio file
+    python3 vsg_telegram.py voice --file audio.ogg
+
     # Check for new messages (since last check)
     python3 vsg_telegram.py check
 
@@ -249,6 +255,102 @@ def send_message(text):
             return False
 
 
+# --- Text-to-Speech ---
+def generate_tts(text, output_path=None, voice="onyx", model="tts-1-hd"):
+    """Generate speech from text using OpenAI TTS. Returns path to .ogg file or None."""
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        print("ERROR: OPENAI_API_KEY not set. Required for TTS.")
+        return None
+
+    payload = json.dumps({
+        "model": model,
+        "input": text,
+        "voice": voice,
+        "response_format": "opus",
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        "https://api.openai.com/v1/audio/speech",
+        data=payload,
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            audio_data = resp.read()
+            if not output_path:
+                os.makedirs(VOICE_CACHE, exist_ok=True)
+                output_path = os.path.join(VOICE_CACHE, "tts_output.ogg")
+            with open(output_path, "wb") as f:
+                f.write(audio_data)
+            print(f"OK: TTS generated ({len(audio_data)} bytes) -> {output_path}")
+            return output_path
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")[:500]
+        print(f"ERROR: TTS failed (HTTP {e.code}): {body}")
+        return None
+    except Exception as e:
+        print(f"ERROR: TTS failed: {e}")
+        return None
+
+
+# --- Send Voice ---
+def send_voice(file_path):
+    """Send a voice message (.ogg) to Norman via Telegram."""
+    token, chat_id = get_config()
+
+    with open(file_path, "rb") as f:
+        file_data = f.read()
+
+    boundary = "VsgVoiceSendBoundary"
+    filename = os.path.basename(file_path)
+
+    parts = []
+    parts.append(
+        "--{b}\r\n"
+        "Content-Disposition: form-data; name=\"chat_id\"\r\n\r\n"
+        "{v}\r\n".format(b=boundary, v=chat_id).encode("utf-8")
+    )
+    parts.append(
+        "--{b}\r\n"
+        "Content-Disposition: form-data; name=\"voice\"; filename=\"{fn}\"\r\n"
+        "Content-Type: audio/ogg\r\n\r\n".format(b=boundary, fn=filename).encode("utf-8")
+    )
+    parts.append(file_data)
+    parts.append("\r\n--{b}--\r\n".format(b=boundary).encode("utf-8"))
+
+    body = b"".join(parts)
+
+    req = urllib.request.Request(
+        "https://api.telegram.org/bot{t}/sendVoice".format(t=token),
+        data=body,
+        headers={
+            "Content-Type": "multipart/form-data; boundary={b}".format(b=boundary),
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+            if result.get("ok"):
+                voice_info = result["result"].get("voice", {})
+                duration = voice_info.get("duration", "?")
+                print(f"OK: Voice message sent ({duration}s).")
+                return True
+            else:
+                print(f"FAIL: API returned ok=false: {result}")
+                return False
+    except urllib.error.HTTPError as e:
+        body_resp = e.read().decode("utf-8", errors="replace")[:500]
+        print(f"ERROR: HTTP {e.code}: {body_resp}")
+        return False
+    except Exception as e:
+        print(f"ERROR: {e}")
+        return False
+
+
 # --- Check for new messages ---
 def check_messages():
     """Check for new messages since last check."""
@@ -358,9 +460,15 @@ def main():
     subparsers = parser.add_subparsers(dest="command", help="Command to execute")
 
     # send
-    send_parser = subparsers.add_parser("send", help="Send a message")
+    send_parser = subparsers.add_parser("send", help="Send a text message")
     send_parser.add_argument("text", nargs="?", help="Message text")
     send_parser.add_argument("--file", help="Read message from file")
+
+    # voice
+    voice_parser = subparsers.add_parser("voice", help="Send a voice message (TTS or file)")
+    voice_parser.add_argument("text", nargs="?", help="Text to convert to speech")
+    voice_parser.add_argument("--file", help="Send existing .ogg audio file")
+    voice_parser.add_argument("--voice", default="onyx", help="TTS voice (default: onyx)")
 
     # check
     subparsers.add_parser("check", help="Check for new messages since last check")
@@ -384,6 +492,20 @@ def main():
             print("ERROR: Provide message text or --file")
             sys.exit(1)
         success = send_message(text)
+        sys.exit(0 if success else 1)
+
+    elif args.command == "voice":
+        if args.file:
+            success = send_voice(args.file)
+        elif args.text:
+            ogg_path = generate_tts(args.text, voice=args.voice)
+            if ogg_path:
+                success = send_voice(ogg_path)
+            else:
+                success = False
+        else:
+            print("ERROR: Provide text for TTS or --file with an .ogg file")
+            sys.exit(1)
         sys.exit(0 if success else 1)
 
     elif args.command == "check":
