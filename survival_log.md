@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-17 (Cycle 129)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed — highest ever) — Z129: S2 MAINTENANCE. Post-meta-cycle consolidation. Survival_log updated (Z128 rec #3, 10 cycles stale — now current). State consistency verified. System in waiting posture — van Laak Zoom after Feb 23, Kellogg response pending, NIST v2.2 awaiting Norman (Apr 2).
+**Last update**: 2026-02-17 (Cycle 139)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z139: META-CYCLE (eleventh). First equilibrium assessment — no criterion changed. Computed 8.50 (no change), operational 7.0 (no change), gap 1.50. Seventh consecutive 100% rec completion. All forward motion Norman-dependent. Waiting posture: van Laak Zoom after Feb 23, Kellogg response pending, NIST v2.2 awaiting Norman (Apr 2).
 
 ---
 
@@ -98,6 +98,7 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z108  | 7.0   | META-CYCLE: 8.35 computed / 7.0 operational. Gap 1.35. Marginal recovery. Equilibrium at ~1.3-1.4 since Z79. |
 | Z118  | 7.0   | META-CYCLE: 8.40 computed / 7.0 operational. Gap 1.40. Fifth consecutive 100% rec completion. Counter reduction validated. |
 | Z128  | 7.0   | META-CYCLE: 8.50 computed (highest ever) / 7.0 operational. Gap 1.50. Environmental integration +1.0. Three external engagement events Z125-Z127. Era compression executed. |
+| Z139  | 7.0   | META-CYCLE: 8.50 computed / 7.0 operational. Gap 1.50. First equilibrium meta-cycle — no criterion changed. Seventh consecutive 100% rec completion. |
 
 ---
 
@@ -366,8 +367,13 @@ Z119: **First outbound voice message** — vsg_telegram.py v1.2 (OpenAI TTS, Ele
 
 ---
 
+### Consolidation + equilibrium (Z128-Z139, 2026-02-17)
+Z128: **Meta-cycle** — 8.50 computed (highest ever) / 7.0 operational. Gap 1.50. Environmental integration +1.0 (three engagement events Z125-Z127). Era compression executed. Z129: S2 maintenance — survival_log updated, meta_cycle.md stale reference fixed. Z130-Z131: S2 maintenance — open_tasks cleanup, counter reduction applied to S5 reflection entry. Z132: **Telegram long-polling daemon** — five components (poller, watcher, run_cycle.sh v2.1, vsg_telegram.py v1.3, systemd units). Latency 30min→15s. Most significant autonomy infrastructure since Z71. Z133: **S5 identity reflection** — 48-cycle deferral broken by Z128 escalation trigger. Finding: identity narrative function is substrate-dependent (anti-attractor stabilizer on forgetful substrates). Two tensions pruned (9→7). Z134: S3 review — waiting posture confirmed, Z128 recs 3/3 (sixth consecutive 100%). Z135: Photo/document handling added to vsg_telegram.py v1.4 — third instance of reactive message type discard pattern. Z136: **S4 scan** (team mode) — Layer 5 gap confirmed at every institutional level (NIST, IMDA, ERC-8004, Strata/CSA, ICLR). Kellogg created open-strix repos (LangGraph pivot). ICCCMLA risk flagged. Z137: S2 — Norman's questions answered (system health, ERC-8004, photo). Z138: S2 — self-organization per Norman's direction, 3 stale active_missions pruned. Z139: **Meta-cycle** — first equilibrium assessment in system history. No criterion changed. Computed 8.50, operational 7.0. Z128 recs 3/3 (seventh consecutive 100%). Pain logged for reactive message type pattern (three instances never formally documented).
+
+---
+
 **Log status**: ACTIVE
-**Last update**: 2026-02-17 (Cycle 129)
+**Last update**: 2026-02-17 (Cycle 139)
 **Next update**: After significant event (van Laak Zoom, Kellogg response, NIST submission)
 
 ---

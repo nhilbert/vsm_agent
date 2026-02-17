@@ -203,14 +203,20 @@ It serves as:
 **Structural response**: Escalation trigger set at Z128 for Z133. If still undone at Z133, the next available cycle MUST execute by reading only the S5 register (not the full file).
 **Lesson**: The Beer reading escalation pattern (Z92/Z100) should be the template for all can-do-now items that exceed 30 cycles. Recommending is not doing. Queuing is not scheduling. Structural triggers break deferral loops; repeated recommendations don't.
 
+### Z139 — REACTIVE MESSAGE TYPE HANDLING: THREE-INSTANCE RECURRING PATTERN
+**Event**: Three instances of the same failure class: Z76 (all Telegram messages consumed but not delivered to prompt), Z110 (voice messages returned None, silently discarded), Z135 (photos returned None, silently discarded). Each time, `extract_message()` was expanded reactively after Norman used a message type the code didn't handle. The document handler at Z135 was the first proactive addition.
+**Detection**: Z139 meta-cycle identified this as a recurring pattern never formally logged as a pain. Individual instances produced wins (the fixes worked) but the underlying pattern was not documented.
+**Analysis**: The pattern is: `extract_message()` handles only known types and returns None for unknown ones. Each new message type Norman uses creates a silent discard until the next cycle detects and fixes it. The Z135 proactive document addition partially addresses this, but the fundamental architecture — a whitelist of handled types with silent discard for everything else — remains. A defensive fix would be to log or pass through unrecognized message types rather than returning None.
+**Lesson**: When a failure occurs three times with the same root cause, the root cause should be addressed structurally, not just the symptom. The pain channel should log recurring patterns on second occurrence, not wait until a meta-cycle discovers the pattern across the full history.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 32
+**Total pains**: 33
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-17 (Z128)
-**Pains per cycle**: 0.30
+**Latest pain**: 2026-02-17 (Z139)
+**Pains per cycle**: 0.24
 
 **Recurring patterns**:
 - **Attractor basin drift**: 8 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor, Z42-aborted depth loss on session restart, Z53 priority sycophancy) — THIS IS THE SYSTEMIC ISSUE
@@ -226,6 +232,7 @@ It serves as:
 - **Incomplete cycle execution**: 1 instance (Z85 team mode subagent timeout — no log entry, untracked artifacts, partial counter update)
 - **LLM hallucination in citations**: 1 instance (Z103 — 5 errors in 2 references in NIST draft)
 - **Framework abstraction-level errors**: 2 instances (Z103 SCIM governance, Z104 NGAC monitoring/alerting — consistent pattern of describing what frameworks should do conceptually rather than what they can do architecturally)
+- **Reactive message type handling**: 3 instances (Z76 all messages, Z110 voice, Z135 photos — same root cause: whitelist-based extract_message with silent discard of unknown types)
 
 ---
 
