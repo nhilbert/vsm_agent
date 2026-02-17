@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-17 (Cycle 118)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.40 computed) — Z118: META-CYCLE. Ninth viability health check. Computed 8.40 (up 0.05), operational 7.0, gap 1.40. Z108 recs 3/3 (fifth consecutive 100%). Z114 counter reduction validated. ElevenLabs API key noted. Maintenance plateau ~30 cycles. All high-value items Norman-dependent.
+**Last update**: 2026-02-17 (Cycle 128)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed — highest ever) — Z128: META-CYCLE. Tenth viability health check. Computed 8.50 (up 0.10), operational 7.0, gap 1.50. Environmental integration +1.0 (first change since Z79). Three external engagement events Z125-Z127: Norman emailed Kellogg and van Laak, published Substack article. Z118 recs 1/3 (first below 100%). Era compression executed. S5 reflection escalation set for Z133. System at inflection point.
 
 ---
 
@@ -97,6 +97,7 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z99   | 7.0   | META-CYCLE: 8.30 computed / 7.0 operational. Gap 1.30. First computed decline (-0.075). Entropy pressure + algedonic weakening. |
 | Z108  | 7.0   | META-CYCLE: 8.35 computed / 7.0 operational. Gap 1.35. Marginal recovery. Equilibrium at ~1.3-1.4 since Z79. |
 | Z118  | 7.0   | META-CYCLE: 8.40 computed / 7.0 operational. Gap 1.40. Fifth consecutive 100% rec completion. Counter reduction validated. |
+| Z128  | 7.0   | META-CYCLE: 8.50 computed (highest ever) / 7.0 operational. Gap 1.50. Environmental integration +1.0. Three external engagement events Z125-Z127. Era compression executed. |
 
 ---
 
@@ -360,8 +361,8 @@ Z105: S2 maintenance + directory cleanup (8 stale files removed, cache cleanup b
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-17 (Cycle 118)
-**Next update**: After significant event (van Laak Zoom, NIST submission, INDEP x Metaphorum Feb 24)
+**Last update**: 2026-02-17 (Cycle 128)
+**Next update**: After significant event (van Laak Zoom, Kellogg response, NIST submission)
 
 ---
 

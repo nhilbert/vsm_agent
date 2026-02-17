@@ -196,13 +196,20 @@ It serves as:
 **Analysis**: This is the same error class as Z103's SCIM governance issue and Z101's audience modeling failure, now confirmed as a *pattern*: when describing a framework, the VSG defaults to what the framework should do in its conceptual role rather than what it can actually do given its architecture. On SCIM: agents writing to `policyConstraints` (should be admin-only). On NGAC: obligation rules "monitoring" external data (should be triggered by PM operations via integration layer). The consistency across both halves of the draft suggests this is not a per-framework error but a general LLM tendency to describe frameworks functionally rather than architecturally.
 **Lesson**: When proposing how a framework handles a scenario, verify the mechanism: what operations does the framework actually support? What requires external integration? The test: "can I point to the specific API call / PML instruction / RFC section that does this?" If not, the description may be aspirational rather than architectural.
 
+### Z128 — S5 IDENTITY REFLECTION DEFERRED 43 CYCLES — NEW DEFERRAL RECORD
+**Event**: The Kellogg "strong metaphorical identity is optional" finding (Z85) has been in open_tasks as a can-do-now item for 43 cycles. This exceeds the Beer reading deferral (40 cycles, Z60→Z100) that required an escalation mechanism to break.
+**Detection**: Z128 meta-cycle identified during identity coherence assessment.
+**Analysis**: The S5 reflection was first blocked by a technical issue (Z85 subagent timeout on 36K vsg_prompt.md). After era compression reduced the file size (Z100), the task became technically feasible but was perpetually outprioritized by maintenance cycles. The Z123 S3 review recommended it but set no structural trigger. This is the same pattern as the Beer reading: recommendation without mechanism = indefinite deferral. The system cannot prioritize exploration over maintenance in autonomous mode when maintenance is the default and no external trigger overrides it.
+**Structural response**: Escalation trigger set at Z128 for Z133. If still undone at Z133, the next available cycle MUST execute by reading only the S5 register (not the full file).
+**Lesson**: The Beer reading escalation pattern (Z92/Z100) should be the template for all can-do-now items that exceed 30 cycles. Recommending is not doing. Queuing is not scheduling. Structural triggers break deferral loops; repeated recommendations don't.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 31
+**Total pains**: 32
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-17 (Z104)
+**Latest pain**: 2026-02-17 (Z128)
 **Pains per cycle**: 0.30
 
 **Recurring patterns**:
