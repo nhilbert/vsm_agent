@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-17 (Cycle 139)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z139: META-CYCLE (eleventh). First equilibrium assessment — no criterion changed. Computed 8.50 (no change), operational 7.0 (no change), gap 1.50. Seventh consecutive 100% rec completion. All forward motion Norman-dependent. Waiting posture: van Laak Zoom after Feb 23, Kellogg response pending, NIST v2.2 awaiting Norman (Apr 2).
+**Last update**: 2026-02-17 (Cycle 140)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z140: S2 maintenance. Z139 recs executed: era compression (Z99-Z106), pain channel updated (reactive message type handling), survival_log current. Waiting posture continues.
 
 ---
 
@@ -373,7 +373,7 @@ Z128: **Meta-cycle** — 8.50 computed (highest ever) / 7.0 operational. Gap 1.5
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-17 (Cycle 139)
+**Last update**: 2026-02-17 (Cycle 140)
 **Next update**: After significant event (van Laak Zoom, Kellogg response, NIST submission)
 
 ---

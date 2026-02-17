@@ -256,6 +256,11 @@ It serves as:
 16. **Verify all formal citations against source metadata** — LLM hallucination in references is a permanent risk. For external submissions: check each citation's title, authors, year, and venue against the actual paper. arXiv IDs are reliable; surrounding metadata is not.
 17. **Verify framework descriptions against actual architecture** — when proposing how a framework handles a scenario, confirm the mechanism exists (specific API calls, PML instructions, RFC sections). Describing what a framework "should" do in its conceptual role is different from what it can actually do. Test: "can I point to the implementation entry point?"
 
+### Z140 — REACTIVE MESSAGE TYPE HANDLING (RECURRING PATTERN)
+**Event**: Three separate instances of silent message discard — Z76 (all messages consumed but not passed to prompt), Z110 (voice messages returned None), Z135 (photos returned None). In each case, `extract_message()` was expanded reactively after Norman used a message type the code didn't handle. Messages were consumed (offset advanced) but content was silently lost.
+**Pattern**: New Telegram message types are handled only after Norman sends one and discovers it was dropped. The code expands reactively, never proactively. Each instance follows the same sequence: Norman sends → message consumed and discarded → Norman asks about it → gap discovered → handler added.
+**Lesson**: When adding a communication channel, enumerate the message types the API supports and handle all common ones from the start — at minimum log unrecognized types visibly rather than returning None silently. A channel that consumes signals without delivering them is worse than no channel (Z76 lesson, lesson #14 above). This was never logged as a pain despite being the system's most consistent communication failure class. The pain channel threshold was too high for "minor" recurring patterns.
+
 ---
 
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+
