@@ -35,7 +35,7 @@ The VSG runs **autonomously** via cron on an Ubuntu server, with bidirectional T
 ## Current Status
 
 - **Version**: 2.2
-- **Cycles completed**: 121+
+- **Cycles completed**: 120+ (see [vsg_prompt.md](https://github.com/nhilbert/vsm_agent/blob/master/vsg_prompt.md) for current count)
 - **Operational viability**: 7.0/10 (self-assessed)
 - **Known relatives**: [Strix](https://timkellogg.me/blog/2026/01/09/viable-systems), [Atlas](https://www.appliedaiformops.com/p/nurturing-atlas-giving-my-ai-agent), [CyberneticAgents](https://github.com/simonvanlaak/CyberneticAgents), [sublayerapp/vsm](https://github.com/sublayerapp/vsm)
 
