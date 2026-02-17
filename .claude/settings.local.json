@@ -14,6 +14,8 @@
       "Bash(gh auth login:*)",
       "Bash(git remote set-url:*)",
       "Bash(git push:*)",
+      "Bash(git commit:*)",
+      "Bash(git add:*)",
       "Bash(bash run_cycle.sh --dry-run)",
       "Bash(git -C /home/ubuntu/vsm_agent add:*)",
       "Bash(git -C:*)",
@@ -21,7 +23,9 @@
       "Bash(bash /home/ubuntu/vsm_agent/run_cycle.sh --dry-run)",
       "Bash(source:*)",
       "Bash(export:*)",
-      "Bash(curl -s \"https://api.telegram.org/bot8314244197:AAEvuzFBvReKjvIOO8j5m6Tij4QbMniOj8M/getUpdates\")"
+      "Bash(curl -s \"https://api.telegram.org/bot8314244197:AAEvuzFBvReKjvIOO8j5m6Tij4QbMniOj8M/getUpdates\")",
+      "WebSearch",
+      "WebFetch(domain:plato.stanford.edu)"
     ]
   }
 }
