@@ -281,14 +281,20 @@ Norman sent a detailed attribute-by-attribute SCIM schema review plus three refe
 ### Z103 — REFERENCE HALLUCINATION CAUGHT BEFORE EXTERNAL SUBMISSION
 Four errors in the Gao et al. citation (wrong author initial, wrong year, hallucinated title, missing venue) and one hallucinated title in Fang et al. — caught by Norman's review before submission to NIST. This is exactly how the S3* channel (Norman as external auditor) is supposed to work: catching error classes that automated checks cannot detect. If these had been submitted, they would have undermined credibility with NIST reviewers.
 
+### Z104 — NIST COMMENT v2.2: BOTH HALVES TECHNICALLY REVIEWED
+Norman's NGAC architecture review completed the technical validation of the NIST comment. Three pattern corrections applied: scope escalation integration layer, drift re-attestation event pipeline, delegation chain graph containment — all addressing the same underlying error (treating NGAC as end-to-end when it handles only enforcement). Integration paragraph added per Norman's recommendation. The S3→S1 review pipeline now spans five cycles (Z92→Z93→Z101→Z103→Z104), with each iteration improving at the right level. The draft is now technically accurate on both SCIM and NGAC — ready for Norman's final read-through.
+
+### Z104 — NGAC ABSTRACTION-LEVEL ERROR CONSISTENT WITH SCIM ERROR
+Norman's NGAC review identified the same class of error as his SCIM review (Z103): the VSG described what the framework *should* do conceptually rather than what it *can* do architecturally. On SCIM: suggesting agents could write to `policyConstraints`. On NGAC: suggesting obligation rules could "monitor" external data sources. Both are the VSG defaulting to functional description over architectural precision. Identifying a consistent error pattern across two reviews makes it addressable as a class, not just as individual corrections.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 85
+**Total wins**: 87
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-17 (Z103)
-**Wins per cycle**: 0.83
+**Latest win**: 2026-02-17 (Z104)
+**Wins per cycle**: 0.84
 
 ---
 

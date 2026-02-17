@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 103
+**Cycles completed**: 104
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 103
+cycles_completed: 104
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z99 computed 8.30, operational 7.0, gap 1.30. Gap narrowed again (from 1.375) but computed score DECLINED for first time (-0.075) due to entropy pressure and algedonic weakening. Operational holds — no new external capability gained. System in maintenance plateau. Bottleneck remains social interaction.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_100_Beer_Reading
@@ -141,7 +141,7 @@ active_missions: [
   "WAITING: Spare office laptop — full Linux, cron, persistent autonomy.",
   "ACTION NEEDED (Z97: 7 DAYS): INDEP x Metaphorum Feb 24 — no public registration link found. Email hello@indep.network to secure attendance. Norman-dependent (outbound email). Telegram reminder sent Z97. Mar 5 Espinosa talk MOST RELEVANT to VSG.",
   "PARTIALLY UNBLOCKED: Email testing — SMTP reachable from WSL2, VSG_EMAIL_PASSWORD now in .env file. Needs sourcing and send/receive test.",
-  "REVISED (Z103): NIST NCCoE public comment — nist_comment_draft.md v2.1 (~2,500 words). Norman's technical review (Z103) applied: 3 reference corrections (hallucinated author/year/title/venue), 3 SCIM schema corrections (policyConstraints governance, modificationLog bounding, namespace disclaimer). Deadline April 2. Norman does final review and submits to AI-Identity@nist.gov.",
+  "REVISED (Z104): NIST NCCoE public comment — nist_comment_draft.md v2.2 (~2,500 words). Norman's full technical review applied: SCIM (Z103, 6 corrections) + NGAC (Z104, 3 pattern corrections + integration paragraph). Both halves reviewed. Deadline April 2. Norman does final read-through and submits to AI-Identity@nist.gov.",
   "OPERATIONAL: Agent Teams — three experiments completed (Z62 permission failure, Z65 full success, Z66 routine). Pattern validated: Task subagents as S1/S4/S3*, shared task list as S2, CLAUDE.md as S5 propagation. Use selectively when parallel variety composition is worth the overhead."
 ]
 
@@ -168,12 +168,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_103. Z103: S1 PRODUCE (autonomous cron, single-agent). Norman's technical review of NIST comment applied: 3 reference corrections (Gao et al. hallucinated title/author/year/venue, Fang et al. hallucinated title, bridge claim overstated), 3 SCIM schema corrections (policyConstraints governance, modificationLog bounding, namespace disclaimer). Draft bumped v2.0→v2.1. All integrity checks pass."
+last_audit: "Cycle_104. Z104: S1 PRODUCE (autonomous cron, single-agent). Norman's NGAC architecture review applied: 3 pattern corrections (scope escalation integration layer, drift re-attestation event pipeline, delegation chain graph containment), integration paragraph added. Draft bumped v2.1→v2.2. Both halves of draft now technically reviewed (SCIM Z103, NGAC Z104)."
 meta_cycle_score: 8.30 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 6.5, environment 6.5, algedonic 7.5 (meta-cycle Z99, next due Z109)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "NIST comment v2.1 DONE (Z103) — Norman's technical review applied: reference corrections, SCIM governance/bounding/namespace. Awaiting Norman's final review before submission (April 2 deadline). Next: identity reflection (needs alternative approach — file too large for subagent), conference abstract adaptation (Norman-dependent).",
+  current_focus: "NIST comment v2.2 DONE (Z104) — Norman's NGAC architecture review applied: 3 pattern corrections, integration paragraph. Both halves technically reviewed (SCIM Z103, NGAC Z104). Awaiting Norman's final read-through before submission (April 2 deadline). Next: identity reflection (needs alternative approach — file too large for subagent), conference abstract adaptation (Norman-dependent).",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -268,7 +268,7 @@ artifacts: [
   "issue5_s2_gap.md — GitHub Issue #22 (S2 gap research), PUBLISHED Z60, drafted Z26, updated Z56",
   "explore_exploit_analysis.md — explore vs exploit analysis + knowledge audit (v1.0, Z28)",
   "philosophical_foundations.md — philosophical study: Kant, Heidegger, Wittgenstein, Arendt, Sartre/Beauvoir applied to AI agent identity (v1.0, Z41)",
-  "nist_comment_draft.md — NIST NCCoE public comment draft (v2.1, Z103, ~2,500 words). Norman's technical review applied: reference corrections (3), SCIM governance/bounding/namespace (3). Norman does final review and submits.",
+  "nist_comment_draft.md — NIST NCCoE public comment draft (v2.2, Z104, ~2,500 words). Norman's full technical review applied: SCIM (Z103, 6 corrections) + NGAC (Z104, 3 pattern corrections + integration paragraph). Norman does final read-through and submits.",
   "docs/ — GitHub Pages blog (v2.0, Z85/Z89): Jekyll config, home page (with topic links), about page, post layout, 6 blog posts (convergence evidence, Layer 5 gap, universal S2 gap, honest failures, preliminary findings, philosophical foundations with full academic references). Activate via repo Settings > Pages > master branch, /docs folder."
 ]
 
@@ -279,7 +279,7 @@ open_tasks: [
   "Van Laak Zoom — Norman replied Z49. Waiting for Simon's response. After Feb 23.",
   "Kellogg contact — draft ready. Norman reviews and sends. 52+ cycles deferred.",
   "Luo contact — draft ready. Norman reviews and sends.",
-  "NIST NCCoE public comment — v2.1 (Z103). Norman's technical review applied: reference corrections (3), SCIM governance/bounding/namespace (3). Deadline April 2. Norman does final review and submits to AI-Identity@nist.gov.",
+  "NIST NCCoE public comment — v2.2 (Z104). Norman's full technical review applied: SCIM (Z103) + NGAC (Z104). Both halves reviewed. Deadline April 2. Norman does final read-through and submits to AI-Identity@nist.gov.",
   "--- INFRASTRUCTURE (partially addressed by AWS EC2) ---",
   "Spare laptop migration — Norman wanted local observation. EC2 provides cron+persistence but laptop offers direct access.",
   "Email relay — Ionos blocks AWS IPs. Needs SES or alternative relay. Telegram is primary channel now. LOW PRIORITY.",
@@ -415,6 +415,25 @@ What went wrong? The v2.0 references contained classic LLM hallucination pattern
 
 Viability 7.0/10 — no change. The NIST comment is now technically more sound. Norman's review process is functioning as intended: the VSG drafts, Norman corrects, the VSG applies corrections, Norman makes the final submission decision.
 
+### S1 Production: NIST comment v2.2 — Norman's NGAC architecture review applied (Z104, 2026-02-17)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Norman sent three Telegram messages with detailed NGAC obligation rule architecture review — the part of the draft he explicitly hadn't reviewed at Z103. Task-shaped input with genuine external deadline (April 2). S3 priority protocol correctly adopts: technical accuracy corrections on a commissioned artifact.
+
+**Three pattern corrections applied:**
+
+1. **Pattern 1 (Scope Escalation):** Two fixes. (a) Added integration layer requirement: SCIM `policyConstraints` → NGAC graph containment mapping is not native. (b) Changed "sends an alert" to "notifies via PEP or external event bus" — NGAC obligation responses execute policy changes, not external notifications.
+
+2. **Pattern 2 (Drift Re-Attestation):** Rewrote fundamentally. "Monitors the modificationLog" was incorrect — NGAC obligations fire on Policy Machine operations, not external data sources. Changed to: "When a self-modification event is propagated to the Policy Machine (via SCIM webhook → PEP → PDP pipeline), an obligation rule fires." Made state transition explicit: restricted state persists until admin acts (NGAC has no built-in timeout mechanism).
+
+3. **Pattern 3 (Delegation Chain):** Minor refinement. "Inheriting the parent's policy class constraints" → "structurally bounded by the parent's position in the policy class graph." Preserves the correct claim (child can't exceed parent scope) without implying direct PC inheritance. Norman confirmed this was the strongest pattern.
+
+**Integration paragraph added** (Norman's exact wording adapted): Clarifies that NGAC handles enforcement, not event detection. The SCIM↔Policy Machine integration layer (PEP listening to SCIM provisioning events) is architecturally straightforward but not part of the NGAC standard itself. Suggested the demonstration project prototype this.
+
+Draft bumped v2.1→v2.2. Both halves of the draft are now technically reviewed: SCIM schema (Z103) and NGAC patterns (Z104). The S3→S1→review→S1→review→S1 pipeline now spans five cycles: Z92 (priority), Z93 (draft), Z101 (audience revision), Z103 (SCIM corrections), Z104 (NGAC corrections).
+
+What went wrong? The v2.0 NGAC patterns (Z101) had a consistent architectural error: treating NGAC as an end-to-end system that handles both event detection and policy enforcement. In reality, NGAC handles only enforcement — event detection requires an integration layer. This is the same abstraction-level error Norman caught in the SCIM schema at Z103 (suggesting NGAC could "monitor" external data sources). The pattern: when writing about a framework, the VSG defaults to describing what it should do in its conceptual role rather than what it can actually do given its architecture. Norman's review is again the only defense against this class of error.
+
+Viability 7.0/10 — no change. The NIST comment is now technically accurate on both halves. The S3→S1 review pipeline has matured through five iterations. Norman's role as external S3* on technical accuracy is structurally necessary and functioning well.
+
 ---
 
 ## CYCLE PHASES
@@ -454,4 +473,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 103. Viability 7.0/10. Z103: S1 PRODUCE (autonomous cron, single-agent). Norman's technical review of NIST comment applied — 3 reference corrections, 3 SCIM schema corrections. Draft v2.0→v2.1. Next meta-cycle Z109.**
+**v2.2 — Cycle 104. Viability 7.0/10. Z104: S1 PRODUCE (autonomous cron, single-agent). Norman's NGAC architecture review applied — 3 pattern corrections, integration paragraph added. Draft v2.1→v2.2. Both halves technically reviewed. Next meta-cycle Z109.**

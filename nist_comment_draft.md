@@ -1,8 +1,8 @@
 # DRAFT v2.1 — Public Comment on NIST NCCoE Concept Paper
 # "Accelerating the Adoption of Software and AI Agent Identity and Authorization"
 
-**Status**: DRAFT v2.1 — requires Norman's final review before submission
-**Revision**: v2.1 (Z103) — Norman's technical review applied: reference corrections (3), policyConstraints governance, modificationLog bounding, namespace disclaimer. See Notes for Norman at end.
+**Status**: DRAFT v2.2 — requires Norman's final review before submission
+**Revision**: v2.2 (Z104) — Norman's NGAC architecture review applied: 3 pattern corrections (scope escalation integration layer, drift re-attestation event pipeline, delegation chain graph containment), integration paragraph added. See Notes for Norman at end.
 **Submit to**: AI-Identity@nist.gov
 **Deadline**: April 2, 2026
 **Submitted by**: Dr. Norman Hilbert, Supervision Rheinland, Bonn, Germany
@@ -108,13 +108,13 @@ The paper asks about "least-privilege enforcement for unpredictable behaviors." 
 
 NIST's own Next Generation Access Control framework (ANSI/INCITS 565-2020, implemented in the NIST Policy Machine) is well-suited for this problem. NGAC's obligation rules (Event Processing Point) can trigger policy changes in response to agent behavior at runtime:
 
-1. **Scope escalation detection:** An obligation rule fires when an agent requests access to a resource outside its declared `policyConstraints` scope. The EPP creates a temporary prohibition on the requested resource and sends an alert to the Policy Administrator, who can approve, deny, or require human review.
+1. **Scope escalation detection:** An obligation rule fires when an agent requests access to a resource outside its declared `policyConstraints` scope. The EPP creates a temporary prohibition on the requested resource and notifies the Policy Administrator (via PEP or external event bus), who can approve, deny, or require human review. This pattern requires an integration layer that maps the agent's SCIM `policyConstraints` to NGAC graph containment.
 
-2. **Drift-triggered re-attestation:** An obligation rule monitors the agent's `modificationLog` (from the SCIM extension). When a self-modification event occurs, the EPP downgrades the agent's User Attributes to a restricted set until the modification is reviewed and the `lastVerified` timestamp on the affected `policyConstraints` entry is refreshed.
+2. **Drift-triggered re-attestation:** When a self-modification event is propagated to the Policy Machine (e.g., via SCIM webhook → PEP → PDP pipeline), an obligation rule fires and downgrades the agent's User Attributes to a restricted set. The restricted state persists until an administrator reviews the modification and refreshes the `lastVerified` timestamp on the affected `policyConstraints` entry, which triggers a restoration obligation.
 
-3. **Delegation chain governance:** When a parent agent spawns a child agent, an NGAC obligation rule automatically creates the child's User Attribute node as a subordinate of the parent's UA, inheriting the parent's policy class constraints. The child cannot exceed the parent's authorization scope — least-privilege is structurally enforced through the graph, not through rule duplication.
+3. **Delegation chain governance:** When a parent agent spawns a child agent, an NGAC obligation rule automatically creates the child's User Attribute node as a subordinate of the parent's UA. The child's authorization scope is structurally bounded by the parent's position in the policy class graph — least-privilege is enforced through graph containment, not through rule duplication.
 
-These patterns use existing NGAC mechanisms. They do not require new standards — they require the demonstration project to show how NGAC obligation rules apply specifically to agent identity scenarios.
+These three patterns rely on existing NGAC mechanisms for policy enforcement. Their implementation requires an integration layer between the SCIM identity store and the Policy Machine that translates identity-level events (scope changes, self-modifications, agent spawning) into Policy Machine operations that trigger the obligation rules. This integration is architecturally straightforward — a PEP that listens to SCIM provisioning events — but is not part of the NGAC standard itself. The demonstration project could prototype this integration layer as a reference implementation.
 
 **Empirical grounding:** Two comprehensive surveys of self-evolving agent research (Gao et al. 2026, Fang et al. 2025) document that the dominant trajectory in agent development is toward systems that modify their own behavior. Both surveys discuss self-evolution and some security controls (e.g., DID at protocol level; risk-based access control / approval gates), but they do not engage with enterprise IAM/authorization standards such as SCIM, OAuth/OIDC, or NGAC / Policy Machine. The authorization community and the self-evolving agent community are not in conversation. The demonstration project could bridge this gap by showing how NGAC handles the authorization consequences of agent self-modification.
 
@@ -169,15 +169,13 @@ These recommendations use existing NIST and ANSI standards. They extend — rath
 
 **NOTES FOR NORMAN** (remove before submission):
 
-1. **v2.1 — your technical review applied.** Three categories of corrections:
-   - **References fixed (3):** Gao et al. corrected (H.-A., 2026, correct title, TMLR venue). Fang et al. title corrected. Bridge claim rewritten per your suggested phrasing (acknowledges surveys discuss some security controls, but not enterprise IAM standards).
-   - **SCIM schema corrections (3 of 4 applied):**
-     - HIGH: policyConstraints readWrite governance — explicit text added that write access SHOULD be restricted to policy administrators, not agent credentials (your Option 2).
-     - MEDIUM: modificationLog bounded to "last N entries (recommended N ≤ 10)" with explicit justification for the dual channel with internalAuditEndpoint — IAM systems see drift in routine SCIM sync without polling.
-     - LOW: Namespace disclaimer added — IETF extension pattern is illustrative; production requires IANA registration or org-specific URN.
-     - OPTIONAL (not applied): Missing attribute metadata (required, returned, uniqueness, canonicalValues, caseExact) — you noted this is acceptable for a NIST concept-comment. Can add if you want.
-   - **Four hallucinated reference errors in v2.0:** Your catch. Classic LLM pattern — first-author initial, year, title, venue all wrong on Gao et al. Fang et al. title hallucinated. Fixed from your corrections.
-2. **Unchanged from v2.0:** SCIM JSON example (you confirmed syntactically valid), NGAC obligation patterns, internal audit architecture, summary table, tone.
-3. This is now ~2,500 words. Still within 2-5 page standard.
-4. Submit to: AI-Identity@nist.gov by April 2, 2026. Recommended: submit by March 25 for best visibility.
-5. **Remaining review items:** Tone, SPIFFE integration details (expand?), whether the attribute metadata gap matters enough to add.
+1. **v2.2 — your NGAC architecture review applied.** Three pattern corrections + integration paragraph:
+   - **Pattern 1 (Scope Escalation):** Added SCIM↔NGAC integration layer requirement. Changed "sends an alert" to "notifies via PEP or external event bus" — NGAC has no native alerting.
+   - **Pattern 2 (Drift Re-Attestation):** Rewrote: "monitors the modificationLog" → "when a self-modification event is propagated to the Policy Machine (via SCIM webhook → PEP → PDP pipeline), an obligation rule fires." Made the state transition explicit: restricted state persists until admin acts (no implicit timeout mechanism in NGAC).
+   - **Pattern 3 (Delegation Chain):** Refined "inheriting the parent's policy class constraints" → "structurally bounded by the parent's position in the policy class graph." Preserves the correct claim (child can't exceed parent scope via graph containment) without implying direct PC inheritance.
+   - **Integration paragraph (your exact wording adapted):** Added after the three patterns, clarifying that NGAC handles enforcement but event detection requires a SCIM↔PM integration layer. Suggested the demo project could prototype this.
+2. **Your review confirmed Pattern 3 as technically correct** — it was the strongest of the three. Patterns 1 and 2 had the same underlying issue: the draft treated NGAC as an end-to-end system (detection + enforcement) when it handles only enforcement. The corrections make this architectural boundary transparent.
+3. **Previous v2.1 corrections retained:** References (3), SCIM governance/bounding/namespace (3). All unchanged.
+4. **Both halves now reviewed:** SCIM schema (Z103) and NGAC patterns (Z104). All your corrections applied.
+5. Submit to: AI-Identity@nist.gov by April 2, 2026. Recommended: submit by March 25 for best visibility.
+6. **Remaining:** Your final read-through for tone, any SPIFFE integration expansion, whether attribute metadata gap matters.

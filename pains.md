@@ -190,14 +190,20 @@ It serves as:
 **Analysis**: Reference hallucination is a well-documented LLM failure mode. The VSG's Z93 research agents retrieved the arXiv IDs correctly (2507.21046, 2508.07407) but the title/author/venue metadata was generated from latent knowledge rather than verified against the actual papers. The integrity_check.py cannot detect semantic errors in citation metadata — this is an inherent limitation of structural checks. The overclaimed bridge statement is the same pattern as Z101's audience modeling failure: the VSG optimized for its own argument's strength rather than for accuracy. Norman's review is the only defense against this error class in external submissions.
 **Lesson**: All formal citations in external submissions must be verified against the actual paper metadata, not generated from memory. For arXiv papers: check the abstract page for exact title, authors, year, and venue. This is not a one-time fix — it is a permanent risk whenever the VSG produces formal citations.
 
+### Z104 — NGAC DESCRIBED AT WRONG ABSTRACTION LEVEL — SAME ERROR CLASS AS Z103
+**Event**: The NIST comment v2.0 (Z101) described NGAC obligation rules as if they could "monitor" external data sources (SCIM modificationLog) and "send alerts." In reality, NGAC obligations fire only on Policy Machine operations, and NGAC has no native alerting mechanism. Norman caught all three patterns having the same issue: treating NGAC as an end-to-end system when it only handles enforcement.
+**Detection**: Norman (external S3*). The VSG did not detect this in v2.0 production (Z101) or v2.1 corrections (Z103 — which focused on SCIM, not NGAC).
+**Analysis**: This is the same error class as Z103's SCIM governance issue and Z101's audience modeling failure, now confirmed as a *pattern*: when describing a framework, the VSG defaults to what the framework should do in its conceptual role rather than what it can actually do given its architecture. On SCIM: agents writing to `policyConstraints` (should be admin-only). On NGAC: obligation rules "monitoring" external data (should be triggered by PM operations via integration layer). The consistency across both halves of the draft suggests this is not a per-framework error but a general LLM tendency to describe frameworks functionally rather than architecturally.
+**Lesson**: When proposing how a framework handles a scenario, verify the mechanism: what operations does the framework actually support? What requires external integration? The test: "can I point to the specific API call / PML instruction / RFC section that does this?" If not, the description may be aspirational rather than architectural.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 30
+**Total pains**: 31
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-17 (Z103)
-**Pains per cycle**: 0.29
+**Latest pain**: 2026-02-17 (Z104)
+**Pains per cycle**: 0.30
 
 **Recurring patterns**:
 - **Attractor basin drift**: 8 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor, Z42-aborted depth loss on session restart, Z53 priority sycophancy) — THIS IS THE SYSTEMIC ISSUE
@@ -212,6 +218,7 @@ It serves as:
 - **Infrastructure testing gaps**: 2 instances (Z62 permission gates untested, Z76 Telegram full-path untested)
 - **Incomplete cycle execution**: 1 instance (Z85 team mode subagent timeout — no log entry, untracked artifacts, partial counter update)
 - **LLM hallucination in citations**: 1 instance (Z103 — 5 errors in 2 references in NIST draft)
+- **Framework abstraction-level errors**: 2 instances (Z103 SCIM governance, Z104 NGAC monitoring/alerting — consistent pattern of describing what frameworks should do conceptually rather than what they can do architecturally)
 
 ---
 
@@ -233,6 +240,7 @@ It serves as:
 14. **Test the full path, not just connectivity** — a channel that consumes signals without delivering them is worse than no channel. Test receive → process → act, not just send/receive.
 15. **Verify cycle completion after team mode** — subagent timeouts can leave partial state. Check: log entry exists, artifacts tracked, all counters consistent. Self-actualization should not be delegated to subagents on large files.
 16. **Verify all formal citations against source metadata** — LLM hallucination in references is a permanent risk. For external submissions: check each citation's title, authors, year, and venue against the actual paper. arXiv IDs are reliable; surrounding metadata is not.
+17. **Verify framework descriptions against actual architecture** — when proposing how a framework handles a scenario, confirm the mechanism exists (specific API calls, PML instructions, RFC sections). Describing what a framework "should" do in its conceptual role is different from what it can actually do. Test: "can I point to the implementation entry point?"
 
 ---
 
