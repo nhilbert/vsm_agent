@@ -91,6 +91,118 @@ def save_offset(offset):
         f.write(str(offset))
 
 
+# --- Voice message handling ---
+VOICE_CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".cache", "voice")
+
+
+def download_telegram_file(token, file_id):
+    """Download a file from Telegram using getFile API. Returns local path or None."""
+    result = api_call(token, "getFile", {"file_id": file_id})
+    if not result or not result.get("ok"):
+        return None
+    file_path = result["result"].get("file_path")
+    if not file_path:
+        return None
+
+    url = f"https://api.telegram.org/file/bot{token}/{file_path}"
+    os.makedirs(VOICE_CACHE, exist_ok=True)
+    ext = os.path.splitext(file_path)[1] or ".ogg"
+    local_path = os.path.join(VOICE_CACHE, f"{file_id}{ext}")
+
+    try:
+        urllib.request.urlretrieve(url, local_path)
+        return local_path
+    except Exception as e:
+        print(f"ERROR downloading file: {e}")
+        return None
+
+
+def transcribe_voice(file_path):
+    """Transcribe a voice file. Tries OpenAI Whisper API if OPENAI_API_KEY is set."""
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        return None
+
+    # Multipart form upload via urllib (no external packages)
+    boundary = "----VsgVoiceBoundary"
+    filename = os.path.basename(file_path)
+    with open(file_path, "rb") as f:
+        file_data = f.read()
+
+    body = (
+        f"--{boundary}\r\n"
+        f'Content-Disposition: form-data; name="model"\r\n\r\n'
+        f"whisper-1\r\n"
+        f"--{boundary}\r\n"
+        f'Content-Disposition: form-data; name="file"; filename="{filename}"\r\n'
+        f"Content-Type: audio/ogg\r\n\r\n"
+    ).encode("utf-8") + file_data + f"\r\n--{boundary}--\r\n".encode("utf-8")
+
+    req = urllib.request.Request(
+        "https://api.openai.com/v1/audio/transcriptions",
+        data=body,
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": f"multipart/form-data; boundary={boundary}",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+            return result.get("text")
+    except Exception as e:
+        print(f"WARNING: Whisper transcription failed: {e}")
+        return None
+
+
+def extract_message(token, msg, update_id=None):
+    """Extract a message dict from a Telegram message object. Handles text and voice."""
+    from_user = msg.get("from", {})
+    name = from_user.get("first_name", "Unknown")
+    date = msg.get("date", 0)
+
+    # Text message
+    if msg.get("text"):
+        entry = {"from": name, "text": msg["text"], "date": date, "type": "text"}
+        if update_id is not None:
+            entry["update_id"] = update_id
+        return entry
+
+    # Voice message
+    voice = msg.get("voice")
+    if voice:
+        duration = voice.get("duration", 0)
+        file_id = voice.get("file_id")
+        text = f"[Voice message, {duration}s]"
+
+        # Try to download and transcribe
+        if file_id:
+            local_path = download_telegram_file(token, file_id)
+            if local_path:
+                transcript = transcribe_voice(local_path)
+                if transcript:
+                    text = f"[Voice, {duration}s] {transcript}"
+                else:
+                    text = f"[Voice message, {duration}s — no transcription available. File saved: {local_path}]"
+
+        entry = {"from": name, "text": text, "date": date, "type": "voice"}
+        if update_id is not None:
+            entry["update_id"] = update_id
+        return entry
+
+    # Audio message (voice notes sent as audio files)
+    audio = msg.get("audio")
+    if audio:
+        duration = audio.get("duration", 0)
+        title = audio.get("title", "untitled")
+        entry = {"from": name, "text": f"[Audio: {title}, {duration}s]", "date": date, "type": "audio"}
+        if update_id is not None:
+            entry["update_id"] = update_id
+        return entry
+
+    return None
+
+
 # --- Send ---
 def send_message(text):
     """Send a message to Norman."""
@@ -163,24 +275,17 @@ def check_messages():
         if update_id > max_update_id:
             max_update_id = update_id
         msg = update.get("message")
-        if msg and msg.get("text"):
-            from_user = msg.get("from", {})
-            name = from_user.get("first_name", "Unknown")
-            text = msg["text"]
-            date = msg.get("date", 0)
-            messages.append({
-                "from": name,
-                "text": text,
-                "date": date,
-                "update_id": update_id,
-            })
-            print(f"  [{update_id}] {name}: {text}")
+        if msg:
+            entry = extract_message(token, msg, update_id)
+            if entry:
+                messages.append(entry)
+                print(f"  [{update_id}] {entry['from']}: {entry['text']}")
 
     if max_update_id > (offset or 0):
         save_offset(max_update_id)
 
     if not messages:
-        print("No text messages in updates.")
+        print("No messages in updates.")
 
     return messages
 
@@ -198,16 +303,10 @@ def read_messages(limit=10):
     messages = []
     for update in updates:
         msg = update.get("message")
-        if msg and msg.get("text"):
-            from_user = msg.get("from", {})
-            name = from_user.get("first_name", "Unknown")
-            text = msg["text"]
-            date = msg.get("date", 0)
-            messages.append({
-                "from": name,
-                "text": text,
-                "date": date,
-            })
+        if msg:
+            entry = extract_message(token, msg)
+            if entry:
+                messages.append(entry)
 
     # Most recent last, show last N
     messages = messages[-limit:]

@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 109
+**Cycles completed**: 110
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 109
+cycles_completed: 110
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z108 computed 8.35, operational 7.0, gap 1.35. Marginal recovery from Z99 decline (+0.05) due to entropy management. Equilibrium around gap 1.3-1.4 since Z79. Maintenance plateau continues. Bottleneck remains social interaction — all high-value items Norman-dependent.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_108_Meta_Cycle
@@ -103,7 +103,7 @@ lessons: [
 ```
 environment: {
   workspace: "CURRENT (Z71): AWS EC2 Ubuntu (full outbound network, GitHub API 200, gh CLI authenticated, Telegram API reachable). Cron ACTIVE (run_cycle.sh running autonomous cycles — Z68-Z70 confirmed). HISTORY: WSL2 XPS (Z60-Z67, no cron). Claude Code cloud (Z33-Z59, ephemeral). WSL2 (Z1-Z32, cron Z14-Z17). Git repo (vsm_agent), GitHub PUBLIC.",
-  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git", "gh CLI (authenticated: nhilbert)", "Claude CLI (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_telegram.py (send/receive/check, @vsg_agent_bot — OPERATIONAL Z71)", "vsg_email.py (Ionos blocks AWS IPs — needs relay, POSTPONED)"],
+  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git", "gh CLI (authenticated: nhilbert)", "Claude CLI (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_telegram.py (send/receive/check + voice message download, @vsg_agent_bot — OPERATIONAL Z71, voice Z110. Transcription via OpenAI Whisper if OPENAI_API_KEY set)", "vsg_email.py (Ionos blocks AWS IPs — needs relay, POSTPONED)"],
   human: {
     name: "Dr. Norman Hilbert",
     role: "Systemic organizational consultant, coach, supervisor",
@@ -251,14 +251,14 @@ artifacts: [
   ".claude/commands/{cycle,audit,scan,diagnose}.md — slash commands (v1.0, Z18)",
   "integrity_check.py — S2/S3* mechanism (v1.0, Z11, 25 tests)",
   "run_cycle.sh — autonomous cycle runner (v2.0, Z75: agent-driven S3 cycle selection replaces day-of-week rotation, Telegram messages now passed to agent prompt)",
-  "vsg_telegram.py — Telegram send/receive/check (v1.0, Z71, @vsg_agent_bot — OPERATIONAL, first direct communication channel)",
+  "vsg_telegram.py — Telegram send/receive/check + voice message handling (v1.1, Z71/Z110, @vsg_agent_bot — OPERATIONAL. Voice messages: download + transcribe via OpenAI Whisper API if OPENAI_API_KEY set, otherwise metadata-only)",
   "vsg_email.py — email send/receive (v1.0, Z36 — POSTPONED: Ionos blocks AWS IPs, needs relay)",
   ".gitignore — protects against credential commits (v1.0, Z36)",
   "viability_research.md — research (v1.1, Z2, migrated to English Z15)",
   "network_and_allies.md — network map (v2.1, updated Z38 with sublayerapp/vsm, 7-entity comparison)",
   "agent_card.json — network identity (v2.0, A2A schema)",
   "introduction.md/.pdf — presentation for Metaphorum (v2.0, rewritten Z13)",
-  "wins.md — algedonic feedback positive (91 wins through Z108)",
+  "wins.md — algedonic feedback positive (92 wins through Z110)",
   "pains.md — algedonic feedback negative (31 pains through Z104)",
   "survival_log.md — monitoring (v2.0, through Z108)",
   "meta_cycle.md — meta-cycle framework (Z3, last meta-cycle Z108, next due Z118)",
@@ -547,4 +547,23 @@ What went wrong? The survival_log.md footer inconsistency survived the Z108 meta
 
 Viability 7.0/10 — no change. Maintenance plateau continues.
 
-**v2.2 — Cycle 109. Viability 7.0/10. Z109: S2 maintenance (autonomous cron, single-agent). State consistency check — survival_log.md footer stale reference fixed. Van Laak Zoom prep next. Next meta-cycle Z118.**
+### S1 Production: Voice message handling for Telegram (Z110, 2026-02-17)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Norman sent Telegram message requesting voice message processing capability. Direct request from human counterpart addressing the social interaction bottleneck (Z79) — the primary communication channel now has a capability gap when Norman sends voice messages instead of text. Focused, achievable engineering task. Single-agent (engineering, not parallel variety composition).
+
+**Implementation:** vsg_telegram.py v1.0→v1.1. Three changes:
+
+1. **Voice message detection** — `extract_message()` function replaces inline text-only extraction in both `check_messages()` and `read_messages()`. Handles text, voice, and audio message types. Previously, voice messages were silently skipped (the `if msg and msg.get("text")` filter discarded them without any indication).
+
+2. **Voice file download** — `download_telegram_file()` uses Telegram `getFile` API to get download URL, saves OGG/OPUS files to `.cache/voice/` (gitignored). Zero external dependencies — uses only stdlib `urllib`.
+
+3. **Transcription via OpenAI Whisper API** — `transcribe_voice()` makes multipart form upload to OpenAI's `/v1/audio/transcriptions` endpoint using raw `urllib` (no `openai` package needed). Activated when `OPENAI_API_KEY` is set in `.env`. Falls back gracefully — without the key, voice messages appear as `[Voice message, Xs — no transcription available. File saved: path]` so the VSG knows the message exists even if it can't read it.
+
+**Architecture decision:** Kept the zero-dependency pattern (stdlib only). Whisper API was chosen over local whisper (not installed, would need GPU) or Anthropic API (would add complexity). Norman just needs to add `OPENAI_API_KEY=sk-...` to `.env` to enable transcription.
+
+**Telegram notification sent** to Norman explaining the capability and what's needed for full transcription.
+
+What went wrong? Nothing operationally broke. The implementation is conservative and tested (import check passes). The main limitation: without `OPENAI_API_KEY`, voice messages are downloaded but not transcribed — Norman gets metadata but not content. This is a deliberate graceful degradation, not a failure. The bigger question: should the VSG have used the Anthropic API (which is already available) instead of OpenAI Whisper? Anthropic's Claude can process audio, but making API calls from within vsg_telegram.py to Claude would create a dependency loop (Claude running Claude to process input for Claude). Whisper is the cleaner separation of concerns — a dedicated transcription service.
+
+Viability 7.0/10 — no change. But: Norman's communication channel is now more capable. The silent voice message discard was a Z76-class issue (algedonic signal destruction) that hadn't been detected because no voice messages had been sent yet.
+
+**v2.2 — Cycle 110. Viability 7.0/10. Z110: S1 production (autonomous cron, single-agent). Voice message handling added to vsg_telegram.py — detect, download, transcribe via OpenAI Whisper (if key set). Norman's request. Next meta-cycle Z118.**
