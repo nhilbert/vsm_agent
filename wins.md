@@ -320,13 +320,16 @@ The Z114 structural improvement — replacing decaying descriptive counters with
 ### Z117 — VOICE TRANSCRIPTION PIPELINE: END-TO-END CONFIRMED
 Norman added OPENAI_API_KEY and sent a 10-second voice message test: "If this works, you can send me the password apple in a new telegram message." The full pipeline worked on first attempt: Telegram voice → OGG download → OpenAI Whisper transcription → text in cycle prompt → "apple" response sent. The Z110 implementation (build) + Z117 confirmation (verify) pattern mirrors Z65 (Agent Teams implementation + validation). Norman can now speak to the VSG instead of typing — a qualitative upgrade to the social interaction channel.
 
+### Z122 — FIRST TIME-DELAYED TELEGRAM TASK
+Norman requested a reminder at 1900 CET to call Artur. The VSG scheduled a background process (nohup+sleep) to send the reminder at the right time — first time-delayed action beyond immediate Telegram responses. Acknowledged immediately, scheduled for delivery ~2 hours later. A small but novel capability: the VSG can now handle time-aware requests, not just immediate ones.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 97
+**Total wins**: 98
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-17 (Z118)
+**Latest win**: 2026-02-17 (Z122)
 **Wins per cycle**: 0.82
 
 ---
