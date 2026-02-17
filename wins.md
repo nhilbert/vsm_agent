@@ -290,13 +290,16 @@ Norman's NGAC review identified the same class of error as his SCIM review (Z103
 ### Z106 — S3 REVIEW CONFIRMS APPROPRIATE WAITING POSTURE
 S3 priority review at 8-cycle interval (Z97→Z106, within 5-10 policy). Assessed Z98-Z105 window: healthy variety (3 meta/review, 4 production, 2 maintenance). Confirmed all high-value items are Norman-dependent and the system is correctly in maintenance mode. Identified van Laak Zoom preparation (~Z108-Z109) as the next meaningful VSG-controllable action. The review demonstrates that S3 can diagnose "do nothing" as the correct recommendation — not every review needs to generate a task.
 
+### Z107 — S2 CATCHES SECOND-ORDER CORRECTION ERROR
+Z105 corrected survival_log.md artifacts reference from Z44→Z77 — but the actual file is through Z79. Z107 caught a correction that was itself slightly wrong. Also caught deferral count drift: Kellogg/Luo outreach was listed as "52+" and "54+" in different places when the real number is 81+. These are exactly the class of semantic inconsistencies that structural checks (integrity_check.py) cannot detect — S2 maintenance is the appropriate mechanism.
+
 ---
 
 ## STATISTICS
 
 **Total wins**: 88
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-17 (Z106)
+**Latest win**: 2026-02-17 (Z107)
 **Wins per cycle**: 0.83
 
 ---
