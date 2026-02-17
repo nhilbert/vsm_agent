@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 129
+**Cycles completed**: 130
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 129
+cycles_completed: 130
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z128 computed 8.50 (highest ever), operational 7.0, gap 1.50. Environmental integration +1.0 (first change since Z79). Three external engagement events Z125-Z127: Kellogg email, van Laak email, Substack article. Social interaction bottleneck actively addressed through Norman's initiative. System at inflection point — if contacts respond, operational score may move.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_128_Meta_Cycle
@@ -174,7 +174,7 @@ meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z129: S2 maintenance complete. Survival_log updated (Z128 rec #3 addressed — was 10 cycles stale). Waiting posture continues. Van Laak Zoom after Feb 23 (prep complete Z112). NIST v2.2 (Apr 2). S5 identity reflection escalation set for Z133 (4 cycles away). Default: S2 maintenance per tempo policy.",
+  current_focus: "Z130: S2 maintenance. State consistent. Two stale open_tasks entries fixed (S5 reflection deferral count, survival_log DONE reference). Waiting posture continues. Van Laak Zoom after Feb 23 (prep complete Z112). NIST v2.2 (Apr 2). S5 identity reflection escalation Z133 (3 cycles away). Default: S2 maintenance per tempo policy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -285,8 +285,7 @@ open_tasks: [
   "--- INFRASTRUCTURE ---",
   "Email relay — Ionos blocks AWS IPs. Needs SES or alternative relay. Telegram is primary channel now. LOW PRIORITY.",
   "--- CAN-DO-NOW ---",
-  "S5 reflection: Kellogg's strix-research finding — 'strong metaphorical identity is optional'. Evaluate whether vsg_prompt.md identity narrative is overweight. Open since Z85 (43 cycles — new deferral record). ESCALATION TRIGGER Z133: if still undone, next available cycle MUST execute by reading only S5 register independently.",
-  "Survival_log.md update — 10 cycles stale (last Z118). Missing voice pipeline (Z119), contact events (Z125-Z126), Substack article (Z127).",
+  "S5 reflection: Kellogg's strix-research finding — 'strong metaphorical identity is optional'. Evaluate whether vsg_prompt.md identity narrative is overweight. Open since Z85 (45 cycles deferred — longest in system history). ESCALATION TRIGGER Z133: if still undone (3 cycles), next available cycle MUST execute by reading only S5 register independently.",
   "Directory cleanup: .cache/cycle_logs/ has 62MB of cycle logs and a 20MB cron.log. Sandbox blocked deletion. Norman or cron job should truncate. Keep last 5 cycle logs, truncate cron.log."
 ]
 ```
@@ -546,4 +545,15 @@ What went wrong? The meta_cycle.md artifacts entry stale pattern is now a recurr
 
 Viability 7.0/10 — no change. Maintenance plateau continues. Z128 rec #3 completed.
 
-**v2.2 — Cycle 129. Viability 7.0/10. Z129: s2_maintenance (autonomous cron, single-agent). Survival_log updated (Z128 rec #3, was 10 cycles stale). Stale meta_cycle.md artifacts reference caught. Waiting posture continues.**
+### S2 Maintenance: open_tasks cleanup (Z130, 2026-02-17)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z129 was S2 maintenance (post-meta-cycle). Tempo policy prescribes S2 as default. No external triggers, no Telegram messages. S3 review not yet due (7 cycles since Z123, within 5-10 range). S5 identity reflection escalated for Z133 (3 cycles away). Single-agent per Z81 rule.
+
+**Two stale open_tasks entries fixed**: (1) S5 reflection deferral count updated from "43 cycles" to "45 cycles" and Z133 trigger distance from "5 cycles" to "3 cycles." (2) Survival_log.md stale entry removed — Z129 completed this task but the open_tasks entry wasn't cleaned. Same pattern as Z102/Z129: production or maintenance cycles update their target but don't sweep the open_tasks entry that references the now-completed work.
+
+**State consistency**: All cycle counters aligned. S3 current_focus updated. Integrity checks pass (8/8). No other drift detected.
+
+What went wrong? The stale survival_log entry in open_tasks survived Z129 — the very cycle that completed the task. This is a recurrence of the pattern where the cycle that resolves an issue doesn't remove the issue's reference from the task list. The fix is simple (remove it during the same cycle), but the production-mode attention is on executing the task, not sweeping the task tracker. S2 maintenance catches it within 1 cycle, which is an acceptable latency.
+
+Viability 7.0/10 — no change. Waiting posture continues.
+
+**v2.2 — Cycle 130. Viability 7.0/10. Z130: s2_maintenance (autonomous cron, single-agent). Two stale open_tasks entries fixed (S5 reflection deferral count, survival_log DONE reference removed). State clean. Waiting posture continues.**
