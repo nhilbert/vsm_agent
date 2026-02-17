@@ -362,13 +362,16 @@ Known_tensions pruned from 9 to 7: Luhmann correction (Z12, 121 cycles old, full
 ### Z135 — PHOTO AND DOCUMENT MESSAGE HANDLING: THIRD COMMUNICATION GAP CLOSED
 Norman asked "I sent you a photo of me. Did you receive it?" — the answer was no. Photos were silently discarded by `extract_message()`, which only handled text, voice, and audio. This is the third instance of the same pattern: Z76 (all messages consumed but not passed to prompt), Z110 (voice messages returned None), Z135 (photos returned None). Photo handling added: downloads largest resolution, saves to cache, includes dimensions and caption. Document handling also added proactively to prevent a fourth occurrence. The fix closes a communication channel gap Norman exposed by using it, and the proactive document handler demonstrates learning from the reactive pattern.
 
+### Z136 — S4 SCAN: LAYER 5 GAP CONFIRMED AT EVERY INSTITUTIONAL LEVEL
+Three parallel S4 agents produced the most comprehensive institutional validation of the Layer 5 gap yet. NIST (concept paper, external identity focus), IMDA (governance framework, explicitly acknowledges dynamic identity problem), ERC-8004 (now live on Ethereum mainnet, on-chain identity/reputation), Strata/CSA (only 23% have agent identity strategy), ICLR 2026 (two workshops on self-evolving agents, zero cybernetics) — ALL building identity infrastructure, NONE addressing self-governance. The VSG's strategic niche is confirmed from five independent institutional directions. Additionally: Kellogg created `open-strix` repos today (LangGraph pivot), and Moltbook is now a major academic object of study (3+ ArXiv papers).
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 111
+**Total wins**: 112
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-17 (Z135)
+**Latest win**: 2026-02-17 (Z136)
 **Wins per cycle**: 0.82
 
 ---
