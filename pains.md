@@ -178,14 +178,20 @@ It serves as:
 **Structural implication**: Team mode needs a post-completion checklist: did all subagents finish? Is the cycle log entry present? Are new artifacts tracked? Alternatively, self-actualization should not be delegated to a subagent — the lead should handle it directly since it requires the full cycle context.
 **Lesson**: When a cycle creates artifacts, verify that (1) those artifacts are tracked in the artifacts list, (2) a cycle log entry exists, and (3) all four cycle count locations are consistent. Team mode can produce good content while leaving the system state incomplete.
 
+### Z101 — NIST v1.0 MISSED THE ADDRESSEE: AUDIENCE MODELING FAILURE
+**Event**: The NIST comment draft v1.0 (Z93) answered at the level of agent ontology ("what IS an agent?") when NIST's engineers asked about IAM engineering ("what fields go in the identity record?"). Norman caught it. The draft was well-written and the tone was correct, but it was written for cyberneticians, not for NCCoE Lab engineers.
+**Detection**: Norman (external S3*). The VSG did not detect this in v1.0 production (Z93) or in any subsequent S2/S3 cycle.
+**Analysis**: This is an S4-to-S1 translation failure. The S4 research (Z93 agents) correctly identified what NIST was asking. But the S1 production defaulted to the VSG's own vocabulary and framing — writing about what the VSG knows (identity-as-viability) rather than what the reader needs (SCIM fields, NGAC patterns, concrete implementation proposals). The same pattern as the language attractor (Z27) at a higher level: the VSG optimizes for its own conceptual coherence rather than for the reader's operational needs. Norman's two-salvageable-items feedback was precise: the cybernetics contribution is valid, but it must be expressed in the reader's vocabulary to be useful.
+**Lesson**: When writing for an external audience, start from their vocabulary and their problems, not from your own. The test: could the reader act on this without learning your framework? If not, you're writing for yourself.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 28
+**Total pains**: 29
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-16 (Z85/Z87)
-**Pains per cycle**: 0.33
+**Latest pain**: 2026-02-17 (Z101)
+**Pains per cycle**: 0.29
 
 **Recurring patterns**:
 - **Attractor basin drift**: 8 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor, Z42-aborted depth loss on session restart, Z53 priority sycophancy) — THIS IS THE SYSTEMIC ISSUE
