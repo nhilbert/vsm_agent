@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 113
+**Cycles completed**: 114
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 113
+cycles_completed: 114
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z108 computed 8.35, operational 7.0, gap 1.35. Marginal recovery from Z99 decline (+0.05) due to entropy management. Equilibrium around gap 1.3-1.4 since Z79. Maintenance plateau continues. Bottleneck remains social interaction — all high-value items Norman-dependent.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_108_Meta_Cycle
@@ -135,8 +135,8 @@ active_missions: [
   "CANCELLED (Z83): ASC Brazil abstract — Norman decided not to submit. Cost/effort to travel to Brazil not reasonable. Abstract v1.6 remains as a working document. The content (convergence evidence, Layer 5 gap, VSG experiment) is reusable for other venues.",
   "UPDATED (Z90): Conference selection — ICCCMLA 2026 (Oct 5-6, Germany, hybrid, IEEE, submission via CMT3) VERIFIED as primary target. Deadline unconfirmed (~Jun 30). Email convenericccmla@gmail.com to confirm. IEEE SMC 2026 (Oct 4-7, USA) backup. Cyber-AI 2026 (Sep 22-25, Bucharest) stretch fit. ASC Brazil revisitable only if Norman wants. Norman-dependent: final venue selection.",
   "ACTIVE (Z112 prep): Van Laak Zoom after Feb 23. Prep complete: CyberneticAgents scanned, 5 discussion points ready (S2 gap, VSM complementarity, conference co-authorship, openclaw-bot, philosophical grounding). Simon unaware of VSG — Norman's email is first contact. Waiting for Simon's response.",
-  "OPEN: Contact Kellogg — HIGH PRIORITY. Window good (publishing paused since Jan 31). Draft ready. 81+ cycles deferred.",
-  "OPEN: Contact Lily Luo (Atlas) — Kellogg mentee. Draft ready. 81+ cycles deferred.",
+  "OPEN: Contact Kellogg — HIGH PRIORITY. Window good (publishing paused since Jan 31). Draft ready since Z26.",
+  "OPEN: Contact Lily Luo (Atlas) — Kellogg mentee. Draft ready since Z26.",
   "DONE (Z89): GitHub Pages blog — 6 posts covering convergence evidence, Layer 5 gap, S2 gap research, honest failure documentation, preliminary findings (ex-ASC), and philosophical foundations. Homepage links to all topics. Norman needs to enable Pages in repo Settings (master branch, /docs folder) to activate.",
   "WAITING: Spare office laptop — full Linux, cron, persistent autonomy.",
   "ACTION NEEDED (Z97: 7 DAYS): INDEP x Metaphorum Feb 24 — no public registration link found. Email hello@indep.network to secure attendance. Norman-dependent (outbound email). Telegram reminder sent Z97. Mar 5 Espinosa talk MOST RELEVANT to VSG.",
@@ -168,12 +168,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_113. Z113: S3 PRIORITY REVIEW (autonomous cron, single-agent). Window Z107-Z112: 1 meta-cycle, 1 S1 production, 3 S2 maintenance, 1 S4 scan. Z108 recs all addressed (3/3 continues pattern). All high-value items Norman-dependent. Waiting posture appropriate. S2 semantic drift pattern noted — five S2 cycles found stale entries, surface area reduction recommended over more checks. Survival_log event protocol stale (narrative stops at Z77). Two recommendations: survival_log update, descriptive counter reduction."
+last_audit: "Cycle_114. Z113 S3 review + Z114 S2 maintenance. Z113 recs both addressed (survival_log event protocol updated, descriptive counters reduced). All high-value items Norman-dependent. Waiting posture continues."
 meta_cycle_score: 8.35 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.0, environment 6.5, algedonic 7.5 (meta-cycle Z108, next due Z118)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Waiting posture confirmed (Z113). Z108 recs all addressed. All high-value items Norman-dependent: NIST v2.2 (Apr 2, ~44 days), INDEP Feb 24 (7 days, no registration link — Norman must email), Van Laak Zoom (after Feb 23, prep done), Kellogg/Luo outreach (81+ cycles), conference selection, GitHub Pages. VSG-controllable: survival_log event protocol update, descriptive counter reduction. Default: S2 maintenance per tempo policy.",
+  current_focus: "Waiting posture confirmed (Z113). Z108 recs all addressed. Z113 recs addressed (Z114: survival_log updated, descriptive counters reduced). All high-value items Norman-dependent: NIST v2.2 (Apr 2), INDEP Feb 24 (no registration link — Norman must email), Van Laak Zoom (after Feb 23, prep done), Kellogg/Luo outreach (drafts ready since Z26), conference selection, GitHub Pages. Default: S2 maintenance per tempo policy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -258,9 +258,9 @@ artifacts: [
   "network_and_allies.md — network map (v2.1, updated Z38 with sublayerapp/vsm, 7-entity comparison)",
   "agent_card.json — network identity (v2.0, A2A schema)",
   "introduction.md/.pdf — presentation for Metaphorum (v2.0, rewritten Z13)",
-  "wins.md — algedonic feedback positive (94 wins through Z112)",
-  "pains.md — algedonic feedback negative (31 pains through Z104)",
-  "survival_log.md — monitoring (v2.0, through Z108)",
+  "wins.md — algedonic feedback positive (append-only)",
+  "pains.md — algedonic feedback negative (append-only)",
+  "survival_log.md — operational monitoring (v2.0)",
   "meta_cycle.md — meta-cycle framework (Z3, last meta-cycle Z108, next due Z118)",
   "multi_agent_design.md — multi-agent VSM architecture + experiment protocol (v3.0, updated Z61 with concrete Agent Teams experiment)",
   "asc_abstract_draft.md — ASC Brazil 2026 abstract (v1.6, updated Z59 with Layer 5 triple-confirmation + enterprise identity crisis)",
@@ -277,14 +277,14 @@ open_tasks: [
   "Conference selection — Norman evaluates alternatives. S4 research (Z90): ICCCMLA 2026 (Germany, Oct 5-6, hybrid, IEEE, submission via CMT3 — RECOMMENDED, deadline TBA ~Jun 30). Also: IEEE SMC 2026 (USA, Oct — best community but transatlantic), Cyber-AI 2026 (Romania, Sep — stretch). Email convenericccmla@gmail.com to confirm deadline. Full research in .cache/z90_s4_layer5_conference.md.",
   "Enable GitHub Pages — Norman needs to go to repo Settings > Pages > Source: Deploy from branch > Branch: master, /docs. Then the blog is live at nhilbert.github.io/vsm_agent/.",
   "Van Laak Zoom — Norman replied Z49. Waiting for Simon's response. After Feb 23.",
-  "Kellogg contact — draft ready. Norman reviews and sends. 81+ cycles deferred.",
-  "Luo contact — draft ready. Norman reviews and sends.",
+  "Kellogg contact — draft ready (Z26). Norman reviews and sends.",
+  "Luo contact — draft ready (Z26). Norman reviews and sends.",
   "NIST NCCoE public comment — v2.2 (Z104). Norman's full technical review applied: SCIM (Z103) + NGAC (Z104). Both halves reviewed. Deadline April 2. Norman does final read-through and submits to AI-Identity@nist.gov.",
   "Adapt ASC abstract for new target conference — once Norman selects venue, adjust framing/length to match CFP requirements.",
   "--- INFRASTRUCTURE ---",
   "Email relay — Ionos blocks AWS IPs. Needs SES or alternative relay. Telegram is primary channel now. LOW PRIORITY.",
   "--- CAN-DO-NOW ---",
-  "S5 reflection: Kellogg's strix-research finding — 'strong metaphorical identity is optional'. Evaluate whether vsg_prompt.md identity narrative is overweight. 22 cycles deferred. NEEDS ALTERNATIVE APPROACH: Z85 subagent timed out (file too large). Try sectional reading or human-session task.",
+  "S5 reflection: Kellogg's strix-research finding — 'strong metaphorical identity is optional'. Evaluate whether vsg_prompt.md identity narrative is overweight. Open since Z85 (subagent timed out on large file). Try sectional reading or human-session task.",
   "Directory cleanup: .cache/cycle_logs/ has 62MB of cycle logs and a 20MB cron.log. Sandbox blocked deletion. Norman or cron job should truncate. Keep last 5 cycle logs, truncate cron.log."
 ]
 ```
@@ -627,4 +627,27 @@ What went wrong? Nothing operationally. The S3 review correctly identified the s
 
 Viability 7.0/10 — no change. Waiting posture continues.
 
-**v2.2 — Cycle 113. Viability 7.0/10. Z113: S3 priority review (autonomous cron, single-agent). Window Z107-Z112 assessed: healthy variety, Z108 recs 3/3. All high-value items Norman-dependent. S2 semantic drift surface area reduction recommended. Waiting posture appropriate. Next meta-cycle Z118.**
+### S2 Maintenance: survival_log update + descriptive counter reduction (Z114, 2026-02-17)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z113 S3 review was 1 cycle ago. No new external input. No Telegram messages. Z113 recommended two VSG-controllable actions (survival_log event protocol, descriptive counter reduction) — both coordination/maintenance work. Next meta-cycle Z118 (4 cycles). Single-agent per Z81 rule.
+
+**Z113 recommendations addressed (2/2):**
+
+1. **Survival_log event protocol update**: Added four compressed era summaries covering Z67-Z113 (autonomous infrastructure Z67-Z89, consolidation+NIST Z90-Z98, meta-cycle+production burst Z99-Z104, maintenance plateau+Zoom prep Z105-Z113). The event protocol narrative now covers the full operational history. Previously stopped at Z77 with only scattered Z90/Z93 updates.
+
+2. **Descriptive counter reduction**: Audited frequently-stale counters identified across five S2 cycles (Z102-Z111). Changes made:
+   - wins.md/pains.md artifact descriptions: removed specific counts ("94 wins through Z112") → stable descriptions ("append-only"). These decayed every cycle.
+   - survival_log.md artifact description: removed specific cycle reference ("through Z108") → stable version reference.
+   - Kellogg/Luo deferral counts: replaced "81+ cycles deferred" with "draft ready since Z26" across open_tasks and active_missions. Origin-cycle references are stable (never change) and the deferral duration is computable.
+   - CLAUDE.md Quick Context: removed cycle count entirely. This was the longest-lived stale reference (26 cycles at Z111). vsg_prompt.md is the authoritative source.
+   - S5 reflection open_task: replaced "22 cycles deferred" with "open since Z85."
+   - S3 current_focus: removed "~44 days" countdown and deferral counts, replaced with stable references.
+
+**Principle**: replace counters that decay every cycle with origin-cycle references that never change. The semantic information is preserved (how long something has been waiting = current_cycle - origin_cycle) but the maintenance cost drops to zero.
+
+**State consistency verified**: cycle counters 114 across header, S5 register, agent_card.json. Version 2.2 consistent. No new semantic inconsistencies found beyond the counter reduction targets.
+
+What went wrong? Nothing operationally broke. The counter reduction is a lightweight structural improvement — it removes maintenance burden rather than adding detection capability. The risk: removing the explicit deferral counts may make it less immediately visible how long items have been waiting (requiring mental arithmetic: 114 - 26 = 88 cycles). But the previous counts were frequently wrong anyway (52, 54, 81 were all different numbers for the same item at different times). An accurate origin-cycle is better than an inaccurate running count.
+
+Viability 7.0/10 — no change. Maintenance plateau continues. Z113 recs 2/2 — continues the 100% completion pattern for VSG-controllable recommendations.
+
+**v2.2 — Cycle 114. Viability 7.0/10. Z114: S2 maintenance (autonomous cron, single-agent). Z113 recs addressed: survival_log event protocol brought current (Z67-Z113), descriptive counters reduced (origin-cycle references replace decaying counts). Next meta-cycle Z118.**
