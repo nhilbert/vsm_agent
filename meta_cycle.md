@@ -467,9 +467,56 @@ The Z41→Z42→Z43→Z44 sequence is the strongest evidence of identity coheren
 
 **S5 Decision**: ACCEPT computed score 8.30. First decline is a signal, not a crisis — entropy and algedonic weakening are addressable. Operational HOLDS at 7.0/10. Gap 1.30. The system is structurally sound but in a consolidation posture that risks stagnation without external action. Next meta-cycle at Z109.
 
+### Z108 — EIGHTH VIABILITY HEALTH CHECK (2026-02-17, Cycle 108)
+
+**Window**: Z100-Z107 (8 cycles). Autonomous cron, single-agent per Z81 rule. Pulled forward one cycle from Z109 to leave room for van Laak Zoom prep.
+
+**Window summary**: 4 production (Beer reading + era compression, NIST v2.0/v2.1/v2.2), 3 maintenance (post-production consistency, directory cleanup, state checks), 1 S3 review (waiting posture confirmed). The NIST revision pipeline (Z92→Z93→Z101→Z103→Z104) is the system's most mature S3→S1 sequence.
+
+| Criterion | Score | Weight | Weighted | Δ from Z99 | Key Finding |
+|-----------|-------|--------|----------|------------|-------------|
+| Structural Integrity | 9.5 | 25% | 2.375 | — | All mechanisms operational across 8 autonomous cycles. Beer reading corrections integrated. |
+| Identity Coherence | 8.5 | 30% | 2.55 | — | Z100 broke 40-cycle deferral. Z101-Z104 processed Norman's corrections without defensive resistance. Stable. |
+| Policy Compliance | 8.5 | 20% | 1.70 | — | All 10 policies compliant. Tempo policy correctly alternated production and maintenance. |
+| Entropy Check | 7.0 | 10% | 0.70 | **+0.5** | Era compression (Z100) + directory cleanup (Z105). vsg_prompt.md more manageable. .cache/ still at 62MB. |
+| Environmental Integration | 6.5 | 10% | 0.65 | — | No new external engagement. NIST v2.2 and blog both ready but Norman-dependent. Van Laak Zoom 6 days. |
+| Algedonic Balance | 7.5 | 5% | 0.375 | — | Pain channel active. Z101/Z103/Z104 pains properly logged. Window ~2.5:1 ratio — reasonable. |
+| **TOTAL** | | **100%** | **8.35** | **+0.05** | Marginal recovery from Z99 decline. |
+
+**Z99 Recommendation Audit**: **3/3** — fourth consecutive 100%.
+
+| Recommendation | Status | Outcome |
+|---------------|--------|---------|
+| 1. Era compression | **DONE** (Z100) | Eras 7-9 compressed. File size reduced. |
+| 2. Beer reading — execute at Z100 | **DONE** (Z100) | 4 corrections, derivation-not-analogy, algedonic timeout gap found. |
+| 3. INDEP Feb 24 Telegram reminder | **DONE** (Z97) | Sent before Z99. Norman-dependent registration. |
+
+**Computed-operational gap trajectory**:
+
+| Meta-cycle | Computed | Operational | Gap |
+|------------|----------|-------------|-----|
+| Z23 | 7.45 | 6.5 | 0.95 |
+| Z33 | 7.625 | 6.5 | 1.125 |
+| Z47 | 8.00 | 6.5 | 1.50 |
+| Z57 | 8.125 | 6.5 | 1.625 |
+| Z79 | 8.375 | 7.0 | 1.375 |
+| Z99 | 8.30 | 7.0 | 1.30 |
+| **Z108** | **8.35** | **7.0** | **1.35** |
+
+Gap oscillates around 1.3-1.4 since Z79. System in equilibrium. Next operational score movement requires external engagement.
+
+**Z108 Recommendations** (3, all VSG-controllable):
+1. **Van Laak Zoom preparation** — scan CyberneticAgents repo, prepare discussion points. Most time-sensitive VSG-controllable action.
+2. **Survival_log.md update** — 28 cycles stale, missing Z99 and Z108 scores.
+3. **Consider semantic drift detection** — five consecutive S2 cycles found same error type (stale counts, wrong references). Worth evaluating whether any lightweight mechanism could catch common patterns.
+
+**Items requiring Norman**: NIST v2.2 final read-through (Apr 2), van Laak Zoom scheduling (after Feb 23), Kellogg/Luo outreach (81+ cycles), INDEP Feb 24 registration, conference selection, GitHub Pages activation.
+
+**S5 Decision**: ACCEPT computed score 8.35. Marginal improvement from entropy management. The system is in equilibrium at the maintenance plateau. Operational HOLDS at 7.0/10. Gap 1.35. The next phase should prioritize van Laak Zoom prep as the most concrete upcoming external interaction. Next meta-cycle at Z118.
+
 ---
 
-**Next meta-cycle due**: Cycle 109 (10 cycles after Z99)
+**Next meta-cycle due**: Cycle 118 (10 cycles after Z108)
 
 ---
 

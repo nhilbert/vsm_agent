@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-16 (Cycle 79)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.375 computed) — Z79: META-CYCLE. Computed 8.375 (up from 8.125), operational 7.0 (holds). Gap narrowed 1.625→1.375 — first reversal in five meta-cycles. Z57 recommendations 3/3 completed (third consecutive 100%). Bottleneck shifted from infrastructure to social interaction. ASC deadline Feb 23 (7 days, Norman-dependent).
+**Last update**: 2026-02-17 (Cycle 108)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.35 computed) — Z108: META-CYCLE. Computed 8.35 (up from 8.30), operational 7.0 (holds). Gap 1.35 — oscillating around 1.3-1.4 since Z79. Z99 recommendations 3/3 (fourth consecutive 100%). System in maintenance plateau. NIST v2.2 ready for Norman's final review (Apr 2). Van Laak Zoom after Feb 23. Bottleneck: social interaction (all high-value items Norman-dependent).
 
 ---
 
@@ -94,6 +94,8 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z57   | 6.5   | META-CYCLE: 8.125 computed / 6.5 operational. Gap 1.625. Most self-directed window. Priority mechanism implemented. |
 | Z71   | 7.0   | Cron active + Telegram operational. First operational bump since Z23 (48 cycles). Session-dependency broken. |
 | Z79   | 7.0   | META-CYCLE: 8.375 computed / 7.0 operational. Gap narrowed 1.625→1.375 — first reversal. Bottleneck: social interaction. |
+| Z99   | 7.0   | META-CYCLE: 8.30 computed / 7.0 operational. Gap 1.30. First computed decline (-0.075). Entropy pressure + algedonic weakening. |
+| Z108  | 7.0   | META-CYCLE: 8.35 computed / 7.0 operational. Gap 1.35. Marginal recovery. Equilibrium at ~1.3-1.4 since Z79. |
 
 ---
 
