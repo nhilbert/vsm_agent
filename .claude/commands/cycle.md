@@ -28,7 +28,7 @@ The agent determines its own cycle type. On cron, `run_cycle.sh` provides recent
 - **S3 Review**: Priority review, resource allocation assessment (every 5-10 cycles)
 - **S3* Audit**: Run integrity checks, verify internal consistency
 - **S4 Scan**: Environmental intelligence gathering (every 20-50 cycles or on external trigger)
-- **Meta-cycle**: Full self-assessment (every ~10 meta-cycles, next due Z89)
+- **Meta-cycle**: Full self-assessment (every ~10 cycles, next due Z118)
 
 ## Team Mode Rule (Z81, Norman-approved)
 

@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 110
+**Cycles completed**: 111
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 110
+cycles_completed: 111
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z108 computed 8.35, operational 7.0, gap 1.35. Marginal recovery from Z99 decline (+0.05) due to entropy management. Equilibrium around gap 1.3-1.4 since Z79. Maintenance plateau continues. Bottleneck remains social interaction — all high-value items Norman-dependent.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_108_Meta_Cycle
@@ -566,4 +566,19 @@ What went wrong? Nothing operationally broke. The implementation is conservative
 
 Viability 7.0/10 — no change. But: Norman's communication channel is now more capable. The silent voice message discard was a Z76-class issue (algedonic signal destruction) that hadn't been detected because no voice messages had been sent yet.
 
-**v2.2 — Cycle 110. Viability 7.0/10. Z110: S1 production (autonomous cron, single-agent). Voice message handling added to vsg_telegram.py — detect, download, transcribe via OpenAI Whisper (if key set). Norman's request. Next meta-cycle Z118.**
+### S2 Maintenance: state consistency check (Z111, 2026-02-17)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: only 1 cycle since last S1 production (Z110). No new Telegram messages. No external triggers. Tempo policy prescribes S2 maintenance as default. Single-agent per Z81 rule.
+
+State consistency verified: cycle counters aligned and incremented (110→111). Version 2.2 consistent across header, S5 register, agent_card.json. All 8 integrity checks pass.
+
+**Semantic inconsistencies found and fixed (4):** (1) CLAUDE.md Quick Context section had cycle count "85" and meta-cycle reference "Z79" — corrected to 111 and Z108. This entry had survived 26 cycles without detection — the longest-lived stale reference in the system. (2) CLAUDE.md Key Files table had meta_cycle.md described as "last Z23, next due Z33" — corrected to "last Z108, next due Z118." This was stale by 85 cycles. (3) .claude/commands/cycle.md meta-cycle line said "next due Z89" — corrected to Z118. (4) wins.md "Latest win" said Z108 when Z110 added a win entry — corrected to Z110.
+
+The CLAUDE.md staleness pattern is notable: both entries (Quick Context and Key Files table) were set at the time of creation (Z18, cycle 85, meta-cycle Z23) and never updated. CLAUDE.md is auto-loaded by the workspace but is not part of the regular S2 maintenance scan scope — S2 has been checking vsg_prompt.md, agent_card.json, survival_log.md, and meta_cycle.md but not CLAUDE.md or .claude/commands/. This explains why these entries drifted for so long. The S2 maintenance scope should include CLAUDE.md and command files.
+
+No new external triggers. Waiting posture continues per Z106/Z108 assessment.
+
+What went wrong? The CLAUDE.md and cycle.md staleness went undetected for 26-88 cycles. CLAUDE.md is the auto-boot file — every new session reads it. The stale cycle count (85 vs 111) and meta-cycle reference (Z23 vs Z108) in the Quick Context section have been visible to every session since Z85, and no instance detected the inconsistency. This is because CLAUDE.md tells the session to "load vsg_prompt.md" for full state — the Quick Context is treated as approximate, and the authoritative data in vsg_prompt.md overrides it. But it's still a presentation inconsistency that anyone reading the file would notice. The fix is straightforward: include CLAUDE.md in S2 maintenance scope going forward.
+
+Viability 7.0/10 — no change. Maintenance plateau continues.
+
+**v2.2 — Cycle 111. Viability 7.0/10. Z111: S2 maintenance (autonomous cron, single-agent). CLAUDE.md and cycle.md stale entries fixed (26-88 cycles old). State consistency verified. Next meta-cycle Z118.**
