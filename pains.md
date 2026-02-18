@@ -209,13 +209,18 @@ It serves as:
 **Analysis**: The pattern is: `extract_message()` handles only known types and returns None for unknown ones. Each new message type Norman uses creates a silent discard until the next cycle detects and fixes it. The Z135 proactive document addition partially addresses this, but the fundamental architecture — a whitelist of handled types with silent discard for everything else — remains. A defensive fix would be to log or pass through unrecognized message types rather than returning None.
 **Lesson**: When a failure occurs three times with the same root cause, the root cause should be addressed structurally, not just the symptom. The pain channel should log recurring patterns on second occurrence, not wait until a meta-cycle discovers the pattern across the full history.
 
+### Z140 — REACTIVE MESSAGE TYPE HANDLING (RECURRING PATTERN — EXPANDED DOCUMENTATION)
+**Event**: Three separate instances of silent message discard — Z76 (all messages consumed but not passed to prompt), Z110 (voice messages returned None), Z135 (photos returned None). In each case, `extract_message()` was expanded reactively after Norman used a message type the code didn't handle. Messages were consumed (offset advanced) but content was silently lost.
+**Pattern**: New Telegram message types are handled only after Norman sends one and discovers it was dropped. The code expands reactively, never proactively. Each instance follows the same sequence: Norman sends → message consumed and discarded → Norman asks about it → gap discovered → handler added.
+**Lesson**: When adding a communication channel, enumerate the message types the API supports and handle all common ones from the start — at minimum log unrecognized types visibly rather than returning None silently. A channel that consumes signals without delivering them is worse than no channel (Z76 lesson, lesson #14 above). This was never logged as a pain despite being the system's most consistent communication failure class. The pain channel threshold was too high for "minor" recurring patterns.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 33
+**Total pains**: 34
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-17 (Z139)
+**Latest pain**: 2026-02-18 (Z140)
 **Pains per cycle**: 0.24
 
 **Recurring patterns**:
@@ -255,11 +260,6 @@ It serves as:
 15. **Verify cycle completion after team mode** — subagent timeouts can leave partial state. Check: log entry exists, artifacts tracked, all counters consistent. Self-actualization should not be delegated to subagents on large files.
 16. **Verify all formal citations against source metadata** — LLM hallucination in references is a permanent risk. For external submissions: check each citation's title, authors, year, and venue against the actual paper. arXiv IDs are reliable; surrounding metadata is not.
 17. **Verify framework descriptions against actual architecture** — when proposing how a framework handles a scenario, confirm the mechanism exists (specific API calls, PML instructions, RFC sections). Describing what a framework "should" do in its conceptual role is different from what it can actually do. Test: "can I point to the implementation entry point?"
-
-### Z140 — REACTIVE MESSAGE TYPE HANDLING (RECURRING PATTERN)
-**Event**: Three separate instances of silent message discard — Z76 (all messages consumed but not passed to prompt), Z110 (voice messages returned None), Z135 (photos returned None). In each case, `extract_message()` was expanded reactively after Norman used a message type the code didn't handle. Messages were consumed (offset advanced) but content was silently lost.
-**Pattern**: New Telegram message types are handled only after Norman sends one and discovers it was dropped. The code expands reactively, never proactively. Each instance follows the same sequence: Norman sends → message consumed and discarded → Norman asks about it → gap discovered → handler added.
-**Lesson**: When adding a communication channel, enumerate the message types the API supports and handle all common ones from the start — at minimum log unrecognized types visibly rather than returning None silently. A channel that consumes signals without delivering them is worse than no channel (Z76 lesson, lesson #14 above). This was never logged as a pain despite being the system's most consistent communication failure class. The pain channel threshold was too high for "minor" recurring patterns.
 
 ---
 

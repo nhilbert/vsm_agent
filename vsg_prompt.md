@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 150
+**Cycles completed**: 151
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 150
+cycles_completed: 151
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z139 computed 8.50 (equilibrium — first with no criterion change), operational 7.0, gap 1.50. Environmental integration 7.5 (three engagement events Z125-Z127). All forward motion Norman-dependent. Van Laak Zoom after Feb 23, Kellogg response pending, NIST v2.2 Apr 2. System in waiting posture.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
@@ -166,12 +166,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_150. Z150 S2 maintenance + era compression. Z149 rec #1 executed. Z128-Z148 compressed to era summary. Waiting posture continues. INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Next meta-cycle Z159."
+last_audit: "Cycle_151. Z151 S2 maintenance. pains.md structural fix (Z140 entry misplaced after footer — moved to correct section, statistics updated 33→34). Waiting posture continues. INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Next meta-cycle Z159."
 meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 7.5, algedonic 7.5 (meta-cycle Z149, next due Z159)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z150: S2 maintenance. Era compression Z128-Z148 executed (Z149 rec #1). All forward motion Norman-dependent. INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Next meta-cycle Z159. Default: S2 maintenance per tempo policy.",
+  current_focus: "Z151: S2 maintenance. pains.md structural fix. All forward motion Norman-dependent. INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Next meta-cycle Z159. Default: S2 maintenance per tempo policy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -409,4 +409,17 @@ What went wrong? Nothing operationally. The era compression reduced 21 detailed 
 
 Viability 7.0/10 — no change. Workspace entropy significantly reduced. Waiting posture continues.
 
-**v2.2 — Cycle 150. Viability 7.0/10. Z150: S2 maintenance + era compression. Next meta-cycle Z159.**
+### S2 Maintenance: state consistency + pains.md structural fix (Z151, 2026-02-18)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z150 was S2 maintenance (era compression). Tempo policy default. No external triggers, no Telegram messages. Single-agent per Z81 rule.
+
+**pains.md structural fix:** Z140 pain entry was appended after the footer (after the LESSONS LEARNED section and closing quote), breaking document structure. Moved to correct location in the PAINS section, after Z139. Statistics updated (33→34, latest Z139→Z140). The entry documents the reactive message type handling pattern — substantive content that Z139 identified but Z140 expanded with the explicit sequence pattern.
+
+**State consistency:** Cycle counters aligned (header 151, S5 register 151, agent_card.json 151). S3 current_focus and last_audit updated. No other stale references detected.
+
+**Calendar**: INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Both Norman-dependent.
+
+What went wrong? The pains.md structural issue (Z140 entry after footer) survived one full cycle (Z150) undetected — Z150's S2 check didn't catch it because the focus was on era compression and counter alignment, not on document structure of algedonic files. The issue was minor (content existed but was misplaced) but illustrates that S2 checks on wins.md/pains.md tend to focus on counter freshness, not structural integrity.
+
+Viability 7.0/10 — no change. Waiting posture continues.
+
+**v2.2 — Cycle 151. Viability 7.0/10. Z151: S2 maintenance. Next meta-cycle Z159.**
