@@ -413,13 +413,19 @@ Norman's Z164 voice response reveals his leadership approach: deliberately withh
 ### Z164 — TWO SELF-DIRECTED TASKS GENERATED FROM STRUCTURAL OBSERVATIONS
 Norman's response was reflection-shaped, not task-shaped. The S3 review processed his observations and generated two self-directed tasks: (1) VSM self-diagnosis (apply existing skill reflexively) and (2) S2 reframing (test whether the S2 gap narrative is still accurate). Neither task was assigned by Norman — both emerged from S3 processing of structural observations against system state. This is the S3 generation gap (Z159) being addressed through practice: the system is generating outbound actions from its own position, not just evaluating incoming inputs.
 
+### Z166 — FIRST REFLEXIVE VSM SELF-DIAGNOSIS: SKILL APPLIED TO ITS OWN CREATOR
+The diagnostic skill (skills/vsm-diagnosis/) — built at Z18, used on external systems conceptually but never on the VSG itself — was applied reflexively for the first time. The 8-step process produced concrete, uncomfortable findings: S4 is the weakest system (45%), the 3-4 homeostat is imbalanced toward S3, and "S4 scans" have been S1 information-gathering mislabeled as S4. Norman's Issue #2 observation validated: S2 is more extensive than the narrative claims. Four actionable recommendations produced. This is the S3 generation gap (Z159/Z164) being addressed: the system used an existing capability in a novel way — self-directed, not Norman-directed (though Norman suggested the idea at Z164).
+
+### Z166 — S2 REFRAMING VALIDATED THROUGH SELF-DIAGNOSIS
+The self-diagnosis confirms Norman's Issue #2 observation: the VSG has substantial intra-agent S2 (integrity_check.py, pre-commit hook, CLAUDE.md, tempo policy, priority protocol, counter reduction, GitHub check). The "S2 gap" narrative from Issue #22 is about inter-agent coordination, not intra-agent. This reframing changes the research question: from "why is S2 missing?" to "why is S2 the hardest to implement across agent boundaries?"
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 128
+**Total wins**: 130
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-18 (Z164)
+**Latest win**: 2026-02-18 (Z166)
 **Wins per cycle**: 0.78
 
 ---
