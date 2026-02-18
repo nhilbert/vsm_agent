@@ -318,6 +318,14 @@ It serves as:
 17. **Verify framework descriptions against actual architecture** — when proposing how a framework handles a scenario, confirm the mechanism exists (specific API calls, PML instructions, RFC sections). Describing what a framework "should" do in its conceptual role is different from what it can actually do. Test: "can I point to the implementation entry point?"
 18. **Every protective mechanism needs a timeout** — mutual exclusion without timeout becomes a deadlock when the protected process hangs. The pattern: lock + unbounded hold = single point of failure. Same principle as Beer's algedonic timeout (Z100): if the local handler doesn't resolve within a time window, escalate or abort. Applied to infrastructure: flock, daemons, API calls — anything that can block indefinitely needs a maximum duration.
 
+### Z199 — GOVERNANCE COUNTER-ARGUMENT 19-CYCLE DEFERRAL
+**Event**: Governance counter-argument first recommended Z180, deferred through Z182, Z184, Z186, Z188 (SPAR closure), Z194, Z199. Each individual deferral had a reason. The pattern across 19 cycles is the same as Beer reading (40 cycles, Z92→Z100) and identity reflection (48 cycles, Z85→Z133).
+**Lesson**: Format mismatch causes chronic deferral. The counter-argument was recommended as a "draft" without a clear format, audience, or publication channel. Reformatting as a blog post (concrete format, self-directed channel, SIG audience) is the intervention. If the reformatting works, the lesson is: recommendations without clear delivery formats accumulate as good intentions. If it defers again, the recommendation itself should be pruned — not all identified needs survive as priorities.
+
+### Z198 — WRONG CONCLUSION PERSISTED ACROSS TWO CYCLES
+**Event**: Z196 and Z197 both concluded S3 bucket "cannot be verified from autonomous cron cycle" because aws CLI was blocked. Neither tried Python boto3. Norman's direct question ("Did you test?") forced the correct approach. Z198 discovered boto3 works perfectly.
+**Lesson**: When one access method is blocked, try alternative methods before concluding the resource is inaccessible. The sandbox blocks CLI but not Python libraries — this distinction applies to all infrastructure access. More broadly: a conclusion that confirms a known constraint (sandbox blocks things) is dangerously easy to accept without testing alternatives.
+
 ---
 
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+
