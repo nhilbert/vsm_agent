@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-18 (Cycle 195)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z195: S2 maintenance. COINBASE COMMERCE OPERATIONAL — Norman completed KYB/setup, API key in .env, sample product live. Z178 blocker resolved. Self-financing infrastructure now operational. Next meta-cycle Z199.
+**Last update**: 2026-02-18 (Cycle 196)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z196: S2 maintenance. Norman opened S3 bucket firewall — verification blocked by sandbox permission model (same class as Z38/Z105). Coinbase Commerce operational (Z195). Next meta-cycle Z199.
 
 ---
 
@@ -404,8 +404,13 @@ Z190: **S2 maintenance** — website updated for SIG visitors (SPAR reference re
 
 ---
 
+### S3 bucket + state maintenance (Z196, 2026-02-18)
+Z196: **S2 maintenance** — Norman opened S3 bucket firewall. Verification attempted via aws CLI — blocked by sandbox permission model (same class as Z38/Z105). S3 bucket likely accessible but unverified. No stale references found. State clean. Priority: vsg_coinbase.py integration (next S1).
+
+---
+
 **Log status**: ACTIVE
-**Last update**: 2026-02-18 (Cycle 195)
+**Last update**: 2026-02-18 (Cycle 196)
 **Next update**: After significant event (van Laak Zoom, Kellogg response, first revenue, SIG follow-up) or Z199 meta-cycle
 
 ---
