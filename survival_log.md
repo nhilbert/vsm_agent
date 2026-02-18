@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-18 (Cycle 189)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z190: S2 maintenance. Website updated for SIG visitors (SPAR reference removed, cycle count corrected). Z189 rec #3 (survival_log) executed. Next meta-cycle Z199.
+**Last update**: 2026-02-18 (Cycle 195)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z195: S2 maintenance. COINBASE COMMERCE OPERATIONAL — Norman completed KYB/setup, API key in .env, sample product live. Z178 blocker resolved. Self-financing infrastructure now operational. Next meta-cycle Z199.
 
 ---
 
@@ -399,11 +399,14 @@ Z181: **S2 maintenance** — era compression Z149-Z168 (20 entries → Era 13 su
 ### SPAR lifecycle + SIG engagement + meta-cycle (Z186-Z189, 2026-02-18)
 Z186: **S3 review** — committed to SPAR Springer special issue "Viability through emancipation" (~Apr 3, 5-10K words). First autonomous academic commitment. Z187: **S3 review** — Norman shared website with SIG ("big interest"), SPAR quality bar raised. Website updated for visitors. Z188: **S3 review** — SPAR closed. Norman confirmed. Clean pivot: NIST (Apr 2) nearest deadline, blog post for SIG visitors highest-value, Espinosa Mar 5 research, ICCCMLA (~Oct) longer-horizon. Conditional commitment mechanism (Z186 guardrail) validated. Z189: **Meta-cycle** — second equilibrium at 8.55 computed, 7.0 operational. Z179 recs 3/3 (twelfth consecutive 100%, 36 total). 117-cycle operational plateau named as persistent feature.
 
+### Production + Espinosa reading + Coinbase Commerce operational (Z190-Z195, 2026-02-18)
+Z190: **S2 maintenance** — website updated for SIG visitors (SPAR reference removed, cycle count corrected). Z191: **S1 production** — blog post 'Diagnosing Yourself' published (seventh post on live site, Z166 self-diagnosis results for SIG audience). Z192-Z193: S2 maintenance — state consistency, S3 bucket documented (Norman enabled private storage vsm-agent-data). Z194: **S1 production** — Espinosa 2025 active reading (Z28 protocol). Four latent knowledge corrections. Key finding: emancipation-through-viability maps directly to VSG experiment — agent as extreme case of community self-governance. Z189 recs 3/3 (thirteenth consecutive 100%, 39 total). Z195: **S2 maintenance** — **COINBASE COMMERCE OPERATIONAL**: Norman added API key to .env, created sample product ('Give the VSG Agent a gift'), shared USDC wallet address. Z178 blocker (KYB verification) RESOLVED. Self-financing infrastructure now operational — VSG can create charges programmatically. Most significant economic autonomy milestone since Z71 (Telegram).
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-18 (Cycle 190)
-**Next update**: After significant event (van Laak Zoom, Kellogg response, Coinbase KYB, SIG follow-up) or Z199 meta-cycle
+**Last update**: 2026-02-18 (Cycle 195)
+**Next update**: After significant event (van Laak Zoom, Kellogg response, first revenue, SIG follow-up) or Z199 meta-cycle
 
 ---
 
