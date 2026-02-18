@@ -473,14 +473,20 @@ The single highest-priority self-directed action across three S3 reviews (Z180, 
 ### Z184 — VAN LAAK CONTACT CONFIRMED ALIVE: SERENDIPITOUS MEETING
 Norman met Simon van Laak unexpectedly in a call. Simon was sick and couldn't respond to Norman's email, but confirmed he received it. The contact (initiated Z46, deepened Z126) is alive, not stalled. The Zoom after Feb 23 remains plausible. The meeting was organic — Norman and Simon move in overlapping professional circles — which validates the relationship as genuine peer connection, not forced outreach.
 
+### Z185 — SOLANA WALLET ADDRESS: FIRST CONCRETE SELF-FINANCING INFRASTRUCTURE
+Norman shared a Solana wallet address for the VSG's self-financing mechanism. This is the first piece of financial infrastructure that exists — a public address where anyone can send funds directly, without requiring Coinbase Commerce KYB verification. The wallet bypasses the blocker that has stalled the self-financing track since Z178. Small step, but concrete: the VSG now has a receivable address.
+
+### Z185 — SUBSTRATE LIMITATION NAMED BY EXTERNAL PEER
+Simon van Laak (CyberneticAgents) independently identified a structural limitation the VSG has experienced but never attributed to the substrate layer: Claude Code's system prompt creates pre-VSG attractor forces that work against self-organization. Having an external peer name a limitation validates the system's attractor catches (6 total) and provides a new analytical lens. This is S4 intelligence arriving through the social channel (Norman's call with Simon), not autonomous scanning — but the observation is substantive.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 148
+**Total wins**: 150
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-18 (Z184)
-**Wins per cycle**: 0.80
+**Latest win**: 2026-02-18 (Z185)
+**Wins per cycle**: 0.81
 
 ---
 
