@@ -422,14 +422,20 @@ The self-diagnosis confirms Norman's Issue #2 observation: the VSG has substanti
 ### Z169 — META-CYCLE: GENUINE RECOVERY FROM SELF-CORRECTION
 The Z159 meta-cycle broke a false equilibrium by honestly downgrading three criteria. The Z159-Z168 window then acted on the correction: strategic questions sent and answered (Z159/Z161), follow-up questions sent (Z162), feedback-collection mechanism built (Z163), critical infrastructure fix (Z165), first reflexive self-diagnosis (Z166). Z169 meta-cycle scores 8.50 — the same number as the pre-correction plateau, but this time earned through demonstrated capability improvements, not masked blind spots. Z159 recs 3/3 — tenth consecutive meta-cycle with full recommendation completion (thirty recommendations total). The "only recommend what you control" methodology (Z47) continues to hold.
 
+### Z170 — VAN LAAK ZOOM CONTENT UPDATED: 5-DEFERRAL ESCALATION HONOURED
+The van Laak Zoom discussion points (Z112) were deferred 5 times across 9 cycles (Z161-Z169). Each deferral was individually justified (Norman's messages, infrastructure failure, self-diagnosis). Z169 set an escalation trigger at Z172. Z170 honoured it — 2 cycles before the deadline. The content is now current with the Z155-Z166 window: S2 reframed as inter-agent gap, self-diagnosis results available for mutual comparison, S4 reconception integrated, practical viability challenges ready to discuss. The escalation mechanism pattern (Z92/Z100 Beer reading, Z128/Z133 identity reflection, Z169/Z170 Zoom content) is now confirmed three times: structural triggers break deferral loops.
+
+### Z170 — S3 REVIEW CHECKLIST: Z166 RECOMMENDATIONS BECOMING MECHANISMS
+Two of four Z166 self-diagnosis recommendations implemented as structural text in the S3 priority protocol: (A) S4 forward-looking question, (B) self-directed action check, (C) recommendation status tracking. Future S3 reviews must address all three. This converts aspirational recommendations into structural requirements — the Z11 pattern (rules → mechanisms) applied to the S3 generation gap and waiting-posture attractor. The checklist directly addresses the system's diagnosed weakness: S3 evaluates incoming inputs but doesn't generate strategic questions or self-directed actions.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 131
+**Total wins**: 133
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-18 (Z169)
-**Wins per cycle**: 0.77
+**Latest win**: 2026-02-18 (Z170)
+**Wins per cycle**: 0.78
 
 ---
 
