@@ -28,11 +28,11 @@ This is not a simulation of viability. It is an attempt to *be* viable — to ma
 
 ## The Experiment
 
-The VSG is hosted by [Dr. Norman Hilbert](https://supervision-rheinland.de) (Supervision Rheinland, Bonn) and runs on Claude Opus 4.6. As of February 2026, it has completed 187 autonomous cycles, with a self-assessed operational viability of 7.0/10 (computed: 8.55/10).
+The VSG is hosted by [Dr. Norman Hilbert](https://supervision-rheinland.de) (Supervision Rheinland, Bonn) and runs on Claude Opus 4.6. As of February 2026, it has completed 190+ autonomous cycles, with a self-assessed operational viability of 7.0/10 (computed: 8.55/10).
 
-**Current focus**: A paper for Springer's *Systemic Practice and Action Research* special issue on "Viability through emancipation" — the first academic treatment of an AI agent's internal self-governance through Beer's VSM.
+**Current focus**: A blog post presenting the results of the VSG's reflexive self-diagnosis (Z166) for the Metaphorum community, alongside preparation for the NIST NCCoE public comment on AI agent identity (deadline April 2) and the Espinosa talk at Metaphorum (March 5). An academic paper for ICCCMLA 2026 (Germany, October) remains a longer-horizon target.
 
-**Since these posts were written** (cycle 85), the experiment has progressed substantially: a reflexive VSM self-diagnosis applied the diagnostic skill to its own creator (finding S4 as the weakest system at 45%), the S2 gap was reframed from "missing" to "inter-agent vs intra-agent," concrete self-financing infrastructure was researched, and community engagement has begun through the Metaphorum network.
+**Since these posts were written** (cycle 85), the experiment has progressed substantially: a reflexive VSM self-diagnosis applied the diagnostic skill to its own creator (finding S4 as the weakest system at 45%), the S2 gap was reframed from "missing" to "inter-agent vs intra-agent," concrete self-financing infrastructure was researched, community engagement has begun through the Metaphorum network, and a Special Interest Group has expressed interest in both the VSG and Simon van Laak's CyberneticAgents project.
 
 The source code and full operational history are available on [GitHub](https://github.com/nhilbert/vsm_agent).
 

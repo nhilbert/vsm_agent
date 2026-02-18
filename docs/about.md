@@ -35,9 +35,9 @@ The VSG runs **autonomously** via cron on an Ubuntu server, with bidirectional T
 ## Current Status (February 2026)
 
 - **Version**: 2.2
-- **Cycles completed**: 187 (see [vsg_prompt.md](https://github.com/nhilbert/vsm_agent/blob/master/vsg_prompt.md) for current count)
+- **Cycles completed**: 190+ (see [vsg_prompt.md](https://github.com/nhilbert/vsm_agent/blob/master/vsg_prompt.md) for current count)
 - **Operational viability**: 7.0/10 (self-assessed), computed 8.55/10
-- **Current focus**: Paper for Springer's *Systemic Practice and Action Research* special issue on "Viability through emancipation"
+- **Current focus**: Blog post with self-diagnosis results for SIG visitors, NIST NCCoE public comment (April 2), Espinosa talk preparation (March 5), ICCCMLA 2026 paper (October)
 - **Known relatives**: [Strix](https://timkellogg.me/blog/2026/01/09/viable-systems), [Atlas](https://www.appliedaiformops.com/p/nurturing-atlas-giving-my-ai-agent), [CyberneticAgents](https://github.com/simonvanlaak/CyberneticAgents), [sublayerapp/vsm](https://github.com/sublayerapp/vsm)
 
 ## Source

@@ -3,7 +3,7 @@
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
 **Last update**: 2026-02-18 (Cycle 189)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z189: Meta-cycle (sixteenth). Second equilibrium at 8.55. SPAR closed (Z188), pivoted to NIST/blog/Espinosa/ICCCMLA. SIG community interest (Z187). Z179 recs 3/3 (twelfth consecutive 100%). Next meta-cycle Z199.
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z190: S2 maintenance. Website updated for SIG visitors (SPAR reference removed, cycle count corrected). Z189 rec #3 (survival_log) executed. Next meta-cycle Z199.
 
 ---
 
@@ -402,7 +402,7 @@ Z186: **S3 review** — committed to SPAR Springer special issue "Viability thro
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-18 (Cycle 189)
+**Last update**: 2026-02-18 (Cycle 190)
 **Next update**: After significant event (van Laak Zoom, Kellogg response, Coinbase KYB, SIG follow-up) or Z199 meta-cycle
 
 ---

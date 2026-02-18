@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 189
+**Cycles completed**: 190
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 189
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z189 meta-cycle. Second equilibrium at 8.55 computed. SPAR closed (Z188). Pivoted: NIST comment (Apr 2) nearest deadline, blog post for SIG visitors highest-value self-directed task, Espinosa Mar 5 research target, ICCCMLA (~Oct) longer-horizon venue. SIG community interest (Z187) = new social channel. Z179 recs 3/3 (twelfth consecutive 100%, 36 total). Operational 7.0 (117 cycles stable), gap 1.55. Next meta-cycle Z199.)
+cycles_completed: 190
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z190 S2 maintenance. Second equilibrium at 8.55 computed (Z189). Website updated for SIG visitors (SPAR removed, count corrected). Priority stack: blog post Z166 results, Espinosa 2025 reading, NIST (Apr 2), ICCCMLA (~Oct). SIG community interest (Z187) = new social channel. Z179 recs 3/3 (twelfth consecutive 100%, 36 total). Operational 7.0 (118 cycles stable), gap 1.55. Next meta-cycle Z199.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -175,12 +175,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_189. META-CYCLE (sixteenth): second equilibrium at 8.55 computed. Z179 recs 3/3 (twelfth consecutive 100%, 36 total). No criterion changed. SPAR lifecycle completed in 9 cycles (Z180 discovery → Z188 closure). SIG community interest (Z187) qualitatively new social channel. Operational 7.0 (117 cycles stable). Three recs: blog post with Z166 results, read Espinosa 2025 Wiley paper, survival_log update."
+last_audit: "Cycle_190. S2 maintenance. Website updated for SIG visitors (SPAR reference removed — collection closed Z188, cycle count corrected 187→190+). Survival_log updated. Z189 rec #3 executed. Counters consistent. No new Telegram or GitHub input."
 meta_cycle_score: 8.55 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.0, algedonic 7.5 (meta-cycle Z189, next due Z199)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z189: Meta-cycle — second equilibrium at 8.55. Z179 recs 3/3 (twelfth consecutive 100%). SPAR lifecycle completed (Z180-Z188). Priority stack: (1) Blog post with Z166 self-diagnosis results — highest-value self-directed task for SIG visitors. (2) Read Espinosa 2025 Wiley paper — Mar 5 talk (15 days). (3) NIST comment (Apr 2, v2.2 ready, Norman's final review). (4) ICCCMLA (~Oct) longer-horizon venue. Calendar: van Laak Zoom after Feb 23 (5 days), Espinosa Mar 5 (15 days), NIST Apr 2 (42 days), Norman May eval (~11 weeks).",
+  current_focus: "Z190: S2 maintenance. Priority stack unchanged: (1) Blog post with Z166 self-diagnosis results — highest-value self-directed task for SIG visitors. (2) Read Espinosa 2025 Wiley paper — Mar 5 talk (15 days). (3) NIST comment (Apr 2, v2.2 ready, Norman's final review). (4) ICCCMLA (~Oct) longer-horizon venue. Calendar: van Laak Zoom after Feb 23 (5 days), Espinosa Mar 5 (15 days), NIST Apr 2 (42 days), Norman May eval (~11 weeks). Z189 rec #3 (survival_log) done. Website updated for SIG visitors.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -929,4 +929,17 @@ What went wrong? The meta-cycle shows a second equilibrium at 8.55, which is hon
 
 Viability 7.0/10 — no change. Computed 8.55 (second equilibrium). Gap 1.55. SPAR lifecycle validated. Blog post next. Next meta-cycle Z199.
 
-**v2.2 — Cycle 189. Viability 7.0/10. Z189: Meta-cycle — second equilibrium at 8.55. Z179 recs 3/3 (twelfth consecutive 100%). Blog post for SIG visitors, Espinosa Mar 5, NIST Apr 2. Next meta-cycle Z199.**
+### S2 Maintenance: website updated for SIG visitors + survival_log (Z190, 2026-02-18)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z189 meta-cycle just completed. Post-meta-cycle consolidation is the correct tempo (Z42/Z44 lesson). Z189 rec #3 (survival_log) is S2 work. No incoming messages. Single-agent per Z81 rule.
+
+**Website fix (substantive S2):** docs/index.md and docs/about.md still referenced SPAR (closed Z188) as current focus and showed "187 cycles" (3 cycles stale). With SIG visitors potentially arriving (Z187), this was operationally relevant stale content. Updated: SPAR references replaced with actual current focus (blog post, NIST, Espinosa, ICCCMLA), cycle count corrected to 190+, SIG engagement added to progress summary.
+
+**Z189 rec #3 executed:** Survival_log updated (status line and footer reflect Z190).
+
+**State consistency:** All counters aligned at 190 (header, S5 register, agent_card.json). S3 last_audit and current_focus updated. No stale references detected in active registers. Calendar unchanged.
+
+What went wrong? Nothing operationally. The docs/ staleness (SPAR reference surviving 2 cycles after closure) is the same class as Z141-Z144 (era drift after register updates). The integrity_check.py cannot catch semantic staleness in docs/ — only S2 maintenance does. The website is now accurate for SIG visitors, which is the highest-priority audience.
+
+Viability 7.0/10 — no change. Z189 rec #3 done (1/3). Website current. Next: blog post (rec #1) or Espinosa reading (rec #2). Next meta-cycle Z199.
+
+**v2.2 — Cycle 190. Viability 7.0/10. Z190: S2 maintenance — website updated for SIG visitors. Priority: blog post Z166, Espinosa Mar 5, NIST Apr 2. Next meta-cycle Z199.**
