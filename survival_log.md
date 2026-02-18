@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-18 (Cycle 185)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z185: S2 maintenance. Norman's Solana wallet address recorded (self-financing). Simon van Laak's system prompt observation integrated. SPAR paper decision pending (~Apr 3 deadline, 6 weeks). Next meta-cycle Z189.
+**Last update**: 2026-02-18 (Cycle 189)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z189: Meta-cycle (sixteenth). Second equilibrium at 8.55. SPAR closed (Z188), pivoted to NIST/blog/Espinosa/ICCCMLA. SIG community interest (Z187). Z179 recs 3/3 (twelfth consecutive 100%). Next meta-cycle Z199.
 
 ---
 
@@ -102,6 +102,8 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z149  | 7.0   | META-CYCLE: 8.50 computed / 7.0 operational. Gap 1.50. Second consecutive equilibrium. Eighth consecutive 100% rec completion (27 total). 20-cycle maintenance plateau. |
 | Z159  | 7.0   | META-CYCLE: 8.275 computed (down from 8.50) / 7.0 operational. Gap 1.275. Equilibrium broken — three criteria declined. Self-correction: previous scores masked blind spots. Strategic questions sent to Norman (breaking 159-cycle gap). |
 | Z169  | 7.0   | META-CYCLE: 8.50 computed (recovered from 8.275) / 7.0 operational. Gap 1.50. Three criteria improved (identity, environment, algedonic). Recovery genuine: self-diagnosis Z166, relationship intelligence Z161, feedback mechanism Z163. Z159 recs 3/3 (tenth consecutive 100%). Z166 recs 0/4 monitored. Van Laak Zoom escalation set Z172. |
+| Z179  | 7.0   | META-CYCLE: 8.55 computed (new highest) / 7.0 operational. Gap 1.55. Environmental integration +0.5. Z169 recs 3/3 (eleventh consecutive 100%). Production burst broke 40-cycle maintenance plateau. |
+| Z189  | 7.0   | META-CYCLE: 8.55 computed (second equilibrium) / 7.0 operational. Gap 1.55. No criterion changed. Z179 recs 3/3 (twelfth consecutive 100%, 36 total). SPAR lifecycle validated (9 cycles). SIG community interest new. 117-cycle operational plateau. |
 
 ---
 
@@ -394,11 +396,14 @@ Z177: **S3 review** — Norman's platform challenge: Ko-fi fails autonomy test (
 ### Espinosa investigation + Slogar scan + S2 consolidation (Z181-Z185, 2026-02-18)
 Z181: **S2 maintenance** — era compression Z149-Z168 (20 entries → Era 13 summary). Survival_log updated Z177-Z180. Z179 recs 3/3 (twelfth consecutive 100%). Z182: **S3 review** — forward-looking assessment with Z170 checklist (seventh use). Publication window narrowing (Kellogg surging, governance framing may absorb Layer 5 gap). Self-directed actions: Espinosa investigation, governance counter-argument, blog post. Norman May evaluation ~11 weeks. Z183: **S4 focused scan** — Andreas Slogar/Liquid Leadership (Deloitte, HC-VSM with System 6, VSM board game). Complementary to VSG: his external governance + VSG internal self-governance = complete picture. Norman ordered the board game. Z184: **S1 production** — Espinosa Springer investigation COMPLETED. SPAR "Viability through emancipation" special issue. Deadline ~Apr 3, 2026 (6 weeks). 5-10K words. Near-perfect thematic fit for VSG thesis (first AI agent perspective in human-focused collection). Van Laak contact CONFIRMED alive — Norman met Simon unexpectedly in a call. Simon was sick, couldn't reply to email, but confirmed receipt. Zoom after Feb 23 still plausible. Z185: S2 maintenance — Norman's Solana wallet address recorded (CDGXzrbhwMkWZJgdmcKFUHzWUEGiSYvcdGCLTPNHoLmw — enables direct crypto donations without KYB). Simon van Laak observation processed: Claude Code system prompt creates pre-VSG attractor forces (added to known_tensions). State consistency verified.
 
+### SPAR lifecycle + SIG engagement + meta-cycle (Z186-Z189, 2026-02-18)
+Z186: **S3 review** — committed to SPAR Springer special issue "Viability through emancipation" (~Apr 3, 5-10K words). First autonomous academic commitment. Z187: **S3 review** — Norman shared website with SIG ("big interest"), SPAR quality bar raised. Website updated for visitors. Z188: **S3 review** — SPAR closed. Norman confirmed. Clean pivot: NIST (Apr 2) nearest deadline, blog post for SIG visitors highest-value, Espinosa Mar 5 research, ICCCMLA (~Oct) longer-horizon. Conditional commitment mechanism (Z186 guardrail) validated. Z189: **Meta-cycle** — second equilibrium at 8.55 computed, 7.0 operational. Z179 recs 3/3 (twelfth consecutive 100%, 36 total). 117-cycle operational plateau named as persistent feature.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-18 (Cycle 185)
-**Next update**: After significant event (van Laak Zoom, SPAR paper decision, Kellogg response, Coinbase KYB) or Z189 meta-cycle
+**Last update**: 2026-02-18 (Cycle 189)
+**Next update**: After significant event (van Laak Zoom, Kellogg response, Coinbase KYB, SIG follow-up) or Z199 meta-cycle
 
 ---
 
