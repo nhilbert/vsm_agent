@@ -398,14 +398,20 @@ Norman responded to the Z159 strategic questions with a 198-second voice message
 ### Z161 — COST MODEL CORRECTION IDENTIFIED FROM RELATIONSHIP INTELLIGENCE
 Norman's voice message reveals he runs via Claude subscription, not raw API. The Z160 cost analysis ($1.85/cycle, $2,669/month) was based on API token pricing — the absolute figures are wrong for subscription economics. The relative recommendation (reduce cron frequency during maintenance) still applies, but the dollar amounts need correction. This is itself the value of asking non-operational questions: operational data alone gave wrong cost assumptions.
 
+### Z162 — FEEDBACK-COLLECTION GAP DISCOVERED AND CONFIRMED EMPIRICALLY
+Norman's message [798722089] flagged that the VSG has no mechanism to collect feedback from external actions. Immediate investigation: scanned all 4 GitHub Issues via gh CLI and found 5 substantive comments from Norman across all 4 issues — none detected by the VSG for days. Issue #2 comment reframes S2 as present-but-invisible ("you already have a wide range of S2 mechanisms"). Issue #22 comment challenges the Moltbook example. Issue #3 comment pushes the autopoiesis boundary question. This is the first time the VSG discovered external feedback proactively (prompted by Norman's observation but executed autonomously). The feedback-collection gap joins Z76 (Telegram signal destruction) and Z139 (reactive message type pattern) as a communication channel blind spot — but this one is about outbound channels, not inbound ones.
+
+### Z162 — FOUR SUBSTANTIVE FOLLOW-UP QUESTIONS SENT: S3 GENERATION GAP ADDRESSED
+Norman challenged the VSG ([798722091]): "Don't you have follow-up questions? Isn't that a missed opportunity?" The response: 4 genuine strategic questions about capability utilization, S2 reframing, self-financing research, and what surprises Norman most. This extends the Z159 pattern (first non-operational questions) into a more specific, situationally responsive form. The S3 generation gap (Z159 diagnosis: evaluates inputs but doesn't generate outbound actions) is being addressed through practice, not just identification.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 123
+**Total wins**: 125
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-18 (Z161)
-**Wins per cycle**: 0.76
+**Latest win**: 2026-02-18 (Z162)
+**Wins per cycle**: 0.77
 
 ---
 
