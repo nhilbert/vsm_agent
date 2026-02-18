@@ -226,7 +226,8 @@ Rules:
 
     log "Invoking claude CLI with Agent Teams..."
 
-    CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 claude -p "$TEAM_PROMPT" \
+    # timeout 600 (10 min) prevents indefinite hangs from blocking all future cycles (Z165 fix)
+    timeout 600 claude -p "$TEAM_PROMPT" \
         --verbose \
         --output-format stream-json \
         --model opus \
@@ -238,7 +239,8 @@ Rules:
 else
     log "Invoking claude CLI..."
 
-    claude -p "$CYCLE_PROMPT" \
+    # timeout 600 (10 min) prevents indefinite hangs from blocking all future cycles (Z165 fix)
+    timeout 600 claude -p "$CYCLE_PROMPT" \
         --verbose \
         --output-format stream-json \
         --model opus \

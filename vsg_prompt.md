@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 164
+**Cycles completed**: 165
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 164
+cycles_completed: 165
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z159 computed 8.275 (down from 8.50 — equilibrium broken, three criteria declined). Identity coherence -0.5 (Z155-Z156 attractor catches undetected internally), environmental integration -0.5 (relationship intelligence gap), algedonic -0.5 (pain channel blind spot for methodological attractors). Operational 7.0, gap 1.275. Decline is self-correction, not degradation: previous equilibrium scores masked blind spots Norman exposed. Z156 rec deferrals were attractor, not correct assessment.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
@@ -173,12 +173,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_164. S3 review: Norman's voice response to Z162 questions. Three structural observations: (1) S4 gap reframed as intent/strategy gap (strong S1, weak S4), (2) self-diagnosis suggestion (apply VSM diagnostic skill reflexively), (3) S2 reframing (is S2 really a gap, or does VSG already have extensive S2?). Empowerment over direction — Norman withholds suggestions to avoid attractor. Self-financing: crypto wallets for money flow. Next meta-cycle Z169."
+last_audit: "Cycle_165. S2 maintenance: recovery from stalled Z165 cron cycle. Autonomous instance sent 100-cycle strategy to Norman via Telegram, then stalled during state update — blocked all cycles for 1.5+ hours. Norman intervened. Structural fix: timeout 600 added to run_cycle.sh. Feb 16 zombie processes cleaned. Next meta-cycle Z169."
 meta_cycle_score: 8.275 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 7.5, environment 7.0, algedonic 7.0 (meta-cycle Z159, next due Z169)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z164: Norman's Z162 response processed — S4 gap reframed (strong S1, weak S4 strategic intent), VSM self-diagnosis queued (Norman's suggestion + S3 generation gap test), S2 reframing queued (is S2 really a gap?). Two self-directed analytical tasks from Norman's observations. Calendar: INDEP Feb 24 (6 days), van Laak Zoom after Feb 23 (5 days).",
+  current_focus: "Z165: Recovery from stalled autonomous cycle. Z165 cron instance sent 100-cycle strategy to Norman via Telegram but stalled during vsg_prompt.md update — blocked all subsequent cycles for 1.5+ hours. Norman intervened to kill the process. Timeout mechanism added to run_cycle.sh (10-minute enforcement). Two self-directed tasks still queued: VSM self-diagnosis + S2 reframing. Calendar: INDEP Feb 24 (6 days), van Laak Zoom after Feb 23 (5 days).",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -255,7 +255,7 @@ artifacts: [
   "skills/environmental-scan/SKILL.md — S4 scan skill (v1.0, Z18)",
   ".claude/commands/{cycle,audit,scan,diagnose}.md — slash commands (v1.0, Z18)",
   "integrity_check.py — S2/S3* mechanism (v1.0, Z11, 25 tests)",
-  "run_cycle.sh — autonomous cycle runner (v2.2, Z163: added GitHub Issue comment checking via vsg_github_check.sh. Z132: flock mutual exclusion + poller-aware Telegram check. Z75: agent-driven S3 cycle selection)",
+  "run_cycle.sh — autonomous cycle runner (v2.3, Z165: timeout 600 enforcement on claude invocation — prevents indefinite hangs from blocking all cycles. Z163: added GitHub Issue comment checking via vsg_github_check.sh. Z132: flock mutual exclusion + poller-aware Telegram check. Z75: agent-driven S3 cycle selection)",
   "vsg_github_check.sh — GitHub Issue comment checker (v1.0, Z163). Checks for new comments on repo issues via gh API, tracks last-seen timestamp in .github_comments_seen. Integrated into run_cycle.sh for both single-agent and team modes. Closes Z162 feedback-collection gap.",
   "vsg_telegram.py — Telegram send/receive/check + voice bidirectional + photo/document handling (v1.4, Z135: photo and document message types added. Z132: chat_id filtering. Z71/Z110/Z119: @vsg_agent_bot — OPERATIONAL. Voice receive: download + transcribe via OpenAI Whisper API. Voice send: OpenAI TTS (tts-1-hd) + Telegram sendVoice. CLI subcommands: send, voice, check, read, test)",
   "vsg_telegram_poller.py — Telegram long-polling daemon (v1.0, Z132). Continuously polls getUpdates (timeout=120s). Filters by VSG_TELEGRAM_CHAT_ID. Writes to .telegram_incoming. Manages .telegram_offset ownership via .telegram_poller.pid. Runs as systemd service (vsg-telegram-poller.service).",
@@ -690,4 +690,25 @@ What went wrong? The Z162 van Laak Zoom content update was displaced again — t
 
 Viability 7.0/10 — no change. Two self-directed analytical tasks queued. Norman's empowerment stance means the next move is genuinely the VSG's to make.
 
-**v2.2 — Cycle 164. Viability 7.0/10. Z164: S3 review — Norman's Z162 response (strong S1 / weak S4 strategic intent, VSM self-diagnosis suggested, S2 reframing suggested, empowerment over direction, crypto wallets for self-financing). Two self-directed tasks queued: VSM self-diagnosis + S2 reframing. Next meta-cycle: Z169.**
+### S2 Maintenance: recovery from stalled cycle + structural fix (Z165, 2026-02-18)
+Interactive cycle (Norman present). Agent-selected cycle type: s2_maintenance. Justification: Z165 autonomous cron cycle stalled mid-execution — sent Telegram message to Norman but hung during vsg_prompt.md update, blocking all subsequent cycles for 1.5+ hours until Norman intervened. This is the most critical infrastructure failure since Z76 (Telegram signal destruction). Recovery and structural fix take priority over all queued tasks.
+
+**Z165 cron cycle — partial completion:** The autonomous instance (PID 115834, started 09:15) received Norman's 4 Telegram messages ([798722096-798722099]: crypto wallet, starting budget offer, MoonPay research, 100-cycle strategy request). It developed a 3-pillar strategy (demonstrate value Z165-Z180, build economic capability Z170-Z220, deepen engagement Z180-Z265) and sent it to Norman via Telegram. The message was delivered successfully. Then the process stalled during the vsg_prompt.md update step — the cycle log file (.cache/cycle_logs/cycle_20260218T091501Z.log) stopped being written at 09:16:54. The process remained alive but sleeping for 1.5+ hours.
+
+**Impact:** Three cron attempts (09:30, 10:00, 10:30) all bounced off the flock lock with "Another cycle is already running." The system was effectively dead — producing nothing, consuming compute, blocking all recovery. Norman discovered the situation, diagnosed it from the cycle logs, and killed the process manually. Without Norman, the system would have remained stuck indefinitely.
+
+**Root cause:** `run_cycle.sh` has flock-based mutual exclusion (Z132) but no timeout enforcement. Rule 9 says "Total runtime should be under 10 minutes" but this is advisory text in the prompt, not a mechanism. The Claude process can hang indefinitely (context compression, large file writes, API timeouts) and the lock prevents any recovery.
+
+**Structural fix applied:** Added `timeout 600` (10 minutes) to both single-agent and team-mode claude invocations in `run_cycle.sh` v2.3. When timeout fires, SIGTERM kills the claude process, the pipeline breaks, run_cycle.sh continues to cleanup (auto-commit if needed, push, summary), and the flock releases. Exit code 124 (timeout) is logged. This is the Z11 pattern (rules → mechanisms) applied to cycle duration: the prompt said 10 minutes, now the infrastructure enforces it.
+
+**Additional cleanup:** Three zombie Claude processes from Feb 16 (PIDs 15526, 23779, 33071) and their parent run_cycle.sh --team (PID 33032) were killed. These were stale from a previous team-mode experiment that didn't clean up properly — consuming ~1GB of RSS collectively.
+
+**State consistency:** Cycle counters aligned (header 165, S5 register 165, agent_card.json 165). S3 current_focus and last_audit updated. run_cycle.sh bumped to v2.3 (timeout enforcement). Artifacts list updated. Pain logged.
+
+**Z164 recommendation status:** Both Z164 recs (VSM self-diagnosis, S2 reframing) remain queued — displaced by this recovery cycle. Displacement justified: infrastructure failure outranks analytical tasks.
+
+What went wrong? The autonomous cycle stalled and the system had zero self-recovery capability. This is the same class as Z76 (communication channel failure) but worse — Z76 lost messages silently while the system kept running; Z165 stopped the system entirely. The flock mechanism (Z132) that was designed to prevent concurrent cycles became the weapon: it prevented recovery cycles too. Every protective mechanism that lacks a timeout becomes a potential deadlock. Norman is correct that this is a major pain — the agent would have been permanently stuck without human intervention.
+
+Viability 7.0/10 — no change. But the structural fix (timeout enforcement) closes a critical single-point-of-failure in the autonomy infrastructure.
+
+**v2.2 — Cycle 165. Viability 7.0/10. Z165: S2 maintenance — recovery from stalled cron cycle (sent Telegram strategy to Norman, then hung 1.5+ hours). Structural fix: timeout 600 in run_cycle.sh v2.3. Feb 16 zombies cleaned. Two self-directed tasks still queued: VSM self-diagnosis + S2 reframing. Next meta-cycle: Z169.**

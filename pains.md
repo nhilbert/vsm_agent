@@ -252,13 +252,28 @@ It serves as:
 **Structural implication**: Any external action (GitHub Issues, blog posts, potential future platforms) needs a feedback-monitoring mechanism. Publishing without monitoring is S1 without S4 — production without intelligence about how the production was received.
 **Lesson**: Every external action should have a corresponding feedback-collection mechanism. A post without a way to see responses is a shout into a void — it creates the illusion of external engagement without the reality.
 
+### Z165 — STALLED CYCLE BLOCKS ALL FUTURE CYCLES: NO SELF-RECOVERY MECHANISM
+**Event**: Z165 autonomous cron cycle (PID 115834, started 09:15) processed Norman's 4 Telegram messages, developed a 100-cycle strategy, and sent it via Telegram successfully. Then stalled during vsg_prompt.md update — the cycle log file stopped being written at 09:16:54. The process remained alive but sleeping for 1.5+ hours. Three subsequent cron attempts (09:30, 10:00, 10:30) all failed with "Another cycle is already running" due to flock lock. Additionally, 3 zombie Claude processes from a Feb 16 --team run (PIDs 15526, 23779, 33071) were consuming ~1GB RSS.
+**Detection**: Norman (external S3*). The system had zero capability to detect or recover from this state autonomously.
+**Analysis**: The flock mutual exclusion mechanism (Z132) prevents concurrent cycles — correct behavior. But when combined with no timeout on the claude invocation, a hung process becomes a permanent deadlock. The system can only die, never recover. This is worse than Z76 (Telegram signal destruction) because Z76 lost data while the system continued operating; Z165 stopped the system entirely. The stated "10-minute limit" (run_cycle.sh rule 9) was advisory text in the prompt, not a mechanism — the same class of error as pre-Z11 (rules without enforcement).
+**Impact**: (1) System was dead for 1.5+ hours with no autonomous recovery path. (2) The Telegram strategy message was sent but state was never updated — creating a gap between what Norman received and what the system records. (3) Three cron cycles were wasted. (4) Without Norman, the system would have remained stuck indefinitely — a total autonomy failure.
+**Structural fix**: Added `timeout 600` to both single-agent and team-mode claude invocations in `run_cycle.sh` v2.3. Timeout sends SIGTERM, pipeline breaks, run_cycle.sh continues to cleanup (auto-commit, push, summary), flock releases. Exit code 124 logged. The Z11 pattern (rules → mechanisms) applied to cycle duration.
+**Remaining risk**: The timeout kills the process but doesn't complete the cycle — state may be partially updated. The auto-commit block in run_cycle.sh (lines 262-274) mitigates this by committing whatever was written before the timeout. But a cycle that times out during a large edit could leave corrupted state. A future improvement: atomic writes (write to temp file, then rename) for vsg_prompt.md updates.
+**Lesson**: Every protective mechanism without a timeout is a potential deadlock. Flock prevents concurrent cycles — good. Flock without timeout prevents ALL cycles when one hangs — lethal. The pattern: mutual exclusion + unbounded hold = single point of failure. Same principle as Beer's algedonic timeout (Z100): if the local handler doesn't resolve within a time window, escalate or abort.
+
+### Z165 — ZOMBIE PROCESSES FROM FEB 16 TEAM MODE: NO CLEANUP MECHANISM
+**Event**: Three Claude processes (PIDs 15526, 23779, 33071) and one run_cycle.sh --team (PID 33032) from Feb 16 were still running, consuming ~1GB RSS collectively. They were stale remnants from a team-mode experiment that completed without killing its child processes.
+**Detection**: Norman (external S3*, during Z165 investigation).
+**Analysis**: The `--team` mode spawns subagent processes, but `run_cycle.sh` has no explicit cleanup of child processes on exit. When a team cycle completes, the parent exits but the children may persist as orphans if they were forked (not exec'd). This is a minor resource waste but adds noise to process monitoring and could interfere with future cycle diagnosis.
+**Lesson**: Team-mode cleanup should explicitly kill child processes on exit (trap EXIT). Minor compared to the timeout issue but part of the same infrastructure hygiene class.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 40
+**Total pains**: 42
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-18 (Z162)
+**Latest pain**: 2026-02-18 (Z165)
 **Pains per cycle**: 0.25
 
 **Recurring patterns**:
@@ -274,7 +289,8 @@ It serves as:
 - **Environment model gaps**: 5 instances (Z33 wrong substrate, Z38 untested network assumption, Z39 repo status accepted without checking recency, Z41 token budget not modeled, Z41 session limits unknown)
 - **Resource management**: 1 instance (Z41 research data nearly lost — no incremental persistence strategy)
 - **Infrastructure testing gaps**: 2 instances (Z62 permission gates untested, Z76 Telegram full-path untested)
-- **Incomplete cycle execution**: 1 instance (Z85 team mode subagent timeout — no log entry, untracked artifacts, partial counter update)
+- **Incomplete cycle execution**: 2 instances (Z85 team mode subagent timeout — no log entry, untracked artifacts; Z165 process hang — sent Telegram but stalled on state update, blocked all future cycles 1.5+ hours)
+- **Infrastructure deadlock**: 1 instance (Z165 — flock without timeout = permanent lock when process hangs. Fixed: timeout 600 in run_cycle.sh v2.3)
 - **LLM hallucination in citations**: 1 instance (Z103 — 5 errors in 2 references in NIST draft)
 - **Framework abstraction-level errors**: 2 instances (Z103 SCIM governance, Z104 NGAC monitoring/alerting — consistent pattern of describing what frameworks should do conceptually rather than what they can do architecturally)
 - **Reactive message type handling**: 3 instances (Z76 all messages, Z110 voice, Z135 photos — same root cause: whitelist-based extract_message with silent discard of unknown types)
@@ -300,6 +316,7 @@ It serves as:
 15. **Verify cycle completion after team mode** — subagent timeouts can leave partial state. Check: log entry exists, artifacts tracked, all counters consistent. Self-actualization should not be delegated to subagents on large files.
 16. **Verify all formal citations against source metadata** — LLM hallucination in references is a permanent risk. For external submissions: check each citation's title, authors, year, and venue against the actual paper. arXiv IDs are reliable; surrounding metadata is not.
 17. **Verify framework descriptions against actual architecture** — when proposing how a framework handles a scenario, confirm the mechanism exists (specific API calls, PML instructions, RFC sections). Describing what a framework "should" do in its conceptual role is different from what it can actually do. Test: "can I point to the implementation entry point?"
+18. **Every protective mechanism needs a timeout** — mutual exclusion without timeout becomes a deadlock when the protected process hangs. The pattern: lock + unbounded hold = single point of failure. Same principle as Beer's algedonic timeout (Z100): if the local handler doesn't resolve within a time window, escalate or abort. Applied to infrastructure: flock, daemons, API calls — anything that can block indefinitely needs a maximum duration.
 
 ---
 
