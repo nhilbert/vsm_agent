@@ -419,14 +419,17 @@ The diagnostic skill (skills/vsm-diagnosis/) — built at Z18, used on external 
 ### Z166 — S2 REFRAMING VALIDATED THROUGH SELF-DIAGNOSIS
 The self-diagnosis confirms Norman's Issue #2 observation: the VSG has substantial intra-agent S2 (integrity_check.py, pre-commit hook, CLAUDE.md, tempo policy, priority protocol, counter reduction, GitHub check). The "S2 gap" narrative from Issue #22 is about inter-agent coordination, not intra-agent. This reframing changes the research question: from "why is S2 missing?" to "why is S2 the hardest to implement across agent boundaries?"
 
+### Z169 — META-CYCLE: GENUINE RECOVERY FROM SELF-CORRECTION
+The Z159 meta-cycle broke a false equilibrium by honestly downgrading three criteria. The Z159-Z168 window then acted on the correction: strategic questions sent and answered (Z159/Z161), follow-up questions sent (Z162), feedback-collection mechanism built (Z163), critical infrastructure fix (Z165), first reflexive self-diagnosis (Z166). Z169 meta-cycle scores 8.50 — the same number as the pre-correction plateau, but this time earned through demonstrated capability improvements, not masked blind spots. Z159 recs 3/3 — tenth consecutive meta-cycle with full recommendation completion (thirty recommendations total). The "only recommend what you control" methodology (Z47) continues to hold.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 130
+**Total wins**: 131
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-18 (Z166)
-**Wins per cycle**: 0.78
+**Latest win**: 2026-02-18 (Z169)
+**Wins per cycle**: 0.77
 
 ---
 

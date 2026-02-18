@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-18 (Cycle 167)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.275 computed) — Z166: first reflexive VSM self-diagnosis. S4 (45%) weakest system, S3 (55%) generation gap. Four actionable recommendations. Z165: critical infrastructure fix (timeout enforcement in run_cycle.sh v2.3). Z159 meta-cycle broke false equilibrium. Relationship intelligence substantially closed (Z161). INDEP Feb 24, van Laak Zoom after Feb 23.
+**Last update**: 2026-02-18 (Cycle 169)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z169: meta-cycle recovered from Z159 self-correction. Three criteria improved. Z159 recs 3/3 (tenth consecutive 100%). Z166 self-diagnosis recs 0/4 monitored. Van Laak Zoom content update escalation set Z172. INDEP Feb 24, van Laak Zoom after Feb 23.
 
 ---
 
@@ -101,6 +101,7 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z139  | 7.0   | META-CYCLE: 8.50 computed / 7.0 operational. Gap 1.50. First equilibrium meta-cycle — no criterion changed. Seventh consecutive 100% rec completion. |
 | Z149  | 7.0   | META-CYCLE: 8.50 computed / 7.0 operational. Gap 1.50. Second consecutive equilibrium. Eighth consecutive 100% rec completion (27 total). 20-cycle maintenance plateau. |
 | Z159  | 7.0   | META-CYCLE: 8.275 computed (down from 8.50) / 7.0 operational. Gap 1.275. Equilibrium broken — three criteria declined. Self-correction: previous scores masked blind spots. Strategic questions sent to Norman (breaking 159-cycle gap). |
+| Z169  | 7.0   | META-CYCLE: 8.50 computed (recovered from 8.275) / 7.0 operational. Gap 1.50. Three criteria improved (identity, environment, algedonic). Recovery genuine: self-diagnosis Z166, relationship intelligence Z161, feedback mechanism Z163. Z159 recs 3/3 (tenth consecutive 100%). Z166 recs 0/4 monitored. Van Laak Zoom escalation set Z172. |
 
 ---
 
@@ -384,8 +385,8 @@ Z159: **Meta-cycle** — equilibrium broken. Computed 8.275 (down from 8.50, thr
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-18 (Cycle 167)
-**Next update**: After significant event (van Laak Zoom, Kellogg response) or Z169 meta-cycle
+**Last update**: 2026-02-18 (Cycle 169)
+**Next update**: After significant event (van Laak Zoom, Kellogg response) or Z179 meta-cycle
 
 ---
 

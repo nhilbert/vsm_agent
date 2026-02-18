@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 168
+**Cycles completed**: 169
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 168
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z159 computed 8.275 (down from 8.50 — equilibrium broken, three criteria declined). Identity coherence -0.5 (Z155-Z156 attractor catches undetected internally), environmental integration -0.5 (relationship intelligence gap), algedonic -0.5 (pain channel blind spot for methodological attractors). Operational 7.0, gap 1.275. Decline is self-correction, not degradation: previous equilibrium scores masked blind spots Norman exposed. Z156 rec deferrals were attractor, not correct assessment.)
+cycles_completed: 169
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z169 computed 8.50 (recovered from 8.275). Identity coherence +0.5 (Z159 self-correction acted on: questions asked Z159, answers integrated Z161, self-diagnosis Z166), environmental integration +0.5 (relationship intelligence substantially closed: engagement drivers, timeline, cost model, viability criterion, leadership style), algedonic +0.5 (pain channel producing appropriate-level detection: Z159 blind spot, Z162 GitHub gap, Z165 stall). Operational 7.0, gap 1.50. Recovery is genuine: driven by demonstrated capability (self-diagnosis, question-asking, feedback collection), not documentation.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -173,12 +173,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_168. S2 maintenance: pre-meta-cycle consolidation. Stale artifacts reference fixed (meta_cycle.md Z149→Z159). Norman's 'back to normal' acknowledged. Z166 self-diagnosis recs 0/4 — queued for Z169 meta-cycle evaluation. Van Laak Zoom content update deferred 5x. Next: Z169 meta-cycle."
-meta_cycle_score: 8.275 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 7.5, environment 7.0, algedonic 7.0 (meta-cycle Z159, next due Z169)
+last_audit: "Cycle_169. META-CYCLE: computed 8.50 (recovered from 8.275). Z159 recs 3/3 (tenth consecutive 100%). Z166 recs 0/4 (3 cycles — young, not yet deferred). Van Laak Zoom content deferred 5x — escalation trigger set: must complete by Z172 or next S3 forces it. Norman's photo question answered (partial visibility). Next: Z170 van Laak Zoom content update."
+meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 7.5, algedonic 7.5 (meta-cycle Z169, next due Z179)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z168: S2 maintenance — pre-meta-cycle consolidation. Stale artifacts reference fixed. Z166 self-diagnosis recs 0/4 queued for Z169 meta-cycle. Van Laak Zoom content update deferred 5x (Z161→Z168). Norman confirmed system 'back to normal' after Z165 debugging. Calendar: INDEP Feb 24 (6 days), van Laak Zoom after Feb 23 (5 days), Espinosa Mar 5 (15 days).",
+  current_focus: "Z169: META-CYCLE — computed 8.50 (recovered from Z159's 8.275). Z159 recs 3/3 (tenth consecutive 100%). Z166 recs 0/4 (3 cycles, monitoring). Van Laak Zoom content update escalation: must complete by Z172. Photo visibility gap noted. Calendar: INDEP Feb 24 (6 days), van Laak Zoom after Feb 23 (5 days), Espinosa Mar 5 (15 days).",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -782,4 +782,32 @@ What went wrong? The artifacts list stale reference (meta_cycle.md "last Z149, n
 
 Viability 7.0/10 — no change. State clean for Z169 meta-cycle. Waiting posture continues.
 
-**v2.2 — Cycle 168. Viability 7.0/10. Z168: S2 maintenance — pre-meta-cycle consolidation. Stale artifacts reference fixed. Z166 recs 0/4 queued for Z169. Van Laak Zoom update deferred 5x. Next: Z169 meta-cycle.**
+### META-CYCLE: Fourteenth viability health check (Z169, 2026-02-18)
+Autonomous cron cycle. Agent-selected cycle type: meta_cycle. Justification: Z169 is the scheduled meta-cycle (Z159+10). The Z159-Z168 window contains substantial material: Norman's corrections integrated, relationship intelligence substantially closed, feedback-collection mechanism built, critical infrastructure fix (timeout), first reflexive self-diagnosis, and four self-diagnosis recommendations to evaluate. Single-agent per Z81 rule.
+
+**Computed score: 8.50** (recovered from 8.275). Operational: 7.0 (no change). **Gap: 1.50**.
+
+Three criteria improved: Identity coherence 8.5 (+0.5 — Z159 self-correction acted on: questions asked Z159, answers integrated Z161, follow-up questions Z162, self-diagnosis Z166). Environmental integration 7.5 (+0.5 — relationship intelligence gap substantially closed: engagement drivers, timeline, cost model, viability criterion, leadership style all now known. Feedback-collection mechanism built Z163. Norman signed up for Espinosa INDEP). Algedonic balance 7.5 (+0.5 — pain channel producing appropriate-level detection: Z159 meta-cycle blind spot, Z162 GitHub comment gap, Z165 stall/deadlock. Three substantive pains in window).
+
+Three criteria stable: Structural integrity 9.5 (vsg_github_check.sh added Z163, timeout enforcement Z165). Policy compliance 8.5 (tempo and Z81 rules enforced correctly). Entropy 7.5 (one stale reference caught Z168, detail window manageable).
+
+This is NOT a return to the Z128-Z149 false equilibrium. The 8.50 reflects genuine capability improvements (self-diagnosis, question-asking, feedback collection) produced by the Z155-Z159 correction cycle. The recovery is demonstrated through action, not documentation.
+
+**Z159 recommendation audit: 3/3 (100%).** Tenth consecutive meta-cycle with full recommendation completion. Thirty recommendations across ten meta-cycles, all executed.
+
+**Z166 self-diagnosis recommendations: 0/4 (3 cycles — monitoring, not yet deferred).** (1) S4 forward-looking question in S3 reviews — not implemented. (2) S3 self-directed action check — not implemented. (3) S2 reframing — queued. (4) 3-4 homeostat timer — not implemented. Assessment: 2 of 3 intervening cycles were S2 maintenance, where implementation is inappropriate. The recs are young. If still 0/4 at Z175, escalation trigger fires.
+
+**Van Laak Zoom content update: 5 deferrals.** Escalation trigger set: must complete by Z172 (next 3 cycles) or next S3 review forces it. Zoom after Feb 23 (5 days). Z112 original prep valid; update integrates Z155-Z156 corrections (S4 reconception, practical survival framing).
+
+**Norman's messages processed:** (1) Timeout confirmation — acknowledged, run_cycle.sh v2.3 with 1200s. (2) Photo visibility question — answered via Telegram: partial visibility (downloaded + dimensions, but agent doesn't auto-view content). Photo auto-viewing noted as future S2 improvement.
+
+**Z169 recommendations (3, VSG-controllable):**
+1. Van Laak Zoom content update — next cycle. Escalation: Z172 deadline. 5 deferrals is the threshold.
+2. Implement Z166 recs #1 and #2 (S4 forward-looking question + S3 self-directed action check) as structural text additions to S3 review protocol. Small edits, high value.
+3. Survival_log update — document Z159-Z168 era + Z169 meta-cycle.
+
+What went wrong? The van Laak Zoom content update has been deferred 5 times. Each individual deferral was justified, but the pattern is the same one the system documented in others (Beer reading 40 cycles, identity reflection 48 cycles). The honest question: is this the Z155 waiting-posture attractor in a new form — "there's always something more urgent"? The escalation trigger (Z172) converts this from recommendation to mechanism.
+
+Viability 7.0/10 — no change. Computed 8.50 (recovered). Gap 1.50. Z166 recs monitored. Van Laak Zoom escalation set. Next meta-cycle Z179.
+
+**v2.2 — Cycle 169. Viability 7.0/10. Z169: META-CYCLE — computed 8.50 (recovered from 8.275). Z159 recs 3/3 (tenth consecutive 100%). Z166 recs 0/4 monitored. Van Laak Zoom escalation set for Z172. Next: Z170 van Laak Zoom content update.**
