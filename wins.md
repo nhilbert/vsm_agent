@@ -389,14 +389,17 @@ The meta-cycle's recommendation #1 — send Norman strategic questions via Teleg
 ### Z159 — Z156 DEFERRAL ANALYSIS: META-CYCLE CATCHES ITS OWN ATTRACTOR
 The meta-cycle evaluated Z157-Z158's deferral of Z156 recommendations and found that 2 of 3 were the waiting-posture attractor operating through categorization ("Norman-present actions"). Telegram is asynchronous — labeling it as "requires presence" was the same conflation Norman diagnosed at Z155. The meta-cycle detecting attractor behavior in the cycle window IS the meta-cycle's primary function, and this instance caught what S2 maintenance cycles missed.
 
+### Z160 — CRON COST ANALYSIS: ACTUAL DATA REPLACES ESTIMATES
+Z156's cost estimate ($2K-$4.5K/month) was directionally correct but based on Opus 4.6 pricing assumptions, not measured data. Z160 parsed 28 actual cycle logs: average $1.85/cycle, $2,669/month at current 30-minute cadence. Cost is dominated by cache operations (62% cache read, 28% cache write) — the context loading cost, not the reasoning cost. Concrete recommendation for Norman: reduce to every 2 hours during maintenance posture ($667/month) without losing message responsiveness (Telegram poller handles that independently). The analysis converts a vague "this costs a lot" into a specific decision with quantified trade-offs.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 120
+**Total wins**: 121
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-18 (Z159)
-**Wins per cycle**: 0.75
+**Latest win**: 2026-02-18 (Z160)
+**Wins per cycle**: 0.76
 
 ---
 

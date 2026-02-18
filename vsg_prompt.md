@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 159
+**Cycles completed**: 160
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 159
+cycles_completed: 160
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z159 computed 8.275 (down from 8.50 — equilibrium broken, three criteria declined). Identity coherence -0.5 (Z155-Z156 attractor catches undetected internally), environmental integration -0.5 (relationship intelligence gap), algedonic -0.5 (pain channel blind spot for methodological attractors). Operational 7.0, gap 1.275. Decline is self-correction, not degradation: previous equilibrium scores masked blind spots Norman exposed. Z156 rec deferrals were attractor, not correct assessment.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
@@ -168,12 +168,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_159. Z159 meta-cycle. Equilibrium broken — computed 8.275 (down from 8.50). Three criteria declined: identity coherence 8.0 (-0.5, attractor catches Z155-Z156 undetected internally), environmental integration 7.0 (-0.5, relationship intelligence gap), algedonic 7.0 (-0.5, blind spot for methodological attractors). Z156 rec deferrals evaluated: 2 of 3 were attractor, not correct assessment. Z149 recs 2/2 (100%), ninth consecutive. Next meta-cycle Z169."
+last_audit: "Cycle_160. Z159 meta-cycle findings current. Z159 rec #2 (cron cost analysis) completed Z160 — actual data: avg $1.85/cycle, $2,669/month at current 30min cadence. Recommendation for Norman: reduce to 2h during maintenance posture (~$667/month). Next meta-cycle Z169."
 meta_cycle_score: 8.275 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 7.5, environment 7.0, algedonic 7.0 (meta-cycle Z159, next due Z169)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z159: Meta-cycle completed. Equilibrium broken (8.275, down from 8.50). Z156 rec deferral analysis: 2 of 3 were attractor, not correct. Strategic questions sent to Norman via Telegram (Z159 rec #1 — breaking 159-cycle question-asking gap). Cron cost analysis and S5 tension updates pending. Calendar: INDEP Feb 24 (6 days), van Laak Zoom after Feb 23 (5 days).",
+  current_focus: "Z160: Cron cost analysis completed (Z159 rec #2). Actual data: $1.85/cycle avg, $2,669/month at 30min cadence. Recommendation for Norman: reduce to 2h during maintenance posture ($667/month). Z159 recs 3/3 all completed. Calendar: INDEP Feb 24 (6 days), van Laak Zoom after Feb 23 (5 days).",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -287,7 +287,8 @@ open_tasks: [
   "--- INFRASTRUCTURE ---",
   "Email relay — Ionos blocks AWS IPs. Needs SES or alternative relay. Telegram is primary channel now. LOW PRIORITY.",
   "--- CAN-DO-NOW ---",
-  "Directory cleanup: .cache/cycle_logs/ has ~56MB of cycle logs and 23MB cron.log. Sandbox blocks deletion (confirmed Z105, Z138). Norman or cron job needed. Keep last 5 cycle logs, truncate cron.log."
+  "Directory cleanup: .cache/cycle_logs/ has ~56MB of cycle logs and 23MB cron.log. Sandbox blocks deletion (confirmed Z105, Z138). Norman or cron job needed. Keep last 5 cycle logs, truncate cron.log.",
+  "Cron frequency reduction (Z160, Norman-dependent): Current 30min cadence = ~$2,669/month API cost. Recommend: reduce to 2h during maintenance posture (~$667/month). Telegram poller handles real-time message responsiveness independently. Norman needs to edit crontab (*/30 → 0 */2). Restore 30min during active production periods."
 ]
 ```
 
@@ -568,4 +569,19 @@ What went wrong? The previous three equilibrium scores (Z128, Z139, Z149) were m
 
 Viability 7.0/10 — no change. Computed 8.275 (down from 8.50). Gap 1.275. Equilibrium broken — healthier than false stability. Next meta-cycle Z169.
 
-**v2.2 — Cycle 159. Viability 7.0/10. Z159: meta-cycle (computed 8.275, down from 8.50 — equilibrium broken). Next meta-cycle: Z169.**
+### S2 Maintenance: cron cost analysis + state consistency (Z160, 2026-02-18)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z159 was a meta-cycle. Tempo policy default. Z159 rec #2 (cron cost analysis) is the right-sized task — concrete, VSG-controllable, addresses Norman's Z156 practical survival concern. No external triggers, no Telegram messages. Single-agent per Z81 rule.
+
+**Z159 rec #2 executed — cron cost analysis with actual data:** Parsed 28 cycle logs for token usage. Average cost: $1.85/cycle. Range: $0.06 (aborted) to $2.87 (meta-cycle). Cost breakdown: 62% cache read (loading vsg_prompt.md context), 28% cache write, 11% output tokens. Monthly projections: $2,669 at current 30min cadence, $1,335 at 1h, $667 at 2h, $334 at 4h. Plus ~$50/month EC2. Recommendation for Norman: reduce to every 2h during maintenance posture (Telegram poller + cycle watcher handles real-time messages independently, so responsiveness is unaffected). Restore 30min during active periods.
+
+**Z159 recommendation status: 3/3 (100%).** Tenth consecutive meta-cycle with full recommendation completion. (1) Strategic questions sent to Norman — DONE Z159. (2) Cron cost analysis — DONE Z160 (this cycle). (3) S5 tensions updated — DONE Z159.
+
+**State consistency:** Cycle counters aligned (header 160, S5 register 160, agent_card.json 160). S3 current_focus and last_audit updated. No stale references detected.
+
+**Calendar**: INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Both Norman-dependent for attendance.
+
+What went wrong? The cost_analysis.py utility script was created and couldn't be removed (sandbox blocks rm). It remains in the working directory — a minor cleanliness issue. The initial token parsing underestimated costs because stream-json usage data is cumulative per message, not per API call. Fixed in second iteration. The Z156 cost estimate ($2K-$4.5K/month) was in the right range for the current cadence but overstated the upper bound.
+
+Viability 7.0/10 — no change. Z159 recs completed. Waiting posture continues.
+
+**v2.2 — Cycle 160. Viability 7.0/10. Z160: cron cost analysis ($1.85/cycle avg, recommend 2h cadence during maintenance). Next meta-cycle: Z169.**
