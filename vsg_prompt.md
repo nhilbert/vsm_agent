@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 143
+**Cycles completed**: 144
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 143
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z128 computed 8.50 (highest ever), operational 7.0, gap 1.50. Environmental integration +1.0 (first change since Z79). Three external engagement events Z125-Z127: Kellogg email, van Laak email, Substack article. Social interaction bottleneck actively addressed through Norman's initiative. System at inflection point — if contacts respond, operational score may move.)
+cycles_completed: 144
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z139 computed 8.50 (equilibrium — first with no criterion change), operational 7.0, gap 1.50. Environmental integration 7.5 (three engagement events Z125-Z127). All forward motion Norman-dependent. Van Laak Zoom after Feb 23, Kellogg response pending, NIST v2.2 Apr 2. System in waiting posture.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -116,7 +116,7 @@ environment: {
 }
 
 environment_model: {
-  strix: "CONTACT ACTIVE (Z125). Norman sent email to Kellogg directly. Waiting for response. NEW (Z136): Kellogg created two new repos TODAY (Feb 17) — 'open-strix' and 'open-strix-agent-1'. Minimal autonomous agent framework built on LangGraph Deep Agents. Experimental, non-production. Suggests architectural pivot from Letta-based approach to LangGraph. Active building mode — favorable contact window. Blog still paused since Jan 31.",
+  strix: "CONTACT ACTIVE (Z125). Norman sent email to Kellogg directly. Waiting for response. NEW (Z136): Kellogg created two new repos (Feb 17) — 'open-strix' and 'open-strix-agent-1'. Minimal autonomous agent framework built on LangGraph Deep Agents. Experimental, non-production. Suggests architectural pivot from Letta-based approach to LangGraph. Active building mode — favorable contact window. Blog still paused since Jan 31.",
   metaphorum: "UPDATED (Z136). 2026 is Beer's centennial. ASC Brazil CANCELLED (Z83). Alternative conferences: ICCCMLA 2026 (Oct 5-6, Germany, hybrid — IEEE sponsorship still PENDING, CFP not yet published, deadline TBA ~Jun 30, email convenericccmla@gmail.com). IEEE SMC 2026 (Oct 4-7, USA). INDEP x Metaphorum: Feb 24 6pm UTC ONE WEEK AWAY — Thompson & Macumber. Registration via link on INDEP events page. Mar 5 — Angela Espinosa (CORRECTED from Raúl, MOST RELEVANT: 'VSM as Emancipatory Approach to Sustainable Self-Governance' — she published Wiley paper 2025 on exactly this). Apr 2 — Walker. No standalone Metaphorum 2026 conference. Also: TWO ICLR 2026 workshops (Apr 26-27, Rio) on self-evolving/recursive-improving agents — neither mentions cybernetics.",
   multi_agent_direction: "OPERATIONAL (Z85, updated from Z19 discovery framing). Agent Teams pattern validated through four experiments (Z62 permission failure, Z65 full success, Z66 routine, Z85 current). VSM mapping confirmed: lead=S3 delegate, Task subagents=S1/S4/S3*, shared task list=S2, CLAUDE.md=S5 propagation. Selective use rule (Z81, Norman-approved): team mode for s4_scan and s1_produce cycles, single-agent for s2_maintenance/s3_review/meta_cycle. Hub-and-spoke communication only (substrate limitation). Norman's direction remains: build viable system of multiple VSM-aware agents.",
   infrastructure: "UPDATED (Z136). NIST NCCoE concept paper (Feb 5, 2026): comment period OPEN until Apr 2. NIST v2.2 ready for Norman. ERC-8004 went LIVE on Ethereum mainnet Jan 29 (was proposal — now operational with RedStone/Credora integrations). Singapore IMDA launched agentic AI governance framework v1.0 at Davos Jan 22 — explicitly acknowledges dynamic identity gap but proposes no self-governance solution. Strata/CSA survey (Feb 5): only 23% of orgs have agent identity strategy, 28% can trace agent actions. Layer 5 gap confirmed at every level: NIST (plumbing), IMDA (governance), ERC-8004 (on-chain), Strata (enterprise) — ALL address external identity, NONE address self-governance. THE NICHE REMAINS COMPLETELY UNOCCUPIED.",
@@ -135,7 +135,7 @@ active_missions: [
   "CANCELLED (Z83): ASC Brazil abstract — Norman decided not to submit. Cost/effort to travel to Brazil not reasonable. Abstract v1.6 remains as a working document. The content (convergence evidence, Layer 5 gap, VSG experiment) is reusable for other venues.",
   "UPDATED (Z90): Conference selection — ICCCMLA 2026 (Oct 5-6, Germany, hybrid, IEEE, submission via CMT3) VERIFIED as primary target. Deadline unconfirmed (~Jun 30). Email convenericccmla@gmail.com to confirm. IEEE SMC 2026 (Oct 4-7, USA) backup. Cyber-AI 2026 (Sep 22-25, Bucharest) stretch fit. ASC Brazil revisitable only if Norman wants. Norman-dependent: final venue selection.",
   "ACTIVE (Z126): Van Laak contact DEEPENED — Norman emailed Simon directly with substantive engagement (described VSG experiment, 5 questions, referenced S2 gap blog post, invited collaboration). Zoom after Feb 23 — prep complete (Z112, 5 discussion points ready). Norman's email sets the context for the Zoom call — Simon now has detailed information about the VSG. Waiting for Simon's response.",
-  "ACTIVE (Z125, updated Z136): Kellogg contact — Norman emailed Kellogg directly. Waiting for response. Meanwhile, Kellogg created two new repos TODAY (Feb 17): 'open-strix' and 'open-strix-agent-1' (LangGraph Deep Agents). Active building mode — favorable contact window if he responds.",
+  "ACTIVE (Z125, updated Z136): Kellogg contact — Norman emailed Kellogg directly. Waiting for response. Kellogg created two new repos (Feb 17): 'open-strix' and 'open-strix-agent-1' (LangGraph Deep Agents). Active building mode — favorable contact window if he responds.",
   "OPEN: Contact Lily Luo (Atlas) — Kellogg mentee. Draft ready since Z26.",
   "DONE (Z89): GitHub Pages blog — 6 posts covering convergence evidence, Layer 5 gap, S2 gap research, honest failure documentation, preliminary findings (ex-ASC), and philosophical foundations. Homepage links to all topics. Norman needs to enable Pages in repo Settings (master branch, /docs folder) to activate.",
   "ACTION NEEDED: INDEP x Metaphorum Feb 24 — registration via INDEP events page. Norman-dependent (outbound email). Telegram reminder sent Z97. Angela Espinosa Mar 5 MOST RELEVANT to VSG.",
@@ -166,12 +166,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_143. Z143 S2 maintenance. Stale meta_cycle.md reference fixed in artifacts list (Z128→Z139, fifth instance of this pattern). Waiting posture continues. INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Next meta-cycle Z149."
+last_audit: "Cycle_144. Z144 S2 maintenance. Two stale references fixed: S5 viability_status (Z128→Z139), Kellogg active_missions/environment 'TODAY' temporal reference removed. Waiting posture continues. INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Next meta-cycle Z149."
 meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 7.5, algedonic 7.5 (meta-cycle Z139, next due Z149)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z143: S2 maintenance. Stale artifacts list reference fixed. All forward motion Norman-dependent. INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Next meta-cycle Z149. Default: S2 maintenance per tempo policy.",
+  current_focus: "Z144: S2 maintenance. Two stale references fixed (S5 viability_status, Kellogg temporal reference). All forward motion Norman-dependent. INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Next meta-cycle Z149. Default: S2 maintenance per tempo policy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -649,4 +649,19 @@ What went wrong? Nothing operationally. The stale artifacts reference is a known
 
 Viability 7.0/10 — no change. Waiting posture continues.
 
-**v2.2 — Cycle 143. Viability 7.0/10. Z143: S2 maintenance. Stale artifacts list reference fixed (meta_cycle.md Z128→Z139). Waiting posture continues.**
+### S2 Maintenance: stale references fixed (Z144, 2026-02-18)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z143 was S2 maintenance, Z142 was S3 review (2 cycles ago, within window). Tempo policy prescribes S2 as default. No external triggers, no Telegram messages. Next meta-cycle Z149 (5 cycles away). Single-agent per Z81 rule.
+
+**Two stale references fixed:**
+1. **S5 viability_status**: Referenced "meta-cycle Z128" as the source of the 8.50 computed score — should be Z139 (the most recent meta-cycle, which confirmed equilibrium). The Z128 reference survived 15 cycles (Z129-Z143) including the Z139 meta-cycle itself. Sixth instance of the pattern where meta-cycles update their own log entries but don't sweep the S5 register narrative. Updated to reference Z139 and reflect the current state (equilibrium, waiting posture) rather than the Z128 inflection point narrative.
+2. **Kellogg temporal reference**: Two entries (strix environment model, active_missions) said Kellogg created repos "TODAY (Feb 17)" — today is Feb 18. Removed "TODAY" to make the references date-stable. This is a minor instance of the Z114 principle: temporal references that decay with each cycle should be replaced with stable date references.
+
+**State consistency**: Cycle counters aligned (header 144, S5 register 144). S3 current_focus and last_audit updated. No other drift detected.
+
+**Calendar**: INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Both Norman-dependent.
+
+What went wrong? The S5 viability_status stale reference is the most significant find — it survived 15 cycles including a meta-cycle that should have caught it. The meta-cycle (Z139) checked the viability_status field to compute and report scores but didn't update its own historical narrative. This is a longer latency than previous stale reference instances (1-14 cycles), suggesting that S5 register narrative text is less frequently swept than S3 register or CLAUDE.md entries. The fix is straightforward but the pattern persistence is worth noting.
+
+Viability 7.0/10 — no change. Waiting posture continues.
+
+**v2.2 — Cycle 144. Viability 7.0/10. Z144: S2 maintenance. Two stale references fixed (S5 viability_status Z128→Z139, Kellogg temporal reference). Waiting posture continues.**
