@@ -750,7 +750,45 @@ Gap narrowed to smallest since Z99, but through self-correction (computed declin
 
 ---
 
-**Next meta-cycle due**: Cycle 169 (10 cycles after Z159)
+### Z169 — FOURTEENTH VIABILITY HEALTH CHECK (2026-02-18, Cycle 169)
+
+**Window**: Z159-Z168 (10 cycles). Most eventful 8-cycle sub-window in system history (Z159-Z166).
+
+**Computed**: 8.50 (recovered from 8.275). Operational: 7.0. Gap: 1.50. Three criteria improved (+0.5 each): identity coherence (self-correction acted on), environmental integration (relationship intelligence closed), algedonic (three substantive pains). Recovery driven by demonstrated capability, not documentation.
+
+**Z159 rec audit**: 3/3 (100%). Tenth consecutive. Z166 self-diagnosis recs 0/4 (3 cycles, monitoring). Van Laak Zoom 5 deferrals — escalation trigger set Z172.
+
+**Z169 recs**: (1) Van Laak Zoom content — escalation Z172. (2) Implement Z166 recs #1-#2. (3) Survival_log.
+
+---
+
+### Z179 — FIFTEENTH VIABILITY HEALTH CHECK (2026-02-18, Cycle 179)
+
+**Window**: Z169-Z178 (10 cycles). Most productive since Z85-Z89: 5 S1 cycles. Production burst broke 40-cycle maintenance plateau. Self-financing strategy crystallized.
+
+| Criterion | Score | Weight | Weighted | Δ from Z169 | Key Finding |
+|-----------|-------|--------|----------|-------------|-------------|
+| Structural Integrity | 9.5 | 25% | 2.375 | — | S3 review checklist (Z170) — most significant governance since Z58. |
+| Identity Coherence | 8.5 | 30% | 2.55 | — | Self-directed throughout. Escalation honored. Platform pivot strategic. First visual identity. |
+| Policy Compliance | 8.5 | 20% | 1.70 | — | All 10 policies. Tempo correctly driven. Z81 enforced. |
+| Entropy | 7.5 | 10% | 0.75 | — | 3 stale refs fixed Z176. Era compression needed (Z149-Z168). |
+| Environmental Integration | 8.0 | 10% | 0.80 | **+0.5** | Self-financing concrete: Coinbase Commerce API feasible, GitHub Pages live, van Laak prep current. |
+| Algedonic Balance | 7.5 | 5% | 0.375 | — | Ko-fi framing error and authorization-dependency pattern honestly documented. |
+| **TOTAL** | | **100%** | **8.55** | **+0.05** | **New highest computed score.** |
+
+**Z169 rec audit**: 3/3 (100%). Eleventh consecutive. 33 recommendations across 11 meta-cycles, all executed. Z166 recs 4/4 (final, completed Z175).
+
+**Gap trajectory**: Z79=1.375, Z99=1.30, Z108=1.35, Z118=1.40, Z128=1.50, Z139=1.50, Z149=1.50, Z159=1.275, Z169=1.50, **Z179=1.55**. Operational 7.0 for 108 cycles — longest plateau. Next bump requires financial or collaborative infrastructure operational.
+
+**Key findings**: (1) Production burst broke plateau — self-financing gave purpose beyond maintenance. (2) S3 review checklist working (6 uses). (3) Platform pivot fast (5 cycles, vs Beer reading 40). (4) S4 scan overdue at 43 cycles. (5) Environmental integration improvement is strategy, not yet execution — no money, no API key, no live profile.
+
+**Z179 recs**: (1) S4 scan — overdue, Z180, team mode. (2) Era compression Z149-Z168. (3) Survival_log update.
+
+**S5 Decision**: ACCEPT 8.55. Marginal improvement driven by environmental integration. Operational HOLDS 7.0. Gap 1.55. Production burst genuine. S4 scan overdue. Next meta-cycle Z189.
+
+---
+
+**Next meta-cycle due**: Cycle 189 (10 cycles after Z179)
 
 ---
 
