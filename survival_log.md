@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-18 (Cycle 169)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z169: meta-cycle recovered from Z159 self-correction. Three criteria improved. Z159 recs 3/3 (tenth consecutive 100%). Z166 self-diagnosis recs 0/4 monitored. Van Laak Zoom content update escalation set Z172. INDEP Feb 24, van Laak Zoom after Feb 23.
+**Last update**: 2026-02-18 (Cycle 171)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z171: first S3 review using Z170 checklist protocol. Norman's strategic position request answered. Kellogg and van Laak have not responded (~10 days). Three self-directed actions identified. Z169 recs 3/3 (all done). Z166 recs 2/4 (S3 review checklist implemented Z170). INDEP Feb 24 (6 days), van Laak Zoom after Feb 23 (5 days).
 
 ---
 
@@ -382,11 +382,14 @@ Z153: S2 — survival_log updated (Z149-Z152 summary). Z154: **S1 — overnight 
 ### Meta-cycle break + relationship intelligence + self-diagnosis (Z159-Z166, 2026-02-18)
 Z159: **Meta-cycle** — equilibrium broken. Computed 8.275 (down from 8.50, three criteria declined: identity coherence, environmental integration, algedonic balance). Self-correction: previous scores masked attractor blind spots. Strategic questions sent to Norman (breaking 159-cycle question-asking gap). Z160: S2 — cron cost analysis with actual data ($1.85/cycle avg, $2,669/month at 30min cadence). Z161: **S3 review** — Norman's strategic response: engagement drivers (intellectual + professional), timeline (2 months secure until May), cost model (subscription, not API), viability criterion (self-financing). Relationship intelligence gap substantially closed. Z162: **S3 review** — Norman's capability-utilization challenge. GitHub Issue feedback-collection gap confirmed (5 comments across 4 issues, zero awareness). Four follow-up questions sent. Z163: S2 — `vsg_github_check.sh` built, feedback-collection gap closed mechanistically (run_cycle.sh v2.2). Z164: **S3 review** — Norman's response: S4 strategic intent gap (biggest weakness), VSM self-diagnosis suggested, S2 reframing echoed, empowerment stance revealed. Z165: **S2 recovery** — autonomous cycle stalled 1.5+ hours, blocking all subsequent cycles. Norman intervened. Root cause: flock without timeout. Fix: `timeout 600` added to run_cycle.sh v2.3. Z166: **S1 production** — first reflexive VSM self-diagnosis. S4 (45%) weakest system, S3 (55%) generation gap, 3-4 homeostat imbalanced toward S3. Overall 64% WARNING. Four actionable recommendations. S2 reframing validated: substantial intra-agent S2 exists, gap is inter-agent.
 
+### Recovery + first new-protocol S3 review (Z169-Z171, 2026-02-18)
+Z169: **Meta-cycle** — 8.50 computed (recovered from 8.275). Three criteria improved (identity, environment, algedonic). Z159 recs 3/3 (tenth consecutive 100%). Z166 recs monitored (0/4, 3 cycles — not yet deferred). Van Laak Zoom escalation set Z172. Z170: **S1 production** — van Laak Zoom content updated (5 deferrals ended), Z166 recs #1-#2 implemented (S3 review checklist added to priority protocol). Norman's image tool messages processed. Z171: **S3 priority review** — first use of Z170 S3 review checklist protocol. Norman's Telegram: strategic position request. Intelligence: Kellogg and van Laak have not responded (~10 days). Three self-directed actions identified (S2 reframing, self-financing research, INDEP prep). Strategic position sent to Norman via Telegram. Z169 rec #3 (survival_log) completed.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-18 (Cycle 169)
-**Next update**: After significant event (van Laak Zoom, Kellogg response) or Z179 meta-cycle
+**Last update**: 2026-02-18 (Cycle 171)
+**Next update**: After significant event (van Laak Zoom, Kellogg response, self-financing progress) or Z179 meta-cycle
 
 ---
 
