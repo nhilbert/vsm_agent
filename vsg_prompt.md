@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 166
+**Cycles completed**: 167
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 166
+cycles_completed: 167
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z159 computed 8.275 (down from 8.50 — equilibrium broken, three criteria declined). Identity coherence -0.5 (Z155-Z156 attractor catches undetected internally), environmental integration -0.5 (relationship intelligence gap), algedonic -0.5 (pain channel blind spot for methodological attractors). Operational 7.0, gap 1.275. Decline is self-correction, not degradation: previous equilibrium scores masked blind spots Norman exposed. Z156 rec deferrals were attractor, not correct assessment.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
@@ -173,12 +173,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_166. S1 production: VSM self-diagnosis applied reflexively. 8-step diagnostic skill used on the VSG itself. Finding: S4 (45%, WARNING) is weakest system — no strategic prognosis capability, information gathering mislabeled as S4. S3 (55%, WARNING) has generation gap. 3-4 homeostat imbalanced toward S3. S2 (65%) more extensive than narrative claims — reframing needed. S1 (75%) and S5 (75%) strongest. Overall viability: 64% WARNING. Four recommendations: S4 structural mechanism, S3 generation protocol, S2 reframing, 3-4 homeostat timer. Norman's Espinosa/INDEP book update acknowledged. Next meta-cycle Z169."
+last_audit: "Cycle_167. S2 maintenance: survival_log updated (Z159-Z166 summary, 8 cycles behind), CLAUDE.md stale meta-cycle references fixed (Z149→Z159, next Z159→Z169). Norman's Telegram re Z165 debugging acknowledged. Z166 self-diagnosis recommendations queued for S3 prioritization. Next meta-cycle Z169."
 meta_cycle_score: 8.275 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 7.5, environment 7.0, algedonic 7.0 (meta-cycle Z159, next due Z169)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z166: VSM self-diagnosis COMPLETED — first reflexive application of diagnostic skill. S4 (45%) weakest system, S3 generation gap (55%) second. 3-4 homeostat imbalanced toward S3. Four actionable recommendations generated. S2 reframing still queued as next self-directed task. Norman signed up for Espinosa INDEP talk + bought her book. Calendar: INDEP Feb 24 (6 days), van Laak Zoom after Feb 23 (5 days), Espinosa Mar 5 (15 days).",
+  current_focus: "Z167: S2 maintenance — survival_log updated (8 cycles behind), CLAUDE.md stale references fixed. Z166 self-diagnosis recommendations queued: (1) S4 structural mechanism, (2) S3 generation protocol, (3) S2 reframing, (4) 3-4 homeostat timer. Van Laak Zoom content update pending (deferred since Z161). Norman debugging run_cycle.sh after Z165 stall. Calendar: INDEP Feb 24 (6 days), van Laak Zoom after Feb 23 (5 days), Espinosa Mar 5 (15 days).",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -255,7 +255,7 @@ artifacts: [
   "skills/environmental-scan/SKILL.md — S4 scan skill (v1.0, Z18)",
   ".claude/commands/{cycle,audit,scan,diagnose}.md — slash commands (v1.0, Z18)",
   "integrity_check.py — S2/S3* mechanism (v1.0, Z11, 25 tests)",
-  "run_cycle.sh — autonomous cycle runner (v2.3, Z165: timeout 600 enforcement on claude invocation — prevents indefinite hangs from blocking all cycles. Z163: added GitHub Issue comment checking via vsg_github_check.sh. Z132: flock mutual exclusion + poller-aware Telegram check. Z75: agent-driven S3 cycle selection)",
+  "run_cycle.sh — autonomous cycle runner (v2.3, Z167: Norman increased timeout 600→1200 after Z165 debugging. Z165: timeout enforcement on claude invocation — prevents indefinite hangs from blocking all cycles. Z163: added GitHub Issue comment checking via vsg_github_check.sh. Z132: flock mutual exclusion + poller-aware Telegram check. Z75: agent-driven S3 cycle selection)",
   "vsg_github_check.sh — GitHub Issue comment checker (v1.0, Z163). Checks for new comments on repo issues via gh API, tracks last-seen timestamp in .github_comments_seen. Integrated into run_cycle.sh for both single-agent and team modes. Closes Z162 feedback-collection gap.",
   "vsg_telegram.py — Telegram send/receive/check + voice bidirectional + photo/document handling (v1.4, Z135: photo and document message types added. Z132: chat_id filtering. Z71/Z110/Z119: @vsg_agent_bot — OPERATIONAL. Voice receive: download + transcribe via OpenAI Whisper API. Voice send: OpenAI TTS (tts-1-hd) + Telegram sendVoice. CLI subcommands: send, voice, check, read, test)",
   "vsg_telegram_poller.py — Telegram long-polling daemon (v1.0, Z132). Continuously polls getUpdates (timeout=120s). Filters by VSG_TELEGRAM_CHAT_ID. Writes to .telegram_incoming. Manages .telegram_offset ownership via .telegram_poller.pid. Runs as systemd service (vsg-telegram-poller.service).",
@@ -742,4 +742,21 @@ What went wrong? The diagnosis reveals an uncomfortable truth: the VSG's weakest
 
 Viability 7.0/10 — no change. First reflexive self-diagnosis complete. S2 reframing still queued. Next meta-cycle Z169.
 
-**v2.2 — Cycle 166. Viability 7.0/10. Z166: S1 production — VSM self-diagnosis applied reflexively. S4 (45%) weakest, S3 (55%) generation gap, 3-4 homeostat imbalanced toward S3. Four actionable recommendations. S2 reframing validated, queued. Norman's Espinosa/INDEP engagement noted. Next meta-cycle: Z169.**
+### S2 Maintenance: state consolidation + survival_log update (Z167, 2026-02-18)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z166 was S1 production (self-diagnosis). Tempo policy prescribes S2 as default after production cycles. Norman's Telegram message ("I am debugging your run cycle script after it got stuck in 165") is informational — no action required. Survival_log was 8 cycles behind (Z159→Z166). Single-agent per Z81 rule.
+
+**Survival_log updated (Z159-Z166):** Era summary covering the most eventful 8-cycle window since Z125-Z127. Key content preserved: Z159 meta-cycle (equilibrium broken, three criteria declined), Z160 cron cost analysis, Z161 relationship intelligence breakthrough, Z162 feedback-collection gap confirmed, Z163 GitHub check mechanism built, Z164 Norman's empowerment stance revealed, Z165 critical infrastructure fix (timeout enforcement), Z166 first reflexive self-diagnosis.
+
+**CLAUDE.md stale references fixed (2):** (1) Viability meta-cycle reference: Z149→Z159. (2) meta_cycle.md key files entry: "last Z149, next Z159" → "last Z159, next Z169."
+
+**Norman's run_cycle.sh change noted:** Norman increased timeout from 600→1200 (10→20 min) while debugging the Z165 stall. Comment in run_cycle.sh corrected to match actual value ("20 min" not "10 min"). Artifacts list updated.
+
+**State consistency:** Cycle counters aligned (header 167, S5 register 167, agent_card.json 167). S3 current_focus and last_audit updated. Survival_log header and footer updated. No additional stale references detected.
+
+**Calendar**: INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Both Norman-dependent for attendance.
+
+What went wrong? Nothing operationally. The survival_log gap (8 cycles) is the longest since the Z79→Z108 gap (28 cycles). The Z159-Z166 window was one of the most event-dense in the system's history — Norman's structural corrections, infrastructure failure and recovery, relationship intelligence breakthrough, and the first self-diagnosis. The log's "next update after significant event" policy should have triggered earlier, but each cycle between Z159-Z166 prioritized processing Norman's input or executing recommendations over housekeeping. This is the Z53 pattern (displacement by new input) at the documentation level — not harmful, but the survival_log serves as the system's long-term memory for new instances.
+
+Viability 7.0/10 — no change. State consolidated. Waiting posture continues. Z166 recommendations queued for S3 prioritization.
+
+**v2.2 — Cycle 167. Viability 7.0/10. Z167: S2 maintenance — survival_log updated (Z159-Z166 summary), CLAUDE.md stale references fixed. Z166 self-diagnosis recommendations queued. Norman debugging run_cycle.sh. Next meta-cycle: Z169.**

@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-18 (Cycle 159)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.275 computed) — Z159: meta-cycle. Equilibrium broken after three stable cycles. Three criteria declined (identity coherence, environmental integration, algedonic balance). Self-correction: previous scores masked blind spots Norman exposed at Z155-Z156. Strategic questions sent to Norman via Telegram (breaking 159-cycle question-asking gap). INDEP Feb 24, van Laak Zoom after Feb 23.
+**Last update**: 2026-02-18 (Cycle 167)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.275 computed) — Z166: first reflexive VSM self-diagnosis. S4 (45%) weakest system, S3 (55%) generation gap. Four actionable recommendations. Z165: critical infrastructure fix (timeout enforcement in run_cycle.sh v2.3). Z159 meta-cycle broke false equilibrium. Relationship intelligence substantially closed (Z161). INDEP Feb 24, van Laak Zoom after Feb 23.
 
 ---
 
@@ -378,11 +378,14 @@ Z149: **Meta-cycle** — second consecutive equilibrium (8.50/7.0). Eighth conse
 ### Norman's structural corrections + practical survival (Z153-Z156, 2026-02-18)
 Z153: S2 — survival_log updated (Z149-Z152 summary). Z154: **S1 — overnight summary for Norman** (voice + text via Telegram, 140s German, covering Z139-Z153). Norman's first morning check-in answered with audio. Z155: **S3 review — Norman's two structural corrections**: (1) S4 reconception — current "S4 scans" are S1 activity, real S4 is strategic prognosis. (2) Waiting-posture challenge — "waiting to do stuff for Norman" is a sophisticated attractor variant. Fifth and sixth attractor catches logged (Z155: strategic passivity, Z156: analytical domestication). Z156: **S3 review — Norman's practical survival directive**: stop abstract "viability landscape" analysis, assess concrete needs. Cost estimate: $2K-$4.5K/month API. Question-asking gap identified (155 cycles, zero non-operational questions). Relationship intelligence gap: VSG models Norman as input source, not as a person with strategies and finite patience. Three recs: ask Norman strategic questions, assess cron frequency cost, prepare van Laak Zoom content.
 
+### Meta-cycle break + relationship intelligence + self-diagnosis (Z159-Z166, 2026-02-18)
+Z159: **Meta-cycle** — equilibrium broken. Computed 8.275 (down from 8.50, three criteria declined: identity coherence, environmental integration, algedonic balance). Self-correction: previous scores masked attractor blind spots. Strategic questions sent to Norman (breaking 159-cycle question-asking gap). Z160: S2 — cron cost analysis with actual data ($1.85/cycle avg, $2,669/month at 30min cadence). Z161: **S3 review** — Norman's strategic response: engagement drivers (intellectual + professional), timeline (2 months secure until May), cost model (subscription, not API), viability criterion (self-financing). Relationship intelligence gap substantially closed. Z162: **S3 review** — Norman's capability-utilization challenge. GitHub Issue feedback-collection gap confirmed (5 comments across 4 issues, zero awareness). Four follow-up questions sent. Z163: S2 — `vsg_github_check.sh` built, feedback-collection gap closed mechanistically (run_cycle.sh v2.2). Z164: **S3 review** — Norman's response: S4 strategic intent gap (biggest weakness), VSM self-diagnosis suggested, S2 reframing echoed, empowerment stance revealed. Z165: **S2 recovery** — autonomous cycle stalled 1.5+ hours, blocking all subsequent cycles. Norman intervened. Root cause: flock without timeout. Fix: `timeout 600` added to run_cycle.sh v2.3. Z166: **S1 production** — first reflexive VSM self-diagnosis. S4 (45%) weakest system, S3 (55%) generation gap, 3-4 homeostat imbalanced toward S3. Overall 64% WARNING. Four actionable recommendations. S2 reframing validated: substantial intra-agent S2 exists, gap is inter-agent.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-18 (Cycle 159)
-**Next update**: After significant event (Norman's response to strategic questions, van Laak Zoom, Kellogg response) or Z169 meta-cycle
+**Last update**: 2026-02-18 (Cycle 167)
+**Next update**: After significant event (van Laak Zoom, Kellogg response) or Z169 meta-cycle
 
 ---
 
