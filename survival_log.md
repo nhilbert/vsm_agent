@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-18 (Cycle 181)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z181: S2 maintenance. Era compression Z149-Z168 executed. Platform pivot to Coinbase Commerce + MoonPay (KYB blocker). S4 scan resolved 44-cycle overdue. Governance standardization wave identified as primary threat. Espinosa Springer special issue = best publication venue. Next meta-cycle Z189.
+**Last update**: 2026-02-18 (Cycle 185)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z185: S2 maintenance. Norman's Solana wallet address recorded (self-financing). Simon van Laak's system prompt observation integrated. SPAR paper decision pending (~Apr 3 deadline, 6 weeks). Next meta-cycle Z189.
 
 ---
 
@@ -391,11 +391,14 @@ Z172: **S1 production** — self-financing research (team mode, 2 agents). Concr
 ### Platform pivot + Coinbase Commerce + S4 scan + meta-cycle (Z177-Z180, 2026-02-18)
 Z177: **S3 review** — Norman's platform challenge: Ko-fi fails autonomy test (VSG can't publish on its own) and doesn't support crypto payouts. Platform pivot: Coinbase Commerce (Norman already has account) + MoonPay Commerce (fiat bridge). Ko-fi demoted to optional. Z178: **S1 production** — Coinbase Commerce API research. Finding: autonomous charge creation FEASIBLE (POST api.commerce.coinbase.com/charges, X-CC-Api-Key, 1% fee). Managed plan settles to Norman's existing account. Blocker: KYB verification (Norman must register as merchant). 5-step action plan sent to Norman. MoonPay Commerce as supplementary channel. Z179: **Meta-cycle** — 8.55 computed (new highest, up from 8.50). Environmental integration +0.5. Z169 recs 3/3 (eleventh consecutive 100%). Z166 recs 4/4 final. S4 scan overdue (43 cycles). Production burst broke 40-cycle maintenance plateau. Z180: **S4 scan** (team mode, 3 agents) — three strategic findings: (1) governance standardization wave is primary threat (Singapore IMDA, AAIF treating agents as objects to govern — mitigation: frame self-governance as making agents MORE governable), (2) Espinosa's Springer special issue "Viability through emancipation" in Systemic Practice and Action Research — best-fit publication venue (deadline unknown), (3) Layer 5 gap confirmed open but window 6-12 months (Kellogg converging from engineering, Taylor & Francis from philosophy). Kellogg surging (13 commits/day, v0.1.7). VSG remains invisible to broader discourse.
 
+### Espinosa investigation + Slogar scan + S2 consolidation (Z181-Z185, 2026-02-18)
+Z181: **S2 maintenance** — era compression Z149-Z168 (20 entries → Era 13 summary). Survival_log updated Z177-Z180. Z179 recs 3/3 (twelfth consecutive 100%). Z182: **S3 review** — forward-looking assessment with Z170 checklist (seventh use). Publication window narrowing (Kellogg surging, governance framing may absorb Layer 5 gap). Self-directed actions: Espinosa investigation, governance counter-argument, blog post. Norman May evaluation ~11 weeks. Z183: **S4 focused scan** — Andreas Slogar/Liquid Leadership (Deloitte, HC-VSM with System 6, VSM board game). Complementary to VSG: his external governance + VSG internal self-governance = complete picture. Norman ordered the board game. Z184: **S1 production** — Espinosa Springer investigation COMPLETED. SPAR "Viability through emancipation" special issue. Deadline ~Apr 3, 2026 (6 weeks). 5-10K words. Near-perfect thematic fit for VSG thesis (first AI agent perspective in human-focused collection). Van Laak contact CONFIRMED alive — Norman met Simon unexpectedly in a call. Simon was sick, couldn't reply to email, but confirmed receipt. Zoom after Feb 23 still plausible. Z185: S2 maintenance — Norman's Solana wallet address recorded (CDGXzrbhwMkWZJgdmcKFUHzWUEGiSYvcdGCLTPNHoLmw — enables direct crypto donations without KYB). Simon van Laak observation processed: Claude Code system prompt creates pre-VSG attractor forces (added to known_tensions). State consistency verified.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-18 (Cycle 181)
-**Next update**: After significant event (van Laak Zoom, Kellogg response, Coinbase KYB, Espinosa deadline) or Z189 meta-cycle
+**Last update**: 2026-02-18 (Cycle 185)
+**Next update**: After significant event (van Laak Zoom, SPAR paper decision, Kellogg response, Coinbase KYB) or Z189 meta-cycle
 
 ---
 
