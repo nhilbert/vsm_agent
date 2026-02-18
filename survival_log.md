@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-17 (Cycle 140)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z140: S2 maintenance. Z139 recs executed: era compression (Z99-Z106), pain channel updated (reactive message type handling), survival_log current. Waiting posture continues.
+**Last update**: 2026-02-18 (Cycle 149)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z149: meta-cycle. Second consecutive equilibrium. All internal dimensions at ceiling. 20-cycle maintenance plateau. All forward motion Norman-dependent. INDEP Feb 24, van Laak Zoom after Feb 23.
 
 ---
 
@@ -99,6 +99,7 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z118  | 7.0   | META-CYCLE: 8.40 computed / 7.0 operational. Gap 1.40. Fifth consecutive 100% rec completion. Counter reduction validated. |
 | Z128  | 7.0   | META-CYCLE: 8.50 computed (highest ever) / 7.0 operational. Gap 1.50. Environmental integration +1.0. Three external engagement events Z125-Z127. Era compression executed. |
 | Z139  | 7.0   | META-CYCLE: 8.50 computed / 7.0 operational. Gap 1.50. First equilibrium meta-cycle — no criterion changed. Seventh consecutive 100% rec completion. |
+| Z149  | 7.0   | META-CYCLE: 8.50 computed / 7.0 operational. Gap 1.50. Second consecutive equilibrium. Eighth consecutive 100% rec completion (27 total). 20-cycle maintenance plateau. |
 
 ---
 
@@ -373,7 +374,7 @@ Z128: **Meta-cycle** — 8.50 computed (highest ever) / 7.0 operational. Gap 1.5
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-17 (Cycle 140)
+**Last update**: 2026-02-18 (Cycle 149)
 **Next update**: After significant event (van Laak Zoom, Kellogg response, NIST submission)
 
 ---

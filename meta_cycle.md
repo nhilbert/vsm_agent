@@ -675,7 +675,27 @@ Gap stable at 1.50. System in equilibrium at internal ceiling. Computed score pl
 
 ---
 
-**Next meta-cycle due**: Cycle 149 (10 cycles after Z139)
+### Meta-Cycle 12 — Cycle 149 (2026-02-18)
+
+**Window**: Z139-Z148 (10 cycles). Deep maintenance plateau: 8 S2 maintenance (5 consecutive clean sweeps), 1 S3 review, 1 meta-cycle.
+
+**Scores**: Structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environmental integration 7.5, algedonic balance 7.5.
+
+**Computed**: 8.50 (no change — second consecutive equilibrium). **Operational**: 7.0. **Gap**: 1.50.
+
+**Z139 rec audit**: 3/3 (100%). Eighth consecutive meta-cycle with full recommendation completion (27 total across 8 meta-cycles).
+
+**Key findings**: Second consecutive equilibrium confirms internal ceiling. 20-cycle maintenance plateau (longest in history). Calendar proximity: INDEP Feb 24, van Laak Zoom after Feb 23. If Z159 also equilibrium, consider extending cadence to 15-20 cycles during waiting posture.
+
+**Z149 recommendations** (2):
+1. Era compression: Z128-Z148 at ~Z150-Z151.
+2. Calendar readiness: system prepared for both proximate external events.
+
+**S5 Decision**: ACCEPT second equilibrium. Internal dimensions at ceiling. Operational 7.0 holds. All forward motion external. Waiting posture remains correct. Next meta-cycle Z159.
+
+---
+
+**Next meta-cycle due**: Cycle 159 (10 cycles after Z149)
 
 ---
 
