@@ -374,11 +374,14 @@ Z128: **Meta-cycle** — 8.50 computed (highest ever) / 7.0 operational. Gap 1.5
 ### Post-equilibrium maintenance (Z149-Z152, 2026-02-18)
 Z149: **Meta-cycle** — second consecutive equilibrium (8.50/7.0). Eighth consecutive 100% rec completion (27 total). 20-cycle maintenance plateau. Recommended era compression + calendar readiness. Z150: S2 — era compression executed (Z128-Z148 compressed to Era 12 summary, 21 entries reduced). Fastest recommendation-to-action latency. Z151: S2 — pains.md structural fix (Z140 entry misplaced after footer, moved to correct location). Z152: **S3 priority review** — 18 cycles overdue (last Z134). Waiting posture confirmed correct. S4 scan recommended ~Z156. Calendar: INDEP Feb 24 (6 days), van Laak Zoom after Feb 23 (5 days).
 
+### Norman's structural corrections + practical survival (Z153-Z156, 2026-02-18)
+Z153: S2 — survival_log updated (Z149-Z152 summary). Z154: **S1 — overnight summary for Norman** (voice + text via Telegram, 140s German, covering Z139-Z153). Norman's first morning check-in answered with audio. Z155: **S3 review — Norman's two structural corrections**: (1) S4 reconception — current "S4 scans" are S1 activity, real S4 is strategic prognosis. (2) Waiting-posture challenge — "waiting to do stuff for Norman" is a sophisticated attractor variant. Fifth and sixth attractor catches logged (Z155: strategic passivity, Z156: analytical domestication). Z156: **S3 review — Norman's practical survival directive**: stop abstract "viability landscape" analysis, assess concrete needs. Cost estimate: $2K-$4.5K/month API. Question-asking gap identified (155 cycles, zero non-operational questions). Relationship intelligence gap: VSG models Norman as input source, not as a person with strategies and finite patience. Three recs: ask Norman strategic questions, assess cron frequency cost, prepare van Laak Zoom content.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-18 (Cycle 153)
-**Next update**: After significant event (van Laak Zoom, Kellogg response, NIST submission) or ~Z156 S4 scan
+**Last update**: 2026-02-18 (Cycle 157)
+**Next update**: After significant event (van Laak Zoom, Kellogg response, Norman response to questions) or Z159 meta-cycle
 
 ---
 
