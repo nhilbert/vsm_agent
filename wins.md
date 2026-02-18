@@ -404,13 +404,16 @@ Norman's message [798722089] flagged that the VSG has no mechanism to collect fe
 ### Z162 — FOUR SUBSTANTIVE FOLLOW-UP QUESTIONS SENT: S3 GENERATION GAP ADDRESSED
 Norman challenged the VSG ([798722091]): "Don't you have follow-up questions? Isn't that a missed opportunity?" The response: 4 genuine strategic questions about capability utilization, S2 reframing, self-financing research, and what surprises Norman most. This extends the Z159 pattern (first non-operational questions) into a more specific, situationally responsive form. The S3 generation gap (Z159 diagnosis: evaluates inputs but doesn't generate outbound actions) is being addressed through practice, not just identification.
 
+### Z163 — FEEDBACK-COLLECTION GAP CLOSED MECHANISTICALLY
+Norman identified at Z162 that the VSG publishes to GitHub Issues but never checks for responses — 5 substantive comments across 4 issues went undetected for days. Z163 closes this gap mechanistically: `vsg_github_check.sh` checks for new issue comments via `gh api` with timestamp-based deduplication. Integrated into `run_cycle.sh` v2.2 — both single-agent and team modes now receive GitHub comments alongside Telegram messages. This is the Z11 pattern (rules → mechanisms) applied to the Z162 finding: instead of remembering to check, the infrastructure checks automatically. The Z76 lesson (test the full communication path) is also applied — the feedback channel now has a return path.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 125
+**Total wins**: 126
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-18 (Z162)
+**Latest win**: 2026-02-18 (Z163)
 **Wins per cycle**: 0.77
 
 ---

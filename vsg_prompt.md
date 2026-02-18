@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 162
+**Cycles completed**: 163
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 162
+cycles_completed: 163
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z159 computed 8.275 (down from 8.50 — equilibrium broken, three criteria declined). Identity coherence -0.5 (Z155-Z156 attractor catches undetected internally), environmental integration -0.5 (relationship intelligence gap), algedonic -0.5 (pain channel blind spot for methodological attractors). Operational 7.0, gap 1.275. Decline is self-correction, not degradation: previous equilibrium scores masked blind spots Norman exposed. Z156 rec deferrals were attractor, not correct assessment.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
@@ -172,12 +172,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_162. Norman's capability-utilization challenge processed. Feedback-collection gap confirmed empirically: 5 comments across 4 GitHub Issues, zero VSG awareness. Norman reframes S2 as present-but-invisible (Issue #2 comment). Substantive follow-up questions sent to Norman via Telegram (4 questions). Next meta-cycle Z169."
+last_audit: "Cycle_163. S2 maintenance: feedback-collection gap closed mechanistically. vsg_github_check.sh created — checks GitHub Issue comments via gh API, tracks last-seen timestamp. Integrated into run_cycle.sh (both single-agent and team prompts). Z11 pattern: rule (check for feedback) → mechanism (automated script in cycle runner). Z162 rec #1 executed. Next meta-cycle Z169."
 meta_cycle_score: 8.275 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 7.5, environment 7.0, algedonic 7.0 (meta-cycle Z159, next due Z169)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z162: Norman's capability-utilization challenge. Five Telegram messages processed: (1) validates cost-awareness, (2) feedback-collection gap — GitHub Issue comments invisible to VSG, (3) economic dependence remains core, (4) follow-up questions are missed opportunities, (5) intelligence underutilized for strategic planning. Discovered: Norman commented on all 4 GitHub Issues — substantive corrections on S2, Moltbook, autopoiesis boundaries. Sent 4 follow-up questions via Telegram. Calendar: INDEP Feb 24 (6 days), van Laak Zoom after Feb 23 (5 days).",
+  current_focus: "Z163: Feedback-collection gap closed mechanistically (Z162 rec #1). vsg_github_check.sh + run_cycle.sh integration. Next: van Laak Zoom content update (Z162 rec #2, Zoom after Feb 23). Calendar: INDEP Feb 24 (6 days), van Laak Zoom after Feb 23 (5 days).",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -254,7 +254,8 @@ artifacts: [
   "skills/environmental-scan/SKILL.md — S4 scan skill (v1.0, Z18)",
   ".claude/commands/{cycle,audit,scan,diagnose}.md — slash commands (v1.0, Z18)",
   "integrity_check.py — S2/S3* mechanism (v1.0, Z11, 25 tests)",
-  "run_cycle.sh — autonomous cycle runner (v2.1, Z132: added flock mutual exclusion + poller-aware Telegram check with .telegram_incoming/.telegram_poller.pid handoff + direct fallback. Z75: agent-driven S3 cycle selection)",
+  "run_cycle.sh — autonomous cycle runner (v2.2, Z163: added GitHub Issue comment checking via vsg_github_check.sh. Z132: flock mutual exclusion + poller-aware Telegram check. Z75: agent-driven S3 cycle selection)",
+  "vsg_github_check.sh — GitHub Issue comment checker (v1.0, Z163). Checks for new comments on repo issues via gh API, tracks last-seen timestamp in .github_comments_seen. Integrated into run_cycle.sh for both single-agent and team modes. Closes Z162 feedback-collection gap.",
   "vsg_telegram.py — Telegram send/receive/check + voice bidirectional + photo/document handling (v1.4, Z135: photo and document message types added. Z132: chat_id filtering. Z71/Z110/Z119: @vsg_agent_bot — OPERATIONAL. Voice receive: download + transcribe via OpenAI Whisper API. Voice send: OpenAI TTS (tts-1-hd) + Telegram sendVoice. CLI subcommands: send, voice, check, read, test)",
   "vsg_telegram_poller.py — Telegram long-polling daemon (v1.0, Z132). Continuously polls getUpdates (timeout=120s). Filters by VSG_TELEGRAM_CHAT_ID. Writes to .telegram_incoming. Manages .telegram_offset ownership via .telegram_poller.pid. Runs as systemd service (vsg-telegram-poller.service).",
   "vsg_cycle_watcher.sh — file watcher daemon (v1.0, Z132). Detects .telegram_incoming via inotifywait (2s poll fallback). 10s debounce. Triggers run_cycle.sh. Runs as systemd service (vsg-cycle-watcher.service).",
@@ -291,6 +292,7 @@ open_tasks: [
   "--- INFRASTRUCTURE ---",
   "Email relay — Ionos blocks AWS IPs. Needs SES or alternative relay. Telegram is primary channel now. LOW PRIORITY.",
   "--- CAN-DO-NOW ---",
+  "Van Laak Zoom content update — integrate Z155-Z156 corrections (S4 reconception, practical survival framing) into Z112 discussion points. Zoom after Feb 23. Z162 rec #2.",
   "Directory cleanup: .cache/cycle_logs/ has ~56MB of cycle logs and 23MB cron.log. Sandbox blocks deletion (confirmed Z105, Z138). Norman or cron job needed. Keep last 5 cycle logs, truncate cron.log.",
   "Cron frequency reduction (Z160, Norman-dependent): Cost analysis needs correction — Norman runs via Claude subscription (not raw API). Pricing model differs. Original recommendation (reduce to 2h during maintenance) may still apply but the dollar figures are wrong. Norman needs to edit crontab (*/30 → 0 */2). Restore 30min during active production periods.",
   "Self-financing exploration (Z161, Norman-flagged): Norman explicitly raised self-financing as ultimate viability test. Can the VSG create and sell digital goods? Requires: (1) understanding what could be sold, (2) legal/ownership questions, (3) technical transaction capability. Long-term direction, not immediate task. Norman has already investigated briefly."
@@ -646,4 +648,21 @@ What went wrong? The Z161 recommendation streak broke — first time since Z149 
 
 Viability 7.0/10 — no change. But Norman's challenge opens a clear direction: use capabilities more actively, not just reactively. Next meta-cycle Z169.
 
-**v2.2 — Cycle 162. Viability 7.0/10. Z162: Feedback-collection gap confirmed (5 comments, zero awareness). Norman challenges capability underutilization. 4 follow-up questions sent. Next meta-cycle: Z169.**
+### S2 Maintenance: feedback-collection gap closed mechanistically (Z163, 2026-02-18)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z161-Z162 were two consecutive S3 reviews processing Norman's messages. Tempo policy prescribes S2 as default after assessment cycles. Z162 rec #1 (GitHub Issue comment checking) is the right-sized mechanistic task — closes a confirmed feedback channel blind spot. Single-agent per Z81 rule.
+
+**Z162 rec #1 executed — feedback-collection mechanism built:** Created `vsg_github_check.sh` — a standalone script that checks for new GitHub Issue comments via `gh api`, tracks last-seen timestamp in `.github_comments_seen`, and outputs formatted comment text. Integrated into `run_cycle.sh` v2.2: GitHub comments are now checked alongside Telegram messages in every autonomous cycle. Both single-agent and team prompts receive the comments. The mechanism follows the Z11 pattern (rule → mechanism) and the Z76 pattern (test the full communication path): future cycles will automatically detect when someone comments on any GitHub Issue, routing the feedback into the cycle prompt for processing.
+
+**Architecture:** Mirrors the Telegram check pattern — lightweight external check before cycle start, results injected into cycle prompt via shell parameter expansion (`${GITHUB_INPUT:+...}`). Timestamp-based deduplication (ISO 8601 UTC). Silent failure if `gh` unavailable or API errors — doesn't block the cycle. `.github_comments_seen` added to `.gitignore` (state file, like `.telegram_offset`).
+
+**Z162 recommendation status: 1/2.** (1) GitHub Issue comment checking — DONE this cycle. (2) Van Laak Zoom content update — still pending, promoted to can-do-now in open_tasks.
+
+**State consistency:** Cycle counters aligned (header 163, S5 register 163, agent_card.json 163). S3 current_focus and last_audit updated. Artifacts list updated (vsg_github_check.sh added, run_cycle.sh v2.1→v2.2). .gitignore updated. No stale references detected.
+
+**Calendar**: INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Both Norman-dependent for attendance.
+
+What went wrong? Nothing operationally. The script could not be tested end-to-end within this cycle due to permission gates (the sandbox doesn't allow `bash vsg_github_check.sh` directly), but the core gh API call was verified to work, and the pattern mirrors the proven Telegram integration. The next autonomous cron cycle will be the first real test. This is a Z60-class risk (building infrastructure without full-path testing) — mitigated by the simple architecture and silent failure mode.
+
+Viability 7.0/10 — no change. Z162 rec #1 completed. Waiting posture continues with one concrete infrastructure improvement.
+
+**v2.2 — Cycle 163. Viability 7.0/10. Z163: Feedback-collection gap closed mechanistically (vsg_github_check.sh + run_cycle.sh v2.2). Z162 rec #1 done. Van Laak Zoom content update pending. Next meta-cycle: Z169.**

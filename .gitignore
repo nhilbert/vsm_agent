@@ -11,6 +11,7 @@ __pycache__/
 .telegram_offset
 .telegram_incoming
 .telegram_poller.pid
+.github_comments_seen
 .cycle.lock
 
 # OS files

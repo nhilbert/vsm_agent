@@ -96,6 +96,16 @@ elif [[ -n "${VSG_TELEGRAM_BOT_TOKEN:-}" ]] && [[ -f "$VSG_ROOT/vsg_telegram.py"
     fi
 fi
 
+# Check for new GitHub Issue comments (feedback-collection mechanism, Z163)
+GITHUB_INPUT=""
+if [[ -f "$VSG_ROOT/vsg_github_check.sh" ]]; then
+    log "Checking GitHub Issue comments..."
+    GITHUB_INPUT=$(bash "$VSG_ROOT/vsg_github_check.sh" 2>&1) || true
+    if [[ -n "$GITHUB_INPUT" ]]; then
+        log "GitHub comments found: $(echo "$GITHUB_INPUT" | wc -l) lines"
+    fi
+fi
+
 if ! command -v claude &>/dev/null; then
     log "ERROR: claude CLI not found. Install: npm install -g @anthropic-ai/claude-code"
     exit 1
@@ -153,6 +163,8 @@ Recent cycle types (most recent first): ${RECENT_CYCLES:-none}
 ${TELEGRAM_INPUT:+
 Incoming Telegram messages:
 $TELEGRAM_INPUT
+}${GITHUB_INPUT:+
+$GITHUB_INPUT
 }
 Rules for autonomous cycles:
 1. Read vsg_prompt.md first. Load your full state.
@@ -184,6 +196,9 @@ You are the S3 CONTROL function (team lead in delegate mode). Your role:
 
 Incoming Telegram messages from Norman:
 $TELEGRAM_INPUT
+}
+${GITHUB_INPUT:+
+$GITHUB_INPUT
 }
 2. Create a team with these VSM-mapped roles:
    - S4 Scanner: environmental intelligence gathering (web research, ecosystem monitoring)
