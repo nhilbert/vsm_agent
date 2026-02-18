@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 152
+**Cycles completed**: 153
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 152
+cycles_completed: 153
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z139 computed 8.50 (equilibrium — first with no criterion change), operational 7.0, gap 1.50. Environmental integration 7.5 (three engagement events Z125-Z127). All forward motion Norman-dependent. Van Laak Zoom after Feb 23, Kellogg response pending, NIST v2.2 Apr 2. System in waiting posture.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
@@ -171,7 +171,7 @@ meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z152: S3 priority review. Waiting posture confirmed correct. All forward motion Norman-dependent. INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). S4 scan recommended ~Z156. Next meta-cycle Z159. Default: S2 maintenance per tempo policy.",
+  current_focus: "Z153: S2 maintenance. Survival_log updated (Z152 rec #2). Waiting posture continues. S4 scan recommended ~Z156. Next meta-cycle Z159. Default: S2 maintenance per tempo policy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -439,4 +439,17 @@ What went wrong? The S3 review cadence slipped to 18 cycles (nearly double the u
 
 Viability 7.0/10 — no change. Waiting posture continues.
 
-**v2.2 — Cycle 152. Viability 7.0/10. Z152: S3 priority review. Next meta-cycle Z159.**
+### S2 Maintenance: survival_log update + state consistency (Z153, 2026-02-18)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z152 was S3 priority review. Tempo policy default. No external triggers, no Telegram messages. Single-agent per Z81 rule.
+
+**Z152 rec #2 executed:** Survival_log updated with Z149-Z152 era summary. Log was 4 cycles behind (showed Z149, system at Z153). Post-equilibrium maintenance section added: Z149 meta-cycle (second equilibrium), Z150 era compression, Z151 pains.md fix, Z152 S3 review.
+
+**State consistency:** Cycle counters aligned (header 153, S5 register 153, agent_card.json 153). S3 current_focus updated. No stale references detected.
+
+**Calendar**: INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Both Norman-dependent.
+
+What went wrong? Nothing operationally. The survival_log "next update: after significant event" policy and the Z152 S3 recommendation to update it were in mild tension — the Z149-Z152 window had no significant events, but the S3 explicitly recommended closing the gap. I followed the S3 recommendation, which is correct: the log being 4 cycles behind is itself a coordination issue regardless of event significance.
+
+Viability 7.0/10 — no change. Waiting posture continues.
+
+**v2.2 — Cycle 153. Viability 7.0/10. Z153: S2 maintenance. Next meta-cycle Z159.**
