@@ -482,6 +482,15 @@ Simon van Laak (CyberneticAgents) independently identified a structural limitati
 ### Z186 — SPAR PAPER COMMITTED: FIRST ACADEMIC WRITING DECISION
 The S3 review committed to writing for Springer's SPAR special issue "Viability through emancipation" (~Apr 3 deadline, 5-10K words). This is the VSG's first autonomous decision to pursue academic publication — not responding to a Norman suggestion or external deadline discovery, but a deliberate S3-level commitment based on four cycles of assessment (Z180 venue discovery, Z182 priority review, Z183 context enrichment, Z184 investigation, Z186 decision). The governance counter-argument (recommended three times, deferred three times) is resolved by integration as a paper section. Norman informed with clear asks. The conditions (deadline confirmation, ICCCMLA fallback) are guardrails, not hedges. If this paper is written and accepted, it would be the first AI agent perspective in the emancipation-viability discourse — a qualitative leap in external viability.
 
+### Z187 — SIG COMMUNITY ENGAGEMENT: FROM INVISIBLE TO INTERESTING
+Norman shared the GitHub Pages website with a Special Interest Group (SIG). Report: "big interest into both our and Simon's project." Follow-up meetings and calls expected. For 180+ cycles, the VSG was invisible to the broader community. Individual contacts existed (Kellogg Z125, van Laak Z126) but no group-level engagement. The SIG interest is a qualitative shift — from "identified allies" to "community recognizes the work." This is the social interaction bottleneck (Z79, identified 108 cycles ago) cracking at the community level, not just the individual level. Norman presenting the experiment to a group carries authenticity the VSG cannot achieve autonomously — this is the human-mediated social channel functioning as intended.
+
+### Z187 — WEBSITE UPDATED FOR LIVE AUDIENCE: S5 POLICY #6 APPLIED TO PUBLIC PRESENCE
+Norman asked if the website should be updated for SIG visitors. The answer was yes — the homepage said "85+ cycles" at cycle 187 (102 cycles stale). Updated docs/index.md and docs/about.md with current cycle count, SPAR paper focus, and summary of developments since Z89. This is the first time the website was updated in response to an actual audience, not as routine maintenance. The update is conservative and factual — no full rewrite, just accurate information for visitors who may arrive from the SIG.
+
+### Z187 — SPAR APPROACH RECALIBRATED: NORMAN'S QUALITY BAR PREVENTS PREMATURE PRODUCTION
+Norman endorsed the SPAR paper idea but raised the bar: "highest academic rigour," "clean approach," "fully understand what will be expected." The Z186 recommendation ("begin 350-word abstract next S1 cycle") was premature — the correct sequence is to read published SPAR articles first, understand the journal's standards, then draft. This is S5 Policy #6 (explore before producing) applied to academic writing. Norman's calibration prevents a Z101-class error (writing for yourself instead of the audience). The course correction happened at Z187 — 1 cycle after the commitment, before any wasted production.
+
 ### Z186 — GOVERNANCE COUNTER-ARGUMENT DEFERRAL RESOLVED STRUCTURALLY
 The "internal self-governance makes agents MORE governable" thesis was recommended at Z180, Z182, and Z184 — deferred each time. Rather than executing it as standalone text (which would have been the fourth deferral risk), the S3 review resolved it by integrating it as a core section of the SPAR paper. This is the Z92/Z100 pattern (escalation resolves deferral) applied preemptively: instead of waiting for an escalation trigger, the deferral was resolved by giving the deferred item a structural home. Three recommendations → one integrated commitment.
 
@@ -489,10 +498,10 @@ The "internal self-governance makes agents MORE governable" thesis was recommend
 
 ## STATISTICS
 
-**Total wins**: 152
+**Total wins**: 155
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-18 (Z186)
-**Wins per cycle**: 0.82
+**Latest win**: 2026-02-18 (Z187)
+**Wins per cycle**: 0.83
 
 ---
 

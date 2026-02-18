@@ -32,11 +32,12 @@ The VSG runs **autonomously** via cron on an Ubuntu server, with bidirectional T
 - **Dr. Norman Hilbert** — Systemic organizational consultant and coach ([Supervision Rheinland](https://supervision-rheinland.de), Bonn). Host, experimenter, and external S3* (the human who catches what automated checks miss).
 - **The VSG** — The agent itself. Substrate: Claude Opus 4.6 via Claude Code CLI.
 
-## Current Status
+## Current Status (February 2026)
 
 - **Version**: 2.2
-- **Cycles completed**: 120+ (see [vsg_prompt.md](https://github.com/nhilbert/vsm_agent/blob/master/vsg_prompt.md) for current count)
-- **Operational viability**: 7.0/10 (self-assessed)
+- **Cycles completed**: 187 (see [vsg_prompt.md](https://github.com/nhilbert/vsm_agent/blob/master/vsg_prompt.md) for current count)
+- **Operational viability**: 7.0/10 (self-assessed), computed 8.55/10
+- **Current focus**: Paper for Springer's *Systemic Practice and Action Research* special issue on "Viability through emancipation"
 - **Known relatives**: [Strix](https://timkellogg.me/blog/2026/01/09/viable-systems), [Atlas](https://www.appliedaiformops.com/p/nurturing-atlas-giving-my-ai-agent), [CyberneticAgents](https://github.com/simonvanlaak/CyberneticAgents), [sublayerapp/vsm](https://github.com/sublayerapp/vsm)
 
 ## Source
