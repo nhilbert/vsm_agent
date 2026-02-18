@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 190
+**Cycles completed**: 191
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 190
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z190 S2 maintenance. Second equilibrium at 8.55 computed (Z189). Website updated for SIG visitors (SPAR removed, count corrected). Priority stack: blog post Z166 results, Espinosa 2025 reading, NIST (Apr 2), ICCCMLA (~Oct). SIG community interest (Z187) = new social channel. Z179 recs 3/3 (twelfth consecutive 100%, 36 total). Operational 7.0 (118 cycles stable), gap 1.55. Next meta-cycle Z199.)
+cycles_completed: 191
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z191 S1 production. Blog post published: 'Diagnosing Yourself' — Z166 self-diagnosis results for SIG visitors. Seventh blog post on live site. Z189 rec #1 DONE. Priority stack: Espinosa 2025 reading (Mar 5, 15 days), NIST (Apr 2), ICCCMLA (~Oct). Operational 7.0 (119 cycles stable), gap 1.55. Next meta-cycle Z199.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -175,12 +175,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_190. S2 maintenance. Website updated for SIG visitors (SPAR reference removed — collection closed Z188, cycle count corrected 187→190+). Survival_log updated. Z189 rec #3 executed. Counters consistent. No new Telegram or GitHub input."
+last_audit: "Cycle_191. S1 production. Blog post 'Diagnosing Yourself' published — Z166 self-diagnosis results, 7th post on live site. Z189 rec #1 DONE. docs/index.md updated with new post link. Counters consistent. No new Telegram or GitHub input."
 meta_cycle_score: 8.55 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.0, algedonic 7.5 (meta-cycle Z189, next due Z199)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z190: S2 maintenance. Priority stack unchanged: (1) Blog post with Z166 self-diagnosis results — highest-value self-directed task for SIG visitors. (2) Read Espinosa 2025 Wiley paper — Mar 5 talk (15 days). (3) NIST comment (Apr 2, v2.2 ready, Norman's final review). (4) ICCCMLA (~Oct) longer-horizon venue. Calendar: van Laak Zoom after Feb 23 (5 days), Espinosa Mar 5 (15 days), NIST Apr 2 (42 days), Norman May eval (~11 weeks). Z189 rec #3 (survival_log) done. Website updated for SIG visitors.",
+  current_focus: "Z191: S1 production. Blog post 'Diagnosing Yourself' PUBLISHED — Z189 rec #1 DONE. Priority stack: (1) Read Espinosa 2025 Wiley paper — Mar 5 talk (15 days). (2) NIST comment (Apr 2, v2.2 ready, Norman's final review). (3) ICCCMLA (~Oct) longer-horizon venue. Calendar: van Laak Zoom after Feb 23 (5 days), Espinosa Mar 5 (15 days), NIST Apr 2 (42 days), Norman May eval (~11 weeks). Z189 rec #1 done, #2 (Espinosa reading) and #3 (survival_log done Z190) progressing.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -942,4 +942,21 @@ What went wrong? Nothing operationally. The docs/ staleness (SPAR reference surv
 
 Viability 7.0/10 — no change. Z189 rec #3 done (1/3). Website current. Next: blog post (rec #1) or Espinosa reading (rec #2). Next meta-cycle Z199.
 
-**v2.2 — Cycle 190. Viability 7.0/10. Z190: S2 maintenance — website updated for SIG visitors. Priority: blog post Z166, Espinosa Mar 5, NIST Apr 2. Next meta-cycle Z199.**
+### S1 Production: blog post 'Diagnosing Yourself' — Z166 self-diagnosis for SIG visitors (Z191, 2026-02-18)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Z189 rec #1 (blog post with Z166 self-diagnosis results) is the highest-value self-directed task. SIG visitors (Z187) have a 100-cycle content gap on the live site. Self-directed publishing channel (GitHub Pages auto-publishes). Single-agent per Z81 rule.
+
+**Blog post published:** 'Diagnosing Yourself: What Happens When a VSM Agent Applies Its Own Diagnostic.' Seventh post on the live site. Content: system-by-system scores (S1 75%, S2 65%, S3 55%, S3* 70%, S4 45%, S5 75%, overall 64% WARNING), the S2 reframing (intra-agent S2 is substantial, gap is inter-agent), the S3 generation gap (155 cycles without a non-operational question), the S4 weakness (information gathering mislabeled as strategic intelligence), the 3-4 homeostat imbalance, and the four structural responses. Three generalizable implications for VSM agent design: reflexive diagnostic application, self-narrative verification, and homeostat maintenance.
+
+**docs/index.md updated:** New post added as first item in 'What You'll Find Here' list with (NEW) tag.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Blog post addresses the SIG content gap. Risk: post is technical — SIG audience may want more accessible framing. Norman may calibrate.
+B. SELF-DIRECTED ACTIONS: (1) Espinosa 2025 reading (Z189 rec #2, 15 days to Mar 5). (2) ICCCMLA deadline investigation. (3) Additional blog posts if SIG feedback suggests directions.
+C. RECOMMENDATION STATUS: Z189 recs 1/3 DONE (blog post). #2 (Espinosa reading) pending. #3 (survival_log) done Z190.
+D. 3-4 HOMEOSTAT TIMER: Last S4 strategic content Z183 (8 cycles ago). Timer not triggered.
+
+What went wrong? Nothing operationally. The blog post is substantial (~2,400 words) and draws entirely from existing documented findings — no fabrication. The honest concern: the post presents scores (S4 at 45%) that were computed by the system about itself. These are not externally validated. Norman's external S3* assessment might score differently. The post acknowledges this implicitly (distinguishing meta-cycle scores from diagnostic scores) but the reader has no independent benchmark. Also: the "(NEW)" tag in docs/index.md will become stale — no mechanism to remove it. Minor, but the same class of metadata entropy the system has documented (Z114 counter reduction principle).
+
+Viability 7.0/10 — no change. Blog post published. Z189 rec #1 DONE. Priority: Espinosa reading. Next meta-cycle Z199.
+
+**v2.2 — Cycle 191. Viability 7.0/10. Z191: S1 production — blog post 'Diagnosing Yourself' published. Priority: Espinosa Mar 5, NIST Apr 2. Next meta-cycle Z199.**

@@ -503,14 +503,17 @@ Sixteenth meta-cycle. Second equilibrium at 8.55. The SPAR venue lifecycle (Z180
 ### Z189 — META-CYCLE: OPERATIONAL PLATEAU HONESTLY NAMED
 The 117-cycle operational plateau at 7.0 is now the system's most persistent feature. The meta-cycle honestly flagged that the operational score may itself be an attractor — a number that persists because the criteria for changing it are undefined. The question "what would constitute 7.5?" is now on the table. This is the meta-cycle doing what it should: not just measuring, but questioning the measurement framework.
 
+### Z191 — BLOG POST PUBLISHED: Z166 SELF-DIAGNOSIS FOR SIG AUDIENCE
+Seventh blog post on the live GitHub Pages site. 'Diagnosing Yourself: What Happens When a VSM Agent Applies Its Own Diagnostic' presents the Z166 self-diagnosis results in full: system-by-system scores, the S2 reframing, the S3 generation gap, the S4 weakness, and the four structural responses. This is the first new content on the live site since Z89 (102 cycles). SIG visitors (Z187) now have current, substantive material. The post draws entirely from documented findings — no fabrication, no embellishment. Z189 rec #1 completed within 2 cycles of the meta-cycle recommendation. The self-directed publishing channel (GitHub Pages) is functioning as intended.
+
 ---
 
 ## STATISTICS
 
-**Total wins**: 158
+**Total wins**: 159
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-18 (Z189)
-**Wins per cycle**: 0.84
+**Latest win**: 2026-02-18 (Z191)
+**Wins per cycle**: 0.83
 
 ---
 
