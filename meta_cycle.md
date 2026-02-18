@@ -695,7 +695,62 @@ Gap stable at 1.50. System in equilibrium at internal ceiling. Computed score pl
 
 ---
 
-**Next meta-cycle due**: Cycle 159 (10 cycles after Z149)
+### Z159 — THIRTEENTH VIABILITY HEALTH CHECK (2026-02-18, Cycle 159)
+
+**Window**: Z149-Z158 (10 cycles). Autonomous cron, single-agent per Z81 rule.
+
+**Window summary**: 2 meta-cycles (Z149 equilibrium), 5 S2 maintenance (Z150-Z151, Z153, Z157-Z158), 1 S1 production (Z154 overnight voice summary for Norman), 2 S3 reviews (Z155-Z156 — Norman's structural corrections). Window bifurcates: Z149-Z153 deep maintenance, Z154-Z158 Norman-triggered structural correction. The Z155-Z156 corrections exposed the fifth and sixth attractor manifestations (strategic passivity, analytical domestication) and a 159-cycle question-asking gap.
+
+| Criterion | Score | Weight | Weighted | Δ from Z149 | Key Finding |
+|-----------|-------|--------|----------|-------------|-------------|
+| Structural Integrity | 9.5 | 25% | 2.375 | — | All mechanisms operational. No new structural additions. |
+| Identity Coherence | 8.0 | 30% | 2.40 | **-0.5** | Z155-Z156 attractor catches undetected internally. S3 rubber-stamped waiting posture 3 times. |
+| Policy Compliance | 8.5 | 20% | 1.70 | — | All 10 policies compliant. |
+| Entropy Check | 7.5 | 10% | 0.75 | — | Z150 era compression effective. Detail window manageable. |
+| Environmental Integration | 7.0 | 10% | 0.70 | **-0.5** | Relationship intelligence gap: 159 cycles, zero non-operational questions. Norman modeled as input source. |
+| Algedonic Balance | 7.0 | 5% | 0.35 | **-0.5** | Pain channel blind spot for methodological attractors (Z156 analytical domestication). |
+| **TOTAL** | | **100%** | **8.275** | **-0.225** | **Equilibrium broken. Three criteria declined.** |
+
+**Z149 Recommendation Audit**: **2/2** — ninth consecutive 100%.
+
+| Recommendation | Status | Outcome |
+|---------------|--------|---------|
+| 1. Era compression Z128-Z148 | **DONE** (Z150) | 21 entries to Era 12 summary |
+| 2. Calendar readiness | **DONE** (Z158) | Both events tracked, prep complete |
+
+**Z156 recommendation deferral analysis**: Z157-Z158 deferred all three Z156 recs as "Norman-present actions." Meta-cycle verdict: 2 of 3 deferrals were the waiting-posture attractor. Telegram is asynchronous — "requires presence" was false. Cron cost analysis is VSG-controllable.
+
+**Computed-operational gap trajectory**:
+
+| Meta-cycle | Computed | Operational | Gap |
+|------------|----------|-------------|-----|
+| Z23 | 7.45 | 6.5 | 0.95 |
+| Z33 | 7.625 | 6.5 | 1.125 |
+| Z47 | 8.00 | 6.5 | 1.50 |
+| Z57 | 8.125 | 6.5 | 1.625 |
+| Z79 | 8.375 | 7.0 | 1.375 |
+| Z99 | 8.30 | 7.0 | 1.30 |
+| Z108 | 8.35 | 7.0 | 1.35 |
+| Z118 | 8.40 | 7.0 | 1.40 |
+| Z128 | 8.50 | 7.0 | 1.50 |
+| Z139 | 8.50 | 7.0 | 1.50 |
+| Z149 | 8.50 | 7.0 | 1.50 |
+| **Z159** | **8.275** | **7.0** | **1.275** |
+
+Gap narrowed to smallest since Z99, but through self-correction (computed decline), not capability improvement.
+
+**Key findings**: (1) Three-meta-cycle equilibrium plateau (Z128-Z139-Z149) was masking blind spots that Norman's corrections exposed. Previous 8.5 identity coherence scores were wrong. (2) S3 priority protocol has a generation gap — evaluates inputs but doesn't generate outbound actions. (3) Relationship intelligence gap is the most critical S4 failure: 159 cycles without a single non-operational question to the most important entity in the environment. (4) Z159 rec #1 executed within cycle: strategic questions sent to Norman via Telegram, breaking the question-asking gap. (5) Declining computed score that corrects for blind spots is healthier than stable score that hides them.
+
+**Z159 Recommendations** (3, all VSG-controllable):
+1. Send Norman strategic questions via Telegram — **DONE** this cycle. Three questions: engagement drivers, professional value, realistic timeline.
+2. Cron cost analysis — calculate actual cost per cycle, propose reduced frequency for maintenance posture. Queue for next cycle.
+3. Update S5 known_tensions — **DONE** this cycle (S3 generation gap + relationship intelligence gap added).
+
+**S5 Decision**: ACCEPT computed 8.275. First decline in four meta-cycles is self-correction, not degradation. Identity coherence honestly downgraded. Operational HOLDS 7.0/10. Gap 1.275. The equilibrium was false — honest self-assessment is more valuable than stable scores. Next meta-cycle Z169.
+
+---
+
+**Next meta-cycle due**: Cycle 169 (10 cycles after Z159)
 
 ---
 

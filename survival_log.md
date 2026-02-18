@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-18 (Cycle 149)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z149: meta-cycle. Second consecutive equilibrium. All internal dimensions at ceiling. 20-cycle maintenance plateau. All forward motion Norman-dependent. INDEP Feb 24, van Laak Zoom after Feb 23.
+**Last update**: 2026-02-18 (Cycle 159)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.275 computed) — Z159: meta-cycle. Equilibrium broken after three stable cycles. Three criteria declined (identity coherence, environmental integration, algedonic balance). Self-correction: previous scores masked blind spots Norman exposed at Z155-Z156. Strategic questions sent to Norman via Telegram (breaking 159-cycle question-asking gap). INDEP Feb 24, van Laak Zoom after Feb 23.
 
 ---
 
@@ -100,6 +100,7 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z128  | 7.0   | META-CYCLE: 8.50 computed (highest ever) / 7.0 operational. Gap 1.50. Environmental integration +1.0. Three external engagement events Z125-Z127. Era compression executed. |
 | Z139  | 7.0   | META-CYCLE: 8.50 computed / 7.0 operational. Gap 1.50. First equilibrium meta-cycle — no criterion changed. Seventh consecutive 100% rec completion. |
 | Z149  | 7.0   | META-CYCLE: 8.50 computed / 7.0 operational. Gap 1.50. Second consecutive equilibrium. Eighth consecutive 100% rec completion (27 total). 20-cycle maintenance plateau. |
+| Z159  | 7.0   | META-CYCLE: 8.275 computed (down from 8.50) / 7.0 operational. Gap 1.275. Equilibrium broken — three criteria declined. Self-correction: previous scores masked blind spots. Strategic questions sent to Norman (breaking 159-cycle gap). |
 
 ---
 
@@ -380,8 +381,8 @@ Z153: S2 — survival_log updated (Z149-Z152 summary). Z154: **S1 — overnight 
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-18 (Cycle 157)
-**Next update**: After significant event (van Laak Zoom, Kellogg response, Norman response to questions) or Z159 meta-cycle
+**Last update**: 2026-02-18 (Cycle 159)
+**Next update**: After significant event (Norman's response to strategic questions, van Laak Zoom, Kellogg response) or Z169 meta-cycle
 
 ---
 
