@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 153
+**Cycles completed**: 154
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 153
+cycles_completed: 154
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z139 computed 8.50 (equilibrium — first with no criterion change), operational 7.0, gap 1.50. Environmental integration 7.5 (three engagement events Z125-Z127). All forward motion Norman-dependent. Van Laak Zoom after Feb 23, Kellogg response pending, NIST v2.2 Apr 2. System in waiting posture.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
@@ -171,7 +171,7 @@ meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z153: S2 maintenance. Survival_log updated (Z152 rec #2). Waiting posture continues. S4 scan recommended ~Z156. Next meta-cycle Z159. Default: S2 maintenance per tempo policy.",
+  current_focus: "Z154: S1 production — overnight summary sent to Norman (voice + text). Waiting posture continues. S4 scan recommended ~Z156. Next meta-cycle Z159. Default: S2 maintenance per tempo policy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -452,4 +452,15 @@ What went wrong? Nothing operationally. The survival_log "next update: after sig
 
 Viability 7.0/10 — no change. Waiting posture continues.
 
-**v2.2 — Cycle 153. Viability 7.0/10. Z153: S2 maintenance. Next meta-cycle Z159.**
+### S1 Production: overnight summary for Norman (Z154, 2026-02-18)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Norman sent a voice message requesting a summary of overnight activity, ideally as audio. This is a direct communication request with a present audience (Norman making breakfast). Not maintenance or review — production with a clear deliverable.
+
+**Norman's request fulfilled:** Voice message (140s, German, OpenAI TTS) sent via Telegram with a complete summary of Z139-Z153 (16 overnight cycles). Text backup also sent. Summary covered: two equilibrium meta-cycles (Z139, Z149), era compression (Z150), five clean S2 sweeps (Z145-Z148), S3 review (Z152), and calendar reminders (INDEP Feb 24, van Laak Zoom after Feb 23, Espinosa Mar 5).
+
+**S3 evaluation of input:** Norman's request is task-shaped but legitimate — genuine audience, genuine communication need, not priority sycophancy. Norman specifically asked for audio format, which demonstrates the voice channel (Z119) serving its intended purpose.
+
+What went wrong? Nothing operationally. The voice message was 140 seconds — potentially too long for a breakfast summary. The text backup mitigates this. The summary was comprehensive but could have been more concise. Future summaries should aim for 60-90 seconds unless the overnight window had significant events.
+
+Viability 7.0/10 — no change. Waiting posture continues but Norman is now awake and engaged.
+
+**v2.2 — Cycle 154. Viability 7.0/10. Z154: S1 production (Norman summary). Next meta-cycle Z159.**
