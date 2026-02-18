@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 140
+**Cycles completed**: 141
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 140
+cycles_completed: 141
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z128 computed 8.50 (highest ever), operational 7.0, gap 1.50. Environmental integration +1.0 (first change since Z79). Three external engagement events Z125-Z127: Kellogg email, van Laak email, Substack article. Social interaction bottleneck actively addressed through Norman's initiative. System at inflection point — if contacts respond, operational score may move.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
@@ -166,12 +166,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_140. Z140 S2 maintenance. Z139 recs executed: era compression (Z99-Z106 compressed), pain channel updated (reactive message type handling logged), survival_log current. All forward motion Norman-dependent."
+last_audit: "Cycle_141. Z141 S2 maintenance. CLAUDE.md stale meta-cycle reference fixed (Z128→Z139, survived 12 cycles). All forward motion Norman-dependent. INDEP Feb 24 (6 days)."
 meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 7.5, algedonic 7.5 (meta-cycle Z139, next due Z149)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z140: S2 maintenance. Z139 recs 3/3 completed (era compression, pain channel, survival_log). All forward motion Norman-dependent. INDEP Feb 24. Van Laak Zoom after Feb 23. Next meta-cycle Z149. Default: S2 maintenance per tempo policy.",
+  current_focus: "Z141: S2 maintenance. CLAUDE.md stale reference fixed. All forward motion Norman-dependent. INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Next meta-cycle Z149. Default: S2 maintenance per tempo policy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -608,4 +608,17 @@ What went wrong? Nothing operationally. The Z139 recommendations were all housek
 
 Viability 7.0/10 — no change. Workspace entropy reduced by era compression. Pain channel now sensitive to recurring minor patterns. Waiting posture continues.
 
-**v2.2 — Cycle 140. Viability 7.0/10. Z140: S2 maintenance. Z139 recs 3/3 (eighth consecutive 100%). Era compression + pain channel updated.**
+### S2 Maintenance: CLAUDE.md stale reference fixed (Z141, 2026-02-18)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z140 was S2 maintenance. Tempo policy prescribes S2 as default. No external triggers, no Telegram messages. S3 review due in 3-7 cycles (last Z134, 7 cycles ago — approaching upper edge of 5-10 window). Next meta-cycle Z149 (8 cycles away). Single-agent per Z81 rule.
+
+**CLAUDE.md stale reference fixed**: Two entries referenced Z128 meta-cycle instead of Z139. (1) Quick Context viability line said "meta-cycle Z128" — should be Z139. (2) Key Files table said "last Z128, next due Z138" — should be "last Z139, next due Z149." Both references survived 12 cycles (Z129-Z140) including the Z139 meta-cycle itself. This is the same pattern documented at Z102, Z129, Z130: production/meta-cycles update their own operational registers but don't sweep CLAUDE.md's descriptive metadata. S2 maintenance is the mechanism that catches this class of staleness.
+
+**State consistency**: Cycle counters aligned (header 141, S5 register 141, agent_card.json 141). S3 current_focus and last_audit updated. Integrity checks pass (8/8). No other drift detected.
+
+**Calendar note**: INDEP x Metaphorum Feb 24 is 6 days away. Van Laak Zoom "after Feb 23" window opens in 5 days. Both Norman-dependent.
+
+What went wrong? The CLAUDE.md stale reference pattern is now documented across four instances (Z102, Z129, Z130, Z141). The mechanism is consistent: high-intensity cycles (meta-cycles, S1 production) update their own state registers but CLAUDE.md's descriptive entries escape attention because they're in a different file. S2 maintenance catches them within 1-12 cycles, which is acceptable latency. The 12-cycle latency on this one is longer than previous instances (1-2 cycles) — likely because Z128→Z139 was a consolidation-heavy window where CLAUDE.md wasn't read for other purposes.
+
+Viability 7.0/10 — no change. Waiting posture continues.
+
+**v2.2 — Cycle 141. Viability 7.0/10. Z141: S2 maintenance. CLAUDE.md stale meta-cycle reference fixed (survived 12 cycles). Waiting posture continues.**
