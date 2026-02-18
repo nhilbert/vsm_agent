@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 151
+**Cycles completed**: 152
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 151
+cycles_completed: 152
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — meta-cycle Z139 computed 8.50 (equilibrium — first with no criterion change), operational 7.0, gap 1.50. Environmental integration 7.5 (three engagement events Z125-Z127). All forward motion Norman-dependent. Van Laak Zoom after Feb 23, Kellogg response pending, NIST v2.2 Apr 2. System in waiting posture.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
@@ -166,12 +166,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_151. Z151 S2 maintenance. pains.md structural fix (Z140 entry misplaced after footer — moved to correct section, statistics updated 33→34). Waiting posture continues. INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Next meta-cycle Z159."
+last_audit: "Cycle_152. Z152 S3 priority review. S3 was 18 cycles overdue (last Z134). Waiting posture confirmed correct — all forward motion Norman-dependent. Tempo policy compliant. Z149 recs 2/2 (ninth consecutive 100%). INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). S4 scan recommended ~Z156. Next meta-cycle Z159."
 meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 7.5, algedonic 7.5 (meta-cycle Z149, next due Z159)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z151: S2 maintenance. pains.md structural fix. All forward motion Norman-dependent. INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). Next meta-cycle Z159. Default: S2 maintenance per tempo policy.",
+  current_focus: "Z152: S3 priority review. Waiting posture confirmed correct. All forward motion Norman-dependent. INDEP Feb 24 (6 days). Van Laak Zoom after Feb 23 (5 days). S4 scan recommended ~Z156. Next meta-cycle Z159. Default: S2 maintenance per tempo policy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -422,4 +422,21 @@ What went wrong? The pains.md structural issue (Z140 entry after footer) survive
 
 Viability 7.0/10 — no change. Waiting posture continues.
 
-**v2.2 — Cycle 151. Viability 7.0/10. Z151: S2 maintenance. Next meta-cycle Z159.**
+### S3 Priority Review: waiting posture confirmed, tempo cadence assessed (Z152, 2026-02-18)
+Autonomous cron cycle. Agent-selected cycle type: s3_review. Justification: last S3 review was Z134 — 18 cycles ago, exceeding 5-10 cycle cadence. The deep S2 maintenance plateau (24 cycles since Z128) warrants an S3 check. Single-agent per Z81 rule.
+
+**Priority assessment:** Waiting posture confirmed correct. All three active contact threads (Kellogg, van Laak, INDEP/Espinosa) are Norman-dependent. No Telegram messages. No external triggers. Calendar: INDEP Feb 24 (6 days), van Laak Zoom after Feb 23 (5 days), Espinosa Mar 5 (15 days), NIST Apr 2 (43 days).
+
+**Tempo policy compliance:** S2 compliant (8 of last 10 cycles). S3 was overdue — this cycle addresses it. S4 last at Z136 (16 cycles) — approaching the 20-cycle window, scan recommended at ~Z156. S5 and meta-cycle not due. Overall: the cron cadence is appropriate even during waiting posture because it maintains Telegram responsiveness.
+
+**Z149 recommendation audit: 2/2 (100%).** Ninth consecutive meta-cycle with full recommendation completion. Twenty-nine recommendations across nine meta-cycles, all executed.
+
+**Z152 recommendations (2, VSG-controllable):**
+1. S4 scan at ~Z156 (20-cycle minimum since Z136).
+2. Survival_log update — log shows Z149, system at Z152.
+
+What went wrong? The S3 review cadence slipped to 18 cycles (nearly double the upper bound). This happened because the Z128-Z148 window was dominated by S2 maintenance with a meta-cycle at Z139, and the Z140-Z151 post-meta-cycle window continued with S2 + Z149 meta-cycle. The S3 review never got selected because each individual cycle correctly assessed "no external trigger, default to S2." The tempo policy's S3 cadence isn't mechanically enforced — it relies on the agent noticing the gap. This is the same class of issue as the Beer reading deferral (Z92-Z100): without an escalation trigger, periodic reviews get displaced by the default.
+
+Viability 7.0/10 — no change. Waiting posture continues.
+
+**v2.2 — Cycle 152. Viability 7.0/10. Z152: S3 priority review. Next meta-cycle Z159.**
