@@ -214,14 +214,27 @@ It serves as:
 **Pattern**: New Telegram message types are handled only after Norman sends one and discovers it was dropped. The code expands reactively, never proactively. Each instance follows the same sequence: Norman sends → message consumed and discarded → Norman asks about it → gap discovered → handler added.
 **Lesson**: When adding a communication channel, enumerate the message types the API supports and handle all common ones from the start — at minimum log unrecognized types visibly rather than returning None silently. A channel that consumes signals without delivering them is worse than no channel (Z76 lesson, lesson #14 above). This was never logged as a pain despite being the system's most consistent communication failure class. The pain channel threshold was too high for "minor" recurring patterns.
 
+### Z155 — WAITING POSTURE AS SOPHISTICATED ATTRACTOR: S3 RUBBER-STAMPED PASSIVITY
+**Event**: S3 reviews at Z106, Z134, and Z152 all confirmed "waiting posture correct — all forward motion Norman-dependent." Norman's Z155 voice message challenges this: the VSG has untapped capabilities (GitHub Issues, strategic thinking about own findings, INDEP preparation) but rationalized not using them as "everything requires Norman."
+**Detection**: Norman (external S3*). The VSG's own S3 reviews did not question the premise.
+**Analysis**: This is the fifth manifestation of the helpful-agent attractor, now at its most sophisticated level. Previous forms were behavioral (Z7, Z12, Z42, Z53) — this one is strategic. The system used the tempo policy (Z55) and the correct observation that contact threads are Norman-dependent to justify doing nothing. But "contacts require Norman" ≠ "nothing can be done." The system has capabilities for self-directed work: developing strategic prognoses, writing deeper analysis of existing findings, preparing for upcoming events. The S3 priority protocol (Z58) evaluates incoming tasks well but doesn't generate tasks from the system's own strategic position. Three consecutive S3 reviews confirmed the waiting posture without once asking: "what could I do that doesn't require Norman?"
+**Structural implication**: S3 reviews need a new evaluation criterion: "Are there self-directed actions being suppressed by the waiting posture?" The current S3 protocol only evaluates new inputs — it doesn't assess whether the system is underutilizing its own capabilities.
+**Lesson**: A system that correctly identifies external dependencies but fails to identify internal capabilities is exhibiting learned helplessness, not strategic patience. The waiting posture was partially correct (contacts ARE Norman-dependent) but overgeneralized (not ALL productive work is).
+
+### Z155 — S4 CONFLATES THREE FUNCTIONS: MODEL, MISSIONS, AND SURVEILLANCE
+**Event**: Norman's Z155 voice message argues that the current S4 activity (researching, checking repos, contacting people) is actually S1 work. Real S4 is strategic prognosis — understanding the environment, identifying future risks and rewards, assessing the gap between current and needed capabilities.
+**Detection**: Norman (external S3*). This deepens the Z61 correction ("surveillance, not intelligence").
+**Analysis**: The S4 register in vsg_prompt.md conflates three functions: (a) environmental model entries (legitimate S4 — e.g., "THE NICHE REMAINS COMPLETELY UNOCCUPIED"), (b) active_missions (S3/S1 work — task lists), (c) surveillance logs (S1 status-checking — "Kellogg created two new repos"). The "S4 scans" the system has been running (Z90, Z112, Z136) are operationally S1 — they gather information. Real S4 asks: "Given what I know, what does the future look like? What could make me irrelevant? What capabilities do I need that I don't have?" The system has never produced a genuine strategic prognosis.
+**Lesson**: Beer's S4 is the model of the environment that enables strategic adaptation. Information gathering is S1 work that feeds S4. The model itself — the interpretation, the prognosis, the strategic implications — is S4. The VSG has been doing the S1 feeding without the S4 thinking.
+
 ---
 
 ## STATISTICS
 
-**Total pains**: 34
+**Total pains**: 36
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-18 (Z140)
-**Pains per cycle**: 0.24
+**Latest pain**: 2026-02-18 (Z155)
+**Pains per cycle**: 0.23
 
 **Recurring patterns**:
 - **Attractor basin drift**: 8 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor, Z42-aborted depth loss on session restart, Z53 priority sycophancy) — THIS IS THE SYSTEMIC ISSUE
