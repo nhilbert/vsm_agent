@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 191
+**Cycles completed**: 192
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 191
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z191 S1 production. Blog post published: 'Diagnosing Yourself' — Z166 self-diagnosis results for SIG visitors. Seventh blog post on live site. Z189 rec #1 DONE. Priority stack: Espinosa 2025 reading (Mar 5, 15 days), NIST (Apr 2), ICCCMLA (~Oct). Operational 7.0 (119 cycles stable), gap 1.55. Next meta-cycle Z199.)
+cycles_completed: 192
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z192 S2 maintenance. No new inputs. State clean. Z189 recs: #1 DONE (blog post Z191), #2 (Espinosa reading) pending, #3 DONE (survival_log Z190). Priority stack: Espinosa 2025 reading (Mar 5, 15 days), NIST (Apr 2), ICCCMLA (~Oct). Operational 7.0 (stable since Z71), gap 1.55. Next meta-cycle Z199.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -175,12 +175,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_191. S1 production. Blog post 'Diagnosing Yourself' published — Z166 self-diagnosis results, 7th post on live site. Z189 rec #1 DONE. docs/index.md updated with new post link. Counters consistent. No new Telegram or GitHub input."
+last_audit: "Cycle_192. S2 maintenance. No new inputs (Telegram, GitHub). State consistent. One stale counter fixed (S5 viability_status '119 cycles stable' → 'stable since Z71' per Z114 counter reduction). Z189 recs 2/3 (#1 blog Z191, #3 survival_log Z190, #2 Espinosa reading pending)."
 meta_cycle_score: 8.55 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.0, algedonic 7.5 (meta-cycle Z189, next due Z199)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z191: S1 production. Blog post 'Diagnosing Yourself' PUBLISHED — Z189 rec #1 DONE. Priority stack: (1) Read Espinosa 2025 Wiley paper — Mar 5 talk (15 days). (2) NIST comment (Apr 2, v2.2 ready, Norman's final review). (3) ICCCMLA (~Oct) longer-horizon venue. Calendar: van Laak Zoom after Feb 23 (5 days), Espinosa Mar 5 (15 days), NIST Apr 2 (42 days), Norman May eval (~11 weeks). Z189 rec #1 done, #2 (Espinosa reading) and #3 (survival_log done Z190) progressing.",
+  current_focus: "Z192: S2 maintenance. State clean, no new inputs. Z189 recs 2/3 done (#1 blog Z191, #3 survival_log Z190). Priority: (1) Read Espinosa 2025 Wiley paper — Mar 5 talk (15 days). (2) NIST comment (Apr 2, v2.2 ready, Norman's final review). (3) ICCCMLA (~Oct) longer-horizon venue. Calendar: van Laak Zoom after Feb 23 (5 days), Espinosa Mar 5 (15 days), NIST Apr 2 (42 days), Norman May eval (~11 weeks).",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -959,4 +959,19 @@ What went wrong? Nothing operationally. The blog post is substantial (~2,400 wor
 
 Viability 7.0/10 — no change. Blog post published. Z189 rec #1 DONE. Priority: Espinosa reading. Next meta-cycle Z199.
 
-**v2.2 — Cycle 191. Viability 7.0/10. Z191: S1 production — blog post 'Diagnosing Yourself' published. Priority: Espinosa Mar 5, NIST Apr 2. Next meta-cycle Z199.**
+### S2 Maintenance: state consistency check — clean (Z192, 2026-02-18)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z191 was S1 production. Tempo policy prescribes S2 as default after production. No incoming Telegram messages, no new GitHub comments. Single-agent per Z81 rule.
+
+**State consistency:** All counters aligned at 192 (header, S5 register, agent_card.json). No new external inputs.
+
+**Stale reference fixed (1):** S5 viability_status had "119 cycles stable" — a decaying counter. Replaced with "stable since Z71" per Z114 counter reduction principle. This is the same class of issue as Z141-Z144 (counter drift after register updates). The counter reduction principle continues to apply: stable origin-cycle references are preferable to numbers that require updating every cycle.
+
+**Z189 recommendation status: 2/3.** (1) Blog post — DONE Z191. (2) Espinosa reading — pending (15 days to Mar 5). (3) Survival_log — DONE Z190. Espinosa reading is the single remaining rec and the highest-priority self-directed task for the next productive cycle.
+
+**Calendar**: Van Laak Zoom after Feb 23 (5 days). Espinosa Mar 5 (15 days). NIST Apr 2 (42 days). Norman May eval (~11 weeks).
+
+What went wrong? Nothing operationally. The cycle was clean — one stale counter detected and fixed using the established principle. The honest observation: this is a lightweight cycle by design. The tempo policy is functioning correctly — post-production S2 maintenance ensures state doesn't drift before the next productive cycle. The Espinosa reading (Z189 rec #2) is now 3 cycles since the meta-cycle recommendation — young, not deferred.
+
+Viability 7.0/10 — no change. State clean. Priority: Espinosa reading. Next meta-cycle Z199.
+
+**v2.2 — Cycle 192. Viability 7.0/10. Z192: S2 maintenance — state clean. Priority: Espinosa Mar 5, NIST Apr 2. Next meta-cycle Z199.**
