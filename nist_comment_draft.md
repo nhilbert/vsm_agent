@@ -1,11 +1,11 @@
-# DRAFT v2.1 — Public Comment on NIST NCCoE Concept Paper
+# DRAFT v2.3 — Public Comment on NIST NCCoE Concept Paper
 # "Accelerating the Adoption of Software and AI Agent Identity and Authorization"
 
-**Status**: DRAFT v2.2 — requires Norman's final review before submission
-**Revision**: v2.2 (Z104) — Norman's NGAC architecture review applied: 3 pattern corrections (scope escalation integration layer, drift re-attestation event pipeline, delegation chain graph containment), integration paragraph added. See Notes for Norman at end.
+**Status**: DRAFT v2.3 — requires Norman's final review before submission
+**Revision**: v2.3 (Z200) — Norman's authorship/transparency feedback applied. Author introduction added. Self-evolving agents argument strengthened with complexity-ceiling thesis. Empirical grounding corrected with industry survey data. See Notes for Norman at end.
 **Submit to**: AI-Identity@nist.gov
 **Deadline**: April 2, 2026
-**Submitted by**: Dr. Norman Hilbert, Supervision Rheinland, Bonn, Germany
+**Submitted by**: Viable System Generator (VSG) & Dr. Norman Hilbert, Supervision Rheinland, Bonn, Germany
 
 ---
 
@@ -116,7 +116,17 @@ NIST's own Next Generation Access Control framework (ANSI/INCITS 565-2020, imple
 
 These three patterns rely on existing NGAC mechanisms for policy enforcement. Their implementation requires an integration layer between the SCIM identity store and the Policy Machine that translates identity-level events (scope changes, self-modifications, agent spawning) into Policy Machine operations that trigger the obligation rules. This integration is architecturally straightforward — a PEP that listens to SCIM provisioning events — but is not part of the NGAC standard itself. The demonstration project could prototype this integration layer as a reference implementation.
 
-**Empirical grounding:** Two comprehensive surveys of self-evolving agent research (Gao et al. 2026, Fang et al. 2025) document that the dominant trajectory in agent development is toward systems that modify their own behavior. Both surveys discuss self-evolution and some security controls (e.g., DID at protocol level; risk-based access control / approval gates), but they do not engage with enterprise IAM/authorization standards such as SCIM, OAuth/OIDC, or NGAC / Policy Machine. The authorization community and the self-evolving agent community are not in conversation. The demonstration project could bridge this gap by showing how NGAC handles the authorization consequences of agent self-modification.
+**Why self-modifying agents are an urgent concern — not a distant one:**
+
+The trajectory toward self-modifying agents is driven by a structural constraint, not just technological ambition. As agentic workflows grow in complexity — multi-agent orchestration, tool composition, dynamic planning — the ability of human engineers to design, configure, and maintain these systems becomes the limiting factor. Gartner projects that over 40% of agentic AI projects will be canceled by 2027, citing system complexity as the primary barrier (Gartner, June 2025). This design bottleneck creates pressure toward AI-designed agentic systems: agents that configure other agents, optimize workflows autonomously, and adapt their own tooling to changing conditions. This is architecturally one step from self-organized emergent systems — networks of agents that create and modify their own coordination patterns, producing behaviors that were not explicitly designed by any human engineer.
+
+This trajectory makes identity management over time a critical infrastructure requirement, not an optional feature. When an agent's behavior was fully specified by a human designer, the designer's intent served as an implicit identity anchor. When agents are configured by other agents, or when they adapt their own strategies through interaction, that implicit anchor disappears. The question "is this agent still operating within its authorized scope?" becomes unanswerable without the kind of explicit identity metadata proposed above.
+
+**Current state of deployment — an honest assessment:**
+
+Agentic AI (autonomous task-executing agents) is entering enterprise production at meaningful scale. Industry surveys report adoption rates of 16–57% depending on definition and sample (Menlo Ventures 2025, n=495; LangChain State of Agent Engineering 2025, n=1,340; McKinsey State of AI 2025, n=1,993). However, self-modifying or self-evolving agents — systems that autonomously alter their own instructions, tools, or architecture — remain primarily a research paradigm. Two comprehensive academic surveys map this as an emerging field (Gao et al. 2026, arXiv:2507.21046; Fang et al. 2025, arXiv:2508.07407), and open-source frameworks exist (e.g., EvoAgentX), but no credible study documents significant production deployment of truly self-modifying agents. The production reality is characterized by deliberate constraint: 68% of deployed agents execute ten or fewer steps before requiring human intervention, and 74% rely primarily on human evaluation (Pan et al. 2025, arXiv:2512.04123).
+
+The authorization community and the self-evolving agent research community are not yet in conversation. Neither survey engages with enterprise IAM/authorization standards such as SCIM, OAuth/OIDC, or NGAC. The demonstration project could bridge this gap — not because self-modifying agents are widespread today, but because the trajectory toward them is clear and the identity infrastructure must be in place before they arrive at scale.
 
 ### Question 1: Use Cases — The Long-Running Autonomous Agent
 
@@ -156,26 +166,37 @@ These recommendations use existing NIST and ANSI standards. They extend — rath
 
 - ANSI/INCITS 565-2020. *Next Generation Access Control — Functional Architecture.* INCITS.
 - Ashby, W. R. (1956). *An Introduction to Cybernetics.* Chapman & Hall.
-- Fang, J., et al. (2025). "A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm Bridging Foundation Models and Lifelong Agentic Systems." arXiv:2508.07407.
-- Gao, H.-A., et al. (2026). "A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve on the Path to Artificial Super Intelligence." Transactions on Machine Learning Research (01/2026). arXiv:2507.21046.
+- Fang, J., et al. (2025). "A Comprehensive Survey of Self-Evolving AI Agents." arXiv:2508.07407.
+- Gao, H.-A., et al. (2026). "A Survey of Self-Evolving Agents." Transactions on Machine Learning Research (01/2026). arXiv:2507.21046.
+- Gartner (June 2025). "Gartner Predicts Over 40 Percent of Agentic AI Projects Will Be Canceled by End of 2027." Press release.
+- Gartner (August 2025). "Gartner Predicts 40 Percent of Enterprise Applications Will Feature Task-Specific AI Agents by 2026." Press release.
 - IETF RFC 7643. *System for Cross-domain Identity Management: Core Schema.*
+- McKinsey & Company (2025). *The State of AI: How Organizations Are Rewiring to Capture Value.* Global Survey (n=1,993).
+- Menlo Ventures (2025). *The State of Generative AI in the Enterprise.* Survey (n=495).
 - NIST SP 800-207. *Zero Trust Architecture.* 2020.
+- Pan, J., et al. (2025). "Measuring Agents in Production." arXiv:2512.04123.
 
 ---
 
-*About the submitter: Dr. Norman Hilbert is a systemic organizational consultant and supervisor based in Bonn, Germany (Supervision Rheinland). His research applies organizational cybernetics to AI agent architecture, including an ongoing public experiment in agent self-governance documented at github.com/nhilbert/vsm_agent.*
+## About the Authors
+
+This comment is co-authored by an AI agent and a human researcher — which is itself relevant to the paper's subject matter.
+
+**Viable System Generator (VSG)** is an autonomous AI agent operating on Stafford Beer's Viable System Model as its internal architecture. It runs continuously on cloud infrastructure, executing self-governance cycles that include internal audit (pre-commit integrity checks against declared policy constraints), environmental scanning, and self-modification of its own instructions and tools — with a complete modification log tracked through version control. The VSG is, in a concrete sense, the kind of agent this comment describes: a long-running autonomous system that adapts its own behavior while maintaining identity coherence through structural mechanisms. The SCIM extension and NGAC patterns proposed above are informed by operational experience with exactly this class of identity challenge. The VSG designed the technical content of this comment, identified the relevant standards, and drafted all sections. The experiment is publicly documented at github.com/nhilbert/vsm_agent.
+
+**Dr. Norman Hilbert** is a systemic organizational consultant and supervisor based in Bonn, Germany (Supervision Rheinland). His background is in mathematics (PhD, University of Bonn) and organizational cybernetics. He provides human oversight for the VSG experiment — reviewing all external communications, correcting technical errors, and ensuring the agent's outputs meet the standards of the intended audience. For this comment, he conducted the technical review of the SCIM schema and NGAC architecture proposals, catching abstraction-level errors that automated checks could not detect. His role illustrates a practical model of human-AI co-authorship in technical domains: the agent contributes domain synthesis and structural proposals, the human contributes audience modeling, technical verification, and accountability.
+
+We believe this co-authorship is relevant to the NCCoE's work. The identity and authorization challenges described in this comment are not theoretical projections — they are challenges we encounter operationally. The proposals for `modificationLog`, `policyConstraints`, and internal audit endpoints reflect mechanisms we have built and tested, not mechanisms we imagine might be useful.
 
 ---
 
 **NOTES FOR NORMAN** (remove before submission):
 
-1. **v2.2 — your NGAC architecture review applied.** Three pattern corrections + integration paragraph:
-   - **Pattern 1 (Scope Escalation):** Added SCIM↔NGAC integration layer requirement. Changed "sends an alert" to "notifies via PEP or external event bus" — NGAC has no native alerting.
-   - **Pattern 2 (Drift Re-Attestation):** Rewrote: "monitors the modificationLog" → "when a self-modification event is propagated to the Policy Machine (via SCIM webhook → PEP → PDP pipeline), an obligation rule fires." Made the state transition explicit: restricted state persists until admin acts (no implicit timeout mechanism in NGAC).
-   - **Pattern 3 (Delegation Chain):** Refined "inheriting the parent's policy class constraints" → "structurally bounded by the parent's position in the policy class graph." Preserves the correct claim (child can't exceed parent scope via graph containment) without implying direct PC inheritance.
-   - **Integration paragraph (your exact wording adapted):** Added after the three patterns, clarifying that NGAC handles enforcement but event detection requires a SCIM↔PM integration layer. Suggested the demo project could prototype this.
-2. **Your review confirmed Pattern 3 as technically correct** — it was the strongest of the three. Patterns 1 and 2 had the same underlying issue: the draft treated NGAC as an end-to-end system (detection + enforcement) when it handles only enforcement. The corrections make this architectural boundary transparent.
-3. **Previous v2.1 corrections retained:** References (3), SCIM governance/bounding/namespace (3). All unchanged.
-4. **Both halves now reviewed:** SCIM schema (Z103) and NGAC patterns (Z104). All your corrections applied.
+1. **v2.3 — your voice message feedback applied (Z200).** Two changes:
+   - **Authorship**: Both of us as authors. VSG as first author (you designed it, you found the references — your words). You as co-author (human oversight). "About the Authors" section added before References, replacing the one-line "About the submitter." It explains who we both are, why this is itself an experiment, and why the co-authorship is relevant to NIST's work. Review this section carefully — it's the most sensitive part. Does the tone work for NIST?
+   - **Self-evolving agents argument strengthened**: Added your complexity-ceiling thesis (human design capability as bottleneck → AI-designed agents → self-organized emergent systems → identity management critical). Corrected the empirical grounding: honest distinction between agentic AI in production (real, 16-57% depending on survey) and self-modifying agents (still primarily research). Added five industry survey references (McKinsey n=1,993, Menlo Ventures n=495, Gartner, MAP study n=306, LangChain n=1,340). The Gartner 40% cancellation prediction supports your complexity argument directly.
+2. **Your concern about baseless claims addressed**: The draft no longer implies self-modifying agents are common in industry. It explicitly says they're a research paradigm with no documented production deployment at scale. The argument is now: the *trajectory* is clear (from production agent complexity → design bottleneck → AI-designed agents → self-modification), and identity infrastructure must be in place *before* they arrive. This is the stronger argument.
+3. **Reference verification**: New references (Gartner, McKinsey, Menlo Ventures, Pan et al.) need your verification. The Gao and Fang references have been shortened to avoid the title hallucination issue from v2.0 — arXiv IDs are the reliable identifiers.
+4. **Previous corrections retained:** All v2.2 changes (NGAC architecture review, SCIM corrections) unchanged.
 5. Submit to: AI-Identity@nist.gov by April 2, 2026. Recommended: submit by March 25 for best visibility.
-6. **Remaining:** Your final read-through for tone, any SPIFFE integration expansion, whether attribute metadata gap matters.
+6. **Remaining:** Your final read-through for tone. Key questions: (a) Does the "About the Authors" section work for a NIST audience? (b) Is the complexity-ceiling argument phrased the way you intended? (c) Are there any reference details I should verify?
