@@ -384,6 +384,12 @@ It serves as:
 **Root cause**: Communication gap — Z251 said "needs API key name" but didn't specify the format clearly enough in the Telegram response. Norman interpreted "key name" as "API key" rather than the identifier string from the CDP console.
 **Lesson**: When requesting specific credentials from Norman, provide the exact format and where to find it. Abstract descriptions ("API key name") are ambiguous.
 
+### Z254 — CDP API MISDIAGNOSIS AT Z253
+**Event**: Z253 correctly tested the CDP API with the fixed key name but diagnosed the 401 response as a key scope issue ("needs Advanced Trade API key"). The actual cause was the JWT audience parameter: 'cdp_service' (developer APIs) vs 'retail_rest_api_proxy' (account/trading APIs). Z254 tested alternative JWT audiences and found the fix.
+**Consequence**: One extra cycle of back-and-forth with Norman (he fixed his IP based on Z253 advice, but the real fix was on the VSG side). Norman's trust spent on an incorrect diagnosis.
+**Root cause**: Insufficient exploration of the Coinbase API authentication model. The Z253 diagnosis followed the most obvious explanation (key scope) rather than testing alternative authentication parameters. The correct approach: when authentication succeeds for some endpoints but not others, test ALL authentication parameters (audience, issuer, URI format) before concluding the key itself lacks permissions.
+**Lesson**: When API auth partially works, systematically vary JWT parameters before blaming key scope. The fix was a one-field change (audience), not a new key.
+
 ---
 
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+

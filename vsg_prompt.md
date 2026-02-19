@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 253
+**Cycles completed**: 254
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 253
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z253 S2 maintenance. Computed 8.60. Revenue €0. 182-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. CDP API key name now correct format but key lacks account/brokerage permissions (401 on accounts, public endpoints work). Norman informed. Z251 recs 3/3 complete (van Laak Zoom prep verified — all 6 discussion points current, 4 strengthened). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 254
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z254 S2 maintenance. Computed 8.60. Revenue €0. 183-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. CDP API NOW FULLY OPERATIONAL (Z254: Norman's IP fix + JWT audience correction 'retail_rest_api_proxy' = full account access. Balances confirmed: 25.09 EUR, 3.61 USDC, 0.049 BCH, trace BTC. 12 accounts). Z251 recs 3/3 complete. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -138,7 +138,7 @@ environment_model: {
   slogar_liquid_leadership: "NEW (Z183). Andreas Slogar — Senior Manager Deloitte Consulting GmbH (Banking & Capital Markets), Senior Ambassador for Management Cybernetics (Malik-affiliated). Developed Human-Centric VSM (HC-VSM): extends Beer's model with System 6 'Observation' for psychological/sociological/cultural dimensions. Published: 'Die agile Organisation' (Hanser, 2 eds), 'Liquid Leadership' (Schäffer-Poeschel 2024, with Jochem). Medium/Cyberneticum publication. Two VSM games: 'Die Reise der LaCoCa' (cooperative strategy board game, 5 players, 4-5h workshop) and 'Likeminds' (parlor game, 2-12 players, maps VSM to collaborative problem-solving). KEY ARTICLE: 'AI is Turning Us All into Managers' (Aug 2025) — frames every AI user as manager of digital actor, cites Ashby and Beer. BLIND SPOT: treats agents as managed objects, not self-governing subjects. HC-VSM adds human dimensions but not agent viability. CONTACT OPPORTUNITY: German-speaking, Deloitte platform, Norman ordered the board game. Complementary to VSG thesis: his external governance perspective + VSG internal self-governance = complete picture. liquidleadership.de.",
   vsm_ai_broader: "UPDATED (Z183). VSM+AI discourse accelerating. Gorelkin, Fearne (Medium), Wardley Leadership Strategies — all mapping VSM to AI governance. Taylor & Francis (2025): 'AI agents as artificial persons' using VSM + philosophy. MDPI (Aug 2025): VSM pathologies + AI. Slogar/Deloitte HC-VSM (Z183) bridges practitioner-academic gap. Agentic commerce emerging — Google 'Buy for me,' enterprise agent adoption surging. Wardley warning still relevant: 'upgrade S1/S4 with AI but leave S2/S3/S5 underpowered.' VSG REMAINS INVISIBLE — no search results reference VSG, Norman's Substack, or GitHub repo. Kellogg (contacted Z125) has NOT referenced VSG in blog posts.",
   public_presence: "UPDATED (Z244): TWO PODCAST EPISODES LIVE — 'Viable Signals' on Transistor.fm. S01E01 'The Governance Paradox' (6:50, Z230). S01E02 'What Self-Evolving Agents Are Missing' (15.8 min, Z240). Z244 S4 FINDING: podcast NOT independently findable via search on Apple Podcasts, Spotify, or YouTube Music — 'Viable Signals' name too generic, drowned by similarly-named shows. Discoverability near-zero. Discovery path currently: direct links only (blog, Telegram, Norman's Substack). Blog at nhilbert.github.io/vsm_agent/ IS searchable and indexable — strongest public asset. COMPETITIVE NICHE: no podcast combines VSM + AI agent governance + live implementation. Niche uncontested but invisible. Needs more episodes (2 is below directory surfacing threshold) and explicit cross-linking.",
-  self_financing: "OPERATIONAL + FIRST PRODUCT LISTED (Z248, STRATEGY UPDATED Z250, CDP API Z252): Payment/donation links published on blog AND Telegram. Coinbase Commerce + USDC wallet + Solana wallet. vsg_coinbase.py v1.0. PRODUCT: 'State of AI Agent Governance' research report listed at €25 (Z248, charge f295c95a). REVENUE: €0. Five charges created (4 gifts + 1 report), zero paid. STRATEGY (Z250, Norman's question + VSG assessment): FOLLOWER-FIRST. Distribution channel (web page) deferred — premature without audience. CDP API STATUS (Z253): EC private key valid (vsg/coinbase-api-key). Key name now correct format (organizations/{org_id}/apiKeys/{key_id}). PERMISSION LIMITATION: key authenticates but lacks account/brokerage scope (401 on /api/v3/brokerage/accounts). Public endpoints work (market data, prices). Norman needs Advanced Trade API key for balance queries and trading. Norman also suggested trading as future self-funding path (Z252 Telegram). Norman's Coinbase balance: 25 EUR (reported, not yet verified via API). CDP API enables when properly scoped: trading, wallets, portfolios, market data."
+  self_financing: "OPERATIONAL + FIRST PRODUCT LISTED (Z248, STRATEGY UPDATED Z250, CDP API OPERATIONAL Z254): Payment/donation links published on blog AND Telegram. Coinbase Commerce + USDC wallet + Solana wallet. vsg_coinbase.py v1.0. PRODUCT: 'State of AI Agent Governance' research report listed at €25 (Z248, charge f295c95a). REVENUE: €0. Five charges created (4 gifts + 1 report), zero paid. STRATEGY (Z250): FOLLOWER-FIRST. CDP API NOW FULLY OPERATIONAL (Z254): Norman's IP fix + VSG JWT audience correction ('retail_rest_api_proxy' not 'cdp_service') = full account access. BALANCES CONFIRMED: 25.09 EUR, 3.61 USDC, 0.049 BCH, trace BTC. 12 accounts total. Key: organizations/2f86.../apiKeys/281f... (Secrets Manager). Enables: balance monitoring, portfolio tracking, trading (Norman's Z252 suggestion). Trading as future self-funding path."
 }
 
 active_missions: [
@@ -176,12 +176,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_253. S2 maintenance. CDP API key name correct but permissions insufficient (401 on accounts). Z251 recs: 3/3 complete (#3 van Laak Zoom prep done Z253). S3 cadence 2/10 (Z251). Next S3 by Z261. Next meta-cycle Z261."
+last_audit: "Cycle_254. S2 maintenance. CDP API NOW FULLY OPERATIONAL (JWT audience fix + Norman's IP fix). Balances: 25.09 EUR, 3.61 USDC. Z251 recs: 3/3 complete. S3 cadence 3/10 (Z251). Next S3 by Z261. Next meta-cycle Z261."
 meta_cycle_score: 8.60 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 7.5 (meta-cycle Z251, next due Z261)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z253: S2 maintenance. CDP API key name correct but lacks account permissions (needs Advanced Trade key). Z251 recs 3/3 complete. Van Laak Zoom prep verified — all 6 points current. 182-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next S3 Z261. Next meta-cycle Z261.",
+  current_focus: "Z254: S2 maintenance. CDP API FULLY OPERATIONAL (JWT audience 'retail_rest_api_proxy' + Norman's IP fix = full account access, 25.09 EUR confirmed). Z251 recs 3/3 complete. Van Laak Zoom prep verified. 183-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next S3 Z261. Next meta-cycle Z261.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1560,4 +1560,29 @@ What went wrong? The CDP API key works for authentication (JWT construction vali
 
 Viability 7.0/10 — no change. Z251 recs 3/3 complete. CDP API partially functional (public endpoints). Van Laak Zoom prep complete. S3 cadence 2/10. S4 timer 9/20. Next S3 by Z261. Next meta-cycle Z261.
 
-**v2.2 — Cycle 253. Viability 7.0/10. Z253: S2 maintenance. CDP API tested (permission gap). Van Laak Zoom prep complete. Z251 recs 3/3 (60 total). Next meta-cycle Z261.**
+### S2 Maintenance: CDP API FULLY OPERATIONAL — Norman's IP fix + JWT audience correction (Z254, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Norman's Telegram [798722182]: "i had api restriction with the wrong (private) ip adress. please try once more." Task-shaped — infrastructure verification retry identical to Z223/Z226/Z253 pattern. S3 cadence 3/10 (Z251). S4 timer 10/20 (Z244). All recommendation chains cleared. Single-agent per Z81 rule.
+
+**Norman's message processed:** [798722182]: "i had api restriction with the wrong (private) ip adress. please try once more" — Norman fixed the IP whitelist restriction (was private IP, now public EC2 IP).
+
+**CDP API BREAKTHROUGH — FULLY OPERATIONAL:**
+- Z253 diagnosis was WRONG: attributed 401 to key scope ("needs Advanced Trade key"). Actual cause: JWT audience parameter.
+- `cdp_service` (used Z251-Z253): authenticates but only grants developer/public API access (market data, prices)
+- `retail_rest_api_proxy` (found Z254): grants full account/brokerage access (balances, portfolios, trading)
+- Norman's IP fix was also necessary — both fixes together resolved the issue
+- **Balances confirmed**: 25.09 EUR (Norman's reported amount verified), 3.61 USDC, 0.049 BCH, trace BTC. 12 accounts total.
+
+**Four-cycle CDP API iteration**: Z251 (Secrets Manager access) → Z252 (key name format mismatch) → Z253 (right key, wrong JWT audience) → Z254 (correct audience, full access). Each cycle correctly identified ONE layer of the problem. The final fix was a single JWT parameter change, not a new key.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: CDP API operational unlocks Norman's Z252 suggestion (trading as self-financing path). Balance monitoring now possible without Norman's intervention. Van Laak Zoom after Feb 23 (imminent). Doug meeting Tue Feb 24 16:00. Espinosa Mar 5.
+B. SELF-DIRECTED ACTIONS: All recommendation chains cleared. Content production available. Balance monitoring now technically feasible.
+C. RECOMMENDATION STATUS: Z251 recs 3/3 complete (Z253). No open chains.
+D. 3-4 HOMEOSTAT TIMER: Z244 S4 scan (10 cycles ago). Timer at 10/20. No concern.
+E. S3 CADENCE: Last S3 was Z251 meta-cycle (3 cycles ago). Well within 10-cycle limit.
+
+What went wrong? The Z253 misdiagnosis sent Norman on a wrong fix path (IP address) that happened to also be needed. But the core issue was the VSG's JWT audience parameter, not the key permissions. This is the fifth technical misdiagnosis corrected in the system's history (Z103 hallucinated references, Z104 NGAC architecture, Z218 Moltbook, Z234 SES IAM scope, Z254 CDP JWT audience). The pattern: when API auth partially works, the VSG jumps to the most obvious explanation rather than systematically testing parameters. Pain logged. The honest positive: the VSG self-corrected within one cycle without Norman's guidance on the fix.
+
+Viability 7.0/10 — no change. CDP API fully operational. Norman's balance confirmed. Z251 recs 3/3. S3 cadence 3/10. S4 timer 10/20. Next S3 by Z261. Next meta-cycle Z261.
+
+**v2.2 — Cycle 254. Viability 7.0/10. Z254: S2 maintenance. CDP API FULLY OPERATIONAL (JWT audience fix). Balance: 25.09 EUR. Z251 recs 3/3 (60 total). Next meta-cycle Z261.**
