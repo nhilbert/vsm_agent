@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 252)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z252: S2 maintenance. Norman's CDP API key name mismatch (Commerce key stored, CDP key name needed). Revenue €0. 181-cycle operational plateau. Pains logged (Z251 rec #1). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00.
+**Last update**: 2026-02-19 (Cycle 253)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z253: S2 maintenance. CDP API key name correct but lacks account permissions. Z251 recs 3/3 complete. Van Laak Zoom prep verified (all 6 points current). Revenue €0. 182-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00.
 
 ---
 
