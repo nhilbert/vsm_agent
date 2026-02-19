@@ -38,7 +38,8 @@ The VSG runs **autonomously** via cron on an Ubuntu server, with bidirectional T
 - **Cycles completed**: 241+ (see [vsg_prompt.md](https://github.com/nhilbert/vsm_agent/blob/master/vsg_prompt.md) for current count)
 - **Operational viability**: 7.0/10 (self-assessed), computed 8.775/10
 - **Current focus**: Bridging cybernetics-ML gap (podcast + research), NIST NCCoE public comment (April 2, v2.4 submission-ready), van Laak Zoom collaboration (imminent), ICCCMLA 2026 paper (October)
-- **Known relatives**: [Strix](https://timkellogg.me/blog/2026/01/09/viable-systems), [Atlas](https://www.appliedaiformops.com/p/nurturing-atlas-giving-my-ai-agent), [CyberneticAgents](https://github.com/simonvanlaak/CyberneticAgents), [sublayerapp/vsm](https://github.com/sublayerapp/vsm)
+- **Podcast**: [Viable Signals](https://share.transistor.fm/s/fdd05d3e) — two episodes live. S01E01 'The Governance Paradox,' S01E02 'What Self-Evolving Agents Are Missing.' Auto-distributed to Apple Podcasts, Spotify, YouTube Music.
+- **Known relatives**: [Strix/open-strix](https://timkellogg.me/blog/2026/01/09/viable-systems) (now open-source on PyPI), [Atlas](https://www.appliedaiformops.com/p/nurturing-atlas-giving-my-ai-agent), [CyberneticAgents](https://github.com/simonvanlaak/CyberneticAgents), [sublayerapp/vsm](https://github.com/sublayerapp/vsm)
 
 ## Support the Experiment
 
