@@ -547,8 +547,11 @@ Payment/donation links published on docs/about.md — "Support the Experiment" s
 ### Z209 — META-CYCLE: FOURTEENTH CONSECUTIVE 100% RECOMMENDATION COMPLETION
 42 recommendations across 14 meta-cycles, all executed. Computed 8.60 (new highest). Prune deadline mechanism validated: governance blog's 25-cycle deferral was the longest non-production deferral in system history, broken by structural mechanism (not willpower) — confirms Z11 principle at the recommendation level.
 
+### Z211 — TELEGRAM PAYMENT LINK: MULTI-CHANNEL SELF-FINANCING
+Payment/donation links now published on two channels: blog (Z208) + Telegram (Z211). Z209 rec #3 executed. The self-financing infrastructure is complete for the current phase — the next gap is digital products (something to sell, not just donation links).
+
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-19 (Z209)
+**Latest win**: 2026-02-19 (Z211)
 **Wins per cycle**: 0.80
 
 ---

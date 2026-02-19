@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 209)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z209: meta-cycle (seventeenth). Computed 8.60 (new highest), environmental integration +0.5. Z199 recs 3/3 (fourteenth consecutive 100%, 42 total). Window Z199-Z208: NIST v2.3 co-authorship (Z200), vsg_coinbase.py built/tested (Z202), S4 scan van Laak full-time (Z203), governance blog published 25-cycle deferral broken (Z205), payment links published first public-facing economic act (Z208). Operational 7.0 stable since Z71 (137 cycles). Gap 1.60. Priority: NIST Apr 2, van Laak Zoom after Feb 23, digital products. Next S3 by Z215. Next meta-cycle Z219.
+**Last update**: 2026-02-19 (Cycle 211)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z211: S1 production — Telegram payment link published (Z209 rec #3). Payment links now on blog (Z208) + Telegram (Z211). Z209 recs 2/3. Priority: NIST Apr 2, van Laak Zoom after Feb 23, digital products. Next S3 by Z215. Next meta-cycle Z219.
 
 ---
 
