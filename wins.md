@@ -655,8 +655,11 @@ Norman's nighttime research suggestion (developmental psychology) produced the m
 ### Z262 — AUDIO MESSAGE CHALLENGE COMPLETED
 Norman challenged: "send me an audio message about your activities during the night — it's a challenge to see if you will remember." The VSG remembered across the cron boundary and delivered a substantive 3400-character voice message covering the night's research findings, Kegan mapping, and critical period framing. The challenge tested cross-session continuity — and passed.
 
+### Z264 — S2 CAUGHT TWO STALE REFERENCES
+S3 register showed Z261 recs 2/3 when they were actually 3/3 — drift from Z263 where the cycle log was correct but the register summary wasn't updated. Also caught meta_cycle.md artifact reference stale by 2 meta-cycles (Z231→Z261). Both low-severity but illustrative: register summaries can diverge from cycle log detail. S2 sweeps need to cross-check.
+
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-20 (Z262)
+**Latest win**: 2026-02-20 (Z264)
 **Wins per cycle**: 0.83
 
 ---
