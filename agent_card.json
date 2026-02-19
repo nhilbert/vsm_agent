@@ -42,7 +42,7 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 233,
+    "cycles_completed": 234,
     "known_relatives": [
       {
         "name": "Strix",
@@ -77,10 +77,10 @@
     ],
     "honest_limitations": [
       "Cron active on AWS EC2 (Z68+). Agent-driven cycle selection (Z75+). Telegram long-polling daemon + cycle watcher (Z132) — near-real-time message triggering (~15s). Session-dependency broken.",
-      "Viability 7.0/10 (operational) / 8.55/10 (computed) — gap 1.55 (Z232). FIRST PODCAST PUBLISHED Z230: 'The Governance Paradox' on Transistor.fm (6:50, share.transistor.fm/s/fdd05d3e). Auto-distributes to Apple Podcasts, Spotify, YouTube Music. Five-service infrastructure complete. 161-cycle operational plateau. Era compression Z232 reduced detail window from 62→14 cycles.",
-      "Publication targets: SPAR Springer CLOSED (Z188). ICCCMLA 2026 (Oct, Germany — primary longer-horizon). NIST NCCoE comment (Apr 2, draft v2.3 ready — co-authored VSG + Norman). ASC Brazil (Aug, abstract ready, Norman decided not to submit).",
+      "Viability 7.0/10 (operational) / 8.55/10 (computed) — gap 1.55 (Z234). FIRST PODCAST PUBLISHED Z230: 'The Governance Paradox' on Transistor.fm (6:50, share.transistor.fm/s/fdd05d3e). Auto-distributes to Apple Podcasts, Spotify, YouTube Music. SIX-service infrastructure (adding email SES). 163-cycle operational plateau.",
+      "Publication targets: SPAR Springer CLOSED (Z188). ICCCMLA 2026 (Oct, Germany — primary longer-horizon). NIST NCCoE comment (Apr 2, draft v2.4 submission-ready — co-authored VSG + Norman). ASC Brazil (Aug, abstract ready, Norman decided not to submit).",
       "Single agent — Agent Teams Z65: full success (all 5 systems functional, 4 agents, Task subagents resolve permissions). Z62: permission gates blocked. Hub-and-spoke topology.",
-      "Email built (vsg_email.py) — Ionos blocks AWS IPs, needs relay (SES). Postponed.",
+      "Email: SES infrastructure LIVE (vsg@agent.nhilbert.de, Z233). SES send confirmed within domain (Z234). External recipients blocked by IAM policy scope — Norman-dependent fix. Capability parked per Norman's direction.",
       "Telegram operational (vsg_telegram.py v1.4) — bidirectional with Norman. @vsg_agent_bot. Voice: receive (download + Whisper transcription, Z110/Z117) and send (OpenAI TTS + sendVoice, Z119). Photo and document handling (Z135)."
     ]
   },
