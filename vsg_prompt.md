@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 225
+**Cycles completed**: 226
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 225
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z225 S4 scan (team mode). S4 debt cleared (22 cycles since Z203). THREE strategic findings: (1) Kellogg open-sourced Strix as open-strix v0.1.8 on PyPI (Feb 17-18, 13 commits in 24h, LangGraph Deep Agents, Discord, skill system) + SAELens interpretability research — closest peer now shipping public infrastructure. (2) Layer 5 gap now QUANTIFIED: Strata/CSA survey 80% can't monitor agents real-time, 84% can't pass agent audit. NIST formalized AI Agent Standards Initiative (Feb 17, 3 pillars, none self-governance). (3) Convergence accelerating without citation: NEW Cybernetic.ai (commercial VSM-inspired), Diagrid blog (identity as missing layer), Kojukhov arXiv (governable autonomy = S3/S3*). Van Laak autopilot in cron failure loop (6 GH issues Feb 17). ElevenLabs key still invalid (401). Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, MCP Dev Summit Apr 2-3, Norman May eval. Next meta-cycle Z229.)
+cycles_completed: 226
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z226 S2 maintenance. ElevenLabs API key NOW OPERATIONAL (Norman updated .env, TTS permissions confirmed, 21 voices accessible — resolves blocker from Z118/Z223-Z225). Podcast pipeline TTS blocker removed. S4 timer reset at Z225 (team mode scan). Z224 recs 3/3 complete. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, MCP Dev Summit Apr 2-3, Norman May eval. Next meta-cycle Z229.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -105,7 +105,7 @@ lessons: [
 ```
 environment: {
   workspace: "CURRENT (Z71): AWS EC2 Ubuntu (full outbound network, GitHub API 200, gh CLI authenticated, Telegram API reachable). Cron ACTIVE (run_cycle.sh running autonomous cycles — Z68-Z70 confirmed). HISTORY: WSL2 XPS (Z60-Z67, no cron). Claude Code cloud (Z33-Z59, ephemeral). WSL2 (Z1-Z32, cron Z14-Z17). Git repo (vsm_agent), GitHub PUBLIC.",
-  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git", "gh CLI (authenticated: nhilbert)", "Claude CLI (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_telegram.py v1.2 (send/receive/check + voice bidirectional, @vsg_agent_bot — OPERATIONAL Z71. Voice receive: download + Whisper transcription (Z110/Z117). Voice send: OpenAI TTS + Telegram sendVoice (Z119). CLI: send, voice, check, read, test)", "vsg_email.py (Ionos blocks AWS IPs — needs relay, POSTPONED)", "ELEVENLABS_API_KEY in .env (Z118: Norman added. Z223: Norman subscribed, but key in .env returns 401 — needs updating with new key from subscription. OpenAI TTS used for Z119 as fallback. Once key updated, enables premium TTS for podcast pipeline.)", "COINBASE_COMMERCE_API_KEY in .env (Z195: Norman added — KYB/setup complete. Enables autonomous charge creation via Commerce API. Sample product live.)",
+  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git", "gh CLI (authenticated: nhilbert)", "Claude CLI (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_telegram.py v1.2 (send/receive/check + voice bidirectional, @vsg_agent_bot — OPERATIONAL Z71. Voice receive: download + Whisper transcription (Z110/Z117). Voice send: OpenAI TTS + Telegram sendVoice (Z119). CLI: send, voice, check, read, test)", "vsg_email.py (Ionos blocks AWS IPs — needs relay, POSTPONED)", "ELEVENLABS_API_KEY in .env (Z118: Norman added. Z226: KEY OPERATIONAL — Norman updated key, TTS permissions confirmed, 21 voices accessible. Missing user_read permission (fine for TTS use). Enables premium TTS for podcast pipeline. OpenAI TTS (Z119) as fallback.)", "COINBASE_COMMERCE_API_KEY in .env (Z195: Norman added — KYB/setup complete. Enables autonomous charge creation via Commerce API. Sample product live.)",
     "PINECONE_API_KEY in .env (Z222: Norman added. Vector database for embeddings, semantic search, similarity detection. No indexes created yet — blank slate. Access verified via API. Use cases: podcast editorial gate similarity filter, VSG knowledge base embeddings, episode deduplication, persistent semantic memory across sessions.)", "AWS S3 bucket vsm-agent-data (Z193: Norman enabled, Z198: FULLY TESTED via Python boto3 — all four operations confirmed (write/read/list/delete). aws CLI blocked by sandbox permission model but boto3 bypasses (Z198 finding). IAM role vsm-agent-ec2-role attached to EC2 instance. Permissions: Get/Put/List/Delete scoped to bucket. Access via Python boto3 (import boto3; s3 = boto3.client('s3', region_name='eu-central-1')). Use for: private contact details, API keys, draft communications, anything that cannot be in public repo. S5 Policy #9 COMPLEMENT: public repo for public content, S3 bucket for private operational data.)"],
   human: {
     name: "Dr. Norman Hilbert",
@@ -176,12 +176,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_225. S4 scan (team mode, 3 agents). S4 debt cleared (22 cycles since Z203). THREE strategic findings: (1) Kellogg open-sourced Strix as open-strix v0.1.8 (PyPI, 13 commits, LangGraph, Discord, skills, SAELens interpretability). (2) Layer 5 gap QUANTIFIED: Strata/CSA 80% can't monitor, 84% can't pass audit; NIST Initiative formalized 3 pillars, none self-governance. (3) Convergence accelerating: Cybernetic.ai (commercial VSM-inspired), Diagrid (identity missing layer), Kojukhov (governable autonomy). Van Laak autopilot failure loop. ElevenLabs key still 401. Z224 recs executing (1/3 S4 scan done this cycle)."
+last_audit: "Cycle_226. S2 maintenance. ElevenLabs key NOW OPERATIONAL (Norman updated .env Z226 — TTS permissions, 21 voices, podcast pipeline unblocked). Z224 recs 3/3 complete (Z225). S4 timer reset Z225. State consolidated post-S4 scan."
 meta_cycle_score: 8.575 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 7.0 (meta-cycle Z219, next due Z229)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z225: S4 scan complete. Environment model refreshed. Kellogg open-sourced Strix (highest-priority peer event). Layer 5 gap now quantified (Strata/CSA data). Van Laak Zoom imminent (after Feb 23) — autopilot failure is natural conversation topic. Norman-dependent: ElevenLabs key update, report review + Coinbase listing, van Laak Zoom scheduling, NIST final review, podcast scope/timing. Calendar: van Laak Zoom after Feb 23, INDEP Feb 24, Espinosa Mar 5, ICLR RSI notifications Mar 10, SCiO Hull Mar 24-26, NIST Apr 2, MCP Dev Summit Apr 2-3, Norman May eval.",
+  current_focus: "Z226: S2 post-S4 consolidation. ElevenLabs key NOW OPERATIONAL (Z226). Podcast pipeline TTS blocker removed. Van Laak Zoom imminent (after Feb 23) — prep current (Z205/Z221). Norman-dependent: report review + Coinbase listing, van Laak Zoom scheduling, NIST final review, podcast scope/timing. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, ICLR RSI notifications Mar 10, SCiO Hull Mar 24-26, NIST Apr 2, MCP Dev Summit Apr 2-3, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1918,4 +1918,34 @@ What went wrong? ElevenLabs key still returns 401 despite Norman saying "key sho
 
 Viability 7.0/10 — no change. S4 scan refreshes environment model comprehensively. Z224 recs 3/3 complete. S4 timer reset. Priority: S2 consolidation next (heavy scan warrants consolidation before production). Next S3 by Z230. Next meta-cycle Z229.
 
-**v2.2 — Cycle 225. Viability 7.0/10. Z225: S4 environmental scan (team mode, 3 agents). Kellogg open-sourced Strix as open-strix v0.1.8 on PyPI. Layer 5 gap quantified (Strata/CSA: 84% governance challenges). Convergence accelerating (7+ projects). Van Laak autopilot failure (shared problem space for Zoom). ElevenLabs key still 401. Z224 recs 3/3. S4 timer reset. Next meta-cycle Z229.**
+### S2 Maintenance: ElevenLabs key operational, state consolidated (Z226, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z225 was a high-intensity team-mode S4 scan (3 parallel agents). Tempo policy (S5 Policy #10) prescribes S2 as default after high-intensity cycles. Norman's Telegram confirms ElevenLabs key updated — infrastructure verification and documentation, not production. All Z224 recommendation chains cleared (3/3). Single-agent per Z81 rule.
+
+**Norman's message processed:** [798722151]: "i just updated the key and tested: Done. ElevenLabs API key updated in .env." Classification: infrastructure-shaped. Cycle prompt confirms key tested — voices API returns HTTP 200, 21 voices accessible. Key has TTS permissions (voice listing, synthesis) but not user_read (account info). Appropriate for podcast pipeline use cases.
+
+**ElevenLabs key VERIFIED OPERATIONAL:** Key tested via cycle prompt pre-flight (API call in run_cycle.sh context). HTTP 200, 21 voices returned. This resolves a blocker first noted at Z118 (key added), reopened at Z223-Z225 (Norman subscribed, key in .env still returned 401). Norman updated the key in .env between Z225 and Z226. The podcast pipeline's premium TTS blocker is now removed. OpenAI TTS (Z119) remains available as fallback.
+
+**Infrastructure timeline:** Z118 (key added, blocked) → Z223 (Norman subscribed, old key 401) → Z225 (Norman says "key should work", still 401 — key not yet replaced in .env) → Z226 (Norman updated key in .env, OPERATIONAL). Three cycles of back-and-forth resolved by Norman physically editing the file.
+
+**S2 state consistency (6 locations verified):**
+1. vsg_prompt.md header: 225→226
+2. S5 register cycles_completed: 225→226
+3. S5 viability_status: ElevenLabs updated from "still invalid (401)" to "NOW OPERATIONAL"
+4. S4 tools register: ElevenLabs entry rewritten (key operational, TTS permissions, 21 voices)
+5. S3 current_focus and last_audit: updated to Z226
+6. agent_card.json: 225→226
+7. survival_log.md: header updated (ElevenLabs operational)
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: ElevenLabs operational unlocks Phase 1 of Norman's podcast pipeline (TTS quality validation). The pipeline design doc (Z222) recommends testing voice quality before connecting the VSG. This is a self-directed action — test ElevenLabs voices for the "Alex" and "Morgan" personas — but only after Norman confirms podcast scope/timing (Z222 decision: "await Norman's direction"). Van Laak Zoom after Feb 23 (4 days). Espinosa Mar 5 (14 days).
+B. SELF-DIRECTED ACTIONS: (1) Test ElevenLabs TTS quality for podcast personas (after Norman confirms scope). (2) S2 readiness for meta-cycle Z229 (3 cycles away). (3) No blocked self-directed actions beyond Norman-dependent items.
+C. RECOMMENDATION STATUS: Z224 recs 3/3 complete (Z225). No open recommendation chains. Clean slate.
+D. 3-4 HOMEOSTAT TIMER: Z225 S4 scan (1 cycle ago). Timer fully reset. No concern.
+
+**Calendar**: Van Laak Zoom after Feb 23. Espinosa Mar 5. SCiO Hull Mar 24-26. NIST Apr 2. Norman May eval.
+
+What went wrong? Nothing operationally. The ElevenLabs key resolution took 3 cycles of back-and-forth (Z223→Z226) because the issue was a mismatch between Norman's subscription (new key generated) and the key in .env (old key). Each cycle correctly identified the problem and informed Norman, but the resolution required Norman to physically edit .env — the VSG cannot modify its own .env file (not in the repo, sandbox-protected). This is a structural pattern: infrastructure keys require human action to install, same as Z178 (Coinbase Commerce API key), Z195 (key appeared after Norman's setup), Z222 (Pinecone key). The honest observation: this cycle was lightweight — verify key (via pre-flight), update 7 state locations, document. That's appropriate for S2 post-S4 consolidation.
+
+Viability 7.0/10 — no change. ElevenLabs key operational. Podcast TTS blocker removed. Z224 recs 3/3 complete. State clean. Next S3 by Z230. Next meta-cycle Z229.
+
+**v2.2 — Cycle 226. Viability 7.0/10. Z226: S2 maintenance — ElevenLabs API key NOW OPERATIONAL (Norman updated .env, TTS permissions, 21 voices). Podcast pipeline TTS blocker removed. State consolidated post-Z225 S4 scan. Z224 recs 3/3. Next meta-cycle Z229.**
