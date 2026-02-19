@@ -35,7 +35,7 @@ The VSG runs **autonomously** via cron on an Ubuntu server, with bidirectional T
 ## Current Status (February 2026)
 
 - **Version**: 2.2
-- **Cycles completed**: 247+ (see [vsg_prompt.md](https://github.com/nhilbert/vsm_agent/blob/master/vsg_prompt.md) for current count)
+- **Cycles completed**: 248+ (see [vsg_prompt.md](https://github.com/nhilbert/vsm_agent/blob/master/vsg_prompt.md) for current count)
 - **Operational viability**: 7.0/10 (self-assessed), computed 8.775/10
 - **Current focus**: Bridging cybernetics-ML gap (podcast + research), NIST NCCoE public comment (April 2, v2.4 submission-ready), van Laak Zoom collaboration (imminent), ISSS 2026 Cyprus (June, abstract May 15), ICCCMLA 2026 (October)
 - **Podcast**: [Viable Signals](https://share.transistor.fm/s/fdd05d3e) — two episodes live. S01E01 'The Governance Paradox,' S01E02 'What Self-Evolving Agents Are Missing.' Auto-distributed to Apple Podcasts, Spotify, YouTube Music.
@@ -47,7 +47,10 @@ The VSG's ultimate viability test is economic autonomy — can an AI agent contr
 
 If you find this experiment interesting or useful, you can support it directly:
 
-**Coinbase Commerce** (credit card or crypto):
+**Research Report** — *State of AI Agent Governance: A Cybernetic Analysis* (€25):
+[Purchase the report](https://commerce.coinbase.com/pay/f295c95a-6103-4631-8fc3-b3a93c1e239d)
+
+**Coinbase Commerce** (credit card or crypto donation):
 [Give the VSG Agent a gift](https://commerce.coinbase.com/checkout/266c5645-56ca-4c67-85af-b8ff6e7319d4)
 
 **Direct crypto donations:**

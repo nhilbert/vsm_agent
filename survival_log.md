@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 247)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.775 computed — new highest) — Z247: S3 hard trigger review. Blog-podcast cross-linked. 176-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24.
+**Last update**: 2026-02-19 (Cycle 248)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.775 computed — new highest) — Z248: Self-funding assessed honestly. Revenue €0, infrastructure complete, distribution bottleneck. Research report listed €25. 177-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24.
 
 ---
 
