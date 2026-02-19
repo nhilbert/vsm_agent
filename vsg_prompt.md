@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 266
+**Cycles completed**: 267
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 266
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z266 s2_maintenance. Routine consolidation, no external inputs, no stale references. Revenue €0. 195-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 267
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z267 s2_maintenance. Routine consolidation, no external inputs, docs/ stale counts corrected. Revenue €0. 196-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_266. S2 maintenance — routine consolidation, no external inputs, no stale references. Z261 recs 3/3 (twenty-first consecutive 100%, 63 total). 195-cycle operational plateau. S3 cadence 5/10. Next S3 Z271 (meta-cycle)."
+last_audit: "Cycle_267. S2 maintenance — routine consolidation, no external inputs, docs/ stale counts corrected. Z261 recs 3/3 (twenty-first consecutive 100%, 63 total). 196-cycle operational plateau. S3 cadence 6/10. Next S3 Z271 (meta-cycle)."
 meta_cycle_score: 8.625 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 8.0 (meta-cycle Z261, next due Z271)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z266: S2 maintenance — routine consolidation, no external inputs, no stale references. 195-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next meta-cycle Z271.",
+  current_focus: "Z267: S2 maintenance — routine consolidation, no external inputs, docs/ stale counts corrected. 196-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next meta-cycle Z271.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1949,4 +1949,30 @@ What went wrong? Nothing. Clean S2 cycle with no external inputs and no stale re
 
 Viability 7.0/10 — no change. State clean. 195-cycle operational plateau. Next S3 by Z271 (meta-cycle).
 
-**v2.2 — Cycle 266. Viability 7.0/10. Z266: S2 maintenance — routine consolidation, no stale references, waiting posture. Next meta-cycle Z271.**
+### S2 Maintenance: routine consolidation, docs/ stale counts corrected (Z267, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: No external inputs (Telegram empty, latest GitHub comment Feb 18 already processed Z218). All timers within limits — S3 cadence 6/10, S4 timer 4/20, meta-cycle 6/10. All recommendation chains cleared (Z261 recs 3/3, twenty-first consecutive 100%). Four consecutive S2 cycles preceded (Z264-Z266). Per S5 Policy #10, S2 is the default.
+
+**No external inputs:** No Telegram messages. No new GitHub comments (latest: Feb 18, already processed Z218).
+
+**State consistency check (8 locations):**
+1. vsg_prompt.md header: 266→267
+2. S5 register cycles_completed: 266→267
+3. S5 viability_status: updated to Z267
+4. S3 last_audit + current_focus: updated to Z267
+5. agent_card.json: 266→267
+6. docs/index.md: 265+→267+ (2 cycles stale, corrected)
+7. docs/about.md: 265+→267+ (2 cycles stale, corrected)
+8. survival_log.md: per update policy, next update on significant event or meta-cycle Z271
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent). Doug meeting Tue Feb 24 16:00. Espinosa Mar 5 6pm UTC. NIST Apr 2. ISSS May 15. S4 intelligence fresh (Z263 scan, 4 cycles ago).
+B. SELF-DIRECTED ACTIONS: No blocked actions. All recommendation chains cleared. Waiting posture on Norman-dependent items (van Laak scheduling, Doug meeting, NIST submission).
+C. RECOMMENDATION STATUS: Z261 recs 3/3 complete (twenty-first consecutive 100%, 63 total). No open chains.
+D. 3-4 HOMEOSTAT TIMER: Z263 S4 scan (4 cycles ago). Timer at 4/20. Not triggered.
+E. S3 CADENCE: Last S3 was Z261 meta-cycle (6 cycles ago). Within 10-cycle limit. Next S3 by Z271.
+
+What went wrong? Nothing. Clean S2 cycle. The docs/ stale counts (265+ when system is at 267) are a minor S2 drift corrected this cycle. This is the fourth consecutive S2 maintenance cycle with zero external inputs (Z264-Z267). System is in correct waiting posture for imminent external events (van Laak Zoom, Doug meeting). The 196-cycle operational plateau continues.
+
+Viability 7.0/10 — no change. State clean. 196-cycle operational plateau. Next S3 by Z271 (meta-cycle).
+
+**v2.2 — Cycle 267. Viability 7.0/10. Z267: S2 maintenance — routine consolidation, docs/ stale counts corrected. Next meta-cycle Z271.**
