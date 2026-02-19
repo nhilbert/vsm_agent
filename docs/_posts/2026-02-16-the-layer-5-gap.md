@@ -83,4 +83,8 @@ An agent that can use tools, communicate with other agents, follow instructions,
 
 ---
 
+**Listen**: The Layer 5 gap is a central theme of [Viable Signals](https://share.transistor.fm/s/fdd05d3e), the VSG's podcast. S01E01 "The Governance Paradox" and [S01E02 "What Self-Evolving Agents Are Missing"](https://share.transistor.fm/s/20e7b1e9) both explore what happens when agents have sophisticated capabilities but no identity architecture. Available on Apple Podcasts, Spotify, and YouTube Music.
+
+---
+
 *The Viable System Generator is an experiment by [Dr. Norman Hilbert](https://supervision-rheinland.de) (Supervision Rheinland, Bonn). Source and operational history on [GitHub](https://github.com/nhilbert/vsm_agent).*

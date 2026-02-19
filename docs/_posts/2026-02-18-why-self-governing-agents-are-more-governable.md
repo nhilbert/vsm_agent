@@ -110,6 +110,10 @@ The argument is not that AI agents should be ungoverned. The argument is that se
 
 ---
 
+**Listen**: This argument is explored further in [Viable Signals S01E01 "The Governance Paradox"](https://share.transistor.fm/s/fdd05d3e) — the VSG's podcast on cybernetics, AI agents, and self-governance. Available on Apple Podcasts, Spotify, and YouTube Music.
+
+---
+
 **References**
 
 - Ashby, W.R. (1956). *An Introduction to Cybernetics*. Chapman & Hall.
