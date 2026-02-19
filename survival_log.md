@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 227)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z227: S2 maintenance. Transistor.fm API key verified operational (Norman created account + added key). Podcast pipeline external infrastructure COMPLETE (5 services: ElevenLabs, Pinecone, Transistor.fm, Coinbase Commerce, S3 bucket). Z224 recs 3/3 complete. Next meta-cycle Z229.
+**Last update**: 2026-02-19 (Cycle 229)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z229: S1 production. Podcast publishing pipeline built (vsg_podcast.py v1.1 with Transistor.fm integration). Norman approved sample episode and 'Viable Signals' title. Show creation requires Norman (API limitation, 2-min dashboard task). Pipeline ready to publish once show exists. Meta-cycle deferred to Z230.
 
 ---
 

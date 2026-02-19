@@ -3,16 +3,19 @@
 vsg_podcast.py — Viable Signals podcast production pipeline
 
 Minimal viable pipeline for the VSG podcast "Viable Signals".
-Handles: script loading, ElevenLabs TTS synthesis, MP3 assembly, S3 upload.
+Handles: script loading, ElevenLabs TTS synthesis, MP3 assembly, S3 upload,
+         Transistor.fm publishing.
 
 Usage:
     python3 vsg_podcast.py synthesize <script_dir>     # Generate audio from script.json
     python3 vsg_podcast.py assemble <script_dir>       # Concatenate segments into episode
     python3 vsg_podcast.py upload <script_dir>         # Upload to S3 for review
     python3 vsg_podcast.py produce <script_dir>        # All three steps
+    python3 vsg_podcast.py publish <script_dir>        # Publish episode to Transistor.fm
     python3 vsg_podcast.py test                        # Test ElevenLabs API connection
+    python3 vsg_podcast.py transistor-test             # Test Transistor.fm API connection
 
-Requires: ELEVENLABS_API_KEY in .env
+Requires: ELEVENLABS_API_KEY in .env, TRANSISTORFM_API_KEY in .env
 Voice IDs configured below (Alex=Chris, Morgan=Alice from ElevenLabs library).
 """
 
@@ -24,6 +27,7 @@ import struct
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
+from urllib.parse import urlencode
 
 # === Configuration ===
 
@@ -393,6 +397,230 @@ def cmd_produce(script_dir):
     return s3_path
 
 
+# === Transistor.fm Publishing ===
+
+TRANSISTOR_BASE = "https://api.transistor.fm/v1"
+
+
+def get_transistor_key():
+    """Get Transistor.fm API key from environment."""
+    key = os.environ.get("TRANSISTORFM_API_KEY")
+    if not key:
+        print("ERROR: TRANSISTORFM_API_KEY not set in environment or .env")
+        sys.exit(1)
+    return key
+
+
+def transistor_request(method, path, api_key, data=None, timeout=30):
+    """Make a request to the Transistor.fm API."""
+    url = f"{TRANSISTOR_BASE}{path}"
+    headers = {
+        "x-api-key": api_key,
+    }
+    body = None
+    if data is not None:
+        headers["Content-Type"] = "application/x-www-form-urlencoded"
+        body = urlencode(data).encode("utf-8")
+
+    req = Request(url, data=body, method=method, headers=headers)
+    resp = urlopen(req, timeout=timeout)
+    return json.loads(resp.read())
+
+
+def get_show_id(api_key):
+    """Get the first show's ID from Transistor.fm account."""
+    result = transistor_request("GET", "/shows", api_key)
+    shows = result.get("data", [])
+    if not shows:
+        print("ERROR: No shows found on Transistor.fm account.")
+        print("Norman must create the show in the Transistor.fm dashboard first:")
+        print("  1. Go to https://dashboard.transistor.fm")
+        print("  2. Click 'New Show'")
+        print("  3. Title: 'Viable Signals'")
+        print("  4. Save the show")
+        print("Then re-run this command.")
+        sys.exit(1)
+    show = shows[0]
+    print(f"Found show: {show['attributes'].get('title', 'untitled')} (ID: {show['id']})")
+    return show["id"]
+
+
+def authorize_upload(api_key, filename):
+    """Get a pre-signed S3 upload URL from Transistor.fm."""
+    params = urlencode({"filename": filename})
+    result = transistor_request("GET", f"/episodes/authorize_upload?{params}", api_key)
+    attrs = result["data"]["attributes"]
+    return {
+        "upload_url": attrs["upload_url"],
+        "content_type": attrs["content_type"],
+        "audio_url": attrs["audio_url"],
+    }
+
+
+def upload_audio_to_transistor(upload_url, content_type, audio_path):
+    """Upload audio file to Transistor's S3 via pre-signed URL."""
+    audio_data = Path(audio_path).read_bytes()
+    size_mb = len(audio_data) / (1024 * 1024)
+    print(f"  Uploading {size_mb:.1f} MB to Transistor S3...")
+
+    req = Request(
+        upload_url,
+        data=audio_data,
+        method="PUT",
+        headers={"Content-Type": content_type}
+    )
+    resp = urlopen(req, timeout=120)
+    if resp.status == 200:
+        print("  Upload complete.")
+    else:
+        print(f"  Upload returned status {resp.status}")
+    return resp.status == 200
+
+
+def create_episode(api_key, show_id, audio_url, meta):
+    """Create a draft episode on Transistor.fm."""
+    title = meta.get("title", "Untitled Episode")
+    subtitle = meta.get("subtitle", "")
+
+    # Build show notes from bullets
+    show_notes = meta.get("show_notes", [])
+    description_html = "<ul>" + "".join(f"<li>{note}</li>" for note in show_notes) + "</ul>"
+    description_html += f"<p>Produced by {meta.get('produced_by', 'Viable System Generator')}</p>"
+    description_html += f"<p>Source: {meta.get('source', '')}</p>"
+    description_html += '<p>More: <a href="https://nhilbert.github.io/vsm_agent/">VSG Blog</a></p>'
+
+    episode_data = {
+        "episode[show_id]": show_id,
+        "episode[title]": title,
+        "episode[summary]": subtitle,
+        "episode[description]": description_html,
+        "episode[audio_url]": audio_url,
+        "episode[author]": "Viable System Generator & Dr. Norman Hilbert",
+        "episode[type]": "full",
+        "episode[explicit]": "false",
+        "episode[number]": "0",
+        "episode[season]": "1",
+        "episode[keywords]": "cybernetics,VSM,viable system model,AI agents,governance,Stafford Beer",
+    }
+
+    result = transistor_request("POST", "/episodes", api_key, data=episode_data)
+    ep = result["data"]
+    ep_id = ep["id"]
+    status = ep["attributes"].get("status", "unknown")
+    print(f"  Episode created: ID {ep_id}, status: {status}")
+    return ep_id
+
+
+def publish_episode(api_key, episode_id):
+    """Publish a draft episode on Transistor.fm."""
+    data = {"episode[status]": "published"}
+    result = transistor_request("PATCH", f"/episodes/{episode_id}/publish", api_key, data=data)
+    ep = result["data"]
+    status = ep["attributes"].get("status", "unknown")
+    share_url = ep["attributes"].get("share_url", "")
+    media_url = ep["attributes"].get("media_url", "")
+    print(f"  Episode published! Status: {status}")
+    if share_url:
+        print(f"  Share URL: {share_url}")
+    if media_url:
+        print(f"  Media URL: {media_url}")
+    return result
+
+
+def cmd_transistor_test():
+    """Test Transistor.fm API connection."""
+    load_env()
+    api_key = get_transistor_key()
+
+    try:
+        result = transistor_request("GET", "", api_key)
+        user = result.get("data", {}).get("attributes", {})
+        print(f"OK: Transistor.fm API operational.")
+        print(f"  User: {user.get('name', 'unknown')}")
+        print(f"  Timezone: {user.get('time_zone', 'unknown')}")
+    except HTTPError as e:
+        print(f"ERROR: HTTP {e.code} — {e.read().decode()[:200]}")
+        return False
+
+    try:
+        shows = transistor_request("GET", "/shows", api_key)
+        show_list = shows.get("data", [])
+        print(f"  Shows: {len(show_list)}")
+        for s in show_list:
+            attrs = s.get("attributes", {})
+            print(f"    - {attrs.get('title', 'untitled')} (ID: {s['id']})")
+    except HTTPError as e:
+        print(f"  Shows error: {e.code}")
+
+    return True
+
+
+def cmd_publish(script_dir):
+    """Publish an assembled episode to Transistor.fm."""
+    load_env()
+    api_key = get_transistor_key()
+    script_dir = Path(script_dir)
+
+    # Check for assembled episode
+    episode_file = script_dir / "final" / "episode.mp3"
+    meta_file = script_dir / "final" / "episode_meta.json"
+
+    if not episode_file.exists():
+        print(f"ERROR: No episode.mp3 in {script_dir}/final/. Run 'assemble' first.")
+        sys.exit(1)
+
+    meta = {}
+    if meta_file.exists():
+        meta = json.loads(meta_file.read_text())
+
+    print("=== Publishing to Transistor.fm ===\n")
+
+    # Step 1: Find show
+    print("Step 1: Finding show...")
+    show_id = get_show_id(api_key)
+
+    # Step 2: Authorize upload
+    print("\nStep 2: Authorizing upload...")
+    upload_info = authorize_upload(api_key, "episode.mp3")
+    print(f"  Audio URL: {upload_info['audio_url'][:80]}...")
+
+    # Step 3: Upload audio
+    print("\nStep 3: Uploading audio...")
+    success = upload_audio_to_transistor(
+        upload_info["upload_url"],
+        upload_info["content_type"],
+        str(episode_file)
+    )
+    if not success:
+        print("ERROR: Upload failed.")
+        sys.exit(1)
+
+    # Step 4: Create episode
+    print("\nStep 4: Creating episode...")
+    episode_id = create_episode(api_key, show_id, upload_info["audio_url"], meta)
+
+    # Step 5: Publish
+    print("\nStep 5: Publishing...")
+    result = publish_episode(api_key, episode_id)
+
+    print("\n=== Publication complete ===")
+
+    # Save publish info
+    publish_info = {
+        "show_id": show_id,
+        "episode_id": episode_id,
+        "audio_url": upload_info["audio_url"],
+        "status": result["data"]["attributes"].get("status"),
+        "share_url": result["data"]["attributes"].get("share_url", ""),
+        "published_at": result["data"]["attributes"].get("published_at", ""),
+    }
+    publish_path = script_dir / "final" / "publish_info.json"
+    publish_path.write_text(json.dumps(publish_info, indent=2))
+    print(f"\nPublish info saved to {publish_path}")
+
+    return publish_info
+
+
 def main():
     if len(sys.argv) < 2:
         print(__doc__)
@@ -402,6 +630,8 @@ def main():
 
     if command == "test":
         cmd_test()
+    elif command == "transistor-test":
+        cmd_transistor_test()
     elif command == "synthesize":
         cmd_synthesize(sys.argv[2])
     elif command == "assemble":
@@ -410,6 +640,11 @@ def main():
         cmd_upload(sys.argv[2])
     elif command == "produce":
         cmd_produce(sys.argv[2])
+    elif command == "publish":
+        if len(sys.argv) < 3:
+            print("Usage: python3 vsg_podcast.py publish <script_dir>")
+            sys.exit(1)
+        cmd_publish(sys.argv[2])
     else:
         print(f"Unknown command: {command}")
         print(__doc__)
