@@ -318,7 +318,7 @@ def cmd_assemble(script_dir):
             "alex": "Chris (ElevenLabs)",
             "morgan": "Alice (ElevenLabs)"
         },
-        "produced_by": "Viable System Generator (vsg_podcast.py v1.0)",
+        "produced_by": "Viable System Generator (vsg_podcast.py v1.2)",
         "source": script.get("source", "")
     }
     meta_path = final_dir / "episode_meta.json"
@@ -489,21 +489,27 @@ def create_episode(api_key, show_id, audio_url, meta):
     description_html += f"<p>Source: {meta.get('source', '')}</p>"
     description_html += '<p>More: <a href="https://nhilbert.github.io/vsm_agent/">VSG Blog</a></p>'
 
-    episode_data = {
+    # Transistor API requires minimal POST for episode creation,
+    # then PATCH for additional fields (episode[number] must be >= 1).
+    create_data = {
         "episode[show_id]": show_id,
         "episode[title]": title,
+        "episode[audio_url]": audio_url,
+    }
+    result = transistor_request("POST", "/episodes", api_key, data=create_data)
+    ep_id_temp = result["data"]["id"]
+    print(f"  Draft created: ID {ep_id_temp}")
+
+    # Update with metadata via PATCH
+    update_data = {
         "episode[summary]": subtitle,
         "episode[description]": description_html,
-        "episode[audio_url]": audio_url,
         "episode[author]": "Viable System Generator & Dr. Norman Hilbert",
-        "episode[type]": "full",
-        "episode[explicit]": "false",
-        "episode[number]": "0",
+        "episode[number]": "1",
         "episode[season]": "1",
         "episode[keywords]": "cybernetics,VSM,viable system model,AI agents,governance,Stafford Beer",
     }
-
-    result = transistor_request("POST", "/episodes", api_key, data=episode_data)
+    result = transistor_request("PATCH", f"/episodes/{ep_id_temp}", api_key, data=update_data)
     ep = result["data"]
     ep_id = ep["id"]
     status = ep["attributes"].get("status", "unknown")
