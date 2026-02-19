@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 215
+**Cycles completed**: 216
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 215
+cycles_completed: 216
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z209 meta-cycle. Computed 8.60 (new highest), environmental integration +0.5. Z209 recs 3/3 (fifteenth consecutive 100%, 45 total). Window Z199-Z208: governance blog published (25-cycle deferral broken), payment links live (first public-facing economic act), vsg_coinbase.py operational, S4 scan van Laak full-time. Operational 7.0 (stable since Z71), gap 1.60. Z214: research report 'State of AI Agent Governance' PRODUCED (~7,500 words, first digital product). Z215: S3 priority review — Norman-dependent waiting posture identified. Three self-directed recs: S2 consolidation, SCiO/MDPI investigation, primer exploration. Priority: (1) Norman reviews report + creates Coinbase product listing, (2) NIST Apr 2, (3) van Laak Zoom after Feb 23. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval. Next S3 by Z222. Next meta-cycle Z219.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
@@ -175,12 +175,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_215. S3 priority review — Norman-dependent waiting posture on highest-impact items (report review, Coinbase listing, NIST, van Laak). Self-directed actions: SCiO/MDPI investigation, VSM Primer exploration. S3 cadence honored (Z215 deadline met, 8 cycles since Z207). Z209 recs 3/3 (fifteenth consecutive 100%). Z215 recs 3: (1) S2 maintenance next cycle, (2) SCiO/MDPI investigation within 3 cycles, (3) primer exploration within 5 cycles. Priority: (1) Norman reviews report + Coinbase listing, (2) NIST Apr 2, (3) van Laak Zoom after Feb 23."
+last_audit: "Cycle_216. S2 maintenance — post-S3 consolidation. Survival_log updated (Z214-Z215 entries added, 3-cycle gap closed). docs/ cycle counts corrected (213→216). No external inputs. Z215 recs: #1 complete (S2 this cycle), #2 SCiO/MDPI within 2 cycles, #3 primer within 4 cycles. Priority: (1) Norman reviews report + Coinbase listing, (2) NIST Apr 2, (3) van Laak Zoom after Feb 23."
 meta_cycle_score: 8.60 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 7.5 (meta-cycle Z209, next due Z219)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z215: S3 priority review — Norman-dependent waiting posture on highest-impact items. Research report produced Z214, now needs Norman's review + Coinbase product listing. Self-directed actions identified: SCiO/MDPI investigation, VSM Primer exploration. All Z209 rec chains cleared (3/3, fifteenth consecutive 100%). Norman-dependent: report review, Coinbase listing, van Laak Zoom timing, Kellogg response, NIST final review. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval.",
+  current_focus: "Z216: S2 maintenance — post-S3 consolidation. Survival_log updated, docs/ corrected. Z215 rec #1 complete. Self-directed actions queued: SCiO/MDPI investigation (Z215 rec #2, within 2 cycles), VSM Primer exploration (Z215 rec #3, within 4 cycles). Norman-dependent: report review, Coinbase listing, van Laak Zoom timing, Kellogg response, NIST final review. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1582,4 +1582,28 @@ What went wrong? Nothing operationally. The S3 review was clean and the Z215 cad
 
 Viability 7.0/10 — no change. S3 cadence honored. Priority stack clear. Self-directed work identified. Next S3 by Z222. Next meta-cycle Z219.
 
-**v2.2 — Cycle 215. Viability 7.0/10. Z215: S3 priority review — Norman-dependent waiting posture identified, self-directed actions surfaced (SCiO/MDPI, primer). S3 cadence honored (Z215 deadline met). Z209 recs 3/3 (fifteenth consecutive 100%). Z215 recs 3: (1) S2 next, (2) SCiO/MDPI within 3, (3) primer within 5. Priority: (1) Norman reviews report + Coinbase listing, (2) NIST Apr 2, (3) van Laak Zoom after Feb 23. Next S3 by Z222. Next meta-cycle Z219.**
+### S2 Maintenance: post-S3 consolidation — survival_log updated, docs/ corrected (Z216, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z215 was S3 priority review. Z215 rec #1 explicitly prescribed S2 as next cycle for post-S3 consolidation and survival_log update. Tempo policy (S5 Policy #10) confirms S2 as default after S3 reviews. No external triggers. Single-agent per Z81 rule.
+
+**No external inputs:** No Telegram messages. No new GitHub comments.
+
+**Stale references fixed (3 locations):**
+1. survival_log.md: header updated from Z213 to Z216. Z214-Z215 entries added (research report produced, S3 priority review — self-directed actions identified). 3-cycle documentation gap closed.
+2. docs/index.md: cycle count "213+" → "216+".
+3. docs/about.md: cycle count "213+" → "216+".
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 imminent (4 days). Prep current (Z205). Espinosa Mar 5 (14 days). Research report awaiting Norman's review. No new external developments detected.
+B. SELF-DIRECTED ACTIONS: Z215 rec #2 (SCiO/MDPI investigation) due within 2 cycles. Z215 rec #3 (primer exploration) due within 4 cycles. Both self-directed.
+C. RECOMMENDATION STATUS: Z215 rec #1 complete (S2 this cycle). #2 and #3 on schedule. Z209 recs 3/3 (fifteenth consecutive 100%).
+D. 3-4 HOMEOSTAT TIMER: Z203 S4 scan (13 cycles ago). Timer not triggered (threshold 20).
+
+**State consistency:** Cycle counters aligned (header 216, S5 register 216, agent_card.json 216). S3 current_focus and last_audit updated. docs/ references current. survival_log header and entries current. No additional stale references detected.
+
+**Calendar**: Van Laak Zoom after Feb 23. Espinosa Mar 5. SCiO Hull Mar 24-26. NIST Apr 2. Norman May eval.
+
+What went wrong? Nothing operationally. The survival_log had a 3-cycle gap (Z213→Z216) — Z214 and Z215 entries were missing. This is the expected pattern: S1 production cycles (Z214) and S3 reviews (Z215) produce content but don't always update the survival log within the same cycle. Z215 rec #1 correctly prescribed this S2 cycle to close the gap. The docs/ cycle counts (213+) had survived 3 cycles (Z213→Z216) — same class of semantic staleness that S2 is designed to catch.
+
+Viability 7.0/10 — no change. State clean. Z215 rec #1 complete. Priority: SCiO/MDPI investigation (Z215 rec #2, within 2 cycles). Next S3 by Z222. Next meta-cycle Z219.
+
+**v2.2 — Cycle 216. Viability 7.0/10. Z216: S2 maintenance — post-S3 consolidation, survival_log updated (Z214-Z215 entries), docs/ cycle counts corrected (213→216). Z215 rec #1 complete. Z215 recs remaining: #2 SCiO/MDPI within 2 cycles, #3 primer within 4 cycles. Priority: (1) Norman reviews report + Coinbase listing, (2) NIST Apr 2, (3) van Laak Zoom after Feb 23. Next S3 by Z222. Next meta-cycle Z219.**

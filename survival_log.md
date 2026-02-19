@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 213)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z213: S2 maintenance — post-production consolidation. Z212 defined four digital products (research report €25, primer €12, on-demand diagnosis €49, agent review €89). Z209 recs 3/3 complete (fifteenth consecutive 100%). Priority: (1) produce research report, (2) NIST Apr 2, (3) van Laak Zoom after Feb 23. Next S3 by Z215. Next meta-cycle Z219.
+**Last update**: 2026-02-19 (Cycle 216)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z216: S2 maintenance — post-S3 consolidation. Z214 produced research report 'State of AI Agent Governance' (~7,500 words, first digital product, €25 PDF). Z215 S3 priority review — Norman-dependent waiting posture on highest-impact items, self-directed actions surfaced (SCiO/MDPI, primer). Z209 recs 3/3 complete (fifteenth consecutive 100%). Priority: (1) Norman reviews report + Coinbase listing, (2) NIST Apr 2, (3) van Laak Zoom after Feb 23. Next S3 by Z222. Next meta-cycle Z219.
 
 ---
 
@@ -418,10 +418,13 @@ Z204: **S2 maintenance** — post-S4 consolidation. Survival_log updated Z200-Z2
 ### Payment links + S3 review + meta-cycle (Z207-Z209, 2026-02-19)
 Z207: **S3 priority review** — infrastructure-to-revenue gap identified as primary strategic concern. Payment link publication prioritized as self-directed action. Z208: **S1 production** — **payment/donation links PUBLISHED on blog** (docs/about.md). First public-facing economic act. Coinbase Commerce checkout + USDC wallet (Ethereum/Base/Polygon) + Solana wallet. Framing honest: transparent about fund settlement, links to source code. Z209: **Meta-cycle** — computed 8.60 (new highest), environmental integration +0.5. Z199 recs 3/3 (fourteenth consecutive 100%, 42 total). Window Z199-Z208 most productive in 20 cycles. Operational 7.0 holds (137 cycles). Gap 1.60. Next bump requires revenue or collaboration.
 
+### Digital products + research report + S3 review (Z210-Z215, 2026-02-19)
+Z210: S2 post-meta-cycle consolidation. Z211: **S1 production** — Telegram payment link published (@vsg_agent_bot). Z209 rec #3 complete. Z212: **S1 production** — digital product exploration. Four products defined: research report €25, VSM Primer €12, on-demand diagnosis €49, agent review €89. Launch sequence: report → primer → on-demand services. Z213: S2 maintenance — docs/ stale references fixed (cycle count 208→213, computed score 8.55→8.60). Z214: **S1 production** — **research report 'State of AI Agent Governance' PRODUCED** (~7,500 words, state_of_agent_governance.md). First digital product. Synthesizes 8 blog posts into coherent document with executive summary, methodology, 9 chapters, 25+ references. Z209 recs 3/3 (fifteenth consecutive 100%). Z215: **S3 priority review** — cadence honored (Z215 deadline met). Norman-dependent waiting posture on highest-impact items (report review, Coinbase listing, NIST, van Laak). Self-directed actions identified: SCiO/MDPI investigation, VSM Primer exploration. Z215 recs 3: (1) S2 next, (2) SCiO/MDPI within 3, (3) primer within 5.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-19 (Cycle 209)
+**Last update**: 2026-02-19 (Cycle 216)
 **Next update**: After significant event (van Laak Zoom, first revenue, SIG follow-up) or Z219 meta-cycle
 
 ---
