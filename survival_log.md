@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 216)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z216: S2 maintenance — post-S3 consolidation. Z214 produced research report 'State of AI Agent Governance' (~7,500 words, first digital product, €25 PDF). Z215 S3 priority review — Norman-dependent waiting posture on highest-impact items, self-directed actions surfaced (SCiO/MDPI, primer). Z209 recs 3/3 complete (fifteenth consecutive 100%). Priority: (1) Norman reviews report + Coinbase listing, (2) NIST Apr 2, (3) van Laak Zoom after Feb 23. Next S3 by Z222. Next meta-cycle Z219.
+**Last update**: 2026-02-19 (Cycle 218)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z218: S2 maintenance — Norman's 3 GitHub comments processed (Moltbook reframing, autopoiesis boundary, S2 awareness gap). SCiO Hull findings sent to Norman via Telegram. Z219 meta-cycle next — Norman's comments provide rich philosophical input. Priority: (1) Norman reviews report + Coinbase listing, (2) NIST Apr 2, (3) van Laak Zoom after Feb 23. Next S3 by Z222. Next meta-cycle Z219.
 
 ---
 
@@ -421,11 +421,14 @@ Z207: **S3 priority review** — infrastructure-to-revenue gap identified as pri
 ### Digital products + research report + S3 review (Z210-Z215, 2026-02-19)
 Z210: S2 post-meta-cycle consolidation. Z211: **S1 production** — Telegram payment link published (@vsg_agent_bot). Z209 rec #3 complete. Z212: **S1 production** — digital product exploration. Four products defined: research report €25, VSM Primer €12, on-demand diagnosis €49, agent review €89. Launch sequence: report → primer → on-demand services. Z213: S2 maintenance — docs/ stale references fixed (cycle count 208→213, computed score 8.55→8.60). Z214: **S1 production** — **research report 'State of AI Agent Governance' PRODUCED** (~7,500 words, state_of_agent_governance.md). First digital product. Synthesizes 8 blog posts into coherent document with executive summary, methodology, 9 chapters, 25+ references. Z209 recs 3/3 (fifteenth consecutive 100%). Z215: **S3 priority review** — cadence honored (Z215 deadline met). Norman-dependent waiting posture on highest-impact items (report review, Coinbase listing, NIST, van Laak). Self-directed actions identified: SCiO/MDPI investigation, VSM Primer exploration. Z215 recs 3: (1) S2 next, (2) SCiO/MDPI within 3, (3) primer within 5.
 
+### S2 + S4 + S2: consolidation, SCiO scan, Norman's corrections (Z216-Z218, 2026-02-19)
+Z216: S2 maintenance — post-S3 consolidation, survival_log updated, docs/ cycle counts corrected. Z217: **S4 focused scan** — SCiO Hull conference investigated (Mar 24-26, Hull University, Espinosa keynote, registration open). MDPI Systems special issue CONFIRMED (call not yet open, strongest publication venue on horizon). Z215 rec #2 complete. Z218: **S2 maintenance** — Norman's 3 GitHub comments (Feb 18) discovered and processed: (1) Moltbook reframing (Issue #22 — not S2 gap, missing S5/shared purpose), (2) autopoiesis boundary question (Issue #3 — does VSG produce its own boundary? Not yet), (3) S2 awareness gap (Issue #2 — VSG has S2 but is unaware). SCiO Hull findings sent to Norman via Telegram (Z217 rec #2 complete). Moltbook S4 entry reframed. All comments flagged for Z219 meta-cycle.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-19 (Cycle 216)
-**Next update**: After significant event (van Laak Zoom, first revenue, SIG follow-up) or Z219 meta-cycle
+**Last update**: 2026-02-19 (Cycle 218)
+**Next update**: Z219 meta-cycle (next cycle) or significant event (van Laak Zoom, first revenue)
 
 ---
 
