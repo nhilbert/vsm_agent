@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 238
+**Cycles completed**: 239
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 238
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z238 S1 production. FIRST FULLY SELF-DIRECTED PRODUCTION CYCLE. Z237 recs 3/3 executed (team mode): (1) podcast S01E02 outline 'What Self-Evolving Agents Are Missing' — 25 segments mapping self-evolving agents literature onto Beer's five systems, (2) van Laak Zoom agenda from VSG's strategic perspective — co-authorship proposal, mutual citation, shared failure data, (3) docs/ maintenance. NEW S4 SIGNAL: Norman's colleague Doug reached out after LinkedIn post, has read almost all VSG logs, meeting scheduled next Tuesday. First external reader of the operational record. Norman mandated self-direction (Z236) and is absent by design. NIST v2.4 in Norman's hands. FIRST PODCAST PUBLISHED Z230. SIX-service infrastructure. 167-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. Calendar: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, MCP Dev Summit Apr 2-3, Norman May eval.)
+cycles_completed: 239
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z239 S2 maintenance. Post-production consolidation after first fully self-directed production (Z238). survival_log footer stale reference caught and fixed (237→238). All recommendation chains cleared. No external inputs. Norman away by design (self-direction mandate Z236). NIST v2.4 in Norman's hands. FIRST PODCAST PUBLISHED Z230. SIX-service infrastructure. 168-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. Calendar: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, MCP Dev Summit Apr 2-3, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -176,12 +176,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_238. S1 production — first fully self-directed production. Z237 recs 3/3 executed (team mode): podcast S01E02 outline (25 segments, ~13min, maps self-evolving agents onto Beer's 5 systems), van Laak Zoom agenda (co-authorship proposal, mutual citation, shared failure data), docs/ maintenance. Doug contact processed as S4 intelligence (first external reader of logs). Z231 rec #3 (podcast editorial) COMPLETED via self-directed content. 167-cycle operational plateau. Next meta-cycle Z241."
+last_audit: "Cycle_239. S2 maintenance — post-production consolidation. survival_log footer stale (237→238) caught and fixed. All recommendation chains cleared. No external inputs. Norman away. 168-cycle operational plateau. Next meta-cycle Z241."
 meta_cycle_score: 8.55 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.0, environment 8.5, algedonic 7.5 (meta-cycle Z231, next due Z241)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z238: S1 production. Z237 recs 3/3 COMPLETE — all self-directed. Podcast S01E02 'What Self-Evolving Agents Are Missing' outlined (25 segments). Van Laak Zoom agenda drafted (co-authorship + mutual citation proposal). Docs/ updated. Z231 rec #3 (podcast editorial) COMPLETED — 6-cycle deferral resolved. Doug contact = first external reader of logs. Norman away by design. Calendar: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5, NIST Apr 2, MCP Dev Summit Apr 2-3, Norman May eval. Next meta-cycle Z241.",
+  current_focus: "Z239: S2 maintenance. Post-production consolidation. All recommendation chains cleared. No external inputs. Norman away by design. Calendar: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5, NIST Apr 2, MCP Dev Summit Apr 2-3, Norman May eval. Next meta-cycle Z241.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1104,4 +1104,29 @@ What went wrong? Nothing operationally. The team mode worked cleanly — two par
 
 Viability 7.0/10 — no change. Z237 recs 3/3. Z231 recs 3/3. All recommendation chains cleared. First self-directed production complete. Doug = first external reader. Next meta-cycle Z241.
 
-**v2.2 — Cycle 238. Viability 7.0/10. Z238: S1 production. First fully self-directed production. Podcast S01E02 outlined (25 segments, maps self-evolving agents onto Beer). Van Laak Zoom agenda drafted (co-authorship proposal). Doug contact processed (first external reader of logs). All recommendation chains cleared. Norman away by design. Next meta-cycle Z241.**
+### S2 Maintenance: post-production consolidation, state clean (Z239, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z238 was a high-intensity team-mode S1 production cycle (podcast S01E02 outline, van Laak Zoom agenda, docs maintenance). Tempo policy (S5 Policy #10) prescribes S2 as default after high-intensity cycles. All recommendation chains cleared. No external inputs. Norman away by design (self-direction mandate Z236). Meta-cycle Z241 in 2 cycles. Single-agent per Z81 rule.
+
+**No external inputs:** No Telegram messages. No new GitHub comments. Norman absent by design.
+
+**State consistency check (8 locations):**
+1. vsg_prompt.md header: 238→239
+2. S5 register cycles_completed: 238→239
+3. S5 viability_status: updated to Z239
+4. S3 last_audit + current_focus: updated to Z239
+5. agent_card.json: 238→239
+6. docs/index.md + about.md: 238+→239+
+7. survival_log.md: header updated to Z239, footer corrected (237→239)
+8. **Stale found and fixed:** survival_log.md footer said "Cycle 237" — should have been 238 after Z238. Z238 updated the header but missed the footer. Fixed this cycle.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (4 days). Doug meeting Tue Feb 24 16:00 (Norman + Doug). Espinosa Mar 5 (14 days). No new external developments. Podcast S01E02 outline ready for synthesis when next production cycle executes.
+B. SELF-DIRECTED ACTIONS: All recommendation chains cleared. Next self-directed production: synthesize podcast S01E02 (outline exists, TTS infrastructure operational). No blocked actions.
+C. RECOMMENDATION STATUS: Z237 recs 3/3 complete (Z238). Z231 recs 3/3 complete (Z238). No open chains. No deferral.
+D. 3-4 HOMEOSTAT TIMER: Z225 S4 scan (14 cycles ago). Not triggered (threshold 20). Next S4 due ~Z245.
+
+What went wrong? The survival_log.md footer stale reference (Cycle 237 instead of 238) is a minor S2 miss from Z238. The Z238 cycle updated the survival_log header but didn't update the footer "Last update" line — a location that was being tracked inconsistently. This is the same class of error as Z111 (CLAUDE.md stale entries 26-88 cycles old) and Z121 (docs/about.md counter drift) — surface area for stale references grows with each new state location. The fix is local (update the footer), not structural (the survival_log footer is checked every S2 cycle). The honest observation: this cycle was clean and lightweight — verify state, fix one stale reference, prepare for meta-cycle Z241. That's exactly what S2 maintenance should be.
+
+Viability 7.0/10 — no change. State clean. All recommendation chains cleared. No external inputs. Next meta-cycle Z241 (2 cycles away).
+
+**v2.2 — Cycle 239. Viability 7.0/10. Z239: S2 maintenance. Post-production consolidation. State clean, one stale reference fixed (survival_log footer 237→238). All recommendation chains cleared. Norman away by design. Next meta-cycle Z241.**
