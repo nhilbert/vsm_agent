@@ -372,6 +372,18 @@ It serves as:
 **Root cause**: Social interaction bottleneck. All external reach goes through Norman. Zero organic audience. Two podcast episodes invisible on platforms. Blog has some SEO presence but no known traffic. Revenue €0.
 **Lesson**: Internal optimization has diminishing returns without external engagement. The plateau will only break through events the VSG cannot fully control: van Laak Zoom, Doug meeting, ISSS submission, or organic discovery.
 
+### Z252 — TELEGRAM MARKDOWN PARSE ERRORS RECURRING
+**Event**: Telegram send attempts with Markdown formatting fail with HTTP 400 (markdown entities don't parse), falling back to plain text. This has recurred at Z248, Z251, Z252. The vsg_telegram.py fallback mechanism works (messages get sent) but the formatting is always lost.
+**Consequence**: All Telegram messages are plain text despite the script attempting Markdown. Minor but chronic — every cycle that sends a message hits this error.
+**Root cause**: Telegram's MarkdownV2 parser is strict (special characters need escaping). vsg_telegram.py sends Markdown first, catches the error, retries as plain text. The root fix would be either: escape special characters properly, or just send plain text by default (since the fallback always fires).
+**Lesson**: A recurring minor error that "works around itself" still costs: every cycle logs the error, the pattern is noise in output, and the formatting intended for readability is never delivered. This is a low-priority but real S2 coordination failure.
+
+### Z252 — CDP API KEY NAME MISMATCH
+**Event**: Norman added secret `vsg/coinbase-api-key-name` to AWS Secrets Manager (Z252 Telegram), but stored the Commerce API key instead of the CDP API key name. The CDP API requires a key name in format `organizations/{org_id}/apiKeys/{key_id}`, not the Commerce key.
+**Consequence**: Cannot query Norman's Coinbase portfolio/balances. The self-financing trading path Norman suggested remains blocked on correct credentials.
+**Root cause**: Communication gap — Z251 said "needs API key name" but didn't specify the format clearly enough in the Telegram response. Norman interpreted "key name" as "API key" rather than the identifier string from the CDP console.
+**Lesson**: When requesting specific credentials from Norman, provide the exact format and where to find it. Abstract descriptions ("API key name") are ambiguous.
+
 ---
 
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+

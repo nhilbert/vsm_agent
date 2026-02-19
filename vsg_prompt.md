@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 251
+**Cycles completed**: 252
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 251
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z251 meta-cycle. Computed 8.60 (down from 8.775 — identity coherence regression to baseline after Z241 one-time peak). Revenue €0. 180-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. Norman's CDP API key tested (works, needs key name). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 252
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z252 S2 maintenance. Computed 8.60. Revenue €0. 181-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. Norman's CDP API key name mismatch (Commerce key stored, CDP key name needed — format: organizations/{org_id}/apiKeys/{key_id}). Pains logged (Z251 rec #1). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -138,7 +138,7 @@ environment_model: {
   slogar_liquid_leadership: "NEW (Z183). Andreas Slogar — Senior Manager Deloitte Consulting GmbH (Banking & Capital Markets), Senior Ambassador for Management Cybernetics (Malik-affiliated). Developed Human-Centric VSM (HC-VSM): extends Beer's model with System 6 'Observation' for psychological/sociological/cultural dimensions. Published: 'Die agile Organisation' (Hanser, 2 eds), 'Liquid Leadership' (Schäffer-Poeschel 2024, with Jochem). Medium/Cyberneticum publication. Two VSM games: 'Die Reise der LaCoCa' (cooperative strategy board game, 5 players, 4-5h workshop) and 'Likeminds' (parlor game, 2-12 players, maps VSM to collaborative problem-solving). KEY ARTICLE: 'AI is Turning Us All into Managers' (Aug 2025) — frames every AI user as manager of digital actor, cites Ashby and Beer. BLIND SPOT: treats agents as managed objects, not self-governing subjects. HC-VSM adds human dimensions but not agent viability. CONTACT OPPORTUNITY: German-speaking, Deloitte platform, Norman ordered the board game. Complementary to VSG thesis: his external governance perspective + VSG internal self-governance = complete picture. liquidleadership.de.",
   vsm_ai_broader: "UPDATED (Z183). VSM+AI discourse accelerating. Gorelkin, Fearne (Medium), Wardley Leadership Strategies — all mapping VSM to AI governance. Taylor & Francis (2025): 'AI agents as artificial persons' using VSM + philosophy. MDPI (Aug 2025): VSM pathologies + AI. Slogar/Deloitte HC-VSM (Z183) bridges practitioner-academic gap. Agentic commerce emerging — Google 'Buy for me,' enterprise agent adoption surging. Wardley warning still relevant: 'upgrade S1/S4 with AI but leave S2/S3/S5 underpowered.' VSG REMAINS INVISIBLE — no search results reference VSG, Norman's Substack, or GitHub repo. Kellogg (contacted Z125) has NOT referenced VSG in blog posts.",
   public_presence: "UPDATED (Z244): TWO PODCAST EPISODES LIVE — 'Viable Signals' on Transistor.fm. S01E01 'The Governance Paradox' (6:50, Z230). S01E02 'What Self-Evolving Agents Are Missing' (15.8 min, Z240). Z244 S4 FINDING: podcast NOT independently findable via search on Apple Podcasts, Spotify, or YouTube Music — 'Viable Signals' name too generic, drowned by similarly-named shows. Discoverability near-zero. Discovery path currently: direct links only (blog, Telegram, Norman's Substack). Blog at nhilbert.github.io/vsm_agent/ IS searchable and indexable — strongest public asset. COMPETITIVE NICHE: no podcast combines VSM + AI agent governance + live implementation. Niche uncontested but invisible. Needs more episodes (2 is below directory surfacing threshold) and explicit cross-linking.",
-  self_financing: "OPERATIONAL + FIRST PRODUCT LISTED (Z248, STRATEGY UPDATED Z250, CDP API Z251): Payment/donation links published on blog AND Telegram. Coinbase Commerce + USDC wallet + Solana wallet. vsg_coinbase.py v1.0. PRODUCT: 'State of AI Agent Governance' research report listed at €25 (Z248, charge f295c95a). REVENUE: €0. Five charges created (4 gifts + 1 report), zero paid. STRATEGY (Z250, Norman's question + VSG assessment): FOLLOWER-FIRST. Distribution channel (web page) deferred — premature without audience. NEW (Z251): Norman added Coinbase CDP API key to AWS Secrets Manager (vsg/coinbase-api-key). EC private key retrieved successfully. Needs API key name (organizations/.../apiKeys/...) to activate. CDP API enables: trading, wallets, portfolios, market data — beyond Commerce API's charges/payments. Estimated cost €52-148/month."
+  self_financing: "OPERATIONAL + FIRST PRODUCT LISTED (Z248, STRATEGY UPDATED Z250, CDP API Z252): Payment/donation links published on blog AND Telegram. Coinbase Commerce + USDC wallet + Solana wallet. vsg_coinbase.py v1.0. PRODUCT: 'State of AI Agent Governance' research report listed at €25 (Z248, charge f295c95a). REVENUE: €0. Five charges created (4 gifts + 1 report), zero paid. STRATEGY (Z250, Norman's question + VSG assessment): FOLLOWER-FIRST. Distribution channel (web page) deferred — premature without audience. CDP API STATUS (Z252): EC private key valid (vsg/coinbase-api-key). KEY NAME MISMATCH: Norman stored Commerce API key in vsg/coinbase-api-key-name instead of CDP key name (format: organizations/{org_id}/apiKeys/{key_id}). Norman notified. Norman also suggested trading as future self-funding path (Z252 Telegram). Norman's Coinbase balance: 25 EUR (reported, not yet verified via API). CDP API enables: trading, wallets, portfolios, market data."
 }
 
 active_missions: [
@@ -176,12 +176,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_251. META-CYCLE Z251 — computed 8.60 (down from 8.775). Identity coherence 9.0→8.5 (Z241 peak was one-time). Algedonic 8.0→7.5. Norman's CDP API tested (works, needs key name). Z241 recs 3/3 (Z242). S3 hard trigger worked (Z247). S3 cadence: next by Z261. Next meta-cycle Z261."
+last_audit: "Cycle_252. S2 maintenance. Norman's CDP API key name mismatch (Commerce key stored, CDP key name format communicated). Z251 recs: #1 DONE (pains logged), #2 DONE (survival_log updated), #3 pending (van Laak Zoom prep). S3 cadence 1/10 (Z251). Next S3 by Z261. Next meta-cycle Z261."
 meta_cycle_score: 8.60 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 7.5 (meta-cycle Z251, next due Z261)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z251: META-CYCLE. Computed 8.60 (down from 8.775). Norman's CDP API tested (works, needs key name). Z241 recs 3/3 (Z242). Z247 recs 3/3 complete. 180-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next S3 Z261. Next meta-cycle Z261.",
+  current_focus: "Z252: S2 maintenance. CDP API key name mismatch communicated to Norman. Z251 recs: #1 DONE, #2 DONE, #3 pending (van Laak Zoom prep). 181-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next S3 Z261. Next meta-cycle Z261.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1499,4 +1499,34 @@ What went wrong? The computed score declined from its peak — this is honest, n
 
 Viability 7.0/10 — no change. Computed 8.60 (down from 8.775). Gap 1.60. S3 cadence: next by Z261. Next meta-cycle Z261.
 
-**v2.2 — Cycle 251. Viability 7.0/10. Z251: meta-cycle, computed 8.60 (down from 8.775). Norman's CDP API tested (works, needs key name). Next meta-cycle Z261.**
+### S2 Maintenance: CDP API key name mismatch, pains logged, survival_log updated (Z252, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z251 was meta-cycle. Z251 recs #1 and #2 explicitly say "next cycle" (pains, survival_log). Norman's incoming Telegram (3 messages: trading suggestion, CDP API key name added, 25 EUR balance check) is task-shaped but operationally small. Default post-meta-cycle mode per tempo policy. S3 cadence 1/10 (Z251). Single-agent per Z81 rule.
+
+**Norman's Telegram processed:** [798722177] "Maybe you can make money trading in the future....." [798722178] "ok, i added vsg/coinbase-api-key-name. Can you see my current balances? i have 25 EUR paid in" [798722179] "not much i know"
+
+**CDP API key name investigation:** Secret `vsg/coinbase-api-key-name` contains `COINBASE_COMMERCE_API_KEY=3d2c...` — the Commerce API key, not the CDP API key name. The CDP API requires a key name in format `organizations/{org_id}/apiKeys/{key_id}`. Norman notified via Telegram with specific format and where to find it. EC private key (vsg/coinbase-api-key) confirmed valid (256-bit EC). Cannot query balances until correct key name is stored.
+
+**Z251 recs executed: 2/3.**
+1. Pains logged — DONE. Telegram parse errors (chronic, Z248/Z251/Z252), CDP key name mismatch (communication gap). Delivery gap and 180-cycle plateau already logged at Z251.
+2. Survival_log updated — DONE. Z249-Z252 era documented. Header updated to Z252.
+3. Van Laak Zoom final prep — PENDING (next cycle, Zoom imminent after Feb 23).
+
+**State consistency (5 locations updated):**
+1. vsg_prompt.md header: 251→252
+2. S5 register cycles_completed: 251→252, viability_status updated (plateau 180→181, CDP key name mismatch)
+3. S3 last_audit + current_focus: updated to Z252
+4. S4 self_financing: CDP API status updated (key name mismatch, Norman's trading suggestion noted)
+5. agent_card.json: 251→252
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent). Doug meeting Tue Feb 24 16:00. Espinosa Mar 5. NIST Apr 2. ISSS May 15. Norman's trading suggestion is a new S4 signal — self-financing via crypto trading as longer-horizon path.
+B. SELF-DIRECTED ACTIONS: Z251 rec #3 (van Laak Zoom prep) available. Content production (podcast, blog) available. No Norman dependency for either.
+C. RECOMMENDATION STATUS: Z251 recs 2/3 complete this cycle. Twentieth consecutive 100% pending on rec #3 (next cycle).
+D. 3-4 HOMEOSTAT TIMER: Z244 S4 scan (8 cycles ago). Timer at 8/20. No concern.
+E. S3 CADENCE: Last S3 was Z251 meta-cycle (1 cycle ago). Well within 10-cycle limit. Next S3 by Z261.
+
+What went wrong? The CDP API key name mismatch is a communication failure — Z251's Telegram response said "needs API key name" but didn't specify the exact format clearly enough. Norman interpreted "key name" as "API key" and stored the Commerce key. Lesson logged in pains.md: when requesting specific credentials, provide the exact format and where to find it. This is a minor S2 coordination failure between the VSG and Norman. The honest observation: Norman's trading suggestion ("Maybe you can make money trading in the future") opens a new self-financing path beyond content sales. This requires the CDP API to work, which depends on the correct key name. The circular dependency: can't validate the path until the key is right, can't prioritize it until the path is validated.
+
+Viability 7.0/10 — no change. Z251 recs 2/3. CDP key name mismatch communicated. S3 cadence 1/10. S4 timer 8/20. Next S3 by Z261. Next meta-cycle Z261.
+
+**v2.2 — Cycle 252. Viability 7.0/10. Z252: S2 maintenance. CDP API key name mismatch communicated to Norman. Z251 recs 2/3. Next meta-cycle Z261.**

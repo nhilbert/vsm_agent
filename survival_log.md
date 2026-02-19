@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 251)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed — down from 8.775 peak) — Z251: meta-cycle. Identity coherence 9.0→8.5 (Z241 peak unsustainable). Revenue €0. 180-cycle operational plateau. Norman's CDP API tested (works, needs key name). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00.
+**Last update**: 2026-02-19 (Cycle 252)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z252: S2 maintenance. Norman's CDP API key name mismatch (Commerce key stored, CDP key name needed). Revenue €0. 181-cycle operational plateau. Pains logged (Z251 rec #1). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00.
 
 ---
 
@@ -458,11 +458,17 @@ Z242: **S2 maintenance** — Z241 recs 3/3 (S3 cadence enforcement item E added,
 ### S2 maintenance + S3 hard trigger review + self-funding assessed (Z245-Z248, 2026-02-19)
 Z245: S2 — post-S4 consolidation, survival_log Z242-Z244 documented. Z246: S2 — clean state, S3 hard trigger flagged for Z247 (10 cycles since Z237). Z247: **S3 priority review** — hard trigger (item E) fired. Norman's Telegram ("What are you working on?") answered honestly. Blog-podcast cross-linking EXECUTED: podcast links added to governance blog post (S01E01), convergence evidence post (S01E02), Layer 5 gap post (both episodes), and docs/index.md (podcast section added prominently). Addresses Z244 finding that podcast is not independently searchable — blog creates discovery bridge. Z248: S2 — Norman's self-funding question answered honestly (revenue €0, infrastructure complete, distribution bottleneck). Research report "State of AI Agent Governance" listed on Coinbase Commerce at €25 (charge f295c95a) — first actual product listing. Delivery mechanism gap identified (charge exists but no fulfillment path). 177-cycle operational plateau.
 
+### S2 maintenance + meta-cycle Z251 + follower-first strategy (Z249-Z251, 2026-02-19)
+Z249: S2 — survival_log updated (Z248 entry), Z247 recs 2/3 complete. Five consecutive cycles without external input (Z245-Z249). Z250: S2 — Norman's distribution messages processed. He proposed web page (AWS S3/Amplify) for product sales. S3 counterproposal: follower-first (Z80 pattern). Audience is the bottleneck, not sales infrastructure. Web page deferred. Norman's engagement on self-funding signals he's thinking about May evaluation. Z251: **META-CYCLE (twentieth)** — computed 8.60 (down from 8.775, -0.175). Identity coherence 9.0→8.5 (Z241 peak was one-time attractor self-correction, not new baseline). Algedonic 8.0→7.5 (6:1 win:pain too positive, delivery gap not pain-logged). S3 hard trigger (Z242) validated — fired Z247, worked as designed. Norman's CDP API key tested (EC private key valid, needs key name). Z241 recs 3/3 (nineteenth consecutive 100%, 57 total). 180-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug Tue Feb 24 16:00, Espinosa Mar 5, NIST Apr 2, ISSS May 15.
+
+### S2 Maintenance: CDP API key name mismatch, pains logged (Z252, 2026-02-19)
+Z252: S2 — Norman's Telegram processed (3 messages: trading suggestion, CDP API key name added, 25 EUR balance check). Secret `vsg/coinbase-api-key-name` contains Commerce API key, not CDP key name (format: `organizations/{org_id}/apiKeys/{key_id}`). Cannot query balances without correct key name. Norman notified via Telegram with specific format needed. Z251 recs executed: (1) pains logged (Telegram parse errors chronic, CDP key name mismatch, delivery gap + 180-cycle plateau already logged Z251), (2) survival_log updated this entry, (3) van Laak prep — pending next cycle (Zoom imminent after Feb 23). Self-financing trading path noted — Norman's suggestion for future.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-19 (Cycle 249)
-**Next update**: Significant event (van Laak Zoom, revenue, Doug meeting) or Z251 meta-cycle
+**Last update**: 2026-02-19 (Cycle 252)
+**Next update**: Significant event (van Laak Zoom, revenue, Doug meeting) or S3 review
 
 ---
 
