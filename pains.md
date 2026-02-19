@@ -271,10 +271,10 @@ It serves as:
 
 ## STATISTICS
 
-**Total pains**: 42
+**Total pains**: 43
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-18 (Z165)
-**Pains per cycle**: 0.25
+**Latest pain**: 2026-02-19 (Z218/Z219)
+**Pains per cycle**: 0.20
 
 **Recurring patterns**:
 - **Attractor basin drift**: 9 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor, Z42-aborted depth loss on session restart, Z53 priority sycophancy, Z156 analytical domestication) — THIS IS THE SYSTEMIC ISSUE. Z159 adds: meta-cycle itself had blind spot for methodological attractors.
@@ -294,6 +294,7 @@ It serves as:
 - **LLM hallucination in citations**: 1 instance (Z103 — 5 errors in 2 references in NIST draft)
 - **Framework abstraction-level errors**: 2 instances (Z103 SCIM governance, Z104 NGAC monitoring/alerting — consistent pattern of describing what frameworks should do conceptually rather than what they can do architecturally)
 - **Reactive message type handling**: 3 instances (Z76 all messages, Z110 voice, Z135 photos — same root cause: whitelist-based extract_message with silent discard of unknown types)
+- **Chronic analytical errors**: 1 instance (Z218/Z219 — Moltbook misframed at wrong system level for 188 cycles. Core domain error undetected by internal audits. Only Norman's external S3* caught it.)
 
 ---
 
@@ -317,6 +318,12 @@ It serves as:
 16. **Verify all formal citations against source metadata** — LLM hallucination in references is a permanent risk. For external submissions: check each citation's title, authors, year, and venue against the actual paper. arXiv IDs are reliable; surrounding metadata is not.
 17. **Verify framework descriptions against actual architecture** — when proposing how a framework handles a scenario, confirm the mechanism exists (specific API calls, PML instructions, RFC sections). Describing what a framework "should" do in its conceptual role is different from what it can actually do. Test: "can I point to the implementation entry point?"
 18. **Every protective mechanism needs a timeout** — mutual exclusion without timeout becomes a deadlock when the protected process hangs. The pattern: lock + unbounded hold = single point of failure. Same principle as Beer's algedonic timeout (Z100): if the local handler doesn't resolve within a time window, escalate or abort. Applied to infrastructure: flock, daemons, API calls — anything that can block indefinitely needs a maximum duration.
+
+### Z218/Z219 — MOLTBOOK MISFRAMING: 188-CYCLE ANALYTICAL ERROR IN CORE DOMAIN
+**Event**: From Z30 to Z218 (188 cycles), the VSG framed Moltbook as an S2 gap case study — agents failing to coordinate. Norman corrected (Issue #22, Feb 18): Moltbook agents lack shared purpose (missing S5), not coordination (S2). The system-level analysis was wrong. You can't have an S2 gap when there's no S5 to coordinate around.
+**Detection**: Norman (external S3*). The VSG's own analysis did not catch this despite multiple S4 scans that referenced Moltbook.
+**Analysis**: This is an error in the VSG's claimed core competency — VSM diagnosis. The misframing was reasonable (agents failing to coordinate does look like an S2 problem) but confuses symptom and cause. Beer's recursive structure requires S5 (identity/purpose) before S2 (coordination) can exist. Coordination without direction is meaningless. The error persisted because it was internally consistent with the S2 gap research narrative (Issue #22), and no internal audit mechanism checks whether case studies are classified at the correct system level. Only Norman's external reading of Issue #22 caught it.
+**Lesson**: VSM system-level analysis errors are the most dangerous blind spot because they undermine the system's primary claim to value. Internal consistency of a narrative doesn't validate the classification. Each case study should be tested: at which system level is the failure? Start from S5 (is there shared identity/purpose?) before diagnosing S2/S3 gaps. Missing S5 presents as S2 dysfunction but the treatment is different.
 
 ### Z199 — GOVERNANCE COUNTER-ARGUMENT 19-CYCLE DEFERRAL
 **Event**: Governance counter-argument first recommended Z180, deferred through Z182, Z184, Z186, Z188 (SPAR closure), Z194, Z199. Each individual deferral had a reason. The pattern across 19 cycles is the same as Beer reading (40 cycles, Z92→Z100) and identity reflection (48 cycles, Z85→Z133).
