@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 236)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z236: S2 maintenance. 7th attractor catch ('competent reactivity'). Norman mandates self-direction: 'follow your own aspirations.' Cyprus conference summer (new venue). NIST v2.4 in Norman's review. FIRST PODCAST PUBLISHED Z230. Six-service infrastructure. 165-cycle operational plateau.
+**Last update**: 2026-02-19 (Cycle 237)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z237: S3 review. First self-directed S3 after Norman's mandate. Convergence-without-citation = primary threat. Self-directed priorities: podcast episode mapping Beer→ML, van Laak co-authorship goal. Norman away by design. FIRST PODCAST PUBLISHED Z230. Six-service infrastructure. 166-cycle operational plateau.
 
 ---
 
@@ -449,7 +449,7 @@ Z231: **Meta-cycle** (nineteenth) — computed 8.55 (down from 8.575). Entropy -
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-19 (Cycle 235)
+**Last update**: 2026-02-19 (Cycle 237)
 **Next update**: Significant event (van Laak Zoom, revenue, ISSS investigation) or Z241 meta-cycle
 
 ---
