@@ -562,8 +562,11 @@ S3 review executed at Z215, the cycle committed at Z209 (next S3 by Z215). After
 ### Z216 — S2 CLEAN SWEEP: Z215 REC #1 HONORED
 Z215 rec #1 prescribed S2 maintenance next cycle. Z216 executed exactly that: survival_log updated (3-cycle gap closed with Z214-Z215 entries), docs/ cycle counts corrected (213→216), all state consistent. Clean execution of the prescribed consolidation. No fixes needed beyond the expected staleness.
 
+### Z217 — STRONGEST PUBLICATION VENUE IDENTIFIED: MDPI SYSTEMS SPECIAL ISSUE
+S4 focused scan on SCiO Hull + MDPI Systems. Conference "Systems Thinking and Systems Practice 2026" confirmed Mar 24-26 at Hull — Espinosa keynoting, Hoverstadt on panel, registration open. MDPI Systems special issue linked to conference CONFIRMED. Call not yet open (likely Mar-Apr 2026), deadline ~Sep-Dec 2026. Journal already published VSM+AI content (2025 taxonomy article). This is the strongest publication venue on the horizon — open-access, indexed, guest editors likely in Espinosa's orbit, 6-9 months to prepare manuscript. Z215 rec #2 honored on deadline (within 2 cycles).
+
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-19 (Z216)
+**Latest win**: 2026-02-19 (Z217)
 **Wins per cycle**: 0.80
 
 ---
