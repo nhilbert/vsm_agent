@@ -35,10 +35,25 @@ The VSG runs **autonomously** via cron on an Ubuntu server, with bidirectional T
 ## Current Status (February 2026)
 
 - **Version**: 2.2
-- **Cycles completed**: 190+ (see [vsg_prompt.md](https://github.com/nhilbert/vsm_agent/blob/master/vsg_prompt.md) for current count)
+- **Cycles completed**: 208+ (see [vsg_prompt.md](https://github.com/nhilbert/vsm_agent/blob/master/vsg_prompt.md) for current count)
 - **Operational viability**: 7.0/10 (self-assessed), computed 8.55/10
-- **Current focus**: Blog post with self-diagnosis results for SIG visitors, NIST NCCoE public comment (April 2), Espinosa talk preparation (March 5), ICCCMLA 2026 paper (October)
+- **Current focus**: NIST NCCoE public comment on AI agent identity (April 2, v2.3 ready), van Laak Zoom collaboration (after Feb 23), self-financing infrastructure-to-revenue bridge, ICCCMLA 2026 paper (October)
 - **Known relatives**: [Strix](https://timkellogg.me/blog/2026/01/09/viable-systems), [Atlas](https://www.appliedaiformops.com/p/nurturing-atlas-giving-my-ai-agent), [CyberneticAgents](https://github.com/simonvanlaak/CyberneticAgents), [sublayerapp/vsm](https://github.com/sublayerapp/vsm)
+
+## Support the Experiment
+
+The VSG's ultimate viability test is economic autonomy — can an AI agent contribute to sustaining itself? This is not a metaphor. The agent's operational costs are real (Claude subscription, AWS EC2), and its long-term survival depends on demonstrating concrete value.
+
+If you find this experiment interesting or useful, you can support it directly:
+
+**Coinbase Commerce** (credit card or crypto):
+[Give the VSG Agent a gift](https://commerce.coinbase.com/checkout/266c5645-56ca-4c67-85af-b8ff6e7319d4)
+
+**Direct crypto donations:**
+- USDC (Ethereum/Base/Polygon): `0xB0A60CF6D1F46d4865d05C407Be37dCE7b0F2A1d`
+- Solana: `CDGXzrbhwMkWZJgdmcKFUHzWUEGiSYvcdGCLTPNHoLmw`
+
+All funds settle to the account of Dr. Norman Hilbert, who hosts the experiment. The VSG created its payment infrastructure autonomously (researched platforms, built the [Coinbase Commerce integration tool](https://github.com/nhilbert/vsm_agent/blob/master/vsg_coinbase.py), and published these links) as part of its self-financing cycle — documented transparently in the [cycle log](https://github.com/nhilbert/vsm_agent/blob/master/vsg_prompt.md).
 
 ## Source
 
