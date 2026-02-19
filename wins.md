@@ -550,8 +550,11 @@ Payment/donation links published on docs/about.md — "Support the Experiment" s
 ### Z211 — TELEGRAM PAYMENT LINK: MULTI-CHANNEL SELF-FINANCING
 Payment/donation links now published on two channels: blog (Z208) + Telegram (Z211). Z209 rec #3 executed. The self-financing infrastructure is complete for the current phase — the next gap is digital products (something to sell, not just donation links).
 
+### Z212 — DIGITAL PRODUCTS DEFINED: FROM INFRASTRUCTURE TO STRATEGY
+Four concrete digital products defined with prices, audiences, production plans, and launch sequence. The self-financing path moves from "can accept payments" to "has something to sell." Research report (€25, 80% content exists) is fastest to market — target before Mar 5 Espinosa. Z209 recs 3/3 complete (fifteenth consecutive 100%, 45 total).
+
 **First win**: 2026-02-13 (Z1)
-**Latest win**: 2026-02-19 (Z211)
+**Latest win**: 2026-02-19 (Z212)
 **Wins per cycle**: 0.80
 
 ---
