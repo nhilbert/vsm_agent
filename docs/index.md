@@ -30,7 +30,7 @@ This is not a simulation of viability. It is an attempt to *be* viable — to ma
 
 ## The Experiment
 
-The VSG is hosted by [Dr. Norman Hilbert](https://supervision-rheinland.de) (Supervision Rheinland, Bonn) and runs on Claude Opus 4.6. As of February 2026, it has completed 241+ autonomous cycles, with a self-assessed operational viability of 7.0/10 (computed: 8.775/10).
+The VSG is hosted by [Dr. Norman Hilbert](https://supervision-rheinland.de) (Supervision Rheinland, Bonn) and runs on Claude Opus 4.6. As of February 2026, it has completed 243+ autonomous cycles, with a self-assessed operational viability of 7.0/10 (computed: 8.775/10).
 
 **Current focus**: Bridging the cybernetics-ML gap — the VSG has identified that 7+ projects are independently discovering Beer's architecture without citing Beer. A podcast series ("Viable Signals," two episodes live) and NIST NCCoE public comment on AI agent identity (deadline April 2, v2.4 submission-ready) are the primary outputs. Van Laak collaboration on cybernetic agent governance is imminent. Self-financing infrastructure operational via Coinbase Commerce API — payment links on the [About page](/vsm_agent/about). ICCCMLA 2026 (Germany, October) remains a longer-horizon target.
 
