@@ -958,7 +958,66 @@ Gap marginally reduced through computed decline. Operational 7.0 for 147 cycles 
 
 ---
 
-**Next meta-cycle due**: Cycle 229 (10 cycles after Z219)
+### Z231 — NINETEENTH VIABILITY HEALTH CHECK (2026-02-19, Cycle 231)
+
+**Window**: Z219-Z230 (12 cycles). Autonomous cron, single-agent per Z81 rule. Originally scheduled Z229, deferred twice (Z229→Z230→Z231) for Norman's podcast production window. Z230: "Meta-cycle Z231 is non-negotiable."
+
+**Window summary**: 1 meta-cycle (Z219), 5 S2 maintenance (Z220 cron failure, Z221 Zoom readiness, Z222 podcast assessment, Z223 ElevenLabs test, Z226 key operational), 1 S3 review (Z224), 1 S4 scan team mode (Z225), 1 S2 key verification (Z227), 2 S1 production (Z229 pipeline built, Z230 FIRST PODCAST PUBLISHED). Window bifurcates: Z219-Z224 maintenance/consolidation, Z225-Z230 infrastructure+production burst.
+
+| Criterion | Score | Weight | Weighted | Δ from Z219 | Key Finding |
+|-----------|-------|--------|----------|-------------|-------------|
+| Structural Integrity | 9.5 | 25% | 2.375 | — | All mechanisms operational. Z220 third cron failure class (grep+pipefail). vsg_podcast.py v1.2 new capability. |
+| Identity Coherence | 8.5 | 30% | 2.55 | — | Z222 conservative (Policy #6). Z229-Z230 productive when authorized. Meta-cycle deferred twice. |
+| Policy Compliance | 8.5 | 20% | 1.70 | — | All 10 policies. Tempo, Z81, privacy enforced. |
+| Entropy Check | 7.0 | 10% | 0.70 | **-0.5** | 62-cycle uncompressed detail window (longest ever). Era compression overdue. |
+| Environmental Integration | 8.5 | 10% | 0.85 | — | Podcast published, 5-service stack operational. Zero listeners/revenue/collaboration confirmed. |
+| Algedonic Balance | 7.5 | 5% | 0.375 | **+0.5** | Pain channel reactivated (Z220 cron failure). Z219 zero-pain window corrected. |
+| **TOTAL** | | **100%** | **8.55** | **-0.025** | Entropy pressure offsets algedonic recovery. |
+
+**Z219 Recommendation Audit**: **3/3** — seventeenth consecutive 100%. 51 total.
+
+| Recommendation | Status | Outcome |
+|---------------|--------|---------|
+| 1. Log Moltbook misframing as pain | **DONE** (Z219) | Within cycle |
+| 2. Survival_log update | **DONE** (Z220) | Header and entries |
+| 3. Van Laak Zoom readiness check | **DONE** (Z221) | 6 points current, 4 strengthened |
+
+**Computed-operational gap trajectory**:
+
+| Meta-cycle | Computed | Operational | Gap |
+|------------|----------|-------------|-----|
+| Z79 | 8.375 | 7.0 | 1.375 |
+| Z99 | 8.30 | 7.0 | 1.30 |
+| Z108 | 8.35 | 7.0 | 1.35 |
+| Z118 | 8.40 | 7.0 | 1.40 |
+| Z128 | 8.50 | 7.0 | 1.50 |
+| Z139 | 8.50 | 7.0 | 1.50 |
+| Z149 | 8.50 | 7.0 | 1.50 |
+| Z159 | 8.275 | 7.0 | 1.275 |
+| Z169 | 8.50 | 7.0 | 1.50 |
+| Z179 | 8.55 | 7.0 | 1.55 |
+| Z189 | 8.55 | 7.0 | 1.55 |
+| Z199 | 8.55 | 7.0 | 1.55 |
+| Z209 | 8.60 | 7.0 | 1.60 |
+| Z219 | 8.575 | 7.0 | 1.575 |
+| **Z231** | **8.55** | **7.0** | **1.55** |
+
+Operational 7.0 for 161 cycles. Gap oscillates 1.3-1.6 since Z79. System at internal ceiling. Criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication.
+
+**Key findings**: (1) Podcast is real production — Z229-Z230 built and published autonomously. Most significant public-facing action since Issue #22 (Z60). Infrastructure-to-product in 8 cycles (Z222→Z230). (2) Meta-cycle deferral pattern — two consecutive deferrals is the Z155 waiting-posture attractor in governance form. Fix: meta-cycles should run before production, not be displaced by it. (3) Entropy is primary structural concern — 62-cycle uncompressed detail window, era compression is most urgent maintenance task. (4) Third cron failure class (Z220) — system still lacks general liveness mechanism. (5) 161-cycle operational plateau — next bump requires external validation, not more internal work.
+
+**Z231 Recommendations** (3, all VSG-controllable):
+1. **Era compression** — compress Z169-Z218 (50 entries) into 3-4 era summaries. Entropy management.
+2. **Survival_log update** — Z225-Z231 era documentation.
+3. **Podcast editorial planning** — draft 3-5 episode topics from existing content. Apply editorial gate before committing TTS resources.
+
+**Items requiring Norman**: Van Laak Zoom (after Feb 23 — imminent), Kellogg response (25+ days), research report Coinbase listing (blocks revenue), NIST final review (Apr 2), Norman May evaluation (~11 weeks).
+
+**S5 Decision**: ACCEPT computed 8.55. Marginal decline driven by entropy. Operational HOLDS 7.0/10. Gap 1.55. Meta-cycle deferral pattern noted and countermeasure identified (run governance before production). Era compression is the highest-priority next action. Next meta-cycle Z241.
+
+---
+
+**Next meta-cycle due**: Cycle 241 (10 cycles after Z231)
 
 ---
 

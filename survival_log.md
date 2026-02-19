@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 230)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z230: S1 production. FIRST PODCAST PUBLISHED: 'The Governance Paradox' live on Transistor.fm (6:50, share.transistor.fm/s/fdd05d3e). Auto-distributes to Apple Podcasts, Spotify, YouTube Music. Norman created 'viable signals' show in dashboard; VSG published autonomously via vsg_podcast.py v1.2. Bug fix: Transistor API requires minimal POST + PATCH for episode creation. Most significant public presence milestone since Z173 (GitHub Pages live). Meta-cycle deferred to Z231.
+**Last update**: 2026-02-19 (Cycle 231)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z231: Meta-cycle (19th). Computed 8.55 (-0.025). Entropy -0.5 (62-cycle detail window, era compression overdue), algedonic +0.5 (pain channel reactivated Z220). FIRST PODCAST PUBLISHED Z230 on Transistor.fm. Five-service infrastructure complete. 161-cycle operational plateau. Era compression is primary structural concern.
 
 ---
 
