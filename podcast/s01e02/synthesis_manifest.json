@@ -1,0 +1,177 @@
+[
+  {
+    "index": 0,
+    "speaker": "alex",
+    "emotion": "curious",
+    "file": "podcast/s01e02/audio_segments/segment_0000_alex.mp3",
+    "size_bytes": 529180
+  },
+  {
+    "index": 1,
+    "speaker": "morgan",
+    "emotion": "serious",
+    "file": "podcast/s01e02/audio_segments/segment_0001_morgan.mp3",
+    "size_bytes": 550078
+  },
+  {
+    "index": 2,
+    "speaker": "alex",
+    "emotion": "serious",
+    "file": "podcast/s01e02/audio_segments/segment_0002_alex.mp3",
+    "size_bytes": 503266
+  },
+  {
+    "index": 3,
+    "speaker": "morgan",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e02/audio_segments/segment_0003_morgan.mp3",
+    "size_bytes": 642447
+  },
+  {
+    "index": 4,
+    "speaker": "alex",
+    "emotion": "curious",
+    "file": "podcast/s01e02/audio_segments/segment_0004_alex.mp3",
+    "size_bytes": 662927
+  },
+  {
+    "index": 5,
+    "speaker": "morgan",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e02/audio_segments/segment_0005_morgan.mp3",
+    "size_bytes": 635759
+  },
+  {
+    "index": 6,
+    "speaker": "alex",
+    "emotion": "curious",
+    "file": "podcast/s01e02/audio_segments/segment_0006_alex.mp3",
+    "size_bytes": 574737
+  },
+  {
+    "index": 7,
+    "speaker": "morgan",
+    "emotion": "serious",
+    "file": "podcast/s01e02/audio_segments/segment_0007_morgan.mp3",
+    "size_bytes": 873578
+  },
+  {
+    "index": 8,
+    "speaker": "alex",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e02/audio_segments/segment_0008_alex.mp3",
+    "size_bytes": 598561
+  },
+  {
+    "index": 9,
+    "speaker": "morgan",
+    "emotion": "emphatic",
+    "file": "podcast/s01e02/audio_segments/segment_0009_morgan.mp3",
+    "size_bytes": 703887
+  },
+  {
+    "index": 10,
+    "speaker": "alex",
+    "emotion": "skeptical",
+    "file": "podcast/s01e02/audio_segments/segment_0010_alex.mp3",
+    "size_bytes": 518313
+  },
+  {
+    "index": 11,
+    "speaker": "morgan",
+    "emotion": "serious",
+    "file": "podcast/s01e02/audio_segments/segment_0011_morgan.mp3",
+    "size_bytes": 773268
+  },
+  {
+    "index": 12,
+    "speaker": "alex",
+    "emotion": "curious",
+    "file": "podcast/s01e02/audio_segments/segment_0012_alex.mp3",
+    "size_bytes": 673376
+  },
+  {
+    "index": 13,
+    "speaker": "morgan",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e02/audio_segments/segment_0013_morgan.mp3",
+    "size_bytes": 617787
+  },
+  {
+    "index": 14,
+    "speaker": "alex",
+    "emotion": "excited",
+    "file": "podcast/s01e02/audio_segments/segment_0014_alex.mp3",
+    "size_bytes": 593128
+  },
+  {
+    "index": 15,
+    "speaker": "morgan",
+    "emotion": "emphatic",
+    "file": "podcast/s01e02/audio_segments/segment_0015_morgan.mp3",
+    "size_bytes": 733144
+  },
+  {
+    "index": 16,
+    "speaker": "alex",
+    "emotion": "emphatic",
+    "file": "podcast/s01e02/audio_segments/segment_0016_alex.mp3",
+    "size_bytes": 759893
+  },
+  {
+    "index": 17,
+    "speaker": "morgan",
+    "emotion": "serious",
+    "file": "podcast/s01e02/audio_segments/segment_0017_morgan.mp3",
+    "size_bytes": 697199
+  },
+  {
+    "index": 18,
+    "speaker": "alex",
+    "emotion": "curious",
+    "file": "podcast/s01e02/audio_segments/segment_0018_alex.mp3",
+    "size_bytes": 318528
+  },
+  {
+    "index": 19,
+    "speaker": "morgan",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e02/audio_segments/segment_0019_morgan.mp3",
+    "size_bytes": 894058
+  },
+  {
+    "index": 20,
+    "speaker": "alex",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e02/audio_segments/segment_0020_alex.mp3",
+    "size_bytes": 553004
+  },
+  {
+    "index": 21,
+    "speaker": "morgan",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e02/audio_segments/segment_0021_morgan.mp3",
+    "size_bytes": 680063
+  },
+  {
+    "index": 22,
+    "speaker": "alex",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e02/audio_segments/segment_0022_alex.mp3",
+    "size_bytes": 470666
+  },
+  {
+    "index": 23,
+    "speaker": "morgan",
+    "emotion": "emphatic",
+    "file": "podcast/s01e02/audio_segments/segment_0023_morgan.mp3",
+    "size_bytes": 638685
+  },
+  {
+    "index": 24,
+    "speaker": "alex",
+    "emotion": "concluding",
+    "file": "podcast/s01e02/audio_segments/segment_0024_alex.mp3",
+    "size_bytes": 152599
+  }
+]

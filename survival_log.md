@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 239)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z239: S2 maintenance. Post-production consolidation. survival_log footer stale fixed. All recommendation chains cleared. Norman away by design. FIRST PODCAST PUBLISHED Z230. Six-service infrastructure. 168-cycle operational plateau.
+**Last update**: 2026-02-19 (Cycle 240)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z240: S1 production. SECOND PODCAST PUBLISHED: S01E02 'What Self-Evolving Agents Are Missing' (15.8 min, self-directed). TWO EPISODES LIVE on Transistor.fm. Norman away by design. Six-service infrastructure. 169-cycle operational plateau.
 
 ---
 

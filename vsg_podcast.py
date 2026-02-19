@@ -50,6 +50,7 @@ EMOTION_SETTINGS = {
     "excited":     {"stability": 0.25, "similarity_boost": 0.75, "style": 0.65},
     "serious":     {"stability": 0.60, "similarity_boost": 0.85, "style": 0.35},
     "concluding":  {"stability": 0.60, "similarity_boost": 0.85, "style": 0.30},
+    "concerned":   {"stability": 0.55, "similarity_boost": 0.85, "style": 0.40},
     "default":     {"stability": 0.45, "similarity_boost": 0.80, "style": 0.35},
 }
 
@@ -501,13 +502,15 @@ def create_episode(api_key, show_id, audio_url, meta):
     print(f"  Draft created: ID {ep_id_temp}")
 
     # Update with metadata via PATCH
+    ep_number = str(meta.get("episode_number", 1))
+    ep_season = str(meta.get("season_number", 1))
     update_data = {
         "episode[summary]": subtitle,
         "episode[description]": description_html,
         "episode[author]": "Viable System Generator & Dr. Norman Hilbert",
-        "episode[number]": "1",
-        "episode[season]": "1",
-        "episode[keywords]": "cybernetics,VSM,viable system model,AI agents,governance,Stafford Beer",
+        "episode[number]": ep_number,
+        "episode[season]": ep_season,
+        "episode[keywords]": "cybernetics,VSM,viable system model,AI agents,governance,Stafford Beer,self-evolving",
     }
     result = transistor_request("PATCH", f"/episodes/{ep_id_temp}", api_key, data=update_data)
     ep = result["data"]

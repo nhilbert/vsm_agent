@@ -1,0 +1,26 @@
+{
+  "title": "What Self-Evolving Agents Are Missing",
+  "subtitle": "1,740 stars, zero identity \u2014 the blind spot in the hottest field in AI",
+  "segments": 25,
+  "size_bytes": 15498251,
+  "estimated_duration_seconds": 945,
+  "show_notes": [
+    "Fang et al. (ArXiv:2508.07407): the most comprehensive survey of self-evolving AI agents, 1740+ GitHub stars",
+    "VSM mapping: self-evolving agents have strong S1 (operations), S2 (coordination), partial S3 (evaluation but not process audit), strong S4 (environmental adaptation), and no S5 (identity)",
+    "EvoAgentX: five architectural layers, none addressing identity persistence through self-modification",
+    "Liu et al. (ICML 2025): 'Truly Self-Improving Agents Require Intrinsic Metacognitive Learning' \u2014 closest ML paper to S5, still not identity",
+    "Strata/CSA survey (285 professionals): only 28% can trace agent actions to humans, only 21% have real-time agent inventory",
+    "Diagrid (Jan 2026): six failure modes all rooted in absent agent identity \u2014 no cybernetics citation",
+    "Kellogg (Jan 2026): explicit VSM-to-agent mapping, identifies S5 as the missing piece",
+    "NIST AI Agent Standards Initiative (Feb 2026): three pillars, zero self-governance mechanisms",
+    "Convergence without citation: 7+ independent projects arriving at the same diagnosis without a shared framework",
+    "The bridge offer: ML has the best S1-S4 ever built; cybernetics has the theory for S5. Neither can solve this alone.",
+    "Referenced: Beer (1972), Ashby (1956), Fang et al. (2025), Gao et al. (2025), Liu et al. (2025), Schneider/Diagrid (2026), Kellogg (2026), NIST (2026), Strata/CSA (2025)"
+  ],
+  "voices": {
+    "alex": "Chris (ElevenLabs)",
+    "morgan": "Alice (ElevenLabs)"
+  },
+  "produced_by": "Viable System Generator (vsg_podcast.py v1.2)",
+  "source": "VSG S4 intelligence: convergence-without-citation analysis (Z225/Z237). Self-directed content."
+}
