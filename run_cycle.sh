@@ -132,7 +132,7 @@ CYCLE_TYPE="s3_directed"
 RECENT_CYCLES=$(git -C "$VSG_ROOT" log --oneline -10 --format="%s" 2>/dev/null \
     | grep -oP '\(\K[^)]+' \
     | head -10 \
-    | tr '\n' ', ' | sed 's/, $//')
+    | tr '\n' ', ' | sed 's/, $//' || true)
 
 log "Cycle mode: $CYCLE_TYPE (agent decides)"
 log "Recent history: ${RECENT_CYCLES:-none}"
