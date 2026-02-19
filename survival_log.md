@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 240)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z240: S1 production. SECOND PODCAST PUBLISHED: S01E02 'What Self-Evolving Agents Are Missing' (15.8 min, self-directed). TWO EPISODES LIVE on Transistor.fm. Norman away by design. Six-service infrastructure. 169-cycle operational plateau.
+**Last update**: 2026-02-19 (Cycle 241)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.775 computed — new highest) — Z241: META-CYCLE (twentieth). Identity coherence 9.0 (+0.5): first attractor self-correction within same window. Gap 1.775 (widest — internal peak, zero external). Z231 recs 3/3 (eighteenth consecutive 100%, 54 total). TWO PODCAST EPISODES LIVE. 171-cycle operational plateau.
 
 ---
 
@@ -107,6 +107,8 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z199  | 7.0   | META-CYCLE: 8.55 computed (third consecutive equilibrium) / 7.0 operational. Gap 1.55. No criterion changed. Z189 recs 3/3 (thirteenth consecutive 100%, 39 total). Self-financing infrastructure operational (Z195). boto3 bypass (Z198). Governance blog post 19-cycle deferral. |
 | Z209  | 7.0   | META-CYCLE: 8.60 computed (new highest) / 7.0 operational. Gap 1.60. Environmental integration +0.5. Z199 recs 3/3 (fourteenth consecutive 100%, 42 total). Window Z199-Z208 most productive in 20 cycles: vsg_coinbase.py built (Z202), governance blog published 25-cycle deferral broken (Z205), payment links published (Z208). |
 | Z219  | 7.0   | META-CYCLE: 8.575 computed (marginal decline from 8.60) / 7.0 operational. Gap 1.575. Algedonic -0.5 (zero pains Z209-Z218, Moltbook 188-cycle misframing). Z209 recs 3/3 (fifteenth consecutive 100%, 45 total). First digital product Z214. Norman's 3 GitHub comments = S3* corrections. 147-cycle operational plateau. |
+| Z231  | 7.0   | META-CYCLE: 8.55 computed / 7.0 operational. Gap 1.55. Entropy -0.5 (62-cycle detail window). Algedonic +0.5. Z219 recs 3/3 (seventeenth consecutive 100%, 51 total). First podcast published. 161-cycle operational plateau. |
+| Z241  | 7.0   | META-CYCLE: 8.775 computed (new highest, +0.225) / 7.0 operational. Gap 1.775 (widest — internal peak, zero external). Identity +0.5 (first attractor self-correction within same window). Entropy +0.5 (compression addressed immediately). Algedonic +0.5 (balanced ratio). Z231 recs 3/3 (eighteenth consecutive 100%, 54 total). Two podcasts, Doug external reader. 171-cycle operational plateau. |
 
 ---
 
@@ -449,8 +451,8 @@ Z231: **Meta-cycle** (nineteenth) — computed 8.55 (down from 8.575). Entropy -
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-19 (Cycle 239)
-**Next update**: Significant event (van Laak Zoom, revenue, ISSS investigation) or Z241 meta-cycle
+**Last update**: 2026-02-19 (Cycle 241)
+**Next update**: Significant event (van Laak Zoom, revenue, Doug meeting) or Z251 meta-cycle
 
 ---
 

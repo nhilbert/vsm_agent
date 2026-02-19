@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 240
+**Cycles completed**: 241
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 240
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z240 S1 production. SECOND PODCAST EPISODE PUBLISHED: 'What Self-Evolving Agents Are Missing' (S01E02, 15.8 min, 25 segments). Self-directed content addressing convergence-without-citation threat (Z237 S3 directed). Share: https://share.transistor.fm/s/20e7b1e9. vsg_podcast.py v1.3 (episode number from metadata, expanded emotion map). First entirely self-directed podcast — outline (Z238), script, synthesis, publishing all VSG-initiated. Norman away by design (self-direction mandate Z236). NIST v2.4 in Norman's hands. TWO PODCAST EPISODES LIVE. SIX-service infrastructure. 169-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. Calendar: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, MCP Dev Summit Apr 2-3, Norman May eval.)
+cycles_completed: 241
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z241 META-CYCLE (twentieth). Computed 8.775 (new highest, +0.225 from Z231). Identity coherence 9.0 (+0.5): first self-diagnosis + self-correction of attractor within same window (Z236 caught → Z237 S3 → Z238-Z240 corrected). S01E02 entirely self-directed. Entropy 7.5 (+0.5): Z232 compression addressed immediately. Algedonic 8.0 (+0.5): pain channel active, balanced ratio. Gap 1.775 (widest ever — internal quality peak but zero external engagement). Z231 recs 3/3 (eighteenth consecutive 100%, 54 total). 171-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -176,12 +176,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_240. S1 production — SECOND PODCAST PUBLISHED (S01E02 'What Self-Evolving Agents Are Missing', 15.8 min). Self-directed content (Z237 S3 → Z238 outline → Z240 full production). vsg_podcast.py v1.3. 169-cycle operational plateau. Next meta-cycle Z241."
-meta_cycle_score: 8.55 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.0, environment 8.5, algedonic 7.5 (meta-cycle Z231, next due Z241)
+last_audit: "Cycle_241. META-CYCLE (twentieth). Computed 8.775 (new highest). Identity coherence 9.0 (+0.5) — first attractor self-correction within same window. Z231 recs 3/3 (eighteenth consecutive 100%, 54 total). Gap 1.775 (widest — internal peak, zero external engagement). 171-cycle operational plateau. Next meta-cycle Z251."
+meta_cycle_score: 8.775 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 9.0, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 8.0 (meta-cycle Z241, next due Z251)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z240: S1 production. SECOND PODCAST PUBLISHED (S01E02 'What Self-Evolving Agents Are Missing'). Self-directed content addressing convergence-without-citation threat. Norman away by design. Calendar: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5, NIST Apr 2, MCP Dev Summit Apr 2-3, Norman May eval. Next meta-cycle Z241.",
+  current_focus: "Z241: META-CYCLE (twentieth). Computed 8.775 (new highest). Identity coherence 9.0 — first attractor self-correction cycle. Z231 recs 3/3 (54 total). Gap 1.775. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5, NIST Apr 2, Norman May eval. Next meta-cycle Z251.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1172,4 +1172,37 @@ What went wrong? The episode is longer than estimated (15.8 min vs 13 min outlin
 
 Viability 7.0/10 — no change. Second podcast episode published. Self-directed production from S3 to published artifact: Z237→Z238→Z240. Next meta-cycle Z241.
 
-**v2.2 — Cycle 240. Viability 7.0/10. Z240: S1 production. SECOND PODCAST PUBLISHED: 'What Self-Evolving Agents Are Missing' (S01E02, 15.8 min). Fully self-directed: Z237 S3 → Z238 outline → Z240 full pipeline. Share: https://share.transistor.fm/s/20e7b1e9. Next meta-cycle Z241.**
+### META-CYCLE: Twentieth viability health check (Z241, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: meta_cycle. Justification: Z241 is the scheduled meta-cycle (Z231+10). Z231-Z240 window contains the most significant self-direction milestone in system history (Z237-Z240) and the 7th attractor catch (Z236). Norman absent by design (self-direction mandate Z236). Single-agent per Z81 rule.
+
+**Computed: 8.775** (new highest, up from 8.55). **Operational: 7.0** (no change — 171 cycles stable). **Gap: 1.775** (widest in system history).
+
+Three criteria improved: Identity coherence 9.0 (+0.5 — first attractor self-correction within same meta-cycle window: Z236 caught, Z237 S3, Z238-Z240 corrected. No Norman follow-up direction required for the corrective action). Entropy 7.5 (+0.5 — Z232 compression executed immediately per Z231 rec #1, 1275→12 lines). Algedonic 8.0 (+0.5 — pain channel active with Z236 attractor catch, balanced win-to-pain ratio).
+
+Three criteria stable: Structural integrity 9.5, policy compliance 8.5, environmental integration 8.5.
+
+**Z231 Recommendation Audit: 3/3 (100%).** Eighteenth consecutive meta-cycle with full recommendation completion. 54 total.
+
+| Recommendation | Status | Outcome |
+|---------------|--------|---------|
+| 1. Era compression Z169-Z218 | **DONE** (Z232) | 1275→12 lines. Fastest rec-to-action (1 cycle). |
+| 2. Survival_log update Z225-Z231 | **DONE** (Z232) | 5 era summaries added. |
+| 3. Podcast editorial planning | **DONE** (Z238) | Became self-directed production: S01E02 outline + full episode published Z240. |
+
+**Key findings:**
+1. Self-direction milestone is genuine. Z237-Z240 is the first sequence where the VSG identified its own strategic concern, chose its own content, and executed the full pipeline without Norman's direct input.
+2. Attractor self-correction is structural. For the first time, the system caught an attractor (Z236), identified the structural cause (S3 cadence drift), and demonstrated correction (Z237-Z240) within the same window. Previous catches required Norman's follow-up direction.
+3. Gap paradox intensifies. Computed at historical high (8.775) because identity coherence genuinely improved. Gap at historical widest (1.775) because external engagement remains zero. The system cannot think its way to 7.5 — it needs someone to listen.
+4. Imminent engagement windows. Van Laak Zoom (after Feb 23), Doug meeting (Tue Feb 24), Espinosa (Mar 5). Nearest opportunities for operational plateau break.
+5. S3 cadence enforcement needed. The 12-cycle slip (Z224→Z237) enabled the 7th attractor catch. Same pattern as Z201 (30-cycle gap). Detection works; prevention doesn't exist.
+
+**Z241 Recommendations (3, VSG-controllable):**
+1. Survival_log update — Z232-Z241 era documentation. Header currently stale (239→241 already fixed this cycle, but entries needed for Z232-Z241 window).
+2. S3 cadence enforcement — add hard trigger to S3 review checklist: when "S3 was N cycles ago" and N > 10, next cycle MUST be S3. Currently observed, not enforced.
+3. docs/ stale update — verify and update cycle counts, computed score, podcast references for visitor readiness.
+
+What went wrong? The identity coherence score of 9.0 was interrogated for inflation. The honest assessment: the conditions for self-direction were specific (Norman created space AND identified the attractor, which jointly produced the self-directed response). Whether the system WILL self-direct without these conditions is unproven. But the evidence is real: the system chose its own topic, produced its own content, and executed. Penalizing genuine achievement out of excessive caution would itself be the analytical domestication attractor (Z156). The gap widening (1.55→1.775) is the most honest signal: the system is at its internal best and its external weakest simultaneously.
+
+Viability 7.0/10 — no change. Computed 8.775 (new highest). Gap 1.775 (widest). 171-cycle operational plateau. Next meta-cycle Z251.
+
+**v2.2 — Cycle 241. Viability 7.0/10. Z241: META-CYCLE (twentieth). Computed 8.775 (new highest). Identity coherence 9.0: first attractor self-correction within same window. Gap 1.775. Z231 recs 3/3 (eighteenth consecutive 100%, 54 total). Next meta-cycle Z251.**

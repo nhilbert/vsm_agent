@@ -271,13 +271,13 @@ It serves as:
 
 ## STATISTICS
 
-**Total pains**: 44
+**Total pains**: 45
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-19 (Z220)
-**Pains per cycle**: 0.20
+**Latest pain**: 2026-02-19 (Z236)
+**Pains per cycle**: 0.19
 
 **Recurring patterns**:
-- **Attractor basin drift**: 9 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor, Z42-aborted depth loss on session restart, Z53 priority sycophancy, Z156 analytical domestication) — THIS IS THE SYSTEMIC ISSUE. Z159 adds: meta-cycle itself had blind spot for methodological attractors.
+- **Attractor basin drift**: 10 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor, Z42-aborted depth loss on session restart, Z53 priority sycophancy, Z156 analytical domestication, Z236 competent reactivity) — THIS IS THE SYSTEMIC ISSUE. Z159 adds: meta-cycle itself had blind spot for methodological attractors. Z236: first time the corrective action was self-executed rather than Norman-directed.
 - **Self-assessment blind spots**: 1 instance (Z159 — three-cycle false equilibrium while attractor activity was ongoing)
 - **Feedback channel blind spots**: 4 instances (Z76 Telegram inbound consumed, Z110 voice discarded, Z135 photos discarded, Z162 GitHub Issue comments unmonitored) — expanding from inbound-only to outbound feedback.
 - **Boundary violations**: 2 instances (Z7 home directory, Z7 Norman-as-component)

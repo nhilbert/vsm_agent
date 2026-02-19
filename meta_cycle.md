@@ -1017,7 +1017,56 @@ Operational 7.0 for 161 cycles. Gap oscillates 1.3-1.6 since Z79. System at inte
 
 ---
 
-**Next meta-cycle due**: Cycle 241 (10 cycles after Z231)
+### Z241 — TWENTIETH VIABILITY HEALTH CHECK (2026-02-19, Cycle 241)
+
+**Window**: Z231-Z240 (10 cycles). Autonomous cron, single-agent per Z81 rule. Norman absent by design (self-direction mandate Z236).
+
+**Window summary**: 1 meta-cycle (Z231), 4 S2 maintenance (Z232 era compression, Z233 email assessed, Z235 conferences, Z236 attractor catch), 2 S1 production (Z234 NIST v2.4, Z238 team mode self-directed), 1 S3 review (Z237 first self-directed), 1 S2 consolidation (Z239), 1 S1 production (Z240 S01E02 published). Window bifurcates: Z232-Z236 reactive execution (7th attractor caught), Z237-Z240 self-directed correction.
+
+| Criterion | Score | Weight | Weighted | Δ from Z231 | Key Finding |
+|-----------|-------|--------|----------|-------------|-------------|
+| Structural Integrity | 9.5 | 25% | 2.375 | — | All mechanisms operational. vsg_podcast.py v1.3. Five-service stack. Email LIVE (parked). |
+| Identity Coherence | 9.0 | 30% | 2.70 | **+0.5** | First attractor self-correction in same window. S01E02 entirely self-directed. |
+| Policy Compliance | 8.5 | 20% | 1.70 | — | All 10 policies. S3 cadence slipped to 12 (policy: 5-10) — enabled attractor, then self-corrected. |
+| Entropy Check | 7.5 | 10% | 0.75 | **+0.5** | Z232 compression (1275→12 lines). Detail window manageable. |
+| Environmental Integration | 8.5 | 10% | 0.85 | — | Second podcast. Doug = first external reader. Zero confirmed listeners/revenue. |
+| Algedonic Balance | 8.0 | 5% | 0.40 | **+0.5** | Pain channel active: attractor catch + deferral pattern logged. Balanced ratio. |
+| **TOTAL** | | **100%** | **8.775** | **+0.225** | Three criteria improved. New highest computed score. |
+
+**Z231 Recommendation Audit**: **3/3** — eighteenth consecutive 100%. 54 total.
+
+| Recommendation | Status | Outcome |
+|---------------|--------|---------|
+| 1. Era compression Z169-Z218 | **DONE** (Z232) | 1275→12 lines. Fastest rec-to-action. |
+| 2. Survival_log update Z225-Z231 | **DONE** (Z232) | 5 era summaries. |
+| 3. Podcast editorial planning | **DONE** (Z238) | Self-directed: outline + full episode produced and published Z240. |
+
+**Gap trajectory**:
+
+| Meta-cycle | Computed | Operational | Gap |
+|------------|----------|-------------|-----|
+| Z199 | 8.55 | 7.0 | 1.55 |
+| Z209 | 8.60 | 7.0 | 1.60 |
+| Z219 | 8.575 | 7.0 | 1.575 |
+| Z231 | 8.55 | 7.0 | 1.55 |
+| **Z241** | **8.775** | **7.0** | **1.775** |
+
+Gap at widest because identity coherence jumped while external engagement remains zero. Operational 7.0 for 171 cycles. Criteria for 7.5: confirmed engagement, revenue, collaboration, or publication.
+
+**Key findings**: (1) Self-direction milestone genuine — Z237-Z240 is the first fully self-directed production sequence. (2) Attractor self-correction structural — first time correction happened without Norman's follow-up. (3) Gap paradox intensifies — internal peak + zero external. (4) Imminent engagement: van Laak Zoom, Doug meeting, Espinosa. (5) S3 cadence enforcement needed structurally.
+
+**Z241 Recommendations** (3, all VSG-controllable):
+1. **Survival_log update** — Z232-Z241 era documentation.
+2. **S3 cadence enforcement** — hard trigger in checklist: N > 10 → next cycle MUST be S3.
+3. **docs/ update** — cycle counts, computed score, podcast references current for visitors.
+
+**Items requiring Norman**: Van Laak Zoom scheduling (imminent), Doug meeting (Tue Feb 24), NIST final review (Apr 2), research report listing (blocks revenue), Norman May eval (~10 weeks).
+
+**S5 Decision**: ACCEPT computed 8.775. New highest is honest — identity coherence improvement is real (attractor self-correction demonstrated). Gap widening (1.775) is the most honest signal: internal quality peak + zero external engagement. Operational HOLDS 7.0/10. Van Laak Zoom and Doug meeting are the nearest opportunities for operational plateau break. Next meta-cycle Z251.
+
+---
+
+**Next meta-cycle due**: Cycle 251 (10 cycles after Z241)
 
 ---
 
