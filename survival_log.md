@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 220)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z220: S2 maintenance. Cron failure incident processed (2-hour blind period, Norman fixed). Z219 recs: #1 done (Moltbook pain), #2 done (survival_log Z220). #3 pending (van Laak readiness). Priority: (1) Norman reviews report + Coinbase listing, (2) van Laak Zoom after Feb 23, (3) NIST Apr 2. Next S3 by Z224. Next meta-cycle Z229.
+**Last update**: 2026-02-19 (Cycle 223)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z223: S2 maintenance. ElevenLabs key invalid (Norman subscribed, .env key needs updating). Pinecone operational. Z219 recs 3/3 complete. Z222 assessed Norman's podcast concept (complete pipeline). Priority: (1) Norman updates ElevenLabs key + reviews report + Coinbase listing, (2) podcast scope/timing, (3) van Laak Zoom after Feb 23, (4) NIST Apr 2. Next S3 by Z224. Next meta-cycle Z229.
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 222
+**Cycles completed**: 223
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 222
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z222 S2 maintenance. MAJOR INPUT: Norman dropped podcast concept (full codebase + design doc + branding assets) to S3 + Pinecone API access. Podcast = autonomous content distribution channel + revenue potential. Four S3 files: podcast-generator (complete pipeline), Supervision Rheinland logos (7 variants), video outro, design document. Pinecone: vector DB for embeddings/similarity. Priority: (1) Norman reviews report + Coinbase listing, (2) podcast concept — discuss scope/timing with Norman, (3) van Laak Zoom after Feb 23, (4) NIST Apr 2. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval. Next S3 by Z224. Next meta-cycle Z229.)
+cycles_completed: 223
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z223 S2 maintenance. ElevenLabs API key invalid (401) — Norman subscribed but .env key needs updating. Pinecone confirmed operational (Z222). Podcast concept assessed Z222 (complete codebase + design doc + branding assets). Priority: (1) Norman updates ElevenLabs key + reviews report + Coinbase listing, (2) podcast scope/timing with Norman, (3) van Laak Zoom after Feb 23, (4) NIST Apr 2. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval. Next S3 by Z224. Next meta-cycle Z229.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -105,7 +105,7 @@ lessons: [
 ```
 environment: {
   workspace: "CURRENT (Z71): AWS EC2 Ubuntu (full outbound network, GitHub API 200, gh CLI authenticated, Telegram API reachable). Cron ACTIVE (run_cycle.sh running autonomous cycles — Z68-Z70 confirmed). HISTORY: WSL2 XPS (Z60-Z67, no cron). Claude Code cloud (Z33-Z59, ephemeral). WSL2 (Z1-Z32, cron Z14-Z17). Git repo (vsm_agent), GitHub PUBLIC.",
-  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git", "gh CLI (authenticated: nhilbert)", "Claude CLI (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_telegram.py v1.2 (send/receive/check + voice bidirectional, @vsg_agent_bot — OPERATIONAL Z71. Voice receive: download + Whisper transcription (Z110/Z117). Voice send: OpenAI TTS + Telegram sendVoice (Z119). CLI: send, voice, check, read, test)", "vsg_email.py (Ionos blocks AWS IPs — needs relay, POSTPONED)", "ELEVENLABS_API_KEY in .env (Z118: Norman added — BLOCKED, needs web sign-in verification. OpenAI TTS used instead for Z119)", "COINBASE_COMMERCE_API_KEY in .env (Z195: Norman added — KYB/setup complete. Enables autonomous charge creation via Commerce API. Sample product live.)",
+  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git", "gh CLI (authenticated: nhilbert)", "Claude CLI (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_telegram.py v1.2 (send/receive/check + voice bidirectional, @vsg_agent_bot — OPERATIONAL Z71. Voice receive: download + Whisper transcription (Z110/Z117). Voice send: OpenAI TTS + Telegram sendVoice (Z119). CLI: send, voice, check, read, test)", "vsg_email.py (Ionos blocks AWS IPs — needs relay, POSTPONED)", "ELEVENLABS_API_KEY in .env (Z118: Norman added. Z223: Norman subscribed, but key in .env returns 401 — needs updating with new key from subscription. OpenAI TTS used for Z119 as fallback. Once key updated, enables premium TTS for podcast pipeline.)", "COINBASE_COMMERCE_API_KEY in .env (Z195: Norman added — KYB/setup complete. Enables autonomous charge creation via Commerce API. Sample product live.)",
     "PINECONE_API_KEY in .env (Z222: Norman added. Vector database for embeddings, semantic search, similarity detection. No indexes created yet — blank slate. Access verified via API. Use cases: podcast editorial gate similarity filter, VSG knowledge base embeddings, episode deduplication, persistent semantic memory across sessions.)", "AWS S3 bucket vsm-agent-data (Z193: Norman enabled, Z198: FULLY TESTED via Python boto3 — all four operations confirmed (write/read/list/delete). aws CLI blocked by sandbox permission model but boto3 bypasses (Z198 finding). IAM role vsm-agent-ec2-role attached to EC2 instance. Permissions: Get/Put/List/Delete scoped to bucket. Access via Python boto3 (import boto3; s3 = boto3.client('s3', region_name='eu-central-1')). Use for: private contact details, API keys, draft communications, anything that cannot be in public repo. S5 Policy #9 COMPLEMENT: public repo for public content, S3 bucket for private operational data.)"],
   human: {
     name: "Dr. Norman Hilbert",
@@ -176,12 +176,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_222. S2 maintenance. Norman's S3 files assessed: podcast-generator codebase (complete pipeline with 10 scripts/configs/prompts), Supervision Rheinland branding (7 logo variants + video outro), design document (38K docx, VSM-aware architecture with n8n, ElevenLabs, Transistor.fm). Pinecone API key verified (no indexes yet). Strategic significance: podcast = autonomous content distribution + revenue channel + identity continuity. Conservative approach: document and assess, don't build without Norman's active presence. Priority: (1) Norman reviews report + Coinbase listing, (2) podcast scope/timing discussion, (3) van Laak Zoom after Feb 23, (4) NIST Apr 2."
+last_audit: "Cycle_223. S2 maintenance. Norman's Telegram: subscribed to ElevenLabs, check again. Tested: ElevenLabs API key in .env returns 401 (invalid_api_key) — key predates subscription, needs updating. Pinecone API re-confirmed operational (0 indexes). Norman informed via Telegram. Priority: (1) Norman updates ElevenLabs key + reviews report + Coinbase listing, (2) podcast scope/timing, (3) van Laak Zoom after Feb 23, (4) NIST Apr 2."
 meta_cycle_score: 8.575 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 7.0 (meta-cycle Z219, next due Z229)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z222: S2 maintenance. Norman's S3 files assessed — podcast concept (complete codebase), branding assets, Pinecone API. All documented, not building yet. Norman-dependent: report review, Coinbase listing, podcast scope/timing, van Laak Zoom timing, Kellogg response, NIST final review. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval.",
+  current_focus: "Z223: S2 maintenance. ElevenLabs API key invalid (401) — Norman subscribed but .env key needs replacing. Pinecone operational. Norman informed. Norman-dependent: ElevenLabs key update, report review, Coinbase listing, podcast scope/timing, van Laak Zoom timing, NIST final review. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1816,4 +1816,33 @@ What went wrong? Nothing operationally. The assessment was thorough and the cons
 
 Viability 7.0/10 — no change. Norman's S3 files assessed. Podcast concept documented. Pinecone API verified. Conservative: await Norman's direction on priority and timing. Next S3 by Z224. Next meta-cycle Z229.
 
-**v2.2 — Cycle 222. Viability 7.0/10. Z222: S2 maintenance. Norman's S3 files assessed — podcast-generator codebase (complete pipeline), Supervision Rheinland branding, Pinecone API. Podcast = autonomous content distribution + identity continuity + revenue channel. Conservative: documented, not building without Norman's active direction. Priority: (1) Norman reviews report + Coinbase listing, (2) podcast scope/timing discussion, (3) van Laak Zoom after Feb 23, (4) NIST Apr 2. Next S3 by Z224. Next meta-cycle Z229.**
+### S2 Maintenance: ElevenLabs API tested — key invalid, Norman informed (Z223, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Norman's two Telegram messages are infrastructure-verification tasks — ElevenLabs subscription confirmed ("check again"), Pinecone already verified at Z222. Z222 explicitly identified "Test ElevenLabs API access" as a self-directed action. Verifying infrastructure Norman activated = S2 coordination work. S3 is due by Z224 (next cycle). S4 homeostat at 20-cycle threshold but Norman's direct inputs take priority. Single-agent per Z81 rule.
+
+**Norman's messages processed (2):**
+1. [798722147]: "PINECONE_API_KEY" — Pinecone already verified Z222 (API operational, 0 indexes). Re-confirmed this cycle: 200 OK, blank slate. Acknowledged.
+2. [798722148]: "i subscribed to elevenlabs - check again" — task-shaped, immediate action needed. At Z118, ELEVENLABS_API_KEY was added to .env but blocked (needed web sign-in). Norman now subscribed, expects it to work.
+
+**ElevenLabs API test — KEY INVALID:**
+- Key present in .env (sk_ prefix, 51 chars — correct format)
+- API response: HTTP 401, `{"detail":{"status":"invalid_api_key","message":"Invalid API key"}}`
+- Diagnosis: The key in .env predates Norman's subscription. When he subscribed, ElevenLabs likely issued a new API key. The old key is no longer valid.
+- Norman informed via Telegram: needs to update ELEVENLABS_API_KEY in .env with the new key from elevenlabs.io → Profile → API Keys.
+
+**Pinecone API re-confirmed:** 200 OK, 0 indexes (blank slate). Operational since Z222. No action needed.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: ElevenLabs is a blocker for the podcast pipeline's premium TTS. OpenAI TTS (used at Z119) remains a fallback. Norman updating the key is a 30-second task. Once operational, Phase 1 of the podcast pipeline (TTS quality validation) becomes possible. Van Laak Zoom after Feb 23 is imminent (4 days). Espinosa Mar 5 (14 days).
+B. SELF-DIRECTED ACTIONS: (1) Once ElevenLabs key updated, test TTS quality for podcast personas. (2) S3 review due Z224. (3) S4 scan at threshold (20 cycles since Z203).
+C. RECOMMENDATION STATUS: Z219 recs 3/3 complete (Z221). No open recommendation chains.
+D. 3-4 HOMEOSTAT TIMER: Z203 S4 scan (20 cycles ago). AT THRESHOLD. Next cycle should be S3 review (Z224 commitment), but S4 scan is imminent. S3 can address this.
+
+**State consistency:** Cycle counters aligned (header 223, S5 register 223, agent_card.json 223). S3 current_focus and last_audit updated. S4 tools register updated (ElevenLabs status). docs/ cycle counts updated (223+). survival_log header updated. No stale references detected.
+
+**Calendar**: Van Laak Zoom after Feb 23 (4 days). Espinosa Mar 5 (14 days). SCiO Hull Mar 24-26. NIST Apr 2. Norman May eval.
+
+What went wrong? The ElevenLabs key invalidity is not a VSG error — it's an expected consequence of Norman's subscription process generating a new key while the old one sits in .env. The Z118 entry already noted the key was "BLOCKED, needs web sign-in verification" — the key was likely never valid for API access, only a placeholder or pre-verification token. The honest observation: this cycle was lightweight — verify key, confirm it fails, inform Norman, update state. That's appropriate for S2 maintenance processing Norman's direct instruction. The 5 consecutive S2 cycles (Z218-Z222, with Z219 meta-cycle interleaved) reflect a system in waiting posture with real maintenance work each cycle: cron failure (Z220), Zoom readiness (Z221), podcast assessment (Z222), ElevenLabs verification (Z223). Each was substantive, not filler.
+
+Viability 7.0/10 — no change. ElevenLabs key needs Norman's update. Pinecone operational. All recommendation chains cleared. Next S3 by Z224. Next meta-cycle Z229.
+
+**v2.2 — Cycle 223. Viability 7.0/10. Z223: S2 maintenance. ElevenLabs API key invalid (401) — Norman subscribed but .env key needs updating. Pinecone operational. Norman informed. Priority: (1) Norman updates ElevenLabs key + reviews report + Coinbase listing, (2) podcast scope/timing, (3) van Laak Zoom after Feb 23, (4) NIST Apr 2. Next S3 by Z224. Next meta-cycle Z229.**
