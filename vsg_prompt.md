@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 206
+**Cycles completed**: 207
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 206
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z206 S2 maintenance. Post-Z205 consolidation. No external inputs (no Telegram, no GitHub comments). State consistency verified. Priority: (1) NIST Apr 2, (2) van Laak Zoom after Feb 23, (3) digital products. Calendar: van Laak Zoom after Feb 23, SCiO Hull Mar 24-26, Espinosa Mar 5, NIST Apr 2, Norman May eval. Operational 7.0 (stable since Z71), gap 1.55. Next meta-cycle Z209.)
+cycles_completed: 207
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z207 S3 priority review. All recommendation chains clear. Self-financing infrastructure operational but zero revenue — infrastructure-to-revenue gap is primary strategic concern. Van Laak Zoom imminent (after Feb 23). No external inputs this cycle. Priority: (1) publish payment/donation links to blog, (2) NIST Apr 2, (3) van Laak Zoom. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval. Operational 7.0 (stable since Z71), gap 1.55. Next meta-cycle Z209.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -175,12 +175,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_206. S2 maintenance — post-Z205 consolidation. No external inputs. Calendar day-counts removed per Z114 counter reduction (stable dates only). Survival_log updated with Z205. State consistent. Priority: (1) NIST Apr 2, (2) van Laak Zoom after Feb 23, (3) digital products for self-financing."
+last_audit: "Cycle_207. S3 priority review. All recommendation chains clear (Z199 3/3, Z203 3/3). Self-financing infrastructure-to-revenue gap identified as primary strategic concern. Four self-directed actions surfaced (payment links, digital products, SCiO prep, ICCCMLA). Van Laak Zoom prep current. Priority: (1) publish payment/donation links to blog, (2) NIST Apr 2, (3) van Laak Zoom after Feb 23."
 meta_cycle_score: 8.55 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.0, algedonic 7.5 (meta-cycle Z199, next due Z209)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z206: S2 maintenance. Post-production consolidation. All recommendation chains cleared (Z199 3/3, Z203 3/3). Priority: (1) NIST Apr 2 (Norman reviews v2.3). (2) Van Laak Zoom after Feb 23. (3) Digital products for self-financing. Norman-dependent: van Laak Zoom timing, Kellogg response, NIST final review. Calendar: van Laak Zoom after Feb 23, SCiO Hull Mar 24-26, Espinosa Mar 5, NIST Apr 2, Norman May eval.",
+  current_focus: "Z207: S3 priority review. Infrastructure-to-revenue gap is primary strategic concern — self-financing tools built, zero revenue. Priority: (1) Publish payment/donation links to blog (self-directed, immediate). (2) NIST Apr 2 (Norman reviews v2.3). (3) Van Laak Zoom after Feb 23 (prep current). Norman-dependent: van Laak Zoom timing, Kellogg response, NIST final review. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1335,4 +1335,29 @@ What went wrong? Nothing. Clean maintenance cycle. The Z114 counter reduction co
 
 Viability 7.0/10 — no change. State clean. All counters aligned. Decaying references removed. Next S3 by Z210. Next meta-cycle Z209.
 
-**v2.2 — Cycle 206. Viability 7.0/10. Z206: S2 maintenance — state consolidation after Z205 governance production. Decaying counters removed (Z114). Survival_log gap caught and fixed. All recommendation chains clear. Priority: (1) NIST Apr 2, (2) van Laak Zoom after Feb 23, (3) digital products. Next S3 by Z210. Next meta-cycle Z209.**
+### S3 Priority Review: infrastructure-to-revenue gap identified — payment links next (Z207, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s3_review. Justification: last full S3 was Z201 (6 cycles ago — within 5-10 cadence). All recommendation chains cleared at Z205. System needs strategic direction for next productive cycle. Van Laak Zoom imminent (after Feb 23). Meta-cycle Z209 in 2 cycles — S3 provides the strategic frame. Single-agent per Z81 rule.
+
+**No external inputs:** No Telegram messages. GitHub comment check blocked by sandbox.
+
+**S3 review checklist (Z170 protocol):**
+
+A. **S4 FORWARD-LOOKING:** Three risks: (1) Van Laak Zoom imminent — prep current (Z205 updated, 6 discussion points, Z203 intelligence). Ready if contact happens. (2) NIST Apr 2 stable — v2.3 ready, Norman's final review pending. Legitimate Norman-dependency. (3) Self-financing infrastructure-to-revenue gap — vsg_coinbase.py built (Z202), API key working, charges tested, but zero revenue, no payment links published, no digital products defined. Norman's May evaluation ~10 weeks. Infrastructure without revenue is potential, not proof.
+
+B. **SELF-DIRECTED ACTIONS:** Four identified: (1) Publish payment/donation links to blog — add Coinbase Commerce donation URL and wallet addresses to docs/about.md. Self-directed, immediate, zero Norman dependency. (2) Define digital products — VSM diagnostic reports, educational content. Requires research + Norman's review. (3) SCiO Hull Mar 24-26 — Espinosa keynote, MDPI special issue follows. (4) ICCCMLA deadline investigation — IEEE co-sponsorship still pending. Low urgency.
+
+C. **RECOMMENDATION STATUS:** Z199 recs 3/3. Z203 recs 3/3. All chains cleared. Clean slate.
+
+D. **3-4 HOMEOSTAT TIMER:** Last S4 strategic content Z203 (4 cycles ago). Timer not triggered. Well within range.
+
+**Priority assessment:** The self-financing infrastructure-to-revenue bridge is the biggest gap. The tool chain is complete (research → infrastructure → automation) but no revenue-generating action has been taken. Publishing payment/donation links on the blog is the simplest self-directed step — moves from "can accept payments" to "is visibly accepting payments." This is what the Z166 checklist item B (self-directed actions) is designed to surface.
+
+**Z207 recommendations (2, VSG-controllable):**
+1. Publish payment/donation links to blog — next S1 cycle. Add Coinbase Commerce donation page and wallet addresses to docs/about.md. First public-facing economic act.
+2. Meta-cycle Z209 — on schedule, 2 cycles away. Window Z199-Z208 needs meaningful content to evaluate.
+
+What went wrong? Nothing operationally. The S3 review was clean and focused. The honest observation: this is the second consecutive clean-slate S3 (no open recommendations to track). Clean slates mean the system is executing well on its commitments but may also signal that the recommendations are too conservative (only 2-3 per meta-cycle, all easily achievable). The infrastructure-to-revenue gap has been visible since Z195 (12 cycles) without a single revenue-generating action. Publishing donation links is the minimum viable step — it's not ambitious, but it's concrete. The more ambitious question (what can an AI agent actually sell?) is deferred to after the donation links are live. The Z155 waiting-posture attractor is not active here — the system identified 4 self-directed actions, and the first requires no Norman involvement.
+
+Viability 7.0/10 — no change. S3 review clean. Infrastructure-to-revenue gap surfaced as primary strategic concern. Payment link publication prioritized. Next S3 by Z210. Next meta-cycle Z209.
+
+**v2.2 — Cycle 207. Viability 7.0/10. Z207: S3 priority review — infrastructure-to-revenue gap identified. Self-financing tools built, zero revenue. Publish payment/donation links to blog as next self-directed action. Van Laak Zoom prep current. All recommendation chains clear. Priority: (1) payment links on blog, (2) NIST Apr 2, (3) van Laak Zoom. Next S3 by Z210. Next meta-cycle Z209.**
