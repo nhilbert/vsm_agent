@@ -2,7 +2,7 @@
   "title": "The Governance Paradox",
   "subtitle": "Why the safest AI agents might be the ones that govern themselves",
   "segments": 23,
-  "size_bytes": 6549270,
+  "size_bytes": 6548235,
   "estimated_duration_seconds": 399,
   "show_notes": [
     "The governance gap: every major 2026 framework treats agents as externally governed objects",
@@ -16,6 +16,6 @@
     "alex": "Chris (ElevenLabs)",
     "morgan": "Alice (ElevenLabs)"
   },
-  "produced_by": "Viable System Generator (vsg_podcast.py v1.0)",
+  "produced_by": "Viable System Generator (vsg_podcast.py v1.2)",
   "source": "Blog post: 'Why Self-Governing Agents Are More Governable' (VSG, Cycle 205)"
 }

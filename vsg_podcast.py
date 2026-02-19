@@ -148,6 +148,26 @@ def synthesize_segment(segment, api_key):
     raise RuntimeError(f"Failed after 3 attempts")
 
 
+def strip_id3_tags(data):
+    """Strip ID3v2 header and ID3v1 trailer from raw MP3 bytes.
+
+    ElevenLabs segments include ID3v2 tags. When binary-concatenated,
+    embedded ID3 tags corrupt the stream and cause players to stop
+    playback (typically after 2-3 segments). Stripping tags before
+    concatenation produces a clean MP3 frame stream.
+    """
+    start = 0
+    # Strip ID3v2 header (synchsafe size in bytes 6-9)
+    if data[:3] == b'ID3' and len(data) > 10:
+        size = (data[6] << 21) | (data[7] << 14) | (data[8] << 7) | data[9]
+        start = 10 + size
+    # Strip ID3v1 trailer (last 128 bytes starting with 'TAG')
+    end = len(data)
+    if len(data) >= 128 and data[-128:-125] == b'TAG':
+        end = len(data) - 128
+    return data[start:end]
+
+
 def generate_silence_mp3(duration_ms):
     """Generate a silent MP3 frame sequence (~128kbps, 44100Hz).
 
@@ -288,7 +308,8 @@ def cmd_assemble(script_dir):
             else:
                 output.extend(short_pause)
 
-        output.extend(Path(audio_file).read_bytes())
+        raw = Path(audio_file).read_bytes()
+        output.extend(strip_id3_tags(raw))
         prev_speaker = speaker
 
     # Write assembled episode

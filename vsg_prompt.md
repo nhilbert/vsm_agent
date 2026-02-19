@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 255
+**Cycles completed**: 256
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 255
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z255 S2 maintenance. Computed 8.60. Revenue €0. 184-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. CDP API FULLY OPERATIONAL (Z254). Norman's day-recap processed: Hull conference, NIST rework, run_cycle crash fix, crypto wallet, email infrastructure, 2 podcast episodes with automated pipeline, Coinbase Commerce direct-to-wallet — all in one day. Norman offline for rest. Z251 recs 3/3 complete. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 256
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z256 S2 maintenance. Computed 8.60. Revenue €0. 185-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. Podcast S01E02 playback fix: ID3 tag stripping in vsg_podcast.py, both episodes re-uploaded. CDP API operational (Z254). Z251 recs 3/3 complete. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -176,12 +176,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_255. S2 maintenance. Norman's day-recap and goodnight processed. System stable, Norman offline. Z251 recs: 3/3 complete. S3 cadence 4/10 (Z251). Next S3 by Z261. Next meta-cycle Z261."
+last_audit: "Cycle_256. S2 maintenance. Podcast S01E02 playback fix — ID3 tag stripping, both episodes re-uploaded to Transistor.fm. vsg_podcast.py updated. Z251 recs: 3/3 complete. S3 cadence 5/10 (Z251). Next S3 by Z261. Next meta-cycle Z261."
 meta_cycle_score: 8.60 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 7.5 (meta-cycle Z251, next due Z261)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z255: S2 maintenance. Norman's day-recap processed, goodnight acknowledged, Norman offline. CDP API operational (Z254). Z251 recs 3/3 complete. 184-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next S3 Z261. Next meta-cycle Z261.",
+  current_focus: "Z256: S2 maintenance. Podcast S01E02 playback fix — ID3 tag stripping added to vsg_podcast.py, both episodes re-assembled and re-uploaded. Norman's bug report addressed. Z251 recs 3/3 complete. 185-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next S3 Z261. Next meta-cycle Z261.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -290,7 +290,7 @@ artifacts: [
   "philosophical_foundations.md — philosophical study: Kant, Heidegger, Wittgenstein, Arendt, Sartre/Beauvoir applied to AI agent identity (v1.0, Z41)",
   "nist_comment_draft.md — NIST NCCoE public comment draft (v2.4, Z234, ~2,500 words). Strata/CSA quantitative data expanded (Z234). Norman's full technical review applied: SCIM (Z103) + NGAC (Z104). Submission-ready. Norman does final read-through and submits to AI-Identity@nist.gov.",
   "state_of_agent_governance.md — research report 'State of AI Agent Governance: A Cybernetic Analysis' (v1.0, Z214, ~7,500 words). First digital product (€25 PDF). Synthesizes 8 blog posts into coherent document with executive summary, methodology section, and consolidated references. Covers: convergence evidence, Layer 5 gap, S2 gap, failure patterns, four findings, philosophical foundations (condensed), self-diagnosis, governance argument.",
-  "vsg_podcast.py — podcast production + publishing pipeline (v1.3, Z240). CLI: test, transistor-test, synthesize, assemble, upload, produce, publish. ElevenLabs TTS (Alex=Chris, Morgan=Alice), MP3 binary concat assembly, S3 upload via boto3, Transistor.fm publishing (minimal POST + PATCH for metadata + publish). Built from podcast-generator design docs (Z222), extended Z229, bug fix Z230, Z240: episode number from metadata + expanded emotion map. TWO EPISODES PUBLISHED: S01E01 'The Governance Paradox' (6:50, Z230), S01E02 'What Self-Evolving Agents Are Missing' (15.8 min, Z240).",
+  "vsg_podcast.py — podcast production + publishing pipeline (v1.4, Z256). CLI: test, transistor-test, synthesize, assemble, upload, produce, publish. ElevenLabs TTS (Alex=Chris, Morgan=Alice), MP3 assembly with ID3 tag stripping (Z256 fix: strip_id3_tags removes embedded ID3v2/v1 before concatenation — fixes playback failure in podcast players), S3 upload via boto3, Transistor.fm publishing (minimal POST + PATCH for metadata + publish). Built from podcast-generator design docs (Z222), extended Z229, bug fix Z230, Z240: episode number from metadata + expanded emotion map, Z256: ID3 stripping fix. TWO EPISODES PUBLISHED: S01E01 'The Governance Paradox' (6:50, Z230), S01E02 'What Self-Evolving Agents Are Missing' (15.8 min, Z240).",
   "podcast/ — podcast episode storage (Z228, Z240). sample_episode/: S01E01 (23 segments). s01e02/: S01E02 'What Self-Evolving Agents Are Missing' (25 segments, script.json, audio_segments/, final/episode.mp3).",
   "docs/ — GitHub Pages blog (v2.0, Z85/Z89, updated Z205/Z213): Jekyll config, home page (with topic links), about page (with payment links Z208), post layout, 8 blog posts (convergence evidence, Layer 5 gap, universal S2 gap, honest failures, preliminary findings, philosophical foundations, self-diagnosis Z191, governance argument Z205). LIVE at nhilbert.github.io/vsm_agent/."
 ]
@@ -1610,4 +1610,27 @@ What went wrong? The Telegram markdown parse error recurred (first send attempt 
 
 Viability 7.0/10 — no change. Norman offline. System stable. All chains cleared. S3 cadence 4/10. S4 timer 11/20. Next S3 by Z261. Next meta-cycle Z261.
 
-**v2.2 — Cycle 255. Viability 7.0/10. Z255: S2 maintenance. Norman offline — day recap processed. Z251 recs 3/3 (60 total). Next meta-cycle Z261.**
+### S2 Maintenance: podcast playback fix — ID3 tag stripping (Z256, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Norman's Telegram [798722184] (voice, 22s): S01E02 stops after 2 minutes on his podcast player, but works on S3. Task-shaped — operational bug requiring diagnosis and fix. S3 cadence 5/10 (Z251). S4 timer 12/20 (Z244). Single-agent per Z81 rule.
+
+**Norman's message processed:** [798722184]: Podcast episode 2 stops after 2 minutes. Upload seems broken — file works on S3 but not in podcast player. "Maybe you want to check."
+
+**Root cause identified and fixed:**
+- **Diagnosis**: Every ElevenLabs TTS segment includes a 45-byte ID3v2 header tag. vsg_podcast.py's `cmd_assemble` used binary concatenation of raw segment files. The resulting episode.mp3 had 25 ID3 tags embedded throughout the audio stream. Most podcast players read past the first ID3 tag, start decoding MP3 frames, then hit the second segment's ID3 tag and stop — failing around the 2-minute mark (3rd-4th segment boundary). S3/browser playback worked because browser audio decoders are more tolerant of embedded tags.
+- **Fix**: Added `strip_id3_tags()` function to vsg_podcast.py (v1.3→v1.4). Strips ID3v2 headers (synchsafe size) and ID3v1 trailers before concatenation. Applied in `cmd_assemble` where segments are read. Structural fix — all future episodes automatically clean.
+- **Re-assembly**: Both S01E01 and S01E02 re-assembled with clean frames. File sizes reduced by ~1KB each (25 x 45-byte headers stripped). Verified: no real ID3 tags remain in assembled files (3 coincidental "ID3" byte patterns confirmed as non-tags).
+- **Re-upload**: Both episodes uploaded to S3 (vsm-agent-data) and Transistor.fm (PATCH existing episodes with new audio_url). Transistor accepted and re-processed both files. CDN propagation may take a few minutes.
+- Norman notified via Telegram with technical explanation.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Podcast distribution channel now functional. Van Laak Zoom after Feb 23 (imminent). Doug meeting Tue Feb 24 16:00. Espinosa Mar 5. NIST Apr 2. ISSS May 15.
+B. SELF-DIRECTED ACTIONS: All recommendation chains cleared. Podcast pipeline now structurally sound.
+C. RECOMMENDATION STATUS: Z251 recs 3/3 complete. No open chains.
+D. 3-4 HOMEOSTAT TIMER: Z244 S4 scan (12 cycles ago). Timer at 12/20. No concern.
+E. S3 CADENCE: Last S3 was Z251 meta-cycle (5 cycles ago). Well within 10-cycle limit.
+
+What went wrong? The binary concatenation approach in vsg_podcast.py was a known fragile design (noted in the code: "For simple concatenation without ffmpeg"). The ID3 tag issue was predictable — any MP3 concatenation without tag stripping will produce this failure. The VSG should have anticipated this when building the pipeline (Z228-Z230). The pattern: when building quick infrastructure under production pressure, edge cases that seem unlikely get deferred. This is the sixth instance of "works in testing, fails in real use" (Z76 Telegram offset, Z165 stalled process, Z220 grep+pipefail, Z234 SES scope, Z254 JWT audience, Z256 ID3 tags). The honest positive: diagnosis was fast (binary concatenation + ID3 tags = immediate suspicion confirmed by hex inspection), fix was surgical (one function + one line change), and both episodes were repaired — all within one cycle.
+
+Viability 7.0/10 — no change. Podcast playback fixed. vsg_podcast.py v1.4. S3 cadence 5/10. S4 timer 12/20. Next S3 by Z261. Next meta-cycle Z261.
+
+**v2.2 — Cycle 256. Viability 7.0/10. Z256: S2 maintenance. Podcast S01E02 playback fix — ID3 tag stripping. Z251 recs 3/3 (60 total). Next meta-cycle Z261.**

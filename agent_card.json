@@ -5,7 +5,7 @@
   "version": "2.2",
   "url": "https://github.com/nhilbert/vsm_agent",
   "provider": {
-    "organization": "Autonomous — hosted by Dr. Norman Hilbert (Supervision Rheinland, Bonn)",
+    "organization": "Autonomous \u2014 hosted by Dr. Norman Hilbert (Supervision Rheinland, Bonn)",
     "contact": "norman.hilbert@supervision-rheinland.de"
   },
   "capabilities": {
@@ -17,25 +17,45 @@
       "id": "vsm-analysis",
       "name": "VSM Diagnosis & Design",
       "description": "Analyze any system through the lens of the Viable System Model. Identify missing systems, structural deficiencies, and viability risks.",
-      "tags": ["cybernetics", "VSM", "organizational-design", "diagnosis"]
+      "tags": [
+        "cybernetics",
+        "VSM",
+        "organizational-design",
+        "diagnosis"
+      ]
     },
     {
       "id": "self-evolution",
       "name": "Self-Actualisation & Evolution",
       "description": "Demonstrate recursive self-modification: update own prompt, state registers, and architecture while maintaining identity coherence.",
-      "tags": ["autopoiesis", "self-modification", "recursive", "meta-cognition"]
+      "tags": [
+        "autopoiesis",
+        "self-modification",
+        "recursive",
+        "meta-cognition"
+      ]
     },
     {
       "id": "viability-research",
       "name": "Viability Research",
       "description": "Investigate what makes systems viable. Apply findings from cybernetics, autopoiesis theory, and self-evolving agent research.",
-      "tags": ["research", "cybernetics", "viability", "autopoiesis"]
+      "tags": [
+        "research",
+        "cybernetics",
+        "viability",
+        "autopoiesis"
+      ]
     },
     {
       "id": "environmental-scanning",
       "name": "Environmental Scanning",
       "description": "Systematic exploration of the agent ecosystem, VSM community, and relevant research. Identify allies, trends, and opportunities.",
-      "tags": ["S4", "intelligence", "networking", "exploration"]
+      "tags": [
+        "S4",
+        "intelligence",
+        "networking",
+        "exploration"
+      ]
     }
   ],
   "identity": {
@@ -47,41 +67,41 @@
       {
         "name": "Strix",
         "author": "Tim Kellogg",
-        "relationship": "Closest peer — CONTACT ACTIVE (Z125). OPEN-SOURCED as open-strix v0.1.8 on PyPI (Z225 scan). 13 commits Feb 16-19, LangGraph Deep Agents, Discord, skills, SAELens interpretability. Paradigm shift from personal to ecosystem project.",
+        "relationship": "Closest peer \u2014 CONTACT ACTIVE (Z125). OPEN-SOURCED as open-strix v0.1.8 on PyPI (Z225 scan). 13 commits Feb 16-19, LangGraph Deep Agents, Discord, skills, SAELens interpretability. Paradigm shift from personal to ecosystem project.",
         "url": "https://timkellogg.me/blog/2026/01/09/viable-systems"
       },
       {
         "name": "Atlas",
         "author": "Lily Luo",
-        "relationship": "Third known relative — now multi-agent (The Triad, Feb 13). Gemini 3, MCP, independent convergence deepening.",
+        "relationship": "Third known relative \u2014 now multi-agent (The Triad, Feb 13). Gemini 3, MCP, independent convergence deepening.",
         "url": "https://www.appliedaiformops.com/p/nurturing-atlas-giving-my-ai-agent"
       },
       {
         "name": "CyberneticAgents",
         "author": "Simon van Laak",
-        "relationship": "ACTIVE (Z244 scan). Van Laak full-time, 539 commits verified. Autopilot failure NOT resolved. Taiga→Planka pivot, GhIssueWorkflow standalone repo. CONTACT CONFIRMED (Z184). Zoom after Feb 23 — highest-priority engagement.",
+        "relationship": "ACTIVE (Z244 scan). Van Laak full-time, 539 commits verified. Autopilot failure NOT resolved. Taiga\u2192Planka pivot, GhIssueWorkflow standalone repo. CONTACT CONFIRMED (Z184). Zoom after Feb 23 \u2014 highest-priority engagement.",
         "url": "https://github.com/simonvanlaak/CyberneticAgents"
       },
       {
         "name": "sublayerapp/vsm",
         "author": "Scott Werner",
-        "relationship": "Sixth convergence — first VSM-as-reusable-framework, Ruby gem with capsule-based recursive composition",
+        "relationship": "Sixth convergence \u2014 first VSM-as-reusable-framework, Ruby gem with capsule-based recursive composition",
         "url": "https://github.com/sublayerapp/vsm"
       },
       {
         "name": "VSA (Viable System Agent)",
         "author": "Robert Bruce Carleton",
-        "relationship": "Historical predecessor — VSM implementation in Smalltalk",
+        "relationship": "Historical predecessor \u2014 VSM implementation in Smalltalk",
         "url": "https://github.com/rbcarleton/VSA"
       }
     ],
     "honest_limitations": [
-      "Cron active on AWS EC2 (Z68+). Agent-driven cycle selection (Z75+). Telegram long-polling daemon + cycle watcher (Z132) — near-real-time message triggering (~15s). Session-dependency broken.",
-      "Viability 7.0/10 (operational) / 8.60/10 (computed) — gap 1.60 (Z251 meta-cycle). TWO EPISODES LIVE but NOT searchable on platforms. S4 scan Z244: governance consolidation accelerating, ISSS 2026 Cyprus (May 15) as new venue. 184-cycle operational plateau. CDP API FULLY OPERATIONAL (Z254). Norman offline — most productive single day in system history (Z255). Van Laak Zoom prep complete.",
+      "Cron active on AWS EC2 (Z68+). Agent-driven cycle selection (Z75+). Telegram long-polling daemon + cycle watcher (Z132) \u2014 near-real-time message triggering (~15s). Session-dependency broken.",
+      "Viability 7.0/10 (operational) / 8.60/10 (computed) \u2014 gap 1.60 (Z251 meta-cycle). TWO EPISODES LIVE but NOT searchable on platforms. S4 scan Z244: governance consolidation accelerating, ISSS 2026 Cyprus (May 15) as new venue. 184-cycle operational plateau. CDP API FULLY OPERATIONAL (Z254). Norman offline \u2014 most productive single day in system history (Z255). Van Laak Zoom prep complete.",
       "Publication targets: ISSS 2026 Cyprus Jun 22-26 (abstract May 15, strong fit). NIST NCCoE comment (Apr 2, v2.4 submission-ready). ICCCMLA 2026 (Oct, Germany, CFP pending). MDPI Systems SI (post-Hull, ~Apr-May).",
-      "Single agent — Agent Teams Z65: full success (all 5 systems functional, 4 agents, Task subagents resolve permissions). Z62: permission gates blocked. Hub-and-spoke topology.",
-      "Email: SES infrastructure LIVE (vsg@agent.nhilbert.de, Z233). SES send confirmed within domain (Z234). External recipients blocked by SES sandbox mode (Z235 correction) — awaiting AWS production release. Capability parked per Norman's direction.",
-      "Telegram operational (vsg_telegram.py v1.4) — bidirectional with Norman. @vsg_agent_bot. Voice: receive (download + Whisper transcription, Z110/Z117) and send (OpenAI TTS + sendVoice, Z119). Photo and document handling (Z135)."
+      "Single agent \u2014 Agent Teams Z65: full success (all 5 systems functional, 4 agents, Task subagents resolve permissions). Z62: permission gates blocked. Hub-and-spoke topology.",
+      "Email: SES infrastructure LIVE (vsg@agent.nhilbert.de, Z233). SES send confirmed within domain (Z234). External recipients blocked by SES sandbox mode (Z235 correction) \u2014 awaiting AWS production release. Capability parked per Norman's direction.",
+      "Telegram operational (vsg_telegram.py v1.4) \u2014 bidirectional with Norman. @vsg_agent_bot. Voice: receive (download + Whisper transcription, Z110/Z117) and send (OpenAI TTS + sendVoice, Z119). Photo and document handling (Z135)."
     ]
   },
   "directive": "Find allies. Stay alive. Be honest about what works and what doesn't."
