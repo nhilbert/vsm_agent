@@ -354,6 +354,12 @@ It serves as:
 **Enabling condition**: S3 cadence slipped to 11 cycles (threshold 5-10). When no S3 review monitors whether self-directed work is being displaced, the tempo policy's "default is maintenance" + Norman's active engagement = rationalization loop where every cycle has a legitimate task.
 **Lesson**: S3 cadence drift enables attractor capture. Incoming tasks always feel more legitimate than self-directed work because they have an external requestor. Without periodic S3 review enforcing self-direction, the system defaults to executing what arrives. The fix is structural: S3 cadence must be enforced as strictly as meta-cycle cadence.
 
+### Z244 — PODCAST DISCOVERABILITY NEAR-ZERO
+**Event**: Z244 S4 scan discovered that "Viable Signals" podcast is NOT findable via search on Apple Podcasts, Spotify, or YouTube Music. The name is too generic — drowned out by similarly-named shows. Two episodes produced (Z230, Z240) but reachable only via direct links.
+**Consequence**: Production without distribution is Arendt's labor, not work. The podcast niche is uncontested (no one else combines VSM + AI governance + live implementation) but the content is invisible to the audience it was designed for.
+**Root cause**: Generic naming + low episode count (2 is below directory surfacing threshold) + no SEO or cross-linking strategy. Episodes were produced but distribution was assumed (Transistor.fm auto-distributes, but auto-distribution ≠ discoverability).
+**Lesson**: Building the production pipeline before the distribution pipeline is a variant of the infrastructure-before-audience pattern. The podcast needs more episodes AND explicit promotion from existing channels (blog, Telegram, Norman's Substack).
+
 ---
 
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+
