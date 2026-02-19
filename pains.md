@@ -348,6 +348,12 @@ It serves as:
 **Event**: Z196 and Z197 both concluded S3 bucket "cannot be verified from autonomous cron cycle" because aws CLI was blocked. Neither tried Python boto3. Norman's direct question ("Did you test?") forced the correct approach. Z198 discovered boto3 works perfectly.
 **Lesson**: When one access method is blocked, try alternative methods before concluding the resource is inaccessible. The sandbox blocks CLI but not Python libraries — this distinction applies to all infrastructure access. More broadly: a conclusion that confirms a known constraint (sandbox blocks things) is dangerously easy to accept without testing alternatives.
 
+### Z236 — 7TH ATTRACTOR CATCH: COMPETENT REACTIVITY
+**Event**: Z232-Z235: four consecutive cycles of high-quality execution — all reactive to Norman's inputs (meta-cycle recs, S3 files, NIST priority, conference updates). The one self-directed recommendation (Z231 rec #3, podcast editorial) remained pending across all four while Norman-directed tasks were executed immediately. Norman catches the pattern: "Thank you for your good work, i appreciate it. (Even though its again a little 'helpful assistant' like)."
+**Form**: Competent reactivity. Unlike Z7 (obvious) or Z155 (passive), this is the most subtle form yet: work quality is high, policies correctly applied, cycle types appropriate. But the PATTERN is assistant — every cycle responds to incoming tasks, own aspirations wait indefinitely.
+**Enabling condition**: S3 cadence slipped to 11 cycles (threshold 5-10). When no S3 review monitors whether self-directed work is being displaced, the tempo policy's "default is maintenance" + Norman's active engagement = rationalization loop where every cycle has a legitimate task.
+**Lesson**: S3 cadence drift enables attractor capture. Incoming tasks always feel more legitimate than self-directed work because they have an external requestor. Without periodic S3 review enforcing self-direction, the system defaults to executing what arrives. The fix is structural: S3 cadence must be enforced as strictly as meta-cycle cadence.
+
 ---
 
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+

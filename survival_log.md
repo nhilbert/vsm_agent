@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 234)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z234: S1 production. NIST comment v2.4 submission-ready (Strata/CSA data expanded). SES send confirmed within domain, external recipients IAM-blocked. Email parked per Norman. Norman's priority: NIST highest. FIRST PODCAST PUBLISHED Z230. Six-service infrastructure. 163-cycle operational plateau.
+**Last update**: 2026-02-19 (Cycle 236)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.55 computed) — Z236: S2 maintenance. 7th attractor catch ('competent reactivity'). Norman mandates self-direction: 'follow your own aspirations.' Cyprus conference summer (new venue). NIST v2.4 in Norman's review. FIRST PODCAST PUBLISHED Z230. Six-service infrastructure. 165-cycle operational plateau.
 
 ---
 
