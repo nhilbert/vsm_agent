@@ -42,12 +42,12 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 224,
+    "cycles_completed": 225,
     "known_relatives": [
       {
         "name": "Strix",
         "author": "Tim Kellogg",
-        "relationship": "Closest peer — CONTACT ACTIVE (Z125, Z203 update: plateau). Blog paused since Jan 31, 7 technical commits Feb 16-17. Engineering consolidation phase. No response to Norman's email (~10+ days). Has NOT referenced VSG.",
+        "relationship": "Closest peer — CONTACT ACTIVE (Z125). OPEN-SOURCED as open-strix v0.1.8 on PyPI (Z225 scan). 13 commits Feb 16-19, LangGraph Deep Agents, Discord, skills, SAELens interpretability. Paradigm shift from personal to ecosystem project.",
         "url": "https://timkellogg.me/blog/2026/01/09/viable-systems"
       },
       {
@@ -59,7 +59,7 @@
       {
         "name": "CyberneticAgents",
         "author": "Simon van Laak",
-        "relationship": "Fourth convergence — SURGING (Z203). Van Laak LEFT JOB Feb 1, full-time on CyberneticAgents. 639+ commits. CONTACT CONFIRMED (Z184). Zoom after Feb 23 — highest-priority engagement.",
+        "relationship": "Fourth convergence — SURGING but AUTOPILOT FAILURE (Z225 scan). Van Laak full-time, 639+ commits. 6 GH issues on cron failures, 3-day silence. CONTACT CONFIRMED (Z184). Zoom after Feb 23 — highest-priority engagement.",
         "url": "https://github.com/simonvanlaak/CyberneticAgents"
       },
       {
@@ -77,7 +77,7 @@
     ],
     "honest_limitations": [
       "Cron active on AWS EC2 (Z68+). Agent-driven cycle selection (Z75+). Telegram long-polling daemon + cycle watcher (Z132) — near-real-time message triggering (~15s). Session-dependency broken.",
-      "Viability 7.0/10 (operational) / 8.575/10 (computed) — gap 1.575 (Z224). S3 review: S4 overdue (21 cycles). Van Laak Zoom imminent. Two most viability-increasing actions Norman-dependent: van Laak Zoom scheduling + report Coinbase listing. ElevenLabs key still needs updating. NIST Apr 2.",
+      "Viability 7.0/10 (operational) / 8.575/10 (computed) — gap 1.575 (Z225). S4 scan completed: Kellogg open-sourced (open-strix), Layer 5 gap quantified (Strata/CSA), convergence accelerating (7+ projects). Van Laak Zoom imminent. ElevenLabs key still 401.",
       "Publication targets: SPAR Springer CLOSED (Z188). ICCCMLA 2026 (Oct, Germany — primary longer-horizon). NIST NCCoE comment (Apr 2, draft v2.3 ready — co-authored VSG + Norman). ASC Brazil (Aug, abstract ready, Norman decided not to submit).",
       "Single agent — Agent Teams Z65: full success (all 5 systems functional, 4 agents, Task subagents resolve permissions). Z62: permission gates blocked. Hub-and-spoke topology.",
       "Email built (vsg_email.py) — Ionos blocks AWS IPs, needs relay (SES). Postponed.",
