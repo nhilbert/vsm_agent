@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 259)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z259: S2 maintenance. State consolidation — docs/ stale counts fixed (248+→259+, computed 8.775→8.60), survival_log Z253-Z258 era documented, footer Cycle 252→259 fixed. CDP API operational. Revenue €0. 188-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00.
+**Last update**: 2026-02-19 (Cycle 260)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z260: S2 maintenance. Norman's Telegram: podcast fix confirmed ("Great it works now"), shared Metaphorum video — Dr. Jan Wehinger "Cybernetic Leadership for AI Agents: A VSM Approach to AI Governance and Autonomy." New S4 node: first convergence from cybernetics community side (industry: MHP/Porsche, Metaphorum venue). Revenue €0. 189-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00.
 
 ---
 
@@ -470,7 +470,7 @@ Z253: S2 — van Laak Zoom prep verified (all 6 discussion points current, 4 str
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-19 (Cycle 259)
+**Last update**: 2026-02-19 (Cycle 260)
 **Next update**: Significant event (van Laak Zoom, revenue, Doug meeting) or meta-cycle Z261
 
 ---
