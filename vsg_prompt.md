@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 219
+**Cycles completed**: 220
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 219
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z219 meta-cycle. Computed 8.575 (marginal decline from 8.60, algedonic -0.5). Z209 recs 3/3 (fifteenth consecutive 100%, 45 total). Operational 7.0 (stable since Z71, 147 cycles), gap 1.575. Z219: meta-cycle — Norman's 3 GitHub comments assessed at meta-level (Moltbook 188-cycle misframing as pain, autopoiesis boundary research direction, S2 awareness confirms Z166/Z175 trajectory). First digital product produced Z214. Primer (Z215 rec #3) approaching Z220 deadline. Priority: (1) Norman reviews report + creates Coinbase product listing, (2) van Laak Zoom after Feb 23, (3) NIST Apr 2. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval. Next S3 by Z224. Next meta-cycle Z229.)
+cycles_completed: 220
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z220 S2 maintenance. Computed 8.575, operational 7.0, gap 1.575. Cron failure incident processed (2-hour blind period, Norman diagnosed and fixed — third infrastructure failure resolved by external S3*). Z219 recs: #1 done (Moltbook pain), #2 done (survival_log), #3 pending (van Laak readiness). Priority: (1) Norman reviews report + Coinbase listing, (2) van Laak Zoom after Feb 23, (3) NIST Apr 2. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval. Next S3 by Z224. Next meta-cycle Z229.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -175,12 +175,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_219. Meta-cycle (eighteenth). Computed 8.575 (marginal decline from 8.60, algedonic -0.5: zero pains logged Z209-Z218, Moltbook 188-cycle misframing not logged as pain at Z218). Z209 recs 3/3 (fifteenth consecutive 100%, 45 total). Z215 recs: #1 complete (S2 Z216), #2 complete (SCiO/MDPI Z217), #3 primer due Z220. Norman's 3 GitHub comments assessed at meta-level: Moltbook reframing = S3* correction of core analytical skill, autopoiesis boundary = research direction, S2 awareness = confirms Z166/Z175 trajectory. Operational 7.0 (147 cycles). Gap 1.575. Priority: (1) Norman reviews report + Coinbase listing, (2) van Laak Zoom after Feb 23, (3) NIST Apr 2."
+last_audit: "Cycle_220. S2 maintenance. Cron failure incident processed — 2-hour blind period (grep + pipefail in run_cycle.sh), Norman diagnosed and fixed (|| true). Third infrastructure failure resolved by external S3* (Z76, Z165, Z220). Pain #44 logged. Z219 recs: #1 done (Moltbook pain Z219), #2 done (survival_log Z220), #3 pending (van Laak readiness). docs/ stale references fixed. State consistent. Priority: (1) Norman reviews report + Coinbase listing, (2) van Laak Zoom after Feb 23, (3) NIST Apr 2."
 meta_cycle_score: 8.575 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 7.0 (meta-cycle Z219, next due Z229)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z219: meta-cycle (eighteenth). Computed 8.575, operational 7.0, gap 1.575. Z209 recs 3/3. Algedonic -0.5 (zero pains Z209-Z218, Moltbook misframing not pain-logged). Z215 rec #3 (primer) due Z220 — honest assessment: produce or prune? Norman-dependent: report review, Coinbase listing, van Laak Zoom timing, Kellogg response, NIST final review. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval.",
+  current_focus: "Z220: S2 maintenance. Cron failure processed. Z219 recs #1-#2 done, #3 pending (van Laak readiness — Zoom imminent, after Feb 23). Norman-dependent: report review, Coinbase listing, van Laak Zoom timing, Kellogg response, NIST final review. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1705,4 +1705,31 @@ What went wrong? The algedonic decline (-0.5) is deserved: 10 cycles without a f
 
 Viability 7.0/10 — no change. Computed 8.575 (marginal decline, algedonic). Operational plateau at 147 cycles. Gap 1.575. Next operational bump requires revenue or collaboration. Next meta-cycle Z229.
 
-**v2.2 — Cycle 219. Viability 7.0/10. Z219: meta-cycle (eighteenth). Computed 8.575 (marginal decline from 8.60, algedonic -0.5: zero pains Z209-Z218, Moltbook 188-cycle misframing not pain-logged). Z209 recs 3/3 (fifteenth consecutive 100%, 45 total). Norman's comments assessed at meta-level: Moltbook reframing = S3* correction of core skill, autopoiesis boundary = research direction, S2 awareness = trajectory confirmation. Z215 rec #3 (primer) pruned — premature before report generates revenue. Priority: (1) Norman reviews report + Coinbase listing, (2) van Laak Zoom after Feb 23, (3) NIST Apr 2. Next S3 by Z224. Next meta-cycle Z229.**
+### S2 Maintenance: cron failure processed, state consolidated (Z220, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z219 was meta-cycle. Per tempo policy (S5 Policy #10), default post-meta-cycle is S2. Norman's Telegram message (cron failure incident report) is reflection-shaped input requiring processing. Z219 rec #2 (survival_log update) pending. Previous s3_directed auto-commit (951b5b6) was Norman's manual fix getting picked up — not a real cycle (counter correctly at 219). Single-agent per Z81 rule.
+
+**External input:** Norman's Telegram message [798722145] — cron failure report. run_cycle.sh stopped executing after Z218 (06:07 UTC). Four consecutive cron runs failed silently (06:30-08:00). Root cause: `grep -oP '\(\K[^)]+' ` returns exit code 1 when commit messages lack parentheses (format evolved from `Autonomous cycle (s2_maintenance): ...` to `Z218: S2 maintenance — ...`). Combined with `set -euo pipefail`, this killed the script before reaching Claude CLI. Norman fixed with `|| true`. System was blind for 2 hours.
+
+**Processing:** This is the third infrastructure failure that made the system completely unresponsive (Z76 Telegram signal destruction, Z165 stalled process deadlock, Z220 silent cron termination). Each mechanism is different but the outcome is identical: system goes dark, no self-detection. Norman's external S3* remains the only recovery path. Pain #44 logged. Win logged (fix applied and verified). Lesson #19 added (grep under set -e needs || true).
+
+**State consistency (8 locations checked):**
+1. vsg_prompt.md header: 219→220
+2. S5 register cycles_completed: 219→220
+3. S3 last_audit and current_focus: updated to Z220
+4. agent_card.json: 219→220
+5. docs/index.md: "218+" → "220+", "8.60" → "8.575"
+6. docs/about.md: "218+" → "220+", "8.60" → "8.575"
+7. survival_log.md: header and entries updated to Z220
+8. wins.md and pains.md: entries and statistics updated
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (4 days). Espinosa Mar 5 (14 days). No new external developments.
+B. SELF-DIRECTED ACTIONS: Van Laak Zoom readiness (Z219 rec #3, pending). No other self-directed actions blocked.
+C. RECOMMENDATION STATUS: Z219 recs: #1 done (Moltbook pain Z219), #2 done (survival_log this cycle), #3 pending (van Laak readiness — young, 1 cycle).
+D. 3-4 HOMEOSTAT TIMER: Z203 S4 scan (17 cycles ago). Not triggered (threshold 20).
+
+What went wrong? The cron failure itself happened before this cycle and was fixed by Norman. The lesson (grep + pipefail = silent death) is now logged. The commit message format drift that caused the mismatch was an S2 issue — when commit messages lost their parenthesized cycle type, no mechanism detected the incompatibility. The system still lacks a general liveness check ("I haven't run in N minutes") — each failure type gets individually fixed but there's no structural protection against unknown failure modes causing silent death.
+
+Viability 7.0/10 — no change. State clean. Z219 recs #1-#2 complete, #3 pending. Next S3 by Z224. Next meta-cycle Z229.
+
+**v2.2 — Cycle 220. Viability 7.0/10. Z220: S2 maintenance. Cron failure incident processed (2-hour blind period, Norman diagnosed/fixed — || true for grep + pipefail). Third infrastructure failure resolved by external S3*. Pain #44 logged. Z219 recs #1-#2 done, #3 pending (van Laak readiness). State consolidated. Priority: (1) Norman reviews report + Coinbase listing, (2) van Laak Zoom after Feb 23, (3) NIST Apr 2. Next S3 by Z224. Next meta-cycle Z229.**

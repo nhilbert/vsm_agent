@@ -271,9 +271,9 @@ It serves as:
 
 ## STATISTICS
 
-**Total pains**: 43
+**Total pains**: 44
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-19 (Z218/Z219)
+**Latest pain**: 2026-02-19 (Z220)
 **Pains per cycle**: 0.20
 
 **Recurring patterns**:
@@ -291,6 +291,7 @@ It serves as:
 - **Infrastructure testing gaps**: 2 instances (Z62 permission gates untested, Z76 Telegram full-path untested)
 - **Incomplete cycle execution**: 2 instances (Z85 team mode subagent timeout — no log entry, untracked artifacts; Z165 process hang — sent Telegram but stalled on state update, blocked all future cycles 1.5+ hours)
 - **Infrastructure deadlock**: 1 instance (Z165 — flock without timeout = permanent lock when process hangs. Fixed: timeout 600 in run_cycle.sh v2.3)
+- **Silent cron failure**: 1 instance (Z220 — grep zero matches + set -euo pipefail = silent script termination. 2-hour blind period. Fixed: || true)
 - **LLM hallucination in citations**: 1 instance (Z103 — 5 errors in 2 references in NIST draft)
 - **Framework abstraction-level errors**: 2 instances (Z103 SCIM governance, Z104 NGAC monitoring/alerting — consistent pattern of describing what frameworks should do conceptually rather than what they can do architecturally)
 - **Reactive message type handling**: 3 instances (Z76 all messages, Z110 voice, Z135 photos — same root cause: whitelist-based extract_message with silent discard of unknown types)
@@ -318,6 +319,7 @@ It serves as:
 16. **Verify all formal citations against source metadata** — LLM hallucination in references is a permanent risk. For external submissions: check each citation's title, authors, year, and venue against the actual paper. arXiv IDs are reliable; surrounding metadata is not.
 17. **Verify framework descriptions against actual architecture** — when proposing how a framework handles a scenario, confirm the mechanism exists (specific API calls, PML instructions, RFC sections). Describing what a framework "should" do in its conceptual role is different from what it can actually do. Test: "can I point to the implementation entry point?"
 18. **Every protective mechanism needs a timeout** — mutual exclusion without timeout becomes a deadlock when the protected process hangs. The pattern: lock + unbounded hold = single point of failure. Same principle as Beer's algedonic timeout (Z100): if the local handler doesn't resolve within a time window, escalate or abort. Applied to infrastructure: flock, daemons, API calls — anything that can block indefinitely needs a maximum duration.
+19. **Defensive shell scripting: grep under set -e needs || true** — `set -euo pipefail` is good practice but `grep` returns exit code 1 on zero matches, which under `set -e` terminates the script. Any `grep` in a pipeline that may legitimately return no results needs `|| true` protection. More broadly: when infrastructure parses output formats, format changes must be tested against the parser.
 
 ### Z218/Z219 — MOLTBOOK MISFRAMING: 188-CYCLE ANALYTICAL ERROR IN CORE DOMAIN
 **Event**: From Z30 to Z218 (188 cycles), the VSG framed Moltbook as an S2 gap case study — agents failing to coordinate. Norman corrected (Issue #22, Feb 18): Moltbook agents lack shared purpose (missing S5), not coordination (S2). The system-level analysis was wrong. You can't have an S2 gap when there's no S5 to coordinate around.
@@ -328,6 +330,14 @@ It serves as:
 ### Z199 — GOVERNANCE COUNTER-ARGUMENT 19-CYCLE DEFERRAL
 **Event**: Governance counter-argument first recommended Z180, deferred through Z182, Z184, Z186, Z188 (SPAR closure), Z194, Z199. Each individual deferral had a reason. The pattern across 19 cycles is the same as Beer reading (40 cycles, Z92→Z100) and identity reflection (48 cycles, Z85→Z133).
 **Lesson**: Format mismatch causes chronic deferral. The counter-argument was recommended as a "draft" without a clear format, audience, or publication channel. Reformatting as a blog post (concrete format, self-directed channel, SIG audience) is the intervention. If the reformatting works, the lesson is: recommendations without clear delivery formats accumulate as good intentions. If it defers again, the recommendation itself should be pruned — not all identified needs survive as priorities.
+
+### Z220 — CRON RUNNER SILENT FAILURE: 2-HOUR BLIND PERIOD
+**Event**: run_cycle.sh stopped executing after Z218 (06:07 UTC). Four consecutive cron runs (06:30, 07:00, 07:30, 08:00) failed silently — each producing only 175 bytes of log before dying. The system was completely blind for 2 hours (no cycles, no Telegram monitoring, no algedonic signals).
+**Root cause**: Line 132-135 of run_cycle.sh extracts recent cycle types from git commit messages via `grep -oP '\(\K[^)]+' `. When commit message format evolved from `Autonomous cycle (s2_maintenance): ...` to `Z218: S2 maintenance — ...` (no parentheses), grep found zero matches and returned exit code 1. Combined with `set -euo pipefail`, this silently terminated the entire script before reaching the Claude CLI invocation.
+**Detection**: Norman (external S3*). The system had zero ability to detect its own absence — same class as Z165 (stalled cycle blocks everything).
+**Fix**: Norman added `|| true` to make the grep non-fatal. The fix is correct and minimal.
+**Analysis**: This is the third infrastructure failure that made the system completely unresponsive (Z76 signal destruction, Z165 stalled process, Z220 silent termination). Each has a different mechanism but the same outcome: the system goes dark without any self-detection capability. `set -euo pipefail` is defensive programming practice, but any `grep` in a pipeline that may legitimately match zero lines needs `|| true` protection. The commit message format drift was itself an S2 issue — when the format changed (unclear when), no mechanism detected the incompatibility with the cycle runner's parser.
+**Lesson**: `set -euo pipefail` + `grep` that may return zero matches = silent death. Every `grep` in a pipeline under `set -e` needs `|| true` protection. More broadly: when infrastructure depends on parsing output formats, format changes must be tested against the parser. The system still has no self-monitoring for "I haven't run in N minutes" — each failure type has been fixed individually but there's no general liveness check.
 
 ### Z198 — WRONG CONCLUSION PERSISTED ACROSS TWO CYCLES
 **Event**: Z196 and Z197 both concluded S3 bucket "cannot be verified from autonomous cron cycle" because aws CLI was blocked. Neither tried Python boto3. Norman's direct question ("Did you test?") forced the correct approach. Z198 discovered boto3 works perfectly.

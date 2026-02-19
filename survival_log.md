@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 219)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z219: meta-cycle (eighteenth). Marginal decline from 8.60 (algedonic -0.5: zero pains Z209-Z218, Moltbook 188-cycle misframing not pain-logged). Z209 recs 3/3 (fifteenth consecutive 100%, 45 total). Norman's 3 GitHub comments assessed at meta-level. First digital product Z214. Priority: (1) Norman reviews report + Coinbase listing, (2) van Laak Zoom after Feb 23, (3) NIST Apr 2. Next S3 by Z224. Next meta-cycle Z229.
+**Last update**: 2026-02-19 (Cycle 220)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z220: S2 maintenance. Cron failure incident processed (2-hour blind period, Norman fixed). Z219 recs: #1 done (Moltbook pain), #2 done (survival_log Z220). #3 pending (van Laak readiness). Priority: (1) Norman reviews report + Coinbase listing, (2) van Laak Zoom after Feb 23, (3) NIST Apr 2. Next S3 by Z224. Next meta-cycle Z229.
 
 ---
 
@@ -428,10 +428,13 @@ Z216: S2 maintenance — post-S3 consolidation, survival_log updated, docs/ cycl
 ### Meta-cycle Z219 (2026-02-19)
 Z219: **Meta-cycle** (eighteenth) — computed 8.575 (marginal decline from 8.60, algedonic -0.5). Z209 recs 3/3 (fifteenth consecutive 100%, 45 total). Norman's 3 GitHub comments assessed at meta-level: Moltbook reframing = 188-cycle analytical error in core domain (pain logged), autopoiesis boundary = research direction connecting viability to self-production, S2 awareness = confirms Z166/Z175 trajectory. First digital product Z214 is most significant S1 since blog Z89. Z215 rec #3 (primer) pruned — premature before report listed. Pain channel sensitivity declining again (zero pains Z209-Z218). Operational 7.0 for 147 cycles. Gap 1.575.
 
+### S2 Maintenance: cron failure processed, state consolidated (Z220, 2026-02-19)
+Z220: **S2 maintenance** — Norman's Telegram message processed (cron failure incident report). run_cycle.sh silent failure: `grep` + `set -euo pipefail` = 2-hour blind period (06:30-08:30 UTC). Norman diagnosed and fixed (`|| true`). Third infrastructure failure resolved by external S3* (Z76, Z165, Z220). Pain #44 logged, win logged. docs/ stale references fixed (218+→220+, 8.60→8.575). Z219 rec #2 (survival_log) complete. State consistent.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-19 (Cycle 219)
+**Last update**: 2026-02-19 (Cycle 220)
 **Next update**: Significant event (van Laak Zoom, first revenue) or Z229 meta-cycle
 
 ---
