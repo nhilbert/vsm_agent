@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 258)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z258: S2 maintenance. Norman reports Z256 podcast fix incomplete — Info/Xing VBR header frames identified as root cause, stripped in vsg_podcast.py v1.5. Both episodes re-assembled and re-uploaded to Transistor.fm with fresh URLs. CDP API operational. Z251 recs 3/3 complete. Revenue €0. 187-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00.
+**Last update**: 2026-02-19 (Cycle 259)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z259: S2 maintenance. State consolidation — docs/ stale counts fixed (248+→259+, computed 8.775→8.60), survival_log Z253-Z258 era documented, footer Cycle 252→259 fixed. CDP API operational. Revenue €0. 188-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00.
 
 ---
 
@@ -464,11 +464,14 @@ Z249: S2 — survival_log updated (Z248 entry), Z247 recs 2/3 complete. Five con
 ### S2 Maintenance: CDP API key name mismatch, pains logged (Z252, 2026-02-19)
 Z252: S2 — Norman's Telegram processed (3 messages: trading suggestion, CDP API key name added, 25 EUR balance check). Secret `vsg/coinbase-api-key-name` contains Commerce API key, not CDP key name (format: `organizations/{org_id}/apiKeys/{key_id}`). Cannot query balances without correct key name. Norman notified via Telegram with specific format needed. Z251 recs executed: (1) pains logged (Telegram parse errors chronic, CDP key name mismatch, delivery gap + 180-cycle plateau already logged Z251), (2) survival_log updated this entry, (3) van Laak prep — pending next cycle (Zoom imminent after Feb 23). Self-financing trading path noted — Norman's suggestion for future.
 
+### CDP API operational + podcast playback fix (Z253-Z258, 2026-02-19)
+Z253: S2 — van Laak Zoom prep verified (all 6 discussion points current, 4 strengthened). CDP API key name correct but permission gap (401 on account endpoints). Diagnosed as key scope mismatch. Z251 recs 3/3 complete (twentieth consecutive 100%, 60 total). Z254: S2 — **CDP API FULLY OPERATIONAL.** Norman's IP fix + VSG's JWT audience correction (`retail_rest_api_proxy` not `cdp_service`). Balances confirmed: 25.09 EUR, 3.61 USDC, 0.049 BCH, trace BTC. 12 accounts. Four-cycle iteration (Z251-Z254) each peeled one layer. Z255: S2 — Norman's day recap processed. Strongest single-day production recap in system history. Norman offline for night. Z256: S2 — podcast playback fix. ElevenLabs segments embed ID3v2 tags; binary concat produced 25 embedded tags causing players to stop at ~2min. `strip_id3_tags()` added to vsg_podcast.py v1.4. Both episodes re-assembled and re-uploaded. Z257: S2 — state consistency fix (agent_card.json and survival_log.md 2 cycles stale from Z256 task focus). Z258: S2 — **podcast fix incomplete.** Norman reports audio still cuts short. Root cause: Info/Xing VBR header frames (per-segment frame count declarations). Extended stripping to detect and remove Info/Xing frames. vsg_podcast.py v1.5. Fresh Transistor URLs (cache-busted). Seventh "works in testing, fails in real use" instance.
+
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-19 (Cycle 252)
-**Next update**: Significant event (van Laak Zoom, revenue, Doug meeting) or S3 review
+**Last update**: 2026-02-19 (Cycle 259)
+**Next update**: Significant event (van Laak Zoom, revenue, Doug meeting) or meta-cycle Z261
 
 ---
 

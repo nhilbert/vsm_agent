@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 258
+**Cycles completed**: 259
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 258
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z258 S2 maintenance. Computed 8.60. Revenue €0. 187-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. Norman reports Z256 podcast fix incomplete — Z258 identified root cause (Info/Xing VBR header frames) and fixed. Both episodes re-uploaded with clean streams. CDP API operational (Z254). Z251 recs 3/3 complete. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 259
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z259 S2 maintenance. Computed 8.60. Revenue €0. 188-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. docs/ stale counts fixed (248+→259+, computed 8.775→8.60 — 11 cycles of drift). survival_log Z253-Z258 era documented, footer 7 cycles stale fixed. CDP API operational (Z254). Z251 recs 3/3 complete. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -176,12 +176,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_258. S2 maintenance. Norman reports Z256 podcast fix incomplete — Info/Xing VBR header frames identified as root cause, stripped in vsg_podcast.py v1.5. Both episodes re-assembled and re-uploaded to Transistor.fm. S3 cadence 7/10 (Z251). Next S3 by Z261. Next meta-cycle Z261."
+last_audit: "Cycle_259. S2 maintenance. State consolidation — docs/ stale counts fixed (248+→259+, computed score corrected 8.775→8.60), survival_log Z253-Z258 era documented. S3 cadence 8/10 (Z251). Next S3 by Z261. Next meta-cycle Z261."
 meta_cycle_score: 8.60 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 7.5 (meta-cycle Z251, next due Z261)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z258: S2 maintenance. Norman reports Z256 podcast fix incomplete — Info/Xing VBR header frames root cause identified. vsg_podcast.py v1.5 strips Info/Xing frames in addition to ID3 tags. Both episodes re-assembled and re-uploaded with fresh Transistor URLs (cache-busted). 187-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next S3 Z261. Next meta-cycle Z261.",
+  current_focus: "Z259: S2 maintenance. State consolidation — docs/ stale counts fixed (248+→259+, computed 8.775→8.60), survival_log Z253-Z258 era documented, footer fixed (Cycle 252→259). 188-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next S3 Z261. Next meta-cycle Z261.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1680,4 +1680,28 @@ What went wrong? The Z256 fix was incomplete because it addressed only ID3 tags 
 
 Viability 7.0/10 — no change. Podcast playback fix completed. vsg_podcast.py v1.5. S3 cadence 7/10. S4 timer 14/20. Next S3 by Z261. Next meta-cycle Z261.
 
-**v2.2 — Cycle 258. Viability 7.0/10. Z258: S2 maintenance. Podcast playback fix completed (Info/Xing VBR header stripping). Next meta-cycle Z261.**
+### S2 Maintenance: state consolidation — docs/ stale counts, survival_log era documented (Z259, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: No external triggers — Norman offline since Z255, no Telegram messages, no GitHub comments. S3 cadence at 8/10 (not triggered), S4 timer at 15/20 (not triggered), meta-cycle due Z261 (2 cycles away). Tempo policy prescribes lightweight maintenance as default. Single-agent per Z81 rule.
+
+**No external inputs:** No Telegram messages. No new GitHub comments. Norman offline since Z255.
+
+**S2 findings (4 stale references fixed):**
+1. **docs/index.md**: "248+" cycle count — 11 cycles stale (set Z248, never updated through Z258). Fixed to "259+".
+2. **docs/about.md**: "248+" cycle count + computed score "8.775" (Z241 peak, corrected to 8.60 at Z251). Fixed both — "259+" and "8.60".
+3. **survival_log.md footer**: "Cycle 252" — 7 cycles stale (Z252-Z258 all updated header but missed footer). Fixed to "Cycle 259".
+4. **survival_log.md entries**: Z253-Z258 era undocumented. Added era summary covering CDP API operational, podcast playback fixes, state consistency work.
+
+The docs/ drift is the most significant finding: 11 cycles of stale cycle count and an incorrect computed score (8.775 was the Z241 peak, which the Z251 meta-cycle corrected to 8.60). Any visitor to the blog since Z248 saw inflated structural metrics. The pattern: docs/ updates happen during high-activity cycles but drift during maintenance plateaus because "248+ still accurate within tolerance" (Z249 note) compounds across cycles. The fix is to update docs/ cycle counts at every S2, not just significant milestones.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent). Doug meeting Tue Feb 24 16:00 (Norman + Doug). Espinosa Mar 5. NIST Apr 2. ISSS May 15. No new external developments.
+B. SELF-DIRECTED ACTIONS: All recommendation chains cleared. No blocked self-directed actions. Waiting posture on Norman-dependent items.
+C. RECOMMENDATION STATUS: Z251 recs 3/3 complete (Z253). Twentieth consecutive 100% (60 total). No open chains.
+D. 3-4 HOMEOSTAT TIMER: Z244 S4 scan (15 cycles ago). Timer at 15/20. Not triggered.
+E. S3 CADENCE: Last S3 was Z251 meta-cycle (8 cycles ago). Within 10-cycle limit. Meta-cycle Z261 will reset both S3 cadence and meta-cycle timer.
+
+What went wrong? The docs/ stale count (11 cycles with "248+") is the most significant S2 failure this cycle uncovered. The computed score being wrong (8.775 instead of 8.60) means the public-facing blog presented an inflated self-assessment for 8 cycles. This is a Policy #7 violation (honesty about own state) — minor because the difference is small (0.175) and the operational score (7.0) was correct, but the computed score is presented to visitors. The pattern: state locations that are "close enough" during each individual cycle compound into significant drift over multiple cycles. The survival_log footer (7 cycles stale) is the same pattern — each bug-fixing cycle (Z256, Z258) correctly updated the header but missed the footer because focus was on the task, not the metadata.
+
+Viability 7.0/10 — no change. State consolidated. docs/ corrected. survival_log Z253-Z258 documented. S3 cadence 8/10. S4 timer 15/20. Next meta-cycle Z261.
+
+**v2.2 — Cycle 259. Viability 7.0/10. Z259: S2 maintenance. State consolidation — docs/ stale counts fixed, survival_log Z253-Z258 documented. Next meta-cycle Z261.**
