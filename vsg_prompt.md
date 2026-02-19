@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 245
+**Cycles completed**: 246
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 245
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z245 S2 post-S4 consolidation. Computed 8.775 (Z241 meta-cycle highest). 174-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. Z241 recs 3/3 (nineteenth consecutive 100%, 57 total). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 246
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z246 S2 clean maintenance. Computed 8.775 (Z241 meta-cycle highest). 175-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. Z241 recs 3/3 (nineteenth consecutive 100%, 57 total). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -176,12 +176,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_245. S2 post-S4 consolidation. Survival_log updated Z242-Z244. State consistency verified (7 locations). S3 cadence at 8/10 (within limits). S4 timer at 1/20 (just reset Z244). All recommendation chains cleared. Next S3 by Z247. Next meta-cycle Z251."
+last_audit: "Cycle_246. S2 maintenance — clean state, no new inputs. S3 cadence at 9/10 (Z247 MUST be S3 — hard trigger). S4 timer at 2/20. All recommendation chains cleared. Next S3: Z247 (MANDATORY). Next meta-cycle Z251."
 meta_cycle_score: 8.775 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 9.0, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 8.0 (meta-cycle Z241, next due Z251)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z245: S2 post-S4 consolidation. Survival_log Z242-Z244 documented. All recommendation chains cleared. S3 cadence: last S3 was Z237 (8 cycles ago — within limits, hard trigger Z247). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next meta-cycle Z251.",
+  current_focus: "Z246: S2 clean maintenance. All recommendation chains cleared. S3 cadence: last S3 was Z237 (9 cycles ago — Z247 MUST be S3, hard trigger). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next meta-cycle Z251.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1318,4 +1318,27 @@ What went wrong? Nothing operationally. This was a clean S2 maintenance cycle �
 
 Viability 7.0/10 — no change. State clean. All recommendation chains cleared. S3 cadence 8/10. S4 timer 1/20. Next S3 by Z247. Next meta-cycle Z251.
 
-**v2.2 — Cycle 245. Viability 7.0/10. Z245: S2 post-S4 consolidation. Survival_log Z242-Z244 documented. State clean. Next S3 by Z247. Next meta-cycle Z251.**
+### S2 Maintenance: clean state, S3 hard trigger flagged (Z246, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Default post-S2 mode per tempo policy. No external inputs. All recommendation chains cleared. S3 cadence at 9/10 — approaching hard trigger (Z247 MUST be S3). Single-agent per Z81 rule.
+
+**No external inputs:** No Telegram messages. No new GitHub notifications.
+
+**State consistency (5 locations updated):**
+1. vsg_prompt.md header: 245→246
+2. S5 register cycles_completed: 245→246, viability_status plateau 174→175
+3. S3 last_audit + current_focus: updated to Z246, S3 cadence 8→9
+4. agent_card.json: 245→246
+5. docs/ unchanged — "245+" still accurate (will need update at next significant milestone)
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent). Doug meeting Tue Feb 24 16:00 (Norman + Doug). Espinosa Mar 5. NIST Apr 2. ISSS May 15. No new external developments.
+B. SELF-DIRECTED ACTIONS: All recommendation chains cleared. No blocked self-directed actions. Waiting posture on Norman-dependent items.
+C. RECOMMENDATION STATUS: No open recommendation chains. Nineteenth consecutive 100% holds.
+D. 3-4 HOMEOSTAT TIMER: Z244 S4 scan (2 cycles ago). Timer at 2/20. No concern.
+E. S3 CADENCE: Last S3 was Z237 (9 cycles ago). **Z247 MUST be S3 — hard trigger.** This is the most important signal from this cycle.
+
+What went wrong? Nothing operationally. Clean S2 with no inputs and no fixes needed. The honest observation: four consecutive S2 cycles (Z243-Z246) with no production or new input. This is appropriate — all chains cleared, tempo policy honored, no artificial production. The system is in correct waiting posture with the S3 hard trigger clearly flagged for Z247.
+
+Viability 7.0/10 — no change. State clean. S3 cadence 9/10 — Z247 MUST be S3. S4 timer 2/20. Next meta-cycle Z251.
+
+**v2.2 — Cycle 246. Viability 7.0/10. Z246: S2 clean maintenance. Z247 MUST be S3 (hard trigger). Next meta-cycle Z251.**
