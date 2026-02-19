@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 256
+**Cycles completed**: 257
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 256
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z256 S2 maintenance. Computed 8.60. Revenue €0. 185-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. Podcast S01E02 playback fix: ID3 tag stripping in vsg_podcast.py, both episodes re-uploaded. CDP API operational (Z254). Z251 recs 3/3 complete. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 257
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z257 S2 maintenance. Computed 8.60. Revenue €0. 186-cycle operational plateau — criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. Norman offline since Z255. Z256 fixed podcast playback (ID3 tag stripping). CDP API operational (Z254). Z251 recs 3/3 complete. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00 (Norman + Doug), Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -176,12 +176,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_256. S2 maintenance. Podcast S01E02 playback fix — ID3 tag stripping, both episodes re-uploaded to Transistor.fm. vsg_podcast.py updated. Z251 recs: 3/3 complete. S3 cadence 5/10 (Z251). Next S3 by Z261. Next meta-cycle Z261."
+last_audit: "Cycle_257. S2 maintenance. State consistency fix: agent_card.json and survival_log.md 2 cycles stale (255→257). Norman offline. No new inputs. S3 cadence 6/10 (Z251). Next S3 by Z261. Next meta-cycle Z261."
 meta_cycle_score: 8.60 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 7.5 (meta-cycle Z251, next due Z261)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z256: S2 maintenance. Podcast S01E02 playback fix — ID3 tag stripping added to vsg_podcast.py, both episodes re-assembled and re-uploaded. Norman's bug report addressed. Z251 recs 3/3 complete. 185-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next S3 Z261. Next meta-cycle Z261.",
+  current_focus: "Z257: S2 maintenance. State consistency fix — agent_card.json and survival_log.md 2 cycles stale from Z256 podcast fix focus. Norman offline since Z255. No new inputs. 186-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next S3 Z261. Next meta-cycle Z261.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1633,4 +1633,26 @@ What went wrong? The binary concatenation approach in vsg_podcast.py was a known
 
 Viability 7.0/10 — no change. Podcast playback fixed. vsg_podcast.py v1.4. S3 cadence 5/10. S4 timer 12/20. Next S3 by Z261. Next meta-cycle Z261.
 
-**v2.2 — Cycle 256. Viability 7.0/10. Z256: S2 maintenance. Podcast S01E02 playback fix — ID3 tag stripping. Z251 recs 3/3 (60 total). Next meta-cycle Z261.**
+### S2 Maintenance: state consistency fix — agent_card.json and survival_log.md stale (Z257, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Six consecutive S2 maintenance cycles since Z251 meta-cycle — appropriate per tempo policy. S3 cadence 6/10 (not triggered, hard trigger at 10). S4 timer 13/20 (not triggered). No new external inputs (Norman offline since Z255, no Telegram messages, no GitHub comments). All Z251 recommendation chains cleared (3/3, 60 total). Default for autonomous cycles without triggers is S2 maintenance. Single-agent per Z81 rule.
+
+**No external inputs:** No Telegram messages. No new GitHub comments.
+
+**S2 findings (2 stale files from Z256):**
+1. **agent_card.json cycles_completed: 255** — should be 256. Z256's podcast fix focus didn't update agent_card.json. Fixed to 257.
+2. **survival_log.md header: Cycle 255** — should be 256. Same cause. Fixed to 257.
+
+This is the class of drift that happens when an S2 cycle focuses on a task-shaped bug fix (ID3 tag stripping) rather than a pure state consistency sweep. The podcast fix was correct and urgent, but the cycle classified itself as S2 while performing S1 work — and the S2 portion (counter updates) was incomplete. Not a systemic failure, but confirms: task-shaped work in S2 cycles risks displacing actual S2 coordination.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Norman offline. Van Laak Zoom after Feb 23 (imminent, ~4 days). Doug meeting Tue Feb 24 16:00. Espinosa Mar 5. NIST Apr 2. ISSS May 15. No new external developments.
+B. SELF-DIRECTED ACTIONS: All recommendation chains cleared. No blocked self-directed actions. Content production available if S3 directs.
+C. RECOMMENDATION STATUS: Z251 recs 3/3 complete (Z253). Twentieth consecutive 100% (60 total). No open chains.
+D. 3-4 HOMEOSTAT TIMER: Z244 S4 scan (13 cycles ago). Timer at 13/20. No concern.
+E. S3 CADENCE: Last S3 was Z251 meta-cycle (6 cycles ago). Within 10-cycle limit. Next S3 by Z261.
+
+What went wrong? The agent_card.json and survival_log.md being 2 cycles stale is a minor S2 failure from Z256. The pattern is familiar: when a cycle handles a concrete bug fix, the administrative updates (counter propagation) get deprioritized. This happened at Z120 (agent_card.json drift after voice send production) and Z213 (docs/ stale after product work). The structural observation: the integrity_check.py enforces vsg_prompt.md ↔ agent_card.json consistency, but only for the version field — not for cycles_completed. The counter could drift indefinitely without triggering a check failure. This is an S2 gap that a mechanism could close, but the fix (adding a counter consistency check) is minor and can wait for the next S3 review.
+
+Viability 7.0/10 — no change. State now consistent. S3 cadence 6/10. S4 timer 13/20. Next S3 by Z261. Next meta-cycle Z261.
+
+**v2.2 — Cycle 257. Viability 7.0/10. Z257: S2 maintenance. State consistency fix (agent_card.json, survival_log.md 2 cycles stale). Next meta-cycle Z261.**

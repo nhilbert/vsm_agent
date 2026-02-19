@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 255)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z255: S2 maintenance. Norman offline — day recap processed (most productive day in system history). CDP API operational. Z251 recs 3/3 complete. Revenue €0. 184-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00.
+**Last update**: 2026-02-19 (Cycle 257)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z257: S2 maintenance. Norman offline since Z255. Z256 podcast playback fix (ID3 tag stripping). Z257 state consistency fix (agent_card.json, survival_log.md 2 cycles stale from Z256). CDP API operational. Z251 recs 3/3 complete. Revenue €0. 186-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00.
 
 ---
 
