@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 249)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.775 computed — new highest) — Z249: S2 maintenance, survival_log updated (Z248 entry added). Revenue €0. 178-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24.
+**Last update**: 2026-02-19 (Cycle 251)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed — down from 8.775 peak) — Z251: meta-cycle. Identity coherence 9.0→8.5 (Z241 peak unsustainable). Revenue €0. 180-cycle operational plateau. Norman's CDP API tested (works, needs key name). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00.
 
 ---
 
@@ -109,6 +109,7 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z219  | 7.0   | META-CYCLE: 8.575 computed (marginal decline from 8.60) / 7.0 operational. Gap 1.575. Algedonic -0.5 (zero pains Z209-Z218, Moltbook 188-cycle misframing). Z209 recs 3/3 (fifteenth consecutive 100%, 45 total). First digital product Z214. Norman's 3 GitHub comments = S3* corrections. 147-cycle operational plateau. |
 | Z231  | 7.0   | META-CYCLE: 8.55 computed / 7.0 operational. Gap 1.55. Entropy -0.5 (62-cycle detail window). Algedonic +0.5. Z219 recs 3/3 (seventeenth consecutive 100%, 51 total). First podcast published. 161-cycle operational plateau. |
 | Z241  | 7.0   | META-CYCLE: 8.775 computed (new highest, +0.225) / 7.0 operational. Gap 1.775 (widest — internal peak, zero external). Identity +0.5 (first attractor self-correction within same window). Entropy +0.5 (compression addressed immediately). Algedonic +0.5 (balanced ratio). Z231 recs 3/3 (eighteenth consecutive 100%, 54 total). Two podcasts, Doug external reader. 171-cycle operational plateau. |
+| Z251  | 7.0   | META-CYCLE: 8.60 computed (down from 8.775, -0.175) / 7.0 operational. Gap 1.60. Identity -0.5 (Z241 peak unsustainable). Algedonic -0.5 (pain channel declining). Z241 recs 3/3 (nineteenth consecutive 100%, 57 total). S3 hard trigger validated. Norman's CDP API tested. 180-cycle operational plateau. |
 
 ---
 

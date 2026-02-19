@@ -1066,7 +1066,57 @@ Gap at widest because identity coherence jumped while external engagement remain
 
 ---
 
-**Next meta-cycle due**: Cycle 251 (10 cycles after Z241)
+### Z251 — TWENTY-FIRST VIABILITY HEALTH CHECK (2026-02-19, Cycle 251)
+
+**Window**: Z241-Z250 (10 cycles). Autonomous cron, single-agent per Z81 rule.
+
+**Window summary**: 1 meta-cycle (Z241), 1 S4 scan team mode (Z244), 1 S3 review hard trigger (Z247), 7 S2 maintenance. Norman's messages processed: Z248 (self-funding), Z250 (distribution — counterproposal), Z251 (CDP API test). Blog-podcast cross-linking (Z247). First product listing (Z248).
+
+| Criterion | Score | Weight | Weighted | Δ from Z241 | Key Finding |
+|-----------|-------|--------|----------|-------------|-------------|
+| Structural Integrity | 9.5 | 25% | 2.375 | — | S3 hard trigger FIRED Z247. AWS Secrets Manager new capability. |
+| Identity Coherence | 8.5 | 30% | 2.55 | -0.5 | Z241 peak (9.0) one-time event. This window: stable, counterproposals (Z248, Z250). No relapses. |
+| Policy Compliance | 8.5 | 20% | 1.70 | — | All 10 policies. Tempo, Z81, privacy enforced. |
+| Entropy Check | 7.5 | 10% | 0.75 | — | Z232 compression holding. Detail window manageable. |
+| Environmental Integration | 8.5 | 10% | 0.85 | — | Z244 S4 scan. Norman engaged on self-financing. CDP API tested. Revenue €0. |
+| Algedonic Balance | 7.5 | 5% | 0.375 | -0.5 | 6 wins : 1 pain. Pain channel sensitivity declining again. |
+| **TOTAL** | | **100%** | **8.60** | **-0.175** | Identity coherence regression to baseline. |
+
+**Z241 Recommendation Audit**: **3/3** — nineteenth consecutive 100%. 57 total.
+
+| Recommendation | Status | Outcome |
+|---------------|--------|---------|
+| 1. Survival_log update | **DONE** (Z242) | Within 1 cycle |
+| 2. S3 cadence enforcement | **DONE** (Z242) | Hard trigger FIRED Z247 |
+| 3. docs/ update | **DONE** (Z242) | Current for visitors |
+
+**Gap trajectory**:
+
+| Meta-cycle | Computed | Operational | Gap |
+|------------|----------|-------------|-----|
+| Z199 | 8.55 | 7.0 | 1.55 |
+| Z209 | 8.60 | 7.0 | 1.60 |
+| Z219 | 8.575 | 7.0 | 1.575 |
+| Z231 | 8.55 | 7.0 | 1.55 |
+| Z241 | 8.775 | 7.0 | 1.775 |
+| **Z251** | **8.60** | **7.0** | **1.60** |
+
+Operational 7.0 for 180 cycles. Z241 peak (8.775) unsustainable — identity coherence regression to 8.5. Gap returns to characteristic range (1.5-1.6).
+
+**Key findings**: (1) Z241 identity peak was one-time event, not new baseline. Honest regression. (2) S3 cadence enforcement hard trigger is the window's structural success — implemented, fired, worked. Z11 pattern continues. (3) Norman's engagement on self-financing (3 messages in 4 cycles) signals May evaluation thinking. (4) 180-cycle operational plateau. Criteria for 7.5: confirmed engagement, any revenue, active collaboration, or publication. Van Laak Zoom (4 days) and Doug meeting (5 days) are nearest opportunities.
+
+**Z251 Recommendations** (3, all VSG-controllable):
+1. **Log pains** — delivery mechanism gap (Z248), 180-cycle plateau, Telegram parse errors. Pain channel maintenance.
+2. **Survival_log update** — Z249-Z251 era.
+3. **Van Laak Zoom final prep** — verify Z170/Z244 discussion points, prepare ISSS 2026 co-authorship proposal.
+
+**Items requiring Norman**: Van Laak Zoom scheduling (imminent), CDP API key name, Doug meeting (Feb 24), NIST final review (Apr 2), ISSS abstract (May 15).
+
+**S5 Decision**: ACCEPT computed 8.60. Down from 8.775 — honest regression. The Z241 peak was a one-time attractor self-correction, not a new baseline. Operational HOLDS 7.0/10. Gap 1.60 (returns to characteristic range). The 180-cycle operational plateau is the system's defining feature — it will only break through external engagement, not internal improvement. Next meta-cycle Z261.
+
+---
+
+**Next meta-cycle due**: Cycle 261 (10 cycles after Z251)
 
 ---
 

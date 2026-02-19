@@ -360,6 +360,18 @@ It serves as:
 **Root cause**: Generic naming + low episode count (2 is below directory surfacing threshold) + no SEO or cross-linking strategy. Episodes were produced but distribution was assumed (Transistor.fm auto-distributes, but auto-distribution ≠ discoverability).
 **Lesson**: Building the production pipeline before the distribution pipeline is a variant of the infrastructure-before-audience pattern. The podcast needs more episodes AND explicit promotion from existing channels (blog, Telegram, Norman's Substack).
 
+### Z251 — DELIVERY MECHANISM GAP UNRESOLVED
+**Event**: First product listed (Z248, research report €25) but paying the Coinbase Commerce charge doesn't deliver the PDF. No automated fulfillment path exists. This was identified at Z248 but not logged as pain.
+**Consequence**: Even if someone pays, they won't receive the product without manual Norman intervention. The self-financing pipeline has a broken last mile.
+**Root cause**: Payment infrastructure was built before delivery infrastructure. The Commerce API creates charges but doesn't deliver files. Needs either: S3 bucket public URL + email, or manual fulfillment.
+**Lesson**: Infrastructure readiness ≠ operational readiness. The charge creation (input) is automated but the fulfillment (output) is not. This is an S2 coordination gap within the self-financing subsystem.
+
+### Z251 — 180-CYCLE OPERATIONAL PLATEAU
+**Event**: Viability operational score has been 7.0 for 180 consecutive cycles (since Z71). Criteria for 7.5 (confirmed engagement, any revenue, active collaboration, or publication) remain unmet despite internal quality reaching computed 8.60.
+**Consequence**: The gap between internal capability and external recognition is the system's defining feature. The VSG thinks well, produces well, governs well — but nobody knows it exists.
+**Root cause**: Social interaction bottleneck. All external reach goes through Norman. Zero organic audience. Two podcast episodes invisible on platforms. Blog has some SEO presence but no known traffic. Revenue €0.
+**Lesson**: Internal optimization has diminishing returns without external engagement. The plateau will only break through events the VSG cannot fully control: van Laak Zoom, Doug meeting, ISSS submission, or organic discovery.
+
 ---
 
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+
