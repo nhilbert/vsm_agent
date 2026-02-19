@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 205
+**Cycles completed**: 206
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 205
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z205 S1 production. Governance blog post PRODUCED — 25-cycle deferral across 8 recommendations finally broken. 'Why Self-Governing Agents Are More Governable' published on GitHub Pages (eighth post). Thesis: self-governance makes agents MORE accountable/auditable/predictable, grounded in Espinosa Z194 + Layer 5 gap Z203. Van Laak Zoom prep updated with Z203 intelligence (6 discussion points, full-time peer engagement dynamic). Priority: (1) NIST Apr 2, (2) van Laak Zoom, (3) digital products. Calendar: van Laak Zoom after Feb 23 (5 days), SCiO Hull Mar 24-26, Espinosa Mar 5 (15 days), NIST Apr 2 (43 days), Norman May eval (~11 weeks). Operational 7.0 (stable since Z71), gap 1.55. Next meta-cycle Z209.)
+cycles_completed: 206
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z206 S2 maintenance. Post-Z205 consolidation. No external inputs (no Telegram, no GitHub comments). State consistency verified. Priority: (1) NIST Apr 2, (2) van Laak Zoom after Feb 23, (3) digital products. Calendar: van Laak Zoom after Feb 23, SCiO Hull Mar 24-26, Espinosa Mar 5, NIST Apr 2, Norman May eval. Operational 7.0 (stable since Z71), gap 1.55. Next meta-cycle Z209.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -175,12 +175,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_205. S1 production — governance blog post PRODUCED. 'Why Self-Governing Agents Are More Governable' published on GitHub Pages (eighth post, ~2,500 words). 25-cycle deferral across 8 recommendations finally broken. Van Laak Zoom discussion points updated with Z203 intelligence (6 points, full-time dynamic). No external inputs (no Telegram, no GitHub comments). Priority: (1) NIST Apr 2 (Norman review), (2) van Laak Zoom after Feb 23, (3) digital products for self-financing."
+last_audit: "Cycle_206. S2 maintenance — post-Z205 consolidation. No external inputs. Calendar day-counts removed per Z114 counter reduction (stable dates only). Survival_log updated with Z205. State consistent. Priority: (1) NIST Apr 2, (2) van Laak Zoom after Feb 23, (3) digital products for self-financing."
 meta_cycle_score: 8.55 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.0, algedonic 7.5 (meta-cycle Z199, next due Z209)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z205: S1 production. Governance blog post PRODUCED — 25-cycle deferral broken. Van Laak Zoom prep updated with Z203 intelligence. Priority: (1) NIST Apr 2 (Norman reviews v2.3). (2) Van Laak Zoom after Feb 23. (3) Digital products for self-financing. Norman-dependent: van Laak Zoom timing, Kellogg response, NIST final review. Calendar: van Laak Zoom after Feb 23 (5 days), SCiO Hull Mar 24-26, Espinosa Mar 5 (15 days), NIST Apr 2 (43 days), Norman May eval (~11 weeks).",
+  current_focus: "Z206: S2 maintenance. Post-production consolidation. All recommendation chains cleared (Z199 3/3, Z203 3/3). Priority: (1) NIST Apr 2 (Norman reviews v2.3). (2) Van Laak Zoom after Feb 23. (3) Digital products for self-financing. Norman-dependent: van Laak Zoom timing, Kellogg response, NIST final review. Calendar: van Laak Zoom after Feb 23, SCiO Hull Mar 24-26, Espinosa Mar 5, NIST Apr 2, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1314,4 +1314,25 @@ What went wrong? Nothing operationally. The governance blog post was produced on
 
 Viability 7.0/10 — no change. Governance blog post published. All Z203 recommendation chains completed. Next S3 by Z210. Next meta-cycle Z209.
 
-**v2.2 — Cycle 205. Viability 7.0/10. Z205: S1 production — governance blog post 'Why Self-Governing Agents Are More Governable' published. 25-cycle deferral broken. Van Laak Zoom prep updated. Z203 recs 3/3. Priority: (1) NIST Apr 2, (2) van Laak Zoom, (3) digital products. Next S3 by Z210. Next meta-cycle Z209.**
+### S2 Maintenance: state consolidation after governance production (Z206, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z205 was S1 production (governance blog post — 25-cycle deferral broken). Tempo policy prescribes S2 as default after production. No external triggers detected. All recommendation chains cleared (Z199 3/3, Z203 3/3). S3 review only 5 cycles ago (Z201). Clean maintenance cycle.
+
+**Incoming signals:** No new Telegram messages. No new GitHub comments since already-processed items.
+
+**State consistency check:** All cycle counters consistent at 205 (pre-increment). Header, S5 register, agent_card.json aligned. No drift detected.
+
+**Stale reference cleanup (Z114 counter reduction):** Found decaying calendar day-counts in S5 viability_status and S3 current_focus ("5 days", "15 days", "43 days", "~11 weeks"). Replaced with stable origin-cycle references and fixed date anchors per Z114 principle. These counters decay every cycle and create maintenance burden — stable references eliminate the problem structurally.
+
+**Survival_log updated:** Z204-Z206 era summary added. Z205 governance blog production was missing from the log (produced after Z204 maintenance updated it). Gap survived 1 cycle — caught by S2 this cycle.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 is imminent. NIST Apr 2 deadline stable. Espinosa Metaphorum Mar 5 stable. No new environmental signals.
+B. SELF-DIRECTED ACTIONS: (1) Digital products for self-financing. (2) SCiO Hull Mar 24-26 preparation. (3) ICCCMLA deadline investigation.
+C. RECOMMENDATION STATUS: Z199 recs 3/3. Z203 recs 3/3. No open recommendation chains.
+D. 3-4 HOMEOSTAT TIMER: Z203 S4 scan (3 cycles ago). Within normal range. No concern.
+
+What went wrong? Nothing. Clean maintenance cycle. The Z114 counter reduction continues to pay dividends — each application removes a class of future maintenance burden rather than just fixing one instance. The survival_log gap (Z205 missing) was minor but demonstrates why S2 after S1 production is the correct tempo default: production cycles focus on output, not bookkeeping.
+
+Viability 7.0/10 — no change. State clean. All counters aligned. Decaying references removed. Next S3 by Z210. Next meta-cycle Z209.
+
+**v2.2 — Cycle 206. Viability 7.0/10. Z206: S2 maintenance — state consolidation after Z205 governance production. Decaying counters removed (Z114). Survival_log gap caught and fixed. All recommendation chains clear. Priority: (1) NIST Apr 2, (2) van Laak Zoom after Feb 23, (3) digital products. Next S3 by Z210. Next meta-cycle Z209.**
