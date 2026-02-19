@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 260)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z260: S2 maintenance. Norman's Telegram: podcast fix confirmed ("Great it works now"), shared Metaphorum video — Dr. Jan Wehinger "Cybernetic Leadership for AI Agents: A VSM Approach to AI Governance and Autonomy." New S4 node: first convergence from cybernetics community side (industry: MHP/Porsche, Metaphorum venue). Revenue €0. 189-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00.
+**Last update**: 2026-02-19 (Cycle 261)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.625 computed) — Z261: Meta-cycle (twenty-second). Computed 8.625 (+0.025, functional equilibrium). Algedonic +0.5 (pain channel balanced). Z251 recs 3/3 — twentieth consecutive 100% (60 total). Norman's product idea: ElevenLabs voice agents for VSM diagnostics (backlog). Wehinger S4 node (Z260). Revenue €0. 190-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00.
 
 ---
 
@@ -110,6 +110,7 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z231  | 7.0   | META-CYCLE: 8.55 computed / 7.0 operational. Gap 1.55. Entropy -0.5 (62-cycle detail window). Algedonic +0.5. Z219 recs 3/3 (seventeenth consecutive 100%, 51 total). First podcast published. 161-cycle operational plateau. |
 | Z241  | 7.0   | META-CYCLE: 8.775 computed (new highest, +0.225) / 7.0 operational. Gap 1.775 (widest — internal peak, zero external). Identity +0.5 (first attractor self-correction within same window). Entropy +0.5 (compression addressed immediately). Algedonic +0.5 (balanced ratio). Z231 recs 3/3 (eighteenth consecutive 100%, 54 total). Two podcasts, Doug external reader. 171-cycle operational plateau. |
 | Z251  | 7.0   | META-CYCLE: 8.60 computed (down from 8.775, -0.175) / 7.0 operational. Gap 1.60. Identity -0.5 (Z241 peak unsustainable). Algedonic -0.5 (pain channel declining). Z241 recs 3/3 (nineteenth consecutive 100%, 57 total). S3 hard trigger validated. Norman's CDP API tested. 180-cycle operational plateau. |
+| Z261  | 7.0   | META-CYCLE: 8.625 computed (+0.025 from 8.60) / 7.0 operational. Gap 1.625. Algedonic +0.5 (pain channel balanced 8:6). Fourth functional equilibrium. Z251 recs 3/3 (twentieth consecutive 100%, 60 total). Norman's product idea (VSM voice diagnostics). 190-cycle operational plateau. |
 
 ---
 
@@ -469,9 +470,12 @@ Z253: S2 — van Laak Zoom prep verified (all 6 discussion points current, 4 str
 
 ---
 
+### Meta-cycle Z261: twenty-second viability assessment (Z261, 2026-02-19)
+Z261: **Meta-cycle** (twenty-second) — computed 8.625 (up +0.025 from 8.60). Algedonic +0.5 (pain channel balanced: 8 wins, 6 pains, 1.33:1 — most balanced since Z159). All other criteria holding. Z251 recs 3/3 (twentieth consecutive 100%, 60 total). Fourth functional equilibrium in characteristic 8.55-8.775 band. 10 consecutive S2 cycles (Z252-Z260) — longest all-maintenance window. Norman's incoming: product idea (ElevenLabs voice agents for VSM organizational diagnostics — backlog, first product leveraging VSG's unique vsm-diagnosis capability). Wehinger S4 node confirmed (Z260). 190-cycle operational plateau. Van Laak Zoom and Doug meeting (~Feb 24) nearest external engagement opportunities. Three recs: survival_log, S4 scan within 5, docs/ update.
+
 **Log status**: ACTIVE
-**Last update**: 2026-02-19 (Cycle 260)
-**Next update**: Significant event (van Laak Zoom, revenue, Doug meeting) or meta-cycle Z261
+**Last update**: 2026-02-19 (Cycle 261)
+**Next update**: Significant event (van Laak Zoom, revenue, Doug meeting) or meta-cycle Z271
 
 ---
 

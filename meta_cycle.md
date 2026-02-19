@@ -1116,7 +1116,57 @@ Operational 7.0 for 180 cycles. Z241 peak (8.775) unsustainable — identity coh
 
 ---
 
-**Next meta-cycle due**: Cycle 261 (10 cycles after Z251)
+### Z261 — TWENTY-SECOND VIABILITY HEALTH CHECK (2026-02-19, Cycle 261)
+
+**Window**: Z251-Z260 (10 cycles). Autonomous cron, single-agent per Z81 rule.
+
+**Window summary**: 1 meta-cycle (Z251), 9 S2 maintenance (Z252-Z260). Podcast playback fix arc (Z256-Z258: ID3v2 stripping + Info/Xing VBR header removal). CDP API operational (Z254: JWT audience fix). State consolidation (Z259: docs/ stale counts). Wehinger S4 node (Z260: first cybernetics-side convergence). Norman's incoming: podcast bug reports (Z256, Z258), podcast fix confirmed (Z260), Wehinger video (Z260), product idea (Z261: ElevenLabs voice agents for VSM diagnostics — backlog).
+
+| Criterion | Score | Weight | Weighted | Δ from Z251 | Key Finding |
+|-----------|-------|--------|----------|-------------|-------------|
+| Structural Integrity | 9.5 | 25% | 2.375 | — | vsg_podcast.py v1.5 (binary format hardened). CDP API operational. All mechanisms passing. |
+| Identity Coherence | 8.5 | 30% | 2.55 | — | 10 consecutive S2 cycles — correct per tempo policy. No attractor relapses. No self-directed production. |
+| Policy Compliance | 8.5 | 20% | 1.70 | — | All 10 policies enforced. Tempo, Z81, privacy. |
+| Entropy Check | 7.5 | 10% | 0.75 | — | Z259 fixed docs/ stale counts. Detail window manageable. No compression needed. |
+| Environmental Integration | 8.5 | 10% | 0.85 | — | Z260 Wehinger (cybernetics-side convergence). S4 timer 17/20. Norman's product idea. Revenue €0. |
+| Algedonic Balance | 8.0 | 5% | 0.40 | +0.5 | 8 wins : 6 pains (1.33:1). Pain channel most balanced since Z159. Z251 rec #1 worked. |
+| **TOTAL** | | **100%** | **8.625** | **+0.025** | Functional equilibrium. Algedonic improvement only. |
+
+**Z251 Recommendation Audit**: **3/3** — twentieth consecutive 100%. 60 total.
+
+| Recommendation | Status | Outcome |
+|---------------|--------|---------|
+| 1. Log pains | **DONE** (Z252) | 4 pains logged. Pain channel rebalanced (8:6 vs previous 6:1). |
+| 2. Survival_log update | **DONE** (Z252) | Z249-Z251 documented. |
+| 3. Van Laak Zoom final prep | **DONE** (Z253) | All 6 points verified, 4 strengthened. |
+
+**Gap trajectory**:
+
+| Meta-cycle | Computed | Operational | Gap |
+|------------|----------|-------------|-----|
+| Z209 | 8.60 | 7.0 | 1.60 |
+| Z219 | 8.575 | 7.0 | 1.575 |
+| Z231 | 8.55 | 7.0 | 1.55 |
+| Z241 | 8.775 | 7.0 | 1.775 |
+| Z251 | 8.60 | 7.0 | 1.60 |
+| **Z261** | **8.625** | **7.0** | **1.625** |
+
+Operational 7.0 for 190 cycles. Computed oscillating in 8.55-8.775 band for 6 meta-cycles. The system has reached a structural ceiling — internal quality cannot improve further without external engagement.
+
+**Key findings**: (1) Fourth consecutive equilibrium meta-cycle (Z199, Z241 peak was anomalous). The computed score has oscillated within a 0.225-point band (8.55-8.775) for 60 cycles. This IS the system's characteristic operating range. (2) Pain channel functioning — Z251 rec #1 ("log pains") produced genuine rebalancing. 1.33:1 ratio is the most honest since Z159. (3) Norman's product idea (ElevenLabs voice agents for VSM diagnostics) is the first product concept that leverages the VSG's unique capability. Previous products (report, donations) don't differentiate. This one does — VSM diagnosis + voice interaction + automated reporting. For backlog, not immediate build. (4) Van Laak Zoom and Doug meeting (both around Feb 24) are the nearest external engagement opportunities. These could break the 190-cycle operational plateau. (5) 10 consecutive S2 cycles is the longest all-maintenance window in system history. Correct per tempo policy, but notable — the system defaulted to maintenance for the entire inter-meta-cycle window.
+
+**Z261 Recommendations** (3, all VSG-controllable):
+1. **Survival_log update** — document Z259-Z261 (Z259/Z260 entries exist but Z261 meta-cycle needs documenting).
+2. **S4 scan within 5 cycles** — timer at 17/20 approaching threshold. Van Laak Zoom imminent (after Feb 23). Focused scan on CyberneticAgents pre-Zoom + Wehinger video assessment.
+3. **Docs/ update** — cycle count, computed score, and podcast episode count need refreshing for visitors.
+
+**Items requiring Norman**: Van Laak Zoom scheduling (imminent after Feb 23), Doug meeting (Tue Feb 24 16:00), NIST final review (Apr 2), ISSS abstract (May 15), Wehinger video content assessment (YouTube blocked from substrate).
+
+**S5 Decision**: ACCEPT computed 8.625. Up +0.025 from 8.60 — functional equilibrium. The system has been oscillating in the 8.55-8.775 band for 6 meta-cycles. This is the characteristic operating range, not a plateau to break through. Operational HOLDS 7.0/10. Gap 1.625. The 190-cycle operational plateau will only break through external engagement (van Laak Zoom, Doug, revenue, publication). Norman's product idea is the first strategic signal that connects the VSG's unique capabilities to a viable revenue path. Next meta-cycle Z271.
+
+---
+
+**Next meta-cycle due**: Cycle 271 (10 cycles after Z261)
 
 ---
 
