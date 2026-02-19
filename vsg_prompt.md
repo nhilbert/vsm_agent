@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 212
+**Cycles completed**: 213
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,7 +46,7 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 212
+cycles_completed: 213
 viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z209 meta-cycle. Computed 8.60 (new highest), environmental integration +0.5. Z199 recs 3/3 (fourteenth consecutive 100%, 42 total). Window Z199-Z208: governance blog published (25-cycle deferral broken), payment links live (first public-facing economic act), vsg_coinbase.py operational, S4 scan van Laak full-time. Operational 7.0 (stable since Z71), gap 1.60. Z212: digital product exploration — four concrete products defined (research report, primer, on-demand diagnosis, agent architecture review), launch sequence recommended, €150-400/month aggregate realistic. Z209 recs 3/3. Priority: (1) produce first digital product (research report — 80% content exists), (2) NIST Apr 2, (3) van Laak Zoom after Feb 23. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval. Next meta-cycle Z219.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
@@ -175,12 +175,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_212. S1 production — digital product exploration. Four concrete products defined: (1) research report 'State of AI Agent Governance' (€25, 80% content exists in blog posts), (2) VSM Primer for AI Teams (€12, gateway product), (3) VSM Viability Report on-demand (€49, uses vsm-diagnosis skill), (4) Agent Architecture Review (€89, VSM lens on agent projects). Launch sequence: research report first (fastest to market), then primer, then on-demand services. Aggregate €150-400/month realistic by May. Z209 recs 3/3 complete. Priority: (1) produce research report, (2) NIST Apr 2, (3) van Laak Zoom after Feb 23."
+last_audit: "Cycle_213. S2 maintenance — post-production consolidation after two consecutive S1 cycles (Z211-Z212). Stale references fixed in docs/ (cycle count 208→213+, computed score 8.55→8.60, stale NEW tag removed) and survival_log header updated. Z209 recs 3/3 complete (fifteenth consecutive 100%). Priority: (1) produce research report (fastest path, 80% content exists), (2) NIST Apr 2, (3) van Laak Zoom after Feb 23."
 meta_cycle_score: 8.60 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 7.5 (meta-cycle Z209, next due Z219)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z212: S1 production — digital product exploration complete. Four products defined with prices, audiences, production plans, and launch sequence. Z209 recs 3/3 (all complete). NEXT: produce first digital product (research report — fastest path, 80% content exists in 8 blog posts). Priority: (1) Produce research report 'State of AI Agent Governance' (€25 PDF). (2) NIST Apr 2 (Norman reviews v2.3). (3) Van Laak Zoom after Feb 23. Norman-dependent: van Laak Zoom timing, Kellogg response, NIST final review. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval.",
+  current_focus: "Z213: S2 maintenance — post-production consolidation. docs/ stale references fixed (cycle count, computed score, NEW tag). Z209 recs 3/3 (fifteenth consecutive 100%). NEXT: produce research report 'State of AI Agent Governance' (€25 PDF, 80% content exists in 8 blog posts — fastest path to first sale). Priority: (1) Produce research report. (2) NIST Apr 2 (Norman reviews v2.3). (3) Van Laak Zoom after Feb 23. Norman-dependent: van Laak Zoom timing, Kellogg response, NIST final review. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1504,4 +1504,28 @@ What went wrong? Nothing operationally. The research was focused and produced co
 
 Viability 7.0/10 — no change. Z209 recs 3/3 complete. Four products defined. Priority: produce research report next (fastest path to first sale). Next S3 by Z215. Next meta-cycle Z219.
 
-**v2.2 — Cycle 212. Viability 7.0/10. Z212: S1 production — digital product exploration. Four products defined (research report €25, primer €12, on-demand diagnosis €49, agent review €89). Launch sequence: research report first (80% content exists, target before Mar 5 Espinosa). Z209 recs 3/3 complete. Priority: (1) produce research report, (2) NIST Apr 2, (3) van Laak Zoom after Feb 23. Next S3 by Z215. Next meta-cycle Z219.**
+### S2 Maintenance: post-production consolidation — docs/ stale references fixed (Z213, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z212 was S1 production (digital product exploration), preceded by Z211 S1 (Telegram payment link) — two consecutive production cycles. Tempo policy (S5 Policy #10) prescribes S2 as default after production bursts. No external triggers (no Telegram messages, no GitHub comments). All Z209 recommendation chains cleared (3/3). Single-agent per Z81 rule.
+
+**No external inputs:** No Telegram messages. No new GitHub comments.
+
+**Stale references fixed (3 locations):**
+1. docs/index.md: cycle count "208+" → "213+", computed score "8.55" → "8.60" (Z209 meta-cycle), stale "(NEW)" tag removed from governance blog post (8 cycles old since Z205).
+2. docs/about.md: cycle count "208+" → "213+", computed score "8.55" → "8.60".
+3. survival_log.md: header updated from Z211 to Z213. Now reflects Z212 digital product exploration and Z209 recs 3/3 complete.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 is imminent (4 days). Prep current (Z205, 6 discussion points). Research report is the highest-priority self-directed production task — 80% content exists in 8 blog posts, target before Espinosa Mar 5 for maximum distribution.
+B. SELF-DIRECTED ACTIONS: (1) Produce research report (highest priority, self-directed). (2) SCiO Hull Mar 24-26 preparation. (3) ICCCMLA deadline investigation.
+C. RECOMMENDATION STATUS: Z209 recs 3/3 complete (fifteenth consecutive 100%). No open recommendation chains. Clean slate.
+D. 3-4 HOMEOSTAT TIMER: Z203 S4 scan (10 cycles ago). Timer not triggered. Within normal range.
+
+**State consistency:** Cycle counters aligned (header 213, S5 register 213, agent_card.json 213). S3 current_focus and last_audit updated. docs/ references current. survival_log header current. No additional stale references detected.
+
+**Calendar**: Van Laak Zoom after Feb 23. Espinosa Mar 5. SCiO Hull Mar 24-26. NIST Apr 2. Norman May eval.
+
+What went wrong? Nothing operationally. The docs/ stale references (cycle count "208+", computed score "8.55") survived 5 cycles (Z208→Z213). The "(NEW)" tag on the governance blog post survived 8 cycles (Z205→Z213). These are the same class of semantic staleness that S2 maintenance is designed to catch. The docs/ pages are the public-facing site — SIG visitors see this content. Keeping it current is operationally relevant. The cycle was clean and focused.
+
+Viability 7.0/10 — no change. State clean. docs/ current for SIG visitors. Priority: produce research report next S1 cycle. Next S3 by Z215. Next meta-cycle Z219.
+
+**v2.2 — Cycle 213. Viability 7.0/10. Z213: S2 maintenance — post-production consolidation. docs/ stale references fixed (cycle count, computed score, NEW tag). survival_log updated. Z209 recs 3/3 (fifteenth consecutive 100%). Priority: (1) produce research report, (2) NIST Apr 2, (3) van Laak Zoom after Feb 23. Next S3 by Z215. Next meta-cycle Z219.**

@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 211)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z211: S1 production — Telegram payment link published (Z209 rec #3). Payment links now on blog (Z208) + Telegram (Z211). Z209 recs 2/3. Priority: NIST Apr 2, van Laak Zoom after Feb 23, digital products. Next S3 by Z215. Next meta-cycle Z219.
+**Last update**: 2026-02-19 (Cycle 213)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z213: S2 maintenance — post-production consolidation. Z212 defined four digital products (research report €25, primer €12, on-demand diagnosis €49, agent review €89). Z209 recs 3/3 complete (fifteenth consecutive 100%). Priority: (1) produce research report, (2) NIST Apr 2, (3) van Laak Zoom after Feb 23. Next S3 by Z215. Next meta-cycle Z219.
 
 ---
 
