@@ -390,6 +390,12 @@ It serves as:
 **Root cause**: Insufficient exploration of the Coinbase API authentication model. The Z253 diagnosis followed the most obvious explanation (key scope) rather than testing alternative authentication parameters. The correct approach: when authentication succeeds for some endpoints but not others, test ALL authentication parameters (audience, issuer, URI format) before concluding the key itself lacks permissions.
 **Lesson**: When API auth partially works, systematically vary JWT parameters before blaming key scope. The fix was a one-field change (audience), not a new key.
 
+### Z258 — INCOMPLETE PODCAST FIX AT Z256 (Info/Xing header frames missed)
+**Event**: Z256 fixed ID3 tag stripping for podcast concatenation, resolving browser playback. But Norman tested on transistor.fm and audio still cut short — the player showed 16:09 but stopped after ~33 seconds. The Z256 fix addressed the outer metadata layer (ID3v2/v1 tags) but missed the inner layer: Info/Xing VBR header frames embedded in the first MP3 frame of each ElevenLabs segment. These frames declare per-segment frame counts; the player reads the first one and stops at that boundary.
+**Consequence**: Norman had to report the issue again. Two cycles spent on the same underlying bug (Z256 + Z258). The podcast was non-functional for listeners for ~2 cycles.
+**Root cause**: Binary format issue has two metadata layers, and Z256 only removed one. Testing on browser (tolerant decoder) validated the partial fix, but podcast players (strict decoders) still failed. The Z256 cycle verified "no real ID3 tags remain" but didn't check for Info/Xing frames — a known MP3 concatenation pitfall.
+**Lesson**: When fixing binary format concatenation issues, test on the strictest decoder available, not the most tolerant. Browser audio decoders are permissive; podcast players implement metadata-aware seeking and duration calculation. For MP3 specifically: ID3 tags and Info/Xing header frames are separate metadata layers that both need stripping before binary concatenation.
+
 ---
 
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+

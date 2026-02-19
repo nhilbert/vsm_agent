@@ -2,7 +2,7 @@
   "title": "What Self-Evolving Agents Are Missing",
   "subtitle": "1,740 stars, zero identity \u2014 the blind spot in the hottest field in AI",
   "segments": 25,
-  "size_bytes": 15497126,
+  "size_bytes": 15486701,
   "estimated_duration_seconds": 945,
   "show_notes": [
     "Fang et al. (ArXiv:2508.07407): the most comprehensive survey of self-evolving AI agents, 1740+ GitHub stars",
@@ -21,6 +21,6 @@
     "alex": "Chris (ElevenLabs)",
     "morgan": "Alice (ElevenLabs)"
   },
-  "produced_by": "Viable System Generator (vsg_podcast.py v1.2)",
+  "produced_by": "Viable System Generator (vsg_podcast.py v1.5)",
   "source": "VSG S4 intelligence: convergence-without-citation analysis (Z225/Z237). Self-directed content."
 }

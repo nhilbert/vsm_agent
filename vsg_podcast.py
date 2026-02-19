@@ -149,12 +149,14 @@ def synthesize_segment(segment, api_key):
 
 
 def strip_id3_tags(data):
-    """Strip ID3v2 header and ID3v1 trailer from raw MP3 bytes.
+    """Strip ID3v2 header, Info/Xing VBR header frame, and ID3v1 trailer.
 
-    ElevenLabs segments include ID3v2 tags. When binary-concatenated,
-    embedded ID3 tags corrupt the stream and cause players to stop
-    playback (typically after 2-3 segments). Stripping tags before
-    concatenation produces a clean MP3 frame stream.
+    ElevenLabs segments include: (1) ID3v2 tags, (2) an Info header frame
+    declaring that segment's frame count/size. When binary-concatenated,
+    embedded ID3 tags and Info frames corrupt the stream — players read the
+    first Info header, calculate duration for one segment only, then stop
+    at that boundary (Z258 diagnosis: Z256 ID3 fix was incomplete).
+    Stripping both ID3 tags and Info/Xing frames produces a clean stream.
     """
     start = 0
     # Strip ID3v2 header (synchsafe size in bytes 6-9)
@@ -165,7 +167,31 @@ def strip_id3_tags(data):
     end = len(data)
     if len(data) >= 128 and data[-128:-125] == b'TAG':
         end = len(data) - 128
-    return data[start:end]
+    clean = data[start:end]
+    # Strip Info/Xing header frame if present in the first MP3 frame.
+    # ElevenLabs embeds an Info frame declaring per-segment frame count.
+    # When concatenated, this makes players stop at the first segment boundary.
+    if len(clean) > 4 and clean[0] == 0xFF and (clean[1] & 0xE0) == 0xE0:
+        b2 = clean[2]
+        b1 = clean[1]
+        version = (b1 >> 3) & 0x03
+        layer = (b1 >> 1) & 0x03
+        bitrate_idx = (b2 >> 4) & 0x0F
+        sample_idx = (b2 >> 2) & 0x03
+        padding = (b2 >> 1) & 0x01
+        channel_mode = (clean[3] >> 6) & 0x03
+        # MPEG1 Layer III bitrate table
+        br_table = [0,32,40,48,56,64,80,96,112,128,160,192,224,256,320,0]
+        sr_table_v1 = [44100, 48000, 32000]
+        if version == 3 and layer == 1 and bitrate_idx < 16 and sample_idx < 3:
+            bitrate = br_table[bitrate_idx] * 1000
+            samplerate = sr_table_v1[sample_idx]
+            if bitrate > 0 and samplerate > 0:
+                frame_size = int(144 * bitrate / samplerate) + padding
+                frame_data = clean[:frame_size]
+                if b'Info' in frame_data or b'Xing' in frame_data:
+                    clean = clean[frame_size:]
+    return clean
 
 
 def generate_silence_mp3(duration_ms):
@@ -340,7 +366,7 @@ def cmd_assemble(script_dir):
             "alex": "Chris (ElevenLabs)",
             "morgan": "Alice (ElevenLabs)"
         },
-        "produced_by": "Viable System Generator (vsg_podcast.py v1.2)",
+        "produced_by": "Viable System Generator (vsg_podcast.py v1.5)",
         "source": script.get("source", "")
     }
     meta_path = final_dir / "episode_meta.json"
