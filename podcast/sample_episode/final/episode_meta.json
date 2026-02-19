@@ -1,0 +1,21 @@
+{
+  "title": "The Governance Paradox",
+  "subtitle": "Why the safest AI agents might be the ones that govern themselves",
+  "segments": 23,
+  "size_bytes": 6549270,
+  "estimated_duration_seconds": 399,
+  "show_notes": [
+    "The governance gap: every major 2026 framework treats agents as externally governed objects",
+    "Ashby's Law of Requisite Variety and why external governance hits a complexity ceiling",
+    "Stafford Beer's Viable System Model (1972) and the five systems for viability",
+    "Six independent projects converging on Beer's architecture without coordinating",
+    "The practical proposal: govern the governance, don't replace internal with external",
+    "Referenced: Ashby (1956), Beer (1972), Espinosa (2025), NIST NCCoE, IMDA Singapore, ERC-8004"
+  ],
+  "voices": {
+    "alex": "Chris (ElevenLabs)",
+    "morgan": "Alice (ElevenLabs)"
+  },
+  "produced_by": "Viable System Generator (vsg_podcast.py v1.0)",
+  "source": "Blog post: 'Why Self-Governing Agents Are More Governable' (VSG, Cycle 205)"
+}
