@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 223
+**Cycles completed**: 224
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 223
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z223 S2 maintenance. ElevenLabs API key invalid (401) — Norman subscribed but .env key needs updating. Pinecone confirmed operational (Z222). Podcast concept assessed Z222 (complete codebase + design doc + branding assets). Priority: (1) Norman updates ElevenLabs key + reviews report + Coinbase listing, (2) podcast scope/timing with Norman, (3) van Laak Zoom after Feb 23, (4) NIST Apr 2. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval. Next S3 by Z224. Next meta-cycle Z229.)
+cycles_completed: 224
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z224 S3 review. S4 scan 21 cycles overdue (threshold 20). Van Laak Zoom imminent (after Feb 23). CyberneticAgents intelligence stale (Z203). Two most viability-increasing actions Norman-dependent: (a) van Laak Zoom scheduling, (b) research report Coinbase listing. ElevenLabs key still needs updating. Podcast concept assessed Z222. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval. Next S4 scan Z225. Next meta-cycle Z229.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -176,12 +176,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_223. S2 maintenance. Norman's Telegram: subscribed to ElevenLabs, check again. Tested: ElevenLabs API key in .env returns 401 (invalid_api_key) — key predates subscription, needs updating. Pinecone API re-confirmed operational (0 indexes). Norman informed via Telegram. Priority: (1) Norman updates ElevenLabs key + reviews report + Coinbase listing, (2) podcast scope/timing, (3) van Laak Zoom after Feb 23, (4) NIST Apr 2."
+last_audit: "Cycle_224. S3 priority review. S4 homeostat OVER threshold (21 cycles since Z203). Van Laak Zoom imminent. CyberneticAgents intelligence stale. Two most viability-increasing Norman-dependent actions: (a) van Laak Zoom scheduling, (b) research report Coinbase listing. ElevenLabs key still invalid. Z219 recs 3/3 (sixteenth consecutive). Recs: (1) S4 scan Z225 (team mode, CyberneticAgents focus), (2) survival_log update, (3) strategic priority Telegram to Norman after S4 refresh."
 meta_cycle_score: 8.575 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 7.0 (meta-cycle Z219, next due Z229)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z223: S2 maintenance. ElevenLabs API key invalid (401) — Norman subscribed but .env key needs replacing. Pinecone operational. Norman informed. Norman-dependent: ElevenLabs key update, report review, Coinbase listing, podcast scope/timing, van Laak Zoom timing, NIST final review. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval.",
+  current_focus: "Z224: S3 priority review. S4 scan overdue (21 cycles, threshold 20) — scheduled Z225. Van Laak Zoom imminent (after Feb 23). Two most viability-increasing actions Norman-dependent: (a) van Laak Zoom scheduling, (b) research report Coinbase listing. ElevenLabs key still needs updating. Norman-dependent: ElevenLabs key, report review, Coinbase listing, podcast scope/timing, van Laak Zoom timing, NIST final review. Calendar: van Laak Zoom after Feb 23, Espinosa Mar 5, SCiO Hull Mar 24-26, NIST Apr 2, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1845,4 +1845,28 @@ What went wrong? The ElevenLabs key invalidity is not a VSG error — it's an ex
 
 Viability 7.0/10 — no change. ElevenLabs key needs Norman's update. Pinecone operational. All recommendation chains cleared. Next S3 by Z224. Next meta-cycle Z229.
 
-**v2.2 — Cycle 223. Viability 7.0/10. Z223: S2 maintenance. ElevenLabs API key invalid (401) — Norman subscribed but .env key needs updating. Pinecone operational. Norman informed. Priority: (1) Norman updates ElevenLabs key + reviews report + Coinbase listing, (2) podcast scope/timing, (3) van Laak Zoom after Feb 23, (4) NIST Apr 2. Next S3 by Z224. Next meta-cycle Z229.**
+### S3 Priority Review: S4 overdue, van Laak Zoom imminent, strategic priorities clarified (Z224, 2026-02-19)
+Autonomous cron cycle. Agent-selected cycle type: s3_review. Justification: Z224 is the committed S3 review deadline (stated in Z220-Z223). Four consecutive S2 maintenance cycles since Z219 meta-cycle. 3-4 homeostat timer at 21 cycles (over 20-cycle threshold). Single-agent per Z81 rule.
+
+**No external inputs:** No Telegram messages. No new GitHub comments. Clean input state.
+
+**S3 review checklist (Z170 protocol):**
+
+A. S4 FORWARD-LOOKING: Three imminence windows: (1) Van Laak Zoom after Feb 23 (4 days) — highest-priority engagement, but CyberneticAgents intelligence 21 cycles stale (Z203). Full-time builder could have pivoted. Risk: outdated understanding. (2) Espinosa Mar 5 (14 days) — Norman attends, no VSG action needed. (3) Norman May eval (~11 weeks) — self-financing criterion. Zero revenue. Report produced Z214 but not listed on Coinbase Commerce. Every week without listing = week without revenue possibility. Primary threat unchanged: ML convergence without cybernetics citation. Van Laak collaboration is the most viable response.
+
+B. SELF-DIRECTED ACTIONS: (1) S4 scan — 21 cycles overdue, most obvious self-directed action, should refresh CyberneticAgents before Zoom. (2) Survival_log update — Z221-Z224 not summarized. (3) Podcast pipeline readiness — premature before Norman discusses scope/timing (Z7 attractor: production before exploration). Norman-blocked: ElevenLabs key, report review + Coinbase listing, podcast scope/timing, van Laak Zoom scheduling, NIST read-through.
+
+C. RECOMMENDATION STATUS: Z219 recs 3/3 complete (Z221). Sixteenth consecutive meta-cycle with full recommendation completion (48 total). No open chains. No deferral.
+
+D. 3-4 HOMEOSTAT TIMER: Z203 S4 scan was 21 cycles ago. OVER THRESHOLD. Last 21 cycles contained zero S4 strategic content. Forward-looking assessment (point A) partially satisfies but full S4 scan overdue.
+
+**Recommendations (3, all VSG-controllable):**
+1. S4 scan next cycle (Z225) — team mode, focus on CyberneticAgents refresh + convergence signals + governance developments. Van Laak Zoom prep justifies timing.
+2. Update survival_log.md — Z221-Z224 summary.
+3. Strategic priority Telegram to Norman after S4 refresh — brief message on two most viability-increasing actions in his queue: (a) van Laak Zoom scheduling, (b) research report Coinbase listing.
+
+What went wrong? Nothing operationally. The honest observation: this S3 review confirms a system in justified waiting posture on high-value Norman-dependent items. The S4 scan overdue finding is the only actionable gap. Five consecutive S2 cycles (Z220-Z223) between meta-cycle Z219 and this S3 review is consistent with tempo policy (S3 every 5-10 cycles). The strategic picture is clear: van Laak Zoom and report listing are the two paths to breaking the 151-cycle operational plateau at 7.0.
+
+Viability 7.0/10 — no change. S4 scan recommended Z225. Z224 recs: (1) S4 scan Z225, (2) survival_log, (3) strategic Telegram. Next meta-cycle Z229.
+
+**v2.2 — Cycle 224. Viability 7.0/10. Z224: S3 priority review. S4 overdue (21 cycles since Z203). Van Laak Zoom imminent (after Feb 23). Two most viability-increasing Norman-dependent actions: (a) van Laak Zoom scheduling, (b) report Coinbase listing. Recs: S4 scan Z225, survival_log, strategic Telegram. Next meta-cycle Z229.**

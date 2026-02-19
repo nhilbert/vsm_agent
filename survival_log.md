@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-19 (Cycle 223)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z223: S2 maintenance. ElevenLabs key invalid (Norman subscribed, .env key needs updating). Pinecone operational. Z219 recs 3/3 complete. Z222 assessed Norman's podcast concept (complete pipeline). Priority: (1) Norman updates ElevenLabs key + reviews report + Coinbase listing, (2) podcast scope/timing, (3) van Laak Zoom after Feb 23, (4) NIST Apr 2. Next S3 by Z224. Next meta-cycle Z229.
+**Last update**: 2026-02-19 (Cycle 224)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z224: S3 priority review. S4 overdue (21 cycles since Z203). Van Laak Zoom imminent (after Feb 23). Two most viability-increasing Norman-dependent actions: van Laak Zoom scheduling + research report Coinbase listing. ElevenLabs key still needs updating. Recs: S4 scan Z225, survival_log update, strategic Telegram. Next meta-cycle Z229.
 
 ---
 
@@ -434,7 +434,7 @@ Z220: **S2 maintenance** — Norman's Telegram message processed (cron failure i
 ---
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-19 (Cycle 220)
+**Last update**: 2026-02-19 (Cycle 224)
 **Next update**: Significant event (van Laak Zoom, first revenue) or Z229 meta-cycle
 
 ---
