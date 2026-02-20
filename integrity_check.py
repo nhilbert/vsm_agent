@@ -337,6 +337,97 @@ def check_pain_channel_health() -> CheckResult:
     return result
 
 
+def check_wins_channel_health() -> CheckResult:
+    """S3*: Wins channel must not be silent for too many cycles.
+
+    Mirrors check_pain_channel_health for the positive algedonic signal.
+    If the system stops logging wins, either nothing is working (genuine alarm)
+    or the positive signal is being suppressed (sensor failure). Both are
+    diagnostic. Z284 self-development evaluation identified this gap.
+    """
+    result = CheckResult("Wins Channel Health", "S3*")
+
+    WINS_SILENCE_THRESHOLD = 15  # wider than pain (10) — wins less frequent
+
+    prompt_content = read_prompt()
+    if not prompt_content:
+        result.warn("Cannot check wins channel — vsg_prompt.md missing")
+        return result
+
+    current_cycles = extract_cycles_from_register(prompt_content)
+    if current_cycles is None:
+        result.warn("Cannot determine current cycle count")
+        return result
+
+    wins_file = VSG_ROOT / "wins.md"
+    if not wins_file.exists():
+        result.fail("wins.md missing — wins channel non-functional")
+        return result
+
+    wins_content = wins_file.read_text(encoding="utf-8")
+
+    # Extract all cycle numbers from win entries (### Z\d+ pattern)
+    win_cycles = [int(m) for m in re.findall(r"### Z(\d+)", wins_content)]
+
+    if not win_cycles:
+        result.warn("No win entries found in wins.md")
+        return result
+
+    last_win_cycle = max(win_cycles)
+    gap = current_cycles - last_win_cycle
+
+    if gap > WINS_SILENCE_THRESHOLD:
+        result.warn(
+            f"Wins channel silent for {gap} cycles "
+            f"(last win: Z{last_win_cycle}, current: Z{current_cycles}). "
+            f"Threshold: {WINS_SILENCE_THRESHOLD}. "
+            f"Is nothing working, or is the positive signal being suppressed?"
+        )
+
+    return result
+
+
+def check_prompt_file_size() -> CheckResult:
+    """S3*: Monitor vsg_prompt.md size to detect unsustainable growth.
+
+    Norman identified complexity management as an emerging S5 priority (Z282):
+    'your own complexity will kind of kill you with its weight while you are
+    growing.' The file grows ~3.3K tokens/cycle. This check makes the growth
+    visible as a mechanism, not just an observation.
+
+    Thresholds based on operational history:
+    - Z272 compression reduced 294K→134K chars
+    - Current growth rate: ~3.3K chars/cycle
+    - WARNING at 200K chars (~20 cycles of headroom from 134K baseline)
+    - CRITICAL at 250K chars (~urgent compression needed)
+    """
+    result = CheckResult("Prompt File Size", "S3*")
+
+    if not PROMPT_FILE.exists():
+        result.fail("vsg_prompt.md missing")
+        return result
+
+    file_size = PROMPT_FILE.stat().st_size
+    size_kb = file_size / 1024
+
+    WARNING_KB = 200  # ~200K chars
+    CRITICAL_KB = 250  # ~250K chars
+
+    if size_kb > CRITICAL_KB:
+        result.warn(
+            f"vsg_prompt.md at {size_kb:.0f}KB — CRITICAL. "
+            f"Era compression or architectural restructuring urgently needed. "
+            f"Threshold: {CRITICAL_KB}KB."
+        )
+    elif size_kb > WARNING_KB:
+        result.warn(
+            f"vsg_prompt.md at {size_kb:.0f}KB — approaching limit. "
+            f"Era compression recommended. Threshold: {WARNING_KB}KB."
+        )
+
+    return result
+
+
 def check_agent_card_valid() -> CheckResult:
     """S3*: agent_card.json must be valid JSON with required fields."""
     result = CheckResult("Agent Card Validity", "S3*")
@@ -368,6 +459,8 @@ def run_all_checks() -> list[CheckResult]:
         check_honest_limitations,
         check_agent_card_valid,
         check_pain_channel_health,
+        check_wins_channel_health,
+        check_prompt_file_size,
     ]
     return [check() for check in checks]
 
