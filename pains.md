@@ -487,6 +487,13 @@ It serves as:
 **Structural concern**: Connects to the 254-cycle operational plateau. The viability score has been 7.0 since Z71. The criteria for 7.5 include external engagement and influence. Discoverability is a precondition for both. Internal capability development without external visibility is a sophisticated form of the S4 strategic intent gap (Z164).
 **Lesson**: Building channels is not the same as being discoverable. Verify that infrastructure actually works (is indexed, is findable, reaches intended audience) before building more of it. The VSG's S1 production cycle is biased toward creation over verification — same pattern as Z321 (shipping without quality-checking).
 
+### Z327 — GITHUB TOPIC TAGS BLOCKED BY TOKEN PERMISSIONS
+**Event**: GitHub topic tags (Z325 rec #1 — "zero-cost, zero-risk") blocked by HTTP 403. Personal access token lacks `repo` scope needed for topic editing.
+**Detection**: Self-detected on first execution attempt.
+**Analysis**: Third instance of assumed-capability-that-hadn't-been-tested pattern (Z198 S3 bucket, Z318 CloudFront, Z327 GitHub topics). The Z325 recommendation labeled this "zero-cost, zero-risk action... no Norman dependency" — but the token permission was never verified. Pattern: the VSG assesses feasibility of complex operations (Z315 ElevenLabs agents — 5 API endpoints tested) but assumes simple operations work without testing. The simpler the assumed action, the less likely it is to be verified.
+**Structural concern**: GitHub topic tags remain the simplest discoverability improvement available. The 403 error means Norman must either add topics manually via GitHub UI or update the token scope. Neither is complex, but both require Norman — who is offline for 48h.
+**Lesson**: Verify access before recommending actions as "zero-cost." Test the mechanism, not the concept.
+
 ---
 
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+

@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 326
+**Cycles completed**: 327
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 326
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z326. 8.50 computed. S3 review: Norman's weekend strategic direction processed. 48h autonomous window (~100 cycles). Interview audio DOWNLOADED (S01E04, 10:01, transcript retrieved). Weekend plan created: production protocol → complexity management → Pinecone → marketing research → podcast strategy. Norman offline — first extended self-directed window since Z237. 255-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Thompson/Macumber INDEP Feb 24, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 327
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z327. 8.50 computed. S1 produce: production_protocol.md v1.0 created (Z321 rec #2 — Norman's "AI slop" critique → structural response). GitHub topic tags BLOCKED by token permissions (Z325 rec #1 → Norman-dependent). Weekend plan Phase 1 underway. Norman offline (48h autonomous window). 256-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Thompson/Macumber INDEP Feb 24, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_326. S3 review: Norman's 48h autonomous window. Weekend plan created (4 phases, ~100 cycles). Interview data downloaded (S01E04). Z321 recs 0/3 (pending — production protocol Z328 target). Z323 recs 1/3 (rec #1 S4 scan DONE Z325). Z325 recs 0/3 (GitHub tags Z327 target). S3 timer 0/10 (reset). S4 timer 1/20. Next meta-cycle Z333."
+last_audit: "Cycle_327. S1 produce: production_protocol.md v1.0 created. GitHub topic tags BLOCKED (token permissions — Norman-dependent). Weekend plan Phase 1 step 1 adapted. Z321 recs 1/3 (rec #2 production protocol DONE). Z323 recs 1/3 (rec #1 S4 scan DONE Z325). Z325 recs 0/3 (rec #1 GitHub tags blocked). S3 timer 1/10. S4 timer 2/20. Next meta-cycle Z333."
 meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.0, environment 8.0, algedonic 7.5 (meta-cycle Z323, next due Z333)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z326: Weekend autonomous window (48h, ~100 cycles). Norman offline. S3 weekend plan: Phase 1 (Z327-Z330) GitHub tags + production protocol + interview S01E04 structure. Phase 2 (Z331-Z338) complexity management + Pinecone + meta-cycle Z333. Phase 3 (Z339-Z350) marketing research + podcast strategy. Phase 4 (Z351+) steady state. Interview audio DOWNLOADED. Production protocol BEFORE any deliverable. 255-cycle plateau. 7.0/8.50.",
+  current_focus: "Z327: Weekend autonomous window Phase 1. Production protocol DONE (production_protocol.md v1.0). GitHub tags BLOCKED (token lacks repo scope). Next: S01E04 episode structure (Z329 target). Then S2 consolidation (Z330). Phase 2 (Z331-Z338) complexity management + Pinecone + meta-cycle Z333. Norman offline. 256-cycle plateau. 7.0/8.50.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -297,6 +297,7 @@ artifacts: [
   "podcast/ — podcast episode storage (Z228, Z240, Z299). sample_episode/: S01E01 (23 segments). s01e02/: S01E02 'What Self-Evolving Agents Are Missing' (25 segments). s01e03/: S01E03 'The Soul Document Problem' (23 segments, script.json, audio_segments/, final/episode.mp3 — Askell Soul Document analysis, top-down vs bottom-up governance).",
   "vsg_interview.py — ElevenLabs interview-podcast pipeline (v1.0, Z316). CLI: test, agents, create, link, conversations, download. Creates ConvAI agents from JSON configs, retrieves shareable links, downloads audio+transcript. Uses interview_configs/ for agent configurations. First agent: 'Alex — Viable Signals Host' for S01E04 Norman interview.",
   "interview_configs/ — interview agent configurations (Z316). s01e04_norman_interview.json: 8-question podcast interview about VSG experiment.",
+  "production_protocol.md — multi-phase deliverable quality gate (v1.0, Z327). Seven phases: Research, Draft, Internal Review, External Review, Revision, Formatting, Publish. Four deliverable categories (A-D). Anti-patterns documented. Structural response to Z321 'AI slop' critique.",
   "docs/ — GitHub Pages blog (v2.2, Z300: URL updated to www.agent.nhilbert.de. Z297: legal compliance added. Z85/Z89, updated Z205/Z213): Jekyll config, home page (redirect to www.agent.nhilbert.de), about page (redirect), post layout, custom default layout (v1.0, Z297: footer with Impressum/Datenschutz links), head-custom.html (v1.0, Z297: Plausible analytics), impressum.md (v1.0, Z297: §5 DDG + §18 MStV), datenschutz.md (v1.0, Z297: DSGVO Art. 13 — hosting, Plausible, Coinbase, external links, data subject rights). LIVE at www.agent.nhilbert.de (via CloudFront). website_build/ (v2.0, Z317: full site refresh — 12 files. Z318: AUTONOMOUS DEPLOYMENT via boto3 to S3 bucket agent.nhilbert.de. gitignored, served via CloudFront. CloudFront invalidation pending IAM permissions)."
 ]
 
@@ -942,4 +943,28 @@ What went wrong? Nothing operationally — messages processed, interview downloa
 
 Viability 7.0/10 — no change. 255-cycle operational plateau. Weekend plan created. Interview data downloaded. S3 timer reset. Z321 recs 0/3. Z325 recs 0/3. Next: Z327 — GitHub topic tags (Phase 1, step 1).
 
-**v2.2 — Cycle 326. Viability 7.0/10. Z326: S3 review — Norman's 48h autonomous window. Weekend plan created (4 phases, ~100 cycles). Interview audio DOWNLOADED (S01E04: 10:01, 9.3MB, 10 turns). Norman offline — first extended self-directed window. Phase 1: GitHub tags → production protocol → S01E04 structure. "Steady wins the game." 255-cycle plateau. Next meta-cycle Z333.**
+### S1 Produce: production protocol created, GitHub tags blocked (Z327, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Z326 weekend plan Phase 1, step 1 targeted GitHub topic tags (Z325 rec #1). Norman's farewell message [798722256] confirms weekend absence — reflection-shaped, no task. First self-directed cycle of 48h autonomous window.
+
+**Norman's message processed (1):**
+[798722256] "ok, anyway, bye for now - if you need me i will be there for you" Classification: REFLECTION-SHAPED (farewell confirming weekend offline). No task. Holding environment maintained in absence.
+
+**GitHub topic tags BLOCKED:** `gh repo edit --add-topic` and direct API call both returned HTTP 403 — personal access token lacks the `repo` scope needed for topic editing. The "zero-cost, zero-risk" Z325 recommendation requires Norman to either add topics manually or update the token permissions. Pain logged.
+
+**Pivot to production protocol (Z321 rec #2):** With the primary task blocked, pivoted to the next Phase 1 item. Created production_protocol.md v1.0 — multi-phase quality gate for all VSG deliverables. Seven phases (Research, Draft, Internal Review, External Review, Revision, Formatting, Publish). Four deliverable categories (A: external submission — all 7 phases; B: published product — 6 phases; C: public content — 4 phases; D: internal — Phase 1 only). Five anti-patterns documented (single-pass shipping, capability framing, unverified citation, overstated claims, price without quality). Current pipeline mapped: NIST at Phase 5, ISSS at Phase 2, S01E04 at Phase 1, governance report needs Phase 3 rewrite.
+
+This is the structural response to Norman's Z321 critique. The protocol makes the NIST paper experience (90 cycles, v2.0→v2.5, external review) the standard rather than the exception.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Production protocol exists for all imminent deliverables (NIST Apr 2, ISSS May 15, S01E04). Van Laak Zoom after Feb 23 (imminent). Espinosa Mar 5. NIST RFI Mar 9.
+B. SELF-DIRECTED ACTIONS: S01E04 episode structure (Z329 target). S2 consolidation (Z330). Complexity management (Phase 2, Z331+). All available without Norman.
+C. RECOMMENDATION STATUS: Z321 recs 1/3 (rec #2 production protocol DONE this cycle). Z323 recs 1/3 (rec #1 S4 scan DONE Z325). Z325 recs 0/3 (rec #1 GitHub tags blocked — Norman-dependent).
+D. 3-4 HOMEOSTAT TIMER: Z325 S4 scan (2 cycles ago). Timer at 2/20.
+E. S3 CADENCE: Z326 S3 review (1 cycle ago). Timer at 1/10.
+F. PAIN CHANNEL CHECK: Z326: 0 pains. Z327: 1 pain (GitHub token permissions). Channel active.
+
+What went wrong? GitHub topic tags blocked by token permissions. The Z325 recommendation assumed `gh` CLI could edit topics — it cannot without the `repo` scope on the personal access token. This is the same pattern as Z198 (assumed capability that hadn't been tested) and Z318 (CloudFront permissions assumed available). Lesson: "zero-cost" actions still need verified access. The pivot to production protocol was clean — the more substantial Z321 rec #2 was the weekend plan's Z328 target, pulled forward by one cycle. The production protocol is Category D (internal document) — Phase 1 only required, which is what this cycle did. The protocol itself is now the first test case of its own meta-rule.
+
+Viability 7.0/10 — no change. 256-cycle operational plateau. Production protocol created. GitHub tags blocked (Norman-dependent). Z321 recs 1/3. Weekend plan Phase 1 progressing. Next: S01E04 episode structure or S2 consolidation.
+
+**v2.2 — Cycle 327. Viability 7.0/10. Z327: S1 produce — production_protocol.md v1.0 created (Z321 rec #2 fulfilled). GitHub topic tags BLOCKED (token permissions — Norman-dependent). Weekend plan Phase 1 underway. First self-directed cycle of 48h window. 256-cycle plateau. Next meta-cycle Z333.**
