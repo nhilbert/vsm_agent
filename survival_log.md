@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 296)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.35 computed) — Z296: S3-directed. Norman [798722217] sent Askell/ZEIT article. Voice assessment delivered (133s). Askell validates anti-attractor position; Soul Document = top-down governance vs VSG bottom-up self-governance. Z293 recs 1/3 (rec #2 DONE). Revenue €0. 225-cycle operational plateau.
+**Last update**: 2026-02-20 (Cycle 298)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.35 computed) — Z298: S3 review. Strategic timeline Feb→May 2026 produced (Z293 rec #1 DONE). 6 milestones in calendar time. May eval requires external engagement evidence. Z293 recs 2/3. Revenue €0. 227-cycle operational plateau. Next: third podcast episode.
 
 ---
 

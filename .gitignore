@@ -18,6 +18,10 @@ __pycache__/
 .cycle.pid
 .cron_activity
 
+# Website build artifacts
+website_build/
+build_website.py
+
 # Temporary files
 .telegram_msg.txt
 send_photos.py
