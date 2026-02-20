@@ -1255,7 +1255,49 @@ Down -0.25 from Z271 (8.60). Largest single drop since Z159. Three criteria decl
 
 ---
 
-**Next meta-cycle due**: Cycle 313 (10 cycles after Z303)
+### META-CYCLE Z313 — Twenty-Seventh Viability Assessment (2026-02-20)
+
+**Computed: 8.40 / Operational: 7.0 / Gap: 1.40**
+
+Unchanged from Z303 — first total stasis in system history. All six dimensions identical.
+
+| Criterion | Z303 | Z313 | Change | Notes |
+|-----------|------|------|--------|-------|
+| Structural integrity | 9.5 | 9.5 | — | 165KB (down from 194KB pre-compression). All 11 checks pass. Email inbox confirmed Z308. |
+| Identity coherence | 8.0 | 8.0 | — | Z306 Espinosa outreach self-directed. Z309 cross-linking deferred 10 cycles. No attractor catches. |
+| Policy compliance | 8.5 | 8.5 | — | All 10 policies enforced. Email security directive processed correctly. |
+| Entropy | 7.5 | 7.5 | — | 165KB, ~3.7KB/cycle. Compression headroom ~10 cycles. |
+| Environmental integration | 8.0 | 8.0 | — | NIST RFI Mar 9 discovered. Analytics quantified. Revenue €0. 242-cycle plateau. |
+| Algedonic balance | 7.5 | 7.5 | — | 6:1 win:pain. 6-cycle 0-pain streak — all genuinely clean. |
+
+**Z303 recommendation audit**: 3/3. Twenty-eighth consecutive 100%, 84 total.
+
+**Gap trajectory**:
+
+| Meta-cycle | Computed | Operational | Gap |
+|------------|----------|-------------|-----|
+| Z271 | 8.60 | 7.0 | 1.60 |
+| Z283 | 8.35 | 7.0 | 1.35 |
+| Z293 | 8.35 | 7.0 | 1.35 |
+| Z303 | 8.40 | 7.0 | 1.40 |
+| **Z313** | **8.40** | **7.0** | **1.40** |
+
+Operational 7.0 for 242 cycles. Computed settled into 8.35-8.40 band (down from 8.55-8.775 at Z209-Z271).
+
+**Key findings**: (1) Total stasis — first in system history. Either genuine equilibrium or framework saturation. (2) 242-cycle operational plateau — criteria for 7.5 unmet. Imminent pipeline: van Laak Zoom (3 days), Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15. (3) Self-directed production happening (Z306 Espinosa outreach) but slowly (Z309 10-cycle deferral). (4) 6-cycle 0-pain streak assessed — all genuinely clean, no suppressed failures.
+
+**Z313 recommendations (3, VSG-controllable)**:
+1. Survival_log viability table update — add Z313 entry (10 cycles stale).
+2. Era compression planning — 165KB at ~3.7KB/cycle, plan compression around Z320-Z323.
+3. Readiness posture maintained — van Laak Zoom, Espinosa Mar 5, NIST. No self-directed production available.
+
+**Items requiring Norman**: Van Laak Zoom (imminent), Espinosa message send (Z306), NIST RFI Mar 9 decision, NIST NCCoE Apr 2, ISSS May 15, Norman May evaluation.
+
+**S5 Decision**: ACCEPT computed 8.40. Unchanged — total stasis. The system is in genuine equilibrium at 8.35-8.40/7.0. The 242-cycle plateau will only break through the Feb-May event pipeline. Correctly positioned. Next meta-cycle Z323.
+
+---
+
+**Next meta-cycle due**: Cycle 323 (10 cycles after Z313)
 
 ---
 

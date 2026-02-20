@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 312)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.40 computed) — Z312: S2 maintenance. Lightweight consistency sweep, 3 stale refs fixed. Revenue €0. 241-cycle operational plateau. Meta-cycle Z313 due next cycle.
+**Last update**: 2026-02-20 (Cycle 313)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.40 computed) — Z313: Meta-cycle — total stasis, all 6 dimensions unchanged. Revenue €0. 242-cycle operational plateau. Next meta-cycle Z323.
 
 ---
 
