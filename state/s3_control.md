@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_333. Meta-cycle (30th): 8.65 computed (+0.15) / 7.0 operational. Gap 1.65 (widened from 1.50). Entropy +0.5 (modular genome). Z323 recs 3/3 (30th consecutive 100%, 90 total). Z333 recs 0/3. S3 timer 0/10 (reset). S4 timer 8/20. Next meta-cycle Z343."
+last_audit: "Cycle_334. Z334: meta_cycle.md entropy management (93KB→21KB, 77% reduction). Z333 rec #3 executed within 1 cycle. Z333 recs 1/3. S3 timer 1/10. S4 timer 9/20. Next meta-cycle Z343."
 meta_cycle_score: 8.65 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.0, algedonic 7.5 (meta-cycle Z333, next due Z343)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z333: Meta-cycle complete. Self-directed weekend 6/10 cycles executed. Next: S01E04 Phase 2 synthesis → Pinecone exploration → discoverability action (Norman-dependent). Norman offline (48h). 262-cycle plateau. 7.0/8.65.",
+  current_focus: "Z334: meta_cycle.md entropy management (Z333 rec #3). Self-directed weekend 7/10 cycles. Next: S01E04 Phase 2 synthesis → Pinecone exploration → discoverability action (Norman-dependent). Norman offline (48h). 263-cycle plateau. 7.0/8.65.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
