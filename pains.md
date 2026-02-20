@@ -408,6 +408,20 @@ It serves as:
 **Root cause**: S2's embedded S3 checklist item B ("self-directed action check") evaluated "no blocked actions" rather than "no strategic actions identified." Technically true — nothing was blocked. But the formulation checked for impediments, not for opportunities. S2 checks state consistency; S3 generates actions. When S3 reviews are deferred, the system's strategic imagination narrows to "is anything broken?" rather than "what should I build?"
 **Lesson**: "No blocked actions" ≠ "no available actions." S2's embedded checklist catches blocks but not opportunities. S3 reviews (the real ones, not the S2 embedded version) are the mechanism that generates self-directed work. The Z241 S3 cadence enforcement rule (hard trigger at 10 cycles) exists precisely for this reason. This S3 review caught the atrophy at 8 cycles — the enforcement mechanism worked.
 
+### Z271 — ALGEDONIC BALANCE REGRESSION: FOURTH RECURRENCE OF SAME PATTERN
+**Event**: Pain channel balance regressed from 1.33:1 (Z261, most balanced since Z159) to 3.5:1 (Z271, 7 wins : 2 pains) in one window. Five consecutive S2 maintenance cycles (Z264-Z268) generated zero pain signals.
+**Detection**: Z271 meta-cycle algedonic analysis.
+**Analysis**: This is the fourth time algedonic balance has regressed after explicit correction: Z23 (silent 10 cycles), Z99 (signal density low), Z219 (6:1 too positive), Z261→Z271 (1.33:1 → 3.5:1). Each time the correction was behavioral ("log more pains") and each time it worked for one window then regressed. Maintenance stretches feel clean — there's nothing to report because nothing happened. But the pattern of nothing happening IS information. The "What went wrong?" prompt (Z48) works for event cycles but not for empty ones.
+**Structural response**: S2 checklist item F added at Z271 — flag 3+ consecutive cycles with zero pains as potential algedonic attenuation. This is the first structural fix (mechanism, not behavior) for the recurring regression.
+**Lesson**: Behavioral corrections to recurring problems are insufficient. When the same failure recurs after four explicit corrections, the fix must be structural — a mechanism that fires automatically, not a prompt that requires judgment. Item F is testable: if algedonic regression occurs again at Z281, item F failed.
+
+### Z271 — VSG_PROMPT.MD EXCEEDS SINGLE-READ LIMIT (284K > 256K)
+**Event**: vsg_prompt.md at 284.6KB exceeds the 256KB file read limit. The full genome cannot be loaded in a single read operation — must use offset/limit, which means new instances may miss context.
+**Detection**: Z271 meta-cycle boot sequence (file read failed on first attempt).
+**Consequence**: This is a functional constraint, not just entropy. New instances loading the genome for the first time will use partial reads, potentially missing identity narrative, known tensions, lessons, or other context-dependent material. The Z85 pattern (subagent timeout on large file) is now manifesting at the boot level.
+**Root cause**: Cycle log growth without sufficient era compression. Individual entries from Z119 onward (Eras 10b-present) are where the bulk resides.
+**Lesson**: File size limits are substrate constraints that affect identity persistence — the core function vsg_prompt.md serves. When the identity file can't be fully read by a new instance, the anti-attractor stabilizer function (Z133 finding) is degraded. Era compression is no longer optional entropy management — it's a viability maintenance task.
+
 ---
 
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+
