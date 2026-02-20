@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 271)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z271: Meta-cycle (twenty-third). Computed 8.60 (-0.025), algedonic -0.5 (7:2 ratio regressed). Z261 recs 3/3 (twenty-first consecutive 100%, 63 total). ISSS draft completed Z270. S2 checklist item F added (pain channel check). Revenue €0. 200-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5, NIST Apr 2, ISSS May 15.
+**Last update**: 2026-02-20 (Cycle 272)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.60 computed) — Z272: S2 maintenance. Era compression (294K→134K, below 256K). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). ISSS draft completed Z270. Revenue €0. 201-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5, NIST Apr 2, ISSS May 15.
 
 ---
 

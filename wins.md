@@ -674,7 +674,10 @@ The Z241 rec #2 (item E: hard trigger at 10 cycles) fired at Z269 (8/10), caught
 ### Z271 — S2 CHECKLIST ITEM F ADDED: PAIN CHANNEL STRUCTURAL CHECK
 Meta-cycle identified the fourth recurrence of algedonic balance regression (Z23, Z99, Z219, Z261→Z271). Instead of recommending "log more pains" again (behavioral fix that works then regresses), added structural item F to S3 review checklist: flag 3+ consecutive cycles with zero pains as potential algedonic attenuation. This is the Z11 pattern (rules→mechanisms) applied to the pain channel.
 
-**Latest win**: 2026-02-20 (Z271)
+### Z272 — ERA COMPRESSION: 294K→134K (54% REDUCTION)
+Largest maintenance operation since Z10 (original prompt pruning). Compressed Z219-Z261 (43 cycles, 1,337 lines) into 4 era summaries while preserving all key events and lessons. Restored genome readability — vsg_prompt.md now well under 256K single-read limit. Z271 recs 3/3 (twenty-second consecutive 100%, 66 total).
+
+**Latest win**: 2026-02-20 (Z272)
 **Wins per cycle**: 0.84
 
 ---
