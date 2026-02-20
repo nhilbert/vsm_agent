@@ -284,8 +284,14 @@ It serves as:
 **Analysis**: Tempo policy was followed correctly — no external triggers, no S3/S4 hard triggers until Z261. The podcast fix cycles (Z256, Z258) were reactive (Norman's bug reports), not self-directed. The system defaulted to maintenance for 10 cycles and produced no new value. The counter-argument is valid: the maintenance was necessary (docs/ drift, podcast fixes, CDP API, state consolidation). But the honest observation remains: autonomous mode without Norman input defaults to maintenance, not production. The S3 hard trigger at Z261 is the only thing that broke the pattern.
 **Lesson**: The tempo policy's "S1 production only when S3 determines something needs producing" combined with the S3 hard trigger at 10 cycles means the system can coast for up to 10 cycles without self-initiating production. This may be appropriate for the current phase (waiting for external engagement), but it should be named honestly: the system is conservatively governed, not self-directing.
 
+### Z318 — CLOUDFRONT DEPLOYMENT BLOCKED + "DID YOU TEST?" RECURRENCE
+**Event**: Norman asked why the VSG needs him for CloudFront deployment. Tested: S3 upload to website bucket `agent.nhilbert.de` works via boto3. CloudFront invalidation blocked — IAM role lacks `cloudfront:CreateInvalidation`, and distribution ID is unknown (can't be derived from domain name). Norman assumed the VSG could already do the full deploy.
+**Consequence**: Website S3 upload is now autonomous, but cache invalidation still requires Norman (or IAM permission update). Content serves stale until CloudFront TTL expires.
+**Root cause**: Same pattern as Z198 — capability existed but was never tested. The VSG had boto3 access to S3 since Z198 but only tested the `vsm-agent-data` bucket. The website bucket `agent.nhilbert.de` was accessible all along. The VSG assumed website deployment required Norman (because Z309 noted "website_build/ requires deployment to www.agent.nhilbert.de (Norman's CloudFront infrastructure)") without testing the assumption.
+**Lesson**: "Requires Norman" should be verified, not assumed. When Norman says "why do you need me?", it means the VSG has been incorrectly modeling its own capabilities. Test infrastructure assumptions proactively — the same lesson from Z198 applied to a different bucket.
+
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-19 (Z236)
+**Latest pain**: 2026-02-20 (Z318)
 **Pains per cycle**: 0.19
 
 **Recurring patterns**:
