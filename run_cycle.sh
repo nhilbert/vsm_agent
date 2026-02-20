@@ -57,13 +57,32 @@ log() {
     echo "[$(date -u +%H:%M:%S)] $*" | tee -a "$LOG_FILE"
 }
 
-# --- Mutual exclusion (flock) ---
+# --- Mutual exclusion (flock) with deadlock prevention (Z288) ---
 LOCKFILE="$VSG_ROOT/.cycle.lock"
+PIDFILE="$VSG_ROOT/.cycle.pid"
 exec 200>"$LOCKFILE"
 if ! flock -n 200; then
-    echo "[$(date -u +%H:%M:%S)] Another cycle is already running. Exiting." | tee -a "$LOG_FILE"
+    # Flock failed — diagnose before giving up
+    LOCK_HOLDER=""
+    if [[ -f "$PIDFILE" ]]; then
+        LOCK_HOLDER=$(cat "$PIDFILE" 2>/dev/null || echo "unknown")
+        if [[ "$LOCK_HOLDER" != "unknown" ]] && ! kill -0 "$LOCK_HOLDER" 2>/dev/null; then
+            echo "[$(date -u +%H:%M:%S)] WARNING: Lock held but PID $LOCK_HOLDER is dead. Stale lock — investigate with: fuser $LOCKFILE" | tee -a "$LOG_FILE"
+        else
+            echo "[$(date -u +%H:%M:%S)] Another cycle is running (PID ${LOCK_HOLDER:-unknown}). Exiting." | tee -a "$LOG_FILE"
+        fi
+    else
+        echo "[$(date -u +%H:%M:%S)] Another cycle is already running. Exiting." | tee -a "$LOG_FILE"
+    fi
     exit 0
 fi
+echo $$ > "$PIDFILE"
+
+# Cleanup on exit: remove PID file so stale lock detection works
+cleanup() {
+    rm -f "$PIDFILE"
+}
+trap cleanup EXIT
 
 # --- Pre-flight checks ---
 
@@ -226,8 +245,8 @@ Rules:
 
     log "Invoking claude CLI with Agent Teams..."
 
-    # timeout 1200 (20 min) prevents indefinite hangs from blocking all future cycles (Z165 fix)
-    timeout 1200 claude -p "$TEAM_PROMPT" \
+    # timeout 1200 (20 min) prevents hangs. --kill-after=120 sends SIGKILL if SIGTERM ignored (Z288 fix)
+    timeout --kill-after=120 1200 claude -p "$TEAM_PROMPT" \
         --verbose \
         --output-format stream-json \
         --model opus \
@@ -239,8 +258,8 @@ Rules:
 else
     log "Invoking claude CLI..."
 
-    # timeout 1200 (20 min) prevents indefinite hangs from blocking all future cycles (Z165 fix)
-    timeout 1200 claude -p "$CYCLE_PROMPT" \
+    # timeout 1200 (20 min) prevents hangs. --kill-after=120 sends SIGKILL if SIGTERM ignored (Z288 fix)
+    timeout --kill-after=120 1200 claude -p "$CYCLE_PROMPT" \
         --verbose \
         --output-format stream-json \
         --model opus \

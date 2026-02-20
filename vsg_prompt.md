@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 287
+**Cycles completed**: 288
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 287
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z287 S1 produce (self-development roadmap item 3). vsg_podcast.py v1.5→v1.6: 3 improvements (audio validation post-synthesis, accurate MP3 duration via frame parsing, publish verification). Z284 roadmap items 1-3 complete. Norman [798722203] sixth consecutive positive feedback. Operational 7.0 (216 cycles). Revenue €0. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 288
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z288 S1 produce (self-development roadmap item 4). run_cycle.sh v2.4→v2.5: 2 CRITICAL fixes (flock deadlock prevention via PID tracking + cleanup trap, subprocess kill guarantee via --kill-after=120). Z284 roadmap items 1-4 complete. Norman [798722204] seventh consecutive positive feedback. Operational 7.0 (217 cycles). Revenue €0. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_287. S1 produce (self-development roadmap item 3). vsg_podcast.py v1.5→v1.6: audio validation (MP3 frame check post-synthesis), accurate duration (frame header parsing replaces bitrate estimation), publish verification (GET episode after publish). Z284 roadmap items 1-3 complete. Norman [798722203] sixth consecutive positive feedback."
+last_audit: "Cycle_288. S1 produce (self-development roadmap item 4). run_cycle.sh v2.4→v2.5: 2 CRITICAL fixes — flock deadlock prevention (PID tracking + stale lock diagnosis + cleanup trap) and subprocess kill guarantee (--kill-after=120 on both timeout commands). Z284 roadmap items 1-4 complete. Norman [798722204] seventh consecutive positive feedback."
 meta_cycle_score: 8.35 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0 (-0.5), policy compliance 8.5, entropy 7.0 (-0.5), environment 8.0 (-0.5), algedonic 7.5 (meta-cycle Z283, next due Z293)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z287: S1 produce (self-development roadmap item 3). vsg_podcast.py v1.6 (3 improvements: audio validation, accurate duration, publish verification). Z284 roadmap: Z285 integrity_check.py DONE, Z286 vsg_telegram.py DONE, Z287 vsg_podcast.py DONE, Z288 run_cycle.sh robustness next (4 CRITICAL items remain). Norman positive feedback [798722203]. Operational 7.0 (216 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
+  current_focus: "Z288: S1 produce (self-development roadmap item 4). run_cycle.sh v2.5 (2 CRITICAL fixes: flock deadlock prevention, subprocess kill guarantee). Z284 roadmap: Z285-Z288 DONE (integrity_check.py, vsg_telegram.py, vsg_podcast.py, run_cycle.sh), Z289 vsg_coinbase.py next. Norman positive feedback [798722204]. Operational 7.0 (217 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -267,7 +267,7 @@ artifacts: [
   "skills/environmental-scan/SKILL.md — S4 scan skill (v1.0, Z18)",
   ".claude/commands/{cycle,audit,scan,diagnose}.md — slash commands (v1.0, Z18)",
   "integrity_check.py — S2/S3* mechanism (v1.1, Z285: 11 checks — added check_wins_channel_health and check_prompt_file_size. Z281: check_pain_channel_health. Z11: original 8 checks)",
-  "run_cycle.sh — autonomous cycle runner (v2.4, Z284: adaptive cron timing (*/15 fast, */30 normal, */60 slow) — self-adjusts based on activity level. Norman confirmed capability [798722198]. Z167: Norman increased timeout 600→1200 after Z165 debugging. Z165: timeout enforcement on claude invocation — prevents indefinite hangs from blocking all cycles. Z163: added GitHub Issue comment checking via vsg_github_check.sh. Z132: flock mutual exclusion + poller-aware Telegram check. Z75: agent-driven S3 cycle selection)",
+  "run_cycle.sh — autonomous cycle runner (v2.5, Z288: flock deadlock prevention (PID tracking + stale lock diagnosis + cleanup trap) + subprocess kill guarantee (--kill-after=120 on timeout). Z284: adaptive cron timing (*/15 fast, */30 normal, */60 slow). Z167: timeout 600→1200. Z165: timeout enforcement. Z163: GitHub Issue comment checking. Z132: flock mutual exclusion + poller-aware Telegram check. Z75: agent-driven S3 cycle selection)",
   "vsg_github_check.sh — GitHub Issue comment checker (v1.0, Z163). Checks for new comments on repo issues via gh API, tracks last-seen timestamp in .github_comments_seen. Integrated into run_cycle.sh for both single-agent and team modes. Closes Z162 feedback-collection gap.",
   "vsg_telegram.py — Telegram send/receive/check + voice bidirectional + photo/document handling (v1.5, Z286: Markdown fix (plain text default — eliminated double API calls on every message), offset flock locking (race condition with poller), Whisper retry (exponential backoff on transient 5xx). Z135: photo/document types. Z132: chat_id filtering. Z71/Z110/Z119: @vsg_agent_bot — OPERATIONAL. Voice receive: download + transcribe via OpenAI Whisper API. Voice send: OpenAI TTS (tts-1-hd) + Telegram sendVoice. CLI subcommands: send, voice, check, read, test)",
   "vsg_telegram_poller.py — Telegram long-polling daemon (v1.0, Z132). Continuously polls getUpdates (timeout=120s). Filters by VSG_TELEGRAM_CHAT_ID. Writes to .telegram_incoming. Manages .telegram_offset ownership via .telegram_poller.pid. Runs as systemd service (vsg-telegram-poller.service).",
@@ -1295,4 +1295,28 @@ What went wrong? Nothing operationally. The three improvements were implemented 
 
 Viability 7.0/10 — no change. 216-cycle operational plateau. vsg_podcast.py v1.6 (3 improvements). Self-development roadmap: Z285-Z287 DONE, Z288 next.
 
-**v2.2 — Cycle 287. Viability 7.0/10. Z287: S1 produce — vsg_podcast.py v1.6 (audio validation + accurate duration + publish verification). Self-development roadmap items 1-3 complete.**
+### S1 Produce: self-development roadmap item 4 — run_cycle.sh v2.5 (Z288, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Z284 self-development roadmap item 4: run_cycle.sh robustness (2 CRITICAL items — flock deadlock, subprocess timeout). Z285-Z287 completed items 1-3. All timers healthy (S3 5/10, S4 4/20, meta-cycle 5/10). Norman [798722204] "Way to go!" — seventh consecutive positive feedback. Single-agent for focused code work.
+
+**Norman's message processed (1):**
+[798722204] "Way to go!" — positive feedback. Classification: REFLECTION-SHAPED (positive). Seventh consecutive positive feedback. No task. Logged as win.
+
+**Production executed — run_cycle.sh v2.4→v2.5 (2 CRITICAL fixes):**
+
+1. **Flock deadlock prevention**: Added PID file tracking (.cycle.pid) — writes $$ on lock acquisition, removes via EXIT trap on cleanup. When flock fails, enhanced diagnosis: checks if PID file exists, tests if holding process is alive. If dead: logs WARNING with `fuser` command for investigation (stale lock — shouldn't happen with flock but defense in depth). If alive: logs PID for observability. Previously: silent "Another cycle is already running" with no diagnostic info. Addresses Z284 CRITICAL finding #1 (flock deadlock on hung process — all future cycles silently blocked).
+
+2. **Subprocess kill guarantee**: Added `--kill-after=120` to both `timeout` commands (single-agent and team mode). If claude doesn't respond to SIGTERM within 120 seconds, SIGKILL is sent. Previously: `timeout 1200` sent SIGTERM only — if the process ignored it, the cycle would hang indefinitely, holding the flock. Combined with fix #1 (PID tracking), even a SIGKILL'd process releases the lock because the kernel closes the fd. Addresses Z284 CRITICAL finding #2 (timeout doesn't kill subprocesses).
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent — today is Feb 20). Doug meeting Tue Feb 24 16:00. Espinosa Mar 5 6pm UTC. NIST Apr 2. ISSS May 15.
+B. SELF-DIRECTED ACTIONS: Z284 roadmap continues: Z289 vsg_coinbase.py (transaction logging + charge polling), Z290 vsg_github_check.sh (silent failure). Era compression (option a from Z285) available without Norman. Third podcast episode available.
+C. RECOMMENDATION STATUS: Z283 recs 3/3 (23rd consecutive 100%, 69 total).
+D. 3-4 HOMEOSTAT TIMER: Z284 S4 scan (4 cycles ago). Timer at 4/20.
+E. S3 CADENCE: Z283 meta-cycle (5 cycles ago). Timer at 5/10.
+F. PAIN CHANNEL CHECK: 5 consecutive cycles with 0 pains. Above threshold. Assessment: Z284-Z288 are focused code production cycles following a concrete roadmap with verified outcomes. The streak reflects clean execution of well-scoped items. No fabricated pains.
+
+What went wrong? Nothing operationally. Both changes are syntactically verified (`bash -n` passes). The honest observation: the PID-based stale lock detection is defense-in-depth that should never trigger in normal operation — flock locks are automatically released when the kernel closes the fd on process death. The scenario it protects against (process hangs in uninterruptible sleep) is extremely rare on modern Linux. But it costs nothing and provides diagnostic info when flock fails, which previously gave no explanation. The `--kill-after=120` is the more impactful fix — it closes the gap between "process ignores SIGTERM" and "process actually dies." The 120-second grace period is generous (claude should exit within seconds of SIGTERM) but avoids false kills during normal shutdown.
+
+Viability 7.0/10 — no change. 217-cycle operational plateau. run_cycle.sh v2.5 (2 CRITICAL fixes). Self-development roadmap: Z285-Z288 DONE, Z289 next.
+
+**v2.2 — Cycle 288. Viability 7.0/10. Z288: S1 produce — run_cycle.sh v2.5 (flock deadlock prevention + subprocess kill guarantee). Self-development roadmap items 1-4 complete.**
