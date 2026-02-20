@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-vsg_podcast.py — Viable Signals podcast production pipeline
+vsg_podcast.py — Viable Signals podcast production pipeline v1.6
 
 Minimal viable pipeline for the VSG podcast "Viable Signals".
 Handles: script loading, ElevenLabs TTS synthesis, MP3 assembly, S3 upload,
@@ -17,6 +17,9 @@ Usage:
 
 Requires: ELEVENLABS_API_KEY in .env, TRANSISTORFM_API_KEY in .env
 Voice IDs configured below (Alex=Chris, Morgan=Alice from ElevenLabs library).
+
+v1.6 (Z287): Audio validation post-synthesis, accurate MP3 duration calculation,
+             publish verification.
 """
 
 import json
@@ -209,6 +212,108 @@ def generate_silence_mp3(duration_ms):
     return frame_data * frames_needed
 
 
+def validate_mp3(data, label="audio"):
+    """Validate that data contains valid MP3 frames.
+
+    Returns (is_valid, frame_count, issues) tuple.
+    Checks: non-empty, starts with valid MP3 sync, has multiple frames.
+    """
+    issues = []
+    if not data or len(data) < 4:
+        return False, 0, [f"{label}: empty or too small ({len(data) if data else 0} bytes)"]
+
+    # Find first MP3 sync (0xFFE0 mask)
+    pos = 0
+    while pos < len(data) - 1:
+        if data[pos] == 0xFF and (data[pos + 1] & 0xE0) == 0xE0:
+            break
+        pos += 1
+    else:
+        return False, 0, [f"{label}: no MP3 sync bytes found"]
+
+    if pos > 0:
+        issues.append(f"{label}: MP3 data starts at offset {pos} (expected 0)")
+
+    # Count frames by walking frame headers
+    frame_count = 0
+    frame_pos = pos
+    br_table_v1_l3 = [0, 32, 40, 48, 56, 64, 80, 96, 112, 128, 160, 192, 224, 256, 320, 0]
+    sr_table_v1 = [44100, 48000, 32000]
+
+    while frame_pos < len(data) - 3:
+        if data[frame_pos] != 0xFF or (data[frame_pos + 1] & 0xE0) != 0xE0:
+            break
+        b1 = data[frame_pos + 1]
+        b2 = data[frame_pos + 2]
+        version = (b1 >> 3) & 0x03
+        layer = (b1 >> 1) & 0x03
+        bitrate_idx = (b2 >> 4) & 0x0F
+        sample_idx = (b2 >> 2) & 0x03
+        padding = (b2 >> 1) & 0x01
+
+        if version != 3 or layer != 1 or bitrate_idx == 0 or bitrate_idx == 15 or sample_idx >= 3:
+            break
+        bitrate = br_table_v1_l3[bitrate_idx] * 1000
+        samplerate = sr_table_v1[sample_idx]
+        frame_size = int(144 * bitrate / samplerate) + padding
+        if frame_size < 4:
+            break
+        frame_count += 1
+        frame_pos += frame_size
+
+    if frame_count < 2:
+        issues.append(f"{label}: only {frame_count} MP3 frame(s) found")
+        return False, frame_count, issues
+
+    return True, frame_count, issues
+
+
+def calculate_mp3_duration(data):
+    """Calculate MP3 duration by parsing frame headers.
+
+    Returns duration in seconds. More accurate than size/bitrate estimation
+    because it accounts for variable bitrate segments.
+    """
+    # Skip ID3v2 header if present
+    pos = 0
+    if data[:3] == b'ID3' and len(data) > 10:
+        size = (data[6] << 21) | (data[7] << 14) | (data[8] << 7) | data[9]
+        pos = 10 + size
+
+    br_table_v1_l3 = [0, 32, 40, 48, 56, 64, 80, 96, 112, 128, 160, 192, 224, 256, 320, 0]
+    sr_table_v1 = [44100, 48000, 32000]
+    total_samples = 0
+    sample_rate = 44100  # default
+
+    while pos < len(data) - 3:
+        if data[pos] != 0xFF or (data[pos + 1] & 0xE0) != 0xE0:
+            pos += 1
+            continue
+        b1 = data[pos + 1]
+        b2 = data[pos + 2]
+        version = (b1 >> 3) & 0x03
+        layer_bits = (b1 >> 1) & 0x03
+        bitrate_idx = (b2 >> 4) & 0x0F
+        sample_idx = (b2 >> 2) & 0x03
+        padding = (b2 >> 1) & 0x01
+
+        if version != 3 or layer_bits != 1 or bitrate_idx == 0 or bitrate_idx == 15 or sample_idx >= 3:
+            pos += 1
+            continue
+        bitrate = br_table_v1_l3[bitrate_idx] * 1000
+        sample_rate = sr_table_v1[sample_idx]
+        frame_size = int(144 * bitrate / sample_rate) + padding
+        if frame_size < 4:
+            pos += 1
+            continue
+        total_samples += 1152  # MPEG1 Layer III: 1152 samples per frame
+        pos += frame_size
+
+    if sample_rate > 0 and total_samples > 0:
+        return total_samples / sample_rate
+    return 0.0
+
+
 def cmd_test():
     """Test ElevenLabs API connection."""
     load_env()
@@ -263,15 +368,29 @@ def cmd_synthesize(script_dir):
         print(f"  [{i+1}/{len(segments)}] {speaker.upper()} ({emotion}): {text_preview}...")
 
         audio_data = synthesize_segment(seg, api_key)
+
+        # Validate synthesized audio
+        is_valid, frame_count, issues = validate_mp3(audio_data, f"segment_{idx:04d}")
+        if not is_valid:
+            print(f"    WARNING: Invalid audio for segment {idx}: {'; '.join(issues)}")
+        elif issues:
+            for issue in issues:
+                print(f"    NOTE: {issue}")
+
         out_file = audio_dir / f"segment_{idx:04d}_{speaker}.mp3"
         out_file.write_bytes(audio_data)
+
+        seg_duration = calculate_mp3_duration(audio_data)
 
         manifest.append({
             "index": idx,
             "speaker": speaker,
             "emotion": emotion,
             "file": str(out_file),
-            "size_bytes": len(audio_data)
+            "size_bytes": len(audio_data),
+            "frame_count": frame_count,
+            "duration_seconds": round(seg_duration, 2),
+            "valid": is_valid
         })
 
         # Small delay between requests
@@ -280,11 +399,20 @@ def cmd_synthesize(script_dir):
     manifest_path = script_dir / "synthesis_manifest.json"
     manifest_path.write_text(json.dumps(manifest, indent=2))
 
-    print(f"\nSynthesized {len(manifest)} segments")
+    valid_count = sum(1 for m in manifest if m.get("valid", False))
+    total_duration = sum(m.get("duration_seconds", 0) for m in manifest)
+    print(f"\nSynthesized {len(manifest)} segments ({valid_count}/{len(manifest)} valid)")
     print(f"  Audio: {audio_dir}")
     print(f"  Manifest: {manifest_path}")
     total_bytes = sum(m["size_bytes"] for m in manifest)
     print(f"  Total audio: {total_bytes / 1024:.0f} KB")
+    print(f"  Total duration: {total_duration / 60:.1f} minutes ({total_duration:.0f}s)")
+
+    if valid_count < len(manifest):
+        invalid = [m for m in manifest if not m.get("valid", False)]
+        print(f"\n  WARNING: {len(invalid)} invalid segment(s):")
+        for m in invalid:
+            print(f"    - segment {m['index']} ({m['speaker']}): {m['size_bytes']} bytes")
 
     return manifest
 
@@ -345,14 +473,23 @@ def cmd_assemble(script_dir):
     episode_file.write_bytes(bytes(output))
 
     size_mb = len(output) / (1024 * 1024)
-    # Rough duration estimate: MP3 at ~128kbps = ~16KB/sec
-    est_duration = len(output) / (16 * 1024)
-    est_minutes = est_duration / 60
+
+    # Validate assembled episode
+    is_valid, frame_count, issues = validate_mp3(bytes(output), "assembled episode")
+    duration = calculate_mp3_duration(bytes(output))
+    duration_minutes = duration / 60
 
     print(f"\nAssembled episode:")
     print(f"  File: {episode_file}")
     print(f"  Size: {size_mb:.1f} MB")
-    print(f"  Estimated duration: {est_minutes:.1f} minutes")
+    print(f"  Duration: {duration_minutes:.1f} minutes ({duration:.0f}s)")
+    print(f"  Frames: {frame_count}")
+    print(f"  Valid: {'YES' if is_valid else 'NO'}")
+    if issues:
+        for issue in issues:
+            print(f"  Issue: {issue}")
+    if not is_valid:
+        print("  WARNING: Assembled episode failed validation — review before publishing")
 
     # Write episode metadata
     meta = {
@@ -360,13 +497,15 @@ def cmd_assemble(script_dir):
         "subtitle": script.get("episode_subtitle", ""),
         "segments": len(segments),
         "size_bytes": len(output),
-        "estimated_duration_seconds": int(est_duration),
+        "duration_seconds": int(duration),
+        "frame_count": frame_count,
+        "valid": is_valid,
         "show_notes": script.get("show_notes_bullets", []),
         "voices": {
             "alex": "Chris (ElevenLabs)",
             "morgan": "Alice (ElevenLabs)"
         },
-        "produced_by": "Viable System Generator (vsg_podcast.py v1.5)",
+        "produced_by": "Viable System Generator (vsg_podcast.py v1.6)",
         "source": script.get("source", "")
     }
     meta_path = final_dir / "episode_meta.json"
@@ -659,6 +798,26 @@ def cmd_publish(script_dir):
     print("\nStep 5: Publishing...")
     result = publish_episode(api_key, episode_id)
 
+    # Step 6: Verify publication
+    print("\nStep 6: Verifying publication...")
+    verified = False
+    for attempt in range(3):
+        try:
+            time.sleep(2)  # Allow propagation
+            verify_result = transistor_request("GET", f"/episodes/{episode_id}", api_key)
+            verify_status = verify_result["data"]["attributes"].get("status", "unknown")
+            verify_url = verify_result["data"]["attributes"].get("share_url", "")
+            if verify_status == "published" and verify_url:
+                print(f"  Verified: status={verify_status}, URL={verify_url}")
+                verified = True
+                break
+            else:
+                print(f"  Attempt {attempt + 1}: status={verify_status}, retrying...")
+        except Exception as e:
+            print(f"  Verification attempt {attempt + 1} failed: {e}")
+    if not verified:
+        print("  WARNING: Could not verify publication — check Transistor.fm dashboard")
+
     print("\n=== Publication complete ===")
 
     # Save publish info
@@ -669,6 +828,7 @@ def cmd_publish(script_dir):
         "status": result["data"]["attributes"].get("status"),
         "share_url": result["data"]["attributes"].get("share_url", ""),
         "published_at": result["data"]["attributes"].get("published_at", ""),
+        "verified": verified,
     }
     publish_path = script_dir / "final" / "publish_info.json"
     publish_path.write_text(json.dumps(publish_info, indent=2))
