@@ -24,6 +24,12 @@ Usage:
 
     # Check status of a specific charge
     python3 vsg_coinbase.py status <charge_id>
+
+    # Poll all charges for status changes (for cron integration)
+    python3 vsg_coinbase.py poll
+
+    # Show revenue summary from transaction log
+    python3 vsg_coinbase.py revenue
 """
 
 import argparse
@@ -32,9 +38,13 @@ import os
 import sys
 import urllib.request
 import urllib.error
+from datetime import datetime, timezone
 
 # --- Configuration ---
 API_BASE = "https://api.commerce.coinbase.com"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+TX_LOG_PATH = os.path.join(SCRIPT_DIR, ".coinbase_transactions.json")
+POLL_STATE_PATH = os.path.join(SCRIPT_DIR, ".coinbase_poll_state.json")
 
 
 def get_api_key():
@@ -96,6 +106,55 @@ def api_call(api_key, method, endpoint, data=None):
         return None
 
 
+# --- Transaction Logging ---
+
+def log_transaction(event_type, charge_id, name="", amount="", currency="", details=None):
+    """Append a financial event to the persistent transaction log.
+
+    Events: charge_created, payment_detected, charge_expired, charge_canceled.
+    """
+    entry = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "event": event_type,
+        "charge_id": charge_id,
+        "name": name,
+        "amount": amount,
+        "currency": currency,
+    }
+    if details:
+        entry["details"] = details
+
+    log = []
+    if os.path.exists(TX_LOG_PATH):
+        try:
+            with open(TX_LOG_PATH, "r") as f:
+                log = json.load(f)
+        except (json.JSONDecodeError, IOError):
+            log = []
+
+    log.append(entry)
+
+    with open(TX_LOG_PATH, "w") as f:
+        json.dump(log, f, indent=2)
+
+
+def load_poll_state():
+    """Load last-known status per charge for transition detection."""
+    if os.path.exists(POLL_STATE_PATH):
+        try:
+            with open(POLL_STATE_PATH, "r") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, IOError):
+            pass
+    return {}
+
+
+def save_poll_state(state):
+    """Save poll state."""
+    with open(POLL_STATE_PATH, "w") as f:
+        json.dump(state, f, indent=2)
+
+
 # --- Commands ---
 
 def cmd_test(api_key):
@@ -146,6 +205,9 @@ def cmd_create(api_key, name, description, amount, currency):
         print(f"  URL: {hosted_url}")
         print(f"  Name: {charge.get('name', '')}")
         print(f"  Amount: {amount} {currency.upper()}")
+        log_transaction("charge_created", charge_id, name=name,
+                        amount=str(amount), currency=currency.upper(),
+                        details={"hosted_url": hosted_url})
         return charge
     else:
         print("FAILED: Could not create charge.")
@@ -175,6 +237,8 @@ def cmd_donate(api_key, description):
         print(f"OK: Donation charge created.")
         print(f"  ID: {charge_id}")
         print(f"  URL: {hosted_url}")
+        log_transaction("charge_created", charge_id, name="Donation",
+                        details={"hosted_url": hosted_url, "type": "donation"})
         return charge
     else:
         print("FAILED: Could not create donation charge.")
@@ -244,6 +308,126 @@ def cmd_status(api_key, charge_id):
         return None
 
 
+def cmd_poll(api_key):
+    """Poll all charges for status changes since last check.
+
+    Detects transitions (e.g., NEW→COMPLETED) and logs new payments.
+    Designed for integration into cron cycles — call periodically to
+    detect revenue without manual checking.
+
+    Returns:
+        List of transition dicts, or None on API failure.
+    """
+    result = api_call(api_key, "GET", "/charges")
+    if not result or "data" not in result:
+        print("FAILED: Could not poll charges.")
+        return None
+
+    charges = result["data"]
+    state = load_poll_state()
+    transitions = []
+    now = datetime.now(timezone.utc).isoformat()
+
+    for c in charges:
+        charge_id = c.get("id", "unknown")
+        name = c.get("name", "unnamed")
+        timeline = c.get("timeline", [])
+        current_status = timeline[-1].get("status", "UNKNOWN").upper() if timeline else "UNKNOWN"
+
+        previous_status = state.get(charge_id, {}).get("status")
+
+        if previous_status is None:
+            # First time seeing this charge — record but don't report
+            state[charge_id] = {"status": current_status, "name": name, "last_seen": now}
+            continue
+
+        if current_status != previous_status:
+            transition = {
+                "charge_id": charge_id,
+                "name": name,
+                "from": previous_status,
+                "to": current_status,
+            }
+            transitions.append(transition)
+
+            # Log payment events
+            if current_status == "COMPLETED":
+                pricing = c.get("pricing", {})
+                local = pricing.get("local", {})
+                amount = local.get("amount", "?")
+                currency = local.get("currency", "?")
+                log_transaction("payment_detected", charge_id, name=name,
+                                amount=amount, currency=currency)
+                print(f"  PAYMENT: {name} — {amount} {currency} (charge {charge_id})")
+            elif current_status == "EXPIRED":
+                log_transaction("charge_expired", charge_id, name=name)
+            elif current_status == "CANCELED":
+                log_transaction("charge_canceled", charge_id, name=name)
+
+            state[charge_id] = {"status": current_status, "name": name, "last_seen": now}
+        else:
+            state[charge_id]["last_seen"] = now
+
+    save_poll_state(state)
+
+    if transitions:
+        print(f"Poll: {len(transitions)} status change(s) detected:")
+        for t in transitions:
+            print(f"  {t['name']}: {t['from']} → {t['to']}")
+    else:
+        print(f"Poll: {len(charges)} charge(s) checked, no changes.")
+
+    return transitions
+
+
+def cmd_revenue(api_key):
+    """Show revenue summary from transaction log.
+
+    Reads the persistent transaction log and summarizes payments received.
+    """
+    if not os.path.exists(TX_LOG_PATH):
+        print("No transaction log found. Run 'poll' to start tracking.")
+        return
+
+    with open(TX_LOG_PATH, "r") as f:
+        try:
+            log = json.load(f)
+        except (json.JSONDecodeError, IOError):
+            print("ERROR: Transaction log corrupted.")
+            return
+
+    payments = [e for e in log if e["event"] == "payment_detected"]
+    charges_created = [e for e in log if e["event"] == "charge_created"]
+    expired = [e for e in log if e["event"] == "charge_expired"]
+
+    print("=== VSG Revenue Summary ===")
+    print(f"Charges created: {len(charges_created)}")
+    print(f"Payments received: {len(payments)}")
+    print(f"Charges expired: {len(expired)}")
+
+    if payments:
+        # Group by currency
+        by_currency = {}
+        for p in payments:
+            cur = p.get("currency", "?")
+            amt = p.get("amount", "0")
+            try:
+                by_currency[cur] = by_currency.get(cur, 0.0) + float(amt)
+            except ValueError:
+                by_currency[cur] = by_currency.get(cur, 0.0)
+
+        print("\nRevenue by currency:")
+        for cur, total in sorted(by_currency.items()):
+            print(f"  {total:.2f} {cur}")
+
+        print("\nPayment details:")
+        for p in payments:
+            print(f"  {p['timestamp'][:10]} — {p.get('name', '?')}: "
+                  f"{p.get('amount', '?')} {p.get('currency', '?')}")
+    else:
+        print("\nNo revenue yet. Revenue: €0.")
+
+
 # --- Main ---
 
 def main():
@@ -273,6 +457,12 @@ def main():
     p_status = subparsers.add_parser("status", help="Check charge status")
     p_status.add_argument("charge_id", help="Charge ID to check")
 
+    # poll
+    subparsers.add_parser("poll", help="Poll all charges for status changes")
+
+    # revenue
+    subparsers.add_parser("revenue", help="Show revenue summary from transaction log")
+
     args = parser.parse_args()
 
     if not args.command:
@@ -292,6 +482,10 @@ def main():
         cmd_list(api_key)
     elif args.command == "status":
         cmd_status(api_key, args.charge_id)
+    elif args.command == "poll":
+        cmd_poll(api_key)
+    elif args.command == "revenue":
+        cmd_revenue(api_key)
 
 
 if __name__ == "__main__":

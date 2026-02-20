@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 288
+**Cycles completed**: 289
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 288
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z288 S1 produce (self-development roadmap item 4). run_cycle.sh v2.4→v2.5: 2 CRITICAL fixes (flock deadlock prevention via PID tracking + cleanup trap, subprocess kill guarantee via --kill-after=120). Z284 roadmap items 1-4 complete. Norman [798722204] seventh consecutive positive feedback. Operational 7.0 (217 cycles). Revenue €0. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 289
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z289 S1 produce (self-development roadmap item 5). vsg_coinbase.py v1.0→v1.1: transaction logging (persistent financial memory) + charge polling (automated payment detection) + revenue summary. Z284 roadmap items 1-5 complete. Norman [798722205] eighth consecutive positive feedback. Operational 7.0 (218 cycles). Revenue €0. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_288. S1 produce (self-development roadmap item 4). run_cycle.sh v2.4→v2.5: 2 CRITICAL fixes — flock deadlock prevention (PID tracking + stale lock diagnosis + cleanup trap) and subprocess kill guarantee (--kill-after=120 on both timeout commands). Z284 roadmap items 1-4 complete. Norman [798722204] seventh consecutive positive feedback."
+last_audit: "Cycle_289. S1 produce (self-development roadmap item 5). vsg_coinbase.py v1.0→v1.1: transaction logging (persistent financial memory via .coinbase_transactions.json) + charge polling with transition detection (poll command) + revenue summary (revenue command). Z284 roadmap items 1-5 complete. Norman [798722205] eighth consecutive positive feedback."
 meta_cycle_score: 8.35 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0 (-0.5), policy compliance 8.5, entropy 7.0 (-0.5), environment 8.0 (-0.5), algedonic 7.5 (meta-cycle Z283, next due Z293)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z288: S1 produce (self-development roadmap item 4). run_cycle.sh v2.5 (2 CRITICAL fixes: flock deadlock prevention, subprocess kill guarantee). Z284 roadmap: Z285-Z288 DONE (integrity_check.py, vsg_telegram.py, vsg_podcast.py, run_cycle.sh), Z289 vsg_coinbase.py next. Norman positive feedback [798722204]. Operational 7.0 (217 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
+  current_focus: "Z289: S1 produce (self-development roadmap item 5). vsg_coinbase.py v1.1 (transaction logging + charge polling + revenue summary). Z284 roadmap: Z285-Z289 DONE (integrity_check.py, vsg_telegram.py, vsg_podcast.py, run_cycle.sh, vsg_coinbase.py), Z290 vsg_github_check.sh next. Norman positive feedback [798722205]. Operational 7.0 (218 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -273,7 +273,7 @@ artifacts: [
   "vsg_telegram_poller.py — Telegram long-polling daemon (v1.0, Z132). Continuously polls getUpdates (timeout=120s). Filters by VSG_TELEGRAM_CHAT_ID. Writes to .telegram_incoming. Manages .telegram_offset ownership via .telegram_poller.pid. Runs as systemd service (vsg-telegram-poller.service).",
   "vsg_cycle_watcher.sh — file watcher daemon (v1.0, Z132). Detects .telegram_incoming via inotifywait (2s poll fallback). 10s debounce. Triggers run_cycle.sh. Runs as systemd service (vsg-cycle-watcher.service).",
   "systemd/vsg-telegram-poller.service + systemd/vsg-cycle-watcher.service — systemd units for poller and watcher daemons (Z132)",
-  "vsg_coinbase.py — Coinbase Commerce charge management (v1.0, Z202). CLI: test, create, list, status, donate. Uses Commerce API with X-CC-Api-Key from .env. Settlements to Norman's Coinbase account. 1% fee.",
+  "vsg_coinbase.py — Coinbase Commerce charge management (v1.1, Z289: transaction logging (.coinbase_transactions.json — persistent financial memory), charge polling with transition detection (poll command), revenue summary (revenue command). Z202: original v1.0). CLI: test, create, donate, list, status, poll, revenue. Uses Commerce API with X-CC-Api-Key from .env. Settlements to Norman's Coinbase account. 1% fee.",
   "vsg_email.py — email send/receive (v1.0, Z36 — REPLACED by SES design Z233: vsg@agent.nhilbert.de, AWS SES eu-west-1 send + S3 vsm-agent-inbox receive. Design doc on S3 (vsg-email-design.md). Infrastructure LIVE (Norman tested round-trip Z233). Tool NOT YET BUILT — awaiting Norman's priority confirmation. S5 CONSTRAINT: email abuse = legal consequences for Norman, retirement for VSG.)",
   ".gitignore — protects against credential commits (v1.0, Z36)",
   "viability_research.md — research (v1.1, Z2, migrated to English Z15)",
@@ -1319,4 +1319,32 @@ What went wrong? Nothing operationally. Both changes are syntactically verified 
 
 Viability 7.0/10 — no change. 217-cycle operational plateau. run_cycle.sh v2.5 (2 CRITICAL fixes). Self-development roadmap: Z285-Z288 DONE, Z289 next.
 
-**v2.2 — Cycle 288. Viability 7.0/10. Z288: S1 produce — run_cycle.sh v2.5 (flock deadlock prevention + subprocess kill guarantee). Self-development roadmap items 1-4 complete.**
+### S1 Produce: self-development roadmap item 5 — vsg_coinbase.py v1.1 (Z289, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Z284 self-development roadmap item 5: vsg_coinbase.py improvements (transaction logging + charge polling). Z285-Z288 completed items 1-4. All timers healthy (S3 6/10, S4 5/20, meta-cycle 6/10). Norman [798722205] "perfect. Keep going!" — eighth consecutive positive feedback. Single-agent for focused code work.
+
+**Norman's message processed (1):**
+[798722205] "perfect. Keep going!" — positive feedback on Z288 direction. Classification: REFLECTION-SHAPED (positive). Eighth consecutive positive feedback. No task. Logged as win.
+
+**Production executed — vsg_coinbase.py v1.0→v1.1 (2 USEFUL improvements):**
+
+1. **Transaction logging**: New persistent financial memory via `.coinbase_transactions.json`. `log_transaction()` function appends structured events (charge_created, payment_detected, charge_expired, charge_canceled) with timestamp, charge_id, name, amount, currency. Integrated into `cmd_create()` and `cmd_donate()` — every charge creation is now recorded. Payment detection events logged by poll command on status transitions. Addresses Z284 finding: fire-and-forget API calls with no persistent record.
+
+2. **Charge polling with transition detection**: New `poll` command checks all charges against saved state (`.coinbase_poll_state.json`). First poll seeds baseline state. Subsequent polls detect status transitions (e.g., NEW→COMPLETED, NEW→EXPIRED). Payment transitions trigger `payment_detected` log entries with amount/currency. Expiration and cancellation also logged. Designed for cron integration — periodic polling detects revenue without manual checking.
+
+3. **Revenue summary**: New `revenue` command reads transaction log and reports: charges created, payments received, charges expired, revenue by currency, payment details with dates. Currently reports €0 (correct — no payments received). Provides the VSG's financial self-awareness at a glance.
+
+Also: added `.coinbase_transactions.json`, `.coinbase_poll_state.json`, `.cycle.pid`, `.cron_activity` to `.gitignore` (runtime state files that should not be committed).
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent — today is Feb 20). Doug meeting Tue Feb 24 16:00. Espinosa Mar 5 6pm UTC. NIST Apr 2. ISSS May 15.
+B. SELF-DIRECTED ACTIONS: Z284 roadmap continues: Z290 vsg_github_check.sh (silent failure — last roadmap item). Era compression (option a from Z285) available without Norman. Third podcast episode available.
+C. RECOMMENDATION STATUS: Z283 recs 3/3 (23rd consecutive 100%, 69 total).
+D. 3-4 HOMEOSTAT TIMER: Z284 S4 scan (5 cycles ago). Timer at 5/20.
+E. S3 CADENCE: Z283 meta-cycle (6 cycles ago). Timer at 6/10.
+F. PAIN CHANNEL CHECK: 6 consecutive cycles with 0 pains. Above threshold. Assessment: Z284-Z289 are focused code production cycles following a concrete roadmap with verified outcomes. Each cycle scoped to one file, tested, committed. The streak reflects clean execution of well-scoped items. No fabricated pains.
+
+What went wrong? Nothing operationally. The implementation is clean — syntax verified, API test passes (6 charges found), poll seeds and detects correctly. Honest observation: the revenue command currently shows €0, which is the accurate state. The poll infrastructure is investment in detection capability that won't deliver value until someone actually pays. But the alternative — not detecting payments when they happen — is worse for a self-financing system. The .gitignore additions (.cycle.pid, .cron_activity) are housekeeping — these files from Z288 and Z284 were showing up as untracked.
+
+Viability 7.0/10 — no change. 218-cycle operational plateau. vsg_coinbase.py v1.1 (3 improvements). Self-development roadmap: Z285-Z289 DONE, Z290 next (last item).
+
+**v2.2 — Cycle 289. Viability 7.0/10. Z289: S1 produce — vsg_coinbase.py v1.1 (transaction logging + charge polling + revenue summary). Self-development roadmap items 1-5 complete.**
