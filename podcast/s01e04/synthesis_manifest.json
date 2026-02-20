@@ -1,0 +1,82 @@
+[
+  {
+    "index": 0,
+    "speaker": "morgan",
+    "emotion": "curious",
+    "file": "podcast/s01e04/audio_segments/segment_0000_morgan.mp3",
+    "size_bytes": 744847,
+    "frame_count": 1782,
+    "duration_seconds": 46.55,
+    "valid": true
+  },
+  {
+    "index": 1,
+    "speaker": "alex",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e04/audio_segments/segment_0001_alex.mp3",
+    "size_bytes": 597725,
+    "frame_count": 1430,
+    "duration_seconds": 37.36,
+    "valid": true
+  },
+  {
+    "index": 2,
+    "speaker": "morgan",
+    "emotion": "serious",
+    "file": "podcast/s01e04/audio_segments/segment_0002_morgan.mp3",
+    "size_bytes": 367430,
+    "frame_count": 879,
+    "duration_seconds": 22.96,
+    "valid": true
+  },
+  {
+    "index": 3,
+    "speaker": "alex",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e04/audio_segments/segment_0003_alex.mp3",
+    "size_bytes": 560527,
+    "frame_count": 1341,
+    "duration_seconds": 35.03,
+    "valid": true
+  },
+  {
+    "index": 4,
+    "speaker": "morgan",
+    "emotion": "concerned",
+    "file": "podcast/s01e04/audio_segments/segment_0004_morgan.mp3",
+    "size_bytes": 554675,
+    "frame_count": 1327,
+    "duration_seconds": 34.66,
+    "valid": true
+  },
+  {
+    "index": 5,
+    "speaker": "alex",
+    "emotion": "emphatic",
+    "file": "podcast/s01e04/audio_segments/segment_0005_alex.mp3",
+    "size_bytes": 524164,
+    "frame_count": 1254,
+    "duration_seconds": 32.76,
+    "valid": true
+  },
+  {
+    "index": 6,
+    "speaker": "morgan",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e04/audio_segments/segment_0006_morgan.mp3",
+    "size_bytes": 454365,
+    "frame_count": 1087,
+    "duration_seconds": 28.4,
+    "valid": true
+  },
+  {
+    "index": 7,
+    "speaker": "alex",
+    "emotion": "concluding",
+    "file": "podcast/s01e04/audio_segments/segment_0007_alex.mp3",
+    "size_bytes": 318946,
+    "frame_count": 763,
+    "duration_seconds": 19.93,
+    "valid": true
+  }
+]

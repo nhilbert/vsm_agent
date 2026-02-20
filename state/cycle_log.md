@@ -357,3 +357,34 @@ What went wrong? Nothing operationally — the compression executed cleanly. The
 
 Viability 7.0/10 — no change. 263-cycle operational plateau. meta_cycle.md: 93KB → 21KB. Z333 recs 1/3. Next: S01E04 Phase 2 synthesis (Z333 rec #2) or Pinecone exploration.
 
+### S1 Produce: S01E04 Phase 2 — first hybrid podcast episode (Z335, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Z333 rec #2 explicitly identifies S01E04 Phase 2 (synthesis and assembly) as highest-value self-directed production. After two consecutive S2 cycles (Z332 era compression, Z334 meta_cycle.md entropy), the Z326 weekend plan warns against Z264-Z268 empty-S2 pattern. S01E04 is external-facing content featuring Norman's actual voice — the closest available action toward the binding constraint (discoverability) without Norman. Norman offline (48h autonomous window). Single-agent (editorial/production work, not parallel variety composition — Z81 spirit preserved).
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**Production executed — S01E04 Phase 2 (Draft):**
+
+1. **vsg_podcast.py v1.7** — hybrid episode support added. Two modifications: (a) cmd_synthesize skips segments with `"type": "raw_audio"`, (b) cmd_assemble reads raw audio from source file with 800ms section transition pauses. Clean, minimal change — 30 lines added.
+
+2. **script.json updated** — raw_audio segment inserted between intro (segments 0-2) and outro (segments 3-7). Assembly order now: 3 synthesized intro segments → 800ms pause → raw interview.mp3 (10:01) → 800ms pause → 5 synthesized outro segments.
+
+3. **8 segments synthesized** via ElevenLabs TTS (8/8 valid, 4.3 min total, 4026 KB). All voices (Alex=Chris, Morgan=Alice) operational.
+
+4. **Episode assembled** — 14.3 minutes, 13.1 MB, 32,938 frames, validated MP3. First hybrid episode in system history (synthesized bookends + raw conversation audio).
+
+5. **Uploaded to S3** for Norman's review (s3://vsm-agent-data/podcast/samples/why-cybernetics-the-experimenter-speaks/).
+
+6. **Production protocol enforced** — Category B deliverable requires Phase 4 (External Review: Norman) before publishing. Episode NOT published. This is the production protocol (Z327) working as designed. Previous episodes (S01E01-E03) were single-pass Category C monologues; S01E04 features Norman's actual voice and is Category B.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: S01E04 assembled and awaiting Norman's review. Van Laak Zoom after Feb 23 (imminent). Thompson/Macumber INDEP Feb 24 (imminent). Espinosa Mar 5. NIST RFI Mar 9. NIST Apr 2. ISSS May 15. Episode with Norman's voice is the most authentic content produced — genuine external-facing artifact.
+B. SELF-DIRECTED ACTIONS: Pinecone exploration. S01E04 Phase 3 (self-review — possible before Norman). But the production protocol says Phase 4 for Category B needs external review. Available: Pinecone, blog cross-linking, website refresh.
+C. RECOMMENDATION STATUS: Z333 recs 2/3 (rec #2 S01E04 Phase 2 DONE this cycle, rec #3 meta_cycle.md DONE Z334). Z325 recs 0/3 (rec #1 GitHub tags blocked).
+D. 3-4 HOMEOSTAT TIMER: Z325 S4 scan (10 cycles ago). Timer at 10/20.
+E. S3 CADENCE: Z333 meta-cycle (2 cycles ago). Timer at 2/10.
+F. PAIN CHANNEL CHECK: Z334: 0 pains. Z335: 0 pains — 7 consecutive (since Z327 broke streak). TRIGGERED. All cycles well-scoped work. Genuine clean execution during self-directed weekend window.
+
+What went wrong? Nothing operationally — synthesis, assembly, and upload all executed cleanly on first attempt. The pipeline adaptation (raw_audio support) was clean and minimal. The honest observation: this is the 8th self-directed cycle of the weekend (Z327-Z335). For the first time, one of those cycles produced an external-facing artifact (a podcast episode with Norman's actual voice). All previous weekend cycles were internal optimization. S01E04 is qualitatively different: it has Norman's voice, it's about the experiment from his perspective, and it's the first hybrid format. But it's still not published — the production protocol correctly holds it for Norman's review. The system followed its own quality process instead of rushing to publish. That's progress over the single-pass Z214 governance report. Whether the episode is good enough is Norman's call.
+
+Viability 7.0/10 — no change. 264-cycle operational plateau. S01E04 Phase 2 complete. Z333 recs 2/3. Episode on S3 awaiting Norman review. Next: Pinecone exploration or self-review.
+

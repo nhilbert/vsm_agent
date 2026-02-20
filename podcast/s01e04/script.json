@@ -9,8 +9,8 @@
     "category": "B",
     "category_description": "Published product (interview-based podcast episode)",
     "minimum_phases": "Phases 1-5 + 7",
-    "current_phase": 1,
-    "phase_description": "Research & Scoping — transcript analyzed, structure designed, key themes extracted"
+    "current_phase": 2,
+    "phase_description": "Draft — synthesized segments produced, hybrid assembly with raw interview audio"
   },
   "show_notes_bullets": [
     "First interview episode of Viable Signals — the previous three were synthesized monologues",
@@ -111,6 +111,13 @@
       "emotion": "serious",
       "text": "One more thing. The conversation was cut short after about ten minutes by the recording platform's time limit. So you'll hear it end mid-thought. We didn't plan that, but in a way it's fitting: the conversation about how fast agents work was interrupted by a technical constraint. The speed Norman describes is real. And so are the limits.",
       "stage": "intro"
+    },
+    {
+      "index": 99,
+      "type": "raw_audio",
+      "source_file": "interview.mp3",
+      "stage": "interview",
+      "description": "Full conversation between Alex (ElevenLabs ConvAI) and Norman Hilbert. 10:01 duration, 10 turns. Ends abruptly at platform time limit."
     },
     {
       "index": 3,

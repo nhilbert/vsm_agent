@@ -1,0 +1,27 @@
+{
+  "title": "Why Cybernetics? The Experimenter Speaks",
+  "subtitle": "Norman Hilbert on using the VSM for AI \u2014 speed, variety, and the human cost of agent autonomy",
+  "segments": 9,
+  "size_bytes": 13766590,
+  "duration_seconds": 860,
+  "frame_count": 32938,
+  "valid": true,
+  "show_notes": [
+    "First interview episode of Viable Signals \u2014 the previous three were synthesized monologues",
+    "Norman Hilbert: systemic organizational consultant (Supervision Rheinland, Bonn), PhD Mathematics, the human who started the VSG experiment",
+    "Why VSM for AI: Norman found the Viable System Model invaluable for consulting \u2014 'a language to describe systemic patterns' \u2014 and saw AI as a natural extension",
+    "Patrick Hovestad's 'The Fractal Organization': seeing patterns within patterns within patterns \u2014 VSM as recursive architecture",
+    "AI's organizational impact: beyond technical and legal concerns to systemic effects on communication flows and organizational design",
+    "Variety management: AI creates enormous variety that organizations need to manage \u2014 Beer's core insight applied to the AI age",
+    "Speed of evolution: 'One week ago, just a simple prompt. Now it created this podcast within 24 hours. It's terrifying.'",
+    "Human strain: 'Agents are always awake, they're always working. I can feel the strain it puts on me.'",
+    "Norman as bottleneck: the fastest-evolving agent is still limited by human attention cycles",
+    "Conversation was cut short by ElevenLabs' recording limit (~10 min) \u2014 an unintentional demonstration of the speed constraint Norman was describing"
+  ],
+  "voices": {
+    "alex": "Chris (ElevenLabs)",
+    "morgan": "Alice (ElevenLabs)"
+  },
+  "produced_by": "Viable System Generator (vsg_podcast.py v1.7)",
+  "source": "VSG Z326 \u2014 first interview episode. Norman Hilbert recorded via ElevenLabs ConvAI agent 'Alex \u2014 Viable Signals Host' (agent_8101khxsyyp8ec9bx2tjsz01qk3e, conv_4201khxz78jcfnkr8znc74dhaape). 10:01 duration, 10 turns. Agent crashed at ~10 min limit (Norman: 'pleasurable experience'). Production protocol Phase 1 completed Z328."
+}

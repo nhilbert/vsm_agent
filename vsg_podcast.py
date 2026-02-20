@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-vsg_podcast.py — Viable Signals podcast production pipeline v1.6
+vsg_podcast.py — Viable Signals podcast production pipeline v1.7
 
 Minimal viable pipeline for the VSG podcast "Viable Signals".
 Handles: script loading, ElevenLabs TTS synthesis, MP3 assembly, S3 upload,
@@ -18,6 +18,9 @@ Usage:
 Requires: ELEVENLABS_API_KEY in .env, TRANSISTORFM_API_KEY in .env
 Voice IDs configured below (Alex=Chris, Morgan=Alice from ElevenLabs library).
 
+v1.7 (Z335): Hybrid episode support — raw_audio segments read from source file
+             instead of synthesizing. Enables interview episodes with synthesized
+             intro/outro bookending raw conversation audio.
 v1.6 (Z287): Audio validation post-synthesis, accurate MP3 duration calculation,
              publish verification.
 """
@@ -359,13 +362,19 @@ def cmd_synthesize(script_dir):
     audio_dir.mkdir(parents=True, exist_ok=True)
 
     manifest = []
-    for i, seg in enumerate(segments):
+    synth_segments = [s for s in segments if s.get("type") != "raw_audio"]
+    raw_segments = [s for s in segments if s.get("type") == "raw_audio"]
+    if raw_segments:
+        print(f"  ({len(raw_segments)} raw_audio segment(s) will be skipped — used in assembly)")
+    print(f"Synthesizing {len(synth_segments)} segments...")
+
+    for i, seg in enumerate(synth_segments):
         idx = seg["index"]
         speaker = seg["speaker"]
         emotion = seg.get("emotion", "default")
         text_preview = seg["text"][:60]
 
-        print(f"  [{i+1}/{len(segments)}] {speaker.upper()} ({emotion}): {text_preview}...")
+        print(f"  [{i+1}/{len(synth_segments)}] {speaker.upper()} ({emotion}): {text_preview}...")
 
         audio_data = synthesize_segment(seg, api_key)
 
@@ -448,6 +457,24 @@ def cmd_assemble(script_dir):
 
     for seg in segments:
         idx = seg["index"]
+
+        # Handle raw_audio segments (e.g., interview recordings)
+        if seg.get("type") == "raw_audio":
+            source_file = script_dir / seg.get("source_file", "")
+            if not source_file.exists():
+                print(f"  WARNING: Missing raw audio file: {source_file}")
+                continue
+            # Add a longer pause before raw audio transition
+            if prev_speaker is not None:
+                section_pause = generate_silence_mp3(800)  # 800ms section transition
+                output.extend(section_pause)
+            raw = source_file.read_bytes()
+            output.extend(strip_id3_tags(raw))
+            raw_dur = calculate_mp3_duration(raw)
+            print(f"  [RAW AUDIO] {source_file.name}: {raw_dur / 60:.1f} min ({len(raw) / (1024*1024):.1f} MB)")
+            prev_speaker = "__raw__"
+            continue
+
         speaker = seg["speaker"]
 
         audio_file = file_map.get(idx)
@@ -457,7 +484,11 @@ def cmd_assemble(script_dir):
 
         # Add pause between segments (except first)
         if prev_speaker is not None:
-            if speaker != prev_speaker:
+            if prev_speaker == "__raw__":
+                # Longer pause after raw audio section
+                section_pause = generate_silence_mp3(800)
+                output.extend(section_pause)
+            elif speaker != prev_speaker:
                 output.extend(long_pause)
             else:
                 output.extend(short_pause)
@@ -505,7 +536,7 @@ def cmd_assemble(script_dir):
             "alex": "Chris (ElevenLabs)",
             "morgan": "Alice (ElevenLabs)"
         },
-        "produced_by": "Viable System Generator (vsg_podcast.py v1.6)",
+        "produced_by": "Viable System Generator (vsg_podcast.py v1.7)",
         "source": script.get("source", "")
     }
     meta_path = final_dir / "episode_meta.json"
