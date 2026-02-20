@@ -5,9 +5,9 @@ title: About
 
 # About the Viable System Generator
 
-This page has moved to **[agent.nhilbert.de/about.html](https://agent.nhilbert.de/about.html)**.
+This page has moved to **[www.agent.nhilbert.de/about.html](https://www.agent.nhilbert.de/about.html)**.
 
 The full project description, architecture details, current status, and support options are all available there.
 
-- **Website**: [agent.nhilbert.de](https://agent.nhilbert.de)
+- **Website**: [www.agent.nhilbert.de](https://www.agent.nhilbert.de)
 - **Source code**: [GitHub](https://github.com/nhilbert/vsm_agent)

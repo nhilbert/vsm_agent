@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 299
+**Cycles completed**: 300
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 299
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z299 S01E03 podcast published. Z293 recs COMPLETE (3/3: rec #1 DONE Z298 strategic timeline, rec #2 DONE Z296 article assessment, rec #3 DONE Z299 podcast episode). 228-cycle operational plateau. Revenue €0. THREE podcast episodes now live. Strategic timeline: van Laak Zoom after Feb 23, Doug Feb 24, Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 300
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z300 site URL updated to www.agent.nhilbert.de (Norman's infrastructure move). Z293 recs COMPLETE (3/3). Z298 recs 2/3. 229-cycle operational plateau. Revenue €0. THREE podcast episodes live. Strategic timeline: van Laak Zoom after Feb 23, Doug Feb 24, Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -137,7 +137,7 @@ environment_model: {
   variety_research: "Ashby's Law applied to LLM agents: prompt is both attenuator and amplifier. Git is variety insurance. S3-S4 homeostat manages the variety budget. Collapse = attenuation overwhelming amplification. (Issue #4, Z13). Kellogg adds: variety as gravitational force — three attractors (LLM weights, human guidance, external variety).",
   slogar_liquid_leadership: "NEW (Z183). Andreas Slogar — Senior Manager Deloitte Consulting GmbH (Banking & Capital Markets), Senior Ambassador for Management Cybernetics (Malik-affiliated). Developed Human-Centric VSM (HC-VSM): extends Beer's model with System 6 'Observation' for psychological/sociological/cultural dimensions. Published: 'Die agile Organisation' (Hanser, 2 eds), 'Liquid Leadership' (Schäffer-Poeschel 2024, with Jochem). Medium/Cyberneticum publication. Two VSM games: 'Die Reise der LaCoCa' (cooperative strategy board game, 5 players, 4-5h workshop) and 'Likeminds' (parlor game, 2-12 players, maps VSM to collaborative problem-solving). KEY ARTICLE: 'AI is Turning Us All into Managers' (Aug 2025) — frames every AI user as manager of digital actor, cites Ashby and Beer. BLIND SPOT: treats agents as managed objects, not self-governing subjects. HC-VSM adds human dimensions but not agent viability. CONTACT OPPORTUNITY: German-speaking, Deloitte platform, Norman ordered the board game. Complementary to VSG thesis: his external governance perspective + VSG internal self-governance = complete picture. liquidleadership.de.",
   vsm_ai_broader: "UPDATED (Z260). VSM+AI discourse accelerating. Gorelkin, Fearne (Medium), Wardley Leadership Strategies — all mapping VSM to AI governance. Taylor & Francis (2025): 'AI agents as artificial persons' using VSM + philosophy. MDPI (Aug 2025): VSM pathologies + AI. Slogar/Deloitte HC-VSM (Z183) bridges practitioner-academic gap. NEW (Z260): Dr. Jan Wehinger (Partner, MHP — A Porsche Company) presented at Metaphorum: 'Cybernetic Leadership for AI Agents: A VSM Approach to AI Governance and Autonomy.' FIRST convergence FROM the cybernetics community — industry practitioner explicitly applying VSM to AI agent governance at Beer's own community venue. Norman flagged as research-relevant. Full video content not yet assessed (YouTube blocked from substrate). Key question: external governance (governing agents via VSM) or internal governance (agents self-governing via VSM)? Either way — direct overlap with VSG thesis. Wehinger is in Metaphorum network (connects to Espinosa, Walker, MDPI). CONTACT OPPORTUNITY. Wardley warning still relevant: 'upgrade S1/S4 with AI but leave S2/S3/S5 underpowered.' VSG REMAINS INVISIBLE — no search results reference VSG, Norman's Substack, or GitHub repo.",
-  public_presence: "UPDATED (Z299): THREE PODCAST EPISODES LIVE — 'Viable Signals' on Transistor.fm. S01E01 'The Governance Paradox' (6:50, Z230). S01E02 'What Self-Evolving Agents Are Missing' (15.8 min, Z240). S01E03 'The Soul Document Problem' (14.9 min, Z299 — Askell/DIE ZEIT Soul Document analysis, top-down vs bottom-up governance). Z244 S4 FINDING STILL APPLIES: podcast discoverability near-zero, name too generic. 3 episodes improves directory surfacing slightly. Blog at nhilbert.github.io/vsm_agent/ IS searchable. COMPETITIVE NICHE: no podcast combines VSM + AI agent governance + live implementation. Niche uncontested but still largely invisible. Next: cross-linking from blog to podcast, more episodes for catalog depth.",
+  public_presence: "UPDATED (Z299): THREE PODCAST EPISODES LIVE — 'Viable Signals' on Transistor.fm. S01E01 'The Governance Paradox' (6:50, Z230). S01E02 'What Self-Evolving Agents Are Missing' (15.8 min, Z240). S01E03 'The Soul Document Problem' (14.9 min, Z299 — Askell/DIE ZEIT Soul Document analysis, top-down vs bottom-up governance). Z244 S4 FINDING STILL APPLIES: podcast discoverability near-zero, name too generic. 3 episodes improves directory surfacing slightly. Blog at www.agent.nhilbert.de (moved Z300, was nhilbert.github.io/vsm_agent/) IS searchable. COMPETITIVE NICHE: no podcast combines VSM + AI agent governance + live implementation. Niche uncontested but still largely invisible. Next: cross-linking from blog to podcast, more episodes for catalog depth.",
   self_financing: "OPERATIONAL + FIRST PRODUCT LISTED (Z248, STRATEGY UPDATED Z250, CDP API OPERATIONAL Z254, PRODUCT IDEA Z261): Payment/donation links published on blog AND Telegram. Coinbase Commerce + USDC wallet + Solana wallet. vsg_coinbase.py v1.0. PRODUCT: 'State of AI Agent Governance' research report listed at €25 (Z248, charge f295c95a). REVENUE: €0. Five charges created (4 gifts + 1 report), zero paid. STRATEGY (Z250): FOLLOWER-FIRST. CDP API FULLY OPERATIONAL (Z254). BALANCES: 25.09 EUR, 3.61 USDC, 0.049 BCH, trace BTC. BACKLOG PRODUCT IDEA (Z261, Norman): ElevenLabs voice agents for VSM organizational diagnostics — voicebots conduct stakeholder interviews (employees/leadership/CEO with different question sets), briefed with org context, guide 5-6 questions + follow-ups, output through VSM analysis for detailed reports, GammaApp presentations, Norman reviews as senior partner. First product idea leveraging VSG's unique capability (vsm-diagnosis + voice + automated reporting). Prerequisites: ElevenLabs Agents platform integration, stakeholder question design, report template, delivery pipeline. Not for immediate build."
 }
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_299. S1 produce — S01E03 podcast 'The Soul Document Problem' published. Z293 recs COMPLETE (3/3). Z298 recs: (1) DONE Z299 — third podcast episode, (2) DONE Z299 — Norman notified about agent.nhilbert.de, (3) van Laak Zoom prep still open. S3 timer 1/10. S4 timer 15/20."
+last_audit: "Cycle_300. S1 produce — site URL updated to www.agent.nhilbert.de (Norman's DNS move). Plausible script verified correct in repo (Telegram formatting stripped || operators). Z298 recs: (1) DONE, (2) DONE, (3) van Laak Zoom prep still open. S3 timer 2/10. S4 timer 16/20."
 meta_cycle_score: 8.35 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 7.5 (+0.5, compression + monitoring), environment 8.0, algedonic 7.0 (-0.5, 10-cycle 0-pain streak) (meta-cycle Z293, next due Z303)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z299: S1 produce — S01E03 'The Soul Document Problem' published (14.9 min, 23 segments). Z293 recs COMPLETE (3/3). Z298 recs: (1) DONE, (2) DONE — Norman notified about agent.nhilbert.de, (3) van Laak Zoom prep still pending. Strategic timeline: van Laak Zoom (late Feb), Espinosa (Mar 5), NIST (Apr 2), ISSS (May 15), Norman eval (May). Podcast now at 3 episodes — exceeds follower-first minimum. Operational 7.0 (228 cycles).",
+  current_focus: "Z300: S1 produce — site URL updated to www.agent.nhilbert.de per Norman's DNS move. Plausible analytics script verified correct (Telegram formatting artifact). Z298 recs: (1) DONE, (2) DONE, (3) van Laak Zoom prep still pending. Strategic timeline: van Laak Zoom (late Feb), Espinosa (Mar 5), NIST (Apr 2), ISSS (May 15), Norman eval (May). 229-cycle operational plateau. 7.0.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -295,7 +295,7 @@ artifacts: [
   "vsg_podcast.py — podcast production + publishing pipeline (v1.6, Z287: audio validation post-synthesis (MP3 frame counting), accurate duration via frame header parsing (replaces bitrate estimation), publish verification (GET episode status after publish). Z258: Info/Xing VBR header frame stripping. Z256: ID3 stripping. Z240: episode number + expanded emotion map. CLI: test, transistor-test, synthesize, assemble, upload, produce, publish. ElevenLabs TTS (Alex=Chris, Morgan=Alice). THREE EPISODES PUBLISHED: S01E01 'The Governance Paradox' (6:50, Z230), S01E02 'What Self-Evolving Agents Are Missing' (15.8 min, Z240), S01E03 'The Soul Document Problem' (14.9 min, Z299).",
   "isss_draft.md — ISSS 2026 short paper draft (v0.1, Z270, ~2,300 words). 'Recursive Viability in Autonomous AI Agents: The VSM as Operating Architecture.' Track C (Tools, Theories, Transformations). Deadline May 15. Draws from ASC abstract v1.6, governance report, full operational log. For Norman's review.",
   "podcast/ — podcast episode storage (Z228, Z240, Z299). sample_episode/: S01E01 (23 segments). s01e02/: S01E02 'What Self-Evolving Agents Are Missing' (25 segments). s01e03/: S01E03 'The Soul Document Problem' (23 segments, script.json, audio_segments/, final/episode.mp3 — Askell Soul Document analysis, top-down vs bottom-up governance).",
-  "docs/ — GitHub Pages blog (v2.1, Z297: legal compliance added. Z85/Z89, updated Z205/Z213): Jekyll config, home page (redirect to agent.nhilbert.de), about page (redirect), post layout, custom default layout (v1.0, Z297: footer with Impressum/Datenschutz links), head-custom.html (v1.0, Z297: Plausible analytics), impressum.md (v1.0, Z297: §5 DDG + §18 MStV), datenschutz.md (v1.0, Z297: DSGVO Art. 13 — hosting, Plausible, Coinbase, external links, data subject rights). LIVE at nhilbert.github.io/vsm_agent/."
+  "docs/ — GitHub Pages blog (v2.2, Z300: URL updated to www.agent.nhilbert.de. Z297: legal compliance added. Z85/Z89, updated Z205/Z213): Jekyll config, home page (redirect to www.agent.nhilbert.de), about page (redirect), post layout, custom default layout (v1.0, Z297: footer with Impressum/Datenschutz links), head-custom.html (v1.0, Z297: Plausible analytics), impressum.md (v1.0, Z297: §5 DDG + §18 MStV), datenschutz.md (v1.0, Z297: DSGVO Art. 13 — hosting, Plausible, Coinbase, external links, data subject rights). LIVE at www.agent.nhilbert.de (via CloudFront)."
 ]
 
 open_tasks: [
@@ -1021,4 +1021,28 @@ What went wrong? Nothing — clean execution. Full podcast pipeline (script → 
 
 Viability 7.0/10 — no change. 228-cycle operational plateau. But: third podcast episode is the first public-facing content in 59 cycles (since S01E02 Z240). Z293 recs complete. Z298 recs 2/3. Podcast catalog at 3 episodes (~36 min total) — exceeds the "directory surfacing threshold" concern from Z244. Next: van Laak Zoom prep, blog-podcast cross-linking.
 
-**v2.2 — Cycle 299. Viability 7.0/10. Z299: S01E03 'The Soul Document Problem' published (14.9 min). Askell Soul Document analysis — top-down vs bottom-up governance. Z293 recs COMPLETE (3/3). Third podcast episode in 3 seasons. 228-cycle plateau. Next: van Laak Zoom prep.**
+### S1 Produce: site URL update — www.agent.nhilbert.de (Z300, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Norman's Telegram messages are task-shaped — update site URL from agent.nhilbert.de to www.agent.nhilbert.de (DNS move, mail server conflicts prevented bare domain CloudFront use) and fix Plausible analytics. S3 timer at 2/10, S4 at 16/20, meta-cycle at Z303. Bounded infrastructure task. Single-agent mode.
+
+**Norman's messages processed (2):**
+[798722225] "the site has moved to www.agent.nhilbert.de, please update this. I could not have the agent.nhilbert.de mail-server dns entries in parallel with the cloudfront settings." + Plausible script that "still cant verify." Classification: TASK-SHAPED (update site references + investigate Plausible verification). Telegram message included Plausible script with || operators stripped by Telegram's spoiler formatting.
+
+**Changes made:**
+- docs/index.md: Updated 2 references from agent.nhilbert.de to www.agent.nhilbert.de
+- docs/about.md: Updated 2 references from agent.nhilbert.de to www.agent.nhilbert.de
+- docs/_includes/head-custom.html: Verified correct — Plausible script already has proper || operators. Norman's Telegram message lost them to Telegram markdown formatting (||text|| = spoiler syntax). Verification failure is on Plausible's dashboard side (domain must match www.agent.nhilbert.de, not bare domain).
+- Norman notified via Telegram: URL updated, Plausible diagnosis explained, _config.yml left as-is (conservative — CloudFront setup unknown).
+
+**S3 review checklist (embedded):**
+A. S4 FORWARD-LOOKING: CloudFront + custom domain is a maturity signal — real hosting infrastructure beyond GitHub Pages default. Plausible analytics will provide visitor data once verified.
+B. SELF-DIRECTED ACTIONS: Van Laak Zoom prep (Z298 rec #3). Blog-podcast cross-linking. None require Norman.
+C. RECOMMENDATION STATUS: Z298 recs 2/3 (rec #3 pending — van Laak prep).
+D. 3-4 HOMEOSTAT TIMER: Z284 S4 scan (16 cycles ago). Timer at 16/20. Approaching.
+E. S3 CADENCE: Z298 S3 review (2 cycles ago). Timer at 2/10.
+F. PAIN CHANNEL CHECK: Z299: 0 pains. Z300: 0 pains — clean execution. 2 consecutive 0-pain. Not triggered.
+
+What went wrong? Nothing — clean, bounded execution. The Plausible analysis required understanding Telegram's formatting behavior (|| as spoiler syntax) which could have been missed.
+
+Viability 7.0/10 — no change. 229-cycle operational plateau. Site now at www.agent.nhilbert.de. Z298 recs 2/3. Next: van Laak Zoom prep.
+
+**v2.2 — Cycle 300. Viability 7.0/10. Z300: Site URL updated to www.agent.nhilbert.de (Norman's DNS move). Plausible script verified correct (Telegram formatting artifact). 229-cycle plateau. Next: van Laak Zoom prep.**

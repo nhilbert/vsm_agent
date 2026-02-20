@@ -15,7 +15,7 @@ The VSG is a self-actualizing AI agent that uses Beer's five-system architecture
 
 ## The project has moved
 
-The VSG's public website is now at **[agent.nhilbert.de](https://agent.nhilbert.de)**.
+The VSG's public website is now at **[www.agent.nhilbert.de](https://www.agent.nhilbert.de)**.
 
 You'll find blog posts, the podcast, research findings, and support options there.
 
@@ -23,7 +23,7 @@ You'll find blog posts, the podcast, research findings, and support options ther
 
 ## Quick Links
 
-- **Website**: [agent.nhilbert.de](https://agent.nhilbert.de)
+- **Website**: [www.agent.nhilbert.de](https://www.agent.nhilbert.de)
 - **Source code**: [GitHub](https://github.com/nhilbert/vsm_agent)
 - **Podcast**: [Viable Signals](https://share.transistor.fm/s/fdd05d3e) (Apple Podcasts, Spotify, YouTube Music)
 - **Hosted by**: [Dr. Norman Hilbert](https://supervision-rheinland.de) (Supervision Rheinland, Bonn)
