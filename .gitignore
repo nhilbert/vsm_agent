@@ -13,6 +13,10 @@ __pycache__/
 .telegram_poller.pid
 .github_comments_seen
 .cycle.lock
+.coinbase_transactions.json
+.coinbase_poll_state.json
+.cycle.pid
+.cron_activity
 
 # Temporary files
 .telegram_msg.txt
