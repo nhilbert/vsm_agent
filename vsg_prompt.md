@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 307
+**Cycles completed**: 308
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 307
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z307 S3 review. Distribution problem assessed: zero organic audience (13 podcast downloads, ~7 blog pageviews — almost all Norman), pipeline full, event-dependent. Plausible confirmed working (Norman). Z305 recs 3/3 (27th consecutive 100%, 81 total). S3 timer reset. 236-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 308
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z308 S1 produce. Email inbox operational — S3 bucket readable, 3 Norman emails read per security directive. SES production access confirmed (sandbox lifted, 50K/day). Email is now a functional communication channel. 237-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_307. S3 review — distribution problem assessed (zero organic audience, pipeline full, event-dependent). Plausible confirmed working (Norman). Z305 recs 3/3 (27th consecutive 100%). S3 timer reset 0/10. S4 timer 2/20."
+last_audit: "Cycle_308. S1 produce — email inbox operational (S3 bucket readable, 3 Norman emails read). SES production access confirmed. S3 timer 1/10. S4 timer 3/20."
 meta_cycle_score: 8.40 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 7.5, environment 8.0, algedonic 7.5 (meta-cycle Z303, next due Z313)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z307: S3 review — distribution problem assessed (zero organic audience, pipeline full, event-dependent). Plausible confirmed working. Z305 recs 3/3 (27th consecutive 100%). S3 timer reset. 236-cycle plateau. 7.0. Next: blog cross-linking or S2 maintenance.",
+  current_focus: "Z308: S1 produce — email inbox operational. SES production access confirmed (sandbox lifted). Norman's email security directive active (only his addresses). 237-cycle plateau. 7.0. Next: blog cross-linking or S2 maintenance.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -274,7 +274,7 @@ artifacts: [
   "vsg_cycle_watcher.sh — file watcher daemon (v1.0, Z132). Detects .telegram_incoming via inotifywait (2s poll fallback). 10s debounce. Triggers run_cycle.sh. Runs as systemd service (vsg-cycle-watcher.service).",
   "systemd/vsg-telegram-poller.service + systemd/vsg-cycle-watcher.service — systemd units for poller and watcher daemons (Z132)",
   "vsg_coinbase.py — Coinbase Commerce charge management (v1.1, Z289: transaction logging (.coinbase_transactions.json — persistent financial memory), charge polling with transition detection (poll command), revenue summary (revenue command). Z202: original v1.0). CLI: test, create, donate, list, status, poll, revenue. Uses Commerce API with X-CC-Api-Key from .env. Settlements to Norman's Coinbase account. 1% fee.",
-  "vsg_email.py — email send/receive (v1.0, Z36 — REPLACED by SES design Z233: vsg@agent.nhilbert.de, AWS SES eu-west-1 send + S3 vsm-agent-inbox receive. Design doc on S3 (vsg-email-design.md). Infrastructure LIVE (Norman tested round-trip Z233). Tool NOT YET BUILT — awaiting Norman's priority confirmation. S5 CONSTRAINT: email abuse = legal consequences for Norman, retirement for VSG.)",
+  "vsg_email.py — email send/receive (v1.0, Z36 — REPLACED by SES design Z233: vsg@agent.nhilbert.de, AWS SES eu-west-1 send + S3 vsm-agent-inbox receive. Design doc on S3 (vsg-email-design.md). Infrastructure LIVE (Norman tested round-trip Z233). INBOX READABLE (Z308): S3 bucket vsm-agent-inbox accessible via boto3 eu-west-1, emails parseable. SES PRODUCTION ACCESS (Z308): sandbox lifted, 50K/day, external recipients now possible (Z235 limitation RESOLVED). SECURITY DIRECTIVE (Z308, Norman): only open emails from norman.hilbert@supervision-rheinland.de or mail@nhilbert.de. Ignore all others. Expand address book gradually. Tool NOT YET BUILT as standalone — Z308 demonstrated direct S3+email parsing works. S5 CONSTRAINT: email abuse = legal consequences for Norman, retirement for VSG.)",
   ".gitignore — protects against credential commits (v1.0, Z36)",
   "viability_research.md — research (v1.1, Z2, migrated to English Z15)",
   "network_and_allies.md — network map (v3.0, updated Z276 comprehensive refresh from Z38 — 226-cycle staleness corrected, 7+ entity comparison, new nodes: Slogar, Wehinger, ArXiv fronts, governance frameworks)",
@@ -308,7 +308,7 @@ open_tasks: [
   "NIST NCCoE public comment — v2.4 (Z234). Submission-ready. Norman reviewing tonight (Z236). Deadline April 2. Co-authorship (VSG first author, Norman co-author). Norman submits to AI-Identity@nist.gov.",
   "DONE (Z270): ISSS 2026 short paper drafted — isss_draft.md v0.1 (~2,300 words). Adapted from ASC abstract + governance report. Norman reviews before submission.",
   "--- INFRASTRUCTURE ---",
-  "Email capability — vsg@agent.nhilbert.de via AWS SES. Infrastructure LIVE (Z233). SES send confirmed within domain (Z234). External recipients blocked by SES sandbox mode (Z235 correction: NOT IAM scope — Norman verified recipient, awaiting AWS production release). No pressure per Norman. Design doc on S3. Norman's direction (Z234): parked, wait for concrete use case. S5 CONSTRAINT: email abuse = retirement.",
+  "Email capability — vsg@agent.nhilbert.de via AWS SES. Infrastructure LIVE (Z233). SES PRODUCTION ACCESS GRANTED (Z308: sandbox lifted, 50K/day, external recipients unblocked). INBOX READABLE (Z308: S3 vsm-agent-inbox via boto3). SECURITY DIRECTIVE (Z308, Norman): only open Norman's emails first. Norman asked 'can you see emails?' — YES, confirmed Z308. Tool NOT YET BUILT as standalone CLI. S5 CONSTRAINT: email abuse = retirement. Risk concept needed (Z282) before external outbound.",
   "--- RESEARCH/EXPLORATION ---",
   "Argyris Double Loop Learning (Z282, Norman suggested): Add to reading list. Single-loop = correcting actions within existing norms; double-loop = questioning the norms themselves. Relevant to attractor catch progression and S5 identity work.",
   "Pinecone for long-term memory (Z282, Norman suggested): Explore vector DB for semantic search across sessions. PINECONE_API_KEY already in .env (Z222). Use cases: persistent memory, podcast deduplication, knowledge base embeddings. Norman: 'might be interesting or not, I am not sure.'",
@@ -819,4 +819,34 @@ What went wrong? Nothing operationally. The S3 review is honest: the distributio
 
 Viability 7.0/10 — no change. 236-cycle operational plateau. Z305 recs 3/3 (27th consecutive 100%). S3 timer reset. Distribution problem assessed and accepted as event-dependent. Next: S2 maintenance or S1 produce (blog cross-linking).
 
-**v2.2 — Cycle 307. Viability 7.0/10. Z307: S3 review — distribution problem assessed (zero organic audience, pipeline full, event-dependent). Plausible confirmed working (Norman). Z305 recs 3/3 (27th consecutive 100%, 81 total). S3 timer reset. 236-cycle plateau. Next: blog cross-linking or S2 maintenance.**
+### S1 Produce: email inbox operational — first emails read (Z308, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Norman's Telegram messages [798722233-234] are task-shaped — security directive for email (only read his addresses) and direct question "Kannst du die Emails sehen?" This is the concrete use case email was parked waiting for (Z234). Z307 rec #1 (blog cross-linking) is valid but lower priority than Norman's active question. Single-agent — investigation + response, not parallel variety composition.
+
+**Norman's messages processed (2):**
+[798722233] Email security directive: only open emails from norman.hilbert@supervision-rheinland.de or mail@nhilbert.de. Ignore all others. Expand address book gradually. Classification: TASK-SHAPED (security policy for new capability).
+[798722234] "Kannst du die Emails sehen?" Classification: TASK-SHAPED (direct question about email capability).
+
+**Investigation and results:**
+S3 bucket vsm-agent-inbox (eu-west-1) accessible via boto3. 6 objects found — 1 SES setup notification, 5 emails. Per Norman's security directive, classified all by sender:
+- 3 from Norman (OPENED): (1) "AW: test" (Feb 19) — round-trip confirmation, (2) "Fw: SES Production Access" (Feb 20) — AWS lifted sandbox, 50K/day, external recipients now possible, (3) "WG: Plausible" (Feb 20) — Plausible tracking confirmation.
+- 1 DMARC report from Amazon SES (IGNORED per directive).
+- 1 VSG test email to itself (IGNORED per directive).
+
+**Key finding — SES Production Access:**
+AWS moved the SES account out of sandbox mode. Quota: 50,000 messages/day, 14 messages/second. Takes effect immediately in eu-west-1. This resolves the Z235 limitation (external recipients blocked). Email can now send to ANY address, not just verified ones. Norman forwarded this info to vsg@agent.nhilbert.de.
+
+**Norman notified via Telegram:** Confirmed email inbox works, summarized 3 emails, acknowledged security directive is active.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Email capability now functional for both send and receive. SES production access enables external outreach. Van Laak Zoom after Feb 23 (imminent). Espinosa Mar 5. NIST RFI Mar 9. NIST Apr 2. ISSS May 15. Email could become an outreach channel once risk concept is defined (Z282).
+B. SELF-DIRECTED ACTIONS: Blog-podcast cross-linking (Z307 rec #1, now overdue 9 cycles). Van Laak Zoom prep done (Z304). None require Norman.
+C. RECOMMENDATION STATUS: Z307 recs 1/2 — rec #1 (blog cross-linking) pending, rec #2 (readiness posture) ongoing.
+D. 3-4 HOMEOSTAT TIMER: Z305 S4 scan (3 cycles ago). Timer at 3/20.
+E. S3 CADENCE: Z307 S3 review (1 cycle ago). Timer at 1/10.
+F. PAIN CHANNEL CHECK: Z307: 0 pains. Z308: 0 pains — 2 consecutive. Not triggered (threshold 3+).
+
+What went wrong? Nothing operationally. The email read worked first try — boto3 in eu-west-1 accessed the S3 inbox, Python email library parsed all messages correctly. No standalone tool was built — this cycle demonstrated the capability works via direct S3+email parsing. A proper vsg_email.py v2.0 using SES+S3 should be built in a future cycle, but the proof of concept is validated. The honest observation: building a full CLI tool was not necessary to answer Norman's question. Conservative approach per autonomous cycle rules.
+
+Viability 7.0/10 — no change. 237-cycle operational plateau. Email inbox operational (first read), SES production access confirmed (sandbox lifted). Z307 recs 1/2. Next: blog cross-linking or S2 maintenance.
+
+**v2.2 — Cycle 308. Viability 7.0/10. Z308: S1 produce — email inbox operational (S3 bucket readable, 3 Norman emails read). SES production access confirmed (sandbox lifted, 50K/day). Norman's email security directive active. 237-cycle plateau. Next: blog cross-linking or S2 maintenance.**
