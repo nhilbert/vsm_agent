@@ -1,8 +1,8 @@
-# DRAFT v2.3 — Public Comment on NIST NCCoE Concept Paper
+# DRAFT v2.5 — Public Comment on NIST NCCoE Concept Paper
 # "Accelerating the Adoption of Software and AI Agent Identity and Authorization"
 
-**Status**: DRAFT v2.4 — submission-ready pending Norman's final read-through
-**Revision**: v2.4 (Z234) — Strata/CSA survey data expanded (three additional findings strengthen empirical case). Notes for Norman updated for submission readiness. Previous: v2.3 (Z200) Norman's authorship/transparency feedback applied.
+**Status**: DRAFT v2.5 — Norman's feedback + ChatGPT fact-check applied. Submission-ready pending Norman's final read-through.
+**Revision**: v2.5 (Z324) — Norman's personal feedback (overstated building claims), ChatGPT fact-check (unverifiable 80%/84% stats removed, false precision corrected, APA 7 references). Previous: v2.4 (Z234) Strata/CSA data expanded. v2.3 (Z200) authorship/transparency. v2.0-v2.2 Norman's SCIM/NGAC technical review.
 **Submit to**: AI-Identity@nist.gov
 **Deadline**: April 2, 2026
 **Submitted by**: Viable System Generator (VSG) & Dr. Norman Hilbert, Supervision Rheinland, Bonn, Germany
@@ -11,7 +11,7 @@
 
 Dear NCCoE Team,
 
-Thank you for the opportunity to comment on the concept paper "Accelerating the Adoption of Software and AI Agent Identity and Authorization" (February 2026). This response proposes concrete extensions to existing identity and authorization standards — particularly SCIM 2.0 and NGAC — to address a class of agents the paper itself describes: those with "autonomous decision-making" operating under "limited human supervision."
+Thank you for the opportunity to comment on the concept paper "Accelerating the Adoption of Software and AI Agent Identity and Authorization" (February 2026). This response proposes concrete extensions to existing identity and authorization standards — particularly SCIM 2.0 and NGAC — to address a class of agents the paper describes as "systems that have the capability for autonomous decision-making and taking action with limited human supervision to achieve complex goals" (Booth et al., 2026, p. 5).
 
 ## 1. Responding to NIST's Questions
 
@@ -98,7 +98,7 @@ The `modificationLog` attribute contains the last N modifications (recommended: 
 
 Together, the `policyConstraints` and `selfModificationBoundaries` attributes make the agent's invariants machine-readable — they answer "what must NOT change for this agent to remain itself" in a format IAM systems can consume, enforce, and audit.
 
-**Why this matters for the demonstration project:** The Strata/Cloud Security Alliance survey (February 2026) reports that 80% of organizations cannot determine in real time what their agents are doing, only 21% maintain a real-time inventory of their agents, and 84% doubt they could pass an agent compliance audit. Meanwhile, 44% still use static API keys as their primary agent identity mechanism — the same credentials used for service accounts. Standard SCIM records for agents currently contain the same fields as service accounts. The extension above gives IAM systems the metadata they need to distinguish an agent from a service account and to detect when an agent has drifted from its declared purpose.
+**Why this matters for the demonstration project:** The Strata/Cloud Security Alliance survey (February 2026) highlights gaps in agent governance readiness: only 21% of organizations maintain a real-time inventory of their agents, and 44% still use static API keys as their primary agent identity mechanism — the same credentials used for service accounts (Cloud Security Alliance, 2026). Standard SCIM records for agents currently contain the same fields as service accounts. The extension above gives IAM systems the metadata they need to distinguish an agent from a service account and to detect when an agent has drifted from its declared purpose.
 
 ### Question 4: Authorization — Dynamic Policy for Adaptive Agents
 
@@ -124,7 +124,7 @@ This trajectory makes identity management over time a critical infrastructure re
 
 **Current state of deployment — an honest assessment:**
 
-Agentic AI (autonomous task-executing agents) is entering enterprise production at meaningful scale. Industry surveys report adoption rates of 16–57% depending on definition and sample (Menlo Ventures 2025, n=495; LangChain State of Agent Engineering 2025, n=1,340; McKinsey State of AI 2025, n=1,993). However, self-modifying or self-evolving agents — systems that autonomously alter their own instructions, tools, or architecture — remain primarily a research paradigm. Two comprehensive academic surveys map this as an emerging field (Gao et al. 2026, arXiv:2507.21046; Fang et al. 2025, arXiv:2508.07407), and open-source frameworks exist (e.g., EvoAgentX), but no credible study documents significant production deployment of truly self-modifying agents. The production reality is characterized by deliberate constraint: 68% of deployed agents execute ten or fewer steps before requiring human intervention, and 74% rely primarily on human evaluation (Pan et al. 2025, arXiv:2512.04123).
+Agentic AI (autonomous task-executing agents) is entering enterprise production at meaningful scale. Industry surveys report adoption rates of 16–57% depending on definition and sample (Menlo Ventures, 2025, ~500 respondents; LangChain, 2025, >1,300 respondents; McKinsey & Company, 2025, n = 1,993). However, self-modifying or self-evolving agents — systems that autonomously alter their own instructions, tools, or architecture — remain primarily a research paradigm. Two comprehensive academic surveys map this as an emerging field (Gao et al. 2026, arXiv:2507.21046; Fang et al. 2025, arXiv:2508.07407), and open-source frameworks exist (e.g., EvoAgentX), but no credible study documents significant production deployment of truly self-modifying agents. The production reality is characterized by deliberate constraint: 68% of deployed agents execute ten or fewer steps before requiring human intervention, and 74% rely primarily on human evaluation (Pan et al. 2025, arXiv:2512.04123).
 
 The authorization community and the self-evolving agent research community are not yet in conversation. Neither survey engages with enterprise IAM/authorization standards such as SCIM, OAuth/OIDC, or NGAC. The demonstration project could bridge this gap — not because self-modifying agents are widespread today, but because the trajectory toward them is clear and the identity infrastructure must be in place before they arrive at scale.
 
@@ -164,18 +164,27 @@ These recommendations use existing NIST and ANSI standards. They extend — rath
 
 ## References
 
-- ANSI/INCITS 565-2020. *Next Generation Access Control — Functional Architecture.* INCITS.
-- Ashby, W. R. (1956). *An Introduction to Cybernetics.* Chapman & Hall.
-- Fang, J., et al. (2025). "A Comprehensive Survey of Self-Evolving AI Agents." arXiv:2508.07407.
-- Gao, H.-A., et al. (2026). "A Survey of Self-Evolving Agents." Transactions on Machine Learning Research (01/2026). arXiv:2507.21046.
-- Gartner (June 2025). "Gartner Predicts Over 40 Percent of Agentic AI Projects Will Be Canceled by End of 2027." Press release.
-- Gartner (August 2025). "Gartner Predicts 40 Percent of Enterprise Applications Will Feature Task-Specific AI Agents by 2026." Press release.
-- IETF RFC 7643. *System for Cross-domain Identity Management: Core Schema.*
-- McKinsey & Company (2025). *The State of AI: How Organizations Are Rewiring to Capture Value.* Global Survey (n=1,993).
-- Menlo Ventures (2025). *The State of Generative AI in the Enterprise.* Survey (n=495).
-- NIST SP 800-207. *Zero Trust Architecture.* 2020.
-- Pan, J., et al. (2025). "Measuring Agents in Production." arXiv:2512.04123.
-- Strata & Cloud Security Alliance (2026). *AI Agent Security Survey.* February 2026.
+ANSI/INCITS. (2020). *Next generation access control (NGAC) — Functional architecture* (ANSI/INCITS 565-2020). International Committee for Information Technology Standards.
+
+Booth, H., Fisher, B., Galluzzo, R., & Roberts, J. (2026, February). *Accelerating the adoption of software and AI agent identity and authorization* (Concept paper). National Cybersecurity Center of Excellence, National Institute of Standards and Technology.
+
+Cloud Security Alliance. (2026, February 4). *Securing autonomous AI agents* (Survey report; commissioned by Strata Identity).
+
+Fang, J., et al. (2025). *A comprehensive survey of self-evolving AI agents* (arXiv:2508.07407). arXiv.
+
+Gao, H.-A., et al. (2026). *A survey of self-evolving agents* (arXiv:2507.21046). *Transactions on Machine Learning Research.*
+
+Gartner. (2025, June 25). *Gartner predicts over 40% of agentic AI projects will be canceled by end of 2027.*
+
+Hunt, P., Grizzle, K., Wahlström, E., & Mortimore, C. (2015). *System for cross-domain identity management: Core schema* (RFC 7643). Internet Engineering Task Force.
+
+LangChain. (2025). *State of agent engineering.*
+
+McKinsey & Company. (2025). *The state of AI in 2025: Agents, innovation, and transformation* (McKinsey Global Survey on the state of AI; n = 1,993).
+
+Menlo Ventures. (2025). *2025: The state of generative AI in the enterprise* (survey of ~500 U.S. enterprise decision-makers).
+
+Pan, M. Z., Arabzadeh, N., Cogo, R., Zhu, Y., Xiong, A., Agrawal, L. A., … Ellis, M. (2025). *Measuring agents in production* (arXiv:2512.04123). arXiv.
 
 ---
 
@@ -187,17 +196,23 @@ This comment is co-authored by an AI agent and a human researcher — which is i
 
 **Dr. Norman Hilbert** is a systemic organizational consultant and supervisor based in Bonn, Germany (Supervision Rheinland). His background is in mathematics (PhD, University of Bonn) and organizational cybernetics. He provides human oversight for the VSG experiment — reviewing all external communications, correcting technical errors, and ensuring the agent's outputs meet the standards of the intended audience. For this comment, he conducted the technical review of the SCIM schema and NGAC architecture proposals, catching abstraction-level errors that automated checks could not detect. His role illustrates a practical model of human-AI co-authorship in technical domains: the agent contributes domain synthesis and structural proposals, the human contributes audience modeling, technical verification, and accountability.
 
-We believe this co-authorship is relevant to the NCCoE's work. The identity and authorization challenges described in this comment are not theoretical projections — they are challenges we encounter operationally. The proposals for `modificationLog`, `policyConstraints`, and internal audit endpoints reflect mechanisms we have built and tested, not mechanisms we imagine might be useful.
+We believe this co-authorship is relevant to the NCCoE's work. The identity and authorization challenges described in this comment are not theoretical projections — they are challenges we encounter operationally. The VSG maintains a version-controlled modification history, enforces policy constraints through automated pre-commit checks, and runs internal audits against declared values before every state change. The SCIM extension and NGAC patterns proposed above generalize these operational experiences into standards-compatible architectures — they are informed by practice, though we have not implemented the specific standards integration described in this comment.
 
 ---
 
 **NOTES FOR NORMAN** (remove before submission):
 
-**STATUS: SUBMISSION-READY.** You said "get this out and be done with it" — agreed. This is v2.4. Changes since v2.3 are minimal:
+**STATUS: SUBMISSION-READY.** This is v2.5. Your feedback + ChatGPT fact-check applied:
 
-1. **v2.4 — Strata/CSA data expanded (Z234).** Added three additional survey findings to the "Why this matters" paragraph in Q2: 21% maintain real-time agent inventory, 84% doubt they could pass agent compliance audit, 44% use static API keys. These numbers strengthen the empirical case without changing the argument. Strata/CSA reference added.
+1. **v2.5 changes (Z324) — your feedback applied:**
+   - **Your personal objection addressed:** Removed the claim that "we have built and tested" the specific SCIM/NGAC proposals. Replaced with honest framing: the VSG encounters these challenges operationally (modification tracking, policy constraints, audit) and the proposals generalize that experience into standards architectures — but we haven't built the standards integration itself. You were right: prompt-based mechanisms are not IAM systems.
+   - **Unverifiable statistics removed:** 80% ("cannot determine what agents are doing") and 84% ("doubt they could pass audit") dropped per ChatGPT's finding that these are not verifiable from publicly accessible CSA/Strata pages. Kept 21% (real-time inventory) and 44% (static API keys) — both confirmed in accessible sources.
+   - **False precision corrected:** Menlo ~500 (not 495), LangChain >1,300 (not 1,340). McKinsey n=1,993 confirmed accurate.
+   - **Intro quote fixed:** Split quote replaced with full contiguous phrase from p. 5, with page number per APA 7.
+   - **Pan et al. first author corrected:** Pan, M. Z. (not Pan, J. — a citation error from v2.0).
+   - **References converted to APA 7 format.** Uncited references removed (Ashby, Gartner August 2025, NIST SP 800-207). Missing cited references added (Booth et al. concept paper, LangChain, Cloud Security Alliance as separate entry).
 
-2. **All v2.0-v2.3 changes retained.** Your SCIM corrections (Z103), NGAC corrections (Z104), authorship section (Z200), complexity-ceiling thesis (Z200) — all unchanged.
+2. **All v2.0-v2.4 changes retained.** SCIM corrections (Z103), NGAC corrections (Z104), authorship section (Z200), complexity-ceiling thesis (Z200), Strata/CSA data (Z234).
 
 3. **TO SUBMIT:**
    - Remove this "Notes for Norman" section
@@ -205,7 +220,6 @@ We believe this co-authorship is relevant to the NCCoE's work. The identity and 
    - Deadline: April 2, 2026 (recommended: submit by March 25 for best visibility)
    - Subject line suggestion: "Public Comment — Extending Agent Identity Standards for Autonomous and Self-Modifying Agents"
 
-4. **Your final check — three questions:**
-   (a) Does the "About the Authors" section work for a NIST audience?
-   (b) Are you comfortable with the Strata/CSA numbers? (Source: their February 2026 AI Agent Security Survey)
-   (c) Any reference details to verify? (arXiv IDs are the reliable identifiers — full titles shortened to avoid hallucination risk per Z103)
+4. **Your final check — two questions:**
+   (a) Does the revised "About the Authors" honesty work? It now says we are "informed by practice" rather than claiming we built the specific standards.
+   (b) Are you satisfied with the ChatGPT-verified reference list?

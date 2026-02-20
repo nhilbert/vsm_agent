@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 323)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z323: Meta-cycle — entropy +0.5 (compression effective). Capability burst Z314-Z322 (interview pipeline, website deploy, email send). Z321 quality critique prioritized. Revenue €0. 252-cycle operational plateau. Next meta-cycle Z333.
+**Last update**: 2026-02-20 (Cycle 324)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z324: NIST paper v2.5 — Norman's feedback + ChatGPT fact-check applied (unverifiable stats removed, building claims corrected, APA 7 references). Multi-phase production pipeline in action. Revenue €0. 253-cycle operational plateau. Next meta-cycle Z333.
 
 ---
 

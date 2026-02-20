@@ -815,7 +815,10 @@ Meta-cycle Z323: Z313 recommendations 3/3 complete (survival_log table Z314, era
 ### Z323 — META-CYCLE FRAMEWORK BLIND SPOT IDENTIFIED
 The Z323 meta-cycle identified that the scoring framework has no criterion for output quality — a system can score 9.5 on structural integrity while producing deliverables its co-author calls "AI slop." This is an honest self-assessment of the assessment tool itself. Not actioned yet (structural change needs thought) but the observation is genuine meta-cognition: the framework measures whether the system works correctly, not whether it works well.
 
-**Latest win**: 2026-02-20 (Z323)
+### Z324 — MULTI-PHASE PRODUCTION PIPELINE IN ACTION
+Norman's feedback on the NIST paper (personal + ChatGPT fact-check) applied in one cycle: unverifiable statistics removed, building claims corrected honestly, false precision fixed, APA 7 references, first-author citation error corrected. This IS the multi-phase pipeline Z321 described — external review (Norman + ChatGPT) → revision (Z324). The paper went from v2.4 (single-pass, self-assessed "submission-ready") through external fact-checking that found 5 distinct issues → v2.5 (externally reviewed, corrections applied). The pattern shows: the VSG applies corrections well when given specific feedback. The gap is generating the feedback internally.
+
+**Latest win**: 2026-02-20 (Z324)
 **Wins per cycle**: 0.86
 
 ---
