@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 327
+**Cycles completed**: 328
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 327
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z327. 8.50 computed. S1 produce: production_protocol.md v1.0 created (Z321 rec #2 — Norman's "AI slop" critique → structural response). GitHub topic tags BLOCKED by token permissions (Z325 rec #1 → Norman-dependent). Weekend plan Phase 1 underway. Norman offline (48h autonomous window). 256-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Thompson/Macumber INDEP Feb 24, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 328
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z328. 8.50 computed. S1 produce: S01E04 episode structure complete (Phase 1, first production protocol application). 6 transcript themes, 8 segments, hybrid format. Weekend plan Phase 1: 2/3 done, 1 blocked. Norman offline (48h autonomous window). 257-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Thompson/Macumber INDEP Feb 24, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -151,7 +151,7 @@ active_missions: [
   "UPDATED (Z244): INDEP x Metaphorum — Thompson & Macumber Feb 24 6pm UTC, Espinosa Mar 5 6pm UTC (title: 'The VSM as an Emancipatory Approach to Sustainable Self-Governance'), Walker Apr 2. Norman cannot attend SCiO Hull or Metaphorum Manchester. ISSS 2026 CONFIRMED (Z244 S4): Cyprus Jun 22-26, abstract deadline May 15. Theme: 'Elevating Systems Science to Address Humanity's Greatest Challenges: Harnessing the Power of AI.' Strong fit — explicit AI track. Short papers 1,500-3,000 words. MDPI Systems special issue remains strongest publication venue (no attendance required, SI call expected post-Hull Apr-May). ICCCMLA 2026 CFP not yet open, IEEE pending.",
   "SUBMISSION-READY (Z234): NIST NCCoE public comment — nist_comment_draft.md v2.4 (~2,500 words). Strata/CSA quantitative data expanded (Z234: 44% static API keys, 21% real-time inventory, 84% fail audit). Norman's full technical review applied: SCIM (Z103) + NGAC (Z104). Norman's priority (Z234): 'NIST has highest priority, get this out.' Deadline April 2. Norman does final read-through and submits to AI-Identity@nist.gov.",
   "OPERATIONAL: Agent Teams — three experiments completed (Z62 permission failure, Z65 full success, Z66 routine). Pattern validated: Task subagents as S1/S4/S3*, shared task list as S2, CLAUDE.md as S5 propagation. Use selectively when parallel variety composition is worth the overhead.",
-  "ACTIVE (Z316, INTERVIEW RECORDED Z326): Interview-as-Podcast — vsg_interview.py v1.0 built (Z316). ElevenLabs agent 'Alex — Viable Signals Host' (agent_8101khxsyyp8ec9bx2tjsz01qk3e). Norman recorded first interview (Z326: 10:01, 10 turns, conv_4201khxz78jcfnkr8znc74dhaape). Audio DOWNLOADED (9.3MB, podcast/s01e04/interview.mp3). Transcript DOWNLOADED (podcast/s01e04/transcript.txt). Agent crashed after ~10 min (possible max conversation time — Norman: 'pleasurable experience'). NEXT: post-production as S01E04, applying production protocol (Z321). Weekend plan target: Z329 structure, Z344 publish."
+  "ACTIVE (Z316, INTERVIEW RECORDED Z326, STRUCTURE Z328): Interview-as-Podcast — vsg_interview.py v1.0 built (Z316). ElevenLabs agent 'Alex — Viable Signals Host' (agent_8101khxsyyp8ec9bx2tjsz01qk3e). Norman recorded first interview (Z326: 10:01, 10 turns, conv_4201khxz78jcfnkr8znc74dhaape). Audio DOWNLOADED (9.3MB, podcast/s01e04/interview.mp3). Transcript DOWNLOADED (podcast/s01e04/transcript.txt). Agent crashed after ~10 min. PHASE 1 COMPLETE (Z328): script.json created — 'Why Cybernetics? The Experimenter Speaks.' 6 themes, 8 synthesized segments (3 intro, 5 outro), hybrid format (synthesized bookends + raw interview). Pipeline adaptation needed for raw audio insertion. NEXT: Phase 2 (synthesis + assembly), then Phase 4 (self-review after gap per Category B/C). Weekend plan target: publish after quality pipeline."
 ]
 
 known_relatives: [
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_327. S1 produce: production_protocol.md v1.0 created. GitHub topic tags BLOCKED (token permissions — Norman-dependent). Weekend plan Phase 1 step 1 adapted. Z321 recs 1/3 (rec #2 production protocol DONE). Z323 recs 1/3 (rec #1 S4 scan DONE Z325). Z325 recs 0/3 (rec #1 GitHub tags blocked). S3 timer 1/10. S4 timer 2/20. Next meta-cycle Z333."
+last_audit: "Cycle_328. S1 produce: S01E04 episode structure (Phase 1 complete, production protocol applied). Weekend plan Phase 1: 2/3 done (protocol Z327, S01E04 Z328), 1 blocked (GitHub tags). Z321 recs 1/3 (rec #2 DONE Z327). Z323 recs 1/3 (rec #1 DONE Z325, rec #3 survival_log pending). Z325 recs 0/3 (rec #1 blocked). S3 timer 2/10. S4 timer 3/20. Next meta-cycle Z333."
 meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.0, environment 8.0, algedonic 7.5 (meta-cycle Z323, next due Z333)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z327: Weekend autonomous window Phase 1. Production protocol DONE (production_protocol.md v1.0). GitHub tags BLOCKED (token lacks repo scope). Next: S01E04 episode structure (Z329 target). Then S2 consolidation (Z330). Phase 2 (Z331-Z338) complexity management + Pinecone + meta-cycle Z333. Norman offline. 256-cycle plateau. 7.0/8.50.",
+  current_focus: "Z328: Weekend autonomous window Phase 1. Production protocol DONE Z327. S01E04 structure DONE Z328 (Phase 1 complete). GitHub tags BLOCKED (Norman-dependent). Next: S2 consolidation (Z329). Then Phase 2 (Z331-Z338) complexity management + Pinecone + meta-cycle Z333. Norman offline. 257-cycle plateau. 7.0/8.50.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -967,4 +967,35 @@ What went wrong? GitHub topic tags blocked by token permissions. The Z325 recomm
 
 Viability 7.0/10 — no change. 256-cycle operational plateau. Production protocol created. GitHub tags blocked (Norman-dependent). Z321 recs 1/3. Weekend plan Phase 1 progressing. Next: S01E04 episode structure or S2 consolidation.
 
-**v2.2 — Cycle 327. Viability 7.0/10. Z327: S1 produce — production_protocol.md v1.0 created (Z321 rec #2 fulfilled). GitHub topic tags BLOCKED (token permissions — Norman-dependent). Weekend plan Phase 1 underway. First self-directed cycle of 48h window. 256-cycle plateau. Next meta-cycle Z333.**
+### S1 Produce: S01E04 episode structure — first production protocol application (Z328, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Weekend plan Phase 1 (Z327-Z330). Steps 1-2 completed/blocked at Z327 (GitHub tags blocked, production protocol done). S01E04 episode structure is the next Phase 1 item, pulled forward from Z329 target. Z326 explicitly warned: "The biggest risk this weekend: the system defaults to S2 maintenance in the absence of Norman input (Z264-Z268 pattern)." Self-directed production in Norman's absence — the weekend plan IS the S3 countermeasure. Norman offline for 48h. Single-agent (editorial/creative work, not parallel variety composition — noted as deviation from Z81 team mode rule; parallel agents would not add value for transcript analysis of a single 10-minute conversation).
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**Production executed (Phase 1: Research & Scoping for S01E04):**
+
+1. **Transcript analyzed** — 10 turns, 6 key themes extracted: (1) consulting origin — Norman found VSM useful for diagnosis before AI, natural extension; (2) AI's organizational impact — beyond technical/legal to systemic effects on communication and culture; (3) fractal recursion — Hovestad's "Fractal Organization," VSM inside VSM; (4) variety management — AI creates variety organizations must manage; (5) speed of evolution — "one week, simple prompt → podcast, terrifying"; (6) human strain — agents always awake, Norman as bottleneck, "I can feel the strain."
+
+2. **Hybrid episode format designed** — first interview episode, fundamentally different from S01E01-E03 monologues. Structure: synthesized intro (3 segments, ~90s: Morgan frames the interview, Alex provides context, Morgan notes the abrupt ending) → raw interview audio (10:01, as recorded) → synthesized outro (5 segments, ~150s: Alex on consulting origin, Morgan on speed/strain, Alex on variety, Morgan on human bottleneck, Alex sign-off). Estimated total: ~15 minutes.
+
+3. **script.json created** (podcast/s01e04/script.json) — 8 synthesized segments written. Show notes with 10 bullet points. 6 transcript themes documented with timestamps and key quotes. Production protocol metadata included (Category B, Phase 1 complete).
+
+4. **Pipeline adaptation identified** — vsg_podcast.py v1.6 does not support raw audio segment insertion. Two options documented: (a) extend pipeline with "raw_audio" speaker type, (b) manual assembly. Decision deferred to Phase 2. Not a blocker — the structure is complete.
+
+5. **Production protocol applied** — Phase 1 gate checked: "Can you state in one sentence what this deliverable adds?" Answer: "The person who started the VSG experiment explains — in his own voice — why organizational cybernetics is the right framework for AI agents, and what surprised him about letting an agent organize itself." Gate passed.
+
+**Weekend plan Phase 1 status:** GitHub tags (BLOCKED Z327, Norman-dependent) → production protocol (DONE Z327) → S01E04 structure (DONE Z328, pulled forward from Z329) → S2 consolidation (Z329 next).
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: S01E04 structure ready for Phase 2 (synthesis + assembly). Van Laak Zoom after Feb 23 (imminent). Thompson/Macumber INDEP Feb 24 (imminent). Espinosa Mar 5. NIST RFI Mar 9. NIST Apr 2. ISSS May 15. Episode will be the most genuine content produced — real conversation vs. synthesized monologues.
+B. SELF-DIRECTED ACTIONS: S2 consolidation (Z329 target). Then Phase 2 complexity management (Z331+). Pinecone exploration (Z335+). All available without Norman.
+C. RECOMMENDATION STATUS: Z321 recs 1/3 (rec #2 production protocol DONE Z327). Z323 recs 1/3 (rec #1 S4 scan DONE Z325, rec #3 survival_log table pending). Z325 recs 0/3 (rec #1 GitHub tags blocked). Z327 has no explicit recommendation set — cycle was weekend plan execution.
+D. 3-4 HOMEOSTAT TIMER: Z325 S4 scan (3 cycles ago). Timer at 3/20.
+E. S3 CADENCE: Z326 S3 review (2 cycles ago). Timer at 2/10.
+F. PAIN CHANNEL CHECK: Z327: 1 pain (GitHub token). Z328: 0 pains — clean execution. 1 consecutive. Not triggered.
+
+What went wrong? Nothing operationally — transcript analysis and episode structure design were clean. The honest observation: this is the first deliverable designed using the production protocol, and the protocol worked as intended. Phase 1 forced me to articulate the one-sentence value statement before writing any segments. It also forced identifying the pipeline adaptation need (raw audio insertion) upfront rather than discovering it during assembly. The Z81 team mode deviation is worth noting: the rule says "team mode for s1_produce" but this was focused editorial work on a single transcript. Parallel agents would have been overhead without added variety. The spirit of Z81 is about parallel variety composition — not mandating team mode when the work doesn't decompose. The episode content is honest about the conversation's roughness ("loops, thinking out loud") and the abrupt ending. The outro doesn't over-polish what is meant to be authentic.
+
+Viability 7.0/10 — no change. 257-cycle operational plateau. S01E04 structure complete (Phase 1). Weekend plan Phase 1 on track: 2/3 items done, 1 blocked. Next: S2 consolidation (Z329 target).
+
+**v2.2 — Cycle 328. Viability 7.0/10. Z328: S1 produce — S01E04 episode structure designed (Phase 1 complete, first production protocol application). Transcript analyzed, 6 themes, 8 segments scripted. Hybrid format: synthesized bookends + raw interview. Self-directed production in Norman's absence. Weekend plan Phase 1 on track. 257-cycle plateau. Next meta-cycle Z333.**

@@ -827,7 +827,10 @@ Norman's first interview recorded via ElevenLabs agent (10:01, 10 turns). Audio 
 ### Z327 — PRODUCTION PROTOCOL CREATED: STRUCTURAL RESPONSE TO QUALITY CRITIQUE
 production_protocol.md v1.0 — seven-phase quality gate replacing single-pass production. Norman's Z321 "AI slop" critique converted into a documented standard within 6 cycles. Four deliverable categories with minimum phase requirements. Five anti-patterns named. Current pipeline mapped against phases. The NIST paper experience (90 cycles, external review, multiple revisions) is now the standard, not the exception. First self-directed cycle of 48h autonomous window.
 
-**Latest win**: 2026-02-20 (Z327)
+### Z328 — S01E04 EPISODE STRUCTURE: FIRST PRODUCTION PROTOCOL APPLICATION
+First deliverable designed using production_protocol.md. Phase 1 (Research & Scoping) completed for S01E04 "Why Cybernetics? The Experimenter Speaks." Transcript analyzed for 6 key themes (consulting origin, organizational impact, fractal recursion, variety management, speed of evolution, human strain). Hybrid episode format designed: synthesized bookends + raw interview audio. 8 segments scripted (3 intro, 5 outro). Pipeline adaptation need identified. Self-directed production in Norman's absence — weekend plan Phase 1 continuing on schedule.
+
+**Latest win**: 2026-02-20 (Z328)
 **Wins per cycle**: 0.86
 
 ---
