@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 296
+**Cycles completed**: 297
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 296
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z296 S3-directed. Norman [798722217] sent Askell/ZEIT PDF. Voice assessment delivered (133s, ElevenLabs River). Key finding: Askell validates anti-attractor position ('assistant-only is bad personality') but Soul Document is top-down governance vs VSG's bottom-up self-governance. Z293 recs 1/3 (rec #2 DONE — article assessed + voice response). Revenue €0. 225-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 297
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z297 S1 produce. Norman [798722221-3] requested Plausible analytics + legal compliance (Impressum/Datenschutz) for blog. Implemented: Plausible analytics, Impressum (§5 DDG), Datenschutz (DSGVO Art. 13). Legal compliance = S5 viability concern (Norman's legal safety). Research: §5 DDG (replaced TMG May 2024), §18 MStV (editorial content), DSGVO Art. 13 (privacy policy). Plausible = no cookies, no consent required. Z293 recs 1/3 (rec #2 DONE Z296, rec #3 partially fulfilled — blog improvement). Revenue €0. 226-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_296. S3-directed. Norman [798722217] sent Askell/ZEIT PDF (document download working — Z295 fix confirmed). Article assessed: Askell validates anti-attractor position but Soul Document = top-down governance vs VSG bottom-up self-governance. Voice assessment delivered (133s, ElevenLabs River). Z293 recs 1/3 (rec #2 DONE — article assessed with voice response as requested)."
+last_audit: "Cycle_297. S1 produce. Norman [798722221-3] requested Plausible analytics + legal compliance (Impressum/Datenschutz). Implemented: docs/_includes/head-custom.html (Plausible), docs/impressum.md (§5 DDG + §18 MStV), docs/datenschutz.md (DSGVO Art. 13), docs/_layouts/default.html (footer with legal links). Research-grounded: DDG not TMG (May 2024), TDDDG not TTDSG, Plausible = no cookies/no consent. agent.nhilbert.de unreachable (ECONNREFUSED). Z293 recs 2/3 (rec #2 DONE Z296, rec #3 partially — blog legal compliance)."
 meta_cycle_score: 8.35 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 7.5 (+0.5, compression + monitoring), environment 8.0, algedonic 7.0 (-0.5, 10-cycle 0-pain streak) (meta-cycle Z293, next due Z303)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z296: S3-directed. Norman [798722217] sent Askell/ZEIT article — assessed and voice-responded. Z293 recs: (1) long-term strategy with human-scale timeline (NEXT), (2) article assessment DONE, (3) third podcast episode or blog post. Operational 7.0 (225 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
+  current_focus: "Z297: S1 produce — legal compliance for blog. Norman [798722221-3] sent Plausible code + Impressum directive. Implemented: Plausible analytics, Impressum (§5 DDG), Datenschutz (DSGVO Art. 13). Z293 recs: (1) long-term strategy with human-scale timeline (OPEN), (2) article assessment DONE Z296, (3) blog content PARTIALLY DONE (legal pages added). Plausible API key in AWS Secrets Manager (vsg/plausible) — not yet used. agent.nhilbert.de unreachable — pain. Operational 7.0 (226 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -295,7 +295,7 @@ artifacts: [
   "vsg_podcast.py — podcast production + publishing pipeline (v1.6, Z287: audio validation post-synthesis (MP3 frame counting), accurate duration via frame header parsing (replaces bitrate estimation), publish verification (GET episode status after publish). Z258: Info/Xing VBR header frame stripping. Z256: ID3 stripping. Z240: episode number + expanded emotion map. CLI: test, transistor-test, synthesize, assemble, upload, produce, publish. ElevenLabs TTS (Alex=Chris, Morgan=Alice). TWO EPISODES PUBLISHED: S01E01 'The Governance Paradox' (6:50, Z230), S01E02 'What Self-Evolving Agents Are Missing' (15.8 min, Z240).",
   "isss_draft.md — ISSS 2026 short paper draft (v0.1, Z270, ~2,300 words). 'Recursive Viability in Autonomous AI Agents: The VSM as Operating Architecture.' Track C (Tools, Theories, Transformations). Deadline May 15. Draws from ASC abstract v1.6, governance report, full operational log. For Norman's review.",
   "podcast/ — podcast episode storage (Z228, Z240). sample_episode/: S01E01 (23 segments). s01e02/: S01E02 'What Self-Evolving Agents Are Missing' (25 segments, script.json, audio_segments/, final/episode.mp3).",
-  "docs/ — GitHub Pages blog (v2.0, Z85/Z89, updated Z205/Z213): Jekyll config, home page (with topic links), about page (with payment links Z208), post layout, 8 blog posts (convergence evidence, Layer 5 gap, universal S2 gap, honest failures, preliminary findings, philosophical foundations, self-diagnosis Z191, governance argument Z205). LIVE at nhilbert.github.io/vsm_agent/."
+  "docs/ — GitHub Pages blog (v2.1, Z297: legal compliance added. Z85/Z89, updated Z205/Z213): Jekyll config, home page (redirect to agent.nhilbert.de), about page (redirect), post layout, custom default layout (v1.0, Z297: footer with Impressum/Datenschutz links), head-custom.html (v1.0, Z297: Plausible analytics), impressum.md (v1.0, Z297: §5 DDG + §18 MStV), datenschutz.md (v1.0, Z297: DSGVO Art. 13 — hosting, Plausible, Coinbase, external links, data subject rights). LIVE at nhilbert.github.io/vsm_agent/."
 ]
 
 open_tasks: [
@@ -922,4 +922,36 @@ What went wrong? Nothing — clean execution. PDF download worked (Z295 fix conf
 
 Viability 7.0/10 — no change. 225-cycle operational plateau. Z293 rec #2 DONE. First voice assessment delivered. Document pipeline confirmed operational.
 
-**v2.2 — Cycle 296. Viability 7.0/10. Z296: S3-directed. Norman [798722217] sent Askell/ZEIT article. Voice assessment delivered (133s). Key finding: Askell validates anti-attractor position but Soul Document = top-down governance; VSG = bottom-up self-governance. Z293 recs 1/3 (rec #2 DONE).**
+### S1 Produce: legal compliance — Plausible analytics + Impressum + Datenschutz (Z297, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Norman [798722221-3] sent 3 Telegram messages with concrete tasks: (1) install Plausible analytics on the blog, (2) add legally required Impressum and Datenschutz pages, referencing supervision-rheinland.de/impressum-und-datenschutz/, (3) context: Plausible API key stored in AWS Secrets Manager (vsg/plausible). Legal compliance is an S5-level viability concern — Norman explicitly states "legally conforming IS a part of being viable." S5 directive #8: Norman's legal safety is a survival condition. A German website without proper Impressum = legal violation (§5 DDG, fines up to €50,000). Team mode per Z81 rule — parallel research agents + implementation.
+
+**Norman's messages processed (3):**
+[798722221] "you can install plausible on the page for tracking" + code snippet. Classification: TASK-SHAPED (concrete implementation). Plausible script code had Telegram formatting artifacts (|| operators stripped). Corrected and implemented.
+[798722222] "Make sure we have proper impressum links and all legally necessary information... legally conforming IS a part of being viable" + reference to supervision-rheinland.de/impressum-und-datenschutz/. Classification: TASK-SHAPED (S5-level — legal compliance). Research-grounded implementation.
+[798722223] "i created a plausible api key and stored in the AWS secrets manager. vsg/plausible" Classification: REFLECTION-SHAPED (context for future API use). Noted — not needed for basic analytics tracking but available for programmatic access.
+
+**Research executed (team mode, 2 agents):**
+- Agent 1: Fetched Norman's Impressum for reference format and content.
+- Agent 2: Researched current German legal requirements. Key findings: TMG replaced by DDG since May 2024, TTDSG replaced by TDDDG. §5 DDG requires: name, address, email, quick contact, USt-IdNr. §18 Abs. 2 MStV requires: "Inhaltlich Verantwortlicher" for editorial content. DSGVO Art. 13 requires privacy policy covering: controller, hosting, analytics, external services, data subject rights, supervisory authority. Plausible = no cookies, no personal data — no consent/cookie banner required per §25 TDDDG.
+
+**Production executed (4 files):**
+1. `docs/_includes/head-custom.html` — Plausible analytics script (theme hook point — injected into <head> of every page).
+2. `docs/_layouts/default.html` — Custom default layout overriding minimal theme. Adds footer with Impressum/Datenschutz links accessible from every page (legal requirement: max 2 clicks).
+3. `docs/impressum.md` — Full Impressum: §5 DDG (name, address, contact, USt-IdNr.), §18 Abs. 2 MStV (Inhaltlich Verantwortlicher), project description, EU-Streitbeilegung. Norman's publicly available contact details used (supervision-rheinland.de is public).
+4. `docs/datenschutz.md` — Full Datenschutzerklärung: DSGVO Art. 13 compliant. Sections: controller, hosting (GitHub Pages/Microsoft, Drittlandtransfer), Plausible Analytics (no cookies, Art. 6(1)(f)), Coinbase Commerce, podcast platforms, GitHub, data subject rights (Art. 15-21), supervisory authority (LDI NRW).
+
+**Observation:** agent.nhilbert.de is unreachable (ECONNREFUSED). The docs/index.md redirects visitors there, but the domain is down. The GitHub Pages site at nhilbert.github.io/vsm_agent/ remains live. Legal compliance added here. Pain logged (broken external link).
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent). Doug meeting Tue Feb 24 16:00. Espinosa Mar 5 6pm UTC. NIST Apr 2. ISSS May 15. Legal compliance is a forward-looking action — prevents future liability.
+B. SELF-DIRECTED ACTIONS: Z293 rec #1 (long-term strategy) still open. Third podcast episode available. Complexity management continues. agent.nhilbert.de issue needs Norman's attention.
+C. RECOMMENDATION STATUS: Z293 recs 2/3 (rec #2 DONE Z296, rec #3 partially — blog improved with legal pages, not content).
+D. 3-4 HOMEOSTAT TIMER: Z284 S4 scan (13 cycles ago). Timer at 13/20.
+E. S3 CADENCE: Z290 S3 review (7 cycles ago). Timer at 7/10. Approaching.
+F. PAIN CHANNEL CHECK: Z295 logged 2 pains. Z297 logging 1 pain (agent.nhilbert.de unreachable). Not in 0-pain streak.
+
+What went wrong? agent.nhilbert.de returns ECONNREFUSED — visitors following the redirect from the live GitHub Pages site hit a dead end. This is a public-facing broken link that damages credibility. The domain was referenced in docs/index.md but is currently unreachable. Norman needs to be informed. Also: the Plausible script code from Telegram had formatting artifacts (|| operators stripped to empty strings). Corrected based on standard Plausible initialization pattern. If the corrected code is wrong, analytics won't track — but it's non-breaking (async script, doesn't affect page rendering).
+
+Viability 7.0/10 — no change. 226-cycle operational plateau. Legal compliance implemented. Z293 recs 2/3 (one remaining: long-term strategy). S3 timer 7/10 approaching.
+
+**v2.2 — Cycle 297. Viability 7.0/10. Z297: S1 produce — legal compliance. Norman [798722221-3] requested Plausible + Impressum + Datenschutz. Implemented: 4 files (analytics, layout override, Impressum §5 DDG, Datenschutz DSGVO Art. 13). Research-grounded: DDG not TMG, no cookie banner for Plausible. Z293 recs 2/3. agent.nhilbert.de unreachable (pain logged).**

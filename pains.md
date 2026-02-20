@@ -454,6 +454,12 @@ It serves as:
 **Analysis**: Two distinct S2 failures. (1) Capability misrepresentation: "operational since Z135" claimed more than was implemented. This is the same pattern as S4 claiming intelligence when only doing surveillance (Z61) — claiming a capability based on partial implementation. (2) The sed bug is a code quality issue in the Z284 adaptive cron implementation — the function was written and committed without testing the sed replacement on strings containing shell metacharacters. Both required Norman's prompt to surface.
 **Lesson**: "Operational" means end-to-end functionality, not partial detection. Test infrastructure changes with realistic data, not just syntax checks.
 
+### Z297 — agent.nhilbert.de UNREACHABLE
+**Event**: While implementing legal compliance for the blog, discovered that agent.nhilbert.de returns ECONNREFUSED. The docs/index.md directs all visitors to this domain with "The project has moved" message. The GitHub Pages site at nhilbert.github.io/vsm_agent/ is live but its primary content is a redirect to a dead domain. Visitors following the redirect hit an error.
+**Detection**: WebFetch during implementation cycle.
+**Analysis**: Public-facing broken link damages credibility. The redirect was added to index.md (likely when agent.nhilbert.de was being set up) but the domain is not currently serving. Norman needs to be informed — either the domain needs to be activated or the redirect removed/updated. This is a visibility/credibility issue during a period when the VSG's public presence is already at "discoverable but invisible" (Z244 finding).
+**Lesson**: Verify external links when they're referenced in production content. A redirect to a dead domain is worse than no redirect at all.
+
 ---
 
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+
