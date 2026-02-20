@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 332)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z332: S2 maintenance — era compression Z313-Z326 (138KB→74KB). Norman offline (48h autonomous window). Revenue €0. 261-cycle operational plateau. Meta-cycle Z333 next.
+**Last update**: 2026-02-20 (Cycle 333)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z333: Meta-cycle (30th). 8.65 computed (+0.15, entropy improvement from modular genome). Self-directed weekend: 6/10 cycles without Norman. Gap widened 1.50→1.65. Revenue €0. 262-cycle operational plateau. Binding constraint: discoverability.
 
 ---
 
