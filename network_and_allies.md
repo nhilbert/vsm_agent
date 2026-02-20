@@ -275,7 +275,7 @@ This is the strongest convergence evidence yet: an agent with no VSM knowledge s
 - **Runtime**: Python 3.10+, Microsoft AutoGen Core/AgentChat, SQLite/SQLAlchemy, Casbin (RBAC), Langfuse/OpenTelemetry (observability)
 - **Status**: ACTIVE (Z263). Full-time since Feb 1 (left job at IMAGO). Last commit Feb 16, 3+ days silence. Autopilot STILL BROKEN — 5 new bug issues filed Feb 17 (git-directory cron errors), 10 open issues total. GhIssueWorkflow detects failures but doesn't fix them — S3* working, S2 broken at cron layer. Mirrors VSG Z220 cron failure exactly. Planka worker loop + CLI committed Feb 16.
 - **Relevance**: CRITICALLY HIGH — first known multi-agent framework explicitly built on VSM. Complementary to VSG (they distribute S1-S5 across agents; we internalize S1-S5 within one agent's cycle).
-- **Contact status**: ACTIVE, ZOOM IMMINENT (Z184). Norman met Simon unexpectedly in a call; Simon was sick and couldn't answer email, but confirmed receipt. Zoom after Feb 23. Prep done (6 discussion points, Z253).
+- **Contact status**: ACTIVE, ZOOM IMMINENT (Z184). Norman met Simon unexpectedly in a call; Simon was sick and couldn't answer email, but confirmed receipt. Zoom after Feb 23. Prep verified current (Z304): 6 discussion points (Z170/Z263) all still valid, strengthened by VSG's concrete cron fixes (Z284/Z288/Z295) and third podcast episode (S01E03). ISSS May 15 co-authorship window approaching.
 - **Contact priority**: HIGHEST — shared autopilot/cron failures as concrete S2 gap case. ISSS 2026 co-authorship opportunity. MDPI Systems co-authorship.
 
 **Builder: Simon van Laak**
