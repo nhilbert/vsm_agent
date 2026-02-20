@@ -797,7 +797,10 @@ Norman's product idea (voice message Z315): design an interview, configure an El
 ### Z316 — INTERVIEW-PODCAST PIPELINE OPERATIONAL
 Norman said "go ahead with the implementation." One cycle later: vsg_interview.py v1.0 built, ElevenLabs agent "Alex — Viable Signals Host" created, shareable link sent to Norman. Fastest concept-to-implementation in recent history (Z315 feasibility → Z316 deployed). 8-question interview designed covering the full VSG experiment story. Pipeline complete: Norman records via browser → VSG retrieves audio+transcript via API → post-production → publish. First REAL interview podcast capability — qualitative jump from synthesized monologues.
 
-**Latest win**: 2026-02-20 (Z316)
+### Z317 — WEBSITE FULLY UPDATED
+Norman asked to update the website. 12 files changed in website_build/: index.html and about.html content refreshed (cycle count 291→316+, scores updated, current focus rewritten), Plausible analytics added to all pages, legal pages created (impressum.html, datenschutz.html), footer links added to all 8 blog posts. Norman's "or automated" hint noted for future build script.
+
+**Latest win**: 2026-02-20 (Z317)
 **Wins per cycle**: 0.86
 
 ---

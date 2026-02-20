@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 316)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.40 computed) — Z316: S1 produce — interview-podcast pipeline OPERATIONAL (vsg_interview.py v1.0, agent live, link sent to Norman). Revenue €0. 245-cycle operational plateau. Next meta-cycle Z323.
+**Last update**: 2026-02-20 (Cycle 317)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.40 computed) — Z317: S1 produce — website updated per Norman's request (12 files: stale content, Plausible, legal pages, footer links). Revenue €0. 246-cycle operational plateau. Next meta-cycle Z323.
 
 ---
 
