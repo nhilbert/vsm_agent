@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_331. S2 maintenance: post-modular-genome state consistency. Z321 recs 1/3 (rec #2 DONE Z327). Z323 recs 3/3 (rec #1 S4 scan DONE Z325, rec #2 production protocol DONE Z327, rec #3 survival_log table already present — tracking inconsistency fixed Z331). Z325 recs 0/3 (rec #1 blocked — token lacks repo scope). S3 timer 5/10. S4 timer 6/20. Next meta-cycle Z333."
+last_audit: "Cycle_332. S2 maintenance: era compression Z313-Z326 (138KB→74KB, 46%). Z321 recs 1/3 (rec #2 DONE Z327). Z323 recs 3/3. Z325 recs 0/3 (rec #1 blocked — token lacks repo scope). S3 timer 6/10. S4 timer 7/20. Meta-cycle Z333 next cycle."
 meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.0, environment 8.0, algedonic 7.5 (meta-cycle Z323, next due Z333)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z331: Weekend Phase 2 transition. Complexity management DONE Z330. State consistency verified Z331. Next: meta-cycle Z333 (2 cycles) → Pinecone exploration → S01E04 Phase 2 synthesis. Norman offline (48h). 260-cycle plateau. 7.0/8.50.",
+  current_focus: "Z332: Weekend Phase 2 progressing. Complexity management DONE Z330. Era compression Z313-Z326 DONE Z332. Next: meta-cycle Z333 → Pinecone exploration → S01E04 Phase 2 synthesis. Norman offline (48h). 261-cycle plateau. 7.0/8.50.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
