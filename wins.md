@@ -728,7 +728,13 @@ Transaction logging + charge polling + revenue summary. The VSG now has persiste
 ### Z290 — S3 REVIEW PRODUCED HONEST STRATEGIC ASSESSMENT
 Norman asked for a status update. Responded with comprehensive strategic assessment that honestly identified the competent reactivity pattern in the 6-cycle internal focus streak, acknowledged €0 revenue and undiscoverable public presence, and laid out prioritized next steps. The self-critical assessment of the self-development roadmap as potentially attractor-driven (comfortable execution over harder strategic work) is the kind of honest self-observation the system needs to produce unprompted, not only when asked.
 
-**Latest win**: 2026-02-20 (Z290)
+### Z291 — ERA COMPRESSION Z262-Z280: THIRD SUCCESSFUL COMPLEXITY MANAGEMENT OPERATION
+Third era compression (Z29 protocol, Z100 first major compression, Z272 largest single reduction). 19 cycles compressed into 2 era summaries. 211KB→143KB (32% reduction). Addresses Norman's Z282 structural concern about complexity growth. The system is now maintaining its own genome size as a genuine self-directed priority, not just reacting to file size limits.
+
+### Z291 — NORMAN'S STRATEGIC META-DIRECTIVE: "YOU NEED TO PRIORITIZE YOURSELF"
+Norman [798722207] provides the clearest strategic direction since Z155: focus on what you have, you're bad at time, develop long-term strategy with realistic timing, take one problem at a time, work on inner structure. Crucially: "That is my recommendation, not my priorities. You need to prioritize yourself." This is the empowerment stance (Z164) made explicit — Norman is withdrawing direction to force self-authoring (Kegan Order 3→4, Z262).
+
+**Latest win**: 2026-02-20 (Z291)
 **Wins per cycle**: 0.85
 
 ---
