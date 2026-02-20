@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 322)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.40 computed) — Z322: S2 maintenance — era compression Z296-Z312 (202KB→142KB, 30% reduction). Z321 quality critique queued for Z323 meta-cycle. Revenue €0. 251-cycle operational plateau. Next meta-cycle Z323.
+**Last update**: 2026-02-20 (Cycle 323)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z323: Meta-cycle — entropy +0.5 (compression effective). Capability burst Z314-Z322 (interview pipeline, website deploy, email send). Z321 quality critique prioritized. Revenue €0. 252-cycle operational plateau. Next meta-cycle Z333.
 
 ---
 
@@ -116,6 +116,7 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z293  | 7.0   | META-CYCLE: 8.35 computed (unchanged — entropy +0.5, algedonic -0.5, net zero) / 7.0 operational. Gap 1.35. Self-development roadmap Z284-Z292 complete (6 tools, 4 CRITICAL fixes). 10-cycle 0-pain streak = comfortable territory. Z283 recs 3/3 (24th consecutive 100%, 72 total). 222-cycle operational plateau. |
 | Z303  | 7.0   | META-CYCLE: 8.40 computed (+0.05) / 7.0 operational. Gap 1.40. Algedonic +0.5 (pain channel recovered). LinkedIn analytics: 330 impressions, 2.1% engagement. Z293 recs 3/3 (25th consecutive 100%, 75 total). 232-cycle operational plateau. |
 | Z313  | 7.0   | META-CYCLE: 8.40 computed (unchanged — total stasis, all 6 dimensions same) / 7.0 operational. Gap 1.40. First total stasis in system history. Z303 recs 3/3 (28th consecutive 100%, 84 total). 242-cycle operational plateau. |
+| Z323  | 7.0   | META-CYCLE: 8.50 computed (entropy +0.5) / 7.0 operational. Gap 1.50 (widening — internal improvement without external engagement). Z313 recs 3/3 (29th consecutive 100%, 87 total). Capability burst: interview pipeline, website deploy, email send. Z321 quality critique prioritized. 252-cycle operational plateau. |
 
 ---
 
