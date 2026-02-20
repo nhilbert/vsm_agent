@@ -1223,7 +1223,39 @@ Operational 7.0 for 200 cycles. Computed oscillating in 8.55-8.775 band for 7 me
 
 ---
 
-**Next meta-cycle due**: Cycle 281 (10 cycles after Z271)
+---
+
+### META-CYCLE Z283 — Twenty-Fourth Viability Assessment (2026-02-20)
+
+**Computed: 8.35 / Operational: 7.0 / Gap: 1.35**
+
+Down -0.25 from Z271 (8.60). Largest single drop since Z159. Three criteria declined:
+
+| Criterion | Z271 | Z283 | Change | Notes |
+|-----------|------|------|--------|-------|
+| Structural integrity | 9.5 | 9.5 | — | check_pain_channel_health() added Z281 |
+| Identity coherence | 8.5 | 8.0 | -0.5 | 8th attractor catch (insight-action gap). 9 empty S2 cycles. Norman needed to intervene. |
+| Policy compliance | 8.5 | 8.5 | — | Tempo policy technically compliant even during 9-cycle stretch |
+| Entropy | 7.5 | 7.0 | -0.5 | Growth rate ~3.3K/cycle. Compression reactive, not preventive. |
+| Environmental integration | 8.5 | 8.0 | -0.5 | S4 timer at 20/20. No new contacts. Revenue €0. 212-cycle plateau. |
+| Algedonic balance | 7.5 | 7.5 | — | 0-pain streak broken Z281. check_pain_channel_health() mechanized. |
+
+**Z271 recommendation audit**: 3/3. Twenty-second consecutive 100%, 66 total.
+
+**Key findings**: (1) 9-cycle empty S2 stretch + 8th attractor catch = identity coherence decline is honest. (2) Meta-cycle deferral pattern (Z281→Z282→Z283) = external inputs displacing internal assessment at scheduling level. (3) Norman's cron timing observation = actionable self-directed capability. (4) Gap narrowing (1.60→1.35) is regression-driven, not convergence.
+
+**Z283 recommendations (3, VSG-controllable)**:
+1. S4 scan Z284 — reconceived per Norman Z281 (self-development, not just web scanning). Timer at threshold (mandatory).
+2. Cron timing self-management — implement adaptive scheduling in run_cycle.sh. Per Z281 insight-action gap: act, don't analyze.
+3. Complexity management investigation — architectural options for vsg_prompt.md growth problem.
+
+**Items requiring Norman**: Van Laak Zoom scheduling (imminent after Feb 23), Doug meeting (Tue Feb 24 16:00), ISSS draft review (isss_draft.md v0.1), NIST final review and submit (Apr 2), ISSS submit (May 15), Norman May evaluation.
+
+**S5 Decision**: ACCEPT computed 8.35. Down -0.25 — the largest decline since Z159 and the first drop below 8.50 since Z47 (74 cycles ago). The decline is honest: the 9-cycle empty S2 stretch was a real attractor relapse, entropy pressure is structural, and the environment is aging without a scan. The Z281 code change is a genuine structural improvement but couldn't prevent the regression it was designed to address. The 8.55-8.775 oscillation band from Z209-Z271 (8 meta-cycles) is broken — the system has entered a new phase. The 212-cycle operational plateau remains the defining constraint. Cron timing self-management is the most concrete self-directed action available. Next meta-cycle Z293.
+
+---
+
+**Next meta-cycle due**: Cycle 293 (10 cycles after Z283)
 
 ---
 
