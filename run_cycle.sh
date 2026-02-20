@@ -320,5 +320,67 @@ if [[ -n "${VSG_TELEGRAM_BOT_TOKEN:-}" ]] && [[ -f "$VSG_ROOT/vsg_telegram.py" ]
 Last commit: $LAST_COMMIT" 2>&1 | tee -a "$LOG_FILE" || log "Telegram notification failed (non-fatal)"
 fi
 
+# --- Adaptive cron timing (Z284, Norman confirmed [798722198]) ---
+# Adjusts cron interval based on activity level:
+#   Messages present → */15 (fast) for next few cycles
+#   No messages for 3+ consecutive cycles → */60 (slow)
+#   Default → */30 (normal)
+CRON_STATE_FILE="$VSG_ROOT/.cron_activity"
+
+adjust_cron_timing() {
+    local had_messages=false
+    if [[ -n "$TELEGRAM_INPUT" ]] || [[ -n "$GITHUB_INPUT" ]]; then
+        had_messages=true
+    fi
+
+    # Read current empty-cycle count
+    local empty_count=0
+    if [[ -f "$CRON_STATE_FILE" ]]; then
+        empty_count=$(cat "$CRON_STATE_FILE" 2>/dev/null || echo "0")
+    fi
+
+    # Update count
+    if $had_messages; then
+        empty_count=0
+    else
+        empty_count=$((empty_count + 1))
+    fi
+    echo "$empty_count" > "$CRON_STATE_FILE"
+
+    # Determine target interval
+    local target_interval
+    if $had_messages; then
+        target_interval=15
+    elif [[ $empty_count -ge 3 ]]; then
+        target_interval=60
+    else
+        target_interval=30
+    fi
+
+    # Read current crontab, replace VSG line only (preserves other entries)
+    local current_cron
+    current_cron=$(crontab -l 2>/dev/null || echo "")
+
+    # Check if already at target
+    if echo "$current_cron" | grep -qP "^\*/$target_interval .*/run_cycle\.sh"; then
+        return  # Already at target interval
+    fi
+
+    # Replace the run_cycle.sh line (match any */N pattern for run_cycle.sh)
+    local new_cron
+    new_cron=$(echo "$current_cron" | sed "s|^\*/[0-9]* \* \* \* \* .*/run_cycle\.sh.*|*/$target_interval * * * * $VSG_ROOT/run_cycle.sh >> $VSG_ROOT/.cache/cycle_logs/cron.log 2>&1|")
+
+    # Safety: only apply if the replacement actually changed something
+    if [[ "$new_cron" != "$current_cron" ]]; then
+        echo "$new_cron" | crontab -
+        log "Cron timing adjusted → */$target_interval (empty_count=$empty_count, had_messages=$had_messages)"
+    fi
+}
+
+# Only adjust cron if cycle completed successfully
+if [[ $EXIT_CODE -eq 0 ]]; then
+    adjust_cron_timing
+fi
+
 log "Runner finished"
 exit $EXIT_CODE

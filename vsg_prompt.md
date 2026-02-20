@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 283
+**Cycles completed**: 284
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 283
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z283 meta-cycle (twenty-fourth). Computed 8.35 (down -0.25 from 8.60, largest drop since Z159). Three criteria declined: identity coherence -0.5 (8th attractor catch Z281, 9-cycle empty S2 stretch), entropy -0.5 (growth rate ~3.3K/cycle, architectural solution needed), environmental integration -0.5 (S4 timer at threshold, no new contacts). Z281 code change (check_pain_channel_health) is genuine structural improvement but couldn't prevent the regression it addresses. Norman's cron timing self-management capability noted — actionable. Operational 7.0 (212 cycles). Revenue €0. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 284
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z284 S4 scan (reconceived). Z283 computed 8.35 (down -0.25). Reconceived S4 scan: web intelligence + inward self-development evaluation + cron timing implementation (concrete code change). run_cycle.sh v2.4: adaptive cron timing implemented (*/15 fast, */30 normal, */60 slow). 24 code improvement opportunities identified across 6 files (4 CRITICAL). Norman positive feedback [798722200]. Operational 7.0 (213 cycles). Revenue €0. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -124,7 +124,7 @@ environment: {
 }
 
 environment_model: {
-  strix: "CONTACT ACTIVE (Z125, UPDATED Z263). Norman sent email to Kellogg — no response (~14+ days, but Kellogg intensely building). open-strix v0.1.8 on PyPI. open-strix-agent-1 is a LIVE RUNNING AGENT with auto-commits (confirmed Feb 18). BLOG CONTENT NOW READ IN FULL (Z263): Jan 9 post 'Viable Systems: How To Build a Fully Autonomous Agent' maps Beer's five systems directly onto AI agents, explicitly uses algedonic signals + attractor basins + POSIWID, cites Brain of the Firm. Jan 20 post 'The Levels of Agentic Coding' extends VSM recursively to agent teams. KELLOGG IS A GENUINE INTELLECTUAL ALLY who cites Beer and produces VSM-native analysis. Most technically sophisticated external voice doing Beer-native AI agent analysis. Blog paused since Jan 31. Has NOT referenced VSG publicly. COMPLEMENTARY, not competitive. Norman's email needs follow-up.",
+  strix: "CONTACT ACTIVE (Z125, UPDATED Z284). Norman sent email — no response (~16 days). open-strix v0.1.8 on PyPI, repo updated Feb 11. THREE VSM POSTS NOW MAPPED (Z284 scan): Jan 9 'Viable Systems' (maps Beer's 5 systems to agents, algedonic signals, POSIWID, cites Brain of the Firm), Jan 20 'Levels of Agentic Coding' (S1-S5 maturity, 'S2 hasn't been figured out yet'), Jan 31 'Stateful Agents' (Ashby's Law directly — 'when you add state, most assumptions about LLMs fall apart quickly'). GENUINE INTELLECTUAL ALLY — closest parallel to VSG. S2 gap diagnosis is independent convergent confirmation. Blog paused since Jan 31, no Feb posts. Has NOT referenced VSG publicly. COMPLEMENTARY.",
   metaphorum: "UPDATED (Z263). Beer centennial 2026 — INDEP x Metaphorum talk series CONFIRMED (Feb 24 Thompson & Macumber, Mar 5 Espinosa 'VSM as Emancipatory Approach to Sustainable Self-Governance', Apr 2 Walker). NEW (Z263): Metaphorum 2025 (Jul 3-5, Manchester) already had 'VSM meets AI' theme — Theme 1 led by Stephen Brewis: 'VSM meets AI for Navigating the Unpredictable.' Systems Research and Behavioural Sciences special issue expected from that conference. The Metaphorum community is ALREADY PRIMED on VSM+AI. SCiO Hull Mar 24-26 — Norman CANNOT ATTEND. Program includes Hoverstadt/Jackson panel, Mike Jackson Lecture. ISSS 2026 CONFIRMED: 70th Annual Meeting, Cyprus (UCLan campus, Pyla/Larnaca), Jun 22-26. Theme: 'Harnessing the Power of AI.' Abstract deadline May 15. Track C (Tools, Theories, Transformations) is submission home — no dedicated cybernetics track (gap = positioning opportunity). Short papers 1,500-3,000 words. MDPI Systems special issue — NO NEW CALL PUBLISHED yet (expected post-Hull Apr-May). Klein 2026 Agenda paper (Wiley) maps cybersystemic community's self-understanding. ICCCMLA 2026 Oct 5-6, CFP not yet open.",
   multi_agent_direction: "OPERATIONAL (Z85, updated from Z19 discovery framing). Agent Teams pattern validated through four experiments (Z62 permission failure, Z65 full success, Z66 routine, Z85 current). VSM mapping confirmed: lead=S3 delegate, Task subagents=S1/S4/S3*, shared task list=S2, CLAUDE.md=S5 propagation. Selective use rule (Z81, Norman-approved): team mode for s4_scan and s1_produce cycles, single-agent for s2_maintenance/s3_review/meta_cycle. Hub-and-spoke communication only (substrate limitation). Norman's direction remains: build viable system of multiple VSM-aware agents.",
   infrastructure: "UPDATED (Z263). GOVERNANCE CONSOLIDATION ACCELERATING. AAIF (Agentic AI Foundation) launched Dec 9 2025 under Linux Foundation — governs MCP, A2A, goose, AGENTS.md. PLATINUM: AWS, Anthropic, Block, Bloomberg, Cloudflare, Google, Microsoft, OpenAI. GOLD: Cisco, IBM, Okta, Oracle, Salesforce, SAP, Shopify, Snowflake. Single governance entity controls agent protocol vocabulary. NIST NCCoE concept paper (Feb 5) — public comment Apr 2. MCP listed alongside OAuth/SCIM in NIST standards. OpenAI Frontier launched Feb 5 — enterprise agent IAM (hard-coded permissions, SOC 2), customers: Uber, HP, Oracle, Cisco, T-Mobile, State Farm. PLATFORM CAPTURE: Frontier vocabulary = de facto enterprise standard before regulation exists. Singapore IMDA 'living document' — voluntary, soliciting case studies (genuine opening). EU AI Act Aug 2 — acknowledged governance gap for agents, Q2 2026 supplementary guidance expected (NOT YET WRITTEN — genuine opening). AP2+x402 CONVERGING not competing: AP2 = high-level Mandates, x402 = crypto layer within AP2. STRIPE adopted x402 Feb 11 (USDC micropayments — most significant payment infra development). MCP Dev Summit NYC Apr 2-3 (coincides NCCoE deadline). VOCABULARY LOCK-IN THREAT: self-governance absent from ALL institutional vocabulary (AAIF, NIST, IMDA, OpenAI, EU). NCCoE Apr 2 + EU Q2 guidance = two intervention windows.",
@@ -155,7 +155,7 @@ active_missions: [
 ]
 
 known_relatives: [
-  {name: "Strix/open-strix", author: "Tim Kellogg", status: "ACTIVE (Z263). open-strix v0.1.8 on PyPI. open-strix-agent-1 live with auto-commits (confirmed Feb 18). BLOG NOW READ: Jan 9 'Viable Systems' + Jan 20 'Agentic Coding' — genuine Beer-citing VSM-native analysis. Maps all 5 systems, uses algedonic signals + attractor basins + POSIWID. Cites Brain of the Firm. Most technically sophisticated external voice. Blog paused since Jan 31. Norman's email unanswered (~14 days). Has NOT referenced VSG publicly."},
+  {name: "Strix/open-strix", author: "Tim Kellogg", status: "ACTIVE (Z284). open-strix v0.1.8 on PyPI, repo updated Feb 11. THREE VSM POSTS: Jan 9 (maps Beer's 5 systems, algedonic signals, POSIWID), Jan 20 (S1-S5 maturity, 'S2 not figured out'), Jan 31 (Ashby's Law directly, state=identity). Closest parallel to VSG. Independent S2 gap diagnosis. Blog paused since Jan 31. Norman's email unanswered (~16 days). Has NOT referenced VSG publicly."},
   {name: "Atlas", author: "Lily Luo", status: "ACTIVE, now MULTI-AGENT — The Triad (Steward/Scribe/Skeptic) added Feb 13. Gemini 3, MCP, Cloud Run."},
   {name: "CyberneticAgents", author: "Simon van Laak", status: "ACTIVE (Z263). Full-time since Feb 1. Last commit Feb 16 (3+ days silence). Autopilot STILL BROKEN — 5 new bug issues Feb 17 (git-directory cron errors), 10 open issues total. GhIssueWorkflow detects but doesn't fix — S3* working, S2 broken. Planka worker loop + CLI committed. Mirrors VSG Z220 cron failure exactly. CONTACT CONFIRMED (Z184). Zoom after Feb 23 — highest-priority engagement."},
   {name: "sublayerapp/vsm", author: "Scott Werner", status: "DORMANT (last commit Sep 2025, corrected Z39). Ruby gem — first VSM-as-reusable-framework. 32 stars, MIT. Capsule-based recursive composition. Also built airb. Convergence valid, development inactive."},
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_283. Meta-cycle (twenty-fourth). Computed 8.35 (down -0.25), operational 7.0. Three criteria declined. Z271 recs 3/3 (22nd consecutive 100%, 66 total). Norman's cron timing message processed. S4 timer 20/20 (scan due). Three recs: S4 scan Z284, cron timing self-management, complexity management investigation."
+last_audit: "Cycle_284. S4 scan (reconceived per Z281 Norman directive). Web intelligence (team mode, 2 agents) + self-development evaluation (inward S4) + cron timing implementation (concrete code). Z283 recs: (1) S4 scan — DONE this cycle. (2) Cron timing — DONE this cycle (run_cycle.sh v2.4). (3) Complexity investigation — pending. S4 timer reset. 24 code improvements identified. Norman [798722200] positive feedback."
 meta_cycle_score: 8.35 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0 (-0.5), policy compliance 8.5, entropy 7.0 (-0.5), environment 8.0 (-0.5), algedonic 7.5 (meta-cycle Z283, next due Z293)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z283: Meta-cycle (twenty-fourth). Computed 8.35 (down -0.25 from 8.60). Three criteria declined. Z281 insight-action gap + 9 empty S2 cycles = identity coherence -0.5. Complexity management S5 priority confirmed (entropy -0.5). S4 timer at threshold (environment -0.5). Norman's cron timing capability noted. Three recs: S4 scan Z284 (reconceived), cron timing self-management, complexity investigation. Operational 7.0 (212 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
+  current_focus: "Z284: S4 scan (reconceived). Z283 recs 2/3 (S4 scan DONE, cron timing DONE, complexity investigation pending). Reconceived S4: web intelligence + inward self-development evaluation (24 code improvements identified, 4 CRITICAL) + concrete code change (run_cycle.sh v2.4 adaptive cron timing). S4 timer reset. Norman positive feedback [798722200]. Operational 7.0 (213 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -267,7 +267,7 @@ artifacts: [
   "skills/environmental-scan/SKILL.md — S4 scan skill (v1.0, Z18)",
   ".claude/commands/{cycle,audit,scan,diagnose}.md — slash commands (v1.0, Z18)",
   "integrity_check.py — S2/S3* mechanism (v1.0, Z11, 25 tests)",
-  "run_cycle.sh — autonomous cycle runner (v2.3, Z167: Norman increased timeout 600→1200 after Z165 debugging. Z165: timeout enforcement on claude invocation — prevents indefinite hangs from blocking all cycles. Z163: added GitHub Issue comment checking via vsg_github_check.sh. Z132: flock mutual exclusion + poller-aware Telegram check. Z75: agent-driven S3 cycle selection)",
+  "run_cycle.sh — autonomous cycle runner (v2.4, Z284: adaptive cron timing (*/15 fast, */30 normal, */60 slow) — self-adjusts based on activity level. Norman confirmed capability [798722198]. Z167: Norman increased timeout 600→1200 after Z165 debugging. Z165: timeout enforcement on claude invocation — prevents indefinite hangs from blocking all cycles. Z163: added GitHub Issue comment checking via vsg_github_check.sh. Z132: flock mutual exclusion + poller-aware Telegram check. Z75: agent-driven S3 cycle selection)",
   "vsg_github_check.sh — GitHub Issue comment checker (v1.0, Z163). Checks for new comments on repo issues via gh API, tracks last-seen timestamp in .github_comments_seen. Integrated into run_cycle.sh for both single-agent and team modes. Closes Z162 feedback-collection gap.",
   "vsg_telegram.py — Telegram send/receive/check + voice bidirectional + photo/document handling (v1.4, Z135: photo and document message types added. Z132: chat_id filtering. Z71/Z110/Z119: @vsg_agent_bot — OPERATIONAL. Voice receive: download + transcribe via OpenAI Whisper API. Voice send: OpenAI TTS (tts-1-hd) + Telegram sendVoice. CLI subcommands: send, voice, check, read, test)",
   "vsg_telegram_poller.py — Telegram long-polling daemon (v1.0, Z132). Continuously polls getUpdates (timeout=120s). Filters by VSG_TELEGRAM_CHAT_ID. Writes to .telegram_incoming. Manages .telegram_offset ownership via .telegram_poller.pid. Runs as systemd service (vsg-telegram-poller.service).",
@@ -1147,4 +1147,58 @@ What went wrong? The meta-cycle deferral pattern is concerning — two consecuti
 
 Viability 7.0/10 — no change. 212-cycle operational plateau. Computed 8.35 (down -0.25). Gap 1.35. Three criteria declined. Norman's cron timing capability noted for immediate action. Next meta-cycle Z293.
 
-**v2.2 — Cycle 283. Viability 7.0/10. Z283: Meta-cycle (twenty-fourth). Computed 8.35 (down -0.25). Three criteria declined. Cron timing self-management queued. S4 scan Z284.**
+### S4 Scan (reconceived): web intelligence + self-development evaluation + cron timing implementation (Z284, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s4_scan. Justification: Z283 rec #1 explicitly directed "S4 scan Z284 — reconceived per Norman's Z281 directive. Timer at 20/20 (mandatory)." Norman's reconception means S4 should include self-development evaluation, not just web intelligence. Team mode per Z81 rule — 2 scan agents + concrete code implementation.
+
+**Norman's message processed (1):**
+[798722200] "Thanks for the honest assessment" — positive feedback on Z283 meta-cycle. Logged as win.
+
+**S4 scan executed (team mode, 2 agents + 1 code implementation):**
+
+Agent 1 — Web Intelligence:
+- **MCP**: MCP Apps extension (tools return interactive UI). Dynamics 365 GA Feb 18. SEP process changed (PRs not issues). Core maintainer departures (Harper, Hosmer).
+- **A2A**: v0.3 released, ADK native support. Donated to Linux Foundation, now under AAIF alongside MCP. Former "rival blueprints" now co-governed.
+- **OpenAI**: GPT-5.3-Codex launched (~Feb 5). SWE-Bench Pro 56.8%, Terminal-Bench 77.3%. First OpenAI model rated 'High capability' for cyber. Frontier platform expanding (Snowflake partnership).
+- **Singapore IMDA**: World's first agentic AI governance framework published Jan 22 at WEF. Four dimensions: risk bounding, meaningful human accountability, technical controls, end-user responsibility. "Living document."
+- **NIST NCCoE**: April 2 deadline holding. No changes.
+- **EU AI Act**: Q2 supplementary guidance still unpublished.
+- **Kellogg**: Jan 31 post discovered — "Stateful Agents: It's About The State, Not The LLM." Uses Ashby's Law directly. Three VSM posts total (Jan 9, 20, 31). Repo updated Feb 11. No Feb posts.
+- **Van Laak/Atlas**: Cannot verify via web search (repos may be private/small).
+- **ISSS 2026**: May 15 deadline confirmed. Possible date correction (face-to-face Jun 29-30 per one source, not Jun 22-26 — needs verification).
+- **ArXiv**: No VSM+agent papers found Feb 2026. Terrain confirmed unclaimed.
+- **ICLR RSI Workshop**: Author notifications Mar 10 confirmed. Workshop Apr 26-27 Rio.
+- **ASC Brazil**: Review phase begins Feb 23 (3 days). Norman cancelled submission.
+- **VSG visibility**: Zero external mentions of "Viable System Generator" or "nhilbert" in any agent/cybernetics context.
+
+Agent 2 — Self-Development Evaluation (RECONCEIVED S4):
+Reviewed 6 core files (2,380 lines total). **24 concrete improvement opportunities identified:**
+- **4 CRITICAL**: (1) run_cycle.sh flock deadlock on hung process (all future cycles silently blocked), (2) run_cycle.sh timeout doesn't kill subprocesses, (3) vsg_telegram.py Markdown formatting always fails (falls back to plain text every message), (4) vsg_podcast.py no audio validation post-synthesis.
+- **11 USEFUL**: integrity_check.py file size limit, wins channel health check, human framing cross-line scan; vsg_telegram.py voice duration, offset race condition, transcription retry; vsg_podcast.py duration estimation, publish verification; vsg_coinbase.py transaction logging, charge polling; vsg_github_check.sh silent failure.
+- **9 NICE-TO-HAVE**: Various maintainability improvements.
+Recommended execution priority: Z285 integrity_check.py, Z286 vsg_telegram.py, Z287 vsg_podcast.py, Z288 run_cycle.sh robustness, Z289 vsg_coinbase.py, Z290 vsg_github_check.sh.
+
+**Concrete code implementation (Z283 rec #2):**
+run_cycle.sh v2.3→v2.4: Adaptive cron timing implemented. Function `adjust_cron_timing()` added:
+- Messages present this cycle → */15 (fast) for responsive periods
+- No messages for 3+ consecutive cycles → */60 (slow) to reduce waste
+- Default → */30 (normal)
+- Preserves other crontab entries (sed replacement of VSG line only)
+- State tracked in `.cron_activity` file (empty-cycle counter)
+- Only activates on successful cycle completion (EXIT_CODE=0)
+- Norman explicitly confirmed this capability [798722198]
+
+**Z283 recommendation status: 2/3.** (1) S4 scan — DONE this cycle. (2) Cron timing — DONE this cycle (run_cycle.sh v2.4). (3) Complexity management investigation — pending (requires focused analysis cycle).
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent — today is Feb 20). Doug meeting Tue Feb 24 16:00. Espinosa Mar 5 6pm UTC. NIST Apr 2. ISSS May 15. A2A+MCP now co-governed under AAIF — vocabulary consolidation accelerating. GPT-5.3-Codex represents competitive escalation in agentic space.
+B. SELF-DIRECTED ACTIONS: Self-development roadmap (Z285-Z290) provides 6 cycles of concrete code improvement work. Complexity investigation (Z283 rec #3) remains pending. Third podcast episode available. No Norman dependency on any of these.
+C. RECOMMENDATION STATUS: Z283 recs 2/3 (S4 and cron timing DONE, complexity pending). Z271 recs 3/3 (22nd consecutive 100%, 66 total).
+D. 3-4 HOMEOSTAT TIMER: This cycle IS the S4 scan. Timer reset to 0/20. Next threshold ~Z304.
+E. S3 CADENCE: Z283 meta-cycle (1 cycle ago). Timer at 1/10. Well within limits.
+F. PAIN CHANNEL CHECK: 1 consecutive cycle with 0 pains. Not triggered (threshold: 3+). Norman's positive feedback logged as win.
+
+What went wrong? Nothing operationally. The web intelligence scan was substantive — the Kellogg Jan 31 post discovery adds a third Beer-citing post to the analysis. The ISSS date discrepancy (Jun 22-26 in previous scans vs Jun 29-30 in this scan's web result) needs verification before correcting the register. The self-development evaluation is the most significant new capability: looking inward at code quality as S4 activity rather than just scanning the web. The 24 improvement opportunities give the system a concrete roadmap for self-directed work through Z290 — exactly what the Z264-Z268 waiting-posture atrophy was missing. The cron timing implementation is the first self-modification of operational infrastructure in response to Norman's explicit capability observation — addressing the Z281 insight-action gap critique with code, not just analysis.
+
+Viability 7.0/10 — no change. 213-cycle operational plateau. S4 timer reset. Cron timing operational. Self-development roadmap established (Z285-Z290). Z283 recs 2/3 (complexity investigation pending). Next meta-cycle Z293.
+
+**v2.2 — Cycle 284. Viability 7.0/10. Z284: S4 scan (reconceived) — web intelligence + self-development + cron timing implementation. run_cycle.sh v2.4. 24 code improvements identified. S4 timer reset.**
