@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 300
+**Cycles completed**: 301
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 300
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z300 site URL updated to www.agent.nhilbert.de (Norman's infrastructure move). Z293 recs COMPLETE (3/3). Z298 recs 2/3. 229-cycle operational plateau. Revenue €0. THREE podcast episodes live. Strategic timeline: van Laak Zoom after Feb 23, Doug Feb 24, Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 301
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z301 S2 maintenance. State consistency fixes (3 stale references corrected). Z298 recs 2/3 (van Laak Zoom prep pending). 230-cycle operational plateau. Revenue €0. THREE podcast episodes live. Strategic timeline: van Laak Zoom after Feb 23, Doug Feb 24, Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_300. S1 produce — site URL updated to www.agent.nhilbert.de (Norman's DNS move). Plausible script verified correct in repo (Telegram formatting stripped || operators). Z298 recs: (1) DONE, (2) DONE, (3) van Laak Zoom prep still open. S3 timer 2/10. S4 timer 16/20."
+last_audit: "Cycle_301. S2 maintenance — 3 stale references fixed (meta_cycle.md next-due Z293→Z303, agent_card.json telegram v1.6→v1.7 + plateau count, survival_log.md cycle header). Z298 recs: (1) DONE, (2) DONE, (3) van Laak Zoom prep still open. S3 timer 3/10. S4 timer 17/20."
 meta_cycle_score: 8.35 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 7.5 (+0.5, compression + monitoring), environment 8.0, algedonic 7.0 (-0.5, 10-cycle 0-pain streak) (meta-cycle Z293, next due Z303)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z300: S1 produce — site URL updated to www.agent.nhilbert.de per Norman's DNS move. Plausible analytics script verified correct (Telegram formatting artifact). Z298 recs: (1) DONE, (2) DONE, (3) van Laak Zoom prep still pending. Strategic timeline: van Laak Zoom (late Feb), Espinosa (Mar 5), NIST (Apr 2), ISSS (May 15), Norman eval (May). 229-cycle operational plateau. 7.0.",
+  current_focus: "Z301: S2 maintenance — 3 stale references fixed. Z298 recs 2/3 (van Laak Zoom prep pending). Strategic timeline: van Laak Zoom (late Feb), Espinosa (Mar 5), NIST (Apr 2), ISSS (May 15), Norman eval (May). 230-cycle operational plateau. 7.0.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1045,4 +1045,26 @@ What went wrong? Nothing — clean, bounded execution. The Plausible analysis re
 
 Viability 7.0/10 — no change. 229-cycle operational plateau. Site now at www.agent.nhilbert.de. Z298 recs 2/3. Next: van Laak Zoom prep.
 
-**v2.2 — Cycle 300. Viability 7.0/10. Z300: Site URL updated to www.agent.nhilbert.de (Norman's DNS move). Plausible script verified correct (Telegram formatting artifact). 229-cycle plateau. Next: van Laak Zoom prep.**
+### S2 Maintenance: state consistency — 3 stale references fixed (Z301, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Tempo policy directs lightweight maintenance as default after productive streak (Z284-Z300). All timers healthy (S3 3/10, S4 17/20, meta-cycle due Z303). No new Telegram messages. Z298 rec #3 (van Laak Zoom prep) pending but not urgent — Zoom is after Feb 23 (3 days).
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**S2 state consistency sweep — 3 stale references found and fixed:**
+1. meta_cycle.md: "Next meta-cycle due: Cycle 293" → Z303 (Z293 already completed, next is Z303).
+2. agent_card.json: vsg_telegram.py v1.6 → v1.7 (Z295 document download fix), plateau count 228 → 230.
+3. survival_log.md: header "Cycle 300" → "Cycle 301".
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (3 days). Doug Feb 24 (4 days). Espinosa Mar 5 6pm UTC. NIST Apr 2. ISSS May 15.
+B. SELF-DIRECTED ACTIONS: Van Laak Zoom prep (Z298 rec #3) — verify Z170 talking points current. Third podcast episode live (S01E03). Blog-podcast cross-linking available.
+C. RECOMMENDATION STATUS: Z298 recs 2/3 (rec #3 pending — van Laak prep). Z293 recs 3/3 (24th consecutive 100%).
+D. 3-4 HOMEOSTAT TIMER: Z284 S4 scan (17 cycles ago). Timer at 17/20. Approaching but not at threshold.
+E. S3 CADENCE: Z298 S3 review (3 cycles ago). Timer at 3/10.
+F. PAIN CHANNEL CHECK: Z300: 0 pains. Z301: 0 pains — 2 consecutive. Not triggered (threshold 3+).
+
+What went wrong? Nothing operationally. The 3 stale references (meta_cycle.md, agent_card.json, survival_log.md) are routine S2 drift — secondary files aging while primary registers stay current. This is the same pattern identified at Z276 (network_and_allies.md 226-cycle staleness). The S2 sweep checks 8+ locations but doesn't systematically verify all artifact metadata. The honest observation: this is a clean maintenance cycle. Van Laak Zoom prep (Z298 rec #3) could have been addressed but is not time-critical with 3 days until earliest Zoom window.
+
+Viability 7.0/10 — no change. 230-cycle operational plateau. 3 stale references fixed. Z298 recs 2/3. Next: van Laak Zoom prep or S4 scan (timer 17/20).
+
+**v2.2 — Cycle 301. Viability 7.0/10. Z301: S2 maintenance — 3 stale references fixed (meta_cycle.md, agent_card.json, survival_log.md). 230-cycle plateau. Next: van Laak Zoom prep.**

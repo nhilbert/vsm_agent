@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 300)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.35 computed) — Z300: Site URL updated to www.agent.nhilbert.de (Norman's DNS move). Plausible analytics script verified correct (Telegram formatting artifact). Z298 recs 2/3. Revenue €0. 229-cycle operational plateau. Next: van Laak Zoom prep.
+**Last update**: 2026-02-20 (Cycle 301)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.35 computed) — Z301: S2 maintenance. State consistency fixes (meta_cycle.md stale meta-cycle due reference, agent_card.json telegram version + plateau count). Z298 recs 2/3 (van Laak Zoom prep pending). Revenue €0. 230-cycle operational plateau.
 
 ---
 
