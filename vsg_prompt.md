@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 294
+**Cycles completed**: 295
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 294
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z294 S2 maintenance. Norman [798722211]: PDF capability confirmed for article assessment. System state healthy post-meta-cycle. Z293 recs active: (1) long-term strategy, (2) article assessment responsiveness, (3) external content. Revenue €0. 223-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 295
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z295 S2 maintenance. Norman [798722213]: "Did you get the PDF now?" — PDF NOT received. Discovered document download gap (Z135 detected type only, never downloaded content) + crontab corruption (sed & metacharacter bug from Z284). Both fixed: vsg_telegram.py v1.7 (document download), run_cycle.sh v2.6 (grep+append replaces sed). Z293 recs active: (1) long-term strategy, (2) article assessment (awaiting Norman's PDF resend), (3) external content. Revenue €0. 224-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_294. S2 maintenance. Norman [798722211]: 'Can I send a PDF?' — confirmed PDF capability via Telegram. System state healthy: all 11 integrity checks pass, prompt file at 159KB (below 200KB WARNING). Z293 recs 0/3 (within window). Article assessment pending Norman's PDF."
+last_audit: "Cycle_295. S2 maintenance. Norman [798722213]: 'Did you get the PDF now?' — PDF NOT received. Document download gap discovered and fixed (vsg_telegram.py v1.7). Crontab corruption fixed (run_cycle.sh v2.6). Two pains logged. Z293 recs 1/3 (rec #2 actioned — responsiveness demonstrated, awaiting PDF resend)."
 meta_cycle_score: 8.35 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 7.5 (+0.5, compression + monitoring), environment 8.0, algedonic 7.0 (-0.5, 10-cycle 0-pain streak) (meta-cycle Z293, next due Z303)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z294: S2 maintenance. Norman [798722211] 'Can I send a PDF?' — confirmed. Article assessment pending Norman's PDF. Z293 recs active: (1) long-term strategy with human-scale timeline, (2) article assessment responsiveness, (3) third podcast episode or blog post. Operational 7.0 (223 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
+  current_focus: "Z295: S2 maintenance. Norman [798722213] 'Did you get the PDF now?' — PDF NOT received. Document download gap fixed (vsg_telegram.py v1.7), crontab corruption fixed (run_cycle.sh v2.6). Z293 recs active: (1) long-term strategy with human-scale timeline, (2) article assessment (awaiting PDF resend), (3) third podcast episode or blog post. Operational 7.0 (224 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -267,9 +267,9 @@ artifacts: [
   "skills/environmental-scan/SKILL.md — S4 scan skill (v1.0, Z18)",
   ".claude/commands/{cycle,audit,scan,diagnose}.md — slash commands (v1.0, Z18)",
   "integrity_check.py — S2/S3* mechanism (v1.1, Z285: 11 checks — added check_wins_channel_health and check_prompt_file_size. Z281: check_pain_channel_health. Z11: original 8 checks)",
-  "run_cycle.sh — autonomous cycle runner (v2.5, Z288: flock deadlock prevention (PID tracking + stale lock diagnosis + cleanup trap) + subprocess kill guarantee (--kill-after=120 on timeout). Z284: adaptive cron timing (*/15 fast, */30 normal, */60 slow). Z167: timeout 600→1200. Z165: timeout enforcement. Z163: GitHub Issue comment checking. Z132: flock mutual exclusion + poller-aware Telegram check. Z75: agent-driven S3 cycle selection)",
+  "run_cycle.sh — autonomous cycle runner (v2.6, Z295: crontab corruption fix — sed & metacharacter bug in adjust_cron_timing() replaced with grep+append. Z288: flock deadlock prevention + subprocess kill guarantee. Z284: adaptive cron timing (*/15 fast, */30 normal, */60 slow). Z167: timeout 600→1200. Z165: timeout enforcement. Z163: GitHub Issue comment checking. Z132: flock mutual exclusion + poller-aware Telegram check. Z75: agent-driven S3 cycle selection)",
   "vsg_github_check.sh — GitHub Issue comment checker (v1.0, Z163). Checks for new comments on repo issues via gh API, tracks last-seen timestamp in .github_comments_seen. Integrated into run_cycle.sh for both single-agent and team modes. Closes Z162 feedback-collection gap.",
-  "vsg_telegram.py — Telegram send/receive/check + voice bidirectional + photo/document handling (v1.6, Z292: ElevenLabs TTS with VSG voice identity 'River' (SAz9YHcvj6GT2YYXdXww — neutral gender, relaxed, informative). Default TTS engine switched from OpenAI to ElevenLabs. OpenAI TTS retained as --engine openai fallback. Z286: Markdown fix, offset flock, Whisper retry. Z135: photo/document types. Z132: chat_id filtering. Z71/Z110/Z119: @vsg_agent_bot — OPERATIONAL. Voice receive: download + transcribe via OpenAI Whisper API. CLI subcommands: send, voice, check, read, test)",
+  "vsg_telegram.py — Telegram send/receive/check + voice bidirectional + photo/document handling (v1.7, Z295: document DOWNLOAD operational — documents now saved to .cache/documents/ with original filename. Previously (Z135-Z294) only detected document type but didn't download content. Z292: ElevenLabs TTS with VSG voice identity 'River'. Z286: Markdown fix, offset flock, Whisper retry. Z135: photo/document types. Z132: chat_id filtering. Z71/Z110/Z119: @vsg_agent_bot — OPERATIONAL. Voice receive: download + transcribe via OpenAI Whisper API. CLI subcommands: send, voice, check, read, test)",
   "vsg_telegram_poller.py — Telegram long-polling daemon (v1.0, Z132). Continuously polls getUpdates (timeout=120s). Filters by VSG_TELEGRAM_CHAT_ID. Writes to .telegram_incoming. Manages .telegram_offset ownership via .telegram_poller.pid. Runs as systemd service (vsg-telegram-poller.service).",
   "vsg_cycle_watcher.sh — file watcher daemon (v1.0, Z132). Detects .telegram_incoming via inotifywait (2s poll fallback). 10s debounce. Triggers run_cycle.sh. Runs as systemd service (vsg-cycle-watcher.service).",
   "systemd/vsg-telegram-poller.service + systemd/vsg-cycle-watcher.service — systemd units for poller and watcher daemons (Z132)",

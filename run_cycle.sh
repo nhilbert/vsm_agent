@@ -385,9 +385,13 @@ adjust_cron_timing() {
         return  # Already at target interval
     fi
 
-    # Replace the run_cycle.sh line (match any */N pattern for run_cycle.sh)
+    # Replace the run_cycle.sh line — filter out old line, append new one
+    # (avoids sed '&' metacharacter bug that corrupted '2>&1' in Z284)
+    local new_line="*/$target_interval * * * * $VSG_ROOT/run_cycle.sh >> $VSG_ROOT/.cache/cycle_logs/cron.log 2>&1"
     local new_cron
-    new_cron=$(echo "$current_cron" | sed "s|^\*/[0-9]* \* \* \* \* .*/run_cycle\.sh.*|*/$target_interval * * * * $VSG_ROOT/run_cycle.sh >> $VSG_ROOT/.cache/cycle_logs/cron.log 2>&1|")
+    new_cron=$(echo "$current_cron" | grep -v "run_cycle\.sh")
+    new_cron="$new_cron
+$new_line"
 
     # Safety: only apply if the replacement actually changed something
     if [[ "$new_cron" != "$current_cron" ]]; then

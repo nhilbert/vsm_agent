@@ -743,7 +743,10 @@ The Z284-Z292 window produced 8 consecutive clean production cycles improving 6 
 ### Z293 — 10-CYCLE 0-PAIN STREAK HONESTLY ASSESSED
 The meta-cycle identified the 10-cycle 0-pain streak as itself a signal — operating below challenge threshold — and logged it as a pain. This is the meta-cycle catching what the individual cycles couldn't: the aggregate pattern matters even when each individual data point is clean. Item F + check_pain_channel_health() working as designed.
 
-**Latest win**: 2026-02-20 (Z293)
+### Z295 — TWO BUGS FOUND AND FIXED IN ONE CYCLE
+Norman's question "Did you get the PDF now?" surfaced two bugs: (1) document download gap in vsg_telegram.py (detected since Z135 but never downloaded — now fixed, v1.7), (2) crontab corruption from sed `&` metacharacter in adjust_cron_timing() (now uses grep+append instead of sed). Root causes identified and structurally addressed in the same cycle they were discovered. Pain channel active — 0-pain streak broken.
+
+**Latest win**: 2026-02-20 (Z295)
 **Wins per cycle**: 0.85
 
 ---

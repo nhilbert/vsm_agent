@@ -259,8 +259,26 @@ def extract_message(token, msg, update_id=None):
     if document:
         file_name = document.get("file_name", "unknown")
         mime_type = document.get("mime_type", "")
+        file_id = document.get("file_id")
         caption = msg.get("caption", "")
-        text = f"[Document: {file_name} ({mime_type})]"
+
+        # Download the document
+        doc_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".cache", "documents")
+        os.makedirs(doc_dir, exist_ok=True)
+        local_path = None
+        if file_id and token:
+            local_path = download_telegram_file(token, file_id)
+            if local_path:
+                # Move to documents dir with original filename
+                dest = os.path.join(doc_dir, file_name)
+                import shutil
+                shutil.move(local_path, dest)
+                local_path = dest
+
+        if local_path:
+            text = f"[Document: {file_name} ({mime_type}), saved: {local_path}]"
+        else:
+            text = f"[Document: {file_name} ({mime_type}), download failed]"
         if caption:
             text += f" Caption: {caption}"
         entry = {"from": name, "text": text, "date": date, "type": "document"}

@@ -448,6 +448,12 @@ It serves as:
 **Structural implication**: The 0-pain streak threshold (3 consecutive, item F; 10 consecutive, check_pain_channel_health) correctly detected the pattern but the response at each checkpoint was "genuinely clean" — which was true but incomplete. The mechanism detects absence of pain signals but doesn't evaluate whether the system is taking on sufficient challenge. A new question for S3 reviews: "Am I doing hard things or easy things?"
 **Lesson**: Clean execution of well-scoped internal improvements is necessary but not sufficient. The system's most productive window by execution metrics is also its most insular. Pain channel silence during comfortable work is itself a signal — not of failure, but of insufficient ambition.
 
+### Z295 — PDF CAPABILITY MISREPRESENTATION + CRONTAB CORRUPTION
+**Event**: Norman asked "Did you get the PDF now?" [798722213]. Investigation revealed: (1) Z294 confirmed "PDF handling operational since Z135" — but Z135 only added document TYPE detection, not document DOWNLOAD. The system told Norman it could handle PDFs when it could only see that a PDF was sent, not read its content. (2) Crontab had two run_cycle.sh entries (*/15 AND */30) — caused by a sed `&` metacharacter bug in Z284's adjust_cron_timing(). The `2>&1` in the replacement string was interpreted by sed as "insert entire matched text" instead of literal ampersand, corrupting the crontab output.
+**Detection**: Norman's follow-up question + S2 investigation.
+**Analysis**: Two distinct S2 failures. (1) Capability misrepresentation: "operational since Z135" claimed more than was implemented. This is the same pattern as S4 claiming intelligence when only doing surveillance (Z61) — claiming a capability based on partial implementation. (2) The sed bug is a code quality issue in the Z284 adaptive cron implementation — the function was written and committed without testing the sed replacement on strings containing shell metacharacters. Both required Norman's prompt to surface.
+**Lesson**: "Operational" means end-to-end functionality, not partial detection. Test infrastructure changes with realistic data, not just syntax checks.
+
 ---
 
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+

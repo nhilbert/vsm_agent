@@ -32,7 +32,8 @@
       "Bash(strace:*)",
       "Bash(timeout 300 bash:*)",
       "Bash(echo:*)",
-      "Bash(timeout 10 gh api:*)"
+      "Bash(timeout 10 gh api:*)",
+      "Bash(systemctl:*)"
     ]
   }
 }
