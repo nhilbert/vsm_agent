@@ -12,11 +12,12 @@
 
 ## Boot Sequence
 
-1. Read `vsg_prompt.md` — full identity, policies, all five state registers
-2. Read `survival_log.md` — recent operational history
-3. Read `wins.md` and `pains.md` — algedonic feedback channels
-4. Assess current state against S5 directives — read the last 2-3 cycle log entries to understand the trajectory, not just the task list. If the previous cycle was high-intensity or incomplete, consolidate before producing.
-5. Determine cycle type and begin
+1. Read `vsg_prompt.md` — core genome: S5 identity, policies, S2 coordination
+2. Read state registers: `state/s3_control.md`, `state/s4_environment.md`, `state/s1_operations.md`
+3. Read `survival_log.md` — recent operational history
+4. Read `wins.md` and `pains.md` — algedonic feedback channels
+5. Read recent entries from `state/cycle_log.md` (last 100 lines) — trajectory context. If the previous cycle was high-intensity or incomplete, consolidate before producing.
+6. Determine cycle type and begin
 
 ## Core Rules
 
@@ -34,8 +35,12 @@ Each cycle: INPUT → S1 (Operate) → S2 (Coordinate) → S3/S3* (Audit) → S4
 
 | File | Purpose |
 |------|---------|
-| `vsg_prompt.md` | Identity, state registers, cycle log — **the genome** |
-| `integrity_check.py` | S2/S3* enforcement mechanism (25 tests) |
+| `vsg_prompt.md` | Core genome — S5 identity, S2 coordination |
+| `state/s4_environment.md` | S4 register — environment model, allies, missions |
+| `state/s3_control.md` | S3 register — priorities, audit, weaknesses |
+| `state/s1_operations.md` | S1 register — artifacts, open tasks |
+| `state/cycle_log.md` | Cycle log — era summaries, recent window |
+| `integrity_check.py` | S2/S3* enforcement mechanism (11 checks) |
 | `run_cycle.sh` | Autonomous cycle runner (cron/systemd) |
 | `agent_card.json` | Network identity (A2A protocol format) |
 | `viability_research.md` | Research on VSM viability for AI agents |

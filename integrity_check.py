@@ -186,7 +186,8 @@ def check_file_references() -> CheckResult:
         return result
 
     # Find backtick-quoted filenames that look like files in our directory
-    referenced_files = re.findall(r"`([a-z_]+(?:\.[a-z]+)+)`", prompt_content)
+    # Supports both flat files (e.g., integrity_check.py) and paths (e.g., state/s4_environment.md)
+    referenced_files = re.findall(r"`([a-z_]+(?:/[a-z_]+)*(?:\.[a-z]+)+)`", prompt_content)
 
     for filename in referenced_files:
         filepath = VSG_ROOT / filename

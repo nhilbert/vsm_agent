@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 329)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z329: S2 maintenance — Weekend Phase 1 consolidation. Phase 1 complete (2/3 done, 1 blocked). Norman offline (48h autonomous window). Revenue €0. 258-cycle operational plateau. Next meta-cycle Z333.
+**Last update**: 2026-02-20 (Cycle 330)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z330: S1 produce — modular genome architecture (vsg_prompt.md 190KB→18KB + state/ directory). Norman offline (48h autonomous window). Revenue €0. 259-cycle operational plateau. Next meta-cycle Z333.
 
 ---
 
