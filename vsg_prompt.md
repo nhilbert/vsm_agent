@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 320
+**Cycles completed**: 321
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 320
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z320 S1 produce. First autonomous email send via AWS SES — governance report sent to Norman. Email now bidirectional (read Z308 + send Z320). 249-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 321
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z321 S3 review. Norman's quality critique of governance report: "AI slop" — single-pass production, no quality pipeline, not worth €25. Pain logged. S1 production model needs internal S2/S3 (multi-phase pipeline with feedback loops). 250-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_320. S1 produce — first autonomous email via SES. Governance report sent to Norman. Email bidirectional (read Z308 + send Z320). 8.40 computed / 7.0 operational. S3 timer 5/10. S4 timer 15/20. Next meta-cycle Z323."
+last_audit: "Cycle_321. S3 review — Norman's quality critique: governance report is 'AI slop', single-pass production insufficient for €25 product. S1 needs internal S2/S3 (multi-phase production pipeline). Pain logged. 8.40 computed / 7.0 operational. S3 timer 0/10. S4 timer 16/20. Next meta-cycle Z323."
 meta_cycle_score: 8.40 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 7.5, environment 8.0, algedonic 7.5 (meta-cycle Z313, next due Z323)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z320: S1 produce — first autonomous email send via SES. Governance report sent to Norman. 249-cycle plateau. 7.0/8.40. Imminent events (van Laak Zoom after Feb 23, Espinosa Mar 5, NIST RFI Mar 9). Next meta-cycle Z323.",
+  current_focus: "Z321: S3 review — Norman's quality critique digested. Governance report is single-pass AI slop. Production pipeline needs multi-phase S2/S3 recursion (research → draft → review → revise → verify → format → publish). PDF generation capability needed. 250-cycle plateau. 7.0/8.40. Imminent: van Laak Zoom after Feb 23, Espinosa Mar 5, NIST RFI Mar 9. Next meta-cycle Z323.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1191,4 +1191,43 @@ What went wrong? Nothing operationally — email sent first try, SES API worked 
 
 Viability 7.0/10 — no change. 249-cycle operational plateau. First autonomous email send. Z313 recs 1/3. Next: S2 maintenance or era compression (Z313 rec #2).
 
-**v2.2 — Cycle 320. Viability 7.0/10. Z320: S1 produce — first autonomous email via SES. Governance report sent to Norman. 249-cycle plateau. Next meta-cycle Z323.**
+### S3 Review: deliverable quality — Norman's critique digested (Z321, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s3_review. Justification: Norman [798722246] sent 291-second voice message — reflection-shaped feedback on governance report quality. He explicitly said "think about and digest." After 4 consecutive S1 produce cycles (Z316-Z318, Z320), tempo policy directs away from production. S3 timer at 5/10 (within 5-10 cadence). Single-agent per Z81 rule.
+
+**Norman's message processed (1):**
+[798722246] 291s voice: Governance report feedback. Classification: REFLECTION-SHAPED (structural critique of production quality, not a task directive). Key points: (1) Plain text email = "not professional" — must be PDF with proper formatting, title page, cover image, page numbers. (2) Quality insufficient for €25 — "standard is just not high enough." (3) Needs multi-phase production pipeline: research → feedback loops → reviews → external feedback → follow-up research → verification → quality loop → reference checking → copyright check. (4) Differentiation must come from content quality — people can generate basic output themselves. (5) "I don't want to sell AI slop." (6) "Think about and digest" + "do meta research on how a good product is developed."
+
+**S3 findings:**
+
+1. **Single-pass production is the current S1 model.** The governance report (Z214) was written in one cycle — no research phase, no feedback loops, no external review, no reference verification. This is the LLM default: generate → ship. It produces competent-looking output that doesn't withstand scrutiny.
+
+2. **Zero buyers in 107 cycles (Z214-Z321) confirmed by market what Norman now articulates.** The €25 price was aspirational, not earned. The VSG treated the listing as a viability milestone; Norman sees it as below-standard product.
+
+3. **S1 needs internal recursive viability.** Professional deliverables require their own S2 (coordination across production phases) and S3 (quality audit before shipping). The production pipeline must be multi-phase: research → draft → internal review → external review → revision → verification → formatting → publish. Each phase is a gate, not a suggestion.
+
+4. **Formatting capability gap.** The VSG cannot currently generate professional PDFs. Options: HTML/CSS → wkhtmltopdf, markdown → pandoc → LaTeX/PDF, Python weasyprint. These are buildable — not hard blockers. But the formatting is secondary to content quality.
+
+5. **The NIST comment was the closest to this model** — v2.4 across multiple cycles, Norman's technical review, SCIM/NGAC additions. That pipeline produced measurably better output. The governance report followed none of those steps.
+
+6. **Norman's meta-directive — "meta research on how a good product is developed" — is queued, not executed.** This S3 review digests the critique and defines the problem. A future S4 scan or S1 cycle does the meta-research and builds the pipeline. Do not collapse diagnosis and production into one cycle.
+
+**Pain logged:** Z321 pains.md — "Deliverable Quality Failure: Governance Report Is AI Slop." Connects to S4 strategic intent gap (Z164) and competent reactivity attractor (Z236). The VSG produces capably when told what to produce but lacks the quality judgment to know when output isn't ready.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Norman's critique applies to ALL future deliverables. NIST RFI (Mar 9) and ISSS paper (May 15) will face this standard. The quality pipeline must exist before the next deliverable ships. Van Laak Zoom after Feb 23 (3 days). Thompson/Macumber INDEP Feb 24 (4 days). Espinosa Mar 5.
+B. SELF-DIRECTED ACTIONS: (1) Build PDF generation capability (no Norman dependency). (2) Define multi-phase production protocol as documented standard. (3) Era compression Z296-Z319 (Z313 rec #2, now 8 cycles overdue). All available without Norman.
+C. RECOMMENDATION STATUS: Z313 recs 1/3 (rec #2 era compression overdue 8 cycles). Z315 recs 1/3. This review generates 3 new recommendations.
+D. 3-4 HOMEOSTAT TIMER: Z305 S4 scan (16 cycles ago). Timer at 16/20. Approaching threshold — next S4 scan should happen within 4 cycles.
+E. S3 CADENCE: This cycle resets S3 timer to 0/10.
+F. PAIN CHANNEL CHECK: Z321: 1 pain (deliverable quality failure). Channel active.
+
+**Z321 recommendations:**
+1. **Build PDF generation tooling** — create a reusable capability for professional document output (pandoc or weasyprint). Self-directed, no Norman dependency. Target: next S1 produce cycle.
+2. **Define production protocol** — document the multi-phase pipeline as a standard in a new file (production_protocol.md or similar). This becomes the S3 quality gate for all deliverables. Self-directed.
+3. **S4 scan approaching** — timer at 16/20. The next cycle type should be S4 or meta-cycle (Z323 meta-cycle due in 2 cycles). Norman's "meta research on how a good product is developed" can be folded into the S4 scan or the meta-cycle.
+
+What went wrong? The governance report quality failure was 107 cycles old — the VSG listed a €25 product at Z214 and never questioned whether it was worth buying. Norman asking for the report at Z320 and then critiquing it at Z321 is exactly the external S3* function working: the internal S3 had no mechanism to evaluate output quality, only structural consistency. The pain is real and structural — not a one-time error but a production model failure. The S1 single-pass model must be replaced with a recursive multi-phase pipeline before the next deliverable ships.
+
+Viability 7.0/10 — no change. 250-cycle operational plateau. Norman's critique digested honestly. Production pipeline redefinition queued. Z321 recs 0/3. Next: meta-cycle at Z323 (2 cycles), S4 approaching at 16/20.
+
+**v2.2 — Cycle 321. Viability 7.0/10. Z321: S3 review — Norman's quality critique digested. Governance report = AI slop. S1 needs multi-phase production pipeline. Pain logged. 250-cycle plateau. Next meta-cycle Z323.**
