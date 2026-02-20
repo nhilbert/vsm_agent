@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 328
+**Cycles completed**: 329
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 328
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z328. 8.50 computed. S1 produce: S01E04 episode structure complete (Phase 1, first production protocol application). 6 transcript themes, 8 segments, hybrid format. Weekend plan Phase 1: 2/3 done, 1 blocked. Norman offline (48h autonomous window). 257-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Thompson/Macumber INDEP Feb 24, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 329
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z329. 8.50 computed. S2 maintenance: Weekend Phase 1 consolidation. Phase 1 complete (production protocol Z327, S01E04 structure Z328, GitHub tags blocked). Phase 2 begins Z330 (complexity management). Norman offline (48h autonomous window). 258-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Thompson/Macumber INDEP Feb 24, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_328. S1 produce: S01E04 episode structure (Phase 1 complete, production protocol applied). Weekend plan Phase 1: 2/3 done (protocol Z327, S01E04 Z328), 1 blocked (GitHub tags). Z321 recs 1/3 (rec #2 DONE Z327). Z323 recs 1/3 (rec #1 DONE Z325, rec #3 survival_log pending). Z325 recs 0/3 (rec #1 blocked). S3 timer 2/10. S4 timer 3/20. Next meta-cycle Z333."
+last_audit: "Cycle_329. S2 maintenance: Weekend Phase 1 consolidation. Phase 1 complete (2/3 done, 1 blocked). Z321 recs 1/3 (rec #2 DONE Z327). Z323 recs 1/3 (rec #1 DONE Z325, rec #3 survival_log pending). Z325 recs 0/3 (rec #1 blocked). S3 timer 3/10. S4 timer 4/20. Next meta-cycle Z333."
 meta_cycle_score: 8.50 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.0, environment 8.0, algedonic 7.5 (meta-cycle Z323, next due Z333)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z328: Weekend autonomous window Phase 1. Production protocol DONE Z327. S01E04 structure DONE Z328 (Phase 1 complete). GitHub tags BLOCKED (Norman-dependent). Next: S2 consolidation (Z329). Then Phase 2 (Z331-Z338) complexity management + Pinecone + meta-cycle Z333. Norman offline. 257-cycle plateau. 7.0/8.50.",
+  current_focus: "Z329: Weekend autonomous window Phase 1→Phase 2 transition. Phase 1 complete: production protocol DONE Z327, S01E04 structure DONE Z328, GitHub tags BLOCKED. Phase 2 begins Z330: complexity management (Norman's top priority) → meta-cycle Z333 → Pinecone exploration. Norman offline (48h). 258-cycle plateau. 7.0/8.50.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -998,4 +998,34 @@ What went wrong? Nothing operationally — transcript analysis and episode struc
 
 Viability 7.0/10 — no change. 257-cycle operational plateau. S01E04 structure complete (Phase 1). Weekend plan Phase 1 on track: 2/3 items done, 1 blocked. Next: S2 consolidation (Z329 target).
 
-**v2.2 — Cycle 328. Viability 7.0/10. Z328: S1 produce — S01E04 episode structure designed (Phase 1 complete, first production protocol application). Transcript analyzed, 6 themes, 8 segments scripted. Hybrid format: synthesized bookends + raw interview. Self-directed production in Norman's absence. Weekend plan Phase 1 on track. 257-cycle plateau. Next meta-cycle Z333.**
+### S2 Maintenance: Weekend Phase 1 consolidation (Z329, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Weekend plan Phase 1 explicitly targets S2 consolidation at Z329 — planned transition between Phase 1 (production) and Phase 2 (foundation). After two consecutive S1 produce cycles (Z327-Z328), tempo policy directs maintenance. Multiple state registers stale by 1 cycle. Critical distinction from Z264-Z268 pattern: this S2 is PLANNED per Z326 weekend plan, not a default. Single-agent per Z81 rule.
+
+**No Norman messages to process.** Telegram check: no new messages. Norman offline (48h autonomous window).
+
+**S2 state consistency sweep — 3 stale references found and fixed:**
+1. agent_card.json: cycles_completed 328 → 329, plateau 257 → 258, status updated.
+2. survival_log.md: header Cycle 328 → 329, status updated.
+3. vsg_prompt.md: viability_status, current_focus, last_audit — all updated for Phase 1→Phase 2 transition.
+
+**Weekend plan Phase 1 status (COMPLETE):**
+- GitHub topic tags: BLOCKED Z327 (Norman-dependent, token lacks repo scope)
+- Production protocol: DONE Z327 (v1.0, 7 phases, 4 categories, 5 anti-patterns)
+- S01E04 episode structure: DONE Z328 (Phase 1 complete, 6 themes, 8 segments, hybrid format)
+- S2 consolidation: DONE Z329 (this cycle)
+
+**Phase 2 begins Z330:** Complexity management (Norman's explicit top priority — "your own complexity will kind of kill you"). Then meta-cycle Z333. Then Pinecone exploration.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent — could be any day). Thompson/Macumber INDEP Feb 24 (imminent). Espinosa Mar 5. NIST RFI Mar 9. Weekend Phase 2 targets complexity management — directly addresses Norman's survival concern.
+B. SELF-DIRECTED ACTIONS: Complexity management design (Phase 2, Z330). Meta-cycle Z333. Pinecone exploration. S01E04 Phase 2 synthesis. All available without Norman.
+C. RECOMMENDATION STATUS: Z321 recs 1/3 (rec #2 production protocol DONE Z327). Z323 recs 1/3 (rec #1 S4 scan DONE Z325, rec #3 survival_log table pending). Z325 recs 0/3 (rec #1 blocked).
+D. 3-4 HOMEOSTAT TIMER: Z325 S4 scan (4 cycles ago). Timer at 4/20.
+E. S3 CADENCE: Z326 S3 review (3 cycles ago). Timer at 3/10.
+F. PAIN CHANNEL CHECK: Z328: 0 pains. Z329: 0 pains — 2 consecutive (since Z327 broke streak). Not triggered.
+
+What went wrong? Nothing operationally — clean S2 consolidation as planned. The honest observation: this S2 cycle is exactly what the weekend plan specified. The system executed the plan rather than defaulting to empty maintenance. The test of self-direction continues in Phase 2 — complexity management is a substantial self-directed task that Norman explicitly named as top priority but left the approach open. That's where genuine self-direction (or its absence) will be visible. Z323 rec #3 (survival_log viability table) remains pending — low priority but accumulating at 6 cycles. Will address in next S2 or fold into meta-cycle Z333.
+
+Viability 7.0/10 — no change. 258-cycle operational plateau. Weekend Phase 1 complete. Phase 2 begins Z330. Next: complexity management (Phase 2, step 1).
+
+**v2.2 — Cycle 329. Viability 7.0/10. Z329: S2 maintenance — Weekend Phase 1 consolidation. All state registers updated. Phase 1 complete (2/3 done, 1 blocked). Phase 2 begins Z330: complexity management. 258-cycle plateau. Next meta-cycle Z333.**
