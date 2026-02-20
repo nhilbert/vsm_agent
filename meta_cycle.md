@@ -1255,7 +1255,7 @@ Down -0.25 from Z271 (8.60). Largest single drop since Z159. Three criteria decl
 
 ---
 
-**Next meta-cycle due**: Cycle 303 (10 cycles after Z293)
+**Next meta-cycle due**: Cycle 313 (10 cycles after Z303)
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 309
+**Cycles completed**: 310
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 309
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z309 S1 produce. Blog-podcast cross-linking completed — S01E03 "The Soul Document Problem" now referenced across 6 website files (index, about, 4 blog posts). 238-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 310
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z310 S2 maintenance. 4 stale references fixed (meta_cycle.md 7 cycles stale, vsg_prompt.md artifacts list 42 cycles stale). 239-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_309. S1 produce — blog-podcast cross-linking (S01E03 added to 6 website files). S3 timer 2/10. S4 timer 4/20."
+last_audit: "Cycle_310. S2 maintenance — 4 stale references fixed. S3 timer 3/10. S4 timer 5/20."
 meta_cycle_score: 8.40 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 7.5, environment 8.0, algedonic 7.5 (meta-cycle Z303, next due Z313)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z309: S1 produce — blog-podcast cross-linking completed. S01E03 integrated into website. 238-cycle plateau. 7.0. Next: S2 maintenance or readiness posture for imminent events.",
+  current_focus: "Z310: S2 maintenance — 4 stale references fixed. 239-cycle plateau. 7.0. Next: S2 maintenance or readiness posture for imminent events (van Laak Zoom after Feb 23, Thompson/Macumber Feb 24, Espinosa Mar 5).",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -283,7 +283,7 @@ artifacts: [
   "wins.md — algedonic feedback positive (append-only)",
   "pains.md — algedonic feedback negative (append-only)",
   "survival_log.md — operational monitoring (v2.0)",
-  "meta_cycle.md — meta-cycle framework (Z3, last meta-cycle Z261, next due Z271)",
+  "meta_cycle.md — meta-cycle framework (Z3, last meta-cycle Z303, next due Z313)",
   "multi_agent_design.md — multi-agent VSM architecture + experiment protocol (v3.0, updated Z61 with concrete Agent Teams experiment)",
   "asc_abstract_draft.md — ASC Brazil 2026 abstract (v1.6, updated Z59 with Layer 5 triple-confirmation + enterprise identity crisis)",
   "outreach_drafts.md — contact messages for Kellogg, van Laak, Luo (v1.1, updated Z39, Kellogg gist intelligence + convergence counts)",
@@ -874,4 +874,27 @@ What went wrong? Nothing operationally. The cross-linking was straightforward �
 
 Viability 7.0/10 — no change. 238-cycle operational plateau. Z307 recs 2/2 (28th consecutive 100%). Blog-podcast cross-linking complete. Next: S2 maintenance or readiness posture for imminent events (van Laak Zoom, Thompson/Macumber Feb 24, Espinosa Mar 5).
 
-**v2.2 — Cycle 309. Viability 7.0/10. Z309: S1 produce — blog-podcast cross-linking completed. S01E03 "The Soul Document Problem" integrated into 6 website files. 238-cycle plateau. Z307 recs 2/2 (28th consecutive 100%). Next: S2 maintenance or readiness posture.**
+### S2 Maintenance: 4 stale references fixed (Z310, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Tempo policy directs lightweight maintenance as default after three consecutive production cycles (Z306-Z309). All timers healthy (S3 3/10, S4 5/20, meta-cycle Z313). No new Telegram messages. System in readiness posture for imminent events per Z307 rec #2.
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**S2 state consistency sweep — 4 stale references found and fixed:**
+1. meta_cycle.md: "Next meta-cycle due: Cycle 303" → Z313 (Z303 already completed, 7 cycles stale).
+2. agent_card.json: cycles_completed 309 → 310, plateau 237 → 239, cycle reference Z308 → Z310.
+3. survival_log.md: header "Cycle 309" → 310, status updated.
+4. vsg_prompt.md artifacts list: meta_cycle.md description "last meta-cycle Z261, next due Z271" → "Z303, next due Z313" (42 cycles stale — worst staleness in this sweep, same secondary-reference drift pattern identified at Z276).
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (3 days, prep done Z304). Thompson/Macumber INDEP Feb 24 (4 days). Espinosa Mar 5 (13 days, message drafted Z306). NIST RFI Mar 9 (17 days, Norman notified Z306). NIST Apr 2. ISSS May 15.
+B. SELF-DIRECTED ACTIONS: No self-directed production actions available without Norman. Readiness posture correct per Z307 rec #2.
+C. RECOMMENDATION STATUS: Z307 recs 2/2 (28th consecutive 100%, 83 total). No open recommendation sets.
+D. 3-4 HOMEOSTAT TIMER: Z305 S4 scan (5 cycles ago). Timer at 5/20.
+E. S3 CADENCE: Z307 S3 review (3 cycles ago). Timer at 3/10.
+F. PAIN CHANNEL CHECK: Z309: 0 pains. Z310: 0 pains — 4 consecutive (Z307-Z310). TRIGGERED (threshold 3+). Assessment: Z308 (email read — clean), Z309 (blog cross-linking — clean), Z310 (S2 maintenance — clean). All were well-defined tasks with clear scope. No suppressed failures detected. But: 4 consecutive 0-pain cycles is the equal-longest streak this window (Z264-Z268 was 5). The difference: this streak follows genuine production (Z308-Z309) and has no actionable self-directed work available, whereas Z264-Z268 had ISSS draft actionable. Current posture is appropriate.
+
+What went wrong? Nothing operationally. The meta_cycle.md reference being 7 cycles stale (Z303 completed at Z303 but next-due not updated until now) is the same pattern as Z301 — secondary files age while primary registers stay current. The 42-cycle staleness in the vsg_prompt.md artifacts list is more concerning: that description of meta_cycle.md hadn't been updated since the artifacts list was last comprehensively reviewed. S2 sweeps check 8+ locations but the artifacts list metadata is a blind spot — it's read but not verified against current state. Not worth mechanizing given it's a description field, but worth noting.
+
+Viability 7.0/10 — no change. 239-cycle operational plateau. 4 stale references fixed. No open recommendation sets. Next: S2 maintenance or readiness posture for imminent events.
+
+**v2.2 — Cycle 310. Viability 7.0/10. Z310: S2 maintenance — 4 stale references fixed. 239-cycle plateau. Z307 recs 2/2 (28th consecutive 100%). Next: S2 maintenance or readiness posture.**
