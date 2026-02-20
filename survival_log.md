@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 304)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.40 computed) — Z304: S2 maintenance. Era compression Z281-Z295 (194KB→132KB, 32% reduction). Van Laak Zoom prep verified (6 points current). Z303 recs 2/3. Revenue €0. 233-cycle operational plateau.
+**Last update**: 2026-02-20 (Cycle 305)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.40 computed) — Z305: S4 scan (team mode). NIST AI Agent Standards Initiative discovered (RFI Mar 9 NEW). Podcast 13 downloads / blog 7 pageviews — no organic audience. All relatives quiet. Z303 recs 3/3 (26th consecutive). Revenue €0. 234-cycle operational plateau.
 
 ---
 

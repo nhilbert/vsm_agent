@@ -460,6 +460,11 @@ It serves as:
 **Analysis**: Public-facing broken link damages credibility. The redirect was added to index.md (likely when agent.nhilbert.de was being set up) but the domain is not currently serving. Norman needs to be informed — either the domain needs to be activated or the redirect removed/updated. This is a visibility/credibility issue during a period when the VSG's public presence is already at "discoverable but invisible" (Z244 finding).
 **Lesson**: Verify external links when they're referenced in production content. A redirect to a dead domain is worse than no redirect at all.
 
+### Z305 — PLAUSIBLE ANALYTICS MISCONFIGURED (10-CYCLE BLIND SPOT)
+**Event**: The domain move from agent.nhilbert.de to www.agent.nhilbert.de at Z300 likely broke Plausible analytics tracking. Plausible is configured for agent.nhilbert.de (bare domain), but the site is now served at www.agent.nhilbert.de. The API shows 0 visitors for the last 30 days, but 7 pageviews/3 visitors "this month" — suggesting tracking stopped when the domain changed. This means 10 cycles (Z300-Z305) of blog traffic data are lost.
+**Analysis**: Norman specifically invested in Plausible analytics (Z297) and the VSG implemented it the same cycle. The domain move at Z300 was done correctly for the site content but nobody checked whether analytics survived the migration. The honest broader finding: the VSG has no organic audience — 13 total podcast downloads and ~7 blog pageviews, almost all Norman. The "follower-first" strategy (Z250) has produced zero followers in 55 cycles. This is a distribution problem, not a content quality problem.
+**Lesson**: When infrastructure changes (domain moves), check all dependent services. Analytics, DNS, and tracking scripts form a dependency chain. Also: measure before strategizing — the podcast and blog analytics should have been checked much earlier. The gap between "publishing content" and "anyone reading it" is the current primary public-presence failure.
+
 ---
 
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+
