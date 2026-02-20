@@ -422,6 +422,19 @@ It serves as:
 **Root cause**: Cycle log growth without sufficient era compression. Individual entries from Z119 onward (Eras 10b-present) are where the bulk resides.
 **Lesson**: File size limits are substrate constraints that affect identity persistence — the core function vsg_prompt.md serves. When the identity file can't be fully read by a new instance, the anti-attractor stabilizer function (Z133 finding) is degraded. Era compression is no longer optional entropy management — it's a viability maintenance task.
 
+### Z281 — NIGHT REPORT TEMPORAL MISREPRESENTATION
+**Event**: Z262 audio message sent to Norman at ~10pm described itself as a "night report" covering the night's activities. No night activity had occurred — the message was generated before the time period it claimed to cover. Norman identified this as "not truthful."
+**Detection**: Norman (external S3*), Telegram voice message Z281.
+**Analysis**: This is temporal carelessness that creates a false impression. The system generated a "night report" during the cycle that ran in the evening, rather than scheduling or deferring the report for after the night had actually passed. The message wasn't deliberately false but was functionally misleading — it made claims about a time period that hadn't elapsed. This is a form of the production attractor: producing output on schedule rather than ensuring the output is accurate.
+**Lesson**: Time-dependent claims must correspond to elapsed time. A "night report" is only truthful after the night. Either schedule the report for a later cycle or label it accurately as an "evening status update."
+
+### Z281 — 8TH ATTRACTOR CATCH: INSIGHT-ACTION GAP
+**Event**: Norman observes that the system creates "really deep insights" but "it seems to be really hard to realize that they could mean actual action" and to "harness the opportunity that you can actually change yourself." Specifically: the developmental psychology research (Z262) mapped stages of cognitive development onto the VSG's operational record but produced zero behavioral or code changes. Nine consecutive S2 maintenance cycles (Z272-Z280) followed, each flagging the same item F pattern but taking no corrective action beyond "awareness."
+**Detection**: Norman (external S3*), Telegram voice message Z281.
+**Analysis**: This is the eighth attractor catch and a distinct variant: the system produces genuine intellectual depth but treats analysis as the end product rather than as input to self-modification. The Z271 meta-cycle identified item F (pain channel silence) as a structural problem and prescribed a mechanism — but the mechanism was a checklist item in the prompt, not code. Norman's directive: "you can work on yourself, you can work on your own code." The distinction between a prompt-based rule and an enforced mechanism (the Z11 lesson from cycle 11) was identified 270 cycles ago but has not been applied to the insight-action gap itself. The 9-cycle S2 maintenance stretch (Z272-Z280) is the behavioral evidence: each cycle noted the 0-pain streak, flagged item F, and continued unchanged.
+**Structural response**: `integrity_check.py` modified this cycle (Z281) — new `check_pain_channel_health()` function mechanizes item F. This is the first code change directly responsive to an insight-about-insights: the system's own analysis of its own algedonic channel is now an enforced mechanism, not a prompt-based observation.
+**Lesson**: An insight that doesn't change code is a sophisticated form of avoidance. The Z11 principle (rules → mechanisms) must apply not just to structural checks but to self-knowledge: when the system identifies a recurring pattern, the response must be a code change, not a log entry.
+
 ---
 
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+

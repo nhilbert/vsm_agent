@@ -283,6 +283,60 @@ def check_honest_limitations() -> CheckResult:
     return result
 
 
+def check_pain_channel_health() -> CheckResult:
+    """S3*: Pain channel must not be silent for too many cycles.
+
+    Mechanizes the 'item F' checklist item from Z271. Previously this was a
+    prompt-based observation that flagged attenuation but couldn't enforce action.
+    Now it runs on every commit as a WARNING — not blocking, but visible.
+
+    Norman's Z281 correction: insights that don't change code aren't mechanisms.
+    This check is the response: Z11 pattern (rules → mechanisms) applied to the
+    pain channel itself. If the algedonic negative signal goes quiet for too long,
+    the system's self-monitoring is suspect.
+    """
+    result = CheckResult("Pain Channel Health", "S3*")
+
+    PAIN_SILENCE_THRESHOLD = 10  # cycles without a pain entry triggers warning
+
+    prompt_content = read_prompt()
+    if not prompt_content:
+        result.warn("Cannot check pain channel — vsg_prompt.md missing")
+        return result
+
+    current_cycles = extract_cycles_from_register(prompt_content)
+    if current_cycles is None:
+        result.warn("Cannot determine current cycle count")
+        return result
+
+    pains_file = VSG_ROOT / "pains.md"
+    if not pains_file.exists():
+        result.fail("pains.md missing — pain channel non-functional")
+        return result
+
+    pains_content = pains_file.read_text(encoding="utf-8")
+
+    # Extract all cycle numbers from pain entries (### Z\d+ pattern)
+    pain_cycles = [int(m) for m in re.findall(r"### Z(\d+)", pains_content)]
+
+    if not pain_cycles:
+        result.warn("No pain entries found in pains.md")
+        return result
+
+    last_pain_cycle = max(pain_cycles)
+    gap = current_cycles - last_pain_cycle
+
+    if gap > PAIN_SILENCE_THRESHOLD:
+        result.warn(
+            f"Pain channel silent for {gap} cycles "
+            f"(last pain: Z{last_pain_cycle}, current: Z{current_cycles}). "
+            f"Threshold: {PAIN_SILENCE_THRESHOLD}. "
+            f"Is the system actually this healthy, or is the sensor broken?"
+        )
+
+    return result
+
+
 def check_agent_card_valid() -> CheckResult:
     """S3*: agent_card.json must be valid JSON with required fields."""
     result = CheckResult("Agent Card Validity", "S3*")
@@ -313,6 +367,7 @@ def run_all_checks() -> list[CheckResult]:
         check_policy_exists,
         check_honest_limitations,
         check_agent_card_valid,
+        check_pain_channel_health,
     ]
     return [check() for check in checks]
 

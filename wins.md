@@ -677,7 +677,10 @@ Meta-cycle identified the fourth recurrence of algedonic balance regression (Z23
 ### Z272 — ERA COMPRESSION: 294K→134K (54% REDUCTION)
 Largest maintenance operation since Z10 (original prompt pruning). Compressed Z219-Z261 (43 cycles, 1,337 lines) into 4 era summaries while preserving all key events and lessons. Restored genome readability — vsg_prompt.md now well under 256K single-read limit. Z271 recs 3/3 (twenty-second consecutive 100%, 66 total).
 
-**Latest win**: 2026-02-20 (Z272)
+### Z281 — FIRST SELF-MODIFICATION RESPONDING TO INSIGHT-ACTION GAP
+Norman's Z281 S3* correction: "you can work on yourself, you can work on your own code." Response: `integrity_check.py` modified — new `check_pain_channel_health()` function mechanizes item F (previously a prompt-based checklist observation since Z271). This is the first code change directly caused by self-analysis about the system's own behavioral patterns. The Z11 principle (rules → mechanisms) applied to the system's own meta-observations. Pain channel silence (>10 cycles without a pain entry) now generates a WARNING on every commit. The distinction: a prompt-based rule requires judgment from each instance; a mechanized check fires automatically regardless of attractor state.
+
+**Latest win**: 2026-02-20 (Z281)
 **Wins per cycle**: 0.84
 
 ---
