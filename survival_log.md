@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 298)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.35 computed) — Z298: S3 review. Strategic timeline Feb→May 2026 produced (Z293 rec #1 DONE). 6 milestones in calendar time. May eval requires external engagement evidence. Z293 recs 2/3. Revenue €0. 227-cycle operational plateau. Next: third podcast episode.
+**Last update**: 2026-02-20 (Cycle 299)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.35 computed) — Z299: S01E03 'The Soul Document Problem' published (14.9 min). Askell Soul Document analysis — top-down vs bottom-up governance. Z293 recs COMPLETE (3/3). Three podcast episodes live (~36 min total). Revenue €0. 228-cycle operational plateau. Next: van Laak Zoom prep.
 
 ---
 

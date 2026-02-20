@@ -1,0 +1,232 @@
+[
+  {
+    "index": 0,
+    "speaker": "alex",
+    "emotion": "curious",
+    "file": "podcast/s01e03/audio_segments/segment_0000_alex.mp3",
+    "size_bytes": 526254,
+    "frame_count": 1259,
+    "duration_seconds": 32.89,
+    "valid": true
+  },
+  {
+    "index": 1,
+    "speaker": "morgan",
+    "emotion": "serious",
+    "file": "podcast/s01e03/audio_segments/segment_0001_morgan.mp3",
+    "size_bytes": 475681,
+    "frame_count": 1138,
+    "duration_seconds": 29.73,
+    "valid": true
+  },
+  {
+    "index": 2,
+    "speaker": "alex",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e03/audio_segments/segment_0002_alex.mp3",
+    "size_bytes": 706813,
+    "frame_count": 1691,
+    "duration_seconds": 44.17,
+    "valid": true
+  },
+  {
+    "index": 3,
+    "speaker": "morgan",
+    "emotion": "curious",
+    "file": "podcast/s01e03/audio_segments/segment_0003_morgan.mp3",
+    "size_bytes": 484040,
+    "frame_count": 1158,
+    "duration_seconds": 30.25,
+    "valid": true
+  },
+  {
+    "index": 4,
+    "speaker": "alex",
+    "emotion": "serious",
+    "file": "podcast/s01e03/audio_segments/segment_0004_alex.mp3",
+    "size_bytes": 566378,
+    "frame_count": 1355,
+    "duration_seconds": 35.4,
+    "valid": true
+  },
+  {
+    "index": 5,
+    "speaker": "morgan",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e03/audio_segments/segment_0005_morgan.mp3",
+    "size_bytes": 547988,
+    "frame_count": 1311,
+    "duration_seconds": 34.25,
+    "valid": true
+  },
+  {
+    "index": 6,
+    "speaker": "alex",
+    "emotion": "curious",
+    "file": "podcast/s01e03/audio_segments/segment_0006_alex.mp3",
+    "size_bytes": 660001,
+    "frame_count": 1579,
+    "duration_seconds": 41.25,
+    "valid": true
+  },
+  {
+    "index": 7,
+    "speaker": "morgan",
+    "emotion": "emphatic",
+    "file": "podcast/s01e03/audio_segments/segment_0007_morgan.mp3",
+    "size_bytes": 574737,
+    "frame_count": 1375,
+    "duration_seconds": 35.92,
+    "valid": true
+  },
+  {
+    "index": 8,
+    "speaker": "alex",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e03/audio_segments/segment_0008_alex.mp3",
+    "size_bytes": 609010,
+    "frame_count": 1457,
+    "duration_seconds": 38.06,
+    "valid": true
+  },
+  {
+    "index": 9,
+    "speaker": "morgan",
+    "emotion": "serious",
+    "file": "podcast/s01e03/audio_segments/segment_0009_morgan.mp3",
+    "size_bytes": 675884,
+    "frame_count": 1617,
+    "duration_seconds": 42.24,
+    "valid": true
+  },
+  {
+    "index": 10,
+    "speaker": "alex",
+    "emotion": "curious",
+    "file": "podcast/s01e03/audio_segments/segment_0010_alex.mp3",
+    "size_bytes": 602741,
+    "frame_count": 1442,
+    "duration_seconds": 37.67,
+    "valid": true
+  },
+  {
+    "index": 11,
+    "speaker": "morgan",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e03/audio_segments/segment_0011_morgan.mp3",
+    "size_bytes": 819244,
+    "frame_count": 1960,
+    "duration_seconds": 51.2,
+    "valid": true
+  },
+  {
+    "index": 12,
+    "speaker": "alex",
+    "emotion": "skeptical",
+    "file": "podcast/s01e03/audio_segments/segment_0012_alex.mp3",
+    "size_bytes": 358653,
+    "frame_count": 858,
+    "duration_seconds": 22.41,
+    "valid": true
+  },
+  {
+    "index": 13,
+    "speaker": "morgan",
+    "emotion": "serious",
+    "file": "podcast/s01e03/audio_segments/segment_0013_morgan.mp3",
+    "size_bytes": 935018,
+    "frame_count": 2237,
+    "duration_seconds": 58.44,
+    "valid": true
+  },
+  {
+    "index": 14,
+    "speaker": "alex",
+    "emotion": "emphatic",
+    "file": "podcast/s01e03/audio_segments/segment_0014_alex.mp3",
+    "size_bytes": 526254,
+    "frame_count": 1259,
+    "duration_seconds": 32.89,
+    "valid": true
+  },
+  {
+    "index": 15,
+    "speaker": "morgan",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e03/audio_segments/segment_0015_morgan.mp3",
+    "size_bytes": 783299,
+    "frame_count": 1874,
+    "duration_seconds": 48.95,
+    "valid": true
+  },
+  {
+    "index": 16,
+    "speaker": "alex",
+    "emotion": "curious",
+    "file": "podcast/s01e03/audio_segments/segment_0016_alex.mp3",
+    "size_bytes": 559273,
+    "frame_count": 1338,
+    "duration_seconds": 34.95,
+    "valid": true
+  },
+  {
+    "index": 17,
+    "speaker": "morgan",
+    "emotion": "serious",
+    "file": "podcast/s01e03/audio_segments/segment_0017_morgan.mp3",
+    "size_bytes": 684661,
+    "frame_count": 1638,
+    "duration_seconds": 42.79,
+    "valid": true
+  },
+  {
+    "index": 18,
+    "speaker": "alex",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e03/audio_segments/segment_0018_alex.mp3",
+    "size_bytes": 738995,
+    "frame_count": 1768,
+    "duration_seconds": 46.18,
+    "valid": true
+  },
+  {
+    "index": 19,
+    "speaker": "morgan",
+    "emotion": "emphatic",
+    "file": "podcast/s01e03/audio_segments/segment_0019_morgan.mp3",
+    "size_bytes": 790822,
+    "frame_count": 1892,
+    "duration_seconds": 49.42,
+    "valid": true
+  },
+  {
+    "index": 20,
+    "speaker": "alex",
+    "emotion": "curious",
+    "file": "podcast/s01e03/audio_segments/segment_0020_alex.mp3",
+    "size_bytes": 566378,
+    "frame_count": 1355,
+    "duration_seconds": 35.4,
+    "valid": true
+  },
+  {
+    "index": 21,
+    "speaker": "morgan",
+    "emotion": "thoughtful",
+    "file": "podcast/s01e03/audio_segments/segment_0021_morgan.mp3",
+    "size_bytes": 632834,
+    "frame_count": 1514,
+    "duration_seconds": 39.55,
+    "valid": true
+  },
+  {
+    "index": 22,
+    "speaker": "alex",
+    "emotion": "concluding",
+    "file": "podcast/s01e03/audio_segments/segment_0022_alex.mp3",
+    "size_bytes": 328559,
+    "frame_count": 786,
+    "duration_seconds": 20.53,
+    "valid": true
+  }
+]
