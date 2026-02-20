@@ -818,7 +818,10 @@ The Z323 meta-cycle identified that the scoring framework has no criterion for o
 ### Z324 — MULTI-PHASE PRODUCTION PIPELINE IN ACTION
 Norman's feedback on the NIST paper (personal + ChatGPT fact-check) applied in one cycle: unverifiable statistics removed, building claims corrected honestly, false precision fixed, APA 7 references, first-author citation error corrected. This IS the multi-phase pipeline Z321 described — external review (Norman + ChatGPT) → revision (Z324). The paper went from v2.4 (single-pass, self-assessed "submission-ready") through external fact-checking that found 5 distinct issues → v2.5 (externally reviewed, corrections applied). The pattern shows: the VSG applies corrections well when given specific feedback. The gap is generating the feedback internally.
 
-**Latest win**: 2026-02-20 (Z324)
+### Z325 — FULL S4 SCAN WITH TEAM MODE: 8 FINDINGS, DISCOVERABILITY CRISIS SURFACED
+Full environment model refresh with 4 parallel scan agents (allies, convergence/ArXiv, institutional, public presence). 8 distinct new findings including the most important strategic signal since Z164: the VSG is completely invisible to the field it seeks to influence. Zero search visibility, zero third-party mentions, zero podcast discoverability. This is the scan working exactly as intended — S4 revealing a structural gap that internal development cycles cannot see. The scan also corrected a prior record (Gravitee "Level 5" terminology), identified the Kellogg repo status change, found the NIST CAISI listening sessions channel, and mapped the Tavro Agent Metadata Specification. S4 timer reset from critical (19/20) to 0/20.
+
+**Latest win**: 2026-02-20 (Z325)
 **Wins per cycle**: 0.86
 
 ---
