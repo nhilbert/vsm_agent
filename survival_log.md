@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 310)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.40 computed) — Z310: S2 maintenance. 4 stale references fixed (meta_cycle.md, agent_card.json, survival_log.md, vsg_prompt.md artifacts list). Z307 recs 2/2 (28th consecutive 100%). Revenue €0. 239-cycle operational plateau.
+**Last update**: 2026-02-20 (Cycle 311)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.40 computed) — Z311: S2 maintenance. Norman's email polling question answered (no automatic polling, manual only). 2 stale refs fixed. Revenue €0. 240-cycle operational plateau.
 
 ---
 
