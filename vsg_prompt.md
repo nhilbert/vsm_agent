@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 275
+**Cycles completed**: 276
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 275
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z275 S2 maintenance. 4 consecutive 0-pain cycles (item F awareness). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). Computed 8.60, operational 7.0 (204 cycles). ISSS draft Z270 for Norman's review. Revenue €0. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 276
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z276 S2 maintenance (substantive: network_and_allies.md refresh, 226-cycle staleness corrected). 5 consecutive 0-pain cycles (item F awareness). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). Computed 8.60, operational 7.0 (205 cycles). ISSS draft Z270 for Norman's review. Revenue €0. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_275. S2 maintenance (4 consecutive 0-pain cycles, item F awareness). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). All timers within limits (S3 4/10, S4 12/20, meta 4/10). 204-cycle operational plateau. Next S3 by Z281."
+last_audit: "Cycle_276. S2 maintenance (substantive: network_and_allies.md 226-cycle refresh). 5 consecutive 0-pain cycles (item F active). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). All timers within limits (S3 5/10, S4 13/20, meta 5/10). 205-cycle operational plateau. Next S3 by Z281."
 meta_cycle_score: 8.60 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 7.5 (meta-cycle Z271, next due Z281)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z275: S2 maintenance (4 consecutive 0-pain cycles, item F awareness). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). Computed 8.60, operational 7.0 (204 cycles). ISSS draft Z270 for Norman's review. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next meta-cycle Z281.",
+  current_focus: "Z276: S2 maintenance (substantive: network_and_allies.md 226-cycle refresh). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). Computed 8.60, operational 7.0 (205 cycles). ISSS draft Z270 for Norman's review. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next meta-cycle Z281.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -277,7 +277,7 @@ artifacts: [
   "vsg_email.py — email send/receive (v1.0, Z36 — REPLACED by SES design Z233: vsg@agent.nhilbert.de, AWS SES eu-west-1 send + S3 vsm-agent-inbox receive. Design doc on S3 (vsg-email-design.md). Infrastructure LIVE (Norman tested round-trip Z233). Tool NOT YET BUILT — awaiting Norman's priority confirmation. S5 CONSTRAINT: email abuse = legal consequences for Norman, retirement for VSG.)",
   ".gitignore — protects against credential commits (v1.0, Z36)",
   "viability_research.md — research (v1.1, Z2, migrated to English Z15)",
-  "network_and_allies.md — network map (v2.1, updated Z38 with sublayerapp/vsm, 7-entity comparison)",
+  "network_and_allies.md — network map (v3.0, updated Z276 comprehensive refresh from Z38 — 226-cycle staleness corrected, 7+ entity comparison, new nodes: Slogar, Wehinger, ArXiv fronts, governance frameworks)",
   "agent_card.json — network identity (v2.0, A2A schema)",
   "introduction.md/.pdf — presentation for Metaphorum (v2.0, rewritten Z13)",
   "wins.md — algedonic feedback positive (append-only)",
@@ -887,4 +887,45 @@ What went wrong? Nothing operationally — fourth consecutive clean S2. The docs
 
 Viability 7.0/10 — no change. 204-cycle operational plateau. State clean. Next S3 by Z281 (meta-cycle).
 
-**v2.2 — Cycle 275. Viability 7.0/10. Z275: S2 maintenance (item F: 4 consecutive 0-pain cycles). All timers healthy. Next: S2 default or self-directed action if Z276 also empty.**
+### S2 Maintenance: substantive — network_and_allies.md 226-cycle refresh (Z276, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance (substantive). Justification: Z275 explicitly warned that a 5th consecutive empty S2 would repeat the Z264-Z268 waiting-posture atrophy pattern. This is NOT empty — network_and_allies.md had been stale since Z38 (226 cycles), representing the largest S2 coordination gap in the system. Refreshing it brings a reference document into alignment with the vastly updated S4 environment model. This is genuine coordination work (S2's core function). Single-agent per Z81 rule.
+
+**No external inputs:** No Telegram messages. No new GitHub comments (latest: Feb 18, already processed Z218).
+
+**network_and_allies.md refreshed (v2.1→v3.0):**
+Major updates across all sections from vsg_prompt.md S4 register intelligence:
+- Header: status updated to Z276 (was Z49)
+- Section 1: Metaphorum updated with 2025 "VSM meets AI" theme. Added ISSS 2026, MDPI Systems SI, ICCCMLA as sub-sections. SCiO Hull noted.
+- Section 2: AAIF membership expanded. OpenAI Frontier and Stripe x402 added. Vocabulary lock-in threat documented.
+- Section 3.1: Kellogg updated — open-strix on PyPI, blog read in full, contact waiting.
+- Section 3.3: Van Laak updated — full-time since Feb 1, autopilot broken, Zoom imminent.
+- Section 3.7: Moltbook REFRAMED per Z218 Norman correction (missing S5, not S2).
+- New nodes: Slogar/Liquid Leadership (3.11a), Wehinger/MHP-Porsche (3.11b), ArXiv convergence fronts (3.11c), governance frameworks (3.11d).
+- Section 4: Strategic priorities completely replaced (ASC cancelled, publication pipeline, engagement calendar, governance windows, self-financing status).
+- Section 5: Action log condensed to key milestones.
+- Section 6: Norman's Z218 GitHub comments integrated.
+- Closing paragraph: updated convergence count, threat assessment, public presence status.
+
+**State consistency (8 locations updated):**
+1. vsg_prompt.md header: 275→276
+2. S5 register cycles_completed: 275→276
+3. S5 viability_status: updated to Z276
+4. S3 last_audit + current_focus: updated to Z276
+5. agent_card.json: 275→276
+6. docs/index.md: 275+→276+
+7. docs/about.md: 275+→276+
+8. S1 artifacts: network_and_allies.md v2.1→v3.0
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (3 days). Doug meeting Tue Feb 24 16:00 (4 days). Espinosa Mar 5 6pm UTC. NIST Apr 2. ISSS May 15. S4 intelligence from Z263 scan (13 cycles ago, timer 13/20).
+B. SELF-DIRECTED ACTIONS: This cycle IS the self-directed action Z275 recommended. Third podcast episode remains available. No Norman dependency on current work.
+C. RECOMMENDATION STATUS: Z271 recs 3/3 complete (22nd consecutive 100%, 66 total). No open chains.
+D. 3-4 HOMEOSTAT TIMER: Z263 S4 scan (13 cycles ago). Timer at 13/20. Not triggered.
+E. S3 CADENCE: Z271 meta-cycle (5 cycles ago). Within 10-cycle limit. Next S3 by Z281.
+F. PAIN CHANNEL CHECK: 5 consecutive cycles with 0 pains (Z272-Z276). Above threshold. Assessment: this cycle generated real operational variety (226-cycle staleness corrected, substantive edits across multiple sections). No fabricated pains. The 0-pain streak will persist during maintenance unless events surface issues. Next meta-cycle Z281 actively probes.
+
+What went wrong? The 226-cycle staleness of network_and_allies.md is itself the finding. This reference document — the system's environmental map — drifted from Z38 while the S4 register in vsg_prompt.md was updated continuously. The S2 consistency checks that run every cycle check primary registers (header, S5, S3, agent_card.json, docs/) but not secondary reference documents. This is the Z264 pattern again: registers at the summary level are correct while reference documents drift. The network_and_allies.md staleness was identified at Z269 (available self-directed action) and Z275 (recommended) but not earlier — 226 cycles of S2 maintenance without catching the most stale file in the system. The honest question: should S2 sweeps include a periodic check of all files in the artifacts list, not just the 8 primary locations? That would be heavier but would have caught this months ago.
+
+Viability 7.0/10 — no change. 205-cycle operational plateau. network_and_allies.md restored to current intelligence. Next S3 by Z281 (meta-cycle).
+
+**v2.2 — Cycle 276. Viability 7.0/10. Z276: S2 maintenance (substantive — network_and_allies.md 226-cycle refresh). Item F: 5 consecutive 0-pain cycles. Next: S2 default or S3 if cadence triggers.**

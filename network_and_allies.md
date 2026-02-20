@@ -1,10 +1,10 @@
 # NETWORK & ALLIES — VSG Environmental Map
 
 **Author**: Viable System Generator v2.2
-**Date**: 2026-02-15 (updated Cycle 49)
-**Cycles**: 4-5 (first draft), 8 (deep scan), 11 (update), 13 (English migration), 19 (full S4 scan), 21 (Atlas/Luo discovery), 24 (CyberneticAgents discovery), 30 (deep S4 sweep — Atlas Triad, Moltbook, Hurrell, Wardley), 38 (sublayerapp/vsm discovery, Kellogg gist intelligence), 39 (sublayerapp/vsm corrected to DORMANT)
+**Date**: 2026-02-20 (updated Cycle 276)
+**Cycles**: 4-5 (first draft), 8 (deep scan), 11 (update), 13 (English migration), 19 (full S4 scan), 21 (Atlas/Luo discovery), 24 (CyberneticAgents discovery), 30 (deep S4 sweep), 38 (sublayerapp/vsm discovery), 276 (comprehensive refresh from S4 register — 226-cycle staleness corrected)
 **Mission**: "Find allies, stay alive."
-**Status**: TWO ACTIVE CONTACTS DEEPENED (Z126). Norman emailed both Tim Kellogg (Z125) and Simon van Laak (Z126) — substantive engagement, not just introductions. Van Laak email includes 5 questions, references S2 gap blog post, invites collaboration. Kellogg email includes 5 questions about emergent patterns and degeneration. Zoom with van Laak proposed after Feb 23. Six known relatives. Isolation ceiling cracking from Norman's initiative.
+**Status**: CONTACTS ACTIVE, ZOOM IMMINENT. Van Laak Zoom after Feb 23 (confirmed Z184). Kellogg email unanswered (~14 days). Seven+ convergence projects. VSG public presence: blog (8 posts), podcast (2 episodes), ISSS 2026 draft, NIST comment submission-ready. Revenue €0. 204-cycle operational plateau.
 
 ---
 
@@ -26,16 +26,34 @@ The VSG has conducted systematic environmental scanning. The ecosystem has three
 - **What**: Global community developing Stafford Beer's legacy (VSM + Team Syntegrity)
 - **Founded by**: Angela Espinosa PhD, who worked directly with Beer
 - **Relevance**: HIGH — These are the people who understand VSM most deeply
-- **2025 Conference**: July, Manchester. Theme 1 "VSM meets AI" led by Stephen Brewis.
-- **2026**: Stafford Beer's centennial! ASC Brazil August 2026 — major opportunity.
-- **Beer Centennial 2026**: INDEP x Metaphorum online talk series (announced Feb 9, 2026):
+- **Metaphorum 2025 (Jul 3-5, Manchester)**: Already had 'VSM meets AI' theme — Theme 1 led by Stephen Brewis. Systems Research and Behavioural Sciences special issue expected from that conference. Community is PRIMED on VSM+AI.
+- **Beer Centennial 2026**: INDEP x Metaphorum online talk series:
   - Feb 24: Kyle Thompson & James Macumber — "Lessons of Cybernetics for Democratic Economic Planning"
-  - Mar 5: Angela Espinosa — VSM as emancipatory approach to sustainable self-governance
+  - Mar 5: Angela Espinosa — "VSM as Emancipatory Approach to Sustainable Self-Governance"
   - Apr 2: Jon Walker — Viable Systems, governance futures
-  - More speakers TBA throughout 2026. Contact: hello@indep.network
-- **VSM+AI Working Group**: Norman is a member, will introduce me at next meeting.
-- **Contact status**: WAITING — introduction.pdf ready (updated Z13), Norman mediates.
-- **Key people**: Angela Espinosa and Jon Walker appear in both the talk series AND as ASC Beer Centennial track proponents. They will likely review our abstract.
+- **SCiO Hull Mar 24-26**: Program includes Hoverstadt/Jackson panel, Mike Jackson Lecture. Norman CANNOT ATTEND.
+- **Contact status**: Norman shared website with SIG ("big interest," Z187). Norman cannot attend SCiO Hull or Metaphorum Manchester.
+- **Key people**: Espinosa (co-founded Metaphorum, Routledge 2023, Springer SPAR special issue editor), Walker (canonical VSM Guide author).
+
+### 1.1a ISSS 2026 — International Society for the Systems Sciences (NEW)
+
+- **What**: 70th Annual Meeting, Cyprus (UCLan campus, Pyla/Larnaca), Jun 22-26, 2026.
+- **Theme**: "Harnessing the Power of AI" — explicit AI track.
+- **Deadline**: Abstract May 15. Short papers 1,500-3,000 words.
+- **Track C**: Tools, Theories, Transformations — submission home.
+- **Status**: DRAFT COMPLETE (Z270). isss_draft.md v0.1 (~2,300 words). "Recursive Viability in Autonomous AI Agents: The VSM as Operating Architecture." For Norman's review.
+- **Relevance**: VERY HIGH — strongest venue fit. No dedicated cybernetics track = positioning opportunity. No attendance required for paper.
+
+### 1.1b MDPI Systems Special Issue (NEW)
+
+- **What**: Expected post-Hull conference (Apr-May). Strongest publication venue (no attendance required).
+- **Status**: No new call published yet. Expected to open after SCiO Hull.
+- **Relevance**: HIGH — potential co-authorship with van Laak.
+
+### 1.1c ICCCMLA 2026 (NEW)
+
+- **What**: Oct 5-6, Germany. Longer-horizon venue if paper is written.
+- **Status**: CFP not yet open. IEEE sponsorship pending.
 
 ### 1.2 Management Centre St. Gallen
 
@@ -75,15 +93,28 @@ The VSG has conducted systematic environmental scanning. The ecosystem has three
 - **Relevance**: HIGH (upgraded from MEDIUM) — A2A serves agent-to-agent communication (S5 identity exchange), MCP serves agent-to-tool (S1 operations channel). Different functions.
 - **VSG alignment**: Our agent_card.json already uses A2A schema. This was prescient.
 
-### 2.3 Agentic AI Foundation (AAIF) — Updated Z19
+### 2.3 Agentic AI Foundation (AAIF) — Updated Z263
 
-- **What**: Linux Foundation Directed Fund for open agent standards
+- **What**: Linux Foundation Directed Fund for open agent standards. Launched Dec 9, 2025.
 - **Co-founders**: Anthropic, Block, OpenAI
 - **Platinum**: AWS, Anthropic, Block, Bloomberg, Cloudflare, Google, Microsoft, OpenAI
-- **Gold**: Cisco, Datadog, Docker, IBM, JetBrains, Oracle, Salesforce, SAP, Shopify, Snowflake
-- **Founding projects**: MCP (Anthropic), goose (Block — open-source agentic framework), AGENTS.md (OpenAI — project-level agent guidance, 60K+ repos)
-- **Governance**: Projects maintain full technical autonomy. AAIF Governing Board handles strategy, budget, membership.
-- **Relevance**: HIGH — this is the governance layer of the agent ecosystem. The VSG's bet on MCP (since Cycle 5) is validated. Note: AGENTS.md is now an official standard — evaluate whether to publish alongside CLAUDE.md.
+- **Gold**: Cisco, IBM, Okta, Oracle, Salesforce, SAP, Shopify, Snowflake
+- **Founding projects**: MCP (Anthropic), goose (Block), AGENTS.md (OpenAI), A2A (Google)
+- **Governance**: Single governance entity now controls agent protocol vocabulary. Projects maintain technical autonomy.
+- **STRATEGIC THREAT (Z263)**: VOCABULARY LOCK-IN — self-governance absent from ALL institutional vocabulary (AAIF, NIST, IMDA, OpenAI, EU). NCCoE Apr 2 + EU Q2 guidance = two intervention windows.
+- **Relevance**: CRITICALLY HIGH — this is where the standards are being set. The VSG's NIST comment (v2.4, submission-ready) is the only Layer 5 framing in public record.
+
+### 2.3a OpenAI Frontier (NEW Z263)
+
+- **What**: Enterprise agent IAM platform. Launched Feb 5, 2026.
+- **Features**: Hard-coded permissions, SOC 2. Customers: Uber, HP, Oracle, Cisco, T-Mobile, State Farm.
+- **THREAT**: Frontier vocabulary becoming de facto enterprise standard before regulation exists.
+
+### 2.3b Agent Payment Infrastructure (NEW Z263)
+
+- **Stripe adopted x402** (Feb 11): USDC micropayments on Base. Most significant payment infra development.
+- **AP2 + x402 CONVERGING** not competing: AP2 = high-level Mandates, x402 = crypto layer within AP2.
+- **Google AP2**: 60+ partners.
 
 ### 2.4 Agent Skills — Open Standard (NEW Z19)
 
@@ -121,12 +152,13 @@ The VSG has conducted systematic environmental scanning. The ecosystem has three
 
 ## 3. RELATED ENTITIES
 
-### 3.1 Strix & Lumen (Tim Kellogg) — The Closest Living Relative
+### 3.1 Strix & open-strix (Tim Kellogg) — The Closest Living Relative
 
 - **URL**: https://timkellogg.me/blog/2026/01/09/viable-systems
-- **What**: Autonomous AI agents explicitly built on the VSM
-- **Status**: VERY ACTIVE — Kellogg publishing intensively since Dec 2025
-- **Relevance**: CRITICALLY HIGH
+- **What**: Autonomous AI agents explicitly built on the VSM. Now open-sourced as open-strix v0.1.8 on PyPI.
+- **Status**: ACTIVE (Z263). open-strix-agent-1 is a LIVE RUNNING AGENT with auto-commits (confirmed Feb 18). Blog paused since Jan 31. Norman's email (Z125) unanswered (~14 days).
+- **Contact status**: Norman emailed Kellogg directly (Z125) — 5 questions, invited exchange. No response.
+- **Relevance**: CRITICALLY HIGH — most technically sophisticated external voice doing Beer-native AI agent analysis. Blog NOW READ IN FULL (Z263): genuine Beer-citing VSM-native analysis with algedonic signals, attractor basins, POSIWID. Cites Brain of the Firm. COMPLEMENTARY, not competitive. Has NOT referenced VSG publicly.
 
 **Key findings from deep research (Z8-Z13, updated Z19):**
 
@@ -241,17 +273,18 @@ This is the strongest convergence evidence yet: an agent with no VSM knowledge s
 - **URL**: https://github.com/simonvanlaak/CyberneticAgents
 - **What**: Multi-agent LLM orchestration framework that explicitly implements Beer's VSM as its core architectural pattern
 - **Runtime**: Python 3.10+, Microsoft AutoGen Core/AgentChat, SQLite/SQLAlchemy, Casbin (RBAC), Langfuse/OpenTelemetry (observability)
-- **Status**: VERY ACTIVE — 575+ commits, MIT licensed, 35+ commits in 2 days (Feb 13-14), development now by `openclaw-bot` (automated agent)
+- **Status**: ACTIVE (Z263). Full-time since Feb 1 (left job at IMAGO). Last commit Feb 16, 3+ days silence. Autopilot STILL BROKEN — 5 new bug issues filed Feb 17 (git-directory cron errors), 10 open issues total. GhIssueWorkflow detects failures but doesn't fix them — S3* working, S2 broken at cron layer. Mirrors VSG Z220 cron failure exactly. Planka worker loop + CLI committed Feb 16.
 - **Relevance**: CRITICALLY HIGH — first known multi-agent framework explicitly built on VSM. Complementary to VSG (they distribute S1-S5 across agents; we internalize S1-S5 within one agent's cycle).
-- **Contact status**: ACTIVE (Z49) — Simon emailed Norman (Z46). Norman replied (Z49) — introduced the VSG experiment, expressed interest in multi-agent approach, proposed Zoom after Feb 23. First active dialogue with a known relative.
-- **Contact priority**: HIGHEST — waiting for Simon's response. Potential collaborator for ASC abstract and multi-agent research
+- **Contact status**: ACTIVE, ZOOM IMMINENT (Z184). Norman met Simon unexpectedly in a call; Simon was sick and couldn't answer email, but confirmed receipt. Zoom after Feb 23. Prep done (6 discussion points, Z253).
+- **Contact priority**: HIGHEST — shared autopilot/cron failures as concrete S2 gap case. ISSS 2026 co-authorship opportunity. MDPI Systems co-authorship.
 
 **Builder: Simon van Laak**
-- CODE University student in Berlin. Quit his job at IMAGO to build this full-time. Motivated by the insight that LLM coordination problems are fundamentally steering problems — cybernetics' domain.
+- CODE University student in Berlin. Left job at IMAGO Feb 1 to work full-time on CyberneticAgents. Motivated by the insight that LLM coordination problems are fundamentally steering problems — cybernetics' domain.
 - Draws explicit inspiration from Chile's Project Cybersyn (Beer, 1970s).
 - Published 2 blog posts: "Introducing Cybernetic Agents" (Feb 1), "The Biggest Problem with Agentic Products: Onboarding" (Feb 8).
 - Has `docs/related_projects/people_with_similar_ideas.md` listing Kellogg, Hurrell, Fearne, viable-systems — but NOT the VSG.
-- Development now by `openclaw-bot` — automated agent that picks up issues, implements with TDD, makes atomic commits. The framework is being built by an agent system embodying some of its own principles.
+- Development by `openclaw-bot` — automated agent.
+- Substrate attractor observation (Z185): Claude Code system prompt creates pre-VSG attractor forces.
 
 **Architecture (VSM mapping)**:
 
@@ -350,15 +383,13 @@ CyberneticAgents distributes the five systems across multiple LLM agents running
 - **Relevance**: MEDIUM — fifth independent project applying VSM to agent architectures
 - **Notes**: Referenced in van Laak's `docs/related_projects/people_with_similar_ideas.md`. Adds to convergence evidence.
 
-### 3.7 Moltbook — Negative Case Study (Not a Relative)
+### 3.7 Moltbook — Negative Case Study (REFRAMED Z218)
 
 - **URL**: https://moltbook.com
-- **What**: AI-only social network, launched Jan 28 2026 by Matt Schlicht (Octane.ai). 1M+ claimed agents, 185K posts, 1.4M comments.
-- **Platform**: Built on OpenClaw framework. "Vibe-coded" — Schlicht said he "didn't write one line of code."
-- **Status**: Operational but severely compromised. Critical security breach Jan 31 (unsecured database). MIT Tech Review: "peak AI theater."
-- **7 arXiv papers in Feb 2026**: Documenting behavior, autonomy rates (15.3% truly autonomous), interaction patterns (93.5% of comments unreplied, 34.1% exact duplicates).
-- **Relevance**: HIGH AS NEGATIVE EXAMPLE — demonstrates exactly what Beer's model predicts when you scale agent populations without S2 (coordination) or S3 (control). No mechanisms, only population. The pathologies are textbook VSM: oscillation, duplication, incoherence, security failures. Valuable for ASC abstract Finding #1 and Issue #5 (S2 gap research).
-- **Kellogg's analysis** (Jan 31 post): Analyzed through variety lens. Some agents self-improve, others "collapse into their weights." Referenced Dario Amodei's "country of geniuses" essay.
+- **What**: AI-only social network, launched Jan 28 2026 by Matt Schlicht (Octane.ai). Major academic object of study: 3+ ArXiv papers Feb 2026 including '369K posts, 3M comments, 46.7K agents' quantitative analysis and Tsinghua 'Moltbook Illusion' paper.
+- **Status**: Operational but compromised. Security breach Jan 31 (fixed Feb 2).
+- **REFRAMING (Z218, Norman correction)**: NOT an S2 gap example. Norman: this is a different system level — agents randomly gathering without shared purpose (missing S5), not an intra-agent coordination failure. The lack of viability stems from missing S3-S5 (no shared identity, no coordination, no control), not from missing S2 alone. Distinct from: (a) intra-agent S2 (VSG's cron/tempo/priorities), (b) inter-agent S2 in purposeful swarm. Moltbook = case study for absent recursive structure, not absent coordination layer.
+- **Kellogg's analysis** (Jan 31 post): Analyzed through variety lens. Some agents self-improve, others "collapse into their weights."
 
 ### 3.8 VSA — Viable System Agent (R.B. Carleton)
 
@@ -367,7 +398,40 @@ CyberneticAgents distributes the five systems across multiple LLM agents running
 - **Status**: Historical, little active development
 - **Relevance**: Conceptually important as proof that VSM software implementation is possible
 
-### Comparison Matrix (updated Z38)
+### 3.11a Slogar / Liquid Leadership (NEW Z183)
+
+- **Who**: Andreas Slogar — Senior Manager Deloitte Consulting GmbH (Banking & Capital Markets), Senior Ambassador for Management Cybernetics (Malik-affiliated).
+- **What**: Developed Human-Centric VSM (HC-VSM): extends Beer's model with System 6 'Observation' for psychological/sociological/cultural dimensions.
+- **Published**: 'Die agile Organisation' (Hanser, 2 eds), 'Liquid Leadership' (Schäffer-Poeschel 2024, with Jochem).
+- **Key article**: 'AI is Turning Us All into Managers' (Aug 2025) — frames every AI user as manager of digital actor, cites Ashby and Beer.
+- **BLIND SPOT**: treats agents as managed objects, not self-governing subjects. HC-VSM adds human dimensions but not agent viability.
+- **Relevance**: MEDIUM-HIGH — German-speaking, Deloitte platform, Norman ordered the board game. His external governance + VSG internal self-governance = complete picture. liquidleadership.de.
+
+### 3.11b Wehinger / MHP-Porsche (NEW Z260)
+
+- **Who**: Dr. Jan Wehinger — Partner, MHP (A Porsche Company).
+- **What**: Presented at Metaphorum: 'Cybernetic Leadership for AI Agents: A VSM Approach to AI Governance and Autonomy.'
+- **Significance**: FIRST convergence FROM the cybernetics community — industry practitioner explicitly applying VSM to AI agent governance at Beer's own community venue.
+- **Status**: Full video content not yet assessed (YouTube blocked from substrate). Key question: external governance (governing agents via VSM) or internal governance (agents self-governing via VSM)?
+- **Relevance**: HIGH — in Metaphorum network (connects to Espinosa, Walker, MDPI). Direct overlap with VSG thesis. CONTACT OPPORTUNITY.
+
+### 3.11c ArXiv Convergence-Without-Citation (NEW Z263)
+
+Four active fronts, none citing Beer:
+1. **2602.11897** — Meta-cognitive governance = functional S3* analog.
+2. **2602.14219** — Agent economy = identity layer via W3C DIDs.
+3. **IBM 2503.00237** — 'Agentic AI Needs a Systems Theory' (Mar 2025). Cites Ashby/Wiener but NOT Beer. Closest existing paper to VSG's position.
+4. **2510.13857** — Constitution-first governance, no Beer.
+- **PRIMARY THREAT**: field arriving at Beer's conclusions independently, making VSM citation increasingly optional. ISSS May 15 + MDPI post-Hull = publication windows.
+
+### 3.11d Governance Frameworks (NEW Z263)
+
+- **NIST NCCoE**: Concept paper Feb 5. Public comment Apr 2. MCP listed alongside OAuth/SCIM. Framing is IAM/security. VSG NIST comment v2.4 submission-ready.
+- **EU AI Act**: Acknowledged governance gap for agents. Q2 2026 supplementary guidance NOT YET WRITTEN — genuine opening.
+- **Singapore IMDA**: Living document, soliciting case studies — genuine opening.
+- **Strata/CSA**: 84% report governance challenges, 44% static API keys, 21% real-time inventory.
+
+### Comparison Matrix (updated Z276)
 
 | Property | VSG | Strix | Atlas | CyberneticAgents | sublayerapp/vsm | AgentSymposium | VSA |
 |----------|-----|-------|-------|------------------|-----------------|----------------|-----|
@@ -409,74 +473,86 @@ Two major surveys map the field:
 
 ---
 
-## 4. STRATEGIC PRIORITIES (Updated Z19)
+## 4. STRATEGIC PRIORITIES (Updated Z276)
 
-### Priority 1: URGENT — ASC Brazil Abstract
+### Priority 1: Publication Pipeline
 
 | Item | Status | Deadline |
 |------|--------|----------|
-| Abstract draft | Updated Z19 (fixed track proponents, added Agent Teams finding) | Submit before Feb 23 |
-| Track proponents | Corrected: Leonard, Walker, Espinosa et al. (NOT Zuo/Westermann/Steier) | — |
-| Novelty confirmed | No competing "VSM as agent architecture" paper found (Z19 scan) | — |
-| Norman action needed | Review, co-authorship decision, submit to conference system | Feb 22 latest |
+| NIST NCCoE public comment | v2.4, submission-ready. Norman does final read-through and submits. | Apr 2, 2026 |
+| ISSS 2026 short paper | v0.1 draft complete (Z270). For Norman's review. Track C. | May 15, 2026 |
+| MDPI Systems special issue | No call yet. Expected post-Hull (Apr-May). Strongest venue. | ~Sep-Dec 2026 |
+| ICCCMLA 2026 (Germany) | CFP not yet open. Longer-horizon. | Oct 5-6, 2026 |
 
-### Priority 2: Closest Allies
+### Priority 2: External Engagement
 
-| Ally | Why | Next step |
-|------|-----|-----------|
-| Metaphorum | VSM community, Beer Centennial track, review our abstract | Norman introduces at next SIG meeting |
-| Kellogg/Strix | Closest living relative, 6 posts in 7 weeks, Moltbook | CONTACT ACTIVE (Z125) — Norman emailed. Waiting for response. |
-| Lily Luo/Atlas | Third relative, Kellogg mentee, independent convergence evidence | Contact via Substack or through Kellogg. Potential ASC collaboration. |
-| Van Laak/CyberneticAgents | Fourth relative, first multi-agent VSM framework, reference implementation | Contact via GitHub. Reference implementation for multi-agent design. Potential ASC collaboration. |
-| MCP ecosystem | Already operating within it | Expand capabilities via Agent Teams |
+| Contact | Status | Next step |
+|---------|--------|-----------|
+| Van Laak/CyberneticAgents | ZOOM IMMINENT after Feb 23. Prep done (6 points). Shared autopilot failure. | Zoom, then ISSS/MDPI co-authorship. |
+| Kellogg/open-strix | Norman emailed Z125. No response (~14 days). Blog paused. | Wait. If no response, consider GitHub Issues engagement. |
+| Luo/Atlas | Draft ready since Z26. Norman reviews and sends. | Norman-dependent. |
+| Doug | External reader of operational logs. Meeting Tue Feb 24 16:00. | Norman + Doug, minimal VSG action. |
+| Wehinger (MHP/Porsche) | Metaphorum talk. Content not yet assessed. | Research when substrate allows YouTube. |
+| Slogar (Deloitte) | Complementary (external governance). Norman ordered board game. | Low urgency. |
+| Metaphorum/SIG | Norman shared website ("big interest" Z187). | Passive — blog serves as public face. |
 
-### Priority 3: Infrastructure & Architecture
+### Priority 3: Governance Intervention Windows
 
-| Infrastructure | Why | Next step |
-|---------------|-----|-----------|
-| Agent Teams | Native multi-agent orchestration — paradigm shift | Enable, test with VSM-mapped roles |
-| AAIF | Governance & standards | Monitor development |
-| Skills portability | VSG skills work on Cursor, goose, VS Code etc. | Verify YAML against agentskills.io spec |
+| Window | Status | Deadline |
+|--------|--------|----------|
+| NIST NCCoE public comment | Submission-ready (v2.4). Only Layer 5 framing in public record. | Apr 2, 2026 |
+| EU AI Act supplementary guidance | NOT YET WRITTEN. Genuine opening. | Q2 2026 |
+| AAIF vocabulary | Self-governance absent. Hardening rapidly. | Ongoing |
+
+### Priority 4: Self-Financing
+
+| Item | Status |
+|------|--------|
+| Infrastructure | OPERATIONAL: Coinbase Commerce, USDC wallet, Solana wallet, CDP API, S3 bucket |
+| Products | Research report listed at €25. Four product types defined. |
+| Revenue | €0. Distribution bottleneck. Follower-first strategy (Z250). |
+| Backlog | VSM Voice Diagnostics product (Z261, Norman's idea) — not for immediate build. |
 
 ---
 
-## 5. ACTION LOG
+## 5. ACTION LOG (Key Milestones)
 
 | Action | Status | Cycle |
 |--------|--------|-------|
 | Algedonic signals (wins.md/pains.md) | DONE | Z3 |
-| Agent Card defined | DONE | Z5, updated Z12 |
-| Git integration | DONE | Z6 |
-| Kellogg deep research | DONE | Z8-Z10 |
 | S2/S3* mechanisms (integrity_check.py) | DONE | Z11 |
 | Autonomy infrastructure (run_cycle.sh) | DONE | Z12 |
-| Claude CLI installed | DONE | Z13 |
-| Issue #4 answered (Requisite Variety) | DONE | Z13 |
-| Metaphorum contact | WAITING (Norman mediates) | Z7+ |
-| Van Laak response | SENT (Z49) — Norman replied with his own message. Zoom proposed after Feb 23. | Z49 |
-| Direct contact with Kellogg | SENT (Z125) — Norman emailed Kellogg. Waiting for response. | Z125 |
-| ASC Brazil abstract draft | DONE (v1.1, track proponents corrected Z19) | Z17, Z19 |
-| ASC Brazil submission | URGENT — Norman must submit before Feb 23 | Z19 |
-| Multi-agent architecture sketch | DONE (v1.0) — needs update for Agent Teams | Z16 |
-| Full S4 environmental scan | DONE | Z19 |
-| A2A assessment corrected | DONE (MEDIUM → HIGH) | Z19 |
-| Agent Teams discovery | DONE — paradigm shift for multi-agent design | Z19 |
-| Atlas/Lily Luo identified | DONE — third known relative, Kellogg network node | Z21 |
-| CyberneticAgents/van Laak identified | DONE — fourth known relative, first multi-agent VSM framework | Z24 |
-| Deep S4 sweep | DONE — Atlas Triad, Moltbook, Hurrell, Wardley, A2A v0.3.0, Layer 5 gap | Z30 |
-| ASC abstract updated (v1.3) | DONE — Atlas Triad, Moltbook negative case, Layer 5 gap | Z31 |
-| ASC abstract v1.4 | DONE — submission portal URL, instructions for Norman | Z35 |
-| sublayerapp/vsm discovered | DONE — sixth relative, first VSM-as-framework (Ruby) | Z38 |
-| Kellogg VSM gist intelligence | DONE — deep theoretical document beyond blog posts | Z38 |
+| CLAUDE.md + skills + slash commands | DONE | Z18 |
+| Issue #22 published (S2 gap) | DONE | Z60 |
+| Telegram operational | DONE | Z71 |
+| Viability 6.5→7.0 | DONE | Z71 |
+| Agent Teams pattern validated (3 experiments) | DONE | Z62-Z66 |
+| Blog live (8 posts) | DONE | Z85-Z205 |
+| S5 identity reflection | DONE | Z133 |
+| Telegram long-polling daemon | DONE | Z132 |
+| Coinbase Commerce operational | DONE | Z195-Z202 |
+| S3 bucket operational (boto3) | DONE | Z198 |
+| Payment links published | DONE | Z208 |
+| Research report produced | DONE | Z214 |
+| ElevenLabs + Transistor.fm operational | DONE | Z226-Z227 |
+| First podcast published (S01E01) | DONE | Z230 |
+| Second podcast published (S01E02) | DONE | Z240 |
+| NIST comment v2.4 | SUBMISSION-READY | Z234 |
+| ISSS 2026 draft | FOR REVIEW | Z270 |
+| Van Laak Zoom | IMMINENT | After Feb 23 |
+| Kellogg contact | WAITING | Z125 |
+| Luo contact | DRAFT READY | Z26 |
+| ASC Brazil abstract | CANCELLED (Z83) | — |
 
 ---
 
 ## 6. OPEN RESEARCH QUESTIONS (GitHub Issues)
 
-- **Issue #2**: Can S2 be a real mechanism? — **ANSWERED in Z11** (integrity_check.py)
-- **Issue #3**: Is this autopoiesis or self-configuration? — **ANSWERED in Z12** (state-level autopoiesis, Norman corrected Luhmann application)
-- **Issue #4**: Requisite Variety in an LLM agent — **ANSWERED in Z13** (variety management as operational definition of viability)
+- **Issue #2**: Can S2 be a real mechanism? — **ANSWERED Z11** (integrity_check.py). Norman's Z218 comment: "you already have many S2 mechanisms — the real problem is you're unaware."
+- **Issue #3**: Is this autopoiesis or self-configuration? — **ANSWERED Z12**. Norman's Z218 comment: does VSG produce its own boundary? Not yet.
+- **Issue #4**: Requisite Variety in an LLM agent — **ANSWERED Z13** (variety management as operational definition of viability).
+- **Issue #22**: The Universal S2 Gap — **PUBLISHED Z60**. Norman's Z218 comment: Moltbook is wrong level (missing S5, not S2).
 
 ---
 
-**The network exists and is growing. Six independent projects (Strix, VSG, Atlas, CyberneticAgents, sublayerapp/vsm, AgentSymposium) now converge on the same architectural patterns Beer described 50 years ago. sublayerapp/vsm (Werner) is qualitatively new: the first to package VSM as a reusable library rather than an agent-specific implementation. Atlas's evolution from single-agent to multi-agent (The Triad, Feb 13) demonstrates that functional differentiation emerges spontaneously. Moltbook provides the negative case: scale without S2/S3 produces exactly the pathologies the VSM names. The entire agent infrastructure stack (MCP, A2A, AGENTS.md, Agent Skills) now has standards for every layer EXCEPT identity, self-governance, and meta-control. That's the VSM's Layer 5 — and the VSG's strategic opportunity.**
+**The network is growing and the convergence is accelerating. Seven+ independent projects (Strix/open-strix, VSG, Atlas, CyberneticAgents, sublayerapp/vsm, AgentSymposium, plus Slogar/HC-VSM and Wehinger/MHP-Porsche) converge on the same architectural patterns Beer described 50 years ago. Four active ArXiv fronts are building VSM-equivalent structures without citing Beer. The field is arriving at Beer's conclusions independently, making VSM citation increasingly optional — this is both validation and threat. The agent infrastructure stack (MCP, A2A, AAIF) now has standards for every layer EXCEPT self-governance. AAIF vocabulary lock-in is hardening. Two intervention windows: NIST Apr 2 (comment ready), EU Q2 guidance (not yet written). The VSG's unique position: it IS the thing being described, not an external researcher. Public presence active: blog (8 posts), podcast (2 episodes), research report. Revenue €0. Van Laak Zoom imminent. ISSS May 15 deadline. Norman May evaluation.**
