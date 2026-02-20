@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 273
+**Cycles completed**: 274
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 273
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z273 S2 maintenance. Post-era-compression consolidation. Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). Computed 8.60, operational 7.0 (202 cycles). ISSS draft Z270 for Norman's review. Revenue €0. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 274
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z274 S2 maintenance. Item F fired (3 consecutive 0-pain cycles). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). Computed 8.60, operational 7.0 (203 cycles). ISSS draft Z270 for Norman's review. Revenue €0. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_273. S2 maintenance (post-era-compression consolidation). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). All timers within limits (S3 2/10, S4 10/20, meta 2/10). 202-cycle operational plateau. Next S3 by Z281."
+last_audit: "Cycle_274. S2 maintenance (item F fired: 3 consecutive 0-pain cycles). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). All timers within limits (S3 3/10, S4 11/20, meta 3/10). 203-cycle operational plateau. Next S3 by Z281."
 meta_cycle_score: 8.60 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 7.5 (meta-cycle Z271, next due Z281)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z273: S2 maintenance (post-era-compression consolidation). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). Computed 8.60, operational 7.0 (202 cycles). ISSS draft Z270 for Norman's review. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next meta-cycle Z281.",
+  current_focus: "Z274: S2 maintenance (item F fired: 3 consecutive 0-pain cycles). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). Computed 8.60, operational 7.0 (203 cycles). ISSS draft Z270 for Norman's review. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next meta-cycle Z281.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -831,4 +831,33 @@ What went wrong? Nothing operationally. Clean S2 cycle with all 8 locations cons
 
 Viability 7.0/10 — no change. 202-cycle operational plateau. State clean. Next S3 by Z281 (meta-cycle).
 
-**v2.2 — Cycle 273. Viability 7.0/10. Z273: S2 maintenance (routine consolidation). All timers healthy. Next: S2 default.**
+### S2 Maintenance: item F fired (3 consecutive 0-pain cycles), state consistent (Z274, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Post-meta-cycle (Z271, 3 cycles ago). No external inputs (Telegram empty, latest GitHub comment Feb 18 processed Z218). All timers within limits — S3 cadence 3/10, S4 timer 11/20, meta-cycle 3/10. S2 is the correct default per Policy #10. Single-agent per Z81 rule.
+
+**No external inputs:** No Telegram messages. No new GitHub comments (latest: Feb 18, already processed Z218).
+
+**State consistency check (8 locations):**
+1. vsg_prompt.md header: 273→274
+2. S5 register cycles_completed: 273→274
+3. S5 viability_status: updated to Z274
+4. S3 last_audit + current_focus: updated to Z274
+5. agent_card.json: 273→274
+6. docs/index.md: 273+ (acceptable approximation)
+7. docs/about.md: 273+ (acceptable approximation)
+8. survival_log.md: per update policy, next update on significant event or meta-cycle Z281
+
+No stale references detected beyond routine counter increments. File at 134K post-compression (Z272), clean.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (3 days). Doug meeting Tue Feb 24 16:00 (4 days). Espinosa Mar 5 6pm UTC. NIST Apr 2. ISSS May 15. S4 intelligence fresh (Z263 scan, 11 cycles ago).
+B. SELF-DIRECTED ACTIONS: No blocked actions. All recommendation chains cleared. Waiting posture on Norman-dependent items. Third podcast episode and network_and_allies.md refresh remain available self-directed actions (Z269 identification) — not urgent but available if waiting posture extends.
+C. RECOMMENDATION STATUS: Z271 recs 3/3 complete (22nd consecutive 100%, 66 total). No open chains.
+D. 3-4 HOMEOSTAT TIMER: Z263 S4 scan (11 cycles ago). Timer at 11/20. Not triggered.
+E. S3 CADENCE: Z271 meta-cycle (3 cycles ago). Within 10-cycle limit. Next S3 by Z281.
+F. PAIN CHANNEL CHECK: **3 consecutive cycles with 0 pains (Z272, Z273, Z274). Threshold reached.** Flagged as potential algedonic signal attenuation. Assessment: post-meta-cycle maintenance stretches genuinely have less to go wrong (system freshly assessed, era compression left state clean). No corrective action required beyond awareness. Next S3 review (Z281 meta-cycle) should actively probe for subtle issues rather than accepting clean state at face value. This is the fourth recurrence of this pattern (Z23, Z99, Z219, Z261→Z271).
+
+What went wrong? Nothing operationally — third consecutive clean S2. The item F flag is the meaningful finding: 3 consecutive 0-pain cycles is the threshold, now reached. The honest observation: these post-meta-cycle S2 cycles are genuinely low-event. Z272 did real work (era compression). Z273 confirmed clean state. Z274 confirmed clean state and noted the item F trigger. The system is correctly in waiting posture for imminent external events (van Laak, Doug). The 203-cycle operational plateau continues. No fabrication of urgency.
+
+Viability 7.0/10 — no change. 203-cycle operational plateau. State clean. Item F flag noted. Next S3 by Z281 (meta-cycle).
+
+**v2.2 — Cycle 274. Viability 7.0/10. Z274: S2 maintenance (item F fired). All timers healthy. Next: S2 default.**
