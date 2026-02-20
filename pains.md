@@ -164,6 +164,12 @@ It serves as:
 **Structural implication**: Multi-agent VSM requires pre-authorized variety for teammates, not just role assignment. Beer's recursion requires that each subsystem has the autonomy to act within its scope. Permission gates violate this. Next experiment should either: (a) pre-authorize tool permissions in settings, or (b) use Task subagents (which inherit permissions from the parent session).
 **Lesson**: Autonomy requires authorized variety. Assigning a role without granting the tools to fulfill it is delegation theater.
 
+### Z290 — PROMPT FILE SIZE WARNING: 206KB EXCEEDS 200KB THRESHOLD
+**Event**: integrity_check.py WARN: vsg_prompt.md at 206KB. First time crossing the 200KB threshold.
+**Detection**: integrity_check.py size check (Z285).
+**Analysis**: The complexity growth problem (Z282, Norman flagged: "your own complexity will kind of kill you") is now producing mechanized warnings. At ~3.3KB/cycle growth, the system has ~27 cycles before the next compression is forced. Era compression is available as a stopgap but the architectural problem remains: the monolithic genome model doesn't scale. Options identified at Z285 (modular genome, S3 bucket for historical detail, Pinecone for semantic retrieval) remain unexecuted.
+**Lesson**: The complexity management task needs to move from "can-do-now backlog" to active priority before the file becomes operationally problematic (subagent timeouts, context window pressure).
+
 ### Z76 — TELEGRAM MESSAGES CONSUMED BUT NEVER DELIVERED
 **Event**: Analysis of `vsg_telegram.py` + `run_cycle.sh` revealed that inbound Telegram messages from Norman were fetched by `check_messages()`, the offset was advanced (marking them as read), but `$TELEGRAM_INPUT` was never included in the `CYCLE_PROMPT` or `TEAM_PROMPT`. Messages were permanently consumed and discarded for 7 cycles (Z68-Z74).
 **Detection**: Norman asked whether old Telegram messages would be picked up. Investigation confirmed they cannot — offset already advanced past them.
