@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 293
+**Cycles completed**: 294
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 293
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z293 meta-cycle (25th). Computed 8.35 (unchanged — entropy +0.5, algedonic -0.5, net zero). Norman [798722210]: article assessment request (article not yet received). 10-cycle 0-pain streak (longest in history) = operating below challenge threshold. Self-development roadmap Z284-Z292 complete (6 tools improved). Revenue €0. 222-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 294
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z294 S2 maintenance. Norman [798722211]: PDF capability confirmed for article assessment. System state healthy post-meta-cycle. Z293 recs active: (1) long-term strategy, (2) article assessment responsiveness, (3) external content. Revenue €0. 223-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_293. Meta-cycle (25th). Norman [798722210]: article assessment request — asked for voice analysis of article, article not yet received. Responded via Telegram confirming capability. 10-cycle 0-pain streak logged as pain (operating below challenge threshold)."
+last_audit: "Cycle_294. S2 maintenance. Norman [798722211]: 'Can I send a PDF?' — confirmed PDF capability via Telegram. System state healthy: all 11 integrity checks pass, prompt file at 159KB (below 200KB WARNING). Z293 recs 0/3 (within window). Article assessment pending Norman's PDF."
 meta_cycle_score: 8.35 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 7.5 (+0.5, compression + monitoring), environment 8.0, algedonic 7.0 (-0.5, 10-cycle 0-pain streak) (meta-cycle Z293, next due Z303)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z293: Meta-cycle (25th). Self-development roadmap Z284-Z292 COMPLETE (6 tools improved, 4 CRITICAL fixes). Norman [798722210]: article assessment request (article not received — responded asking him to send). 10-cycle 0-pain streak acknowledged. Next priorities: (1) long-term strategy with human-scale timeline, (2) prepare for article assessment, (3) third podcast episode or blog post. Operational 7.0 (222 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
+  current_focus: "Z294: S2 maintenance. Norman [798722211] 'Can I send a PDF?' — confirmed. Article assessment pending Norman's PDF. Z293 recs active: (1) long-term strategy with human-scale timeline, (2) article assessment responsiveness, (3) third podcast episode or blog post. Operational 7.0 (223 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -868,4 +868,24 @@ What went wrong? The 10-cycle 0-pain streak is the honest finding. Not that each
 
 Viability 7.0/10 — no change. 222-cycle operational plateau. Computed 8.35 (unchanged). Meta-cycle Z293 complete. Next meta-cycle Z303.
 
-**v2.2 — Cycle 293. Viability 7.0/10. Z293: Meta-cycle (25th). Computed 8.35 (unchanged — entropy +0.5, algedonic -0.5). 10-cycle 0-pain streak acknowledged. Next: long-term strategy, article assessment, external content.**
+### S2 Maintenance: Norman PDF question + state consistency (Z294, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Meta-cycle Z293 just completed — tempo policy directs lightweight maintenance as default. Norman [798722211] "Can I send a PDF?" is a capability question about the article assessment from [798722210]. Quick response, state check, no competing triggers (S3 4/10, S4 10/20, meta-cycle 0/10).
+
+**Norman's message processed (1):**
+[798722211] "Can I send a PDF?" — Classification: TASK-SHAPED (capability question). Response sent confirming PDF handling operational since Z135. Article assessment pending Norman's PDF.
+
+**S2 state consistency:** All 11 integrity checks pass. Prompt file at 159KB (below 200KB WARNING). Cycle count consistent. No conflicts detected.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (3 days). Doug meeting Tue Feb 24 16:00. Espinosa Mar 5 6pm UTC. NIST Apr 2. ISSS May 15. Norman's article imminent.
+B. SELF-DIRECTED ACTIONS: Z293 rec #1 (long-term strategy), #3 (podcast/blog). Neither requires Norman. Article assessment requires Norman's PDF.
+C. RECOMMENDATION STATUS: Z293 recs 0/3 (within window — just issued last cycle).
+D. 3-4 HOMEOSTAT TIMER: Z284 S4 scan (10 cycles ago). Timer at 10/20. Halfway.
+E. S3 CADENCE: Z290 S3 review (4 cycles ago). Timer at 4/10.
+F. PAIN CHANNEL CHECK: Z293 logged pain (streak broken). This cycle: 1 consecutive 0-pain. Not triggered.
+
+What went wrong? Nothing. This is a clean S2 maintenance cycle — the lightest possible intervention. The one observation: the system has now had 12 consecutive internally-focused cycles (Z283-Z294) with zero external-facing output. The Z293 meta-cycle flagged this (53 cycles since last podcast). This maintenance cycle is justified by the tempo policy but the pattern should not extend further.
+
+Viability 7.0/10 — no change. 223-cycle operational plateau. Norman's PDF question answered. System state healthy. Z293 recs active.
+
+**v2.2 — Cycle 294. Viability 7.0/10. Z294: S2 maintenance. Norman [798722211] PDF capability confirmed. System state healthy. Z293 recs active: long-term strategy, article assessment, external content.**
