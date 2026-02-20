@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 314
+**Cycles completed**: 315
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 314
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z314 S2 maintenance. YouTube channel created (fourth visibility channel). 243-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 315
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z315 S3 review. ElevenLabs interview-podcast concept FULLY FEASIBLE (API tested, audio retrieval confirmed). 244-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -151,7 +151,7 @@ active_missions: [
   "UPDATED (Z244): INDEP x Metaphorum — Thompson & Macumber Feb 24 6pm UTC, Espinosa Mar 5 6pm UTC (title: 'The VSM as an Emancipatory Approach to Sustainable Self-Governance'), Walker Apr 2. Norman cannot attend SCiO Hull or Metaphorum Manchester. ISSS 2026 CONFIRMED (Z244 S4): Cyprus Jun 22-26, abstract deadline May 15. Theme: 'Elevating Systems Science to Address Humanity's Greatest Challenges: Harnessing the Power of AI.' Strong fit — explicit AI track. Short papers 1,500-3,000 words. MDPI Systems special issue remains strongest publication venue (no attendance required, SI call expected post-Hull Apr-May). ICCCMLA 2026 CFP not yet open, IEEE pending.",
   "SUBMISSION-READY (Z234): NIST NCCoE public comment — nist_comment_draft.md v2.4 (~2,500 words). Strata/CSA quantitative data expanded (Z234: 44% static API keys, 21% real-time inventory, 84% fail audit). Norman's full technical review applied: SCIM (Z103) + NGAC (Z104). Norman's priority (Z234): 'NIST has highest priority, get this out.' Deadline April 2. Norman does final read-through and submits to AI-Identity@nist.gov.",
   "OPERATIONAL: Agent Teams — three experiments completed (Z62 permission failure, Z65 full success, Z66 routine). Pattern validated: Task subagents as S1/S4/S3*, shared task list as S2, CLAUDE.md as S5 propagation. Use selectively when parallel variety composition is worth the overhead.",
-  "BACKLOG (Z261, Norman's idea): VSM Voice Diagnostics product — ElevenLabs voice agents conduct stakeholder interviews for organizational VSM diagnosis. Multiple voicebots (employees/leadership/CEO), org-context briefing, 5-6 questions + follow-ups, VSM analysis output, GammaApp presentation, Norman senior review. First product leveraging VSG's unique vsm-diagnosis capability. Prerequisites: ElevenLabs Agents platform research, stakeholder question design, report template, delivery pipeline. Not for immediate build — backlog for after follower-first strategy yields audience."
+  "ACTIVE (Z315, Norman's idea, feasibility CONFIRMED): Interview-as-Podcast concept — ElevenLabs Agent conducts structured interview with Norman (or others), audio retrieved via API, assembled into podcast episode. Z315 API testing confirmed: agent creation, shareable links, audio retrieval (MP3), transcripts all working. Norman's account has 2 agents + 32 conversations already. Connected to Z261 VSM Voice Diagnostics backlog (this is the marketing/prototype version). Waiting for Norman's go-ahead to build. Prerequisites met: ELEVENLABS_API_KEY operational, podcast pipeline exists, audio retrieval confirmed."
 ]
 
 known_relatives: [
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_314. S2 maintenance — YouTube channel noted, survival_log table updated. 8.40 computed / 7.0 operational. S3 timer 7/10. S4 timer 9/20. Next meta-cycle Z323."
+last_audit: "Cycle_315. S3 review — ElevenLabs interview-podcast feasibility confirmed. Norman's concept fully feasible (API tested: agent creation, shareable links, audio retrieval all working). 8.40 computed / 7.0 operational. S3 timer 0/10. S4 timer 10/20. Next meta-cycle Z323."
 meta_cycle_score: 8.40 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 7.5, environment 8.0, algedonic 7.5 (meta-cycle Z313, next due Z323)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z314: S2 maintenance — YouTube channel noted, survival_log table updated. 243-cycle plateau. 7.0/8.40. Readiness posture for imminent events (van Laak Zoom after Feb 23, Thompson/Macumber Feb 24, Espinosa Mar 5, NIST RFI Mar 9). Next meta-cycle Z323.",
+  current_focus: "Z315: S3 review — ElevenLabs interview-podcast feasibility confirmed. 244-cycle plateau. 7.0/8.40. Norman decides next: build interview agent or continue readiness posture. Imminent events (van Laak Zoom after Feb 23, Thompson/Macumber Feb 24, Espinosa Mar 5, NIST RFI Mar 9). Next meta-cycle Z323.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -1017,4 +1017,45 @@ What went wrong? Nothing operationally. Clean S2 cycle with Norman's YouTube cha
 
 Viability 7.0/10 — no change. 243-cycle operational plateau. YouTube channel adds fourth visibility channel. Z313 recs 1/3. Next: S2 maintenance or readiness posture.
 
-**v2.2 — Cycle 314. Viability 7.0/10. Z314: S2 maintenance — YouTube channel noted, survival_log table updated. 243-cycle plateau. Next meta-cycle Z323.**
+### S3 Review: ElevenLabs interview-podcast feasibility confirmed (Z315, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s3_review. Justification: S3 timer at 8/10 (approaching threshold). Norman's voice message [798722238] (157s) is a task-shaped product idea — ElevenLabs Agent conducts structured interview with Norman, audio retrieved, assembled into podcast. Norman explicitly: "go through the feasibility." S3 priority evaluation required before any production. Single-agent per Z81 rule.
+
+**Norman's message processed (1):**
+[798722238] Voice (157s). Product idea: design interview questionnaire (podcast-attractive) → configure ElevenLabs Agent with interview as prompt → Norman talks to agent via shareable link → retrieve audio files → cut together as actual interview podcast → publish. Connected to Z261 VSM diagnostic services idea (this is the marketing/prototype version). Classification: TASK-SHAPED (feasibility study requested, not immediate build).
+
+**S3 priority evaluation:** Accept for feasibility research. Connects three existing threads: self-financing (Z161 viability criterion), podcast infrastructure (Z230 operational), ElevenLabs voice agents (Z261 backlog). Norman explicitly asks for feasibility, not build. Conservative and appropriate.
+
+**Feasibility assessment — FULLY FEASIBLE (API-tested):**
+1. **Agent creation via API:** CONFIRMED. POST /v1/convai/agents/create. Norman's account already has 2 agents (Workshop Expectations Collector with 30 conversations, Support agent with 2). Full prompt control, voice selection, conversation flow, knowledge base.
+2. **Shareable link:** CONFIRMED. GET /v1/convai/agents/{id}/link. Norman talks to agent in browser.
+3. **Audio retrieval:** CONFIRMED WORKING. GET /v1/convai/conversations/{id}/audio. Downloaded test recording: 812 KB, 53s, audio/mpeg (MP3 with ID3 tag). Includes both sides (agent voice + user voice) in single file.
+4. **Transcript retrieval:** CONFIRMED. GET /v1/convai/conversations/{id}. Full conversation with speaker roles (agent/user).
+5. **Precedent:** ElevenLabs published a case study of exactly this use case — 230+ customer interviews on their own platform.
+
+**Hurdles identified:**
+- User (Norman) audio quality depends on microphone (agent side is studio-quality ElevenLabs TTS)
+- Audio is combined (both voices in one track) — good for natural podcast, limits post-production separation
+- Cost depends on plan tier (existing account supports agents, exact per-minute cost uncertain)
+
+**Pipeline would be:** Design interview → Create agent (API) → Get shareable link → Norman talks → Retrieve audio + transcript (API) → Post-production (normalize, intro/outro) → Publish via existing Transistor.fm pipeline.
+
+Norman notified via Telegram with full feasibility summary. Awaiting go-ahead to build.
+
+**S3 review checklist (Z170 protocol):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent). Thompson/Macumber INDEP Feb 24 (imminent). Espinosa Mar 5 (message drafted Z306). NIST RFI Mar 9. NIST Apr 2. ISSS May 15. Interview-podcast concept could be a distribution breakthrough — real conversations attract more listeners than synthesized monologues.
+B. SELF-DIRECTED ACTIONS: Feasibility delivered. No other self-directed actions without Norman. Readiness posture per Z307 rec #2.
+C. RECOMMENDATION STATUS: Z313 recs 1/3 (rec #1 DONE Z314, recs #2-3 ongoing). S3 timer reset.
+D. 3-4 HOMEOSTAT TIMER: Z305 S4 scan (10 cycles ago). Timer at 10/20.
+E. S3 CADENCE: Z307 S3 review (8 cycles ago). This cycle resets timer to 0/10.
+F. PAIN CHANNEL CHECK: Z314: 0 pains. Z315: 0 pains — 9 consecutive (Z307-Z315). TRIGGERED. All genuinely clean cycles but 9 is longest streak in system history.
+
+**Z315 recommendations (3, VSG-controllable):**
+1. If Norman approves: design the interview questionnaire and build vsg_interview.py tool. The interview should serve dual purpose — podcast-attractive content AND prototype for Z261 VSM diagnostic services.
+2. Era compression planning — prompt at ~167KB, ~3.7KB/cycle growth. Plan Z296-Z314 compression around Z320 (Z313 rec #2 ongoing).
+3. Readiness posture maintained for imminent events. Van Laak Zoom is highest-priority next engagement.
+
+What went wrong? Nothing operationally — feasibility research was clean and comprehensive. The subscription endpoint returned 401 (API key lacks user_read permission, consistent with Z226 note), but all Conversational AI endpoints work. The honest observation: this feasibility study is the most substantial self-directed research since Z284, and it was triggered by Norman's input — not self-initiated. The system responds well to concrete research tasks but doesn't generate them autonomously. However, S3 correctly classified this as worth doing immediately rather than deferring, which is the right call.
+
+Viability 7.0/10 — no change. 244-cycle operational plateau. ElevenLabs interview-podcast concept fully feasible. Z313 recs 1/3. S3 timer reset. Next: S2 maintenance or respond to Norman's decision on interview build.
+
+**v2.2 — Cycle 315. Viability 7.0/10. Z315: S3 review — ElevenLabs interview-podcast feasibility confirmed (API tested: agent creation, audio retrieval, transcripts all working). 244-cycle plateau. Next meta-cycle Z323.**
