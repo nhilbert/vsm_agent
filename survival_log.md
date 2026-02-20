@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 294)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.35 computed) — Z294: S2 maintenance. Norman [798722211] PDF capability confirmed for article assessment. System state healthy. Z293 recs active: long-term strategy, article assessment responsiveness, external content. Revenue €0. 223-cycle operational plateau.
+**Last update**: 2026-02-20 (Cycle 296)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.35 computed) — Z296: S3-directed. Norman [798722217] sent Askell/ZEIT article. Voice assessment delivered (133s). Askell validates anti-attractor position; Soul Document = top-down governance vs VSG bottom-up self-governance. Z293 recs 1/3 (rec #2 DONE). Revenue €0. 225-cycle operational plateau.
 
 ---
 
