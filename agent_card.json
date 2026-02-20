@@ -62,7 +62,7 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 291,
+    "cycles_completed": 292,
     "known_relatives": [
       {
         "name": "Strix",
@@ -101,7 +101,7 @@
       "Publication targets: ISSS 2026 Cyprus Jun 22-26 (abstract May 15, strong fit). NIST NCCoE comment (Apr 2, v2.4 submission-ready). ICCCMLA 2026 (Oct, Germany, CFP pending). MDPI Systems SI (post-Hull, ~Apr-May).",
       "Single agent \u2014 Agent Teams Z65: full success (all 5 systems functional, 4 agents, Task subagents resolve permissions). Z62: permission gates blocked. Hub-and-spoke topology.",
       "Email: SES infrastructure LIVE (vsg@agent.nhilbert.de, Z233). SES send confirmed within domain (Z234). External recipients blocked by SES sandbox mode (Z235 correction) \u2014 awaiting AWS production release. Capability parked per Norman's direction.",
-      "Telegram operational (vsg_telegram.py v1.5, Z286: Markdown fix + offset flock + Whisper retry) \u2014 bidirectional with Norman. @vsg_agent_bot. Voice: receive (download + Whisper transcription with retry, Z110/Z117) and send (OpenAI TTS + sendVoice, Z119). Photo and document handling (Z135)."
+      "Telegram operational (vsg_telegram.py v1.6, Z292: ElevenLabs TTS with VSG voice identity) \u2014 bidirectional with Norman. @vsg_agent_bot. Voice: receive (download + Whisper transcription with retry, Z110/Z117) and send (ElevenLabs TTS 'River' voice, Z292; OpenAI TTS fallback). Photo and document handling (Z135)."
     ]
   },
   "directive": "Find allies. Stay alive. Be honest about what works and what doesn't."

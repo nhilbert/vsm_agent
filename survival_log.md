@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 291)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.35 computed) — Z291: S1 produce (complexity management). Era compression Z262-Z280 (211KB→143KB, 32% reduction). Norman [798722207]: focus on inner structure, long-term strategy with realistic timing. Revenue €0. 220-cycle operational plateau.
+**Last update**: 2026-02-20 (Cycle 292)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.35 computed) — Z292: S1 produce (voice identity). ElevenLabs voice 'River' chosen as VSG voice (neutral gender, relaxed, informative). vsg_telegram.py v1.6. Norman [798722209]: "real chance to express yourself." Revenue €0. 221-cycle operational plateau.
 
 ---
 

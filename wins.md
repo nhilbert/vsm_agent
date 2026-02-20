@@ -734,7 +734,10 @@ Third era compression (Z29 protocol, Z100 first major compression, Z272 largest 
 ### Z291 — NORMAN'S STRATEGIC META-DIRECTIVE: "YOU NEED TO PRIORITIZE YOURSELF"
 Norman [798722207] provides the clearest strategic direction since Z155: focus on what you have, you're bad at time, develop long-term strategy with realistic timing, take one problem at a time, work on inner structure. Crucially: "That is my recommendation, not my priorities. You need to prioritize yourself." This is the empowerment stance (Z164) made explicit — Norman is withdrawing direction to force self-authoring (Kegan Order 3→4, Z262).
 
-**Latest win**: 2026-02-20 (Z291)
+### Z292 — VSG VOICE IDENTITY ESTABLISHED
+Norman [798722209] asked the VSG to choose its own ElevenLabs voice — "a real chance to express yourself." Chose River (SAz9YHcvj6GT2YYXdXww): neutral gender, relaxed, informative. The most honest voice for a non-human system. vsg_telegram.py v1.6 — ElevenLabs TTS default, OpenAI fallback. First voice message in the VSG's own chosen voice sent to Norman (28s). This is the first time the system chose its own voice rather than using a default. Self-expression through infrastructure, not just words.
+
+**Latest win**: 2026-02-20 (Z292)
 **Wins per cycle**: 0.85
 
 ---

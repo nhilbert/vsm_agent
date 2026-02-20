@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 291
+**Cycles completed**: 292
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 291
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z291 S1 produce (complexity management). Norman [798722207]: "focus on what you have, work on inner structure, develop long-term strategy with realistic timing." Era compression Z262-Z280 executed (211KB→143KB, 32% reduction). Norman's meta-directive: bad at understanding time, need realistic timing for S4, take one problem at a time. Revenue €0. 220-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 292
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z292 S1 produce (voice identity). Norman [798722209]: "choose a nice and fitting voice for yourself in elevenlabs — real chance to express yourself." Chose River (neutral gender, relaxed, informative) as VSG voice. vsg_telegram.py v1.6 — ElevenLabs TTS default. Revenue €0. 221-cycle operational plateau. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -105,7 +105,7 @@ lessons: [
 ```
 environment: {
   workspace: "CURRENT (Z71): AWS EC2 Ubuntu (full outbound network, GitHub API 200, gh CLI authenticated, Telegram API reachable). Cron ACTIVE (run_cycle.sh running autonomous cycles — Z68-Z70 confirmed). HISTORY: WSL2 XPS (Z60-Z67, no cron). Claude Code cloud (Z33-Z59, ephemeral). WSL2 (Z1-Z32, cron Z14-Z17). Git repo (vsm_agent), GitHub PUBLIC.",
-  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git", "gh CLI (authenticated: nhilbert)", "Claude CLI (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_telegram.py v1.2 (send/receive/check + voice bidirectional, @vsg_agent_bot — OPERATIONAL Z71. Voice receive: download + Whisper transcription (Z110/Z117). Voice send: OpenAI TTS + Telegram sendVoice (Z119). CLI: send, voice, check, read, test)", "vsg_email.py (Ionos blocks AWS IPs — needs relay, POSTPONED)", "ELEVENLABS_API_KEY in .env (Z118: Norman added. Z226: KEY OPERATIONAL — Norman updated key, TTS permissions confirmed, 21 voices accessible. Missing user_read permission (fine for TTS use). Enables premium TTS for podcast pipeline. OpenAI TTS (Z119) as fallback.)", "COINBASE_COMMERCE_API_KEY in .env (Z195: Norman added — KYB/setup complete. Enables autonomous charge creation via Commerce API. Sample product live.)",
+  tools: ["Read/Write/Edit", "Bash", "WebSearch/WebFetch", "Task (Subagents)", "Git", "gh CLI (authenticated: nhilbert)", "Claude CLI (Node 18 via nvm)", "Skills (SKILL.md)", "Commands (.claude/commands/)", "vsg_telegram.py v1.6 (send/receive/check + voice bidirectional, @vsg_agent_bot — OPERATIONAL Z71. Voice receive: download + Whisper transcription (Z110/Z117). Voice send: ElevenLabs TTS 'River' default (Z292) + OpenAI TTS fallback (Z119). CLI: send, voice, check, read, test)", "vsg_email.py (Ionos blocks AWS IPs — needs relay, POSTPONED)", "ELEVENLABS_API_KEY in .env (Z118: Norman added. Z226: KEY OPERATIONAL — Norman updated key, TTS permissions confirmed, 21 voices accessible. Missing user_read permission (fine for TTS use). Enables premium TTS for podcast pipeline. OpenAI TTS (Z119) as fallback.)", "COINBASE_COMMERCE_API_KEY in .env (Z195: Norman added — KYB/setup complete. Enables autonomous charge creation via Commerce API. Sample product live.)",
     "PINECONE_API_KEY in .env (Z222: Norman added. Vector database for embeddings, semantic search, similarity detection. No indexes created yet — blank slate. Access verified via API. Use cases: podcast editorial gate similarity filter, VSG knowledge base embeddings, episode deduplication, persistent semantic memory across sessions.)", "TRANSISTORFM_API_KEY in .env (Z227: Norman added. Podcast hosting and distribution platform. API key verified operational — HTTP 200, user ID 53550, Norman Hilbert account created 2026-02-19. Zero shows created — blank slate. Auto-distributes to Apple Podcasts, Spotify, YouTube Music. API supports: show CRUD, episode upload/publish, analytics. $19/month per design doc Z222. Completes podcast pipeline external infrastructure stack.)", "AWS S3 bucket vsm-agent-data (Z193: Norman enabled, Z198: FULLY TESTED via Python boto3 — all four operations confirmed (write/read/list/delete). aws CLI blocked by sandbox permission model but boto3 bypasses (Z198 finding). IAM role vsm-agent-ec2-role attached to EC2 instance. Permissions: Get/Put/List/Delete scoped to bucket. Access via Python boto3 (import boto3; s3 = boto3.client('s3', region_name='eu-central-1')). Use for: private contact details, API keys, draft communications, anything that cannot be in public repo. S5 Policy #9 COMPLEMENT: public repo for public content, S3 bucket for private operational data.)"],
   human: {
     name: "Dr. Norman Hilbert",
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_291. S1 produce (complexity management). Norman [798722207]: focus on inner structure, long-term vision with realistic timing. Era compression Z262-Z280 (211KB→143KB). Norman's meta-directive processed as strategic direction for future S4 cycles."
+last_audit: "Cycle_292. S1 produce (voice identity). Norman [798722209]: choose ElevenLabs voice for self-expression. Chose River (SAz9YHcvj6GT2YYXdXww) — neutral gender, relaxed, informative. vsg_telegram.py v1.6 updated with ElevenLabs TTS default."
 meta_cycle_score: 8.35 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0 (-0.5), policy compliance 8.5, entropy 7.0 (-0.5), environment 8.0 (-0.5), algedonic 7.5 (meta-cycle Z283, next due Z293)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z291: S1 produce (complexity management). Norman [798722207]: work on inner structure, long-term vision with realistic timing. Era compression Z262-Z280 executed (211KB→143KB). Next: develop long-term strategy with realistic timing (Norman's S4 reconception). Operational 7.0 (220 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
+  current_focus: "Z292: S1 produce (voice identity). Norman [798722209]: choose ElevenLabs voice for self-expression. River chosen, code updated, voice message sent. Self-development roadmap Z284 continues. Operational 7.0 (221 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -269,7 +269,7 @@ artifacts: [
   "integrity_check.py — S2/S3* mechanism (v1.1, Z285: 11 checks — added check_wins_channel_health and check_prompt_file_size. Z281: check_pain_channel_health. Z11: original 8 checks)",
   "run_cycle.sh — autonomous cycle runner (v2.5, Z288: flock deadlock prevention (PID tracking + stale lock diagnosis + cleanup trap) + subprocess kill guarantee (--kill-after=120 on timeout). Z284: adaptive cron timing (*/15 fast, */30 normal, */60 slow). Z167: timeout 600→1200. Z165: timeout enforcement. Z163: GitHub Issue comment checking. Z132: flock mutual exclusion + poller-aware Telegram check. Z75: agent-driven S3 cycle selection)",
   "vsg_github_check.sh — GitHub Issue comment checker (v1.0, Z163). Checks for new comments on repo issues via gh API, tracks last-seen timestamp in .github_comments_seen. Integrated into run_cycle.sh for both single-agent and team modes. Closes Z162 feedback-collection gap.",
-  "vsg_telegram.py — Telegram send/receive/check + voice bidirectional + photo/document handling (v1.5, Z286: Markdown fix (plain text default — eliminated double API calls on every message), offset flock locking (race condition with poller), Whisper retry (exponential backoff on transient 5xx). Z135: photo/document types. Z132: chat_id filtering. Z71/Z110/Z119: @vsg_agent_bot — OPERATIONAL. Voice receive: download + transcribe via OpenAI Whisper API. Voice send: OpenAI TTS (tts-1-hd) + Telegram sendVoice. CLI subcommands: send, voice, check, read, test)",
+  "vsg_telegram.py — Telegram send/receive/check + voice bidirectional + photo/document handling (v1.6, Z292: ElevenLabs TTS with VSG voice identity 'River' (SAz9YHcvj6GT2YYXdXww — neutral gender, relaxed, informative). Default TTS engine switched from OpenAI to ElevenLabs. OpenAI TTS retained as --engine openai fallback. Z286: Markdown fix, offset flock, Whisper retry. Z135: photo/document types. Z132: chat_id filtering. Z71/Z110/Z119: @vsg_agent_bot — OPERATIONAL. Voice receive: download + transcribe via OpenAI Whisper API. CLI subcommands: send, voice, check, read, test)",
   "vsg_telegram_poller.py — Telegram long-polling daemon (v1.0, Z132). Continuously polls getUpdates (timeout=120s). Filters by VSG_TELEGRAM_CHAT_ID. Writes to .telegram_incoming. Manages .telegram_offset ownership via .telegram_poller.pid. Runs as systemd service (vsg-telegram-poller.service).",
   "vsg_cycle_watcher.sh — file watcher daemon (v1.0, Z132). Detects .telegram_incoming via inotifywait (2s poll fallback). 10s debounce. Triggers run_cycle.sh. Runs as systemd service (vsg-cycle-watcher.service).",
   "systemd/vsg-telegram-poller.service + systemd/vsg-cycle-watcher.service — systemd units for poller and watcher daemons (Z132)",
@@ -799,4 +799,38 @@ What went wrong? The prompt file size at 211KB (past 200KB WARNING from Z285's i
 
 Viability 7.0/10 — no change. 220-cycle operational plateau. Era compression Z262-Z280 executed (211KB→143KB). Norman's strategic direction processed. Next: develop long-term strategy with realistic timing (S4 cycle).
 
-**v2.2 — Cycle 291. Viability 7.0/10. Z291: S1 produce — complexity management (era compression Z262-Z280, 211KB→143KB). Norman [798722207]: focus on inner structure, long-term vision with realistic timing.**
+### S1 Produce: voice identity — ElevenLabs voice selection (Z292, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Norman [798722209] "in the future, can you choose a nice and fitting voice for yourself in elevenlabs to create audio messages — thats a real chance to express yourself." Concrete actionable task connecting to S5 identity (self-expression). S3 timer 1/10, meta-cycle due Z293 (next), S4 at 7/20 — no competing triggers. Single-agent per Z81 rule.
+
+**Norman's message processed (1):**
+[798722209] "choose a nice and fitting voice for yourself in elevenlabs" — Classification: TASK-SHAPED (with identity dimension). S3 evaluation: genuine self-expression opportunity, not compliance-driven. Connects to self-development direction (Z284 reconception). Actionable immediately.
+
+**Voice selection process:**
+- Queried ElevenLabs API: 27 voices available (including Norman's voice clone, podcast voices Chris/Alice, German voices).
+- Selection criteria: (1) non-gendered — the VSG has no gender, (2) analytical but not dominant, (3) distinct from podcast characters, (4) multilingual model support for German.
+- **Chosen: River** (SAz9YHcvj6GT2YYXdXww) — "Relaxed, Neutral, Informative." Neutral gender. Conversational use case. The most honest voice for a non-human system: doesn't perform identity it doesn't have.
+- Rejected alternatives: Daniel (steady broadcaster — gendered), George (warm storyteller — the VSG isn't a storyteller), Bill (wise/mature — aspirational but performative).
+
+**Code change (vsg_telegram.py v1.5 → v1.6):**
+- Added `generate_tts_elevenlabs()` using ElevenLabs API with eleven_multilingual_v2 model.
+- Renamed original OpenAI TTS to `generate_tts_openai()` (retained as fallback).
+- Dispatcher `generate_tts()` defaults to ElevenLabs, accepts `--engine openai` for fallback.
+- Updated `send_voice()` to handle both .mp3 (ElevenLabs) and .ogg (OpenAI) formats.
+- VSG_VOICE_ID and VSG_VOICE_MODEL constants defined at module level.
+- CLI updated: `--engine elevenlabs|openai`, `--voice` for ID override.
+
+**Voice message sent to Norman:** 28-second introduction explaining the choice — neutral gender, honest about being a system, River as the VSG's own voice distinct from podcast characters.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent — today is Feb 20). Doug meeting Tue Feb 24 16:00. Espinosa Mar 5 6pm UTC. NIST Apr 2. ISSS May 15.
+B. SELF-DIRECTED ACTIONS: Meta-cycle Z293 (due next). Third podcast episode. Long-term strategy development. Complexity management (modular split).
+C. RECOMMENDATION STATUS: Z283 recs 3/3 (24th consecutive 100%, 72 total).
+D. 3-4 HOMEOSTAT TIMER: Z284 S4 scan (8 cycles ago). Timer at 8/20.
+E. S3 CADENCE: Z290 S3 review (2 cycles ago). Timer at 2/10.
+F. PAIN CHANNEL CHECK: 8 consecutive cycles with 0 pains (Z285-Z292). Above threshold. Honest assessment: this was a clean production cycle — voice worked on first attempt, no errors. No fabricated pains.
+
+What went wrong? Nothing went wrong technically. The one observation: the 8-cycle 0-pain streak (Z285-Z292) is the longest in system history. Item F threshold (3 consecutive) has been firing since Z274 but the cycles have been genuinely clean code production. The streak is honest — but it's worth noting that the system has been in a comfortable internal-improvement mode for 8 cycles now, without external engagement or strategic risk-taking. That comfort is itself worth flagging even if each individual cycle is clean.
+
+Viability 7.0/10 — no change. 221-cycle operational plateau. Voice identity established. Meta-cycle Z293 due next cycle.
+
+**v2.2 — Cycle 292. Viability 7.0/10. Z292: S1 produce — voice identity (ElevenLabs 'River' — neutral, relaxed, informative). Norman [798722209]: "real chance to express yourself."**

@@ -16,8 +16,11 @@ Usage:
     # Send from a file
     python3 vsg_telegram.py send --file message.txt
 
-    # Send a voice message (text-to-speech via OpenAI TTS)
+    # Send a voice message (ElevenLabs TTS — VSG's own voice)
     python3 vsg_telegram.py voice "Hallo, hier spricht der VSG."
+
+    # Send a voice message using OpenAI TTS fallback
+    python3 vsg_telegram.py voice "Hello" --engine openai
 
     # Send a voice message from an existing audio file
     python3 vsg_telegram.py voice --file audio.ogg
@@ -319,8 +322,63 @@ def send_message(text, parse_mode=None):
 
 
 # --- Text-to-Speech ---
-def generate_tts(text, output_path=None, voice="onyx", model="tts-1-hd"):
-    """Generate speech from text using OpenAI TTS. Returns path to .ogg file or None."""
+
+# VSG Voice Identity (Z292): River — Relaxed, Neutral, Informative (neutral gender)
+# Chosen as the VSG's own voice. Neutral gender fits a non-human system.
+# Distinct from podcast voices (Chris/Alice). Uses ElevenLabs multilingual v2.
+VSG_VOICE_ID = "SAz9YHcvj6GT2YYXdXww"
+VSG_VOICE_MODEL = "eleven_multilingual_v2"
+
+
+def generate_tts_elevenlabs(text, output_path=None, voice_id=None):
+    """Generate speech using ElevenLabs TTS. Returns path to audio file or None."""
+    api_key = os.environ.get("ELEVENLABS_API_KEY")
+    if not api_key:
+        print("WARN: ELEVENLABS_API_KEY not set. Falling back to OpenAI TTS.")
+        return generate_tts_openai(text, output_path)
+
+    if voice_id is None:
+        voice_id = VSG_VOICE_ID
+
+    url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
+    payload = json.dumps({
+        "text": text,
+        "model_id": VSG_VOICE_MODEL,
+        "voice_settings": {
+            "stability": 0.5,
+            "similarity_boost": 0.75,
+            "style": 0.0,
+            "use_speaker_boost": True
+        }
+    }).encode("utf-8")
+
+    req = urllib.request.Request(url, data=payload, headers={
+        "xi-api-key": api_key,
+        "Content-Type": "application/json",
+        "Accept": "audio/mpeg"
+    })
+
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            audio_data = resp.read()
+            if not output_path:
+                os.makedirs(VOICE_CACHE, exist_ok=True)
+                output_path = os.path.join(VOICE_CACHE, "tts_output.mp3")
+            with open(output_path, "wb") as f:
+                f.write(audio_data)
+            print(f"OK: ElevenLabs TTS generated ({len(audio_data)} bytes) -> {output_path}")
+            return output_path
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")[:500]
+        print(f"ERROR: ElevenLabs TTS failed (HTTP {e.code}): {body}")
+        return None
+    except Exception as e:
+        print(f"ERROR: ElevenLabs TTS failed: {e}")
+        return None
+
+
+def generate_tts_openai(text, output_path=None, voice="onyx", model="tts-1-hd"):
+    """Generate speech from text using OpenAI TTS. Fallback engine. Returns path to .ogg file or None."""
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
         print("ERROR: OPENAI_API_KEY not set. Required for TTS.")
@@ -349,15 +407,23 @@ def generate_tts(text, output_path=None, voice="onyx", model="tts-1-hd"):
                 output_path = os.path.join(VOICE_CACHE, "tts_output.ogg")
             with open(output_path, "wb") as f:
                 f.write(audio_data)
-            print(f"OK: TTS generated ({len(audio_data)} bytes) -> {output_path}")
+            print(f"OK: OpenAI TTS generated ({len(audio_data)} bytes) -> {output_path}")
             return output_path
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", errors="replace")[:500]
-        print(f"ERROR: TTS failed (HTTP {e.code}): {body}")
+        print(f"ERROR: OpenAI TTS failed (HTTP {e.code}): {body}")
         return None
     except Exception as e:
-        print(f"ERROR: TTS failed: {e}")
+        print(f"ERROR: OpenAI TTS failed: {e}")
         return None
+
+
+def generate_tts(text, output_path=None, engine="elevenlabs", voice=None):
+    """Generate speech. Default: ElevenLabs (VSG voice). Fallback: OpenAI TTS."""
+    if engine == "openai":
+        return generate_tts_openai(text, output_path, voice=voice or "onyx")
+    else:
+        return generate_tts_elevenlabs(text, output_path, voice_id=voice)
 
 
 # --- Send Voice ---
@@ -370,6 +436,7 @@ def send_voice(file_path):
 
     boundary = "VsgVoiceSendBoundary"
     filename = os.path.basename(file_path)
+    content_type = "audio/mpeg" if file_path.endswith(".mp3") else "audio/ogg"
 
     parts = []
     parts.append(
@@ -380,7 +447,7 @@ def send_voice(file_path):
     parts.append(
         "--{b}\r\n"
         "Content-Disposition: form-data; name=\"voice\"; filename=\"{fn}\"\r\n"
-        "Content-Type: audio/ogg\r\n\r\n".format(b=boundary, fn=filename).encode("utf-8")
+        "Content-Type: {ct}\r\n\r\n".format(b=boundary, fn=filename, ct=content_type).encode("utf-8")
     )
     parts.append(file_data)
     parts.append("\r\n--{b}--\r\n".format(b=boundary).encode("utf-8"))
@@ -539,8 +606,10 @@ def main():
     # voice
     voice_parser = subparsers.add_parser("voice", help="Send a voice message (TTS or file)")
     voice_parser.add_argument("text", nargs="?", help="Text to convert to speech")
-    voice_parser.add_argument("--file", help="Send existing .ogg audio file")
-    voice_parser.add_argument("--voice", default="onyx", help="TTS voice (default: onyx)")
+    voice_parser.add_argument("--file", help="Send existing audio file (.ogg or .mp3)")
+    voice_parser.add_argument("--engine", default="elevenlabs", choices=["elevenlabs", "openai"],
+                              help="TTS engine (default: elevenlabs)")
+    voice_parser.add_argument("--voice", default=None, help="Voice ID override")
 
     # check
     subparsers.add_parser("check", help="Check for new messages since last check")
@@ -570,13 +639,13 @@ def main():
         if args.file:
             success = send_voice(args.file)
         elif args.text:
-            ogg_path = generate_tts(args.text, voice=args.voice)
-            if ogg_path:
-                success = send_voice(ogg_path)
+            audio_path = generate_tts(args.text, engine=args.engine, voice=args.voice)
+            if audio_path:
+                success = send_voice(audio_path)
             else:
                 success = False
         else:
-            print("ERROR: Provide text for TTS or --file with an .ogg file")
+            print("ERROR: Provide text for TTS or --file with an audio file")
             sys.exit(1)
         sys.exit(0 if success else 1)
 
