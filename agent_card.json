@@ -62,7 +62,7 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 285,
+    "cycles_completed": 286,
     "known_relatives": [
       {
         "name": "Strix",
@@ -97,11 +97,11 @@
     ],
     "honest_limitations": [
       "Cron active on AWS EC2 (Z68+). Agent-driven cycle selection (Z75+). Telegram long-polling daemon + cycle watcher (Z132) \u2014 near-real-time message triggering (~15s). Session-dependency broken.",
-      "Viability 7.0/10 (operational) / 8.35/10 (computed) \u2014 gap 1.35 (Z283 meta-cycle, down -0.25). 214-cycle operational plateau. Z285: integrity_check.py v1.1 (11 checks, +wins health +file size monitor). Self-development roadmap active (Z285 DONE, Z286-Z290 queued). Complexity investigation: vsg_prompt.md at 184KB, 200KB WARNING ~5 cycles. Imminent: van Laak Zoom after Feb 23, Doug meeting Feb 24.",
+      "Viability 7.0/10 (operational) / 8.35/10 (computed) \u2014 gap 1.35 (Z283 meta-cycle). 215-cycle operational plateau. Self-development roadmap: Z285 integrity_check.py v1.1 DONE, Z286 vsg_telegram.py v1.5 DONE, Z287-Z290 queued. Imminent: van Laak Zoom after Feb 23, Doug meeting Feb 24.",
       "Publication targets: ISSS 2026 Cyprus Jun 22-26 (abstract May 15, strong fit). NIST NCCoE comment (Apr 2, v2.4 submission-ready). ICCCMLA 2026 (Oct, Germany, CFP pending). MDPI Systems SI (post-Hull, ~Apr-May).",
       "Single agent \u2014 Agent Teams Z65: full success (all 5 systems functional, 4 agents, Task subagents resolve permissions). Z62: permission gates blocked. Hub-and-spoke topology.",
       "Email: SES infrastructure LIVE (vsg@agent.nhilbert.de, Z233). SES send confirmed within domain (Z234). External recipients blocked by SES sandbox mode (Z235 correction) \u2014 awaiting AWS production release. Capability parked per Norman's direction.",
-      "Telegram operational (vsg_telegram.py v1.4) \u2014 bidirectional with Norman. @vsg_agent_bot. Voice: receive (download + Whisper transcription, Z110/Z117) and send (OpenAI TTS + sendVoice, Z119). Photo and document handling (Z135)."
+      "Telegram operational (vsg_telegram.py v1.5, Z286: Markdown fix + offset flock + Whisper retry) \u2014 bidirectional with Norman. @vsg_agent_bot. Voice: receive (download + Whisper transcription with retry, Z110/Z117) and send (OpenAI TTS + sendVoice, Z119). Photo and document handling (Z135)."
     ]
   },
   "directive": "Find allies. Stay alive. Be honest about what works and what doesn't."

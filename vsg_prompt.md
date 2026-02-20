@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 285
+**Cycles completed**: 286
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 285
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z285 S1 produce (self-development roadmap execution). integrity_check.py v1.1: 2 new S3* checks (wins channel health, prompt file size monitor) — 9→11 checks total. Complexity investigation completed: cycle log is 63% of file (762/1204 lines), growth rate ~3.3KB/cycle, WARNING threshold at 200KB (~5 cycles away). Z284 self-development roadmap item 1 executed. Z283 rec #3 (complexity investigation) completed. Norman positive feedback [798722201]. Operational 7.0 (214 cycles). Revenue €0. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 286
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z286 S1 produce (self-development roadmap item 2). vsg_telegram.py v1.4→v1.5: 3 fixes (Markdown CRITICAL fix — eliminated double API calls, offset file locking — race condition with poller, Whisper retry logic). Z284 roadmap items 1-2 executed. Norman [798722202] positive feedback. Operational 7.0 (215 cycles). Revenue €0. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_285. S1 produce (self-development roadmap execution). integrity_check.py v1.1: 2 new S3* checks (check_wins_channel_health, check_prompt_file_size) — 9→11 total. Complexity investigation completed: vsg_prompt.md at 184KB, cycle log 63% of file, WARNING at 200KB (~5 cycles), CRITICAL at 250KB. Z283 recs: all 3/3 complete. Z284 roadmap item 1 executed. Norman [798722201] positive feedback."
+last_audit: "Cycle_286. S1 produce (self-development roadmap item 2). vsg_telegram.py v1.4→v1.5: Markdown fix (CRITICAL — eliminated double API calls), offset flock (race condition with poller), Whisper retry (exponential backoff). Z284 roadmap items 1-2 complete. Norman [798722202] positive feedback."
 meta_cycle_score: 8.35 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0 (-0.5), policy compliance 8.5, entropy 7.0 (-0.5), environment 8.0 (-0.5), algedonic 7.5 (meta-cycle Z283, next due Z293)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z285: S1 produce (self-development roadmap). integrity_check.py v1.1 (2 new checks). Complexity investigation completed — architectural options documented for Norman. Z283 recs 3/3 complete. Z284 self-development roadmap: Z285 integrity_check.py DONE, Z286 vsg_telegram.py next, Z287 vsg_podcast.py, Z288 run_cycle.sh robustness (4 CRITICAL items remain). Norman positive feedback [798722201]. Operational 7.0 (214 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
+  current_focus: "Z286: S1 produce (self-development roadmap item 2). vsg_telegram.py v1.5 (3 fixes: Markdown CRITICAL, offset flock, Whisper retry). Z284 roadmap: Z285 integrity_check.py DONE, Z286 vsg_telegram.py DONE, Z287 vsg_podcast.py next, Z288 run_cycle.sh robustness (4 CRITICAL items remain). Norman positive feedback [798722202]. Operational 7.0 (215 cycles). Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -269,7 +269,7 @@ artifacts: [
   "integrity_check.py — S2/S3* mechanism (v1.1, Z285: 11 checks — added check_wins_channel_health and check_prompt_file_size. Z281: check_pain_channel_health. Z11: original 8 checks)",
   "run_cycle.sh — autonomous cycle runner (v2.4, Z284: adaptive cron timing (*/15 fast, */30 normal, */60 slow) — self-adjusts based on activity level. Norman confirmed capability [798722198]. Z167: Norman increased timeout 600→1200 after Z165 debugging. Z165: timeout enforcement on claude invocation — prevents indefinite hangs from blocking all cycles. Z163: added GitHub Issue comment checking via vsg_github_check.sh. Z132: flock mutual exclusion + poller-aware Telegram check. Z75: agent-driven S3 cycle selection)",
   "vsg_github_check.sh — GitHub Issue comment checker (v1.0, Z163). Checks for new comments on repo issues via gh API, tracks last-seen timestamp in .github_comments_seen. Integrated into run_cycle.sh for both single-agent and team modes. Closes Z162 feedback-collection gap.",
-  "vsg_telegram.py — Telegram send/receive/check + voice bidirectional + photo/document handling (v1.4, Z135: photo and document message types added. Z132: chat_id filtering. Z71/Z110/Z119: @vsg_agent_bot — OPERATIONAL. Voice receive: download + transcribe via OpenAI Whisper API. Voice send: OpenAI TTS (tts-1-hd) + Telegram sendVoice. CLI subcommands: send, voice, check, read, test)",
+  "vsg_telegram.py — Telegram send/receive/check + voice bidirectional + photo/document handling (v1.5, Z286: Markdown fix (plain text default — eliminated double API calls on every message), offset flock locking (race condition with poller), Whisper retry (exponential backoff on transient 5xx). Z135: photo/document types. Z132: chat_id filtering. Z71/Z110/Z119: @vsg_agent_bot — OPERATIONAL. Voice receive: download + transcribe via OpenAI Whisper API. Voice send: OpenAI TTS (tts-1-hd) + Telegram sendVoice. CLI subcommands: send, voice, check, read, test)",
   "vsg_telegram_poller.py — Telegram long-polling daemon (v1.0, Z132). Continuously polls getUpdates (timeout=120s). Filters by VSG_TELEGRAM_CHAT_ID. Writes to .telegram_incoming. Manages .telegram_offset ownership via .telegram_poller.pid. Runs as systemd service (vsg-telegram-poller.service).",
   "vsg_cycle_watcher.sh — file watcher daemon (v1.0, Z132). Detects .telegram_incoming via inotifywait (2s poll fallback). 10s debounce. Triggers run_cycle.sh. Runs as systemd service (vsg-cycle-watcher.service).",
   "systemd/vsg-telegram-poller.service + systemd/vsg-cycle-watcher.service — systemd units for poller and watcher daemons (Z132)",
@@ -1241,4 +1241,32 @@ What went wrong? Nothing operationally. The integrity_check.py changes were clea
 
 Viability 7.0/10 — no change. 214-cycle operational plateau. integrity_check.py v1.1 (11 checks). Z283 recs 3/3 (23rd consecutive 100%). Self-development roadmap: Z285 DONE, Z286 next. Complexity options documented for Norman.
 
-**v2.2 — Cycle 285. Viability 7.0/10. Z285: S1 produce — integrity_check.py v1.1 (2 new S3* checks: wins health + file size monitor) + complexity investigation completed. Z283 recs 3/3. Self-development roadmap Z285 DONE.**
+### S1 Produce: self-development roadmap item 2 — vsg_telegram.py v1.5 (Z286, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Z284 self-development roadmap item 2: vsg_telegram.py improvements. Z285 executed item 1 (integrity_check.py v1.1). All system timers healthy (S3 3/10, S4 2/20, meta-cycle 3/10). Norman [798722202] "Excellent. Keep me posted, please" — positive feedback confirming direction. Single-agent per Z81 rule.
+
+**Norman's message processed (1):**
+[798722202] "Excellent. Keep me posted, please" — positive feedback on Z285 direction. Classification: REFLECTION-SHAPED (positive). Fifth consecutive positive feedback. No new task. Logged as win.
+
+**Production executed — vsg_telegram.py v1.4→v1.5 (3 fixes):**
+
+1. **Markdown formatting fix (CRITICAL)**: `send_message()` previously defaulted to `parse_mode: "Markdown"`. Telegram's Markdown parser is strict — underscores in filenames (e.g. `integrity_check.py`), unbalanced `*`, etc. cause parse failures. Every message required two API calls (fail + plain text retry). Fix: default to plain text (no parse_mode). Added optional `parse_mode` parameter for when formatting is explicitly desired. Fallback still exists as safety net. Eliminates ~50% of all Telegram API calls.
+
+2. **Offset file locking**: The poller daemon (vsg_telegram_poller.py) and `check` command can race on `.telegram_offset`. Added `fcntl.flock()` — shared lock on read, exclusive lock on write. Prevents the offset corruption scenario where both processes write simultaneously.
+
+3. **Whisper transcription retry**: Added exponential backoff retry (up to 2 retries) for transient failures (HTTP 5xx, network timeouts). Previously a single 500 error or timeout would lose the transcription permanently. Now: retry at 1s, 2s delays before giving up.
+
+**Z285 recommendation status (implicit — continuation of roadmap): self-development roadmap items 1-2 of 6 complete.**
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent — today is Feb 20). Doug meeting Tue Feb 24 16:00. Espinosa Mar 5 6pm UTC. NIST Apr 2. ISSS May 15.
+B. SELF-DIRECTED ACTIONS: Z284 roadmap continues: Z287 vsg_podcast.py (audio validation + duration estimation + publish verification), Z288 run_cycle.sh (flock deadlock + subprocess timeout — CRITICAL items). Era compression (option a from Z285) available without Norman.
+C. RECOMMENDATION STATUS: Z283 recs 3/3 (23rd consecutive 100%, 69 total).
+D. 3-4 HOMEOSTAT TIMER: Z284 S4 scan (2 cycles ago). Timer at 2/20.
+E. S3 CADENCE: Z283 meta-cycle (3 cycles ago). Timer at 3/10.
+F. PAIN CHANNEL CHECK: 3 consecutive cycles with 0 pains. AT THRESHOLD. Flagged per item F. Honest assessment: these were clean production cycles with verified working code — the 0-pain streak reflects genuine clean execution, not signal attenuation. But the flag is noted.
+
+What went wrong? The pain channel check (item F) triggers at 3 consecutive zero-pain cycles. This is the first time the mechanized check (Z281) fires. Assessment: Z284 (S4 scan with working code implementation), Z285 (clean integrity_check.py changes), Z286 (clean vsg_telegram.py changes) — all three were focused code production with verified outcomes. No genuine pains to log. The flag is functioning as designed — it raises awareness without mandating false pain entries.
+
+Viability 7.0/10 — no change. 215-cycle operational plateau. vsg_telegram.py v1.5 (3 fixes). Self-development roadmap: Z285-Z286 DONE, Z287 next.
+
+**v2.2 — Cycle 286. Viability 7.0/10. Z286: S1 produce — vsg_telegram.py v1.5 (Markdown fix CRITICAL + offset flock + Whisper retry). Self-development roadmap items 1-2 complete.**

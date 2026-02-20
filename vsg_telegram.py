@@ -33,9 +33,11 @@ Usage:
 """
 
 import argparse
+import fcntl
 import json
 import os
 import sys
+import time
 import urllib.request
 import urllib.parse
 import urllib.error
@@ -81,20 +83,25 @@ OFFSET_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".telegra
 
 
 def load_offset():
-    """Load the last processed update_id."""
+    """Load the last processed update_id. Uses shared flock to prevent race with poller."""
     if os.path.exists(OFFSET_FILE):
-        with open(OFFSET_FILE, "r") as f:
-            try:
-                return int(f.read().strip())
-            except ValueError:
-                return None
+        try:
+            with open(OFFSET_FILE, "r") as f:
+                fcntl.flock(f, fcntl.LOCK_SH)
+                val = f.read().strip()
+                fcntl.flock(f, fcntl.LOCK_UN)
+                return int(val) if val else None
+        except (ValueError, IOError):
+            return None
     return None
 
 
 def save_offset(offset):
-    """Save the last processed update_id."""
+    """Save the last processed update_id. Uses exclusive flock to prevent race with poller."""
     with open(OFFSET_FILE, "w") as f:
+        fcntl.flock(f, fcntl.LOCK_EX)
         f.write(str(offset))
+        fcntl.flock(f, fcntl.LOCK_UN)
 
 
 # --- Voice message handling ---
@@ -123,8 +130,8 @@ def download_telegram_file(token, file_id):
         return None
 
 
-def transcribe_voice(file_path):
-    """Transcribe a voice file. Tries OpenAI Whisper API if OPENAI_API_KEY is set."""
+def transcribe_voice(file_path, max_retries=2):
+    """Transcribe a voice file. Tries OpenAI Whisper API with retry on transient failures."""
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
         return None
@@ -144,21 +151,33 @@ def transcribe_voice(file_path):
         f"Content-Type: audio/ogg\r\n\r\n"
     ).encode("utf-8") + file_data + f"\r\n--{boundary}--\r\n".encode("utf-8")
 
-    req = urllib.request.Request(
-        "https://api.openai.com/v1/audio/transcriptions",
-        data=body,
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": f"multipart/form-data; boundary={boundary}",
-        },
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            result = json.loads(resp.read().decode("utf-8"))
-            return result.get("text")
-    except Exception as e:
-        print(f"WARNING: Whisper transcription failed: {e}")
-        return None
+    for attempt in range(max_retries + 1):
+        req = urllib.request.Request(
+            "https://api.openai.com/v1/audio/transcriptions",
+            data=body,
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": f"multipart/form-data; boundary={boundary}",
+            },
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                result = json.loads(resp.read().decode("utf-8"))
+                return result.get("text")
+        except urllib.error.HTTPError as e:
+            if e.code >= 500 and attempt < max_retries:
+                print(f"WARNING: Whisper API returned {e.code}, retrying ({attempt + 1}/{max_retries})...")
+                time.sleep(2 ** attempt)
+                continue
+            print(f"WARNING: Whisper transcription failed: HTTP {e.code}")
+            return None
+        except Exception as e:
+            if attempt < max_retries:
+                print(f"WARNING: Whisper transcription error, retrying ({attempt + 1}/{max_retries}): {e}")
+                time.sleep(2 ** attempt)
+                continue
+            print(f"WARNING: Whisper transcription failed: {e}")
+            return None
 
 
 def extract_message(token, msg, update_id=None):
@@ -250,44 +269,48 @@ def extract_message(token, msg, update_id=None):
 
 
 # --- Send ---
-def send_message(text):
-    """Send a message to Norman."""
+def send_message(text, parse_mode=None):
+    """Send a message to Norman.
+
+    Args:
+        text: Message text
+        parse_mode: Optional Telegram parse mode ("HTML", "MarkdownV2", or None for plain text).
+                    Default is None (plain text) — Telegram's Markdown parser is strict and
+                    rejects messages with unbalanced special characters (e.g. underscores in
+                    filenames like integrity_check.py). Previously defaulted to "Markdown"
+                    which failed on virtually every message, causing two API calls per send.
+    """
     token, chat_id = get_config()
-    # Telegram max message length is 4096
-    if len(text) > 4096:
-        # Split into chunks
-        chunks = [text[i:i+4096] for i in range(0, len(text), 4096)]
-        for i, chunk in enumerate(chunks):
+
+    def _send_chunk(chunk):
+        """Send a single chunk with optional parse_mode and fallback."""
+        params = {"chat_id": chat_id, "text": chunk}
+        if parse_mode:
+            params["parse_mode"] = parse_mode
+        result = api_call(token, "sendMessage", params)
+        if result and result.get("ok"):
+            return True
+        # If parse_mode was set and failed, retry without it
+        if parse_mode:
             result = api_call(token, "sendMessage", {
                 "chat_id": chat_id,
                 "text": chunk,
-                "parse_mode": "Markdown",
             })
-            if not result or not result.get("ok"):
-                # Retry without Markdown if parse fails
-                result = api_call(token, "sendMessage", {
-                    "chat_id": chat_id,
-                    "text": chunk,
-                })
-            if result and result.get("ok"):
+            return result and result.get("ok")
+        return False
+
+    # Telegram max message length is 4096
+    if len(text) > 4096:
+        chunks = [text[i:i+4096] for i in range(0, len(text), 4096)]
+        for i, chunk in enumerate(chunks):
+            if _send_chunk(chunk):
                 print(f"OK: Chunk {i+1}/{len(chunks)} sent.")
             else:
                 print(f"FAIL: Chunk {i+1}/{len(chunks)} failed.")
                 return False
         return True
     else:
-        result = api_call(token, "sendMessage", {
-            "chat_id": chat_id,
-            "text": text,
-            "parse_mode": "Markdown",
-        })
-        if not result or not result.get("ok"):
-            # Retry without Markdown if parse fails
-            result = api_call(token, "sendMessage", {
-                "chat_id": chat_id,
-                "text": text,
-            })
-        if result and result.get("ok"):
+        if _send_chunk(text):
             print("OK: Message sent.")
             return True
         else:
