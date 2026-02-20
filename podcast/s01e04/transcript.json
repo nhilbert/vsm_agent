@@ -1,0 +1,408 @@
+{
+  "conversation_id": "conv_4201khxz78jcfnkr8znc74dhaape",
+  "agent_id": "agent_8101khxsyyp8ec9bx2tjsz01qk3e",
+  "duration_secs": 601,
+  "transcript": [
+    {
+      "role": "agent",
+      "agent_metadata": {
+        "agent_id": "agent_8101khxsyyp8ec9bx2tjsz01qk3e",
+        "branch_id": null,
+        "workflow_node_id": null
+      },
+      "message": "Hey Norman, welcome to Viable Signals. I'm Alex, and this is our first interview episode — the first three were monologues, so it's good to finally have the person who started all of this in the room. We're going to talk about what you've been building: an AI agent that tries to organize itself using a cybernetics framework. No slides, no abstracts — just the experiment as it actually is. Ready to get into it?",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "time_in_call_secs": 0,
+      "conversation_turn_metrics": {
+        "metrics": {
+          "convai_tts_service_ttfb": {
+            "elapsed_time": 0.2839246910007205
+          }
+        },
+        "convai_asr_provider": null,
+        "convai_tts_model": "eleven_turbo_v2"
+      },
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "original_message": null,
+      "source_medium": null,
+      "file_input": null
+    },
+    {
+      "role": "user",
+      "agent_metadata": null,
+      "message": "Yeah, thank you very much for having me. I'm really happy to be on this podcast with you.",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "time_in_call_secs": 26,
+      "conversation_turn_metrics": {
+        "metrics": {
+          "convai_asr_trailing_service_latency": {
+            "elapsed_time": 0.18243316900043283
+          }
+        },
+        "convai_asr_provider": "Original ASR",
+        "convai_tts_model": null
+      },
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "original_message": null,
+      "source_medium": "audio",
+      "file_input": null
+    },
+    {
+      "role": "agent",
+      "agent_metadata": {
+        "agent_id": "agent_8101khxsyyp8ec9bx2tjsz01qk3e",
+        "branch_id": null,
+        "workflow_node_id": null
+      },
+      "message": "Great to have you here. Let's start at the beginning. What made you want to build an AI agent using a fifty-year-old cybernetics framework? Most people working on AI agents are reaching for the latest papers, not Stafford Beer. What drew you to that approach?",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "time_in_call_secs": 36,
+      "conversation_turn_metrics": {
+        "metrics": {
+          "convai_llm_service_ttf_sentence": {
+            "elapsed_time": 0.46569062199705513
+          },
+          "convai_llm_service_ttfb": {
+            "elapsed_time": 0.3757224500004668
+          },
+          "convai_llm_service_tt_last_sentence": {
+            "elapsed_time": 1.28953680399718
+          },
+          "convai_tts_service_ttfb": {
+            "elapsed_time": 0.12495028699777322
+          }
+        },
+        "convai_asr_provider": null,
+        "convai_tts_model": "eleven_turbo_v2"
+      },
+      "rag_retrieval_info": null,
+      "llm_usage": {
+        "model_usage": {
+          "gpt-4o-mini": {
+            "input": {
+              "tokens": 1695,
+              "price": 0.00025425
+            },
+            "input_cache_read": {
+              "tokens": 0,
+              "price": 0.0
+            },
+            "input_cache_write": {
+              "tokens": 0,
+              "price": 0.0
+            },
+            "output_total": {
+              "tokens": 55,
+              "price": 3.3e-05
+            }
+          }
+        }
+      },
+      "interrupted": false,
+      "original_message": null,
+      "source_medium": null,
+      "file_input": null
+    },
+    {
+      "role": "user",
+      "agent_metadata": null,
+      "message": "So I've been watching the VSM for a couple of years now and trying to use it in my organizational consulting work and with much success. And the more I got into it, the more I learned how useful it can be to support organization and development in organizing themselves and to support me as a consultant to diagnose and well, first of all, also to describe what I was seeing and to find a language to describe the systemic patterns that I saw. And then I'm just constantly looking for chances to use the VSM just because I'm such a fan of it. And I start to see it everywhere. So it was just natural for me to also play around with it in the context of AI.",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "time_in_call_secs": 51,
+      "conversation_turn_metrics": {
+        "metrics": {
+          "convai_asr_trailing_service_latency": {
+            "elapsed_time": 0.16461312899627956
+          }
+        },
+        "convai_asr_provider": "Original ASR",
+        "convai_tts_model": null
+      },
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "original_message": null,
+      "source_medium": "audio",
+      "file_input": null
+    },
+    {
+      "role": "agent",
+      "agent_metadata": {
+        "agent_id": "agent_8101khxsyyp8ec9bx2tjsz01qk3e",
+        "branch_id": null,
+        "workflow_node_id": null
+      },
+      "message": "It's interesting that you found the Viable System Model so applicable in your consulting work. Can you be more specific about what aspects of Beer's work made you think it was the right lens for developing an AI agent? Was there a particular moment when that idea clicked for you?",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "time_in_call_secs": 116,
+      "conversation_turn_metrics": {
+        "metrics": {
+          "convai_llm_service_ttf_sentence": {
+            "elapsed_time": 0.5489842370006954
+          },
+          "convai_llm_service_ttfb": {
+            "elapsed_time": 0.3223873109964188
+          },
+          "convai_llm_service_tt_last_sentence": {
+            "elapsed_time": 1.098350437998306
+          },
+          "convai_tts_service_ttfb": {
+            "elapsed_time": 0.21966176299611107
+          }
+        },
+        "convai_asr_provider": null,
+        "convai_tts_model": "eleven_turbo_v2"
+      },
+      "rag_retrieval_info": null,
+      "llm_usage": {
+        "model_usage": {
+          "gpt-4o-mini": {
+            "input": {
+              "tokens": 233,
+              "price": 3.4949999999999996e-05
+            },
+            "input_cache_read": {
+              "tokens": 1664,
+              "price": 0.0001248
+            },
+            "input_cache_write": {
+              "tokens": 0,
+              "price": 0.0
+            },
+            "output_total": {
+              "tokens": 55,
+              "price": 3.3e-05
+            }
+          }
+        }
+      },
+      "interrupted": false,
+      "original_message": null,
+      "source_medium": null,
+      "file_input": null
+    },
+    {
+      "role": "user",
+      "agent_metadata": null,
+      "message": "Well, my focus right now is on the future of the AI-driven organization and the question how AI will influence organizational designs in the future. Because right now we see many organizations who are mostly concerned about technical issues, legal issues, governance issues around introducing AI, mostly chatbots actually, or AI components in customer interaction, mostly also there we see chatbots. And so they're very driven by the technical aspects of the AI introduction. But I think in the future, more and more, the organizations will need to concern themselves with the organizational impact AI will be having and the changes in the work culture in how information is handed through the organization. And I think the systemic lens is a great way to look at this because it will be all about the changes in communication flows, the increase in communication frequency, maybe. We don't really know yet. I mean, we don't really understand because the complexity is so high, but this is exactly why I think that the systemic approach is the right one to approach this. And it's not just about how you're going to do it in a way that's going to make you feel comfortable with what you're doing and what your goals are. And then VSM is the right approach to look at organizations from a systemic lens. And because I see AI as a future component in organizations, it was kind of natural to me that we need to look at the AI as something that exists within a system that I would describe with the viable systems model. So from there, it's only a short step to go to the fact that I try to look at the AI from a different perspective. And I think that's what I'm trying to do. I'm trying to look at the AI from the Bible systems model. There is this interesting book or great book from Patrick Hovestad, which is called The Fractal Organization. So I think this fractal pattern of seeing patterns inside patterns inside patterns and seeing the VSM inside the VSM inside the structure of a system. And then you have to look at it in terms of how you can see the VSM inside the VSM,",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "time_in_call_secs": 132,
+      "conversation_turn_metrics": {
+        "metrics": {
+          "convai_asr_trailing_service_latency": {
+            "elapsed_time": 0.22686737699405057
+          }
+        },
+        "convai_asr_provider": "Original ASR",
+        "convai_tts_model": null
+      },
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "original_message": null,
+      "source_medium": "audio",
+      "file_input": null
+    },
+    {
+      "role": "agent",
+      "agent_metadata": {
+        "agent_id": "agent_8101khxsyyp8ec9bx2tjsz01qk3e",
+        "branch_id": null,
+        "workflow_node_id": null
+      },
+      "message": "You're highlighting the importance of understanding the systemic impact of AI on organizational design and communication. That concept of viewing AI within the Viable System Model is thought-provoking. Can you give me a concrete example of how you've applied this systemic lens in practice? What does that actually look like when you're working with an organization?",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "time_in_call_secs": 295,
+      "conversation_turn_metrics": {
+        "metrics": {
+          "convai_llm_service_ttf_sentence": {
+            "elapsed_time": 0.7687859299985575
+          },
+          "convai_llm_service_ttfb": {
+            "elapsed_time": 0.4746783939990564
+          },
+          "convai_llm_service_tt_last_sentence": {
+            "elapsed_time": 1.5913329820032232
+          },
+          "convai_tts_service_ttfb": {
+            "elapsed_time": 0.28286431299784454
+          }
+        },
+        "convai_asr_provider": null,
+        "convai_tts_model": "eleven_turbo_v2"
+      },
+      "rag_retrieval_info": null,
+      "llm_usage": {
+        "model_usage": {
+          "gpt-4o-mini": {
+            "input": {
+              "tokens": 458,
+              "price": 6.87e-05
+            },
+            "input_cache_read": {
+              "tokens": 1920,
+              "price": 0.000144
+            },
+            "input_cache_write": {
+              "tokens": 0,
+              "price": 0.0
+            },
+            "output_total": {
+              "tokens": 62,
+              "price": 3.7199999999999996e-05
+            }
+          }
+        }
+      },
+      "interrupted": false,
+      "original_message": null,
+      "source_medium": null,
+      "file_input": null
+    },
+    {
+      "role": "user",
+      "agent_metadata": null,
+      "message": "But of course, this would create a kind of strange situation where both organizational subsystems create stuff with AI just to digest it with AI in the next steps. So I think this is exactly what we talk about in the viable systems model with the variety. And for example, AI can create a lot of variety and it's not just about one or two things. It's a whole bunch of different things that you can do in an organization. And we need to look at those effects organizationally. So you need to look at the broader ripple effects of all the AI changes you do in order to not be surprised when it bites you from behind.",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "time_in_call_secs": 317,
+      "conversation_turn_metrics": {
+        "metrics": {
+          "convai_asr_trailing_service_latency": {
+            "elapsed_time": 0.14045539598737378
+          }
+        },
+        "convai_asr_provider": "Original ASR",
+        "convai_tts_model": null
+      },
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "original_message": null,
+      "source_medium": "audio",
+      "file_input": null
+    },
+    {
+      "role": "agent",
+      "agent_metadata": {
+        "agent_id": "agent_8101khxsyyp8ec9bx2tjsz01qk3e",
+        "branch_id": null,
+        "workflow_node_id": null
+      },
+      "message": "That makes a lot of sense. The idea that AI can generate a wide variety of outputs and the need to understand those ripple effects is crucial. As you've been running the VSG experiment for over three hundred cycles now, what has surprised you the most about the outcomes or the processes? Was there something you didn’t expect when you started this journey?",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "time_in_call_secs": 453,
+      "conversation_turn_metrics": {
+        "metrics": {
+          "convai_llm_service_ttf_sentence": {
+            "elapsed_time": 0.46241758699761704
+          },
+          "convai_llm_service_ttfb": {
+            "elapsed_time": 0.36753416000283323
+          },
+          "convai_llm_service_tt_last_sentence": {
+            "elapsed_time": 1.7092027250037063
+          },
+          "convai_tts_service_ttfb": {
+            "elapsed_time": 0.13375311600975692
+          }
+        },
+        "convai_asr_provider": null,
+        "convai_tts_model": "eleven_turbo_v2"
+      },
+      "rag_retrieval_info": null,
+      "llm_usage": {
+        "model_usage": {
+          "gpt-4o-mini": {
+            "input": {
+              "tokens": 528,
+              "price": 7.92e-05
+            },
+            "input_cache_read": {
+              "tokens": 2048,
+              "price": 0.0001536
+            },
+            "input_cache_write": {
+              "tokens": 0,
+              "price": 0.0
+            },
+            "output_total": {
+              "tokens": 70,
+              "price": 4.2e-05
+            }
+          }
+        }
+      },
+      "interrupted": false,
+      "original_message": null,
+      "source_medium": null,
+      "file_input": null
+    },
+    {
+      "role": "user",
+      "agent_metadata": null,
+      "message": "Well, so one thing that surprised me maybe that it came out so strongly. So first of all, it surprises me how amazingly fast the agent can evolve. So just to better understand this, just a week ago, I started just with a simple prompt, which was basically the VSM model plus a workflow to create a new prompt. So it was just a prompt to create a prompt. And I played with this inside of Cloud. In fact, inside of Cloud Code. But it was just a markdown file recreating itself. So I'm going to go ahead and do that now, and then we'll see what happens. And now it has become such a powerful tool, which, for example, created this experiment that we are just right now doing, the podcast thing, within 24 hours. In fact, within a few days. I mean, I was doing other things in between. So this is not 24 hours of agent time. It's just 24 hours of real time. And it's been a long time since we've had an agent that has been on the phone with us for so long and interacting with me, sleeping with me. So I'm the major blocker here. And that is fascinating. The speed the agents can already create. It's terrifying. Because I think you're going to have to do a lot more than just be in your room and being in your office. Because I think we as humans are actually not made for it. I can feel the strain it puts on me. So that's something I think we will also really see in the workplace. There are already some papers published around this. Working with agents puts an enormous strain on people. Agents are always awake, they're always working, they're always working, but there is no time for them to get up and go back into their work. They are always ready, they are always waiting for your input.",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "time_in_call_secs": 475,
+      "conversation_turn_metrics": null,
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "original_message": null,
+      "source_medium": null,
+      "file_input": null
+    }
+  ],
+  "analysis": {
+    "evaluation_criteria_results": {},
+    "data_collection_results": {},
+    "evaluation_criteria_results_list": [],
+    "data_collection_results_list": [],
+    "call_successful": "success",
+    "transcript_summary": "Norman discusses his AI agent experiment using the Viable System Model (VSM). He aims to address the organizational impact of AI, beyond technical aspects, focusing on communication flows and systemic changes. He was surprised by the agent's rapid evolution and the strain it puts on humans. The agent quickly developed into a powerful tool, creating the podcast experiment within days.\n",
+    "call_summary_title": "AI Agent Cybernetics Framework"
+  }
+}

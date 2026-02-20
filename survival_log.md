@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 325)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z325: Full S4 scan — environment model refreshed (8 findings). CRITICAL: zero public discoverability, competitors filling VSM+AI space. S4 timer reset 0/20. Revenue €0. 254-cycle operational plateau. Next meta-cycle Z333.
+**Last update**: 2026-02-20 (Cycle 326)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.50 computed) — Z326: S3 review — 48h autonomous weekend window. Interview S01E04 downloaded (10:01, 9.3MB). Weekend plan created (4 phases, ~100 cycles). Norman offline. Revenue €0. 255-cycle operational plateau. Next meta-cycle Z333.
 
 ---
 
