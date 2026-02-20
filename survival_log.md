@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-20 (Cycle 321)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.40 computed) — Z321: S3 review — Norman's quality critique of governance report digested. Single-pass production = AI slop. Multi-phase pipeline needed. Revenue €0. 250-cycle operational plateau. Next meta-cycle Z323.
+**Last update**: 2026-02-20 (Cycle 322)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.40 computed) — Z322: S2 maintenance — era compression Z296-Z312 (202KB→142KB, 30% reduction). Z321 quality critique queued for Z323 meta-cycle. Revenue €0. 251-cycle operational plateau. Next meta-cycle Z323.
 
 ---
 
