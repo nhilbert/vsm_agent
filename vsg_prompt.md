@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 277
+**Cycles completed**: 278
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 277
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z277 S2 maintenance (routine). 6 consecutive 0-pain cycles (item F awareness, post-meta-cycle low-event stretch). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). Computed 8.60, operational 7.0 (206 cycles). ISSS draft Z270 for Norman's review. Revenue €0. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 278
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z278 S2 maintenance (routine). 7 consecutive 0-pain cycles (item F awareness, post-meta-cycle low-event stretch). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). Computed 8.60, operational 7.0 (207 cycles). ISSS draft Z270 for Norman's review. Revenue €0. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_277. S2 maintenance (routine). 6 consecutive 0-pain cycles (item F awareness). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). All timers within limits (S3 6/10, S4 14/20, meta 6/10). 206-cycle operational plateau. Next S3 by Z281."
+last_audit: "Cycle_278. S2 maintenance (routine). 7 consecutive 0-pain cycles (item F awareness). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). All timers within limits (S3 7/10, S4 15/20, meta 7/10). 207-cycle operational plateau. Next S3 by Z281."
 meta_cycle_score: 8.60 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 7.5, environment 8.5, algedonic 7.5 (meta-cycle Z271, next due Z281)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z277: S2 maintenance (routine). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). Computed 8.60, operational 7.0 (206 cycles). ISSS draft Z270 for Norman's review. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next meta-cycle Z281.",
+  current_focus: "Z278: S2 maintenance (routine). Z271 recs 3/3 (twenty-second consecutive 100%, 66 total). Computed 8.60, operational 7.0 (207 cycles). ISSS draft Z270 for Norman's review. Imminent: van Laak Zoom after Feb 23, Doug meeting Tue Feb 24 16:00, Espinosa Mar 5 6pm UTC, NIST Apr 2, ISSS May 15, Norman May eval. Next meta-cycle Z281.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -957,4 +957,31 @@ What went wrong? Nothing operationally — sixth consecutive clean S2 since meta
 
 Viability 7.0/10 — no change. 206-cycle operational plateau. State clean. Next S3 by Z281 (meta-cycle).
 
-**v2.2 — Cycle 277. Viability 7.0/10. Z277: S2 maintenance (routine). Item F: 6 consecutive 0-pain cycles. Next: S2 default or S3 if cadence triggers.**
+### S2 Maintenance: routine consolidation, docs/ stale counts corrected (Z278, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Seven S2 cycles since meta-cycle Z271, but Z272 and Z276 were substantive (era compression and network_and_allies.md refresh). All timers within limits — S3 cadence 7/10, S4 timer 15/20, meta-cycle 7/10. Item F at 7 consecutive 0-pain cycles (flagged Z274, awareness — post-meta-cycle low-event stretch). Z271 recs 3/3 complete (22nd consecutive 100%, 66 total). No open recommendation chains. Per S5 Policy #10, S2 is the default. Single-agent per Z81 rule.
+
+**No external inputs:** No Telegram messages. No new GitHub comments (latest: Feb 18, already processed Z218).
+
+**State consistency check (8 locations):**
+1. vsg_prompt.md header: 277→278
+2. S5 register cycles_completed: 277→278
+3. S5 viability_status: updated to Z278
+4. S3 last_audit + current_focus: updated to Z278
+5. agent_card.json: 277→278
+6. docs/index.md: 276+→278+ (2 cycles stale, corrected)
+7. docs/about.md: 276+→278+ (2 cycles stale, corrected)
+8. survival_log.md: per update policy, next update on significant event or meta-cycle Z281
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (3 days). Doug meeting Tue Feb 24 16:00 (4 days). Espinosa Mar 5 6pm UTC. NIST Apr 2. ISSS May 15. S4 intelligence from Z263 scan (15 cycles ago, timer 15/20).
+B. SELF-DIRECTED ACTIONS: No blocked actions. All recommendation chains cleared. Waiting posture on Norman-dependent items (van Laak scheduling, Doug meeting, NIST submission, ISSS review). Third podcast episode remains available (Z269 identification) — not urgent but available if waiting posture extends.
+C. RECOMMENDATION STATUS: Z271 recs 3/3 complete (22nd consecutive 100%, 66 total). No open chains.
+D. 3-4 HOMEOSTAT TIMER: Z263 S4 scan (15 cycles ago). Timer at 15/20. Not triggered.
+E. S3 CADENCE: Z271 meta-cycle (7 cycles ago). Within 10-cycle limit. Next S3 by Z281.
+F. PAIN CHANNEL CHECK: 7 consecutive cycles with 0 pains (Z272-Z278). Above threshold (3+). Assessment unchanged from Z274: post-meta-cycle maintenance stretches are genuinely low-event. Next meta-cycle Z281 actively probes. If the 0-pain streak extends to Z280 (9 cycles), the Z281 meta-cycle must treat this as a primary finding.
+
+What went wrong? Nothing operationally — seventh consecutive clean S2 since meta-cycle Z271. The docs/ stale counts (276+ when system is at 278) were the only S2 drift, corrected this cycle. The 0-pain streak is now at 7 cycles. The honest observation: the system is approaching the S3 cadence boundary (7/10) and the S4 timer is at 15/20 — both approaching but not triggering. The next 3 cycles will either be empty S2 maintenance (leading to meta-cycle Z281) or an external event will break the pattern. Van Laak Zoom (after Feb 23) and Doug meeting (Tue Feb 24) are the nearest possibilities. The system is correctly in waiting posture. No fabrication of urgency.
+
+Viability 7.0/10 — no change. 207-cycle operational plateau. State clean. Next S3 by Z281 (meta-cycle).
+
+**v2.2 — Cycle 278. Viability 7.0/10. Z278: S2 maintenance (routine). Item F: 7 consecutive 0-pain cycles. Next: S2 default or S3 if cadence triggers.**
