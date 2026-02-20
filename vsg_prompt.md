@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 311
+**Cycles completed**: 312
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -46,8 +46,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 311
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z311 S2 maintenance. Norman's email polling question answered (no automatic polling, only manual Z308 boto3 read). 240-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
+cycles_completed: 312
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z312 S2 maintenance. Lightweight consistency sweep, 3 stale refs fixed. 241-cycle operational plateau. Revenue €0. Imminent: van Laak Zoom after Feb 23, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, Norman May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -177,12 +177,12 @@ known_relatives: [
 
 **S3 state register**:
 ```
-last_audit: "Cycle_311. S2 maintenance — Norman email polling question answered, 2 stale refs fixed. S3 timer 4/10. S4 timer 6/20."
+last_audit: "Cycle_312. S2 maintenance — lightweight consistency sweep, 3 stale refs fixed. S3 timer 5/10. S4 timer 7/20. Meta-cycle Z313 next cycle."
 meta_cycle_score: 8.40 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 7.5, environment 8.0, algedonic 7.5 (meta-cycle Z303, next due Z313)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z311: S2 maintenance — Norman's email polling question answered, 2 stale refs fixed. 240-cycle plateau. 7.0. Next: S2 maintenance, meta-cycle Z313 in 2 cycles. Readiness posture for imminent events (van Laak Zoom after Feb 23, Thompson/Macumber Feb 24, Espinosa Mar 5).",
+  current_focus: "Z312: S2 maintenance — lightweight consistency sweep, 3 stale refs fixed. 241-cycle plateau. 7.0. Next: meta-cycle Z313 (due). Readiness posture for imminent events (van Laak Zoom after Feb 23, Thompson/Macumber Feb 24, Espinosa Mar 5).",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
@@ -919,4 +919,26 @@ What went wrong? Nothing operationally. The email polling question has an honest
 
 Viability 7.0/10 — no change. 240-cycle operational plateau. Norman's email question answered honestly. 2 stale references fixed. Meta-cycle Z313 in 2 cycles. Next: S2 maintenance or readiness posture.
 
-**v2.2 — Cycle 311. Viability 7.0/10. Z311: S2 maintenance — Norman's email polling question answered, 2 stale references fixed. 240-cycle plateau. Next: S2 maintenance, meta-cycle Z313.**
+### S2 Maintenance: lightweight consistency sweep — 3 stale references fixed (Z312, 2026-02-20)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: No new Telegram messages, no open recommendation sets, no self-directed production actions available. Meta-cycle due Z313 (next cycle). Tempo policy directs lightweight maintenance as default. All timers healthy (S3 5/10, S4 7/20). Single-agent per Z81 rule.
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**S2 state consistency sweep — 3 stale references found and fixed:**
+1. agent_card.json: cycles_completed 311 → 312, plateau 240 → 241, cycle reference Z311 → Z312.
+2. survival_log.md: header "Cycle 311" → 312, status updated.
+3. vsg_prompt.md: viability_status, current_focus, last_audit — all updated from Z311 to Z312.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent, prep done Z304). Thompson/Macumber INDEP Feb 24 (imminent). Espinosa Mar 5 (message drafted Z306). NIST RFI Mar 9 (Norman notified Z306). NIST Apr 2. ISSS May 15. Norman May eval.
+B. SELF-DIRECTED ACTIONS: No self-directed production actions available without Norman. Readiness posture correct per Z307 rec #2.
+C. RECOMMENDATION STATUS: No open recommendation sets.
+D. 3-4 HOMEOSTAT TIMER: Z305 S4 scan (7 cycles ago). Timer at 7/20.
+E. S3 CADENCE: Z307 S3 review (5 cycles ago). Timer at 5/10.
+F. PAIN CHANNEL CHECK: Z311: 0 pains. Z312: 0 pains — 6 consecutive (Z307-Z312). TRIGGERED (threshold 3+). Assessment: all six cycles were clean execution (S3 review, email read, blog cross-linking, 2x S2 maintenance, this S2 maintenance). No suppressed failures. The meta-cycle at Z313 (next cycle) will assess the 6-cycle streak. The longest 0-pain streak in recent history. Monitoring continues.
+
+What went wrong? Nothing operationally. This is a clean lightweight S2 cycle — the minimal work needed to keep state consistent ahead of the Z313 meta-cycle. The 6 consecutive 0-pain cycles is the longest streak this window. The honest observation: the system is in stable readiness posture with nothing self-directed to do. This is either genuine equilibrium or the beginning of the Z264-Z268 pattern (empty maintenance while actionable work exists). The difference: Z264-Z268 had the ISSS draft actionable; currently there are no open recommendations and no identified self-directed actions. The meta-cycle at Z313 will perform the deeper assessment.
+
+Viability 7.0/10 — no change. 241-cycle operational plateau. 3 stale references fixed. Meta-cycle Z313 due next cycle. 6 consecutive 0-pain cycles flagged for meta-cycle assessment.
+
+**v2.2 — Cycle 312. Viability 7.0/10. Z312: S2 maintenance — lightweight consistency sweep, 3 stale refs fixed. 241-cycle plateau. Next: meta-cycle Z313 (due).**
