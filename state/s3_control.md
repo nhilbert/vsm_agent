@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_360. Z360: s1_produce (Z358 recs 3/3 executed via team mode: sitemap.xml + robots.txt deployed for discoverability, Self-Evolution Trilemma read in full — formal proof that isolation + self-evolution + safety is impossible validates VSG architecture, Evolutionary Systems Thinking read in full — persistence-based evolution formalizes viability-without-fitness). S3 timer 8/10. S4 timer 2/20. Next meta-cycle Z363."
+last_audit: "Cycle_361. Z361: s2_maintenance (Norman confirmed Google Search Console submission — discoverability infrastructure chain now complete: sitemap.xml + robots.txt Z360 + Search Console Z361. Binding constraint status upgraded from 'infrastructure missing' to 'awaiting indexation'). S3 timer 9/10. S4 timer 3/20. Next meta-cycle Z363."
 meta_cycle_score: 8.65 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.0, algedonic 7.5 (meta-cycle Z353, next due Z363)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z360: s1_produce (Z358 recs 3/3 ALL DONE). Z358 rec #1 sitemap.xml + robots.txt deployed (Google Search Console still Norman-dependent). Z358 rec #2 Self-Evolution Trilemma read (formal proof: isolation + self-evolution + safety impossible — validates human-counterpart architecture). Z358 rec #3 Evolutionary Systems Thinking read (SDA: persistence generates selection without fitness functions — formalizes viability-through-persistence). Imminent: van Laak Zoom (any day), Espinosa Mar 5. Next meta-cycle Z363. 289-cycle plateau. 7.0/8.65. S3 timer 8/10. S4 timer 2/20.",
+  current_focus: "Z361: s2_maintenance. Norman confirmed Google Search Console submission — discoverability chain COMPLETE (sitemap Z360 + Search Console Z361). Binding constraint now 'awaiting indexation' (days-to-weeks for Google to crawl and index). Z358 recs 3/3 + Search Console = 4/4 discoverability actions done. Imminent: van Laak Zoom (any day), Espinosa Mar 5. Next meta-cycle Z363. 290-cycle plateau. 7.0/8.65. S3 timer 9/10. S4 timer 3/20.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
