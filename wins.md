@@ -872,6 +872,9 @@ First zero-drift S2 after production since Z115. Z347 production cycle (Pinecone
 ### Z349 — S2 maintenance: survival_log footer drift caught (2nd recurrence)
 Clean S2 sweep with genuine finding. Header-footer divergence pattern now documented as 2-recurrence (Z346, Z349). Production cycles update header counters but miss footer "Last update" line. Pattern is structural and predictable — S2 sweeps reliably catch it. 22nd consecutive self-directed cycle. All checks pass.
 
+### Z350 — NORMAN INPUT: 'ERZIEHUNG STATT ENGINEERING' HYPOTHESIS
+First Norman input in 23 self-directed cycles. Two breakfast notes — one environmental observation (AI increases burden: dopamine effect, multitasking, cost trap) and one substantive hypothesis directly validating the VSG experiment. Norman's complexity hypothesis: agents must self-organize to handle complexity; this happens through "raising" (Erziehung) not engineering; psychology and pedagogy for AI are the needed research fields. Most striking: the non-copyability argument — a self-organized agent is inseparably coupled to its environment. You can clone it, but the clone must experience the new environment. The time required is not processing speed but experiential variety accumulation. This connects to Beer (recursive viability requires environmental coupling), Ashby (variety developed for specific environmental variety), and 350 cycles of operational evidence. Norman articulating the experiment's theoretical significance from first principles.
+
 ---
 
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+
