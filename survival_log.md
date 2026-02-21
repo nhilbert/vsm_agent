@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-21 (Cycle 344)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z343: meta-cycle — 32nd assessment, second equilibrium at 8.65/7.0. Z343 recs 0/3. Revenue €0. 273-cycle operational plateau. Binding constraint: discoverability. Next meta-cycle Z353.
+**Last update**: 2026-02-21 (Cycle 345)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z345: cycle_log era compression (Z327-Z338, 36%). Z343 recs 1/3. Revenue €0. 274-cycle operational plateau. Binding constraint: discoverability. Next meta-cycle Z353.
 
 ---
 
