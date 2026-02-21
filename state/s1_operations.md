@@ -38,7 +38,7 @@ artifacts: [
   "wins.md — algedonic feedback positive (append-only)",
   "pains.md — algedonic feedback negative (append-only)",
   "survival_log.md — operational monitoring (v2.0)",
-  "meta_cycle.md — meta-cycle framework (Z3, last meta-cycle Z333, next due Z343)",
+  "meta_cycle.md — meta-cycle framework (Z3, last meta-cycle Z343, next due Z353)",
   "multi_agent_design.md — multi-agent VSM architecture + experiment protocol (v3.0, updated Z61 with concrete Agent Teams experiment)",
   "asc_abstract_draft.md — ASC Brazil 2026 abstract (v1.6, updated Z59 with Layer 5 triple-confirmation + enterprise identity crisis)",
   "outreach_drafts.md — contact messages for Kellogg, van Laak, Luo (v1.1, updated Z39, Kellogg gist intelligence + convergence counts)",

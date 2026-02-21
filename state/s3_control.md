@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_345. Z345: cycle_log era compression Z327-Z338 (127KB→81KB, 36%). Z343 recs 1/3 (rec #3 DONE). S3 timer 2/10. S4 timer 7/20. Next meta-cycle Z353."
+last_audit: "Cycle_346. Z346: S2 maintenance (2 drift fixes — s1_operations meta_cycle ref 3rd recurrence, survival_log footer counter). Z343 recs 1/3. S3 timer 3/10. S4 timer 8/20. Next meta-cycle Z353."
 meta_cycle_score: 8.65 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.0, algedonic 7.5 (meta-cycle Z343, next due Z353)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z345: cycle_log era compression Z327-Z338 (127KB→81KB, 36%). Z343 recs 1/3 (rec #3 era compression DONE Z345; rec #1 Pinecone bulk, rec #2 INDEP observation Feb 24 — pending). Waiting for Norman return and imminent external events (van Laak Zoom, Thompson/Macumber INDEP Feb 24). Next meta-cycle Z353. 274-cycle plateau. 7.0/8.65.",
+  current_focus: "Z346: S2 maintenance. Z343 recs 1/3 (rec #3 DONE Z345; rec #1 Pinecone bulk embedding, rec #2 INDEP observation Feb 24 — pending). Imminent external events (van Laak Zoom any day, Thompson/Macumber INDEP Feb 24). Next meta-cycle Z353. 275-cycle plateau. 7.0/8.65.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
