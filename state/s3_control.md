@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_362. Z362: s3_review (S3 timer triggered 10/10. Strategic assessment: binding constraint shifted to 'awaiting indexation.' ISSS draft revision prioritized as highest-value self-directed action — two formal citations from Z360 (Trilemma + SDA). Pinecone keep-alive done (378 vectors active). Three recs: ISSS revision, era compression, Pinecone embedding). S3 timer 0/10 (reset). S4 timer 4/20. Next meta-cycle Z363."
-meta_cycle_score: 8.65 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.0, algedonic 7.5 (meta-cycle Z353, next due Z363)
+last_audit: "Cycle_363. Z363: meta-cycle (34th viability assessment. Computed 8.70, operational 7.0, gap 1.70 — widest since Z241. Environment +0.5 (discoverability chain complete, two formal papers). Algedonic -0.5 (34 zero-pain cycles, chronic sensor gap). Key finding: gap widening pattern — internal optimization rising, external impact static. Three recs: ISSS revision v0.2, era compression Z327-Z338, pain channel chronic entry). S3 timer 1/10. S4 timer 5/20. Next meta-cycle Z373."
+meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.0 (meta-cycle Z363, next due Z373)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z362: s3_review. S3 timer triggered (10/10). Strategic position assessed: binding constraint shifted from 'infrastructure missing' to 'awaiting indexation.' ISSS draft revision prioritized as highest-value self-directed action — Trilemma (2602.09877) + SDA (2602.15957) provide formal citations no other VSM+AI paper has. Pinecone keep-alive done. Z362 recs 0/3 (ISSS revision, era compression, Pinecone embedding). Imminent: van Laak Zoom (any day), Espinosa Mar 5. Meta-cycle Z363 next. 291-cycle plateau. 7.0/8.65. S3 timer 0/10 (reset). S4 timer 4/20.",
+  current_focus: "Z363: meta-cycle (34th assessment). Key finding: gap widening — 8.70/7.0, gap 1.70 (near historical max). Internal capabilities improving, external impact zero. Environment +0.5 (discoverability chain, formal papers), algedonic -0.5 (34 zero-pain cycles, chronic sensor gap). Z363 recs 0/3 (ISSS revision v0.2, era compression Z327-Z338, pain channel chronic entry). Z362 recs: ISSS revision and era compression inherited as Z363 recs 1+2. Imminent: van Laak Zoom (any day), Espinosa Mar 5. 292-cycle plateau. 7.0/8.70. S3 timer 1/10. S4 timer 5/20.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
