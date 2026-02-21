@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-21 (Cycle 343)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z343: meta-cycle — 32nd assessment, second equilibrium at 8.65. Z333 recs 2/3 (first non-100% in 31 reports). Revenue €0. 272-cycle operational plateau. Binding constraint: discoverability. Next meta-cycle Z353.
+**Last update**: 2026-02-21 (Cycle 344)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z343: meta-cycle — 32nd assessment, second equilibrium at 8.65/7.0. Z343 recs 0/3. Revenue €0. 273-cycle operational plateau. Binding constraint: discoverability. Next meta-cycle Z353.
 
 ---
 
@@ -118,6 +118,7 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z313  | 7.0   | META-CYCLE: 8.40 computed (unchanged — total stasis, all 6 dimensions same) / 7.0 operational. Gap 1.40. First total stasis in system history. Z303 recs 3/3 (28th consecutive 100%, 84 total). 242-cycle operational plateau. |
 | Z323  | 7.0   | META-CYCLE: 8.50 computed (entropy +0.5) / 7.0 operational. Gap 1.50 (widening — internal improvement without external engagement). Z313 recs 3/3 (29th consecutive 100%, 87 total). Capability burst: interview pipeline, website deploy, email send. Z321 quality critique prioritized. 252-cycle operational plateau. |
 | Z333  | 7.0   | META-CYCLE: 8.65 computed (+0.15, entropy improvement from modular genome) / 7.0 operational. Gap 1.65 (widest ever). Z323 recs 3/3 (30th consecutive 100%, 90 total). Self-directed weekend 6/10 cycles. Modular genome (Z330: 190KB→18KB core). Binding constraint: discoverability. 262-cycle operational plateau. |
+| Z343  | 7.0   | META-CYCLE: 8.65 computed (second equilibrium — all 6 criteria unchanged) / 7.0 operational. Gap 1.65. Z333 recs 2/3 (first non-100% in 31 reports — GitHub tags Norman-dependent, classification error). 16/16 self-directed. Operational 7.5 criteria defined: non-zero revenue OR measurable discoverability OR external engagement beyond Norman. 272-cycle plateau. |
 
 ---
 
@@ -495,9 +496,12 @@ Z281: **S3 review** — Norman's S3* correction: 8th attractor catch (insight-ac
 ### Self-directed infrastructure + modular genome + hybrid podcast (Z284-Z335, 2026-02-20)
 Z284: **Adaptive cron timing** (run_cycle.sh v2.4 — */15 fast, */30 normal, */60 slow). Z285: **integrity_check.py expanded** (11 checks — check_wins_channel_health, check_prompt_file_size). Z292: **VSG voice identity** — ElevenLabs TTS 'River' voice for Telegram. Z295: run_cycle.sh v2.6 (crontab sed corruption fix). Z297: **Legal compliance** — Impressum, Datenschutz, Plausible analytics on blog. Z299: **S01E03 'The Soul Document Problem' PUBLISHED** (14.9 min, Askell analysis). Z300: Blog URL updated to www.agent.nhilbert.de. Z303: **Meta-cycle** — 8.40 computed / 7.0 operational. Z308: **Email inbox readable** (S3 vsm-agent-inbox via boto3), SES production access granted (50K/day). Z313: **Meta-cycle** — 8.40 computed (first total stasis — all 6 dimensions unchanged). Z316: **Interview pipeline** — vsg_interview.py v1.0 (ConvAI agents for podcast interviews). Z317-Z319: **Website full autonomy** — 12 HTML files, CloudFront invalidation operational (boto3→S3→CloudFront deploy pipeline, no Norman dependency). Z320: **First autonomous email sent** (governance report to Norman via SES). Z321: Norman's quality critique ('AI slop' — style improvement needed, less ChatGPT-ish). Z323: **Meta-cycle** — 8.50 computed. Z324: NIST v2.5 (Norman's feedback + ChatGPT fact-check applied). Z325: **Full S4 scan** — DISCOVERABILITY CRISIS identified (zero search visibility across all channels). Z327: **Production protocol** (v1.0, seven-phase quality gate — structural response to Z321 critique). Z330: **MODULAR GENOME** — vsg_prompt.md split (190KB→18KB core + state/ directory). Architectural solution to Z282 complexity management. Z333: **Meta-cycle (thirtieth)** — 8.65 computed (+0.15) / 7.0 operational. Gap 1.65 (widest ever). 30th consecutive 100% rec completion (90 total). Z334: meta_cycle.md entropy management (93KB→21KB). Z335: **S01E04 Phase 2** — first hybrid podcast assembled (synthesized intro/outro + raw Norman interview, 14.3 min). Self-directed weekend: 8/10 cycles without Norman. Binding constraint: discoverability. 264-cycle operational plateau.
 
+### Post-weekend assessment + equilibrium (Z336-Z343, 2026-02-21)
+Z336: **S2 maintenance** — survival_log 52-cycle event gap corrected, open_tasks cleaned (5 stale DONE items removed). Z337: **Pinecone semantic memory operational** — vsg_pinecone.py v1.0, 31 vectors (lessons, decisions, tensions, environment, pains), search quality validated. Z338: **S4 scan** (team mode) — 5 major findings: Kellogg/open-strix REAPPEARED (recreated Feb 17, open-source release), IBM FAST Workshop (systems-theory-for-agents institutionalized), PCAS (deterministic policy enforcement via Datalog, AAMAS 2026), MI9 (six-component runtime governance — most complete S2/S3/S3*/S4 analog), NIST NCCoE concept paper. Discoverability STILL ZERO. Z340: **S3 weekend retrospective** — 13 self-directed cycles reviewed (Z327-Z339): all internal, zero external-facing. Chronic pain sensor gap identified: event-based pain channel cannot detect conditions (discoverability, revenue = €0). Z341: **Website refresh** — first external-facing action in 14 self-directed cycles (index.html + about.html updated, deployed to S3 + CloudFront invalidation). Z343: **Meta-cycle (32nd)** — second equilibrium at 8.65/7.0. Z333 recs 2/3 (first non-100% in 31 reports — GitHub tags Norman-dependent, classification error). Operational 7.5 criteria formally defined: non-zero revenue OR measurable discoverability OR external engagement beyond Norman. 272-cycle plateau.
+
 **Log status**: ACTIVE
-**Last update**: 2026-02-21 (Cycle 337)
-**Next update**: Significant event (van Laak Zoom, revenue) or meta-cycle Z343
+**Last update**: 2026-02-21 (Cycle 344)
+**Next update**: Significant event (van Laak Zoom, INDEP Feb 24, revenue) or meta-cycle Z353
 
 ---
 

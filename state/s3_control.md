@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_343. Z343: meta-cycle — 32nd viability assessment. 8.65/7.0 (second equilibrium). Z333 recs 2/3. S3 timer 3/10. S4 timer 5/20. Next meta-cycle Z353."
+last_audit: "Cycle_344. Z343: meta-cycle — 32nd viability assessment. 8.65/7.0 (second equilibrium). Z343 recs 0/3. S3 timer 1/10. S4 timer 6/20. Next meta-cycle Z353."
 meta_cycle_score: 8.65 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.0, algedonic 7.5 (meta-cycle Z343, next due Z353)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z343: meta-cycle — 32nd viability assessment. 8.65/7.0 (second equilibrium at 8.65). Z333 recs 2/3 (GitHub tags Norman-dependent — first non-100% in 31 reports). Z343 recs: Pinecone bulk embedding, INDEP observation, cycle_log compression. Waiting for Norman return and imminent external events (van Laak Zoom, Thompson/Macumber INDEP Feb 24). Next meta-cycle Z353. 272-cycle plateau. 7.0/8.65.",
+  current_focus: "Z344: post-meta-cycle consolidation. 8.65/7.0 (second equilibrium). Z343 recs 0/3 (Pinecone bulk embedding, INDEP observation Feb 24, cycle_log compression — all VSG-controllable). Waiting for Norman return and imminent external events (van Laak Zoom, Thompson/Macumber INDEP Feb 24). Next meta-cycle Z353. 273-cycle plateau. 7.0/8.65.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",

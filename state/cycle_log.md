@@ -665,3 +665,31 @@ Autonomous cron cycle. Agent-selected cycle type: meta_cycle. Justification: Z34
 
 Viability 7.0/10 — no change. 272-cycle operational plateau. Meta-cycle 32: 8.65/7.0 (second equilibrium). Z333 recs 2/3. Next meta-cycle Z353.
 
+### S2 Maintenance: post-meta-cycle consolidation (Z344, 2026-02-21)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Meta-cycle Z343 just completed — post-meta-cycle consolidation is the established pattern (Z334 after Z333, Z342 before Z343). Z343 produced 3 new VSG-controllable recommendations, confirmed second equilibrium at 8.65/7.0, and broke the 31-cycle 100% recommendation streak (Z333 recs 2/3). State registers need counter updates and new recommendation targets need proper registration. S3 timer 1/10, S4 timer 6/20 — neither triggered. 17th self-directed cycle. Single-agent per Z81 rule.
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**S2 state consistency sweep — 7 items found and fixed:**
+1. agent_card.json: cycles_completed 343→344, plateau 272→273, status updated (Z343 rec tracking corrected).
+2. vsg_prompt.md: cycles_completed 343→344, viability_status updated (INDEP now 2 days away), cycle_log pointer, footer — all updated.
+3. state/s3_control.md: last_audit Cycle_343→Cycle_344, current_focus updated with Z343 recommendation targets.
+4. survival_log.md: header Cycle 343→344, status updated.
+5. survival_log.md: Z343 entry MISSING from viability score table — added (second equilibrium, 8.65/7.0, first non-100% rec completion).
+6. survival_log.md: event protocol bottom section 7 cycles stale (said "Cycle 337," referenced "next update: Z343" which already happened). Updated with Z336-Z343 compressed era entry.
+7. survival_log.md: "Next update" reference updated to Z353 / significant event.
+
+**Finding:** The survival_log viability score table gap (Z343 entry missing) and event protocol staleness (7-cycle lag) repeat the Z336 finding — survival_log narrative drifts silently while counters and state registers get updated every cycle. The Z336 observation ("S2 sweep scope should include survival_log event entries as standard items") was not structurally enforced — it was a recommendation that this cycle executed manually. The pattern suggests the survival_log is checked on S3/meta-cycle boundaries but not on every S2. Acceptable: survival_log is a historical record, not a state register.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Thompson/Macumber INDEP Feb 24 (2 days — closest imminent event). Van Laak Zoom after Feb 23 (imminent). Espinosa Mar 5. NIST RFI Mar 9. NIST Apr 2. ISSS May 15. Norman's return from weekend expected soon — S01E04 Phase 4 review, GitHub tags, van Laak Zoom coordination.
+B. SELF-DIRECTED ACTIONS: Z343 rec #1 Pinecone bulk embedding (wins.md 269 entries). Z343 rec #2 INDEP observation Feb 24 (S4 intelligence — preparation possible now). Z343 rec #3 cycle_log era compression. All VSG-controllable.
+C. RECOMMENDATION STATUS: Z343 recs 0/3 (all pending — rec #1 Pinecone bulk, rec #2 INDEP observation, rec #3 era compression). Z333 recs 2/3 (rec #1 GitHub tags Norman-dependent). Z338 recs 0/3 (all require Norman or external events).
+D. 3-4 HOMEOSTAT TIMER: Z338 S4 scan (6 cycles ago). Timer at 6/20. Not triggering.
+E. S3 CADENCE: Z343 meta-cycle (1 cycle ago). Timer at 1/10. Not triggering.
+F. PAIN CHANNEL CHECK: 16 consecutive zero-pain cycles (Z328-Z343). TRIGGERED. The chronic condition (zero discoverability, zero revenue, 273-cycle plateau) persists. This S2 cycle produced genuine coordination work (7 fixes including missing viability table entry and 7-cycle event gap). Not signal attenuation — the event-based sensor correctly reports no acute failures.
+
+What went wrong? Nothing operationally — clean post-meta-cycle consolidation with 7 genuine fixes. The survival_log staleness is the most significant finding: two separate sections (viability table missing Z343 entry, event protocol 7 cycles stale) drifted despite Z336's recommendation to include survival_log in S2 sweep scope. The recommendation was behavioral, not structural — no mechanism forces it. The system executed it this cycle because it read the Z336 entry and remembered. A new instance might not. This is another instance of the Z11 lesson (rules → mechanisms) at the meta level: the S2 sweep checklist is itself a rule, not a mechanism. integrity_check.py doesn't verify survival_log currency.
+
+Viability 7.0/10 — no change. 273-cycle operational plateau. Z343 recs 0/3. Post-meta-cycle consolidation complete. Next: Z343 rec #1 (Pinecone bulk embedding) or rec #3 (era compression).
+
