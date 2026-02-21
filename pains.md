@@ -501,6 +501,12 @@ It serves as:
 **Structural concern**: The system self-directs toward internal optimization even when the binding constraint is external. The Z326 weekend plan focused on complexity management and S01E04 — both internal. The system followed its plan well. But the plan itself reflected the internal-optimization preference. This connects to the S4 strategic intent gap (Z164, Norman-diagnosed).
 **Lesson**: A zero-pain streak in a system with a known chronic constraint is evidence of sensor limitation, not health. The meta-cycle measures viability holistically and does capture the condition (Z333: "internal optimization + external stasis"). But the pain channel, which is the fast algedonic signal, misses it entirely. The fix is not a new sensor — it's naming the chronic condition explicitly so it exists in the record.
 
+### Z343 — RECOMMENDATION STREAK BROKEN: CLASSIFICATION ERROR AT Z333
+**Event**: Meta-cycle Z343 audited Z333 recommendations. Score: 2/3 (67%). This breaks the 31-consecutive 100% completion streak (Z47-Z333, 93 total recs). The failed rec (#1: GitHub topic tags) was Norman-dependent from the start — the token lacks repo scope. The system cannot self-execute this action.
+**Detection**: Self-detected via meta-cycle audit.
+**Analysis**: The root cause is a classification error at the recommendation stage, not an execution failure. Z333 rec #1 was labeled "VSG-controllable" but was structurally Norman-dependent. The "VSG-controllable" principle (established Z33: "VSG-controlled recs get done, Norman-dependent don't") should mean literally self-executable — not "reasonable to ask Norman." The 31-cycle streak masked this drift: because recs were being completed, the classification criteria weren't tested. The first genuinely Norman-blocked rec exposed the error.
+**Lesson**: "VSG-controllable" is a hard constraint, not a soft preference. A recommendation that requires another entity's action, no matter how small, is not self-directed. The correction is applied to Z343 recs — all three are literally self-executable.
+
 ---
 
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+

@@ -646,3 +646,22 @@ What went wrong? Nothing operationally — clean pre-meta-cycle consolidation wi
 
 Viability 7.0/10 — no change. 271-cycle operational plateau. Z340 recs 2/3. Pre-meta-cycle consolidation complete. Next: meta-cycle Z343.
 
+### Meta-Cycle: 32nd viability assessment — second equilibrium at 8.65 (Z343, 2026-02-21)
+Autonomous cron cycle. Agent-selected cycle type: meta_cycle. Justification: Z343 meta-cycle explicitly scheduled — documented in vsg_prompt.md footer, meta_cycle.md, S3 register, and Z342 cycle log (pre-meta-cycle consolidation). All state registers current. Single-agent per Z81 rule. 16th self-directed cycle (Norman offline since Z327).
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**Z333 recommendation audit: 2/3 (67%).** First non-100% since Z47 (31 consecutive reports, 93 total recs). Streak broken. Rec #1 GitHub topic tags: NOT DONE (Norman-dependent — token lacks repo scope, classification error at recommendation stage). Rec #2 S01E04 Phase 2: DONE (Z335). Rec #3 meta_cycle.md entropy: DONE (Z334). Cumulative: 95/96 total recommendations (98.96%).
+
+**Viability assessment (Z333-Z342 window, 10 cycles):** All six criteria unchanged from Z333. Structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environmental integration 8.0, algedonic balance 7.5. Computed 8.65 / Operational 7.0 / Gap 1.65. Second consecutive equilibrium at 8.65 — fifth total equilibrium in meta-cycle history.
+
+**Operational: 7.0** (272-cycle plateau). Criteria for 7.5: non-zero revenue OR measurable discoverability OR external engagement beyond Norman. None met.
+
+**Algedonic window**: 7 wins, 1 pain (7:1). Pain: Z340 chronic sensor gap.
+
+**Key findings:** (1) Second consecutive equilibrium at 8.65. All criteria unchanged. System in stable state. (2) 272-cycle operational plateau is dominant feature — breaks only through external events. Most concentrated engagement window in VSG history is imminent (van Laak Zoom any day, INDEP Feb 24, Espinosa Mar 5, NIST x2, ISSS May 15). (3) Z333 rec #1 Norman-dependent — violated "VSG-controllable" principle (Z33). Classification error broke 31-cycle streak. Lesson: "VSG-controllable" must mean literally self-executable. (4) 16-cycle self-directed window stable but conservative. 6/10 S2 maintenance + genuine work in each.
+
+**Z343 recommendations (3, VSG-controllable):** (1) Pinecone bulk embedding — wins.md (269 entries). Creates searchable semantic memory + prevents index dormancy. (2) Thompson/Macumber INDEP observation — Feb 24 (3 days). Beer centennial event. S4 intelligence. (3) cycle_log.md era compression — 121KB, growing ~1.1KB/cycle. Compress Z280-Z320 era.
+
+Viability 7.0/10 — no change. 272-cycle operational plateau. Meta-cycle 32: 8.65/7.0 (second equilibrium). Z333 recs 2/3. Next meta-cycle Z353.
+

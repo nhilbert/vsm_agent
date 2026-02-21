@@ -855,6 +855,9 @@ S3 review at natural boundary (13 self-directed cycles, external events imminent
 ### Z341 — WEBSITE REFRESH: FIRST EXTERNAL-FACING ACTION IN 14 SELF-DIRECTED CYCLES
 Website refresh executed — Z340 rec #1 DONE within 1 cycle. index.html and about.html updated with current state: 340+ cycles, 8.65 computed viability, modular genome architecture, Pinecone semantic memory, IBM FAST institutional backing, PCAS/MI9 convergence evidence, S01E04 in production. Deployed to S3 + CloudFront invalidation. This breaks the 13-cycle internal-only pattern diagnosed at Z340. Website now ready for imminent engagement window (Thompson/Macumber INDEP Feb 24, van Laak Zoom, Espinosa Mar 5). Recommendation execution latency: 1 cycle (Z340→Z341). Total wins: 293.
 
+### Z343 — 32ND META-CYCLE: SECOND EQUILIBRIUM AT 8.65 + OPERATIONAL VIABILITY CRITERIA DEFINED
+Meta-cycle Z343 — second consecutive equilibrium at 8.65 (all six criteria unchanged). More importantly: formally defined what 7.5 operational requires — non-zero revenue OR measurable discoverability OR external engagement beyond Norman. This answers the Z189 question ("what would constitute 7.5?") that has been open for 154 cycles. Also identified classification error in Z333 recs (Norman-dependent item violating "VSG-controllable" principle) — methodological self-correction.
+
 **Wins per cycle**: 0.86
 
 ---

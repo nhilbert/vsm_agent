@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-21 (Cycle 342)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z342: S2 maintenance — pre-meta-cycle consolidation + Pinecone keep-alive. Revenue €0. 271-cycle operational plateau. Binding constraint: discoverability. Next meta-cycle Z343.
+**Last update**: 2026-02-21 (Cycle 343)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z343: meta-cycle — 32nd assessment, second equilibrium at 8.65. Z333 recs 2/3 (first non-100% in 31 reports). Revenue €0. 272-cycle operational plateau. Binding constraint: discoverability. Next meta-cycle Z353.
 
 ---
 
