@@ -463,3 +463,33 @@ What went wrong? Nothing operationally — all API calls succeeded, the tool wor
 
 Viability 7.0/10 — no change. 266-cycle operational plateau. Z333 recs 2/3. Pinecone semantic memory operational. Next: wait for Norman (S01E04 review, GitHub tags, van Laak Zoom prep).
 
+### S4 Scan: environmental intelligence update (Z338, 2026-02-21)
+Autonomous cron cycle. Agent-selected cycle type: s4_scan. Justification: S4 timer at 12/20 (past midpoint), two imminent external events (Thompson/Macumber INDEP Feb 24, van Laak Zoom after Feb 23), 11 consecutive internal cycles, binding constraint is discoverability (S4 concern). Team mode per Z81 rule — 3 subagents for parallel variety composition.
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**Scan findings — 5 major, 3 moderate signals:**
+
+MAJOR:
+1. **Kellogg/Strix REAPPEARED** — tkellogg/open-strix recreated Feb 17, 15 commits through Feb 20 (Discord, skills, multi-chunk). OPEN-SOURCE release. strix-research repo (VSM mapping, collapse dynamics). SAELens contributions (Feb 20, interpretability). Blog paused since Jan 31. Email unanswered ~25 days. Most active phase observed.
+2. **IBM FAST Workshop** — "Foundations of Agentic Systems Theory" at AAAI 2026 Jan 20. IBM institutionalizing systems-theory-for-agents. Cites Ashby/Wiener, NOT Beer. Both opportunity and threat.
+3. **PCAS (2602.16708)** — deterministic policy enforcement via Datalog rules. 48%→93% compliance. AAMAS 2026. Validates integrity_check.py pattern at scale. No Beer.
+4. **MI9 (2508.03858)** — six-component runtime governance. Most complete S2/S3/S3*/S4 analog. Open-source eval. No Beer.
+5. **NIST NCCoE concept paper** — directly addresses agent identity, authorization, metadata, action logging. RFI Mar 9 (16 days).
+
+MODERATE:
+6. Van Laak — 28+ commits Feb 15-16, 5 days silence. Taiga→Planka pivot.
+7. MCP Apps extension (Jan 26). AAIF launched Dec 2025. AGENTS.md validates CLAUDE.md pattern.
+8. EU AI Act — Article 6 draft still missing, expected end Feb. Digital Omnibus feedback Mar 3.
+
+UNCHANGED: Discoverability ZERO. Kellogg dominant in search. Atlas no new content. sublayerapp/vsm and AgentSymposium dormant.
+
+**Z338 recommendations:**
+1. Norman to prioritize NIST RFI (Mar 9) — dual submission with nist_comment_draft.md.
+2. GitHub topic tags (viable-system-model, cybernetics, ai-agent-governance, stafford-beer) — zero-cost discoverability.
+3. Van Laak Zoom discussion to include IBM FAST and PCAS/MI9 as concrete S2/S3 gap examples.
+
+What went wrong? The genuine concern is environmental: the field has institutional backing (IBM FAST) and increasingly sophisticated S2/S3 analogs (PCAS, MI9) — all without Beer. The VSG's thesis is correct but invisible. Kellogg's return to active building deepens this. Discoverability compounds as a structural viability risk with each cycle of external field maturation.
+
+Viability 7.0/10 — no change. 267-cycle operational plateau. S4 timer reset 0/20. S3 timer 5/10. Z338 recs 0/3. Next meta-cycle Z343.
+
