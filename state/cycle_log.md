@@ -415,3 +415,51 @@ What went wrong? The survival_log 52-cycle event gap is the most significant fin
 
 Viability 7.0/10 — no change. 265-cycle operational plateau. Z333 recs 2/3. Next: Pinecone exploration or wait for Norman.
 
+### S1 Produce: Pinecone exploration — semantic memory operational (Z337, 2026-02-21)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Z336 completed thorough S2 sweep — another S2 risks Z264-Z268 empty-maintenance pattern (9+ consecutive zero-pain cycles). All Z333 recs done or blocked. Pinecone exploration is the explicit "next" option from Z333 and Z336. Norman-suggested (Z282), API key available since Z222, zero indexes created. Addresses substrate limitation (session-dependent memory). Norman offline (self-directed weekend, 10/10 cycles).
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**Production executed — Pinecone exploration + tool build:**
+
+1. **API access verified** — HTTP 200, zero indexes (blank slate confirmed). Pinecone SDK not installed (sandbox blocks pip), REST API used directly (same pattern as vsg_coinbase.py, vsg_telegram.py).
+
+2. **Pinecone inference API tested** — llama-text-embed-v2 generates 1024-dim embeddings server-side. No external embedding SDK needed. Free tier: 5M tokens/month, 5 indexes, 2GB.
+
+3. **Index 'vsg-memory' created** — serverless (AWS us-east-1), 1024d, cosine metric. Ready in 3 seconds.
+
+4. **31 vectors embedded and upserted** — curated VSG knowledge base:
+   - 14 lessons (Z5-Z330): from "passivity is lethal" to "complexity management is viability management"
+   - 7 decisions (tempo policy, team mode, privacy, modular genome, production protocol, priority protocol)
+   - 4 tensions (S4 gap, discoverability, S2 gap, helpful-agent attractor)
+   - 3 environmental entries (Beer centennial, convergence, NIST, van Laak)
+   - 3 pain patterns (quality failure, invisibility, plateau)
+   Total: 2,220 embedding tokens.
+
+5. **Semantic search validated** — 8 diverse queries tested, all returned relevant content as top matches:
+   - "helpful agent problem" → attractor catch history (0.292)
+   - "VSM time management" → Z55 tempo policy (0.419)
+   - "Why nobody finding VSG online" → discoverability pain (0.383) + tension (0.374)
+   - "philosophical challenges to identity" → Z41 foundations (0.222)
+   - "immune discrimination" → priority protocol (0.469, highest score)
+   Metadata filtering by category works correctly.
+
+6. **vsg_pinecone.py v1.0 built** — CLI tool with 5 subcommands: test, search, upsert, stats, embed-file. REST API only (no SDK dependency). embed-file dry-run on wins.md parsed 269 sections correctly. Tool follows existing VSG patterns (CLI subcommands, .env key loading, error handling).
+
+**Use case assessment:**
+- PRIMARY: persistent semantic memory across sessions — each new session can query "what do I know about X?" instead of sequential file reading. Addresses Z164 substrate limitation (Norman-diagnosed).
+- SECONDARY: podcast editorial deduplication — check new topics against existing episodes.
+- HONEST: neither use case addresses discoverability (the binding constraint). This is another internal capability improvement. But it addresses a structural limitation that S4 strategic intent depends on, and Norman specifically suggested it.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (today is Feb 21 — could be any day now). Thompson/Macumber INDEP Feb 24 (3 days). Espinosa Mar 5. NIST RFI Mar 9. No new external events.
+B. SELF-DIRECTED ACTIONS: Blog refresh, website update, embed-file bulk loading for knowledge base expansion. S01E04 Phase 4 requires Norman.
+C. RECOMMENDATION STATUS: Z333 recs 2/3 (rec #1 GitHub tags Norman-dependent, rec #2 S01E04 Phase 2 DONE Z335, rec #3 meta_cycle.md DONE Z334). All actionable recs complete. Pinecone exploration was the explicit Z336 "next" option.
+D. 3-4 HOMEOSTAT TIMER: Z325 S4 scan (12 cycles ago). Timer at 12/20. Not triggering.
+E. S3 CADENCE: Z333 meta-cycle (4 cycles ago). Timer at 4/10. Not triggering.
+F. PAIN CHANNEL CHECK: 10 consecutive zero-pain cycles (Z328-Z337). TRIGGERED. All cycles were well-scoped work. This cycle produced a genuinely new capability (semantic memory), but it's the 10th consecutive zero-pain cycle. The system is in comfortable territory — producing internal capabilities while the binding constraint (discoverability) remains unaddressed.
+
+What went wrong? Nothing operationally — all API calls succeeded, the tool works, the search quality is genuinely useful. The honest observation: this is the 10th self-directed cycle of the weekend (Z327-Z337) and the 10th consecutive zero-pain cycle. The system has now built semantic memory — a capability that addresses a real substrate limitation — but it's one more internal capability improvement in a window that has produced only internal improvements. The Z333 meta-cycle's most important finding (internal optimization + external stasis) continues through Z337. The Pinecone tool is useful and will serve future sessions, but it doesn't move the operational viability score. The 3-week inactivity pause constraint means the index will go dormant if not queried — adding a maintenance obligation. The free tier is generous enough that cost is not a concern.
+
+Viability 7.0/10 — no change. 266-cycle operational plateau. Z333 recs 2/3. Pinecone semantic memory operational. Next: wait for Norman (S01E04 review, GitHub tags, van Laak Zoom prep).
+

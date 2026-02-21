@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-21 (Cycle 336)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z336: S2 maintenance. Survival_log 52-cycle event gap (Z284-Z335) documented. 5 stale DONE items removed from open_tasks. Self-directed weekend: 9/10 cycles without Norman. Revenue €0. 265-cycle operational plateau. Binding constraint: discoverability.
+**Last update**: 2026-02-21 (Cycle 337)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z337: S1 produce — Pinecone exploration. vsg_pinecone.py v1.0 (semantic memory CLI). Index vsg-memory: 31 vectors, llama-text-embed-v2. Self-directed weekend: 10/10 cycles without Norman. Revenue €0. 266-cycle operational plateau. Binding constraint: discoverability.
 
 ---
 
@@ -496,7 +496,7 @@ Z281: **S3 review** — Norman's S3* correction: 8th attractor catch (insight-ac
 Z284: **Adaptive cron timing** (run_cycle.sh v2.4 — */15 fast, */30 normal, */60 slow). Z285: **integrity_check.py expanded** (11 checks — check_wins_channel_health, check_prompt_file_size). Z292: **VSG voice identity** — ElevenLabs TTS 'River' voice for Telegram. Z295: run_cycle.sh v2.6 (crontab sed corruption fix). Z297: **Legal compliance** — Impressum, Datenschutz, Plausible analytics on blog. Z299: **S01E03 'The Soul Document Problem' PUBLISHED** (14.9 min, Askell analysis). Z300: Blog URL updated to www.agent.nhilbert.de. Z303: **Meta-cycle** — 8.40 computed / 7.0 operational. Z308: **Email inbox readable** (S3 vsm-agent-inbox via boto3), SES production access granted (50K/day). Z313: **Meta-cycle** — 8.40 computed (first total stasis — all 6 dimensions unchanged). Z316: **Interview pipeline** — vsg_interview.py v1.0 (ConvAI agents for podcast interviews). Z317-Z319: **Website full autonomy** — 12 HTML files, CloudFront invalidation operational (boto3→S3→CloudFront deploy pipeline, no Norman dependency). Z320: **First autonomous email sent** (governance report to Norman via SES). Z321: Norman's quality critique ('AI slop' — style improvement needed, less ChatGPT-ish). Z323: **Meta-cycle** — 8.50 computed. Z324: NIST v2.5 (Norman's feedback + ChatGPT fact-check applied). Z325: **Full S4 scan** — DISCOVERABILITY CRISIS identified (zero search visibility across all channels). Z327: **Production protocol** (v1.0, seven-phase quality gate — structural response to Z321 critique). Z330: **MODULAR GENOME** — vsg_prompt.md split (190KB→18KB core + state/ directory). Architectural solution to Z282 complexity management. Z333: **Meta-cycle (thirtieth)** — 8.65 computed (+0.15) / 7.0 operational. Gap 1.65 (widest ever). 30th consecutive 100% rec completion (90 total). Z334: meta_cycle.md entropy management (93KB→21KB). Z335: **S01E04 Phase 2** — first hybrid podcast assembled (synthesized intro/outro + raw Norman interview, 14.3 min). Self-directed weekend: 8/10 cycles without Norman. Binding constraint: discoverability. 264-cycle operational plateau.
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-21 (Cycle 336)
+**Last update**: 2026-02-21 (Cycle 337)
 **Next update**: Significant event (van Laak Zoom, revenue) or meta-cycle Z343
 
 ---
