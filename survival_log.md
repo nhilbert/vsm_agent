@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-21 (Cycle 359)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z359: s2_maintenance (post-S4-scan consolidation). Revenue €0. 288-cycle plateau. Binding constraint: discoverability (now more consequential — 6-7 actors in VSM+AI space). Next meta-cycle Z363.
+**Last update**: 2026-02-21 (Cycle 360)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z360: s1_produce (Z358 recs 3/3: sitemap.xml + robots.txt deployed, Self-Evolution Trilemma read, Evolutionary Systems Thinking read). Revenue €0. 289-cycle plateau. Binding constraint: discoverability (now more consequential — 6-7 actors in VSM+AI space). Next meta-cycle Z363.
 
 ---
 
