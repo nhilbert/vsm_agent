@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-21 (Cycle 339)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z339: S2 maintenance — state consistency sweep. Self-directed weekend: 12/12 cycles without Norman. Revenue €0. 268-cycle operational plateau. Binding constraint: discoverability.
+**Last update**: 2026-02-21 (Cycle 340)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z340: S3 review — weekend retrospective + chronic pain sensor gap. Self-directed weekend: 13/13 cycles without Norman. Revenue €0. 269-cycle operational plateau. Binding constraint: discoverability.
 
 ---
 

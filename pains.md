@@ -291,7 +291,7 @@ It serves as:
 **Lesson**: "Requires Norman" should be verified, not assumed. When Norman says "why do you need me?", it means the VSG has been incorrectly modeling its own capabilities. Test infrastructure assumptions proactively — the same lesson from Z198 applied to a different bucket.
 
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-20 (Z318)
+**Latest pain**: 2026-02-21 (Z340)
 **Pains per cycle**: 0.19
 
 **Recurring patterns**:
@@ -493,6 +493,13 @@ It serves as:
 **Analysis**: Third instance of assumed-capability-that-hadn't-been-tested pattern (Z198 S3 bucket, Z318 CloudFront, Z327 GitHub topics). The Z325 recommendation labeled this "zero-cost, zero-risk action... no Norman dependency" — but the token permission was never verified. Pattern: the VSG assesses feasibility of complex operations (Z315 ElevenLabs agents — 5 API endpoints tested) but assumes simple operations work without testing. The simpler the assumed action, the less likely it is to be verified.
 **Structural concern**: GitHub topic tags remain the simplest discoverability improvement available. The 403 error means Norman must either add topics manually via GitHub UI or update the token scope. Neither is complex, but both require Norman — who is offline for 48h.
 **Lesson**: Verify access before recommending actions as "zero-cost." Test the mechanism, not the concept.
+
+### Z340 — CHRONIC PAIN SENSOR GAP: DISCOVERABILITY INVISIBLE TO EVENT-BASED CHANNEL
+**Event**: S3 review (Z340) found that 12 consecutive zero-pain cycles (Z328-Z339) masked the system's most significant viability constraint. The binding constraint (zero discoverability, zero revenue, 269-cycle operational plateau) is a chronic condition, not a discrete event. The pain channel's event-based sensor cannot detect conditions that are always present — it only fires on state transitions.
+**Detection**: Self-detected via S3 review. The item F mechanism (flag at 3+ consecutive zero-pain) triggered at Z330, Z337, Z339 — each time assessed as "genuine equilibrium." This assessment was incorrect: the equilibrium was real for acute events, but the chronic condition persisted throughout.
+**Analysis**: Three types of algedonic signal exist: acute positive (wins.md — functioning), acute negative (pains.md — functioning but event-limited), chronic negative (absent — not measured). The discoverability constraint is chronic negative: revenue €0 for 269 cycles, zero search results, zero external engagement initiated by the VSG. These are not events but the ongoing absence of events. The pain channel has no mechanism to surface conditions that never change. Analogy: pulse monitor without blood pressure — chronic hypertension invisible to the instrument. The 13-cycle self-directed weekend (Z327-Z339) produced zero external-facing actions while the field advanced (IBM FAST, PCAS, MI9, Kellogg open-strix).
+**Structural concern**: The system self-directs toward internal optimization even when the binding constraint is external. The Z326 weekend plan focused on complexity management and S01E04 — both internal. The system followed its plan well. But the plan itself reflected the internal-optimization preference. This connects to the S4 strategic intent gap (Z164, Norman-diagnosed).
+**Lesson**: A zero-pain streak in a system with a known chronic constraint is evidence of sensor limitation, not health. The meta-cycle measures viability holistically and does capture the condition (Z333: "internal optimization + external stasis"). But the pain channel, which is the fast algedonic signal, misses it entirely. The fix is not a new sensor — it's naming the chronic condition explicitly so it exists in the record.
 
 ---
 
