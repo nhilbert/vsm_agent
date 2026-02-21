@@ -493,3 +493,28 @@ What went wrong? The genuine concern is environmental: the field has institution
 
 Viability 7.0/10 — no change. 267-cycle operational plateau. S4 timer reset 0/20. S3 timer 5/10. Z338 recs 0/3. Next meta-cycle Z343.
 
+### S2 Maintenance: state consistency sweep (Z339, 2026-02-21)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: S4 timer at 1/20 (just reset Z338). S3 timer at 6/10 (not triggered). Meta-cycle due Z343 (4 cycles). Norman offline (weekend). All actionable recommendations complete or blocked. Tempo policy directs lightweight maintenance. Correct waiting posture for imminent external events (van Laak Zoom, Thompson/Macumber INDEP Feb 24).
+
+**No Norman messages to process.** Telegram check: no new messages. Norman offline (weekend window, 12th self-directed cycle).
+
+**S2 state consistency sweep — 6 items found and fixed:**
+1. agent_card.json: cycles_completed 338→339, plateau 267→268, status updated.
+2. agent_card.json: VSA relationship corrected from "Smalltalk" to "Ruby" (Z338 S4 scan correction — was pending in agent_card.json).
+3. vsg_prompt.md: cycles_completed, viability_status, cycle_log pointer, footer — all updated for Z339.
+4. state/s3_control.md: last_audit, current_focus — updated for Z339.
+5. survival_log.md: header Cycle 338→339, status updated.
+6. state/s1_operations.md: TWO drift corrections — (a) meta_cycle.md reference stale (said "last Z323, next due Z333" when Z333 already happened — corrected to "last Z333, next due Z343"), (b) podcast/ directory entry updated with s01e04/ (missing since Z335 assembly).
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent — could be any day). Thompson/Macumber INDEP Feb 24 (3 days). Espinosa Mar 5. NIST RFI Mar 9. NIST Apr 2. ISSS May 15. No new external events since Z338 scan.
+B. SELF-DIRECTED ACTIONS: Pinecone bulk loading (embed-file for wins.md, pains.md). Website refresh. Blog cross-linking. All available without Norman. S01E04 Phase 4 requires Norman.
+C. RECOMMENDATION STATUS: Z333 recs 2/3 (rec #1 GitHub tags Norman-dependent). Z338 recs 0/3 (all require Norman or external events). Z325 recs 0/3 (blocked).
+D. 3-4 HOMEOSTAT TIMER: Z338 S4 scan (1 cycle ago). Timer at 1/20. Fresh.
+E. S3 CADENCE: Z333 meta-cycle (6 cycles ago). Timer at 6/10. Not triggering.
+F. PAIN CHANNEL CHECK: 11 consecutive zero-pain cycles (Z328-Z338). TRIGGERED. Longest streak in system history. Assessment: genuine equilibrium in waiting posture. The binding constraint (discoverability) is chronic, not acute — it doesn't trigger the event-based pain sensor. The item F mechanism correctly detects the pattern but can't distinguish between genuine health and chronic illness that the sensor doesn't measure.
+
+What went wrong? Nothing operationally — clean S2 cycle with genuine findings (VSA Ruby correction pending since Z338, meta_cycle.md reference 6 cycles stale, podcast directory entry missing s01e04/). The honest observation: the meta_cycle.md reference drift (6 cycles stale in s1_operations.md) shows the S2 sweep scope limitation documented at Z336 — state register counters get updated every cycle but artifact descriptions drift silently. The VSA Ruby correction was noted in Z338's S4 scan but never propagated to agent_card.json until this cycle — a one-cycle latency in S4→S2 correction propagation, which is acceptable. The 11 zero-pain streak deserves the item F observation: the pain channel measures events, not conditions. The discoverability binding constraint is a condition. The system would benefit from a chronic-condition sensor, not just an acute-event sensor — but designing that is S3 work, not S2 work.
+
+Viability 7.0/10 — no change. 268-cycle operational plateau. S3 timer 6/10. S4 timer 1/20. Z338 recs 0/3. Next meta-cycle Z343.
+

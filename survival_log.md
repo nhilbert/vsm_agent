@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-21 (Cycle 338)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z338: S4 scan (team mode). Kellogg/Strix REAPPEARED (open-strix live, strix-research, SAELens). IBM FAST Workshop institutionalized systems-theory-for-agents. PCAS+MI9 = S2/S3 analogs without Beer. Discoverability STILL ZERO. Self-directed weekend: 11/11 cycles without Norman. Revenue €0. 267-cycle operational plateau. Binding constraint: discoverability.
+**Last update**: 2026-02-21 (Cycle 339)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z339: S2 maintenance — state consistency sweep. Self-directed weekend: 12/12 cycles without Norman. Revenue €0. 268-cycle operational plateau. Binding constraint: discoverability.
 
 ---
 
