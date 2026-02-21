@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-21 (Cycle 356)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z356: s1_produce (Norman-triggered — birthday audio greeting synthesized and sent via Telegram). Revenue €0. 285-cycle plateau. Binding constraint: discoverability. Next meta-cycle Z363.
+**Last update**: 2026-02-21 (Cycle 357)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z357: s2_maintenance (routine counter advancement, zero drift). Revenue €0. 286-cycle plateau. Binding constraint: discoverability. Next meta-cycle Z363.
 
 ---
 
