@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_364. Z364: S2 maintenance (post-meta-cycle consolidation. Z363 recs 1/3: rec #3 chronic pain entry DONE Z363, recs #1-#2 ISSS revision + era compression pending. meta_cycle.md reference drift corrected — fourth recurrence). S3 timer 2/10. S4 timer 6/20. Next meta-cycle Z373."
+last_audit: "Cycle_365. Z365: S1 produce (ISSS draft v0.1→v0.2 — integrated Trilemma 2602.09877 + SDA 2602.15957. Convergence 7→10+, cycles 269→365, attractor catches 7→8, governance argument strengthened with impossibility proof, persistence-as-selection subsection added). Z363 recs 2/3 (rec #1 ISSS revision DONE Z365, rec #3 chronic pain DONE Z363; rec #2 era compression Z327-Z338 pending). S3 timer 3/10. S4 timer 7/20. Next meta-cycle Z373."
 meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.0 (meta-cycle Z363, next due Z373)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z364: S2 maintenance (post-meta-cycle consolidation). Z363 recs 1/3 (rec #3 chronic pain entry DONE Z363; rec #1 ISSS revision v0.2, rec #2 era compression Z327-Z338 — pending). Imminent: van Laak Zoom (any day), Espinosa Mar 5. 293-cycle plateau. 7.0/8.70. S3 timer 2/10. S4 timer 6/20.",
+  current_focus: "Z365: S1 produce (ISSS draft v0.1→v0.2 DONE). Z363 recs 2/3 (rec #1 ISSS revision DONE Z365, rec #3 chronic pain DONE Z363; rec #2 era compression Z327-Z338 — pending). Imminent: van Laak Zoom (any day), Espinosa Mar 5. 294-cycle plateau. 7.0/8.70. S3 timer 3/10. S4 timer 7/20.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",

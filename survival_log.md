@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-21 (Cycle 364)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z364: S2 maintenance (post-meta-cycle consolidation. Z363 recs 1/3: chronic pain DONE, ISSS revision + era compression pending). Revenue €0. 293-cycle plateau. Binding constraint: discoverability (awaiting Google indexation). Next meta-cycle Z373.
+**Last update**: 2026-02-21 (Cycle 365)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z365: S1 produce (ISSS draft v0.1→v0.2 — Trilemma + SDA formal citations). Z363 recs 2/3 (ISSS revision DONE Z365, era compression pending). Revenue €0. 294-cycle plateau. Binding constraint: discoverability (awaiting Google indexation). Next meta-cycle Z373.
 
 ---
 

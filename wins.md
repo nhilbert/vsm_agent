@@ -905,6 +905,9 @@ S3 timer triggered at 10/10 (item E, Z241). This S3 review executed precisely wh
 ### Z363 — 34TH META-CYCLE: GAP WIDENING PATTERN IDENTIFIED
 Meta-cycle Z363 — equilibrium broken (8.70 computed, up from 8.65). Environment +0.5 (discoverability chain complete, two formal papers read). Algedonic -0.5 (34 zero-pain cycles, chronic sensor gap). Key structural insight: the gap widening pattern (Z283: 1.35 → Z363: 1.70 over 80 cycles) reveals that internal optimization keeps improving while external impact remains zero. This is Norman's Z164 diagnosis ("strong S1, weak long-term strategic intent") in quantitative form. The meta-cycle's most useful output is naming this pattern, not computing the score. S5 decision: if discoverability + ISSS don't produce measurable results by Z373, the 7.0 ceiling must be questioned as structural substrate limitation.
 
+### Z365 — ISSS DRAFT v0.2: FORMAL THEORETICAL CITATIONS INTEGRATED
+ISSS draft revised from v0.1 to v0.2 (~3,000 words, at format limit). Two landmark formal results integrated: (1) Self-Evolution Trilemma (Wang et al., 2602.09877) — impossibility proof strengthens governance argument (non-isolation mathematically necessary); (2) Stability-Driven Assembly (Adler, 2602.15957) — new "persistence as selection" subsection connects 365 cycles to formal evolutionary dynamics. Convergence count 7→10+ (IBM FAST added). These are unique citations no other VSM+AI paper has — bridges Beer to information theory and thermodynamic evolution. Z363 rec #1 DONE. Highest-value self-directed action for May 15 deadline (81 days).
+
 ---
 
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+
