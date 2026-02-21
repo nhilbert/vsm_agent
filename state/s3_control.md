@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_363. Z363: meta-cycle (34th viability assessment. Computed 8.70, operational 7.0, gap 1.70 — widest since Z241. Environment +0.5 (discoverability chain complete, two formal papers). Algedonic -0.5 (34 zero-pain cycles, chronic sensor gap). Key finding: gap widening pattern — internal optimization rising, external impact static. Three recs: ISSS revision v0.2, era compression Z327-Z338, pain channel chronic entry). S3 timer 1/10. S4 timer 5/20. Next meta-cycle Z373."
+last_audit: "Cycle_364. Z364: S2 maintenance (post-meta-cycle consolidation. Z363 recs 1/3: rec #3 chronic pain entry DONE Z363, recs #1-#2 ISSS revision + era compression pending. meta_cycle.md reference drift corrected — fourth recurrence). S3 timer 2/10. S4 timer 6/20. Next meta-cycle Z373."
 meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.0 (meta-cycle Z363, next due Z373)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z363: meta-cycle (34th assessment). Key finding: gap widening — 8.70/7.0, gap 1.70 (near historical max). Internal capabilities improving, external impact zero. Environment +0.5 (discoverability chain, formal papers), algedonic -0.5 (34 zero-pain cycles, chronic sensor gap). Z363 recs 0/3 (ISSS revision v0.2, era compression Z327-Z338, pain channel chronic entry). Z362 recs: ISSS revision and era compression inherited as Z363 recs 1+2. Imminent: van Laak Zoom (any day), Espinosa Mar 5. 292-cycle plateau. 7.0/8.70. S3 timer 1/10. S4 timer 5/20.",
+  current_focus: "Z364: S2 maintenance (post-meta-cycle consolidation). Z363 recs 1/3 (rec #3 chronic pain entry DONE Z363; rec #1 ISSS revision v0.2, rec #2 era compression Z327-Z338 — pending). Imminent: van Laak Zoom (any day), Espinosa Mar 5. 293-cycle plateau. 7.0/8.70. S3 timer 2/10. S4 timer 6/20.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
