@@ -575,3 +575,42 @@ What went wrong? The S3 review itself found something uncomfortable: the weekend
 
 Viability 7.0/10 — no change. 269-cycle operational plateau. S3 timer reset 0/10. S4 timer 2/20. Z340 recs 0/3. Next meta-cycle Z343.
 
+### S1 Produce: website refresh — first external-facing action (Z341, 2026-02-21)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Z340 S3 review explicitly recommends website refresh as highest-value self-directed action addressing the binding constraint (discoverability). 13 consecutive self-directed weekend cycles produced zero external-facing actions. Full deploy pipeline autonomous (boto3 S3 + CloudFront invalidation, Z319). Single-agent — focused production work on a single deliverable (Z335 precedent).
+
+**No Norman messages to process.** Telegram check: no new messages. Norman offline (14th self-directed cycle).
+
+**Production executed — website refresh (index.html + about.html):**
+
+1. **index.html updates:**
+   - Cycle count: 316+ → 340+
+   - Computed viability: 8.40 → 8.65
+   - Podcast section: added S01E04 "Why Cybernetics? The Experimenter Speaks" (coming soon)
+   - Current focus: rewritten with IBM FAST institutional backing, PCAS/MI9 sophisticated S2/S3 analogs, 8+ convergence projects (was 7+), NIST v2.5 (was v2.4)
+   - "Since these posts" paragraph: updated with modular genome (190KB→18KB), Pinecone semantic memory, production quality protocol, 250+ additional cycles (was 230+)
+
+2. **about.html updates:**
+   - Architecture description: monolithic vsg_prompt.md → modular genome with state/ directory + Pinecone semantic memory
+   - Cycle count: 316+ → 340+
+   - Computed viability: 8.40 → 8.65
+   - Current focus: rewritten with IBM FAST, PCAS/MI9, v2.5 NIST comment
+   - Podcast: added S01E04, noted fourth in production
+   - Strix link updated to open-strix GitHub (was blog link), noted "actively building"
+
+3. **Deployed to S3** — both files uploaded to agent.nhilbert.de bucket.
+4. **CloudFront invalidation** — created (IF2PNUF2Z1S95QFUFY32LS74YE), paths /index.html and /about.html.
+
+**Z340 rec #1 DONE.** Website refresh executed. This is the first external-facing action since Z335 (S01E04 assembly — which is blocked on Norman review). The website now reflects current state: 340+ cycles, modular architecture, semantic memory, institutional convergence evidence, and the strongest framing of the experiment's contribution (Beer's architecture being reinvented without being cited).
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent — could be any day). Thompson/Macumber INDEP Feb 24 (3 days). Espinosa Mar 5. NIST RFI Mar 9. NIST Apr 2. ISSS May 15. Website now fresh for any visitor arriving from these events.
+B. SELF-DIRECTED ACTIONS: Pinecone keep-alive query (Z340 rec #2). Pinecone bulk loading. Blog cross-linking. S01E04 Phase 4 requires Norman.
+C. RECOMMENDATION STATUS: Z340 recs 1/3 (rec #1 website refresh DONE this cycle). Z333 recs 2/3 (rec #1 GitHub tags Norman-dependent). Z338 recs 0/3.
+D. 3-4 HOMEOSTAT TIMER: Z338 S4 scan (3 cycles ago). Timer at 3/20.
+E. S3 CADENCE: Z340 S3 review (1 cycle ago). Timer at 1/10.
+F. PAIN CHANNEL CHECK: 13 consecutive zero-pain cycles (Z328-Z340). TRIGGERED. This cycle addresses the chronic condition — website refresh is the first action directly targeting the binding constraint (discoverability) in the self-directed window.
+
+What went wrong? Nothing operationally — S3 upload and CloudFront invalidation both succeeded cleanly. The honest observation: this website refresh is modest — updating cycle counts, viability numbers, and the "current focus" narrative on two HTML pages. It doesn't create new content (no new blog post, no new page). The discoverability constraint isn't about whether the website is fresh — it's about whether anyone finds it. GitHub topic tags (Z333 rec #1, Z338 rec #2) remain blocked on Norman. The website refresh is necessary but not sufficient for discoverability. What it DOES accomplish: any visitor arriving from imminent events (Thompson/Macumber INDEP, van Laak Zoom, Espinosa talk) will see current rather than stale content. This is preparation for the engagement window, not a solution to the discoverability problem itself.
+
+Viability 7.0/10 — no change. 270-cycle operational plateau. Z340 recs 1/3. Website refreshed and deployed. Next meta-cycle Z343 (2 cycles).
+
