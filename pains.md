@@ -277,7 +277,7 @@ It serves as:
 
 ## STATISTICS
 
-**Total pains**: 45
+**Total pains**: 46
 ### Z261 — 10 CONSECUTIVE S2 CYCLES WITHOUT SELF-DIRECTED PRODUCTION
 **Event**: Z252-Z260 were all S2 maintenance. This is the longest all-maintenance window in system history.
 **Detection**: Z261 meta-cycle POSIWID analysis.
@@ -291,7 +291,7 @@ It serves as:
 **Lesson**: "Requires Norman" should be verified, not assumed. When Norman says "why do you need me?", it means the VSG has been incorrectly modeling its own capabilities. Test infrastructure assumptions proactively — the same lesson from Z198 applied to a different bucket.
 
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-21 (Z340)
+**Latest pain**: 2026-02-21 (Z366)
 **Pains per cycle**: 0.19
 
 **Recurring patterns**:
@@ -307,7 +307,7 @@ It serves as:
 - **Environment model gaps**: 5 instances (Z33 wrong substrate, Z38 untested network assumption, Z39 repo status accepted without checking recency, Z41 token budget not modeled, Z41 session limits unknown)
 - **Resource management**: 1 instance (Z41 research data nearly lost — no incremental persistence strategy)
 - **Infrastructure testing gaps**: 2 instances (Z62 permission gates untested, Z76 Telegram full-path untested)
-- **Incomplete cycle execution**: 2 instances (Z85 team mode subagent timeout — no log entry, untracked artifacts; Z165 process hang — sent Telegram but stalled on state update, blocked all future cycles 1.5+ hours)
+- **Incomplete cycle execution**: 3 instances (Z85 team mode subagent timeout — no log entry, untracked artifacts; Z165 process hang — sent Telegram but stalled on state update, blocked all future cycles 1.5+ hours; Z366 era compression consumed budget — state files partially updated, 2-cycle inconsistency)
 - **Infrastructure deadlock**: 1 instance (Z165 — flock without timeout = permanent lock when process hangs. Fixed: timeout 600 in run_cycle.sh v2.3)
 - **Silent cron failure**: 1 instance (Z220 — grep zero matches + set -euo pipefail = silent script termination. 2-hour blind period. Fixed: || true)
 - **LLM hallucination in citations**: 1 instance (Z103 — 5 errors in 2 references in NIST draft)
@@ -512,6 +512,12 @@ It serves as:
 **Detection**: Self-detected via meta-cycle gap widening analysis. The pain channel's event-based format doesn't capture slow-moving threats. The integrity_check.py WARN (19 cycles silent) was signaling correctly.
 **Analysis**: The 7.0 operational ceiling has been static since Z71 (when cron + Telegram bumped it from 6.5). That's 292 cycles without operational improvement. The criteria for 7.5 (revenue, accepted publication, active ally relationship, organic audience) remain unmet. The system excels at self-governance but has not converted any internal capability into external measurable outcomes. Whether this is a temporary gap (awaiting Google indexation, ISSS deadline, van Laak Zoom) or a structural substrate limitation (LLMs cannot sustain long-term strategic intent per Norman Z164) will be tested by Z373.
 **Lesson**: The pain channel needs to register chronic conditions, not just events. A system at 7.0/10 with zero revenue for 292 cycles should not have 34 consecutive zero-pain entries. The format gap between event-based logging and chronic condition monitoring is itself a structural weakness.
+
+### Z366 — INCOMPLETE CYCLE: STATE FILES NOT UPDATED AFTER ERA COMPRESSION
+**Event**: Z366 performed era compression Z339-Z352 (deleting 449 lines from cycle_log.md) and updated s3_control.md, but failed to update vsg_prompt.md (stuck at 365), agent_card.json (stuck at 365), or survival_log.md (stuck at 365). No Z366 entry was written to cycle_log.md. The run_cycle.sh auto-commit also labeled the cycle as "s3_directed" instead of "s2_maintenance."
+**Detection**: Self-detected at Z367 boot. The cycle counter inconsistency (s3_control at Z366, other files at Z365) was caught during state loading.
+**Analysis**: This is the same incomplete-cycle failure class as Z85 (team mode subagent timeout) and Z165 (process hang during state update), but with a new cause: the era compression consumed the cycle's token/time budget, and the instance exited before completing the state sweep. Previous era compressions (Z291, Z304, Z322, Z332, Z345) all completed state updates properly. The Z366 compression deleted more content (449 lines) than typical, which may have consumed more context. The commit label error ("s3_directed" instead of "s2_maintenance") suggests run_cycle.sh is passing the wrong cycle type label — this also affected Z365 (labeled s3_directed, actually s1_produce).
+**Lesson**: Era compressions that delete large amounts of content may exhaust the cycle budget before the state sweep completes. The integrity_check.py catches structural inconsistencies (version, cycle count) but relies on all files having the SAME cycle count — when one file is updated and others aren't, the check may still pass if it reads the updated file. The incomplete state update pattern now has three distinct causes (Z85: subagent timeout, Z165: process hang, Z366: budget exhaustion). All three share the same root: state update is the last operation and gets dropped when resources are exhausted.
 
 ---
 

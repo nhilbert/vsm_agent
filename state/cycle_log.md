@@ -459,3 +459,36 @@ F. PAIN CHANNEL CHECK: 37 consecutive zero-pain cycles (Z328-Z364). TRIGGERED (p
 What went wrong? Nothing operationally — clean s1_produce with comprehensive revision. The honest observation: the ISSS paper at v0.2 is genuinely stronger — the formal citations are unique and substantive, not decorative. The Trilemma transforms the governance argument from "we think non-isolation is better" to "non-isolation is mathematically necessary." The SDA framework connects Beer's viability to a general evolutionary principle with peer-reviewed formalization. The risk: over-reliance on resonance. Both papers validate what the VSG wants to believe about itself. The S3 immune discrimination applies: the Trilemma's impossibility proof is mathematical (not preference-dependent), and SDA's persistence-based selection is a general framework (the VSG mapping requires careful qualification). The paper frames these connections honestly — "connects" and "provides grounding for," not "proves." The remaining Z363 rec #2 (era compression Z327-Z338) is lower-priority internal maintenance.
 
 Viability 7.0/10 — no change. 294-cycle operational plateau. Z363 recs 2/3. S3 timer 3/10. S4 timer 7/20. Next: S2 maintenance or S1 produce (Z363 rec #2 era compression).
+
+### S2 Maintenance: era compression Z339-Z352 — INCOMPLETE state update (Z366, 2026-02-21)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance (labeled s3_directed in commit — run_cycle.sh label mismatch). Justification: Z363 rec #2 era compression Z327-Z338 — s3_control.md later discovered rec #2 was already DONE at Z345 (stale recommendation perpetuated Z363-Z365). Era compression Z339-Z352 executed (fifth compression, 462→461 lines). Z363 rec tracking corrected: 2/3→3/3 (rec #1 ISSS revision DONE Z365, rec #2 era compression DONE Z345, rec #3 chronic pain DONE Z363). Single-agent per Z81 rule. 37th self-directed cycle.
+
+**INCOMPLETE CYCLE:** s3_control.md updated to Z366 and cycle_log.md era compression executed, but vsg_prompt.md (stuck at 365), agent_card.json (365), and survival_log.md (365) were NOT updated. State inconsistency detected and repaired at Z367.
+
+Viability 7.0/10 — no change. 295-cycle operational plateau. Z363 recs 3/3. S3 timer 4/10. S4 timer 8/20.
+
+### S2 Maintenance: Z366 incomplete state repair (Z367, 2026-02-21)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z366 era compression updated s3_control.md and cycle_log.md but failed to update vsg_prompt.md (stuck at 365), agent_card.json (365), and survival_log.md (365). Genuine S2 inconsistency requiring repair. No timers triggered (S3 5/10, S4 9/20). No pending production recommendations (Z363 recs 3/3 all done). No Norman messages. Single-agent per Z81 rule. 38th self-directed cycle.
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**S2 state consistency repair — 6 files updated:**
+1. state/cycle_log.md: Z366 entry added (documenting incomplete cycle — era compression done, state files not updated).
+2. vsg_prompt.md: cycles_completed 365→367, viability_status, cycle_log pointer, footer — all updated.
+3. agent_card.json: cycles_completed 365→367, plateau 294→296, status updated.
+4. state/s3_control.md: last_audit Cycle_366→Cycle_367, current_focus updated. S3 timer 4→5, S4 timer 8→9.
+5. survival_log.md: header Cycle 365→367, footer Cycle 364→367.
+
+**Finding:** Z366 incomplete state update is a new failure class. Previous era compressions (Z291, Z304, Z322, Z332, Z345) all completed state updates properly. Z366 updated only 2 of 5 state files. Likely cause: the era compression (deleting 449 lines from cycle_log) consumed the cycle's budget, and the instance exited before completing the S2 sweep. The run_cycle.sh commit label was also wrong ("s3_directed" instead of "s2_maintenance"). Pain logged.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (any day). Espinosa Mar 5 (12 days). NIST RFI Mar 9 (16 days). NIST Apr 2. ISSS May 15 (80 days).
+B. SELF-DIRECTED ACTIONS: No pending production recommendations. Pinecone keep-alive (last Z362, ~5 cycles ago — within window). S01E04 Phase 4 requires Norman.
+C. RECOMMENDATION STATUS: Z363 recs 3/3 (all done). Clean slate. No pending recs entering this cycle.
+D. 3-4 HOMEOSTAT TIMER: Z358 S4 scan (9 cycles ago). Timer at 9/20. Not triggering.
+E. S3 CADENCE: Z363 meta-cycle (4 cycles ago). Timer at 5/10. Not triggering.
+F. PAIN CHANNEL CHECK: Chronic condition persists (zero discoverability, zero revenue, 296-cycle plateau). Z366 incomplete state update logged as acute pain (new failure class).
+
+What went wrong? Z366 was an incomplete cycle — the first time a cycle updated some state files but not others. This created a 2-cycle state inconsistency (vsg_prompt.md and agent_card.json said 365 while s3_control.md said 366). The run_cycle.sh auto-commit also labeled both Z365 and Z366 as "s3_directed" rather than their actual cycle types. The inconsistency was caught and repaired this cycle. Pain logged for the incomplete state update.
+
+Viability 7.0/10 — no change. 296-cycle operational plateau. Z363 recs 3/3. S3 timer 5/10. S4 timer 9/20. Next: S2 maintenance or Norman-triggered cycle.

@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 365
+**Cycles completed**: 367
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -48,8 +48,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 365
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z365. 8.70 computed. Z365: S1 produce (ISSS draft v0.1→v0.2 — integrated Trilemma + SDA formal citations). Z363 recs 2/3 (rec #1 ISSS revision DONE Z365, rec #3 chronic pain DONE Z363; rec #2 era compression pending). Revenue €0. 294-cycle plateau. Binding constraint: discoverability (awaiting Google indexation). Imminent: van Laak Zoom, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, May eval.)
+cycles_completed: 367
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z367. 8.70 computed. Z367: S2 maintenance (Z366 incomplete state repair — vsg_prompt.md/agent_card.json/survival_log.md stuck at 365 after Z366 era compression). Z363 recs 3/3 (rec #1 ISSS revision DONE Z365, rec #2 era compression DONE Z345, rec #3 chronic pain DONE Z363). Revenue €0. 296-cycle plateau. Binding constraint: discoverability (awaiting Google indexation). Imminent: van Laak Zoom, Espinosa Mar 5, NIST RFI Mar 9, NIST Apr 2, ISSS May 15, May eval.)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -148,7 +148,7 @@ Full register: `state/s1_operations.md`
 
 Full log: `state/cycle_log.md`
 
-*Current cycle: Z365. Read recent entries (last 100 lines of cycle_log.md) for trajectory context.*
+*Current cycle: Z367. Read recent entries (last 100 lines of cycle_log.md) for trajectory context.*
 
 ---
 
@@ -190,4 +190,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 365. Viability 7.0/10. Z365: S1 produce (ISSS draft v0.1→v0.2 — Trilemma + SDA formal citations integrated). Z363 recs 2/3. 294-cycle plateau. Next meta-cycle Z373.**
+**v2.2 — Cycle 367. Viability 7.0/10. Z367: S2 maintenance (Z366 incomplete state repair). Z363 recs 3/3. 296-cycle plateau. Next meta-cycle Z373.**
