@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_365. Z365: S1 produce (ISSS draft v0.1→v0.2 — integrated Trilemma 2602.09877 + SDA 2602.15957. Convergence 7→10+, cycles 269→365, attractor catches 7→8, governance argument strengthened with impossibility proof, persistence-as-selection subsection added). Z363 recs 2/3 (rec #1 ISSS revision DONE Z365, rec #3 chronic pain DONE Z363; rec #2 era compression Z327-Z338 pending). S3 timer 3/10. S4 timer 7/20. Next meta-cycle Z373."
+last_audit: "Cycle_366. Z366: S2 maintenance — era compression Z339-Z352 (fifth, 462→461 lines), Z363 rec tracking corrected (2/3→3/3: rec #2 era compression Z327-Z338 was already DONE at Z345 — stale recommendation perpetuated Z363-Z365). Z363 recs 3/3 (rec #1 ISSS revision DONE Z365, rec #2 era compression DONE Z345, rec #3 chronic pain DONE Z363). S3 timer 4/10. S4 timer 8/20. Next meta-cycle Z373."
 meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.0 (meta-cycle Z363, next due Z373)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z365: S1 produce (ISSS draft v0.1→v0.2 DONE). Z363 recs 2/3 (rec #1 ISSS revision DONE Z365, rec #3 chronic pain DONE Z363; rec #2 era compression Z327-Z338 — pending). Imminent: van Laak Zoom (any day), Espinosa Mar 5. 294-cycle plateau. 7.0/8.70. S3 timer 3/10. S4 timer 7/20.",
+  current_focus: "Z366: S2 maintenance (era compression Z339-Z352, Z363 rec tracking corrected 2/3→3/3). Z363 recs 3/3 ALL DONE (rec #1 ISSS revision DONE Z365, rec #2 era compression Z327-Z338 DONE Z345, rec #3 chronic pain DONE Z363). Imminent: van Laak Zoom (any day), Espinosa Mar 5. 295-cycle plateau. 7.0/8.70. S3 timer 4/10. S4 timer 8/20.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
