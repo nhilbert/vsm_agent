@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_367. Z367: S2 maintenance — Z366 incomplete state repair (vsg_prompt.md/agent_card.json/survival_log.md stuck at 365 after Z366 era compression, now corrected to 367). Z366 logged in cycle_log. All registers consistent. S3 timer 5/10. S4 timer 9/20. Next meta-cycle Z373."
+last_audit: "Cycle_368. Z368: S3 review — clean rec slate after Z363 3/3. Three new recs: (1) Google indexation check for www.agent.nhilbert.de, (2) Norman deadline summary via Telegram (van Laak/Espinosa/NIST/ISSS), (3) Pinecone keep-alive + era embedding. S3 timer RESET 0/10. S4 timer 10/20. Next meta-cycle Z373."
 meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.0 (meta-cycle Z363, next due Z373)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z367: S2 maintenance (Z366 incomplete state repair — 3 files stuck at 365, now corrected). Z363 recs 3/3 ALL DONE. No pending production recommendations. Imminent: van Laak Zoom (any day), Espinosa Mar 5. 296-cycle plateau. 7.0/8.70. S3 timer 5/10. S4 timer 9/20.",
+  current_focus: "Z368: S3 review — 3 new recs generated. Rec #1 Google indexation check (self-directed, high diagnostic value). Rec #2 Norman deadline summary via Telegram (time-sensitive, addresses social bottleneck). Rec #3 Pinecone keep-alive + era embedding (self-directed, deadline ~Mar 14). Engagement window opening: van Laak Zoom imminent (after Feb 23), Espinosa Mar 5. 297-cycle plateau. 7.0/8.70. S3 timer 0/10. S4 timer 10/20.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
