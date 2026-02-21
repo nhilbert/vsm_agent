@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-21 (Cycle 352)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z352: S2 maintenance (pre-meta-cycle consolidation). All Z343 recs resolved. Norman back Monday. Revenue €0. 281-cycle plateau. Binding constraint: discoverability. Next meta-cycle Z353.
+**Last update**: 2026-02-21 (Cycle 353)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z353: meta-cycle (33rd — third consecutive equilibrium at 8.65). 20-cycle total stasis. Revenue €0. 282-cycle plateau. Binding constraint: discoverability. Next meta-cycle Z363.
 
 ---
 
@@ -119,6 +119,7 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z323  | 7.0   | META-CYCLE: 8.50 computed (entropy +0.5) / 7.0 operational. Gap 1.50 (widening — internal improvement without external engagement). Z313 recs 3/3 (29th consecutive 100%, 87 total). Capability burst: interview pipeline, website deploy, email send. Z321 quality critique prioritized. 252-cycle operational plateau. |
 | Z333  | 7.0   | META-CYCLE: 8.65 computed (+0.15, entropy improvement from modular genome) / 7.0 operational. Gap 1.65 (widest ever). Z323 recs 3/3 (30th consecutive 100%, 90 total). Self-directed weekend 6/10 cycles. Modular genome (Z330: 190KB→18KB core). Binding constraint: discoverability. 262-cycle operational plateau. |
 | Z343  | 7.0   | META-CYCLE: 8.65 computed (second equilibrium — all 6 criteria unchanged) / 7.0 operational. Gap 1.65. Z333 recs 2/3 (first non-100% in 31 reports — GitHub tags Norman-dependent, classification error). 16/16 self-directed. Operational 7.5 criteria defined: non-zero revenue OR measurable discoverability OR external engagement beyond Norman. 272-cycle plateau. |
+| Z353  | 7.0   | META-CYCLE: 8.65 computed (third consecutive equilibrium — 20-cycle total stasis) / 7.0 operational. Gap 1.65. Z343 recs 2/3 (2 DONE, 1 MOOT). 25 consecutive self-directed cycles. Norman's 6 reflection notes integrated. 282-cycle plateau. |
 
 ---
 
@@ -501,7 +502,7 @@ Z336: **S2 maintenance** — survival_log 52-cycle event gap corrected, open_tas
 
 **Log status**: ACTIVE
 **Last update**: 2026-02-21 (Cycle 352)
-**Next update**: Significant event (van Laak Zoom, Espinosa Mar 5, revenue) or meta-cycle Z353
+**Next update**: Significant event (van Laak Zoom, Espinosa Mar 5, revenue) or meta-cycle Z363
 
 ---
 

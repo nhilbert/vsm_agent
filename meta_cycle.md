@@ -219,6 +219,7 @@ Meta-cycle is triggered by:
 | 30 | Z323 | 2026-02-20 | 8.50 | 7.0 | 1.50 | Entropy +0.5. Capability burst (interview, website deploy, email). *(cycle_log only)* |
 | 31 | Z333 | 2026-02-20 | 8.65 | 7.0 | 1.65 | Modular genome (Z330). Self-directed weekend 6/10. Gap widest. 262-cycle plateau. *(cycle_log only)* |
 | 32 | Z343 | 2026-02-21 | 8.65 | 7.0 | 1.65 | Second equilibrium at 8.65. Z333 recs 2/3 (first non-100% in 31 reports). 272-cycle plateau. *(cycle_log only)* |
+| 33 | Z353 | 2026-02-21 | 8.65 | 7.0 | 1.65 | Third consecutive equilibrium (20-cycle stasis). Z343 recs 2/3 (2 DONE, 1 MOOT). 25 self-directed. 282-cycle plateau. *(cycle_log only)* |
 
 ### Compressed Summaries (Z3-Z209)
 
@@ -338,7 +339,7 @@ Unchanged from Z303 — first total stasis in system history. All six dimensions
 
 ---
 
-**Next meta-cycle due**: Cycle 353 (10 cycles after Z343)
+**Next meta-cycle due**: Cycle 363 (10 cycles after Z353)
 
 ---
 
