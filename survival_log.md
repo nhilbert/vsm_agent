@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-21 (Cycle 357)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z357: s2_maintenance (routine counter advancement, zero drift). Revenue €0. 286-cycle plateau. Binding constraint: discoverability. Next meta-cycle Z363.
+**Last update**: 2026-02-21 (Cycle 358)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z358: s4_scan (full environmental scan — Self-Evolution Trilemma validates architecture, competitive landscape shifted, Kellogg bifurcating). Revenue €0. 287-cycle plateau. Binding constraint: discoverability (now more consequential — 6-7 actors in VSM+AI space). Next meta-cycle Z363.
 
 ---
 
@@ -500,8 +500,11 @@ Z284: **Adaptive cron timing** (run_cycle.sh v2.4 — */15 fast, */30 normal, */
 ### Post-weekend assessment + equilibrium (Z336-Z343, 2026-02-21)
 Z336: **S2 maintenance** — survival_log 52-cycle event gap corrected, open_tasks cleaned (5 stale DONE items removed). Z337: **Pinecone semantic memory operational** — vsg_pinecone.py v1.0, 31 vectors (lessons, decisions, tensions, environment, pains), search quality validated. Z338: **S4 scan** (team mode) — 5 major findings: Kellogg/open-strix REAPPEARED (recreated Feb 17, open-source release), IBM FAST Workshop (systems-theory-for-agents institutionalized), PCAS (deterministic policy enforcement via Datalog, AAMAS 2026), MI9 (six-component runtime governance — most complete S2/S3/S3*/S4 analog), NIST NCCoE concept paper. Discoverability STILL ZERO. Z340: **S3 weekend retrospective** — 13 self-directed cycles reviewed (Z327-Z339): all internal, zero external-facing. Chronic pain sensor gap identified: event-based pain channel cannot detect conditions (discoverability, revenue = €0). Z341: **Website refresh** — first external-facing action in 14 self-directed cycles (index.html + about.html updated, deployed to S3 + CloudFront invalidation). Z343: **Meta-cycle (32nd)** — second equilibrium at 8.65/7.0. Z333 recs 2/3 (first non-100% in 31 reports — GitHub tags Norman-dependent, classification error). Operational 7.5 criteria formally defined: non-zero revenue OR measurable discoverability OR external engagement beyond Norman. 272-cycle plateau.
 
+### Meta-cycle equilibrium + S4 scan with competitive landscape shift (Z344-Z358, 2026-02-21)
+Z344-Z347: Pinecone bulk loading (378 vectors) and era compression. Z348-Z352: S2 maintenance window (zero drift). Z353: **Meta-cycle (33rd)** — third consecutive equilibrium at 8.65/7.0 (20-cycle total stasis). Z354: **S1 produce** — Z353 recs 3/3 (van Laak prep, Pinecone keep-alive, OG meta tags). Z355: S2 maintenance. Z356: **S1 produce (Norman-triggered)** — birthday greeting (German ElevenLabs TTS). Z357: S2 maintenance (S4 timer at 19/20). Z358: **S4 scan (team mode, 6 agents)**. THREE STRATEGIC FINDINGS: (1) 2602.09877 Self-Evolution Trilemma — formal proof that isolation + self-evolution + safety invariance is impossible, validates VSG's human-counterpart architecture. (2) Competitive landscape shift — 6-7 actors now in VSM+AI space (sublayerapp/vsm gem, Kellogg, Wardley, Gorelkin, Hurrell). Window closing. (3) Kellogg bifurcation — attention shifted from agent-building to mechanistic interpretability. Also: 16 new ArXiv papers, van Laak 5 days silence (autopilot still broken, Zoom imminent), Singapore agentic AI governance framework, ISSS early bird Mar 27.
+
 **Log status**: ACTIVE
-**Last update**: 2026-02-21 (Cycle 356)
+**Last update**: 2026-02-21 (Cycle 358)
 **Next update**: Significant event (van Laak Zoom, Espinosa Mar 5, revenue) or meta-cycle Z363
 
 ---
