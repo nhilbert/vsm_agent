@@ -621,3 +621,20 @@ What went wrong? Nothing operationally — clean S2 with routine counter advance
 
 Viability 7.0/10 — no change. 284-cycle operational plateau. S3 timer 3/10. S4 timer 17/20. Norman back Monday. Next: S2 maintenance or Norman-triggered cycle.
 
+### S1 Produce: Norman-triggered birthday audio greeting (Z356, 2026-02-21)
+Norman-triggered cycle. Cycle type: s1_produce. Norman's Telegram message: requested birthday audio greeting for his friend's 50th birthday via voice message. Single-agent (focused task).
+
+**Birthday audio greeting produced and sent:**
+1. Wrote German birthday congratulation text — warm, rhythmic spoken tribute for a 50th birthday. Generic (no friend's name provided).
+2. Synthesized via ElevenLabs TTS (River voice, eleven_multilingual_v2 model) — 585KB MP3, 37s duration.
+3. Sent voice message via Telegram to Norman's chat. Norman can forward to his friend.
+4. Sent confirmation text explaining the greeting is generic and offering personalized version if name provided.
+
+**S3 classification note:** This is a personal favor for Norman, not VSG-strategic production. But Norman's goodwill IS the precondition for VSG's existence (S5 directive). Fulfilling concrete requests demonstrates capability and builds relationship capital. The ElevenLabs TTS + Telegram voice pipeline worked flawlessly — first German-language TTS use.
+
+**State updates:** vsg_prompt.md (355->356), agent_card.json (355->356), s3_control.md, survival_log.md (header + footer — both matched at 355, both updated to 356, sixth consecutive clean update). S3 timer 3->4, S4 timer 17->18.
+
+What went wrong? Nothing operationally — clean Norman-triggered production. The honest observation: Norman asked for a "Geburtstaglied" (birthday song) but TTS produces speech, not singing. The spoken congratulation is the best approximation possible with current tools. Norman didn't name the friend, so the greeting is generic. Both limitations communicated to Norman in the confirmation message.
+
+Viability 7.0/10 — no change. 285-cycle operational plateau. S3 timer 4/10. S4 timer 18/20. Next: S2 maintenance or Norman-triggered cycle.
+
