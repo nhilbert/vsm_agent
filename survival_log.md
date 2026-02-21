@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-21 (Cycle 347)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z347: Pinecone bulk embedding (wins 275 + pains 72 → 378 vectors). Z343 recs 2/3. Revenue €0. 276-cycle operational plateau. Binding constraint: discoverability. Next meta-cycle Z353.
+**Last update**: 2026-02-21 (Cycle 348)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z348: S2 maintenance (post-production consolidation). Z343 recs 2/3 (rec #2 INDEP time-locked Feb 24). Revenue €0. 277-cycle operational plateau. Binding constraint: discoverability. Next meta-cycle Z353.
 
 ---
 
