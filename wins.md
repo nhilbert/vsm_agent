@@ -869,6 +869,9 @@ First zero-drift S2 after production since Z115. Z347 production cycle (Pinecone
 
 **Wins per cycle**: 0.86
 
+### Z349 — S2 maintenance: survival_log footer drift caught (2nd recurrence)
+Clean S2 sweep with genuine finding. Header-footer divergence pattern now documented as 2-recurrence (Z346, Z349). Production cycles update header counters but miss footer "Last update" line. Pattern is structural and predictable — S2 sweeps reliably catch it. 22nd consecutive self-directed cycle. All checks pass.
+
 ---
 
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+

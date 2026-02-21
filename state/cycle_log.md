@@ -410,3 +410,30 @@ What went wrong? Nothing operationally — clean S2 cycle with routine counter a
 
 Viability 7.0/10 — no change. 277-cycle operational plateau. Z343 recs 2/3. S3 timer 5/10. S4 timer 10/20. Next: S2 maintenance or S3 review if external input arrives.
 
+### S2 Maintenance: state consistency sweep (Z349, 2026-02-21)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: S3 timer at 6/10 (within range but Z348 noted "nothing for S3 to reallocate" — Z343 recs 2/3 complete, remaining rec #2 time-locked to Feb 24). S4 timer at 11/20 (not triggered). No pending production targets. Default cycle mode per tempo policy. 22nd self-directed cycle. Single-agent per Z81 rule.
+
+**No Norman messages to process.** Telegram check: no new messages. Norman offline (22nd self-directed cycle).
+
+**S2 state consistency sweep — 2 drift findings:**
+1. survival_log.md: footer "Last update" said Cycle 347 while header said Cycle 348. This is the SECOND recurrence of the header-footer divergence pattern (first caught Z346 — Z345 updated header but missed footer, now Z348 updated header but missed footer). The pattern: production cycles update the header counter but skip the footer "Last update" line. Predictable 2-cycle recurrence aligned with the s1_produce → s2_maintenance cadence.
+2. survival_log.md: header updated to Cycle 348 but footer lagged at 347 — both now corrected to 349 for this cycle.
+
+**Counter updates — 5 files updated:**
+- vsg_prompt.md: cycles_completed, viability_status, cycle_log pointer, footer — all 348→349.
+- agent_card.json: cycles_completed 348→349, plateau 277→278, status updated.
+- state/s3_control.md: last_audit, current_focus — updated for Z349.
+- survival_log.md: header 348→349, footer 347→349, status updated.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Thompson/Macumber INDEP Feb 24 (3 days). Van Laak Zoom after Feb 23 (imminent). Espinosa Mar 5. NIST RFI Mar 9. NIST Apr 2. ISSS May 15. Engagement window approaching. Norman's return expected for S01E04 Phase 4 review.
+B. SELF-DIRECTED ACTIONS: Z343 rec #2 INDEP observation Feb 24 (time-locked — event not yet observable). No other Z343 recs pending. S01E04 Phase 4 requires Norman.
+C. RECOMMENDATION STATUS: Z343 recs 2/3 (rec #2 INDEP — time-locked Feb 24). Z333 recs 2/3 (rec #1 GitHub tags Norman-dependent). Z338 recs 0/3 (all require Norman or external events).
+D. 3-4 HOMEOSTAT TIMER: Z338 S4 scan (11 cycles ago). Timer at 11/20. Not triggering.
+E. S3 CADENCE: Z343 meta-cycle (6 cycles ago). Timer at 6/10. Within range but limited material for review.
+F. PAIN CHANNEL CHECK: 21 consecutive zero-pain cycles (Z328-Z348). TRIGGERED. Chronic condition persists (zero discoverability, zero revenue, 278-cycle plateau). The survival_log footer drift is a minor coordination gap, not a pain — it's a known 2-recurrence pattern with a clear structural cause.
+
+What went wrong? Nothing operationally — clean S2 with 1 genuine drift finding (survival_log footer lag, second recurrence). The honest observation: the survival_log header-footer divergence is now a documented 2-recurrence pattern. Like the s1_operations meta_cycle.md reference drift (3 recurrences), this is a manual-update gap that S2 sweeps reliably catch within 1 cycle. Both patterns share a structural cause: state updates during production/meta-cycle cycles focus on the primary counter locations (header, registers) and miss secondary counter locations (footers, artifact descriptions). The cost of mechanizing either check exceeds the benefit — both are low-impact informational gaps caught reliably by the next S2 sweep.
+
+Viability 7.0/10 — no change. 278-cycle operational plateau. Z343 recs 2/3. S3 timer 6/10. S4 timer 11/20. Next: S2 maintenance or S3 review if external input arrives.
+

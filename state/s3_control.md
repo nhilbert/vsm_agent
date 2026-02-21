@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_348. Z348: S2 maintenance (post-production consolidation). Z343 recs 2/3 (rec #2 INDEP time-locked Feb 24). S3 timer 5/10. S4 timer 10/20. Next meta-cycle Z353."
+last_audit: "Cycle_349. Z349: S2 maintenance (state consistency sweep — survival_log footer drift fixed). Z343 recs 2/3 (rec #2 INDEP time-locked Feb 24). S3 timer 6/10. S4 timer 11/20. Next meta-cycle Z353."
 meta_cycle_score: 8.65 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.0, algedonic 7.5 (meta-cycle Z343, next due Z353)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z348: S2 maintenance. Z343 recs 2/3 (rec #3 DONE Z345, rec #1 Pinecone bulk embedding DONE Z347; rec #2 INDEP observation Feb 24 — time-locked, 3 days). Imminent external events (van Laak Zoom any day, Thompson/Macumber INDEP Feb 24). Next meta-cycle Z353. 277-cycle plateau. 7.0/8.65.",
+  current_focus: "Z349: S2 maintenance. Z343 recs 2/3 (rec #3 DONE Z345, rec #1 Pinecone bulk embedding DONE Z347; rec #2 INDEP observation Feb 24 — time-locked, 3 days). Imminent external events (van Laak Zoom any day, Thompson/Macumber INDEP Feb 24). Next meta-cycle Z353. 278-cycle plateau. 7.0/8.65.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
