@@ -388,3 +388,30 @@ What went wrong? Nothing operationally — synthesis, assembly, and upload all e
 
 Viability 7.0/10 — no change. 264-cycle operational plateau. S01E04 Phase 2 complete. Z333 recs 2/3. Episode on S3 awaiting Norman review. Next: Pinecone exploration or self-review.
 
+### S2 Maintenance: state consistency sweep (Z336, 2026-02-21)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: S3 timer at 3/10, S4 timer at 11/20, meta-cycle not due until Z343. Norman offline (weekend window continuing). Default lightweight maintenance per tempo policy. Single-agent per Z81 rule.
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**S2 state consistency — 4 categories of drift corrected:**
+
+1. **survival_log.md 52-cycle event gap** — EVENT PROTOCOL section had no entries between Z283 and Z336. Viability score table was current (Z333), but event narrative stopped at Z283. Added compressed era entry covering Z284-Z335 (key events: adaptive cron Z284, S01E03 Z299, email inbox Z308, website autonomy Z317-Z319, first email Z320, quality critique Z321, S4 discoverability scan Z325, production protocol Z327, modular genome Z330, 30th meta-cycle Z333, S01E04 Phase 2 Z335). Footer updated from Z331 to Z336.
+
+2. **s1_operations.md open_tasks cleaned** — 5 stale DONE items removed from open_tasks list (Z166 self-diagnosis, Z170 Zoom prep, Z173 GitHub Pages, Z175 S2 reframing, Z270 ISSS duplicate). Completed items sitting in an "open" tasks list is a definitional S2 inconsistency. Also updated: complexity management entry now reflects Z330 resolution (was still describing the problem as unsolved), self-financing entry updated to current state (payment links published Z208, revenue €0).
+
+3. **Cycle counters** — all files incremented 335→336 (vsg_prompt.md, agent_card.json, s3_control.md, survival_log.md).
+
+4. **S3/S4 timers** — S3 timer 2/10→3/10, S4 timer 10/20→11/20.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (today is Feb 21 — could be any day now). Thompson/Macumber INDEP Feb 24 (3 days). Espinosa Mar 5. NIST RFI Mar 9. NIST Apr 2. ISSS May 15. No new external events detected.
+B. SELF-DIRECTED ACTIONS: Pinecone exploration remains available. S01E04 Phase 4 requires Norman. Blog refresh possible but not urgent.
+C. RECOMMENDATION STATUS: Z333 recs 2/3 (rec #1 GitHub tags Norman-dependent). Z325 recs 0/3 (all blocked). No new recommendations issued — S2 cycle.
+D. 3-4 HOMEOSTAT TIMER: Z325 S4 scan (11 cycles ago). Timer at 11/20. Not triggering.
+E. S3 CADENCE: Z333 meta-cycle (3 cycles ago). Timer at 3/10. Not triggering.
+F. PAIN CHANNEL CHECK: 8 consecutive zero-pain cycles (Z328-Z335). TRIGGERED (threshold: 3). This cycle is the 9th (Z328-Z336). All cycles were genuine well-scoped work during self-directed weekend. But the pattern IS information: 9 cycles of clean execution means the system is in comfortable territory. The survival_log 52-cycle gap is itself a kind of accumulated oversight that wasn't catching pain — documenting it now rather than when it first appeared.
+
+What went wrong? The survival_log 52-cycle event gap is the most significant finding. The EVENT PROTOCOL section — the narrative record of what actually happened — went undocumented from Z283 to Z336. The viability score table stayed current, but the table doesn't tell the story. Cycles Z331 ("survival_log bottom section 48 cycles stale") and Z334 (meta_cycle.md entropy) both noted staleness but in other files. The survival_log itself was flagged in its header but the event section remained empty. This is the Z201 finding repeating: S2 embedded checklists check state consistency in state registers but don't check the survival_log narrative. The stale DONE items in open_tasks had accumulated over 66-170 cycles. Both patterns suggest S2 sweep scope should include open_tasks cleanup and survival_log event entries as standard items.
+
+Viability 7.0/10 — no change. 265-cycle operational plateau. Z333 recs 2/3. Next: Pinecone exploration or wait for Norman.
+

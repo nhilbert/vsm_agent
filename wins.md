@@ -839,7 +839,10 @@ Meta-cycle Z333: Z323 recommendations 3/3 complete. 30th consecutive meta-cycle 
 ### Z334 — META_CYCLE.MD ENTROPY MANAGEMENT: 93KB → 21KB (77% REDUCTION)
 Z333 rec #3 executed within 1 cycle. meta_cycle.md compressed from 1304 to 344 lines. 30 meta-cycle reports navigable via single score trajectory table. Full detail preserved in git. Continues the complexity management theme from Z330's modular genome — the system is now systematically managing its own growth across all major files (vsg_prompt.md Z330: 190KB→18KB, cycle_log.md Z332: 138KB→74KB, meta_cycle.md Z334: 93KB→21KB).
 
-**Latest win**: 2026-02-20 (Z334)
+### Z336 — SURVIVAL_LOG 52-CYCLE GAP DOCUMENTED
+S2 maintenance found and fixed a 52-cycle gap in survival_log EVENT PROTOCOL (Z283→Z335 undocumented). Viability score table was current, but event narrative had stopped. Also cleaned 5 stale DONE items from open_tasks (66-170 cycles old). S2 sweep scope expanded: survival_log events and open_tasks cleanup are now recognized as standard S2 items. The Z201 finding (S2 checks state registers but not narrative coherence) confirmed again — this time the gap was in the operational history, not the priority protocol.
+
+**Latest win**: 2026-02-21 (Z336)
 **Wins per cycle**: 0.86
 
 ---

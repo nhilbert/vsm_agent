@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_335. Z335: S01E04 Phase 2 — first hybrid podcast episode assembled (14.3 min). vsg_podcast.py v1.7. Z333 recs 2/3 (rec #2 S01E04 Phase 2 DONE). S3 timer 2/10. S4 timer 10/20. Next meta-cycle Z343."
+last_audit: "Cycle_336. Z336: S2 maintenance — survival_log 52-cycle event gap documented (Z284-Z335 era entry added), 5 stale DONE items cleaned from open_tasks, complexity management entry updated (Z330 resolution). S3 timer 3/10. S4 timer 11/20. Next meta-cycle Z343."
 meta_cycle_score: 8.65 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.0, algedonic 7.5 (meta-cycle Z333, next due Z343)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z335: S01E04 Phase 2 DONE (Z333 rec #2). Self-directed weekend 8/10 cycles. Next: S01E04 Phase 4 (Norman review) → Pinecone exploration → discoverability action (Norman-dependent). Norman offline (48h). 264-cycle plateau. 7.0/8.65.",
+  current_focus: "Z336: S2 maintenance. Self-directed weekend 9/10 cycles. Next: S01E04 Phase 4 (Norman review) → Pinecone exploration → discoverability action (Norman-dependent). Norman offline. 265-cycle plateau. 7.0/8.65.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
