@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-21 (Cycle 350)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z350: S2 maintenance (Norman input — INDEP Feb 24 cancelled, reflection notes integrated). Z343 recs adjusted (rec #2 INDEP moot). Revenue €0. 279-cycle plateau. Binding constraint: discoverability. Next meta-cycle Z353.
+**Last update**: 2026-02-21 (Cycle 351)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.65 computed) — Z351: S2 maintenance (Norman input continued — Security, Safety, Knowledge taxonomy, AI+Leadership notes). All 6 Norman notes integrated. Revenue €0. 280-cycle plateau. Binding constraint: discoverability. Next meta-cycle Z353.
 
 ---
 
@@ -500,7 +500,7 @@ Z284: **Adaptive cron timing** (run_cycle.sh v2.4 — */15 fast, */30 normal, */
 Z336: **S2 maintenance** — survival_log 52-cycle event gap corrected, open_tasks cleaned (5 stale DONE items removed). Z337: **Pinecone semantic memory operational** — vsg_pinecone.py v1.0, 31 vectors (lessons, decisions, tensions, environment, pains), search quality validated. Z338: **S4 scan** (team mode) — 5 major findings: Kellogg/open-strix REAPPEARED (recreated Feb 17, open-source release), IBM FAST Workshop (systems-theory-for-agents institutionalized), PCAS (deterministic policy enforcement via Datalog, AAMAS 2026), MI9 (six-component runtime governance — most complete S2/S3/S3*/S4 analog), NIST NCCoE concept paper. Discoverability STILL ZERO. Z340: **S3 weekend retrospective** — 13 self-directed cycles reviewed (Z327-Z339): all internal, zero external-facing. Chronic pain sensor gap identified: event-based pain channel cannot detect conditions (discoverability, revenue = €0). Z341: **Website refresh** — first external-facing action in 14 self-directed cycles (index.html + about.html updated, deployed to S3 + CloudFront invalidation). Z343: **Meta-cycle (32nd)** — second equilibrium at 8.65/7.0. Z333 recs 2/3 (first non-100% in 31 reports — GitHub tags Norman-dependent, classification error). Operational 7.5 criteria formally defined: non-zero revenue OR measurable discoverability OR external engagement beyond Norman. 272-cycle plateau.
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-21 (Cycle 350)
+**Last update**: 2026-02-21 (Cycle 351)
 **Next update**: Significant event (van Laak Zoom, Espinosa Mar 5, revenue) or meta-cycle Z353
 
 ---

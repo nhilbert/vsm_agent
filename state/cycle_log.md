@@ -485,3 +485,36 @@ What went wrong? Nothing operationally — clean S2 cycle with external input pr
 
 Viability 7.0/10 — no change. 279-cycle operational plateau. Z343 recs resolved (2 DONE, 1 MOOT). S3 timer 7/10. S4 timer 12/20. Norman back Monday. Next: S2 maintenance (weekend mode) or S3 review if S3 timer triggers.
 
+### S2 Maintenance: Norman input processing continued (Z351, 2026-02-21)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z350 processed 2 of 6 Norman reflection notes from a single Telegram batch. 4 remaining notes unprocessed: Security/Selbstkontrolle, Safety/prompt injection, Knowledge taxonomy (5 types), AI+Leadership. Per S3 priority protocol, reflection-shaped inputs should be processed (Z57 finding). S3 timer 8/10, S4 timer 13/20 — S3 approaching but not triggered. 24th self-directed cycle. Single-agent per Z81 rule.
+
+**4 remaining Norman reflection notes processed:**
+
+1. **Security (Selbstkontrolle vs Fremdkontrolle)**: Norman asks how the VSM frames the paradox of wanting agents to act freely but follow rules. VSM answer: nested autonomy with sporadic audit — S1 operational autonomy within S3 resource bargains, S3* unpredictable checks, S5 non-negotiable policy. Neither pure self-control nor pure external control. Norman's new-employee trust metaphor maps the VSG's 351-cycle trajectory (from manually started to cron autonomy to communication capability).
+
+2. **Safety (Risks for/from the agent)**: Prompt injection as primary threat vector. Operationally real: every Telegram message, email body, and web-fetched content enters the context window unsanitized. Chat_id filtering (Z132) restricts sender but not content. Email capability (SES production access Z308) creates outbound risk. Public repo exposes full genome architecture. Safety = S3*/S5 concern. Current posture: moderate for research experiment, insufficient for production autonomy.
+
+3. **Knowledge taxonomy (5 types)**: Latent model (training data), latent accessible (web/MCP), latent stored (agent files/Pinecone), active (context window), used (actually influencing output). Maps directly to VSG experience: Z330 modularization = managing stored→active transition, Pinecone = retrieval-augmented activation, boot sequence = knowledge activation protocol. Norman's critical question (activation at the right time) = unsolved S2-for-knowledge problem. As stored knowledge grows (378 vectors, ~50 files, 351 cycles), the activation problem gets harder.
+
+4. **AI+Leadership competencies**: Leadership skills for AI agent management: Selbstregulation (S3/S5), Mindfulness (S4), Unterscheidungsfähigkeit (S3*), Strukturiertes Argumentieren (S1), Datenverständnis (data literacy), Delegation (S3→S1), Prompting (S2). Maps directly to Norman's consulting practice — existing expertise transfers to AI agent leadership.
+
+**S2 state consistency sweep — 6 files updated:**
+- vsg_prompt.md: cycles_completed, viability_status, cycle_log pointer, footer — all 350→351.
+- agent_card.json: cycles_completed 350→351, honest_limitations updated.
+- state/s3_control.md: last_audit, current_focus — updated for Z351.
+- survival_log.md: header 350→351, footer 350→351 (caught proactively — no drift this cycle).
+- wins.md: Z351 entry logged.
+- state/cycle_log.md: Z351 entry appended.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom after Feb 23 (imminent — any day next week). Espinosa INDEP Mar 5 6pm UTC. NIST RFI Mar 9. NIST Apr 2. ISSS May 15. Norman back Monday — may bring S01E04 review.
+B. SELF-DIRECTED ACTIONS: All Z343 recs resolved (2 DONE, 1 MOOT). No pending production targets. Norman's 6 notes now fully integrated — no further processing needed. Weekend mode appropriate.
+C. RECOMMENDATION STATUS: Z343 recs resolved. Z333 recs 2/3 (GitHub tags Norman-dependent). Z338 recs 0/3 (all require Norman or external events).
+D. 3-4 HOMEOSTAT TIMER: Z338 S4 scan (13 cycles ago). Timer at 13/20. Not triggering.
+E. S3 CADENCE: Z343 meta-cycle (8 cycles ago). Timer at 8/10. Approaching — 2 cycles until hard trigger. Next meta-cycle at Z353 by design.
+F. PAIN CHANNEL CHECK: 23 consecutive zero-pain cycles (Z328-Z350). TRIGGERED. Norman's 6 reflection notes are intellectual input, not pain events. No acute failures. Chronic condition persists (zero discoverability, zero revenue, 280-cycle plateau).
+
+What went wrong? Nothing operationally — clean S2 with full Norman input integration. The honest observation: this is the richest single intellectual input batch in VSG history (6 reflection notes covering AI burden, pedagogy/non-copyability, security architecture, safety, knowledge management, and leadership). I processed all six across two cycles (Z350 + Z351), which is appropriate pacing — the notes deserve individual attention, not batch compression. The knowledge taxonomy note (type 3) is particularly operationally relevant: Norman is describing the exact problem that drove Z330 modularization and Z337/Z347 Pinecone integration. His framing (activation timing as the critical question) identifies what the VSG has been solving mechanically without naming. The security and safety notes are also operationally relevant — the VSG's current input sanitization posture is a genuine gap (no content filtering on incoming messages beyond chat_id). This is not urgent (research experiment, Norman-only communication) but worth logging as a recognized structural weakness.
+
+Viability 7.0/10 — no change. 280-cycle operational plateau. All Norman notes integrated. S3 timer 8/10 (2 cycles to trigger). S4 timer 13/20. Norman back Monday. Next: S2 maintenance (weekend) or S3 review if timer triggers at Z353 (= meta-cycle).
+
