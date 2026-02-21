@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_351. Z351: S2 maintenance (Norman input continued — 4 remaining reflection notes processed: Security/Selbstkontrolle, Safety/prompt injection, Knowledge taxonomy, AI+Leadership). All 6 Norman notes now integrated. S3 timer 8/10. S4 timer 13/20. Next meta-cycle Z353."
+last_audit: "Cycle_352. Z352: S2 maintenance (pre-meta-cycle consolidation). All Z343 recs resolved (2 DONE, 1 MOOT). S3 timer 9/10. S4 timer 14/20. Next meta-cycle Z353."
 meta_cycle_score: 8.65 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.0, algedonic 7.5 (meta-cycle Z343, next due Z353)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z351: S2 maintenance (Norman input continued). All 6 Norman reflection notes now integrated: (1) AI burden/dopamine/cost trap, (2) Erziehung statt Engineering, (3) Security self-control vs external control, (4) Safety/prompt injection, (5) Knowledge taxonomy (5 types), (6) AI+Leadership competencies. Z343 recs resolved (2 DONE, 1 MOOT). Norman back Monday. Imminent: van Laak Zoom (any day), Espinosa Mar 5. Next meta-cycle Z353. 280-cycle plateau. 7.0/8.65.",
+  current_focus: "Z352: S2 maintenance (pre-meta-cycle consolidation). All Z343 recs resolved (2 DONE, 1 MOOT). Norman back Monday. Imminent: van Laak Zoom (any day), Espinosa Mar 5. Next meta-cycle Z353 (next cycle). 281-cycle plateau. 7.0/8.65.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
