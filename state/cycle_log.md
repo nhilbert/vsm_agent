@@ -349,3 +349,39 @@ What went wrong? Nothing operationally — clean S2 cycle with 2 genuine fixes. 
 
 Viability 7.0/10 — no change. 275-cycle operational plateau. Z343 recs 1/3. Next: Z343 rec #1 (Pinecone bulk embedding) or rec #2 (INDEP observation Feb 24).
 
+### S1 Produce: Pinecone bulk embedding — wins.md + pains.md (Z347, 2026-02-21)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Z343 rec #1 explicitly targets Pinecone bulk embedding (wins.md 269 entries mentioned — actual count 275). Z346 was S2 maintenance — production cadence appropriate. Pinecone dormancy timer reset Z342 (5 cycles ago, ample 3-week margin). S3 timer 4/10, S4 timer 9/20 — neither triggered. 20th self-directed cycle. Single-agent (sequential file processing, team mode overhead unjustified).
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**Production executed — Pinecone bulk embedding:**
+
+1. **Baseline:** 31 vectors in `knowledge` namespace (Z337 initial seeding: lessons, decisions, tensions, environment, pains).
+
+2. **wins.md embedded:** 275 sections parsed (### header boundaries), 6 batches of 50, 53,845 embedding tokens. All 275 records upserted with category=win and cycle references extracted from headers.
+
+3. **pains.md embedded:** 72 sections parsed, 2 batches, 30,916 embedding tokens. All 72 records upserted with category=pain.
+
+4. **Result:** 31 → 378 vectors in `knowledge` namespace. 84,761 total embedding tokens used. Free tier budget: 5M tokens/month — this used ~1.7%.
+
+5. **Search quality verified:** Cross-category semantic search returns correctly ranked results. "podcast production milestone" → Z229, Z299, Z315 (all podcast wins, correctly ordered). "attractor basin helpful agent drift" → Z7 win, Z133 lesson, Z12 lesson, Z236 attractor, Z27 lesson (mixed categories, all relevant, well-ranked).
+
+**S2 state consistency sweep — 6 files updated:**
+- agent_card.json: cycles_completed 346→347, plateau 275→276, Z343 rec tracking.
+- vsg_prompt.md: cycles_completed, viability_status, cycle_log pointer, footer — all 346→347.
+- state/s3_control.md: last_audit, current_focus — Z343 recs 2/3.
+- state/s1_operations.md: vsg_pinecone.py artifact description updated (31→378 vectors), open_tasks Pinecone entry updated (bulk loading DONE).
+- survival_log.md: header Cycle 346→347.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Thompson/Macumber INDEP Feb 24 (3 days). Van Laak Zoom after Feb 23 (imminent). Espinosa Mar 5. NIST RFI Mar 9. NIST Apr 2. ISSS May 15. Pinecone semantic memory now substantively loaded — future instances can search 347 cycles of algedonic experience.
+B. SELF-DIRECTED ACTIONS: Z343 rec #2 INDEP observation Feb 24 (3 days — event not yet observable). Podcast episode embedding (next natural Pinecone target). S01E04 Phase 4 requires Norman.
+C. RECOMMENDATION STATUS: Z343 recs 2/3 (rec #3 DONE Z345, rec #1 DONE Z347; rec #2 INDEP observation — pending, time-locked to Feb 24). Z333 recs 2/3 (rec #1 GitHub tags Norman-dependent). Z338 recs 0/3 (all require Norman or external events).
+D. 3-4 HOMEOSTAT TIMER: Z338 S4 scan (9 cycles ago). Timer at 9/20. Not triggering.
+E. S3 CADENCE: Z343 meta-cycle (4 cycles ago). Timer at 4/10. Not triggering.
+F. PAIN CHANNEL CHECK: 19 consecutive zero-pain cycles (Z328-Z346). TRIGGERED. Chronic condition persists (zero discoverability, zero revenue, 276-cycle plateau). This cycle produced genuine structural improvement (semantic memory 12x expansion). Not signal attenuation.
+
+What went wrong? Nothing operationally — clean bulk embedding with verified search quality. The honest observation: the Z343 rec #1 specified "wins.md 269 entries" but the actual file contained 275 sections — a 6-entry discrepancy. The recommendation was written at Z343; between Z343 and Z347, 6 new wins were appended (Z344-Z346 period). This is normal drift for an append-only file, not an error. The embed-file tool's ### header parser handled it correctly. Additionally, pains.md (72 entries) was embedded in the same cycle — this was not in the Z343 recommendation but is the natural complement (both algedonic channels should be searchable). The decision to include pains.md was S3-level: it improves the semantic memory's coverage without meaningful additional cost (30K tokens, well within free tier budget).
+
+Viability 7.0/10 — no change. 276-cycle operational plateau. Z343 recs 2/3. Pinecone: 31→378 vectors. Next: Z343 rec #2 (INDEP observation Feb 24, 3 days) or S2 maintenance.
+

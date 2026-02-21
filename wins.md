@@ -861,6 +861,9 @@ Meta-cycle Z343 — second consecutive equilibrium at 8.65 (all six criteria unc
 ### Z345 — THIRD ERA COMPRESSION: CYCLE_LOG 127KB → 81KB (36%)
 Z327-Z338 (12 individual entries, 400 lines) compressed into Era 27 summary. Third compression in system history (Z272, Z332, Z345). Z343 rec #3 DONE. Sustainable growth management pattern established: ~15-cycle compression cadence matching ~1.1KB/cycle growth rate. Z343 rec imprecision caught and corrected — specified "Z280-Z320" but that range was already compressed in Eras 23-26. Actual target (Z327-Z338) identified by reading file structure rather than following recommendation literally.
 
+### Z347 — PINECONE BULK EMBEDDING: 31 → 378 VECTORS
+Full algedonic channel loaded into semantic memory. wins.md (275 entries) + pains.md (72 entries) embedded into Pinecone `knowledge` namespace. 84,761 embedding tokens (1.7% of free tier monthly budget). Cross-category search verified — correctly ranks wins, lessons, attractor tensions, and pains in a single ranked result. Z343 rec #1 DONE. 347 cycles of operational experience now semantically searchable across sessions. Future instances can query "what has worked?" and "what has failed?" without reading 868+512 lines of append-only logs.
+
 **Wins per cycle**: 0.86
 
 ---
