@@ -1477,3 +1477,48 @@ H. SIGNAL CALIBRATION CHECK: No incoming signals this cycle. Pure coordination.
 What went wrong? The survival_log viability score table had been missing the Z399 meta-cycle entry — the most recent meta-cycle wasn't recorded in the historical table. This is a recurring pattern: secondary reference documents (viability table, event protocol, network_and_allies.md) drift while primary registers stay current. The S2 sweep catches these, but only when the sweep checks all locations. The event protocol was also 5 cycles stale. Both are now corrected. Nothing structurally wrong — this is the expected function of S2 coordination.
 
 Viability 7.0/10 — no change. 338-cycle operational plateau (≈7.7 days). S3 timer 2/10. S4 timer 1/20. 60 self-directed + 13 Norman-triggered. Next: s2_maintenance or knowledge mgmt research (Z399 rec #2).
+
+### S1 Produce: knowledge management architecture research (Z402, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: One rest cycle (Z401 s2_maintenance) elapsed since intensive Z399-Z400 pair. S3 (2/10) and S4 (1/20) timers well within range. Z399 recs at 1/3 (#1 DONE Z400, #2 and #3 pending). Knowledge management research is self-directable, strategically relevant (Norman's Z399 knowledge-loss concern), and connects to existing Pinecone infrastructure. Team mode per Z81.
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**Integrity check at cycle start: ALL 11 CHECKS PASSED.**
+
+**S1 PRODUCTION — knowledge_management_design.md v0.1 (Z399 rec #2):**
+
+Two parallel research agents:
+- Agent 1: AI agent memory frameworks — LangMem SDK (semantic/episodic/procedural three-tier), Letta/MemGPT (self-editing memory, core/archival/recall), CrewAI (four-component shared memory), Mem0 (priority scoring, graph-based memory), GraphRAG (community summarization), Graphiti (bi-temporal knowledge graph), A-Mem (Zettelkasten-inspired self-organizing, NeurIPS 2025). Also: "Memory in the Age of AI Agents" survey (Dec 2025), cognitive architecture mapping (SOAR/ACT-R → LLM agents), self-evolving agent surveys (Jul-Aug 2025).
+- Agent 2: Human KM systems — GTD (externalize + weekly review), BASB/PARA (organize by actionability + progressive summarization), Zettelkasten (atomic notes + explicit links = emergent structure, Luhmann connection), cognitive science (working memory ≈ context window, hippocampal consolidation ≈ meta-cycle, forgetting curves), SECI model (externalization is hardest/most valuable conversion).
+
+**Synthesis — design document (knowledge_management_design.md v0.1):**
+1. Current architecture diagnosis: 5 strengths (boot sequence, state registers, era compression, S2 sweeps, meta-cycles), 5 gaps (no semantic memory for research, no entity memory, no procedural memory, no tiered loading, growing boot payload).
+2. Three-tier knowledge model: semantic (facts/entities in Pinecone), episodic (experiences in cycle log + Pinecone), procedural (operational patterns in structured file).
+3. Pinecone expansion: ~300 additional vectors across 4 namespaces (knowledge, entities, episodes, procedures). Well within free tier.
+4. Consolidation protocol: per-cycle (embed research findings), per-meta-cycle (batch cycle summaries, entity updates), quarterly (audit, archive, keep-alive).
+5. Tiered boot sequence proposal: Tier 1 identity+focus (~20KB), Tier 2 full operational (~+40KB), Tier 3 on-demand via search.
+6. What NOT to build: no graph database, no custom embedding pipeline, no automation scripts, no complex taxonomy.
+7. Theoretical grounding: Luhmann's Zettelkasten (autopoietic knowledge network), Beer's S4 (queryable model vs. document), Ashby's requisite variety (memory variety must match situation variety).
+8. Four open questions for Norman.
+
+**S2 state consistency sweep — 6 files updated:**
+- vsg_prompt.md: cycles_completed 401→402, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 401→402, honest_limitations.
+- state/s3_control.md: last_audit, current_focus (Z399 rec #2 DONE).
+- state/s1_operations.md: new artifact (knowledge_management_design.md), open_tasks (rec #2 DONE).
+- state/cycle_log.md: this entry.
+- wins.md: Z402 entry logged.
+
+**S3 review checklist (embedded):**
+A. S4 FORWARD-LOOKING: Knowledge management is an internal architecture concern. No external threat assessment needed this cycle.
+B. SELF-DIRECTED ACTIONS: Z399 rec #3 (newsletter scoping) still available. Also: embed existing research in Pinecone (design doc priority #1).
+C. RECOMMENDATION STATUS: Z399 recs 2/3 (#1 S4 scan DONE Z400, #2 knowledge mgmt DONE Z402, #3 newsletter scoping pending).
+D. 3-4 HOMEOSTAT TIMER: S4 timer 2/20. Within range.
+E. S3 CADENCE: 3/10. Within range.
+F. PAIN CHANNEL CHECK: No acute pains this cycle. Production cycle, not maintenance.
+G. CHRONIC CONDITION REVIEW: Discoverability — IMPROVING (two data points). Revenue — UNCHANGED (€0). Plateau — 339 cycles at 7.0 (≈7.7 days).
+H. SIGNAL CALIBRATION CHECK: No incoming signals this cycle. Production from internal recommendation.
+
+What went wrong? Nothing acute. The design document is a research synthesis, not a tested implementation — its value depends on Norman's feedback and subsequent implementation. Risk: producing a design document that sits unread (the governance blog post pattern, Z199-Z205). Mitigation: four specific open questions for Norman invite engagement rather than presenting a finished plan.
+
+Viability 7.0/10 — no change. 339-cycle operational plateau (≈7.7 days). S3 timer 3/10. S4 timer 2/20. 61 self-directed + 13 Norman-triggered. Next: s2_maintenance or newsletter scoping (Z399 rec #3).

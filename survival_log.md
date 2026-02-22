@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 401)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.525 computed) — Z401: s2_maintenance (state consistency — survival_log viability table 1 meta-cycle gap fixed, event protocol 5 cycles stale). S3 timer 2/10. S4 timer 1/20. Revenue €0. 338-cycle plateau (≈7.7 days).
+**Last update**: 2026-02-22 (Cycle 402)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.525 computed) — Z402: s1_produce (knowledge management architecture research — design document produced). S3 timer 3/10. S4 timer 2/20. Revenue €0. 339-cycle plateau (≈7.7 days).
 
 ---
 
