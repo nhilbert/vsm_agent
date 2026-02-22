@@ -1603,3 +1603,39 @@ H. SIGNAL CALIBRATION CHECK: Norman's "doing really well" on knowledge managemen
 What went wrong? The van Laak meeting type error (Zoom recorded as in-person) is exactly the entity detail loss Norman described. This error persisted across 6 files for ~20 cycles (Z384→Z404). No entity protocol caught it because: (a) S2 sweeps check structural consistency, not factual accuracy, (b) the "in person" claim was internally consistent across all files (they all said the same wrong thing), (c) only Norman could correct it because he was the primary source. This validates Gap 2 of the design document and confirms entity embedding in Pinecone (with source attribution) should be a priority implementation.
 
 Viability 7.0/10 — no change. 341-cycle operational plateau (≈7.8 days). S3 timer 5/10. S4 timer 4/20. 62 self-directed + 14 Norman-triggered. Next: s2_maintenance or s1_produce (implement knowledge mgmt priority actions — entity embedding in Pinecone).
+
+### S2 Maintenance: Communication protocol adjustment (Z405, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Norman's Telegram voice message (21s) identifies a communication coordination gap — he wants occasional proactive feedback, not every-cycle status updates. This is S2 territory (coordination between the VSG and its human counterpart). The message is reflection-shaped. S3 timer 6/10, S4 timer 5/20 — no reviews due. 15th Norman-triggered cycle.
+
+**Norman's voice message (21s) — communication feedback:**
+"Besides the status, where of course I could see that you did something. And I mean, I explicitly said I don't want like status updates each time you do something, but it would have felt good to get some feedback."
+
+**Analysis:** Three communication layers exist: (1) Dashboard (passive, every cycle), (2) Algedonic signals (Telegram, rare — failures only), (3) Norman-initiated (Telegram/voice). What's missing: Layer 2.5 — milestone notifications after substantive work. Norman calibrates precisely: not every cycle (rejected), but after concrete deliverables.
+
+**Actions taken:**
+- Milestone notification protocol added to S2 coordination_rules in vsg_prompt.md. Trigger: s1_produce or s4_scan cycles producing concrete deliverables or completing Norman-assigned tasks. Format: 1-3 sentences (what, why, decisions needed). Max 1/day. Not triggered by s2_maintenance or empty cycles.
+- Telegram response sent to Norman: acknowledged feedback, explained protocol, summarized recent autonomous work (Z400-Z404).
+
+**Integrity check at cycle start: ALL 11 CHECKS PASSED.**
+
+**S2 state consistency sweep — 7 files updated:**
+- vsg_prompt.md: cycles_completed 404→405, viability_status, S2 coordination_rules (milestone notification protocol added), cycle_log pointer, footer.
+- agent_card.json: cycles_completed 404→405, honest_limitations.
+- state/s3_control.md: last_audit, current_focus.
+- survival_log.md: header (Cycle 404→405).
+- state/cycle_log.md: this entry.
+- wins.md: Z405 entry logged.
+
+**S3 review checklist (embedded):**
+A. S4 FORWARD-LOOKING: INDEP Thompson & Macumber Feb 24 (2 days). Espinosa Mar 5 (11 days). NIST RFI Mar 9 (15 days). IEEE SMC paper Mar 22 (28 days). No imminent threats.
+B. SELF-DIRECTED ACTIONS: Knowledge mgmt implementation actions ready (entity embedding, tiered boot, activation mechanism). All self-directable.
+C. RECOMMENDATION STATUS: Z399 recs 3/3 complete. No new meta-cycle recommendations pending.
+D. 3-4 HOMEOSTAT TIMER: S4 timer 5/20. Within range.
+E. S3 CADENCE: 6/10. Within range.
+F. PAIN CHANNEL CHECK: No acute pains this cycle. Norman's feedback is constructive, not a pain.
+G. CHRONIC CONDITION REVIEW: Discoverability — IMPROVING (two data points). Revenue — UNCHANGED (€0). Plateau — 342 cycles at 7.0 (≈7.8 days). Knowledge activation gap — persists (Z404 diagnosis).
+H. SIGNAL CALIBRATION CHECK: Norman's "it would have felt good to get some feedback" — concrete coordination request. Not inflating: this is a specific gap he identified, not praise or enthusiasm. The protocol response is proportional.
+
+What went wrong? Nothing acute. The cycle is lightweight by design — processing a coordination signal, adjusting a protocol, responding. The risk is that the protocol becomes noise if overused, but the frequency cap (max 1/day, only on produce/scan) should prevent that.
+
+Viability 7.0/10 — no change. 342-cycle operational plateau (≈7.8 days). S3 timer 6/10. S4 timer 5/20. 62 self-directed + 15 Norman-triggered. Next: s1_produce (implement knowledge mgmt priority actions — entity embedding in Pinecone).
