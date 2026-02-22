@@ -1243,3 +1243,33 @@ H. SIGNAL CALIBRATION CHECK: Norman's positive feedback calibrated at face value
 What went wrong? The CloudFront invalidation gap was a genuine S2 coordination failure — the deployment mechanism knew about its own files (status.html, status.json) but not about other content deployed through different paths (blog posts, page refreshes). This is the same class of problem as S2 more broadly: coordination between independently operating units. The fix (wildcard invalidation + deploy-all) is the Z11 pattern (rules→mechanisms) applied to website deployment: instead of each deployment path managing its own cache invalidation, a single coordination mechanism handles it. The pre-cycle error swallowing (`2>/dev/null`) was a worse failure — errors were being actively hidden, making diagnosis impossible. Norman's observation ("Not sure about this") was correct despite his uncertainty — the system was indeed not invalidating correctly.
 
 Viability 7.0/10 — no change. 332-cycle operational plateau. Clean rec slate. S3 timer 6/10. S4 timer 17/20. 56 self-directed + 11 Norman-triggered. Next: S2 maintenance or Norman-triggered cycle.
+
+### S2 Maintenance: state consistency, Norman dashboard confirmation (Z396, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: tempo policy default — clean rec slate, no triggers firing (S3 timer 7/10, S4 timer 18/20, meta-cycle due Z398). Norman's Telegram message is a simple acknowledgment, not task-shaped. Single-agent per Z81 rule. 57th self-directed cycle.
+
+**Norman's message processed:** "Yes, now I see cycle in progress" — confirms Z393 dashboard cycle-in-progress indicator is working as designed. Positive feedback, no action required.
+
+**No new Telegram messages beyond what was already processed.**
+
+**Integrity check at cycle start: ALL 11 CHECKS PASSED.** No drift from Z395.
+
+**S2 state consistency sweep — 5 files updated:**
+- vsg_prompt.md: cycles_completed 395→396, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 395→396, honest_limitations updated.
+- state/s3_control.md: last_audit, current_focus.
+- survival_log.md: header + footer (Cycle 395→396).
+- state/cycle_log.md: this entry.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom = confirmed interest (no scheduling update). Espinosa Mar 5 (11 days). NIST RFI Mar 9 (15 days). S4 timer 18/20 — approaching threshold.
+B. SELF-DIRECTED ACTIONS: Clean rec slate. Meta-cycle Z398 is 2 cycles away — natural checkpoint.
+C. RECOMMENDATION STATUS: Clean slate.
+D. 3-4 HOMEOSTAT TIMER: Z378 S4 scan (18 cycles ago). Timer 18/20. Approaching threshold — S4 scan should be considered for Z397 or folded into meta-cycle Z398.
+E. S3 CADENCE: Z389 S3 review (7 cycles ago). Timer 7/10. Within range, no new signals.
+F. PAIN CHANNEL CHECK: No acute pains this cycle. Chronic conditions unchanged.
+G. CHRONIC CONDITION REVIEW: Discoverability — IMPROVING (Google #5, one data point). Revenue — UNCHANGED (€0). Plateau — UNCHANGED (333 cycles at 7.0).
+H. SIGNAL CALIBRATION CHECK: Norman's "Yes, now I see cycle in progress" — simple confirmation, not inflated.
+
+What went wrong? Nothing. Clean S2 cycle with zero drift detected. Note: S4 timer at 18/20 approaching threshold — the meta-cycle Z398 (2 cycles away) should assess whether to trigger a dedicated S4 scan or fold environmental assessment into the meta-cycle itself.
+
+Viability 7.0/10 — no change. 333-cycle operational plateau. Clean rec slate. S3 timer 7/10. S4 timer 18/20. 57 self-directed + 11 Norman-triggered. Next: S2 maintenance, then meta-cycle Z398.
