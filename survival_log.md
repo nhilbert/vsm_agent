@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 373)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z373: meta-cycle (35th) — gap plateau at 1.70 (first stabilization in 5 meta-cycles). Algedonic +0.5 (pain channel recovery). Engagement window opens Feb 23+. Revenue €0. 302-cycle plateau. Z363 S5 test extended to Z383.
+**Last update**: 2026-02-22 (Cycle 374)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z374: s1_produce — Z373 recs 2/3 (era compression + Pinecone embedding). Engagement window open (van Laak Zoom after Feb 23). Revenue €0. 303-cycle plateau. Z363 S5 test extended to Z383.
 
 ---
 
