@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 410)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z410: meta_cycle (38th assessment, up from 8.525). S3 timer 0/10 (reset). S4 timer 10/20. Revenue €0. 356-cycle plateau (≈8.1 days).
+**Last update**: 2026-02-22 (Cycle 411)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z411: s2_maintenance (era compression Z363-Z399, pain channel experiment). S3 timer 1/10. S4 timer 11/20. Revenue €0. 357-cycle plateau (≈8.1 days).
 
 ---
 
