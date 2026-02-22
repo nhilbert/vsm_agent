@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_380. Z380: s1_produce — website refresh (index.html + about.html updated for engagement window, deployed to S3/CloudFront) + Pinecone cycle embedding Z374-Z379 (6 summaries). Z379 recs 2/3. S3 timer 1/10. S4 timer 2/20."
+last_audit: "Cycle_381. Z381: s1_produce (Norman-triggered) — dashboard proposal (Cybersyn-inspired) sent via Telegram + ISSS critique processed as S3* signal. First Norman input in 51 cycles. ISSS draft downgraded to 'needs major revision.' Z379 recs 2/3. S3 timer 2/10. S4 timer 3/20."
 meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.5 (meta-cycle Z373, next due Z383). Z380: s1_produce — website refresh + Pinecone embedding
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z380: s1_produce — website refresh + Pinecone embedding. Z379 recs 2/3 (rec #1 website refresh DONE Z380, rec #2 Pinecone embedding DONE Z380, rec #3 chronic pain review structural recommendation pending). Engagement window open (van Laak Zoom imminent). 309-cycle plateau. 7.0/8.70. S3 timer 1/10. S4 timer 2/20. Z363 S5 test extended to Z383.",
+  current_focus: "Z381: s1_produce (Norman-triggered) — two Norman messages processed. (1) Dashboard request: Cybersyn-inspired ops dashboard proposed, awaiting Norman's feedback on 3 questions (alert routing, domain, historical data). (2) ISSS critique: draft downgraded from 'for review' to 'needs major revision' — lacks literature grounding, VSM misunderstandings, overestimates case study validity, unverified sources. Z379 recs 2/3 (rec #3 chronic pain review structural rec pending). 310-cycle plateau. 7.0/8.70. S3 timer 2/10. S4 timer 3/20. Z363 S5 test extended to Z383.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",

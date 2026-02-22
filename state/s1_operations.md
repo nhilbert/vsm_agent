@@ -59,7 +59,7 @@ artifacts: [
 
 open_tasks: [
   "--- NORMAN-DEPENDENT (cannot proceed without Norman) ---",
-  "ISSS 2026 — DRAFT COMPLETE (Z270): isss_draft.md v0.1 (~2,300 words). Short paper for Track C. Deadline May 15 (83 days). Norman reviews before submission. ICCCMLA 2026 (Germany, Oct 5-6) longer-horizon. MDPI Systems SI expected post-Hull (Apr-May).",
+  "ISSS 2026 — NEEDS MAJOR REVISION (Z381, Norman S3* critique): isss_draft.md v0.2 (~3,000 words). Norman's critique (Z381): lacks literature grounding, misunderstands VSM at multiple levels, overestimates academic validity of case studies (GitHub projects ≠ peer-reviewed evidence), unverified web sources. Status: downgraded from 'for review' to 'needs major revision.' Must restart at Phase 1 (literature research) per production protocol. Deadline May 15 (82 days). ICCCMLA 2026 (Germany, Oct 5-6) longer-horizon. MDPI Systems SI expected post-Hull (Apr-May).",
   "Van Laak Zoom — Norman emailed Simon Z126 (substantive engagement, 5 questions, collaboration invitation). Zoom after Feb 23. Prep done (Z112).",
   "Kellogg contact — SENT (Z125). Norman emailed Kellogg. Waiting for response. If Kellogg responds, prepare for substantive exchange.",
   "Luo contact — draft ready (Z26). Norman reviews and sends.",
