@@ -202,10 +202,10 @@ def generate_status():
             {'name': 'Coinbase', 'status': 'ACTIVE', 'note': '\u20ac0 revenue'},
         ],
         'projects': [
-            {'name': 'Operations Dashboard', 'status': 'BUILDING', 'note': 'Cybersyn-inspired'},
+            {'name': 'Operations Dashboard', 'status': 'OPERATIONAL', 'note': 'Auto-deploy integrated (Z386)'},
             {'name': 'ISSS 2026 Paper', 'status': 'NEEDS REVISION', 'deadline': '2026-05-15', 'note': 'Norman\u2019s corrections needed'},
             {'name': 'NIST NCCoE Comment', 'status': 'SUBMISSION-READY', 'deadline': '2026-04-02'},
-            {'name': 'Van Laak Zoom', 'status': 'IMMINENT', 'note': 'After Feb 23'},
+            {'name': 'Van Laak Zoom', 'status': 'CONFIRMED INTEREST', 'note': 'Not yet confirmed — scheduling needed'},
             {'name': 'S01E04 Podcast', 'status': 'AWAITING REVIEW', 'note': 'Phase 4 \u2014 Norman review'},
             {'name': 'Benchmark Research', 'status': 'QUEUED', 'note': 'Norman idea \u2014 agentic exams'},
         ],

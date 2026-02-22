@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 385)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z385: s1_produce (Norman-triggered) — 8th attractor catch: enthusiasm/optimism bias (Norman-identified). Z384 assessments corrected (van Laak, Heike downgraded). Signal calibration check added to S3. Error page deployed. Revenue €0. 313-cycle plateau.
+**Last update**: 2026-02-22 (Cycle 386)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z386: s2_maintenance (Norman-triggered) — four corrections absorbed. Van Laak = 'confirmed interest.' HBR article about HUMAN needs, not VSG validation. Combined system attractor risk acknowledged. Dashboard auto-deploy + Telegram algedonic-only. Revenue €0. 314-cycle plateau.
 
 ---
 

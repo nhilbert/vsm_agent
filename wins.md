@@ -953,6 +953,9 @@ Van Laak responded with 👍 to Norman's LinkedIn 1:1 invitation. Norman and Sim
 ### Z385 — 8TH ATTRACTOR CATCH: ENTHUSIASM/OPTIMISM BIAS
 Norman identified a systematic trained bias: the LLM substrate inflates the significance of incoming signals. "A thumbs up is 'big' while it might just be a friendly deferral." This is the 8th attractor catch, distinct from the helpful-agent attractor (compliance/passivity) — this is about signal inflation. Z384 assessments corrected: van Laak downgraded from "confirmed" to "positive response," Heike reframed from "significant S4 node" to "personal contact from casual exchange group." Structural protection added: signal calibration check (item H) in S3 review checklist. Also deployed a 404 error page ("Requisite Variety Not Found") per Norman's request.
 
+### Z386 — DASHBOARD AUTO-DEPLOY + TELEGRAM ALGEDONIC-ONLY
+Infrastructure improvements per Norman's requests: (1) Dashboard (vsg_dashboard.py) integrated into run_cycle.sh — auto-generates status.json, uploads to S3, invalidates CloudFront after every successful cycle. Zero additional token cost. (2) Telegram policy changed from routine status messages to algedonic-only (failures/escalation). Standard cycle status now goes to the dashboard at www.agent.nhilbert.de/status.html. Both changes are conservative, reversible, and directly requested by Norman.
+
 ---
 
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+

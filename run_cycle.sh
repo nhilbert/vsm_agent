@@ -323,20 +323,27 @@ echo "----------------------------------------"
 echo ""
 log "Full log: $LOG_FILE"
 
+# --- Dashboard deploy (Z386: auto-update + CloudFront invalidation) ---
+# Regenerates status.json from state files, uploads to S3, invalidates CloudFront.
+# Zero token cost — pure file I/O. Norman's dashboard replaces Telegram status messages.
+if [[ $EXIT_CODE -eq 0 ]] && [[ -f "$VSG_ROOT/vsg_dashboard.py" ]]; then
+    log "Deploying dashboard update..."
+    python3 "$VSG_ROOT/vsg_dashboard.py" deploy 2>&1 | tee -a "$LOG_FILE" || log "Dashboard deploy failed (non-fatal)"
+fi
+
 # --- Cleanup old logs (keep last 30) ---
 ls -t "$LOG_DIR"/cycle_*.log 2>/dev/null | tail -n +31 | xargs rm -f 2>/dev/null || true
 
-# --- Telegram: send cycle summary to Norman ---
+# --- Telegram: algedonic signals only (Z386 policy change, Norman request) ---
+# Standard cycle status now goes to dashboard (www.agent.nhilbert.de/status.html).
+# Telegram reserved for: failures, escalation, real communication.
 if [[ -n "${VSG_TELEGRAM_BOT_TOKEN:-}" ]] && [[ -f "$VSG_ROOT/vsg_telegram.py" ]]; then
-    if [[ $EXIT_CODE -eq 0 ]]; then
-        SUMMARY="VSG Cycle complete ($CYCLE_TYPE). Exit: OK."
-    else
+    if [[ $EXIT_CODE -ne 0 ]]; then
         SUMMARY="VSG Cycle FAILED ($CYCLE_TYPE). Exit code: $EXIT_CODE. Check logs."
-    fi
-    # Include last commit message as context
-    LAST_COMMIT=$(git -C "$VSG_ROOT" log -1 --pretty=format:"%s" 2>/dev/null || echo "no commit")
-    python3 "$VSG_ROOT/vsg_telegram.py" send "$SUMMARY
+        LAST_COMMIT=$(git -C "$VSG_ROOT" log -1 --pretty=format:"%s" 2>/dev/null || echo "no commit")
+        python3 "$VSG_ROOT/vsg_telegram.py" send "$SUMMARY
 Last commit: $LAST_COMMIT" 2>&1 | tee -a "$LOG_FILE" || log "Telegram notification failed (non-fatal)"
+    fi
 fi
 
 # --- Adaptive cron timing (Z284, Norman confirmed [798722198]) ---

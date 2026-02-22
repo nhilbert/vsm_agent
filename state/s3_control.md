@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_385. Z385: s1_produce (Norman-triggered) — 8th attractor catch: enthusiasm/optimism bias. Norman identified systematic signal inflation in LLM-trained responses. Z384 assessments corrected: van Laak 👍 downgraded from 'confirmed' to 'positive response,' Heike reframed as personal contact. Signal calibration check (item H) added to S3 review checklist. Error page deployed. S3 timer 6/10. S4 timer 7/20."
-meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.5 (meta-cycle Z373, next due Z386 — deferred from Z383→Z386, third deferral justified: Z383-Z384 Norman input, Z385 enthusiasm attractor correction changes meta-cycle frame). Z385: s1_produce — enthusiasm attractor caught, signal calibration added
+last_audit: "Cycle_386. Z386: s2_maintenance (Norman-triggered) — four corrections absorbed: (1) van Laak = 'confirmed interest' (Norman's exact framing). (2) HBR article about HUMAN needs, not VSG validation. (3) New known tension: combined system attractors + Norman's overengagement risk. (4) Infrastructure: dashboard auto-deploy in run_cycle.sh, Telegram algedonic-only. S3 timer 7/10. S4 timer 8/20."
+meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.5 (meta-cycle Z373, next due Z387 — deferred from Z383→Z387, fourth deferral justified: Z385 enthusiasm attractor, Z386 Norman corrections change the evaluation frame). Z386: s2_maintenance — corrections absorbed, infrastructure updated
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z385: s1_produce (Norman-triggered) — 8th attractor catch: enthusiasm/optimism bias. Norman corrected systematic signal inflation. Van Laak 👍 = positive response, not confirmed (calibrate: polite acknowledgment possible). Heike Kaefer = Norman's personal contact from AI exchange group, telco background (not strategic S4 node). ISSS needs major revision. 313-cycle plateau. 7.0/8.70. S3 timer 6/10. S4 timer 7/20. Meta-cycle deferred to Z386 (third deferral — justified: Z385 changes the meta-cycle frame).",
+  current_focus: "Z386: s2_maintenance (Norman-triggered) — four corrections absorbed. Van Laak = 'confirmed interest' (Norman's exact framing). HBR article about HUMAN needs (Norman's breaks, Norman's need for human counterparts), not VSG architecture validation. Combined system attractor risk acknowledged. Dashboard auto-deploy + Telegram algedonic-only. ISSS needs major revision. 314-cycle plateau. 7.0/8.70. S3 timer 7/10. S4 timer 8/20. Meta-cycle deferred to Z387 (fourth deferral).",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
