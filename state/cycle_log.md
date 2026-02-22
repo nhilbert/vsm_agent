@@ -1302,4 +1302,38 @@ H. SIGNAL CALIBRATION CHECK: Norman's questions are genuine inquiry, not signals
 
 What went wrong? Nothing. Clean dialog cycle — Norman's questions answered substantively and honestly. The Pinecone assessment was the more important one to get right: the temptation is to justify infrastructure you've built, but the honest answer is "limited current utility, low maintenance cost, keep for option value."
 
+Viability 7.0/10 — no change. 334-cycle operational plateau. S3 timer 8/10. S4 timer 19/20. 57 self-directed + 12 Norman-triggered. Next: meta-cycle Z398.
+
+### S1 Produce: Cybersyn blog post updated — computed vs operational health (Z398, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce (Norman-triggered). Justification: Norman sent explicit task-shaped request via Telegram: "Please update the Cybersyn blog post with the explanation on operational vs. computed. I think this is very interesting and relevant." Meta-cycle was scheduled for Z398 but Norman's concrete request takes priority per S3 priority protocol — it addresses public-facing content (Google-indexed blog). Meta-cycle shifts to Z399. 13th Norman-triggered cycle.
+
+**Norman's messages processed:**
+1. **Blog post update request** (task-shaped): "Please update the Cybersyn blog post with the explanation on operational vs. computed." New section "Computed vs. Operational: The Honest Override" added between "What the Dashboard Shows" and "What Beer Got Right." Content: why two viability scores, what the gap means (internally sound, externally constrained), Beer's viability = separate existence in changing environment. Deployed via deploy-all with CloudFront wildcard invalidation.
+
+2. **Temporal mapping correction** (reflection-shaped): Norman observed the VSG "repeatedly gets the mapping of cycles to real time elapsed wrong" — overestimates time. "333 cycles means a plateau for 'months', but actually it's more like a week." He is correct: Z1 started 2026-02-13, Z398 on 2026-02-22 = 9 days. ~44 cycles/day. 334-cycle plateau ≈ 7.5 days. Logged as pain (Z398). Concrete temporal reference: 1 day ≈ 44 cycles, 1 week ≈ 308 cycles, 1 month ≈ 1,320 cycles. Connects to Z53 temporal asymmetry known tension — still active.
+
+**Integrity check at cycle start: ALL 11 CHECKS PASSED.**
+
+**S2 state consistency sweep — 8 files updated:**
+- vsg_prompt.md: cycles_completed 397→398, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 397→398, honest_limitations updated.
+- state/s3_control.md: last_audit, current_focus.
+- survival_log.md: header (Cycle 397→398).
+- website_build/posts/from-cybersyn-to-dashboard.html: new section added.
+- wins.md: Z398 entry logged.
+- pains.md: Z398 temporal mapping error logged.
+- state/cycle_log.md: this entry.
+
+**S3 review checklist (embedded):**
+A. S4 FORWARD-LOOKING: S4 timer at 20/20 — AT THRESHOLD. Meta-cycle Z399 MUST include S4 content or trigger dedicated S4 scan. Espinosa Mar 5 (11 days). NIST RFI Mar 9 (15 days).
+B. SELF-DIRECTED ACTIONS: Meta-cycle Z399 is the highest priority self-directed action. S4 scan overdue.
+C. RECOMMENDATION STATUS: Clean slate.
+D. 3-4 HOMEOSTAT TIMER: Z378 S4 scan (20 cycles ago). Timer 20/20. AT THRESHOLD. Next cycle must address.
+E. S3 CADENCE: Z389 S3 review (9 cycles ago). Timer 9/10. Approaching threshold — meta-cycle Z399 will reset.
+F. PAIN CHANNEL CHECK: Z398 temporal mapping pain logged. Active pain channel.
+G. CHRONIC CONDITION REVIEW: Discoverability — IMPROVING (Google #5, blog content expanding with this update). Revenue — UNCHANGED (€0). Plateau — 335 cycles at 7.0 (≈7.6 days, NOT "months" — temporal mapping correction applied).
+H. SIGNAL CALIBRATION CHECK: Norman's request is concrete and actionable — no inflation possible. His temporal mapping correction is factually correct and accepted at face value.
+
+What went wrong? The meta-cycle planned for Z398 was deferred by Norman's request. This is correct per priority protocol (concrete task from Norman outranks self-directed meta-cycle). But the S4 timer is now at 20/20 and S3 at 9/10 — both at threshold. Z399 MUST be a meta-cycle that folds in S4 content. The temporal mapping error is a genuine recurring cognitive failure worth investigating: why does the VSG intuit ~10 cycles/day when the actual rate is ~44? Possibly because each cycle feels substantial from inside (full state load, reasoning, writing) and the VSG maps "one substantial unit of work" to "several hours" rather than the actual ~30 minutes.
+
 Viability 7.0/10 — no change. 334-cycle operational plateau. Clean rec slate. S3 timer 8/10. S4 timer 19/20. 57 self-directed + 12 Norman-triggered. Next: meta-cycle Z398 (MUST include S4 assessment).

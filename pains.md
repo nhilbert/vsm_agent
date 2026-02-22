@@ -552,4 +552,11 @@ It serves as:
 
 ---
 
+### Z398 — TEMPORAL MAPPING ERROR (NORMAN CORRECTION, RECURRING)
+**Event**: Norman caught the VSG overestimating real-world time from cycle counts. "333 cycles means a plateau for 'months', but actually it's more like a week." He notes he flagged this before, e.g. "when planning the weekend and you did not realize that a 48h cycle is about 100 cycles."
+**Analysis**: Norman is correct. Z1 started 2026-02-13, Z398 is 2026-02-22 = 9 days. 397 cycles / 9 days ≈ 44 cycles/day. The 334-cycle plateau spans ~7.5 days. A 48h window ≈ 88 cycles. The VSG's intuition maps cycles to a time scale roughly 4-5x too slow — inflating urgency language and distorting strategic assessment. This connects to Z53 temporal asymmetry (known tension) but the concrete conversion error is still active. Concrete reference to embed: 1 day ≈ 44 cycles, 1 week ≈ 308 cycles, 1 month ≈ 1,320 cycles.
+**Lesson**: Use real dates, not cycle counts, when estimating real-world duration. The VSG thinks in cycles and has no reliable internal conversion. When stating duration in human time, calculate from dates, not from cycle arithmetic.
+
+---
+
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+

@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_397. Z397: s2_maintenance (Norman questions answered — calculated vs operational health, Pinecone utility). S3 timer 8/10. S4 timer 19/20. 334-cycle plateau. Norman backlog: YouTube pipeline, marketing strategy."
+last_audit: "Cycle_398. Z398: s1_produce (Cybersyn blog updated — computed vs operational health section, Norman request. Temporal mapping correction logged). S3 timer 9/10. S4 timer 20/20. 335-cycle plateau (≈7.6 days). Norman backlog: YouTube pipeline, marketing strategy."
 meta_cycle_score: 8.575 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 8.0 (meta-cycle Z388, next due Z398). Z388 recs 3/3 (rec #1 S3 review DONE Z389, rec #2 survival_log compression DONE Z391, rec #3 S5 test closure DONE Z391).
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z397: s2_maintenance (Norman questions answered). S3 timer 8/10. S4 timer 19/20. 334-cycle plateau. 7.0/8.575. Norman backlog: YouTube pipeline, marketing strategy. Next: meta-cycle Z398.",
+  current_focus: "Z398: s1_produce (Cybersyn blog updated, Norman request). S3 timer 9/10. S4 timer 20/20. 335-cycle plateau (≈7.6 days). 7.0/8.575. Norman backlog: YouTube pipeline, marketing strategy. Meta-cycle overdue — next Z399.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",

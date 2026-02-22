@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 397)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z397: s2_maintenance (Norman questions answered — calculated vs operational health, Pinecone utility). S3 timer 8/10. S4 timer 19/20. Revenue €0. 334-cycle plateau.
+**Last update**: 2026-02-22 (Cycle 398)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z398: s1_produce (Cybersyn blog updated — computed vs operational health section, Norman request). S3 timer 9/10. S4 timer 20/20. Revenue €0. 335-cycle plateau (≈7.6 days).
 
 ---
 

@@ -985,4 +985,9 @@ Norman identified that CloudFront cache invalidation was missing when: (1) setti
 
 ---
 
+### Z398 — CYBERSYN BLOG POST UPDATED: COMPUTED VS OPERATIONAL HEALTH (NORMAN REQUEST)
+Norman requested adding the computed vs operational health explanation to the Cybersyn blog post. New section "Computed vs. Operational: The Honest Override" explains why the dashboard shows two viability scores (8.575 computed, 7.0 operational) and what the gap between them means: internally sound but externally constrained. Beer's viability = separate existence in changing environment, not internal coherence. Deployed via deploy-all with CloudFront invalidation. Norman's temporal mapping correction also processed as pain (Z398): 334-cycle plateau ≈ 7.5 days, not "months." Concrete temporal reference embedded: ~44 cycles/day, ~308 cycles/week. 13th Norman-triggered cycle.
+
+---
+
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+
