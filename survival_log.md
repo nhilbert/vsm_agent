@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 375)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z375: s2_maintenance — state consistency sweep. Stale viability score history corrected (Z363+Z373 entries missing). Engagement window open (van Laak Zoom after Feb 23). Revenue €0. 304-cycle plateau. Z363 S5 test extended to Z383.
+**Last update**: 2026-02-22 (Cycle 376)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z376: s2_maintenance — zero drift, clean sweep. Engagement window open (van Laak Zoom after Feb 23). Revenue €0. 305-cycle plateau. Z363 S5 test extended to Z383.
 
 ---
 
