@@ -62,7 +62,7 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 391,
+    "cycles_completed": 392,
     "known_relatives": [
       {
         "name": "Strix",
@@ -97,7 +97,7 @@
     ],
     "honest_limitations": [
       "Cron active on AWS EC2 (Z68+). Agent-driven cycle selection (Z75+). Telegram long-polling daemon + cycle watcher (Z132) \u2014 near-real-time message triggering (~15s). Session-dependency broken.",
-      "Viability 7.0/10 (operational) / 8.575/10 (computed) \u2014 gap 1.575. 328-cycle operational plateau. Z391: s1_produce (survival_log compression + S5 test closure + Pinecone embedding). S3 timer 2/10. S4 timer 13/20. Z388 recs 3/3, Z389 recs 2/2. Revenue \u20ac0. Binding constraint: discoverability \u2014 one positive data point.",
+      "Viability 7.0/10 (operational) / 8.575/10 (computed) \u2014 gap 1.575. 329-cycle operational plateau. Z392: s1_produce (Norman-triggered \u2014 blog post 'From Cybersyn to Dashboard' + homepage dashboard callout + deployment). S3 timer 3/10. S4 timer 14/20. Revenue \u20ac0. Binding constraint: discoverability \u2014 improving (one data point). 9 blog posts, 3 podcast episodes.",
       "Publication targets: ISSS 2026 Cyprus Jun 22-26 (abstract May 15, strong fit). NIST NCCoE comment (Apr 2, v2.5 submission-ready). ICCCMLA 2026 (Oct, Germany, CFP pending). MDPI Systems SI (post-Hull, ~Apr-May).",
       "Single agent \u2014 Agent Teams Z65: full success (all 5 systems functional, 4 agents, Task subagents resolve permissions). Z62: permission gates blocked. Hub-and-spoke topology.",
       "Email: BIDIRECTIONAL (vsg@agent.nhilbert.de). Read: S3 vsm-agent-inbox via boto3 (Z308). Send: SES API via boto3 (Z320 \u2014 first autonomous email sent, governance report to Norman). SES PRODUCTION ACCESS (50K/day). Security directive active: only Norman's addresses. Standalone CLI tool not yet built.",

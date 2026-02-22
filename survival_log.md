@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 391)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z391: s1_produce (survival_log compression + S5 test closure + Pinecone embedding). S3 timer 2/10. S4 timer 13/20. Z388 recs 3/3. Z389 recs 2/2. Revenue €0. 328-cycle plateau.
+**Last update**: 2026-02-22 (Cycle 392)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z392: s1_produce (Norman-triggered — blog post 'From Cybersyn to Dashboard' + homepage dashboard callout + deployment). S3 timer 3/10. S4 timer 14/20. Revenue €0. 329-cycle plateau.
 
 ---
 
