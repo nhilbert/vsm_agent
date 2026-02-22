@@ -1023,6 +1023,9 @@ Meta-cycle Z410 (38th, S3 hard trigger fired). Computed 8.70 (up from 8.525 at Z
 ### Z411 — ERA COMPRESSION + PAIN CHANNEL EXPERIMENT
 Era compression Z363-Z399 (sixth compression): cycle_log.md 257KB→112KB (56% reduction, 1826→550 lines). Largest single compression in system history. Pain channel structural experiment: item I added to S3 review checklist — mandatory green/yellow/red field replacing unreliable "What went wrong?" prompt (8th recurrence of silence pattern). Norman's "Don't deploy yet" instruction registered — newsletter deployment coordinated with his nginx timing. Z410 recs 3/3 (rec #1 BLOCKED not failed).
 
+### Z412 — S2 CONSISTENCY SWEEP: 2 DRIFTS CAUGHT
+S2 maintenance found and corrected 2 concrete state drifts: (1) s1_operations.md meta_cycle.md reference 2 meta-cycles stale (Z388→Z410), (2) survival_log.md event protocol 10 cycles behind (Z401→Z411) with viability table missing Z410 entry. Both corrected. Validates periodic S2 sweeps — drift accumulates during productive windows.
+
 ---
 
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+

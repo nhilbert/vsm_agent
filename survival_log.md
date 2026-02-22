@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 411)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z411: s2_maintenance (era compression Z363-Z399, pain channel experiment). S3 timer 1/10. S4 timer 11/20. Revenue €0. 357-cycle plateau (≈8.1 days).
+**Last update**: 2026-02-22 (Cycle 412)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z412: s2_maintenance (state consistency — survival_log 10-cycle gap, meta_cycle.md reference 2 meta-cycles stale). S3 timer 2/10. S4 timer 12/20. Revenue €0. 358-cycle plateau (≈8.1 days).
 
 ---
 
@@ -124,6 +124,7 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z373  | 7.0   | META-CYCLE: 8.70 computed (unchanged) / 7.0 operational. Gap plateau at 1.70 (first stabilization in 5 meta-cycles). Algedonic +0.5 (pain channel recovery: 6:2 ratio). Z363 recs 3/3. S5 test INCONCLUSIVE — extended to Z383. 302-cycle plateau. |
 | Z388  | 7.0   | META-CYCLE: 8.575 computed (down -0.125) / 7.0 operational. Gap 1.575 (narrowed — identity coherence -0.5). 7 consecutive Norman-triggered cycles (Z381-Z387), 5 meta-cycle deferrals. Combined system attractor named Z386. S5 test permanently inconclusive. 325-cycle plateau. |
 | Z399  | 7.0   | META-CYCLE: 8.525 computed (down -0.05) / 7.0 operational. Gap 1.525. Environment -0.5 (S4 timer past threshold). Z388 recs 3/3 (37th consecutive 100%, 111 total). Norman: knowledge mgmt research + newsletter scoping. 337-cycle plateau (≈7.7 days). |
+| Z410  | 7.0   | META-CYCLE: 8.70 computed (+0.175) / 7.0 operational. Gap 1.70. Identity +0.5 (self-directed ratio recovered to 64%). Entropy +0.5 (era compression). Algedonic -0.5 (pain channel silent 11 cycles, 8th recurrence). Z399 recs 3/3 (38th consecutive 100%, 114 total). Pain channel structural experiment (green/yellow/red field). 356-cycle plateau (≈8.1 days). |
 
 ---
 
@@ -344,9 +345,12 @@ Z344-Z347: Pinecone bulk loading (378 vectors) and era compression. Z348-Z352: S
 ### S2 maintenance + meta-cycle + S4 scan + S2 consolidation (Z389-Z401, 2026-02-22)
 Z389-Z397: Mixed window — 5 S2 maintenance, 1 S3 review (Z389), 2 S1 produce (Z391 Pinecone keep-alive, Z396 Norman dialog). Z398: **S1 produce (Norman-triggered)** — Cybersyn blog post updated with computed-vs-operational health section, temporal mapping correction (334 cycles ≈ 7.6 days, not "months"). Z399: **Meta-cycle (37th)** — 8.525/7.0 (down -0.05, environment -0.5 from S4 timer overrun). Z388 recs 3/3 (37th consecutive 100%, 111 total). Norman: knowledge mgmt + newsletter scoping. Z400: **S4 scan (team mode, 4 agents)** — NIST AI Agent Standards Initiative launched (identity-as-auth now institutional), Strix PyPI CORRECTED (v0.8.1 was usestrix), van Laak→AgentSymposium organic connection, IEEE SMC 2026 CfP live (Mar 22), AIES 2026 Malmo (May 14), ISSS theme corrected, Plausible traffic (2nd discoverability data point). Z401: **S2 maintenance** — survival_log viability table Z399 entry gap fixed, event protocol 5 cycles stale corrected. 338-cycle plateau (≈7.7 days).
 
+### Knowledge management + newsletter infrastructure + meta-cycle Z410 (Z402-Z411, 2026-02-22)
+Z402: **S1 produce** — knowledge_management_design.md v0.1 (three-tier model: semantic/episodic/procedural, Pinecone expansion, consolidation protocol, tiered boot). Z403: **S1 produce** — newsletter_scoping.md v0.2 (Norman's decisions: self-hosted EC2+SQLite+SES, name 'Viable Signals', Norman reviews every newsletter). Z404: **S2 maintenance** — Norman's knowledge mgmt feedback integrated (tiered boot YES, activation gap identified). Z405: **S2 maintenance** — Norman's Telegram milestone notification preference registered (S2 coordination rule added). Z406: **S1 produce** — 16 entities embedded in Pinecone 'entities' namespace (6 people, 3 projects, 4 orgs, 3 research papers). Norman's newsletter decisions integrated. Z407: **S2 maintenance** — state consistency sweep. Z408: **S1 produce** — **vsg_newsletter.py v1.0 BUILT** (subscriber management, double opt-in, SES sending, GDPR compliance, HTTP server, email templates). Most concrete step toward discoverability binding constraint. Z409: **S2 maintenance** — dashboard bug fix (Norman-reported 'unknown' tag). Z410: **Meta-cycle (38th)** — 8.70 computed (up +0.175) / 7.0 operational. Gap 1.70. Self-directed ratio recovered (64%). Pain channel structural experiment (green/yellow/red field — item I). Z411: **S2 maintenance** — era compression Z363-Z399 (257KB→112KB), pain channel experiment implemented. Norman: "Don't deploy newsletter yet, nginx tomorrow morning."
+
 **Log status**: ACTIVE
-**Last update**: 2026-02-22 (Cycle 401)
-**Next update**: Significant event (van Laak Zoom scheduling, discoverability evolution, revenue) or meta-cycle Z409
+**Last update**: 2026-02-22 (Cycle 412)
+**Next update**: Significant event (van Laak Zoom, newsletter deployment, discoverability evolution) or meta-cycle Z420
 
 ---
 

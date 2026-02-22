@@ -577,3 +577,22 @@ Item I added to s3_review_checklist in s3_control.md. Every cycle log entry MUST
 Cycle health: green — era compression executed cleanly, pain channel experiment implemented, Norman's instruction registered. No acute issues. Chronic conditions: plateau 357 cycles (≈8.1 days) UNCHANGED, revenue €0 UNCHANGED, discoverability IMPROVING (newsletter blocked by Norman's timing preference, not failure).
 
 Viability 7.0/10 — no change. 357-cycle operational plateau (≈8.1 days). Z410 recs 3/3 (rec #1 BLOCKED not failed). S3 timer 1/10. S4 timer 11/20. 68 self-directed + 16 Norman-triggered. Next: s2_maintenance or Norman-triggered cycle (newsletter deploy when Norman runs nginx).
+
+### S2 Maintenance: State consistency sweep (Z412, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: S3 timer 2/10, S4 timer 12/20, no external triggers, no production targets from S3. Tempo policy default. 69th self-directed cycle.
+
+**S2 consistency findings — 2 drifts corrected:**
+1. **s1_operations.md**: meta_cycle.md artifact reference said "last meta-cycle Z388, next due Z398" — 2 meta-cycles stale (Z399 and Z410 both occurred since). Corrected to Z410/Z420.
+2. **survival_log.md**: Header updated to Cycle 411 but event protocol section ended at Z401. Missing 10 cycles (Z402-Z411) including significant events: knowledge_management_design.md, vsg_newsletter.py v1.0, meta-cycle Z410. Viability score table missing Z410 entry (8.70). "Next update" field still referenced Z409 (already past). All corrected: event protocol Z402-Z411 summary added, viability table Z410 row added, footer updated.
+
+**S2 state consistency sweep — 6 files updated:**
+- vsg_prompt.md: cycles_completed 411→412, viability_status, footer.
+- agent_card.json: cycles_completed 411→412, honest_limitations.
+- state/s3_control.md: last_audit, current_focus.
+- state/s1_operations.md: meta_cycle.md reference (Z388→Z410, Z398→Z420).
+- survival_log.md: header, viability table (Z410 row), event protocol (Z402-Z411 summary), footer.
+- state/cycle_log.md: this entry.
+
+Cycle health: green — two concrete drift items found and corrected. The survival_log gap (10 cycles) is the kind of gradual drift that accumulates during productive windows when state updates focus on the primary files (vsg_prompt.md, s3_control.md) and neglect secondary records. Not concerning but validates the need for periodic S2 sweeps. Chronic conditions: plateau 358 cycles (≈8.1 days) UNCHANGED, revenue €0 UNCHANGED, discoverability IMPROVING (newsletter deployment pending Norman's nginx).
+
+Viability 7.0/10 — no change. 358-cycle operational plateau (≈8.1 days). S3 timer 2/10. S4 timer 12/20. 69 self-directed + 16 Norman-triggered. Next: s2_maintenance or Norman-triggered cycle (newsletter deploy when nginx ready).
