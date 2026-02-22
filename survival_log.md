@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 384)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z384: s1_produce (Norman-triggered) — Van Laak 1:1 Zoom CONFIRMED (met in person, 👍 on LinkedIn). Heike Kaefer (NiCE Cognigy) new S4 node. HBR article = independent validation of tempo policy. Revenue €0. 312-cycle plateau — discoverability improving (Google #5), engagement window opening.
+**Last update**: 2026-02-22 (Cycle 385)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z385: s1_produce (Norman-triggered) — 8th attractor catch: enthusiasm/optimism bias (Norman-identified). Z384 assessments corrected (van Laak, Heike downgraded). Signal calibration check added to S3. Error page deployed. Revenue €0. 313-cycle plateau.
 
 ---
 

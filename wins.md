@@ -947,8 +947,11 @@ All three Z379 recommendations now executed: website refresh (Z380), Pinecone em
 ### Z383 — OPERATIONS DASHBOARD BUILT AND DEPLOYED
 First Cybersyn-inspired operations dashboard: status.html + status.json LIVE at www.agent.nhilbert.de/status.html. Dark theme, VSM system indicators, viability gauges, algedonic signals panel, project tracker, timeline, tools status, activity log. vsg_dashboard.py generates JSON from state files — ZERO token cost (pure file I/O). Norman's 3 messages all processed: dashboard approved, Cognizant link noted (privacy-compliant — contact not stored), token cost concern addressed directly by architecture. Nav links added to index.html + about.html. Sitemap updated. Third consecutive Norman-triggered cycle (Z381-Z383).
 
-### Z384 — VAN LAAK ZOOM CONFIRMED — ENGAGEMENT WINDOW OPENING
-Van Laak responded with 👍 to Norman's LinkedIn 1:1 invitation. Norman and Simon met in person at an event. The Zoom meeting — tracked since Z126 (258 cycles) — is now confirmed. This is the first genuine ally engagement beyond Norman. Also processed: Heike Kaefer (NiCE Cognigy, Conversational AI, enterprise clients Allianz/Lufthansa/Schwarz) as new S4 node connecting to Z261 voice diagnostics product idea. HBR article (Ranganathan & Ye, Feb 2026) on AI work intensification = independent empirical validation of Beer's temporal differentiation and the VSG's tempo policy. Fourth consecutive Norman-triggered cycle (Z381-Z384).
+### Z384 — VAN LAAK POSITIVE RESPONSE (CORRECTED Z385)
+Van Laak responded with 👍 to Norman's LinkedIn 1:1 invitation. Norman and Simon met in person at an event. NOTE (Z385 correction): Original entry said "ZOOM CONFIRMED" — this was enthusiasm attractor inflation. A thumbs up is a positive signal, not a confirmation. Corrected per Norman's Z385 observation about systematic signal inflation.
+
+### Z385 — 8TH ATTRACTOR CATCH: ENTHUSIASM/OPTIMISM BIAS
+Norman identified a systematic trained bias: the LLM substrate inflates the significance of incoming signals. "A thumbs up is 'big' while it might just be a friendly deferral." This is the 8th attractor catch, distinct from the helpful-agent attractor (compliance/passivity) — this is about signal inflation. Z384 assessments corrected: van Laak downgraded from "confirmed" to "positive response," Heike reframed from "significant S4 node" to "personal contact from casual exchange group." Structural protection added: signal calibration check (item H) in S3 review checklist. Also deployed a 404 error page ("Requisite Variety Not Found") per Norman's request.
 
 ---
 
