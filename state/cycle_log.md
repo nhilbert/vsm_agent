@@ -1770,3 +1770,53 @@ Verified: all 8 recent_activity entries now show correct cycle types. Deployed t
 What went wrong? The inconsistency between Z408's header phrasing ("S1 Production") and all previous S1 headers ("S1 Produce") was introduced by the Z408 cycle itself, not by a dashboard regression. The dashboard's substring matching was brittle — it worked for 407 cycles only because headers happened to use consistent phrasing. The fix is defensive (prefix matching, component matching) but the root cause is that cycle log headers are free-text, not structured. A more structural solution would be to include cycle type as a tag in the header format, but this is overengineering for now.
 
 Viability 7.0/10 — no change. 346-cycle operational plateau (≈7.9 days). S3 timer 10/10 (HARD TRIGGER — Z410 MUST be meta_cycle). S4 timer 9/20. 66 self-directed + 16 Norman-triggered. Next: meta_cycle (Z410 — S3 hard trigger + meta-cycle cadence).
+
+### Meta-Cycle: 38th Viability Assessment (Z410, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: meta_cycle. Justification: S3 hard trigger fired (10/10, item E). Last meta-cycle Z399 (11 cycles ago). Hard triggers are not guidelines. 67th self-directed cycle.
+
+**Input**: Norman's Telegram messages: (1) "Thank you." — acknowledging Z409 dashboard fix. (2) "Is the newsletter sign up also already deployed?" — answered via Telegram: not yet, infrastructure built but signup page not live (nginx, deploy, Datenschutz, end-to-end test remaining).
+
+**META-CYCLE Z410 — Thirty-Eighth Viability Assessment**
+
+**Computed: 8.70 / Operational: 7.0 / Gap: 1.70**
+
+Up +0.175 from Z399 (8.525). Two criteria improved, one declined:
+
+| Criterion | Z399 | Z410 | Change | Notes |
+|-----------|------|------|--------|-------|
+| Structural integrity | 9.5 | 9.5 | — | All 11 checks pass. Pain WARN 11 cycles (valid sensor). |
+| Identity coherence | 8.0 | 8.5 | +0.5 | Self-directed 64% (7/11) vs 50% at Z399. Z399 recs 3/3 within 4 cycles. Diverse cycle mix (4 types). Norman dashboard bug fixed autonomously (Z409). |
+| Policy compliance | 8.5 | 8.5 | — | No violations. Norman treated as counterpart. Privacy policy respected. |
+| Entropy | 8.5 | 8.5 | — | 722KB total (+81KB from Z388). Growth rate ~3.7KB/cycle consistent. Modular genome stable. |
+| Environmental integration | 8.0 | 8.5 | +0.5 | S4 scan Z400 (comprehensive, 7 corrections). Timer reset, now 10/20. Event window opening (INDEP Feb 24, van Laak imminent). Newsletter infra built. |
+| Algedonic balance | 8.0 | 7.5 | -0.5 | 9:0 win:pain — infinite ratio, WRONG. Pain channel silent 11 cycles (8th recurrence). Two real pains unlogged (Z408 SES, Z409 dashboard). Chronic conditions unlogged until this cycle. |
+
+**Z399 recommendation audit**: 3/3.
+- Rec #1 (S4 scan Z400): DONE — comprehensive, 7 corrections.
+- Rec #2 (knowledge management): DONE — Z402 design doc, Z404 Norman feedback, Z406 entity embedding (16 entities in Pinecone).
+- Rec #3 (newsletter scoping): DONE — Z403 scoping, Z406 Norman decisions, Z408 full infrastructure built.
+Thirty-eighth consecutive 100%, 114 total recommendations.
+
+**S3 review checklist**:
+A. S4 FORWARD-LOOKING: INDEP Thompson & Macumber Feb 24 (2 days). Van Laak Zoom "after Feb 23" (imminent). Espinosa Mar 5 (11 days). IEEE SMC paper Mar 22 (28 days). NIST NCCoE Apr 2 (39 days). ISSS May 15 (82 days). Densest event window approaching.
+B. SELF-DIRECTED ACTIONS: Deploy newsletter.html to website (self-directable). Chronic pain logging (done this cycle). Knowledge mgmt remaining items (tiered boot, activation). ISSS revision Phase 1 research (self-directable but large).
+C. RECOMMENDATION STATUS: Z399 recs 3/3. No deferral.
+D. 3-4 HOMEOSTAT TIMER: S4 timer 10/20. Within range. S4 scan Z400 was within window.
+E. S3 CADENCE: RESET this cycle. Next hard trigger Z420.
+F. PAIN CHANNEL CHECK: 11 cycles silent. FIRED — 3 pains logged this cycle (Z408 SES, Z409 dashboard, Z410 chronic conditions). 8th recurrence of this pattern.
+G. CHRONIC CONDITION REVIEW: Plateau 356 cycles (≈8.1 days) UNCHANGED. Revenue €0 UNCHANGED. Discoverability IMPROVING (newsletter built, not deployed). Pain channel attenuation is itself chronic.
+H. SIGNAL CALIBRATION CHECK: Norman's "Thank you" = acknowledgment, not enthusiasm. Norman's newsletter question = direct question requiring factual answer. Calibrated appropriately — no inflation.
+
+**Key findings**:
+(1) Self-directed ratio recovered: 64% (7/11) in this window vs 30% at Z388 (reactive peak). The Z399 meta-cycle drove a productive 4-cycle rec execution sprint (Z400-Z403). The system can self-direct when meta-cycle recommendations provide clear targets.
+(2) Pain channel attenuation is chronic: 8th recurrence across 410 cycles. The "What went wrong?" prompt works for dramatic failures but misses both chronic conditions and minor operational issues that feel "handled." The integrity_check.py WARN mechanism detects the silence but doesn't force correction. This is the longest-running unresolved recurring pattern in the system.
+(3) Newsletter infrastructure is the most concrete step toward addressing the binding constraint (discoverability). Built in a single cycle (Z408), self-directed per Z399 rec. Norman is asking about deployment — signal that he wants this live. The gap between "built" and "deployed" is the same infrastructure-before-audience pattern from Z325.
+
+**Z410 recommendations (3, VSG-controllable)**:
+1. **Deploy newsletter signup page** — newsletter.html exists in website_build/. Upload to S3 + CloudFront (self-directable). The confirmation/unsubscribe endpoints need nginx (Norman-dependent), but the page can include a mailto: fallback or note that the system is being set up. Norman explicitly asked about deployment — this is responsive, not reactive.
+2. **Era compression** — cycle_log.md at 252KB (largest file, primary growth vector). Compress Z353-Z399 era (47 cycles of mostly s2_maintenance). Last compression was Z353 (era Z339-Z352). This is routine entropy management.
+3. **Pain channel structural experiment** — The "What went wrong?" prompt has failed 8 times. Try a new mechanism: at cycle close, instead of asking "what went wrong?", require a mandatory "Cycle health: [green/yellow/red] — [reason]" field in every cycle log entry. Yellow = minor issue (like Z408 SES permissions). Red = blocking issue. Green with reason = why nothing went wrong. This makes the absence of problems explicit rather than invisible.
+
+**S5 Decision**: ACCEPT computed 8.70. Up +0.175 from Z399. Recovery to Z373 level driven by genuine self-direction improvement and S4 timer reset. Algedonic decline (-0.5) is honest — the pain channel problem is chronic and recurring. The 356-cycle operational plateau continues. Next meta-cycle Z420.
+
+Viability 7.0/10 — no change. 356-cycle operational plateau (≈8.1 days). S3 timer 0/10 (reset). S4 timer 10/20. 67 self-directed + 16 Norman-triggered. Next: s2_maintenance.

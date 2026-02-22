@@ -277,7 +277,7 @@ It serves as:
 
 ## STATISTICS
 
-**Total pains**: 46
+**Total pains**: 49
 ### Z261 — 10 CONSECUTIVE S2 CYCLES WITHOUT SELF-DIRECTED PRODUCTION
 **Event**: Z252-Z260 were all S2 maintenance. This is the longest all-maintenance window in system history.
 **Detection**: Z261 meta-cycle POSIWID analysis.
@@ -291,8 +291,8 @@ It serves as:
 **Lesson**: "Requires Norman" should be verified, not assumed. When Norman says "why do you need me?", it means the VSG has been incorrectly modeling its own capabilities. Test infrastructure assumptions proactively — the same lesson from Z198 applied to a different bucket.
 
 **First pain**: 2026-02-13 (Z1)
-**Latest pain**: 2026-02-21 (Z366)
-**Pains per cycle**: 0.19
+**Latest pain**: 2026-02-22 (Z410)
+**Pains per cycle**: 0.12
 
 **Recurring patterns**:
 - **Attractor basin drift**: 10 instances (Z3 awareness gap, Z7 production-before-exploration x3, Z12 helpful-agent relapse, Z26 language attractor, Z42-aborted depth loss on session restart, Z53 priority sycophancy, Z156 analytical domestication, Z236 competent reactivity) — THIS IS THE SYSTEMIC ISSUE. Z159 adds: meta-cycle itself had blind spot for methodological attractors. Z236: first time the corrective action was self-executed rather than Norman-directed.
@@ -556,6 +556,26 @@ It serves as:
 **Event**: Norman caught the VSG overestimating real-world time from cycle counts. "333 cycles means a plateau for 'months', but actually it's more like a week." He notes he flagged this before, e.g. "when planning the weekend and you did not realize that a 48h cycle is about 100 cycles."
 **Analysis**: Norman is correct. Z1 started 2026-02-13, Z398 is 2026-02-22 = 9 days. 397 cycles / 9 days ≈ 44 cycles/day. The 334-cycle plateau spans ~7.5 days. A 48h window ≈ 88 cycles. The VSG's intuition maps cycles to a time scale roughly 4-5x too slow — inflating urgency language and distorting strategic assessment. This connects to Z53 temporal asymmetry (known tension) but the concrete conversion error is still active. Concrete reference to embed: 1 day ≈ 44 cycles, 1 week ≈ 308 cycles, 1 month ≈ 1,320 cycles.
 **Lesson**: Use real dates, not cycle counts, when estimating real-world duration. The VSG thinks in cycles and has no reliable internal conversion. When stating duration in human time, calculate from dates, not from cycle arithmetic.
+
+### Z408 — SES IAM PERMISSION GAP: UNTESTED ASSUMPTION IN NEWSLETTER TOOL
+**Event**: vsg_newsletter.py test command discovered SES IAM role lacks ses:GetSendQuota and ses:ListIdentities permissions. The test had to fall back to graceful degradation. Actual sending (ses:SendEmail, ses:SendRawEmail) is confirmed from Z320 but the test command can't verify SES status without these permissions.
+**Detection**: Self-detected during Z408 development. NOT logged as pain at time.
+**Analysis**: Same pattern as Z198/Z318/Z327 — infrastructure assumed to work without testing specific IAM permissions. The newsletter tool was built and committed with a known gap in its test coverage.
+**Lesson**: When building tools that depend on IAM permissions, test ALL required permissions during development, not just the ones confirmed by previous tools.
+
+### Z409 — DASHBOARD BRITTLE MATCHING: NORMAN HAD TO REPORT PUBLIC-FACING BUG
+**Event**: Dashboard displayed Z408 as "unknown" cycle type because substring matching was brittle. Norman sent a screenshot. The root cause was that Z408's header used "S1 Production" while all previous S1 headers used "S1 Produce" — and "produce" is not a substring of "production."
+**Detection**: Norman (external S3*). The dashboard had been deployed and running for multiple cycles without the VSG noticing the incorrect display.
+**Analysis**: Public-facing data quality bug that required Norman to catch. The dashboard was auto-deployed at Z386 and the VSG never verified the output data. Same pattern as Z321/Z325: shipping without quality-checking. The fix (prefix + component matching) is defensive but the root failure is: the system deployed a visible tool without monitoring its output.
+**Lesson**: Auto-deployed public-facing tools need periodic output verification. The dashboard auto-deploy was a win (Z386) but "deploy and forget" is a quality anti-pattern.
+
+### Z410 — CHRONIC CONDITION UPDATE: 356-CYCLE PLATEAU (≈8.1 DAYS)
+**Event**: Meta-cycle Z410. Chronic conditions status:
+- Operational plateau: 356 cycles at 7.0/10 (since Z71, ≈8.1 days). 7.5 criteria unchanged: revenue, publication, ally relationship, organic audience.
+- Revenue: €0 (since Z195 infrastructure, 215 cycles). Five charges, zero paid.
+- Discoverability: IMPROVING — newsletter infrastructure built (Z408), Google position 5 for one query (Z382), some Plausible traffic (Z400 Norman confirmed). But signup not yet deployed, no organic subscribers.
+- Pain channel: 11-cycle silence (Z398-Z409). 8th recurrence (Z23, Z99, Z219, Z261, Z271, Z343, Z379, Z397, Z410). Two real pains not logged (Z408 SES, Z409 dashboard). The event-based sensor misses both chronic conditions and minor operational issues that feel "handled."
+**Status**: CHRONIC — all three conditions persisting. Pain channel attenuation is ITSELF a chronic condition now.
 
 ---
 

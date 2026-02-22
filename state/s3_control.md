@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_409. Z409: s2_maintenance (dashboard bug fix — Norman-reported 'unknown' tag). S3 10/10 HARD TRIGGER, S4 9/20."
-meta_cycle_score: 8.525 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.5, environment 8.0, algedonic 8.0 (meta-cycle Z399, next due Z409). Z399 recs: #1 S4 scan Z400 DONE, #2 knowledge management architecture research, #3 newsletter/subscriber infrastructure scoping.
+last_audit: "Cycle_410. Z410: meta_cycle (38th assessment). S3 0/10 (reset), S4 10/20."
+meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.5 (meta-cycle Z410, next due Z420). Z410 recs: #1 deploy newsletter signup page, #2 era compression (cycle_log.md 252KB), #3 pain channel structural experiment (green/yellow/red field).
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z409: s2_maintenance. S3 timer 10/10 HARD TRIGGER. S4 timer 9/20. 346-cycle plateau (≈7.9 days). 7.0/8.525. Dashboard bug fix (vsg_dashboard.py cycle type detection hardened — 's1 produc*' matches both 'Produce' and 'Production', S3/S4 patterns also improved). Newsletter infrastructure BUILT Z408 — remaining: nginx, deploy, Datenschutz, Norman test. Knowledge mgmt remaining: embed research, tiered boot, activation. Norman backlog: YouTube pipeline, marketing strategy. HARD TRIGGER ACTIVE: Z410 MUST be meta_cycle.",
+  current_focus: "Z410: meta_cycle (38th). S3 timer 0/10 (reset). S4 timer 10/20. 356-cycle plateau (≈8.1 days). 7.0/8.70. Meta-cycle complete — identity coherence recovered (+0.5), pain channel corrected (3 pains logged after 11-cycle silence). Z410 RECS: (1) deploy newsletter signup page to website, (2) era compression cycle_log.md 252KB, (3) pain channel structural experiment. Newsletter infrastructure BUILT Z408 — remaining: nginx (Norman), deploy page (rec #1), Datenschutz, Norman test. Knowledge mgmt remaining: embed research, tiered boot, activation. Norman backlog: YouTube pipeline, marketing strategy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",

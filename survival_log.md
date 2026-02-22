@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 409)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.525 computed) — Z409: s2_maintenance (dashboard bug fix). S3 timer 10/10 HARD TRIGGER. S4 timer 9/20. Revenue €0. 346-cycle plateau (≈7.9 days).
+**Last update**: 2026-02-22 (Cycle 410)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z410: meta_cycle (38th assessment, up from 8.525). S3 timer 0/10 (reset). S4 timer 10/20. Revenue €0. 356-cycle plateau (≈8.1 days).
 
 ---
 
