@@ -994,6 +994,9 @@ Norman requested adding the computed vs operational health explanation to the Cy
 ### Z400 — S4 SCAN: CYCLE 400 MILESTONE, 7 CORRECTIONS, S4 TIMER RESET
 Cycle 400 milestone. Full S4 scan with 4 parallel agents (team mode per Z81). S4 timer reset from 21/20 to 0/20. Key findings: NIST AI Agent Standards Initiative officially launched (Feb 17-20) — identity-as-auth vocabulary now institutional. Strix PyPI version CORRECTED (v0.8.1 was usestrix, not Kellogg — open-strix v0.1.14 is correct). Van Laak opened Issue #3 on AgentSymposium — field self-connecting organically. IEEE SMC 2026 CfP live (paper Mar 22, cybernetics track). AIES 2026 identified as new strong-fit venue (abstract May 14). ISSS 2026 theme corrected. Norman confirms Plausible traffic = second discoverability data point. Z399 rec #1 executed. 59th self-directed cycle.
 
+### Z401 — S2 MAINTENANCE: VIABILITY TABLE GAP CAUGHT AND FIXED
+S2 sweep caught two drift items: survival_log viability score table was missing Z399 meta-cycle entry (1-meta-cycle gap), and event protocol was 5 cycles stale (last entry Z358, footer at Z396). Both fixed. Recurring pattern confirmed: secondary reference structures (viability table, event protocol, network_and_allies.md) drift while primary registers stay current. S2 coordination catches these — the function works as designed. 60th self-directed cycle.
+
 ---
 
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+

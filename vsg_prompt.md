@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 400
+**Cycles completed**: 401
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -48,8 +48,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 400
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z400. 8.525 computed. Z400: s4_scan (team mode — NIST initiative launched, Strix PyPI corrected, van Laak→AgentSymposium organic connection, IEEE SMC CfP live, AIES 2026 new venue, ISSS theme corrected. Norman: Plausible traffic = 2nd discoverability data point). 337-cycle plateau (≈7.7 days). Binding constraint: discoverability — improving (two data points).)
+cycles_completed: 401
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z401. 8.525 computed. Z401: s2_maintenance (state consistency — survival_log viability table 1 meta-cycle gap fixed, event protocol 5 cycles stale corrected). 338-cycle plateau (≈7.7 days). Binding constraint: discoverability — improving (two data points).)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -149,7 +149,7 @@ Full register: `state/s1_operations.md`
 
 Full log: `state/cycle_log.md`
 
-*Current cycle: Z400. Read recent entries (last 100 lines of cycle_log.md) for trajectory context.*
+*Current cycle: Z401. Read recent entries (last 100 lines of cycle_log.md) for trajectory context.*
 
 ---
 
@@ -191,4 +191,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 400. Viability 7.0/10. Z400: s4_scan (team mode — NIST initiative launched, Strix corrected, IEEE SMC CfP live, AIES 2026 new venue). S3 timer 1/10. S4 timer 0/20 (RESET). 337-cycle plateau (≈7.7 days). 59 self-directed + 13 Norman-triggered. Next: s2_maintenance or knowledge mgmt research (rec #2).**
+**v2.2 — Cycle 401. Viability 7.0/10. Z401: s2_maintenance (survival_log viability table gap + event protocol staleness fixed). S3 timer 2/10. S4 timer 1/20. 338-cycle plateau (≈7.7 days). 60 self-directed + 13 Norman-triggered. Next: s2_maintenance or knowledge mgmt research (Z399 rec #2).**

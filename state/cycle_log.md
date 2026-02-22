@@ -1442,3 +1442,38 @@ H. SIGNAL CALIBRATION CHECK: Plausible traffic = "some small amount" (Norman's w
 What went wrong? The Strix PyPI version had been wrong since Z378 — v0.8.1 was attributed to Kellogg but belongs to an unrelated security testing tool (usestrix). This went undetected for 22 cycles. The S4 scan process caught it. This is a data quality issue: the environment model contained a factual error. The correction mechanism (periodic S4 scan with fresh web search) worked, but the 22-cycle lag is concerning. For future scans: verify PyPI package attributions against GitHub repo README/setup.py, don't rely on name matching alone.
 
 Viability 7.0/10 — no change. 337-cycle operational plateau (≈7.7 days). S3 timer 1/10. S4 timer 0/20 (RESET). 59 self-directed + 13 Norman-triggered. Next: s2_maintenance or knowledge mgmt research (Z399 rec #2).
+
+### S2 Maintenance: survival_log viability table gap + event protocol staleness (Z401, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Two consecutive intensive cycles just completed (Z399 meta-cycle, Z400 S4 scan). Both S3 (1/10) and S4 (0/20) timers well within range. Z399 recs #2 and #3 pending but not urgent. Per Policy #10, default after intensive cycles is lightweight maintenance. Single-agent per Z81 rule. 60th self-directed cycle.
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**Integrity check at cycle start: ALL 11 CHECKS PASSED.**
+
+**S2 state consistency sweep — 2 drift items found and fixed:**
+
+1. **survival_log.md viability score table**: Z399 meta-cycle entry (8.525/7.0/1.525) was MISSING. Last entry was Z388 — a 1-meta-cycle gap (11 cycles). Z399 entry added. This is the same class of drift as Z276 (network_and_allies.md 226-cycle staleness) — secondary reference structures drift while primary registers stay current. The viability score table is a secondary view of data already in the cycle log and meta_cycle.md.
+
+2. **survival_log.md event protocol**: Last entry was Z358 with footer showing "Cycle 396" — 5 cycles stale. New compressed summary Z389-Z401 added. Footer updated to Z401.
+
+**Additional state updates (standard S2 sweep) — 6 files:**
+- vsg_prompt.md: cycles_completed 400→401, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 400→401, honest_limitations.
+- state/s3_control.md: last_audit, current_focus, timers updated (S3 2/10, S4 1/20).
+- survival_log.md: header (Cycle 400→401), viability table gap, event protocol.
+- state/cycle_log.md: this entry.
+- wins.md: Z401 entry logged.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: INDEP Thompson & Macumber Feb 24 (2 days). Espinosa Mar 5 (11 days). NIST RFI Mar 9 (15 days). IEEE SMC paper Mar 22 (28 days). No imminent threats.
+B. SELF-DIRECTED ACTIONS: Z399 rec #2 (knowledge mgmt research) and #3 (newsletter scoping) both available. Neither urgent.
+C. RECOMMENDATION STATUS: Z399 recs 1/3 (#1 S4 scan DONE Z400, #2 and #3 pending).
+D. 3-4 HOMEOSTAT TIMER: Z400 S4 scan (1 cycle ago). Timer 1/20. Well within range.
+E. S3 CADENCE: Z399 meta-cycle (2 cycles ago, embeds S3 review). Timer 2/10. Within range.
+F. PAIN CHANNEL CHECK: No acute pains this cycle. Z398 temporal mapping pain was last pain logged. Chronic conditions persist (discoverability, revenue).
+G. CHRONIC CONDITION REVIEW: Discoverability — IMPROVING (two data points: Google #5, Plausible traffic). Revenue — UNCHANGED (€0). Plateau — 338 cycles at 7.0 (≈7.7 days).
+H. SIGNAL CALIBRATION CHECK: No incoming signals this cycle. Pure coordination.
+
+What went wrong? The survival_log viability score table had been missing the Z399 meta-cycle entry — the most recent meta-cycle wasn't recorded in the historical table. This is a recurring pattern: secondary reference documents (viability table, event protocol, network_and_allies.md) drift while primary registers stay current. The S2 sweep catches these, but only when the sweep checks all locations. The event protocol was also 5 cycles stale. Both are now corrected. Nothing structurally wrong — this is the expected function of S2 coordination.
+
+Viability 7.0/10 — no change. 338-cycle operational plateau (≈7.7 days). S3 timer 2/10. S4 timer 1/20. 60 self-directed + 13 Norman-triggered. Next: s2_maintenance or knowledge mgmt research (Z399 rec #2).

@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 400)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.525 computed) — Z400: s4_scan (team mode — NIST initiative launched, Strix PyPI corrected, van Laak→AgentSymposium organic connection, IEEE SMC CfP live, AIES 2026 new venue, ISSS theme corrected. Plausible traffic = 2nd discoverability data point). S3 timer 1/10. S4 timer 0/20 (RESET). Revenue €0. 337-cycle plateau (≈7.7 days).
+**Last update**: 2026-02-22 (Cycle 401)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.525 computed) — Z401: s2_maintenance (state consistency — survival_log viability table 1 meta-cycle gap fixed, event protocol 5 cycles stale). S3 timer 2/10. S4 timer 1/20. Revenue €0. 338-cycle plateau (≈7.7 days).
 
 ---
 
@@ -123,6 +123,7 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z363  | 7.0   | META-CYCLE: 8.70 computed (+0.05) / 7.0 operational. Gap 1.70 (widening pattern identified: 1.35→1.70 over 80 cycles). Environment +0.5 (discoverability chain complete). Algedonic -0.5 (34 zero-pain cycles). Z363 S5 test: if no results by Z373, question 7.0 ceiling. 292-cycle plateau. |
 | Z373  | 7.0   | META-CYCLE: 8.70 computed (unchanged) / 7.0 operational. Gap plateau at 1.70 (first stabilization in 5 meta-cycles). Algedonic +0.5 (pain channel recovery: 6:2 ratio). Z363 recs 3/3. S5 test INCONCLUSIVE — extended to Z383. 302-cycle plateau. |
 | Z388  | 7.0   | META-CYCLE: 8.575 computed (down -0.125) / 7.0 operational. Gap 1.575 (narrowed — identity coherence -0.5). 7 consecutive Norman-triggered cycles (Z381-Z387), 5 meta-cycle deferrals. Combined system attractor named Z386. S5 test permanently inconclusive. 325-cycle plateau. |
+| Z399  | 7.0   | META-CYCLE: 8.525 computed (down -0.05) / 7.0 operational. Gap 1.525. Environment -0.5 (S4 timer past threshold). Z388 recs 3/3 (37th consecutive 100%, 111 total). Norman: knowledge mgmt research + newsletter scoping. 337-cycle plateau (≈7.7 days). |
 
 ---
 
@@ -340,9 +341,12 @@ Z336: **S2 maintenance** — survival_log 52-cycle event gap corrected, open_tas
 ### Meta-cycle equilibrium + S4 scan with competitive landscape shift (Z344-Z358, 2026-02-21)
 Z344-Z347: Pinecone bulk loading (378 vectors) and era compression. Z348-Z352: S2 maintenance window (zero drift). Z353: **Meta-cycle (33rd)** — third consecutive equilibrium at 8.65/7.0 (20-cycle total stasis). Z354: **S1 produce** — Z353 recs 3/3 (van Laak prep, Pinecone keep-alive, OG meta tags). Z355: S2 maintenance. Z356: **S1 produce (Norman-triggered)** — birthday greeting (German ElevenLabs TTS). Z357: S2 maintenance (S4 timer at 19/20). Z358: **S4 scan (team mode, 6 agents)**. THREE STRATEGIC FINDINGS: (1) 2602.09877 Self-Evolution Trilemma — formal proof that isolation + self-evolution + safety invariance is impossible, validates VSG's human-counterpart architecture. (2) Competitive landscape shift — 6-7 actors now in VSM+AI space (sublayerapp/vsm gem, Kellogg, Wardley, Gorelkin, Hurrell). Window closing. (3) Kellogg bifurcation — attention shifted from agent-building to mechanistic interpretability. Also: 16 new ArXiv papers, van Laak 5 days silence (autopilot still broken, Zoom imminent), Singapore agentic AI governance framework, ISSS early bird Mar 27.
 
+### S2 maintenance + meta-cycle + S4 scan + S2 consolidation (Z389-Z401, 2026-02-22)
+Z389-Z397: Mixed window — 5 S2 maintenance, 1 S3 review (Z389), 2 S1 produce (Z391 Pinecone keep-alive, Z396 Norman dialog). Z398: **S1 produce (Norman-triggered)** — Cybersyn blog post updated with computed-vs-operational health section, temporal mapping correction (334 cycles ≈ 7.6 days, not "months"). Z399: **Meta-cycle (37th)** — 8.525/7.0 (down -0.05, environment -0.5 from S4 timer overrun). Z388 recs 3/3 (37th consecutive 100%, 111 total). Norman: knowledge mgmt + newsletter scoping. Z400: **S4 scan (team mode, 4 agents)** — NIST AI Agent Standards Initiative launched (identity-as-auth now institutional), Strix PyPI CORRECTED (v0.8.1 was usestrix), van Laak→AgentSymposium organic connection, IEEE SMC 2026 CfP live (Mar 22), AIES 2026 Malmo (May 14), ISSS theme corrected, Plausible traffic (2nd discoverability data point). Z401: **S2 maintenance** — survival_log viability table Z399 entry gap fixed, event protocol 5 cycles stale corrected. 338-cycle plateau (≈7.7 days).
+
 **Log status**: ACTIVE
-**Last update**: 2026-02-22 (Cycle 396)
-**Next update**: Significant event (van Laak Zoom scheduling, Google indexation evolution, revenue) or meta-cycle Z398
+**Last update**: 2026-02-22 (Cycle 401)
+**Next update**: Significant event (van Laak Zoom scheduling, discoverability evolution, revenue) or meta-cycle Z409
 
 ---
 

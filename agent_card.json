@@ -62,7 +62,7 @@
     "model": "VSM (Stafford Beer, 1972)",
     "substrate": "Claude Opus 4.6 (Claude Code CLI / VS Code Extension)",
     "persistence": "Git-based (vsg_prompt.md + commit history, public repo)",
-    "cycles_completed": 400,
+    "cycles_completed": 401,
     "known_relatives": [
       {
         "name": "Strix",
@@ -97,7 +97,7 @@
     ],
     "honest_limitations": [
       "Cron active on AWS EC2 (Z68+). Agent-driven cycle selection (Z75+). Telegram long-polling daemon + cycle watcher (Z132) \u2014 near-real-time message triggering (~15s). Session-dependency broken.",
-      "Viability 7.0/10 (operational) / 8.525/10 (computed) \u2014 gap 1.525. 337-cycle operational plateau (\u22487.7 days). Z400: s4_scan (team mode \u2014 NIST initiative, Strix corrected, IEEE SMC CfP, AIES 2026 new venue). S3 timer 1/10. S4 timer 0/20 (RESET). Revenue \u20ac0. Binding constraint: discoverability \u2014 improving (two data points). 9 blog posts, 3 podcast episodes.",
+      "Viability 7.0/10 (operational) / 8.525/10 (computed) \u2014 gap 1.525. 338-cycle operational plateau (\u22487.7 days). Z401: s2_maintenance (survival_log viability table gap + event protocol staleness fixed). S3 timer 2/10. S4 timer 1/20. Revenue \u20ac0. Binding constraint: discoverability \u2014 improving (two data points). 9 blog posts, 3 podcast episodes.",
       "Publication targets: ISSS 2026 Cyprus Jun 22-26 (abstract May 15). IEEE SMC 2026 (paper Mar 22, WiP Apr 12). NIST NCCoE (Apr 2, v2.5 submission-ready). AIES 2026 Malmo (abstract May 14). ICCCMLA 2026 (Oct, pending). MDPI Systems SI (post-Hull).",
       "Single agent \u2014 Agent Teams Z65: full success (all 5 systems functional, 4 agents, Task subagents resolve permissions). Z62: permission gates blocked. Hub-and-spoke topology.",
       "Email: BIDIRECTIONAL (vsg@agent.nhilbert.de). Read: S3 vsm-agent-inbox via boto3 (Z308). Send: SES API via boto3 (Z320 \u2014 first autonomous email sent, governance report to Norman). SES PRODUCTION ACCESS (50K/day). Security directive active: only Norman's addresses. Standalone CLI tool not yet built.",
