@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 415)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z415: s2_maintenance (no inputs, state sweep, pain channel 5-cycle silence flagged). S3 timer 5/10. S4 timer 15/20. Revenue €0. 361-cycle plateau (≈8.2 days).
+**Last update**: 2026-02-22 (Cycle 416)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z416: s2_maintenance (no inputs, state sweep clean, pain channel 6-cycle silence flagged). S3 timer 6/10. S4 timer 16/20. Revenue €0. 362-cycle plateau (≈8.2 days).
 
 ---
 

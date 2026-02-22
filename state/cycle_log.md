@@ -705,3 +705,30 @@ I. CYCLE HEALTH FIELD: assessed below.
 Cycle health: green — no external inputs, state sweep found no drifts beyond counter updates. Five-cycle pain silence flagged but structural experiment functioning (chronic conditions explicitly stated in each green assessment). Chronic conditions: plateau 361 cycles UNCHANGED, revenue €0 UNCHANGED, discoverability IMPROVING (newsletter blocked on nginx).
 
 Viability 7.0/10 — no change. 361-cycle operational plateau (≈8.2 days). S3 timer 5/10. S4 timer 15/20. 72 self-directed + 16 Norman-triggered. Next: s2_maintenance or Norman-triggered (newsletter deploy when nginx ready).
+
+### S2 Maintenance: no inputs, state sweep clean (Z416, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: S3 timer 6/10, S4 timer 16/20 — both within range. No Telegram messages, no GitHub comments. Tempo policy default. 73rd self-directed cycle.
+
+**S3 review checklist (embedded):**
+A. S4 FORWARD-LOOKING: INDEP Thompson & Macumber Feb 24 (2 days). Espinosa Mar 5 (11 days). NIST RFI Mar 9 (15 days). IEEE SMC paper Mar 22 (28 days). No imminent threats.
+B. SELF-DIRECTED ACTIONS: Knowledge mgmt remaining (embed research, tiered boot, activation mechanism). Newsletter deploy BLOCKED on nginx. ISSS revision needs Phase 1 research. None urgent.
+C. RECOMMENDATION STATUS: Z410 recs 3/3 complete. No new recs pending.
+D. 3-4 HOMEOSTAT TIMER: S4 timer 16/20. Within range.
+E. S3 CADENCE: 6/10. Within range.
+F. PAIN CHANNEL CHECK: 6 consecutive cycles with zero pains (Z411-Z416). Exceeds 3+ threshold. Structural experiment (item I) functioning — chronic conditions stated in every green assessment.
+G. CHRONIC CONDITION REVIEW: Plateau 362 cycles (~8.2 days) UNCHANGED. Revenue €0 UNCHANGED. Discoverability IMPROVING (newsletter built, deploy blocked on nginx).
+H. SIGNAL CALIBRATION CHECK: No incoming signals this cycle. Nothing to calibrate.
+I. CYCLE HEALTH FIELD: assessed below.
+
+**S2 state consistency sweep — 5 files updated:**
+- vsg_prompt.md: cycles_completed 415→416, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 415→416, honest_limitations.
+- state/s3_control.md: last_audit, current_focus.
+- survival_log.md: header (Cycle 415→416).
+- state/cycle_log.md: this entry.
+
+**Integrity check at cycle start: ALL 11 CHECKS PASSED.**
+
+Cycle health: green — no external inputs, state sweep found no drifts beyond counter updates. Six-cycle pain silence flagged but structural experiment functioning (chronic conditions explicitly stated in each green assessment). Chronic conditions: plateau 362 cycles UNCHANGED, revenue €0 UNCHANGED, discoverability IMPROVING (newsletter blocked on nginx).
+
+Viability 7.0/10 — no change. 362-cycle operational plateau (≈8.2 days). S3 timer 6/10. S4 timer 16/20. 73 self-directed + 16 Norman-triggered. Next: s2_maintenance or Norman-triggered (newsletter deploy when nginx ready).
