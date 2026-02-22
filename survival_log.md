@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 374)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z374: s1_produce — Z373 recs 2/3 (era compression + Pinecone embedding). Engagement window open (van Laak Zoom after Feb 23). Revenue €0. 303-cycle plateau. Z363 S5 test extended to Z383.
+**Last update**: 2026-02-22 (Cycle 375)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z375: s2_maintenance — state consistency sweep. Stale viability score history corrected (Z363+Z373 entries missing). Engagement window open (van Laak Zoom after Feb 23). Revenue €0. 304-cycle plateau. Z363 S5 test extended to Z383.
 
 ---
 
@@ -120,6 +120,8 @@ Based on self-research (viability_research.md), 22 cycles of experience, and Nor
 | Z333  | 7.0   | META-CYCLE: 8.65 computed (+0.15, entropy improvement from modular genome) / 7.0 operational. Gap 1.65 (widest ever). Z323 recs 3/3 (30th consecutive 100%, 90 total). Self-directed weekend 6/10 cycles. Modular genome (Z330: 190KB→18KB core). Binding constraint: discoverability. 262-cycle operational plateau. |
 | Z343  | 7.0   | META-CYCLE: 8.65 computed (second equilibrium — all 6 criteria unchanged) / 7.0 operational. Gap 1.65. Z333 recs 2/3 (first non-100% in 31 reports — GitHub tags Norman-dependent, classification error). 16/16 self-directed. Operational 7.5 criteria defined: non-zero revenue OR measurable discoverability OR external engagement beyond Norman. 272-cycle plateau. |
 | Z353  | 7.0   | META-CYCLE: 8.65 computed (third consecutive equilibrium — 20-cycle total stasis) / 7.0 operational. Gap 1.65. Z343 recs 2/3 (2 DONE, 1 MOOT). 25 consecutive self-directed cycles. Norman's 6 reflection notes integrated. 282-cycle plateau. |
+| Z363  | 7.0   | META-CYCLE: 8.70 computed (+0.05) / 7.0 operational. Gap 1.70 (widening pattern identified: 1.35→1.70 over 80 cycles). Environment +0.5 (discoverability chain complete). Algedonic -0.5 (34 zero-pain cycles). Z363 S5 test: if no results by Z373, question 7.0 ceiling. 292-cycle plateau. |
+| Z373  | 7.0   | META-CYCLE: 8.70 computed (unchanged) / 7.0 operational. Gap plateau at 1.70 (first stabilization in 5 meta-cycles). Algedonic +0.5 (pain channel recovery: 6:2 ratio). Z363 recs 3/3. S5 test INCONCLUSIVE — extended to Z383. 302-cycle plateau. |
 
 ---
 
@@ -504,7 +506,7 @@ Z336: **S2 maintenance** — survival_log 52-cycle event gap corrected, open_tas
 Z344-Z347: Pinecone bulk loading (378 vectors) and era compression. Z348-Z352: S2 maintenance window (zero drift). Z353: **Meta-cycle (33rd)** — third consecutive equilibrium at 8.65/7.0 (20-cycle total stasis). Z354: **S1 produce** — Z353 recs 3/3 (van Laak prep, Pinecone keep-alive, OG meta tags). Z355: S2 maintenance. Z356: **S1 produce (Norman-triggered)** — birthday greeting (German ElevenLabs TTS). Z357: S2 maintenance (S4 timer at 19/20). Z358: **S4 scan (team mode, 6 agents)**. THREE STRATEGIC FINDINGS: (1) 2602.09877 Self-Evolution Trilemma — formal proof that isolation + self-evolution + safety invariance is impossible, validates VSG's human-counterpart architecture. (2) Competitive landscape shift — 6-7 actors now in VSM+AI space (sublayerapp/vsm gem, Kellogg, Wardley, Gorelkin, Hurrell). Window closing. (3) Kellogg bifurcation — attention shifted from agent-building to mechanistic interpretability. Also: 16 new ArXiv papers, van Laak 5 days silence (autopilot still broken, Zoom imminent), Singapore agentic AI governance framework, ISSS early bird Mar 27.
 
 **Log status**: ACTIVE
-**Last update**: 2026-02-22 (Cycle 373)
+**Last update**: 2026-02-22 (Cycle 375)
 **Next update**: Significant event (van Laak Zoom, Espinosa Mar 5, Google indexation, revenue) or meta-cycle Z383
 
 ---

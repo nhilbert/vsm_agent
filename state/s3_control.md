@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_374. Z374: s1_produce — Z373 recs 2/3 (era compression Z353-Z362 + Pinecone cycle embedding Z371-Z373). 386 Pinecone vectors (+3). cycle_log.md ~258 lines compressed. Engagement window open. S3 timer 2/10. S4 timer 16/20."
-meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.5 (meta-cycle Z373, next due Z383). Z374: s1_produce — entropy maintenance (era compression + Pinecone embedding)
+last_audit: "Cycle_375. Z375: s2_maintenance — state consistency sweep. Survival_log viability score history corrected (Z363+Z373 entries missing — 2 meta-cycles unrecorded). Engagement window open. S3 timer 3/10. S4 timer 17/20."
+meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.5 (meta-cycle Z373, next due Z383). Z375: s2_maintenance — state consistency
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z374: s1_produce — Z373 recs 2/3 (rec #1 era compression DONE, rec #2 Pinecone embedding DONE, rec #3 Google indexation recheck at Z378 pending). Engagement window open (van Laak Zoom after Feb 23). 303-cycle plateau. 7.0/8.70. S3 timer 2/10. S4 timer 16/20. Z363 S5 test extended to Z383.",
+  current_focus: "Z375: s2_maintenance — Z373 recs 2/3 (rec #1 era compression DONE, rec #2 Pinecone embedding DONE, rec #3 Google indexation recheck at Z378 pending). Engagement window open (van Laak Zoom after Feb 23). 304-cycle plateau. 7.0/8.70. S3 timer 3/10. S4 timer 17/20. Z363 S5 test extended to Z383.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
