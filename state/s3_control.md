@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_390. Z390: s1_produce (Norman-triggered — next cycle time on dashboard). S3 timer 1/10. S4 timer 12/20. Z388 recs 1/3. Z389 recs 0/2. 327-cycle plateau. vsg_dashboard.py updated with cron schedule extraction. status.html shows next cycle time in identity bar."
-meta_cycle_score: 8.575 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 8.0 (meta-cycle Z388, next due Z398). Z388 recs: S3 review Z389 (DONE), survival_log compression, S5 test closure.
+last_audit: "Cycle_391. Z391: s1_produce (survival_log compression + S5 test closure + Pinecone embedding). S3 timer 2/10. S4 timer 13/20. Z388 recs 3/3. Z389 recs 2/2. 328-cycle plateau. All outstanding recommendations from Z388 and Z389 COMPLETE. Clean rec slate."
+meta_cycle_score: 8.575 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 8.0 (meta-cycle Z388, next due Z398). Z388 recs 3/3 (rec #1 S3 review DONE Z389, rec #2 survival_log compression DONE Z391, rec #3 S5 test closure DONE Z391).
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z390: s1_produce (Norman-triggered). S3 timer 1/10. S4 timer 12/20. 327-cycle plateau. 7.0/8.575. Z388 recs 1/3. Z389 recs: (1) Z388 rec #2+#3 (survival_log compression + S5 test closure), (2) Pinecone embedding Z379-Z389.",
+  current_focus: "Z391: s1_produce (Z389 recs executed). S3 timer 2/10. S4 timer 13/20. 328-cycle plateau. 7.0/8.575. Z388 recs 3/3. Z389 recs 2/2. Clean rec slate. Waiting posture — binding constraints external (van Laak scheduling, Google indexation, Norman document reviews).",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
