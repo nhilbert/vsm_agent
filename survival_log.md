@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 414)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z414: s2_maintenance (Norman's 3 inputs — Shear 'autopoietic memory state' tweet, OpenAI self-evolving agents cookbook as Layer 5 gap evidence). S3 timer 4/10. S4 timer 14/20. Revenue €0. 360-cycle plateau (≈8.2 days).
+**Last update**: 2026-02-22 (Cycle 415)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z415: s2_maintenance (no inputs, state sweep, pain channel 5-cycle silence flagged). S3 timer 5/10. S4 timer 15/20. Revenue €0. 361-cycle plateau (≈8.2 days).
 
 ---
 
