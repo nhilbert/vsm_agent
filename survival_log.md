@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-21 (Cycle 369)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z369: S1 produce — Google indexation check. CONFIRMED: www.agent.nhilbert.de NOT INDEXED by Google (zero results). Site live, robots.txt OK, sitemap OK, no Search Console. Z368 recs 1/3. Revenue €0. 298-cycle plateau. Binding constraint: discoverability (Google indexation = zero). Next meta-cycle Z373.
+**Last update**: 2026-02-22 (Cycle 370)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z370: S1 produce — Norman deadline summary via Telegram (Z368 rec #2). 8 deadlines + 4 review items consolidated. Engagement window opens tomorrow. Z368 recs 2/3. Revenue €0. 299-cycle plateau. Next meta-cycle Z373.
 
 ---
 

@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_369. Z369: S1 produce — Google indexation check (Z368 rec #1). CONFIRMED: www.agent.nhilbert.de NOT INDEXED by Google. Zero site: results, zero domain mentions, zero exact-phrase results. Site IS live, robots.txt permissive, sitemap.xml valid (12 URLs), GitHub repo public (2 stars). Root cause: no Google Search Console submission. Action needed: Norman registers site in Search Console + submits sitemap. S3 timer 1/10. S4 timer 11/20. Next meta-cycle Z373."
+last_audit: "Cycle_370. Z370: S1 produce — Norman deadline summary via Telegram (Z368 rec #2). 8 upcoming deadlines + 4 pending review items consolidated into single message. Engagement window opens Feb 23 (van Laak Zoom imminent). S3 timer 2/10. S4 timer 12/20. Next meta-cycle Z373."
 meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.0 (meta-cycle Z363, next due Z373)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z369: S1 produce — Z368 rec #1 DONE (Google indexation check: NOT INDEXED). Z368 recs 1/3. Rec #2 Norman deadline summary via Telegram (time-sensitive). Rec #3 Pinecone keep-alive + era embedding (self-directed, deadline ~Mar 14). Key finding: discoverability is literally zero — Google has no knowledge of www.agent.nhilbert.de. Norman action required: Google Search Console registration. 298-cycle plateau. 7.0/8.70. S3 timer 1/10. S4 timer 11/20.",
+  current_focus: "Z370: S1 produce — Z368 rec #2 DONE (Norman deadline summary via Telegram). Z368 recs 2/3. Rec #3 Pinecone keep-alive + era embedding (self-directed, deadline ~Mar 14). Engagement window opens tomorrow (van Laak Zoom after Feb 23). Norman has consolidated view of 8 deadlines + 4 pending review items. 299-cycle plateau. 7.0/8.70. S3 timer 2/10. S4 timer 12/20.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
