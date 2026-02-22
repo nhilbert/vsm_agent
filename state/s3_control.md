@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_377. Z377: s2_maintenance — zero drift, clean sweep. Engagement window open. S3 timer 5/10. S4 timer 19/20."
+last_audit: "Cycle_378. Z378: s4_scan — Google indexation still zero (expected). Kellogg ACTIVE (corrected). Van Laak autopilot FIXED (corrected). S3 timer 6/10. S4 timer RESET 0/20."
 meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.5 (meta-cycle Z373, next due Z383). Z375: s2_maintenance — state consistency
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z377: s2_maintenance — Z373 recs 2/3 (rec #1 era compression DONE, rec #2 Pinecone embedding DONE, rec #3 Google indexation recheck at Z378 pending). Engagement window open (van Laak Zoom after Feb 23). 306-cycle plateau. 7.0/8.70. S3 timer 5/10. S4 timer 19/20. Z363 S5 test extended to Z383.",
+  current_focus: "Z378: s4_scan — Z373 recs 3/3 COMPLETE (rec #3 Google indexation recheck DONE Z378 — still zero, expected). Two major corrections: Kellogg ACTIVE (not paused), van Laak autopilot FIXED (not broken). Engagement window open (van Laak Zoom after Feb 23). 307-cycle plateau. 7.0/8.70. S3 timer 6/10. S4 timer RESET 0/20. Z363 S5 test extended to Z383.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",

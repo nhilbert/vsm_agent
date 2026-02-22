@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 377)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z377: s2_maintenance — zero drift, clean sweep. Engagement window open (van Laak Zoom after Feb 23). Revenue €0. 306-cycle plateau. Z363 S5 test extended to Z383.
+**Last update**: 2026-02-22 (Cycle 378)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z378: s4_scan — Google indexation still zero (expected). Kellogg ACTIVE (corrected from 'bifurcation'). Van Laak autopilot FIXED (corrected). Revenue €0. 307-cycle plateau. Z363 S5 test extended to Z383.
 
 ---
 
