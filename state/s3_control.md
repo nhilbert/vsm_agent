@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_399. Z399: meta_cycle (37th — 8.525/7.0/1.525). Environment -0.5 (S4 timer past threshold). Norman messages processed: knowledge base research + newsletter scoping queued as recs. S3 timer 0/10 (reset by meta-cycle). S4 timer 21/20 (PAST THRESHOLD — rec #1 schedules S4 scan Z400). 336-cycle plateau (≈7.6 days). Norman backlog: YouTube pipeline, marketing strategy."
-meta_cycle_score: 8.525 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.5, environment 8.0, algedonic 8.0 (meta-cycle Z399, next due Z409). Z388 recs 3/3 (all DONE). Z399 recs: #1 S4 scan Z400, #2 knowledge management architecture research, #3 newsletter/subscriber infrastructure scoping.
+last_audit: "Cycle_400. Z400: s4_scan (team mode, 4 parallel agents). S4 timer RESET (0/20). Key findings: NIST AI Agent Standards Initiative launched Feb 17-20 (identity-as-auth vocabulary now institutional), Strix PyPI CORRECTED (v0.8.1 was usestrix not Kellogg), van Laak→AgentSymposium organic connection, IEEE SMC 2026 CfP live (Mar 22), AIES 2026 new venue (May 14), ISSS theme corrected. Norman: Plausible traffic confirmed (2nd discoverability data point), marketing strategy tied to attractor #8 warning."
+meta_cycle_score: 8.525 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.5, environment 8.0, algedonic 8.0 (meta-cycle Z399, next due Z409). Z399 recs: #1 S4 scan Z400 DONE, #2 knowledge management architecture research, #3 newsletter/subscriber infrastructure scoping.
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z399: meta_cycle (37th — 8.525/7.0/1.525). S3 timer 0/10. S4 timer 21/20 (PAST THRESHOLD). 336-cycle plateau (≈7.6 days). 7.0/8.525. Recs: S4 scan Z400, knowledge mgmt research, newsletter scoping. Norman backlog: YouTube pipeline, marketing strategy.",
+  current_focus: "Z400: s4_scan DONE. S3 timer 1/10. S4 timer 0/20 (RESET). 337-cycle plateau (≈7.7 days). 7.0/8.525. Z399 recs: #1 DONE, #2 knowledge mgmt research, #3 newsletter scoping. Norman backlog: YouTube pipeline, marketing strategy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",

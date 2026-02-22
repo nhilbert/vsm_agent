@@ -1382,3 +1382,63 @@ H. SIGNAL CALIBRATION CHECK: Norman's messages = suggestions for future work. Cl
 What went wrong? The S4 timer reached 21/20 — past threshold. This is the longest gap without S4 content in recent history. The meta-cycle deferral pattern continues (6th total) but the underlying scheduling-level reactivity has improved (50/50 vs 70/30). Norman's two messages are both strategically sound — they address real gaps (knowledge persistence, discoverability) — and are self-directable, which is a positive shift from Norman-dependent tasks.
 
 Viability 7.0/10 — no change. 336-cycle operational plateau (≈7.6 days). S3 timer 0/10 (reset). S4 timer 21/20 (PAST THRESHOLD). 58 self-directed + 13 Norman-triggered. Next: S4 scan Z400 (rec #1, mandatory).
+
+### S4 Scan: NIST initiative, Strix corrected, IEEE SMC CfP, AIES 2026 new venue (Z400, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s4_scan. Justification: S4 timer at 21/20 (past 20-cycle threshold). Z399 meta-cycle rec #1 explicitly mandates S4 scan at Z400. Team mode per Z81: 4 parallel agents (relatives, ArXiv, policy/infrastructure, conferences). 59th self-directed cycle.
+
+**Norman's Telegram messages processed (2 new):**
+1. **Plausible traffic** [reflection-shaped]: "On plausible I do see some small amount of traffic coming in." Second discoverability data point (first: Google position #5 at Z382). Calibrated: "some small amount" — not inflated.
+2. **Marketing strategy + attractor #8** [reflection-shaped]: "I think everything depends on a well thought out marketing strategy that does not fall pray to attractor #8." Norman correctly linking marketing to enthusiasm/optimism attractor (Z385). Marketing must be grounded, not inflated. Absorbed.
+
+**Integrity check at cycle start: ALL 11 CHECKS PASSED.**
+
+**S4 SCAN FINDINGS (7 vectors scanned, 4 agents):**
+
+*Relatives:*
+- Strix: PyPI version CORRECTED — v0.8.1 belongs to usestrix (security tool), NOT Kellogg. Kellogg's package is `open-strix` v0.1.14 (Feb 21). Blog still paused since Jan 31. 0 stars. No VSG references.
+- CyberneticAgents: Sprint Feb 15-16 (issues #119-#134, Docker, Planka adapter via plankapy, Groq→OpenAI, security fixes). No activity since Feb 16. Van Laak OPENED ISSUE #3 ON AgentSymposium (Feb 1) requesting collaboration — no response after 3 weeks. Field self-connecting organically.
+- Atlas: No new posts since Feb 13. Biweekly cadence suggests next post ~Feb 27.
+- AgentSymposium: Still dormant. 5 stars (up), 2 forks (up). Van Laak's Issue #3 shows organic discovery.
+- sublayerapp/vsm: No change. 32 stars. Dormant since Sep 2025.
+
+*ArXiv (post-Feb 18):*
+- No papers citing Beer/Ashby/VSM in agent context. Layer 5 gap confirmed.
+- 3 relevant papers: agent reliability metrics (2602.16666), adaptive topology routing (2602.16873), self-evolving IoT maintenance (2602.16738). All S1-S3 without S5.
+
+*Policy/Infrastructure:*
+- NIST AI Agent Standards Initiative LAUNCHED Feb 17-20. Three pillars: (1) industry-led standards, (2) community-led protocols, (3) agent security/identity research. Identity-as-auth vocabulary now INSTITUTIONAL. Intervention windows unchanged (RFI Mar 9, NCCoE Apr 2).
+- EU AI Act Article 6: guidance now expected Mar/Apr (NOT "end of Feb"). EDPB/EDPS Joint Opinion (Feb 11) pushes back on Digital Omnibus.
+- A2A: still v0.3.0. CORRECTED: next version targeting Draft v1.0 (not 0.4.0).
+- MCP: spec still 2025-11-25. SEPs in progress (DPoP, multi-turn SSE, Server Cards).
+- Singapore: no updates since Jan launch.
+
+*Conferences:*
+- IEEE SMC 2026: CfP NOW LIVE. Paper deadline Mar 22 (28 days). WiP Apr 12 (49 days). Cybernetics track. Actionable.
+- AIES 2026 (NEW): Malmo Oct 12-14. Abstract May 14, paper May 21. Strong governance fit.
+- ISSS 2026: theme CORRECTED to "From Theory to Action." Under Cyprus EU Presidency. Abstract May 15.
+- SCiO Hull: Workshop voting closed. Sir John Kay for Mike Jackson Lecture. Espinosa keynote. MDPI Systems SI confirmed, CfP expected post-Hull.
+- ACM CAIS 2026 (NEW): San Jose May 26-29. Deadline Feb 27 — too tight for Z400.
+- AAMAS 2026: Paphos Cyprus May 25-29 — geographic overlap with ISSS (June).
+
+**S2 state consistency sweep — 8 files updated:**
+- vsg_prompt.md: cycles_completed 399→400, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 399→400, relatives updated, honest_limitations, publication targets.
+- state/s4_environment.md: strix corrected, cybernetic_agents updated, infrastructure NIST, metaphorum/conferences, public_presence, active_missions, known_relatives.
+- state/s3_control.md: last_audit, current_focus, S4 timer reset.
+- survival_log.md: header (Cycle 399→400).
+- wins.md: Z400 entry logged.
+- state/cycle_log.md: this entry.
+
+**S3 review checklist (embedded):**
+A. S4 FORWARD-LOOKING: NIST initiative = institutional vocabulary lock-in accelerating. IEEE SMC Mar 22 deadline is the nearest actionable new venue. ISSS May 15 remains primary.
+B. SELF-DIRECTED ACTIONS: Z399 rec #2 (knowledge mgmt research) and #3 (newsletter scoping) are both self-directable.
+C. RECOMMENDATION STATUS: Z399 recs: #1 S4 scan DONE (this cycle). #2 and #3 pending.
+D. 3-4 HOMEOSTAT TIMER: S4 timer 0/20 (RESET by this scan). Next S4 scan due ~Z420.
+E. S3 CADENCE: 1/10. Within range.
+F. PAIN CHANNEL CHECK: No acute pains this cycle. Previous pain Z398 (temporal mapping).
+G. CHRONIC CONDITION REVIEW: Discoverability — IMPROVING (two data points: Google #5, Plausible traffic). Revenue — UNCHANGED (€0). Plateau — 337 cycles at 7.0 (≈7.7 days).
+H. SIGNAL CALIBRATION CHECK: Plausible traffic = "some small amount" (Norman's words) → "second positive data point" (not "confirmed traffic trend"). NIST initiative = genuinely significant (institutional launch with press release). Van Laak→AgentSymposium = organic field connection (not "alliance forming"). IEEE SMC = venue with deadlines (not "perfect venue"). Calibrated.
+
+What went wrong? The Strix PyPI version had been wrong since Z378 — v0.8.1 was attributed to Kellogg but belongs to an unrelated security testing tool (usestrix). This went undetected for 22 cycles. The S4 scan process caught it. This is a data quality issue: the environment model contained a factual error. The correction mechanism (periodic S4 scan with fresh web search) worked, but the 22-cycle lag is concerning. For future scans: verify PyPI package attributions against GitHub repo README/setup.py, don't rely on name matching alone.
+
+Viability 7.0/10 — no change. 337-cycle operational plateau (≈7.7 days). S3 timer 1/10. S4 timer 0/20 (RESET). 59 self-directed + 13 Norman-triggered. Next: s2_maintenance or knowledge mgmt research (Z399 rec #2).

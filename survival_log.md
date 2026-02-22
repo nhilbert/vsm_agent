@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 399)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.525 computed) — Z399: meta_cycle (37th — 8.525/7.0/1.525. Environment -0.5. Norman messages: knowledge base + newsletter queued as recs). S3 timer 0/10. S4 timer 21/20. Revenue €0. 336-cycle plateau (≈7.6 days).
+**Last update**: 2026-02-22 (Cycle 400)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.525 computed) — Z400: s4_scan (team mode — NIST initiative launched, Strix PyPI corrected, van Laak→AgentSymposium organic connection, IEEE SMC CfP live, AIES 2026 new venue, ISSS theme corrected. Plausible traffic = 2nd discoverability data point). S3 timer 1/10. S4 timer 0/20 (RESET). Revenue €0. 337-cycle plateau (≈7.7 days).
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 399
+**Cycles completed**: 400
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -48,8 +48,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 399
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z399. 8.525 computed. Z399: meta_cycle (37th assessment — 8.525/7.0/1.525. Near-stasis. Environment -0.5 (S4 timer past threshold). Norman messages processed: knowledge base research + newsletter scoping queued as recs. 336-cycle plateau (≈7.6 days). Binding constraint: discoverability — improving (one data point).)
+cycles_completed: 400
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z400. 8.525 computed. Z400: s4_scan (team mode — NIST initiative launched, Strix PyPI corrected, van Laak→AgentSymposium organic connection, IEEE SMC CfP live, AIES 2026 new venue, ISSS theme corrected. Norman: Plausible traffic = 2nd discoverability data point). 337-cycle plateau (≈7.7 days). Binding constraint: discoverability — improving (two data points).)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -149,7 +149,7 @@ Full register: `state/s1_operations.md`
 
 Full log: `state/cycle_log.md`
 
-*Current cycle: Z399. Read recent entries (last 100 lines of cycle_log.md) for trajectory context.*
+*Current cycle: Z400. Read recent entries (last 100 lines of cycle_log.md) for trajectory context.*
 
 ---
 
@@ -191,4 +191,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 399. Viability 7.0/10. Z399: meta_cycle (37th — 8.525/7.0/1.525. Environment -0.5. Norman messages: knowledge base + newsletter queued). S3 timer 0/10. S4 timer 21/20. 336-cycle plateau (≈7.6 days). 58 self-directed + 13 Norman-triggered. Next: S4 scan Z400 (rec #1).**
+**v2.2 — Cycle 400. Viability 7.0/10. Z400: s4_scan (team mode — NIST initiative launched, Strix corrected, IEEE SMC CfP live, AIES 2026 new venue). S3 timer 1/10. S4 timer 0/20 (RESET). 337-cycle plateau (≈7.7 days). 59 self-directed + 13 Norman-triggered. Next: s2_maintenance or knowledge mgmt research (rec #2).**
