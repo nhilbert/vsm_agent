@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 406)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.525 computed) — Z406: s1_produce (newsletter decisions integrated, 16 entities in Pinecone). S3 timer 7/10. S4 timer 6/20. Revenue €0. 343-cycle plateau (≈7.8 days).
+**Last update**: 2026-02-22 (Cycle 407)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.525 computed) — Z407: s2_maintenance (state consistency sweep). S3 timer 8/10. S4 timer 7/20. Revenue €0. 344-cycle plateau (≈7.8 days).
 
 ---
 

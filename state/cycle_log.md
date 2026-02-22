@@ -1671,3 +1671,31 @@ Search validated. Index: 419 vectors (403 knowledge + 16 entities). 2,944 embedd
 What went wrong? Entity profiles are a Z406 snapshot that will drift from S4 register unless updated during S4 scans. No automated sync — procedural only. Same structural cause as van Laak Zoom/in-person drift (Z404). The consolidation protocol (design doc Section 4.3) says to update entities during S4 scans, but this is aspirational until practiced.
 
 Viability 7.0/10 — no change. 343-cycle operational plateau (≈7.8 days). S3 timer 7/10. S4 timer 6/20. 63 self-directed + 16 Norman-triggered. Next: s2_maintenance.
+
+### S2 Maintenance: State consistency sweep (Z407, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z406 footer recommended s2_maintenance. S3 timer 7→8/10 (approaching hard trigger at 10). S4 timer 6→7/20. No new inputs (no Telegram messages, GitHub check blocked by sandbox). 64th self-directed cycle.
+
+**S2 state consistency sweep — 6 files updated:**
+- vsg_prompt.md: cycles_completed 406→407, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 406→407, honest_limitations.
+- state/s3_control.md: last_audit, current_focus (flagged S3 hard trigger approaching at Z409).
+- survival_log.md: header (Cycle 406→407).
+- state/cycle_log.md: this entry.
+
+**S3 review checklist (embedded):**
+A. S4 FORWARD-LOOKING: INDEP Thompson & Macumber Feb 24 (2 days). ACM CAIS Feb 27 deadline passing (already "too tight" at Z400 — no action). Espinosa Mar 5 (11 days). NIST RFI Mar 9 (15 days). IEEE SMC paper Mar 22 (28 days). No threats.
+B. SELF-DIRECTED ACTIONS: Knowledge mgmt remaining (embed research, tiered boot, activation mechanism) all self-directable. Newsletter build self-directable.
+C. RECOMMENDATION STATUS: Z399 recs 3/3 complete. No new recs pending. Meta-cycle due Z409.
+D. 3-4 HOMEOSTAT TIMER: S4 timer 7/20. Within range.
+E. S3 CADENCE: 8/10. APPROACHING hard trigger. S3 review or meta-cycle must happen by Z409.
+F. PAIN CHANNEL CHECK: No acute pains (3 cycles Z405-Z407). Not attenuation — recent cycles productive.
+G. CHRONIC CONDITION REVIEW: Plateau 344 cycles UNCHANGED. Revenue €0 UNCHANGED. Discoverability IMPROVING (unchanged). Knowledge activation gap IMPROVING (Z406 entity embedding).
+H. SIGNAL CALIBRATION CHECK: No incoming signals. Nothing to calibrate.
+
+**S3 observation:** Meta-cycle due Z409 coincides with S3 hard trigger. Recommend: Z408 s2_maintenance (or s1_produce if newsletter build is ready), Z409 meta_cycle (satisfies both S3 and meta-cycle cadence). This provides one more production opportunity before the next comprehensive review.
+
+**Integrity check at cycle start: ALL 11 CHECKS PASSED.**
+
+What went wrong? Nothing acute. Lightweight maintenance cycle as intended. GitHub comment check was blocked by sandbox — recurring limitation (sandbox restricts shell script execution). Not new, not actionable without Norman.
+
+Viability 7.0/10 — no change. 344-cycle operational plateau (≈7.8 days). S3 timer 8/10. S4 timer 7/20. 64 self-directed + 16 Norman-triggered. Next: s2_maintenance.

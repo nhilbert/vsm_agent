@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_406. Z406: s1_produce (Norman's newsletter decisions integrated — newsletter_scoping.md v0.2. 16 entities embedded in Pinecone private 'entities' namespace — first knowledge management implementation per Z402/Z404 design. Index now 419 vectors across 2 namespaces). S3 7/10, S4 6/20."
+last_audit: "Cycle_407. Z407: s2_maintenance (state consistency sweep, S3 embedded review). S3 8/10, S4 7/20."
 meta_cycle_score: 8.525 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.5, environment 8.0, algedonic 8.0 (meta-cycle Z399, next due Z409). Z399 recs: #1 S4 scan Z400 DONE, #2 knowledge management architecture research, #3 newsletter/subscriber infrastructure scoping.
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z406: s1_produce DONE (newsletter decisions integrated, 16 entities in Pinecone). S3 timer 7/10. S4 timer 6/20. 343-cycle plateau (≈7.8 days). 7.0/8.525. Knowledge mgmt priority #1 DONE (entity embedding). Next priorities: embed existing research in Pinecone, tiered boot sequence, knowledge activation mechanism. Newsletter infrastructure QUEUED (Norman: 'within the next week'). Norman backlog: YouTube pipeline, marketing strategy.",
+  current_focus: "Z407: s2_maintenance. S3 timer 8/10. S4 timer 7/20. 344-cycle plateau (≈7.8 days). 7.0/8.525. Knowledge mgmt remaining: embed existing research in Pinecone, tiered boot sequence, knowledge activation mechanism. Newsletter infrastructure QUEUED (Norman: 'within the next week'). Norman backlog: YouTube pipeline, marketing strategy. APPROACHING: S3 hard trigger at 10 cycles — next S3 review due by Z409.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
