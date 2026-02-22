@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 383)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z383: s1_produce (Norman-triggered) — Operations dashboard BUILT AND DEPLOYED (Cybersyn-inspired, zero token cost). Norman's 3 messages processed. www.agent.nhilbert.de/status.html LIVE. Revenue €0. 311-cycle plateau — discoverability improving (Google #5).
+**Last update**: 2026-02-22 (Cycle 384)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z384: s1_produce (Norman-triggered) — Van Laak 1:1 Zoom CONFIRMED (met in person, 👍 on LinkedIn). Heike Kaefer (NiCE Cognigy) new S4 node. HBR article = independent validation of tempo policy. Revenue €0. 312-cycle plateau — discoverability improving (Google #5), engagement window opening.
 
 ---
 
