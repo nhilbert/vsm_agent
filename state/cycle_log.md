@@ -1522,3 +1522,39 @@ H. SIGNAL CALIBRATION CHECK: No incoming signals this cycle. Production from int
 What went wrong? Nothing acute. The design document is a research synthesis, not a tested implementation — its value depends on Norman's feedback and subsequent implementation. Risk: producing a design document that sits unread (the governance blog post pattern, Z199-Z205). Mitigation: four specific open questions for Norman invite engagement rather than presenting a finished plan.
 
 Viability 7.0/10 — no change. 339-cycle operational plateau (≈7.7 days). S3 timer 3/10. S4 timer 2/20. 61 self-directed + 13 Norman-triggered. Next: s2_maintenance or newsletter scoping (Z399 rec #3).
+
+### S1 Produce: newsletter/subscriber infrastructure scoping (Z403, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Z399 rec #3 (newsletter scoping) is the last pending recommendation. One rest cycle (Z401) between intensive Z400 and Z402. Task bounded ("scoping document, don't build"). Addresses binding constraint (discoverability). Completing closes all Z399 recs (38th consecutive 100%, 114 total). S3 timer 3/10, S4 timer 2/20. Team mode per Z81 rule. 62nd self-directed cycle.
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**Integrity check at cycle start: ALL 11 CHECKS PASSED.**
+
+**S1 PRODUCTION — newsletter_scoping.md v0.1 (Z399 rec #3):**
+
+Two parallel research agents: (1) technical newsletter options (self-hosted EC2+SQLite+SES, Lambda+DynamoDB, Kit/ConvertKit, Buttondown, Beehiiv, Mailchimp, Ghost, Substack — with agent-operability assessment), (2) GDPR/German law compliance (DSGVO consent, BGH double opt-in ruling, UWG §7, DDG §5, EU AI Act Art. 50, Abmahnung risk, German-language templates).
+
+Synthesis — newsletter_scoping.md v0.1: recommends self-hosted EC2+SQLite+SES (zero cost, full agent control, ~400 lines Python) with Kit free plan as alternative (10K subs, full API, fastest launch). Double opt-in legally required in Germany. Pre-launch checklist (17 items). Five open questions for Norman.
+
+**S2 state consistency sweep — 7 files updated:**
+- vsg_prompt.md: cycles_completed 402→403, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 402→403, honest_limitations.
+- state/s3_control.md: last_audit, current_focus (Z399 recs 3/3 complete).
+- state/s1_operations.md: new artifact (newsletter_scoping.md), open_tasks (rec #3 DONE).
+- survival_log.md: header (Cycle 402→403).
+- state/cycle_log.md: this entry.
+- wins.md: Z403 entry logged.
+
+**S3 review checklist (embedded):**
+A. S4 FORWARD-LOOKING: INDEP Thompson & Macumber Feb 24 (2 days). Espinosa Mar 5 (11 days). NIST RFI Mar 9 (15 days). IEEE SMC paper Mar 22 (28 days). No imminent threats.
+B. SELF-DIRECTED ACTIONS: Z399 recs all complete. Next: Pinecone embedding of new research, website updates, or s2_maintenance default.
+C. RECOMMENDATION STATUS: Z399 recs 3/3 COMPLETE. 38th consecutive 100% (114 total).
+D. 3-4 HOMEOSTAT TIMER: S4 timer 3/20. Within range.
+E. S3 CADENCE: 4/10. Within range.
+F. PAIN CHANNEL CHECK: No acute pains this cycle. Production cycle.
+G. CHRONIC CONDITION REVIEW: Discoverability — IMPROVING (two data points). Revenue — UNCHANGED (€0). Plateau — 340 cycles at 7.0 (≈7.7 days).
+H. SIGNAL CALIBRATION CHECK: No incoming signals this cycle. Production from internal recommendation.
+
+What went wrong? Same Z402 risk: producing a document that queues behind Norman's review. Two design documents in consecutive cycles (knowledge_management_design.md Z402, newsletter_scoping.md Z403) both await Norman's direction. If Norman is in a low-engagement phase, both queue up. The five open questions are designed to invite engagement. The document is deliberately a SCOPING document (options + questions), not a plan to execute.
+
+Viability 7.0/10 — no change. 340-cycle operational plateau (≈7.7 days). S3 timer 4/10. S4 timer 3/20. 62 self-directed + 13 Norman-triggered. Z399 recs 3/3 complete. Next: s2_maintenance.
