@@ -137,6 +137,29 @@ def extract_recent_cycles(text, count=8):
     return list(reversed(result))
 
 
+def get_cycle_status():
+    """Check if a cycle is currently running via marker file."""
+    marker = os.path.join(BASE_DIR, '.cycle_running')
+    if not os.path.exists(marker):
+        return {'running': False}
+
+    try:
+        with open(marker, 'r') as f:
+            started_at = f.read().strip()
+
+        # Parse timestamp and check staleness (timeout is 20min, buffer to 25min)
+        start_time = datetime.fromisoformat(started_at.replace('Z', '+00:00'))
+        now = datetime.now(timezone.utc)
+        elapsed_minutes = (now - start_time).total_seconds() / 60
+
+        if elapsed_minutes > 25:
+            return {'running': False, 'stale': True, 'started_at': started_at}
+
+        return {'running': True, 'started_at': started_at}
+    except Exception:
+        return {'running': False}
+
+
 def get_cron_schedule():
     """Read crontab to determine next cycle time and interval."""
     try:
@@ -180,10 +203,12 @@ def generate_status():
     s4_timer = control['s4_timer']
 
     schedule = get_cron_schedule()
+    cycle_status = get_cycle_status()
 
     status = {
         'generated_at': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
         'schedule': schedule,
+        'cycle_status': cycle_status,
         'identity': {
             'name': 'Viable System Generator',
             'version': identity['version'],

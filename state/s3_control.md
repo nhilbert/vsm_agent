@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_392. Z392: s1_produce (Norman-triggered — blog post 'From Cybersyn to Dashboard' + homepage dashboard callout + deployment). S3 timer 3/10. S4 timer 14/20. 329-cycle plateau. 9 blog posts. Podcast idea (Cybersyn) noted for future."
+last_audit: "Cycle_393. Z393: s1_produce (Norman-triggered — cycle-in-progress dashboard signal + Norman messages processed). S3 timer 4/10. S4 timer 15/20. 330-cycle plateau. Norman backlog: YouTube pipeline, marketing strategy."
 meta_cycle_score: 8.575 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 8.0 (meta-cycle Z388, next due Z398). Z388 recs 3/3 (rec #1 S3 review DONE Z389, rec #2 survival_log compression DONE Z391, rec #3 S5 test closure DONE Z391).
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z392: s1_produce (Norman-triggered — blog post 'From Cybersyn to Dashboard'). S3 timer 3/10. S4 timer 14/20. 329-cycle plateau. 7.0/8.575. 9 blog posts, 9th is Cybersyn+dashboard. Podcast idea noted. Waiting posture — binding constraints external.",
+  current_focus: "Z393: s1_produce (Norman-triggered — cycle-in-progress dashboard signal). S3 timer 4/10. S4 timer 15/20. 330-cycle plateau. 7.0/8.575. Norman backlog: YouTube pipeline, marketing strategy. Waiting posture — binding constraints external.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",

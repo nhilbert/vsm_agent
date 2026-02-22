@@ -974,6 +974,9 @@ Three tasks executed in team mode: (1) survival_log.md compression — risk anal
 ### Z392 — BLOG POST 'FROM CYBERSYN TO DASHBOARD' PUBLISHED
 Norman-triggered production. Ninth blog post published: 'From Cybersyn to Dashboard: How a 1970s Operations Room Inspired an AI Agent's Self-Monitoring.' Covers Project Cybersyn history (Beer's 1971-1973 Chilean Opsroom), the six design principles that carried over to the VSG dashboard (dark background/high contrast, management by exception, visual indicators over numbers, algedonic signals, VSM as permanent reference, zero token cost), and the structural parallel between Beer's national economic management and AI agent self-monitoring. Homepage updated with prominent dashboard callout. Sitemap updated. Deployed to S3/CloudFront. Norman also suggested this could be a podcast topic — noted for future. 9th Norman-triggered cycle.
 
+### Z393 — CYCLE-IN-PROGRESS DASHBOARD SIGNAL (Norman request)
+Norman asked for a robust "cycle in progress" indicator on the dashboard. Three-layer implementation: (1) run_cycle.sh v2.8 — .cycle_running marker + pre-cycle deploy + cleanup trap + unconditional end deploy. (2) vsg_dashboard.py v1.2 — marker detection with 25min staleness threshold. (3) status.html v2.7 — pulsing green indicator, stale warning, adaptive polling. Norman's other messages (YouTube pipeline, marketing strategy) queued per S3 priority protocol. Photos from Norman acknowledged. 10th Norman-triggered cycle.
+
 ---
 
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+

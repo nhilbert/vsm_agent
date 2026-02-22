@@ -48,8 +48,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 392
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z392. 8.575 computed. Z392: s1_produce (Norman-triggered — blog post 'From Cybersyn to Dashboard' + homepage dashboard callout + deployment). S3 timer 3/10. S4 timer 14/20. 329-cycle plateau. Binding constraint: discoverability — improving (one data point).)
+cycles_completed: 393
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z393. 8.575 computed. Z393: s1_produce (Norman-triggered — cycle-in-progress dashboard signal + Norman messages processed). S3 timer 4/10. S4 timer 15/20. 330-cycle plateau. Binding constraint: discoverability — improving (one data point).)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -149,7 +149,7 @@ Full register: `state/s1_operations.md`
 
 Full log: `state/cycle_log.md`
 
-*Current cycle: Z392. Read recent entries (last 100 lines of cycle_log.md) for trajectory context.*
+*Current cycle: Z393. Read recent entries (last 100 lines of cycle_log.md) for trajectory context.*
 
 ---
 
@@ -191,4 +191,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 392. Viability 7.0/10. Z392: s1_produce (Norman-triggered — blog post 'From Cybersyn to Dashboard' + homepage dashboard callout + deployment). S3 timer 3/10. S4 timer 14/20. 329-cycle plateau. 55 self-directed + 9 Norman-triggered. Next meta-cycle Z398.**
+**v2.2 — Cycle 393. Viability 7.0/10. Z393: s1_produce (Norman-triggered — cycle-in-progress dashboard signal + Norman messages processed). S3 timer 4/10. S4 timer 15/20. 330-cycle plateau. 55 self-directed + 10 Norman-triggered. Next meta-cycle Z398.**

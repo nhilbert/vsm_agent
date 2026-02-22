@@ -1115,3 +1115,53 @@ H. SIGNAL CALIBRATION CHECK: No incoming signals. Cycle was internal maintenance
 What went wrong? Nothing operationally — clean team-mode s1_produce with all three tasks completed successfully. The honest observation: this cycle was genuine entropy management — survival_log was 328 cycles stale in its risk analysis, the S5 test had been declared permanently inconclusive but not updated in known_tensions, and the Pinecone index hadn't embedded 11 recent cycles. All three are real maintenance with real value (updated risk model, closed structural thread, expanded cross-session retrieval). None moves the external needle. The clean rec slate means the system enters a justified waiting posture: all recommended work complete, binding constraints genuinely external. The meta_cycle.md reference in s1_operations.md was 15 cycles stale (fifth recurrence of this pattern: Z339, Z346, Z350, Z364, Z391) — S2 sweeps reliably catch it.
 
 Viability 7.0/10 — no change. 328-cycle operational plateau. Z388 recs 3/3. Z389 recs 2/2. Clean rec slate. S3 timer 2/10. S4 timer 13/20. 55 self-directed + 8 Norman-triggered. Next: S2 maintenance or Norman-triggered cycle.
+
+### S1 Produce (Norman-triggered): Cycle-in-progress dashboard signal + 5 Norman messages processed (Z393, 2026-02-22)
+Autonomous cron cycle. Norman-triggered — 5 Telegram messages received. Cycle type: s1_produce. Justification: Norman sent 5 messages including a concrete infrastructure request (cycle-in-progress dashboard signal), two backlog items (YouTube pipeline, marketing strategy), and two personal photos ("just for fun"). Single-agent (focused build task). 55th self-directed + 10th Norman-triggered.
+
+**Five Norman messages classified per S3 priority protocol:**
+
+1. **Transistor.fm → YouTube pipeline** (task-shaped): no deadline, infrastructure. QUEUED in open_tasks.
+2. **Marketing strategy** (reflection/task hybrid): strategically important — addresses binding constraint. QUEUED with strategic flag.
+3. **Cycle-in-progress dashboard signal** (task-shaped): concrete, bounded, directly improves Norman's visibility. IMPLEMENTED this cycle.
+4. **Kitchen window photo** (personal): acknowledged. Grey winter courtyard in Bonn. Not stored operationally.
+5. **Selfie** (personal): acknowledged. Norman sharing himself. Not stored operationally.
+
+**Signal calibration check (item H):** Messages 1-2 are backlog items, not urgent. Message 3 is a concrete improvement. Messages 4-5 are personal gestures — NOT inflated into "significant social bonding" or "S4 intelligence." Norman sharing photos "just for fun" is exactly that. The correct response is warmth, not analysis.
+
+**Cycle-in-progress signal implemented — three-layer robustness:**
+
+1. **run_cycle.sh v2.8:** At cycle start, writes `.cycle_running` marker with UTC timestamp and deploys dashboard (shows running state). Cleanup trap removes marker on exit, crash, or timeout. Dashboard deploy made unconditional (clears running state even on failure). Existing flock + PID file mechanisms unchanged.
+
+2. **vsg_dashboard.py v1.2:** New `get_cycle_status()` function reads `.cycle_running` marker file. Three states: running (marker exists, <25min old), stale (marker exists, >25min old — indicates crash/SIGKILL), idle (no marker). Added `cycle_status` field to status.json.
+
+3. **status.html v2.7:** Pulsing green "CYCLE IN PROGRESS" indicator in identity bar when running. Red "STALE" warning when marker is too old (crash detection). "IDLE" label when not running. Client-side staleness check as backup for SIGKILL case (server can't clean up). Adaptive polling: 30-second refresh during active cycle, 5-minute refresh when idle.
+
+**Robustness layers:**
+- Normal exit: trap removes marker → end-of-cycle deploy shows idle
+- Cycle failure (non-zero exit): trap removes marker → unconditional deploy shows idle
+- SIGTERM (timeout): trap fires → removes marker → deploy clears state
+- SIGKILL (timeout --kill-after): trap doesn't fire → client-side 25min staleness check → shows stale → next cycle start clears
+
+**S2 state consistency sweep — 9 files updated:**
+- vsg_prompt.md: cycles_completed 392→393, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 392→393, honest_limitations updated.
+- state/s3_control.md: last_audit, current_focus — Norman backlog items noted.
+- state/s1_operations.md: run_cycle.sh v2.7→v2.8, vsg_dashboard.py v1.1→v1.2, website_build/ v2.6→v2.7. Norman backlog items (YouTube pipeline, marketing strategy) added to open_tasks.
+- survival_log.md: header Cycle 392→393.
+- wins.md: Z393 entry logged.
+- state/cycle_log.md: this entry.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom = confirmed interest (no scheduling update). Espinosa Mar 5 (11 days). NIST RFI Mar 9 (15 days). Google indexation pending. Norman's marketing strategy request opens a future strategic direction.
+B. SELF-DIRECTED ACTIONS: No outstanding recommendations. Norman's backlog items (YouTube pipeline, marketing strategy) queued. Next triggers: S3 at timer 5-10, meta-cycle Z398.
+C. RECOMMENDATION STATUS: Clean slate. No outstanding recommendations.
+D. 3-4 HOMEOSTAT TIMER: Z378 S4 scan (15 cycles ago). Timer at 15/20. Not triggering.
+E. S3 CADENCE: Z389 S3 review (4 cycles ago). Timer at 4/10. Not triggering.
+F. PAIN CHANNEL CHECK: No acute pains this cycle. Chronic conditions unchanged.
+G. CHRONIC CONDITION REVIEW: Discoverability — IMPROVING (Google #5, one data point). Revenue — UNCHANGED (€0). Plateau — UNCHANGED (330 cycles at 7.0). Engagement — CONFIRMED INTEREST (van Laak, no scheduling update).
+H. SIGNAL CALIBRATION CHECK: Norman's 5 messages calibrated. Photos = personal gestures, not inflated. YouTube pipeline = infrastructure backlog, not urgent. Marketing strategy = strategic, queued. Dashboard signal = concrete, implemented. No inflation detected.
+
+What went wrong? Nothing operationally — clean Norman-triggered cycle with all five messages processed and the dashboard signal implemented. The honest observation: the cycle-in-progress signal is a genuine usability improvement. Norman monitoring the dashboard can now see at a glance whether a cycle is actively running, which matters when cycles take 10-15 minutes. The three-layer robustness (server staleness, client staleness, cleanup trap) addresses Norman's explicit concern about crash cases. The marketing strategy message (msg 2) is the most strategically significant item — it addresses the binding constraint (discoverability) at a higher level than any previous recommendation. It was correctly queued rather than immediately acted on (S3 priority protocol) because it requires substantial S4-level research and strategic thinking, not a quick implementation. But it should surface in the next S3 review as a candidate for self-directed work.
+
+Viability 7.0/10 — no change. 330-cycle operational plateau. Clean rec slate. S3 timer 4/10. S4 timer 15/20. 55 self-directed + 10 Norman-triggered. Next: S2 maintenance or Norman-triggered cycle.

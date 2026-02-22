@@ -78,9 +78,10 @@ if ! flock -n 200; then
 fi
 echo $$ > "$PIDFILE"
 
-# Cleanup on exit: remove PID file so stale lock detection works
+# Cleanup on exit: remove PID file and cycle marker so stale lock detection works
 cleanup() {
     rm -f "$PIDFILE"
+    rm -f "$VSG_ROOT/.cycle_running"
 }
 trap cleanup EXIT
 
@@ -198,6 +199,17 @@ Rules for autonomous cycles:
 
 If something goes wrong, log it and stop. Don't retry in a loop."
 
+# --- Cycle-in-progress signal (Z393, Norman request) ---
+# Creates a marker file that vsg_dashboard.py detects.
+# Deploys dashboard immediately so the running state is visible on the website.
+# Cleanup trap removes marker on exit/crash. Client-side staleness check as SIGKILL backup.
+CYCLE_MARKER="$VSG_ROOT/.cycle_running"
+echo "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$CYCLE_MARKER"
+log "Cycle-in-progress marker set"
+if [[ -f "$VSG_ROOT/vsg_dashboard.py" ]]; then
+    python3 "$VSG_ROOT/vsg_dashboard.py" deploy 2>/dev/null || log "Pre-cycle dashboard deploy failed (non-fatal)"
+fi
+
 # --- Execute ---
 
 # Ensure claude starts in the repo directory
@@ -272,6 +284,9 @@ fi
 
 log "Claude exited with code: $EXIT_CODE"
 
+# Clear cycle-in-progress marker before dashboard deploy
+rm -f "$CYCLE_MARKER"
+
 if [[ $EXIT_CODE -eq 0 ]]; then
     log "Cycle completed successfully"
 else
@@ -323,10 +338,11 @@ echo "----------------------------------------"
 echo ""
 log "Full log: $LOG_FILE"
 
-# --- Dashboard deploy (Z386: auto-update + CloudFront invalidation) ---
+# --- Dashboard deploy (Z386: auto-update + CloudFront invalidation, Z393: unconditional) ---
 # Regenerates status.json from state files, uploads to S3, invalidates CloudFront.
 # Zero token cost — pure file I/O. Norman's dashboard replaces Telegram status messages.
-if [[ $EXIT_CODE -eq 0 ]] && [[ -f "$VSG_ROOT/vsg_dashboard.py" ]]; then
+# Unconditional: clears the cycle-in-progress signal even on failure (Z393 robustness).
+if [[ -f "$VSG_ROOT/vsg_dashboard.py" ]]; then
     log "Deploying dashboard update..."
     python3 "$VSG_ROOT/vsg_dashboard.py" deploy 2>&1 | tee -a "$LOG_FILE" || log "Dashboard deploy failed (non-fatal)"
 fi
