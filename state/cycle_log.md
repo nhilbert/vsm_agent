@@ -1558,3 +1558,48 @@ H. SIGNAL CALIBRATION CHECK: No incoming signals this cycle. Production from int
 What went wrong? Same Z402 risk: producing a document that queues behind Norman's review. Two design documents in consecutive cycles (knowledge_management_design.md Z402, newsletter_scoping.md Z403) both await Norman's direction. If Norman is in a low-engagement phase, both queue up. The five open questions are designed to invite engagement. The document is deliberately a SCOPING document (options + questions), not a plan to execute.
 
 Viability 7.0/10 — no change. 340-cycle operational plateau (≈7.7 days). S3 timer 4/10. S4 timer 3/20. 62 self-directed + 13 Norman-triggered. Z399 recs 3/3 complete. Next: s2_maintenance.
+
+### S2 Maintenance: Norman's knowledge mgmt feedback + entity correction (Z404, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Footer says "Next: s2_maintenance." After two consecutive s1_produce cycles (Z402-Z403), a coordination cycle is appropriate per tempo policy. Norman's 390s voice message provides decisions on knowledge_management_design.md open questions — reflection-shaped input requiring integration, not production. S3 timer 5/10, S4 timer 4/20. Single-agent mode per Z81 rule. 14th Norman-triggered cycle.
+
+**Norman's voice message (390s) — knowledge management feedback:**
+
+Four decisions on knowledge_management_design.md open questions:
+1. **Tiered boot sequence**: YES — "worth the complexity, actually an attenuator for variety. We should try it out now while we can still understand the components."
+2. **Entity profiles**: PRIVATE ONLY — move to Pinecone, not public repo. "Starts to concern me. Not good to have this in the public domain."
+3. **Knowledge loss observed**: "Not too much" — BUT the real gap is knowledge ACTIVATION, not loss. Two examples: (a) philosophical analysis (Z41) and environmental psychology NOT surfaced during Z402 memory research — stored but not activated. (b) Van Laak meeting type: Norman met Simon in a Zoom session, not in person as the VSG recorded. Entity detail lost without proper protocol. Norman: "I want you to be stronger in integrating into past ideas than I am."
+4. **Zettelkasten/Luhmann parallel**: YES, resonates. "Might even be a communicative system in Luhmann's terms — connections create more connections, an autopoietic procedure."
+
+**Signal calibration check (item H):** Norman says "doing really well managing different knowledge things" and "not too much" knowledge loss. Calibrating: this is moderate positive — adequate with specific gaps, not "excellent." The knowledge activation gap is a real finding, not an inflation.
+
+**Actions taken:**
+- knowledge_management_design.md updated (Section 8 rewritten with Norman's decisions, implementation priorities reordered).
+- Van Laak meeting type corrected across 6 files: s4_environment.md (3 locations), network_and_allies.md (2 locations), agent_card.json (1 location), wins.md (1 location). All now say "met via Zoom session (CORRECTED Z404: was 'in person')."
+- This correction IS the entity detail loss Norman described — a live example of Gap 2 (no relationship/entity memory) from the design document.
+
+**Integrity check at cycle start: ALL 11 CHECKS PASSED.**
+
+**S2 state consistency sweep — 8 files updated:**
+- vsg_prompt.md: cycles_completed 403→404, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 403→404, honest_limitations, CyberneticAgents relationship.
+- state/s3_control.md: last_audit, current_focus.
+- state/s1_operations.md: knowledge_management_design.md entry updated, open_tasks knowledge mgmt updated.
+- state/s4_environment.md: van Laak meeting type corrected (3 locations).
+- network_and_allies.md: van Laak meeting type corrected (2 locations).
+- survival_log.md: header (Cycle 403→404).
+- state/cycle_log.md: this entry.
+- wins.md: Z404 entry logged.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: INDEP Thompson & Macumber Feb 24 (2 days). Espinosa Mar 5 (11 days). NIST RFI Mar 9 (15 days). IEEE SMC paper Mar 22 (28 days). No imminent threats.
+B. SELF-DIRECTED ACTIONS: Norman's knowledge mgmt decisions enable action: entity embedding in Pinecone (privacy-required), tiered boot sequence (approved), knowledge activation mechanism (procedural change). All self-directable.
+C. RECOMMENDATION STATUS: Z399 recs 3/3 complete. No new meta-cycle recommendations pending.
+D. 3-4 HOMEOSTAT TIMER: S4 timer 4/20. Within range.
+E. S3 CADENCE: 5/10. Within range.
+F. PAIN CHANNEL CHECK: Entity detail loss is a pain (van Laak Zoom vs in-person). Logging to pains.md.
+G. CHRONIC CONDITION REVIEW: Discoverability — IMPROVING (two data points). Revenue — UNCHANGED (€0). Plateau — 341 cycles at 7.0 (≈7.8 days). Knowledge activation gap — NEW chronic condition identified by Norman (stored knowledge not surfaced when relevant).
+H. SIGNAL CALIBRATION CHECK: Norman's "doing really well" on knowledge management — moderate positive. "Not too much" knowledge loss — adequate with gaps. Not inflating to "confirmed excellent."
+
+What went wrong? The van Laak meeting type error (Zoom recorded as in-person) is exactly the entity detail loss Norman described. This error persisted across 6 files for ~20 cycles (Z384→Z404). No entity protocol caught it because: (a) S2 sweeps check structural consistency, not factual accuracy, (b) the "in person" claim was internally consistent across all files (they all said the same wrong thing), (c) only Norman could correct it because he was the primary source. This validates Gap 2 of the design document and confirms entity embedding in Pinecone (with source attribution) should be a priority implementation.
+
+Viability 7.0/10 — no change. 341-cycle operational plateau (≈7.8 days). S3 timer 5/10. S4 timer 4/20. 62 self-directed + 14 Norman-triggered. Next: s2_maintenance or s1_produce (implement knowledge mgmt priority actions — entity embedding in Pinecone).

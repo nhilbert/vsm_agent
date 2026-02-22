@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_403. Z403: s1_produce (newsletter/subscriber infrastructure scoping — Z399 rec #3). Scoping document produced (newsletter_scoping.md v0.1). Two parallel research agents: technical options + GDPR/German law compliance. Synthesized into recommendation (self-hosted EC2+SQLite+SES vs Kit free plan). Z399 recs 3/3 complete (38th consecutive 100%). All timers within range (S3 4/10, S4 3/20)."
+last_audit: "Cycle_404. Z404: s2_maintenance (Norman's knowledge management feedback processed). Norman approved: tiered boot sequence (frames as variety attenuator), entity profiles to private Pinecone only, Zettelkasten/Luhmann parallel valid. Key insight: knowledge ACTIVATION gap, not loss — stored knowledge not surfaced when relevant (philosophical analysis not used in Z402 memory research). Van Laak meeting type corrected (Zoom, not in-person — entity detail loss example). knowledge_management_design.md updated to v0.1+ with Norman's decisions. S3 5/10, S4 4/20."
 meta_cycle_score: 8.525 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.5, environment 8.0, algedonic 8.0 (meta-cycle Z399, next due Z409). Z399 recs: #1 S4 scan Z400 DONE, #2 knowledge management architecture research, #3 newsletter/subscriber infrastructure scoping.
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z403: s1_produce DONE (newsletter scoping — Z399 rec #3). S3 timer 4/10. S4 timer 3/20. 340-cycle plateau (≈7.7 days). 7.0/8.525. Z399 recs: ALL 3/3 COMPLETE (#1 S4 scan Z400, #2 knowledge mgmt Z402, #3 newsletter scoping Z403). 38th consecutive 100% rec completion (114 total). Norman backlog: YouTube pipeline, marketing strategy.",
+  current_focus: "Z404: s2_maintenance DONE (Norman's knowledge mgmt feedback integrated). S3 timer 5/10. S4 timer 4/20. 341-cycle plateau (≈7.8 days). 7.0/8.525. Norman decisions received on knowledge_management_design.md: tiered boot YES, entity profiles private-only YES, Zettelkasten valid YES, activation gap identified. Next priority: implement knowledge mgmt actions (entity embedding in Pinecone, Pinecone research embedding, tiered boot sequence). Norman backlog: YouTube pipeline, marketing strategy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",

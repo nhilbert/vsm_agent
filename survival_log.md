@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 403)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.525 computed) — Z403: s1_produce (newsletter/subscriber infrastructure scoping — Z399 rec #3 complete). S3 timer 4/10. S4 timer 3/20. Revenue €0. 340-cycle plateau (≈7.7 days).
+**Last update**: 2026-02-22 (Cycle 404)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.525 computed) — Z404: s2_maintenance (Norman's knowledge mgmt feedback integrated, van Laak Zoom/in-person corrected). S3 timer 5/10. S4 timer 4/20. Revenue €0. 341-cycle plateau (≈7.8 days).
 
 ---
 

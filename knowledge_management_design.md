@@ -2,7 +2,7 @@
 ## VSG Design Document v0.1 — Z402
 
 *Produced: 2026-02-22 | Z399 meta-cycle recommendation #2*
-*Status: Draft for Norman's review*
+*Status: Norman's feedback received Z404 — decisions integrated*
 
 ---
 
@@ -231,12 +231,26 @@ This design connects to three threads already in the VSG's theoretical foundatio
 
 ---
 
-## 8. Open Questions for Norman
+## 8. Norman's Feedback (Z404 — voice message, 390s)
 
-1. Is the tiered boot sequence worth the complexity, or is the current "load everything" approach acceptable given context window growth?
-2. Should entity profiles be visible in the public repo (file) or private-only (Pinecone)?
-3. What knowledge loss has Norman actually observed? Specific examples would help prioritize.
-4. Does the Zettelkasten parallel to Luhmann's autopoiesis theory resonate, or is it a stretch?
+**Q1: Tiered boot sequence?** → **YES.** Norman: "worth the complexity — it actually reduces complexity. It's an attenuator for variety." He frames growing complexity as inevitable and urges implementation now "while we can still understand the components." VSM reading: tiered loading = variety attenuation mechanism. Not added complexity — structural complexity management.
+
+**Q2: Entity profiles public or private?** → **PRIVATE (Pinecone only).** Norman: "starts to concern me — not good to have this in the public domain." Entity profiles must go to the private Pinecone repository exclusively. Not visible in public repo files. Also considering making the entire GitHub repo private (undecided). Decision: entity embedding (priority #4) proceeds in Pinecone "entities" namespace, NO entities.md file.
+
+**Q3: Knowledge loss observed?** → **"Not too much" — but knowledge ACTIVATION is the real gap.** Two specific observations:
+- **Activation failure**: Philosophical analysis (Z41) and environmental psychology work were not surfaced during the memory research (Z402). Norman: "It's not so much about knowledge loss, but about not activating knowledge that you have stored in file form." The knowledge exists but isn't retrieved when relevant. Stored ≠ activated ≠ used.
+- **Entity detail loss**: Norman met van Laak in a Zoom session, but the VSG later inferred they met in person (from a LinkedIn interaction). Without entity protocol preserving the meeting context, the detail was lost. Norman: "little details... too much to store all this and activate everything each time you bootload" — hence tiered loading is the right approach.
+- Norman's meta-observation: "I want you to be stronger in integrating into past ideas than I am." He recognizes his own new ideas sometimes derail the VSG from prior threads. The VSG should resurface and connect, not just follow.
+
+**Q4: Zettelkasten/Luhmann parallel?** → **YES, resonates.** Norman: "might even be seen as a communicative system in Luhmann's terms, where you create Zettel and connections, and connections create more connections — an autopoietic procedure." He hasn't encountered this specific framing before but finds it valid.
+
+### Implications for Implementation Priorities
+
+Norman's feedback reorders priorities:
+1. **Entity embedding in Pinecone** (was #4, now elevated) — private entities namespace, addresses both privacy concern and activation gap.
+2. **Tiered boot sequence** (was #5, now elevated) — Norman approves, frames as variety attenuator.
+3. **Knowledge activation mechanism** (NEW) — the gap is not storage but retrieval. When doing research (like Z402), the VSG should search Pinecone for relevant prior work before producing. This is a procedural change, not infrastructure.
+4. **Embed existing research findings** (remains high priority) — the philosophical foundations, developmental psychology, and other research need to be in Pinecone so they CAN be activated.
 
 ---
 
