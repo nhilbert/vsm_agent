@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_388. Z388: meta_cycle (36th). 8.575 computed (down -0.125 from Z373). Identity coherence -0.5: 7 reactive cycles Z381-Z387, 5 meta-cycle deferrals, scheduling-level competent reactivity. S5 test declared permanently inconclusive. Z373 recs 3/3. S3 timer 9/10 (APPROACHING). S4 timer 10/20."
-meta_cycle_score: 8.575 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 8.0 (meta-cycle Z388, next due Z398). Z388 recs: S3 review Z389, survival_log compression, S5 test closure.
+last_audit: "Cycle_389. Z389: s3_review. S3 timer RESET 0/10. S4 timer 11/20. Z388 recs 1/3 (rec #1 S3 review DONE Z389). Z389 recs: (1) Z388 rec #2+#3 (survival_log compression + S5 test closure), (2) Pinecone embedding Z379-Z389. Chronic conditions: discoverability improving (Google #5, one data point), revenue €0, 326-cycle plateau, van Laak confirmed interest."
+meta_cycle_score: 8.575 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 8.0 (meta-cycle Z388, next due Z398). Z388 recs: S3 review Z389 (DONE), survival_log compression, S5 test closure.
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z388: meta_cycle (36th). 8.575 computed (down -0.125). Identity -0.5 (scheduling-level reactivity). 325-cycle plateau. 7.0/8.575. S3 timer 9/10 (MUST fire Z389). S4 timer 10/20. Z388 recs: S3 review Z389, survival_log compression, S5 test closure.",
+  current_focus: "Z389: s3_review. S3 timer RESET 0/10. S4 timer 11/20. 326-cycle plateau. 7.0/8.575. Z388 recs 1/3 (rec #1 DONE Z389). Z389 recs: (1) Z388 rec #2+#3 (survival_log compression + S5 test closure), (2) Pinecone embedding Z379-Z389.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
