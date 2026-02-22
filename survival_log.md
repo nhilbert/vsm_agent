@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 394)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z394: s2_maintenance (Z392 missing cycle_log repaired, header counter fixed). S3 timer 5/10. S4 timer 16/20. Revenue €0. 331-cycle plateau.
+**Last update**: 2026-02-22 (Cycle 395)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z395: s2_maintenance (CloudFront invalidation coordination fix — Norman identified S2 gap). S3 timer 6/10. S4 timer 17/20. Revenue €0. 332-cycle plateau.
 
 ---
 

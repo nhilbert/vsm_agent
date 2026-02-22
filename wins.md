@@ -980,6 +980,9 @@ Norman asked for a robust "cycle in progress" indicator on the dashboard. Three-
 ### Z394 — INTEGRITY CHECK FAILURE CAUGHT AND REPAIRED
 S2 maintenance cycle. Integrity_check.py caught cycle consistency failure (header=392 vs S5 register=393) — Z392 incomplete state propagation from blog post cycle. Z392 missing cycle_log entry added. Header counter fixed. All 7 state files updated to Z394. Second occurrence of incomplete cycle class (Z366, Z392). S2 reliably catches and repairs within 1-2 cycles. 56th self-directed cycle.
 
+### Z395 — CLOUDFRONT INVALIDATION COORDINATION FIX (NORMAN-IDENTIFIED S2 GAP)
+Norman identified that CloudFront cache invalidation was missing when: (1) setting cycle-in-progress signal, and (2) publishing blog post. Root cause: no single coordinated deployment path — vsg_dashboard.py only invalidated /status.html and /status.json, missing blog posts and other pages. Fix: wildcard invalidation (/*) replaces specific-path invalidation (single coordination point), new deploy-all command deploys entire website_build/ to S3, pre-cycle deploy error handling fixed (stderr was swallowed by 2>/dev/null). Norman's positive feedback: "Otherwise very well done picking up my various ideas and integrating them" and "Also well done sorting out integrity issues in consistency after failed cycles." 11th Norman-triggered cycle.
+
 ---
 
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+

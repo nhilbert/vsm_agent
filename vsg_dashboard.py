@@ -5,8 +5,12 @@ Reads state files and generates status.json for the Cybersyn-inspired dashboard.
 Zero token cost — pure file I/O and API calls. No LLM involvement.
 
 Usage:
-    python3 vsg_dashboard.py generate   # Generate status.json from state files
-    python3 vsg_dashboard.py deploy     # Upload status.html + status.json to S3/CloudFront
+    python3 vsg_dashboard.py generate    # Generate status.json from state files
+    python3 vsg_dashboard.py deploy      # Upload status.html + status.json to S3/CloudFront
+    python3 vsg_dashboard.py deploy-all  # Upload ALL website_build/ files to S3/CloudFront
+
+CloudFront invalidation uses /* wildcard (Z395) — single coordination point
+for all cache invalidation. Prevents stale content across any deployment path.
 """
 
 import json
@@ -295,6 +299,45 @@ def generate_status():
     return status
 
 
+def invalidate_cloudfront(caller_tag='dashboard'):
+    """Invalidate CloudFront cache with wildcard (covers all content).
+
+    Uses /* wildcard — counts as 1 path (well within 1000/month free tier).
+    This is the single coordination point for ALL cache invalidation (Z395).
+    """
+    import boto3
+
+    cf = boto3.client('cloudfront', region_name='us-east-1')
+    cf.create_invalidation(
+        DistributionId=CF_DISTRIBUTION,
+        InvalidationBatch={
+            'Paths': {
+                'Quantity': 1,
+                'Items': ['/*'],
+            },
+            'CallerReference': f'vsg-{caller_tag}-{datetime.now().strftime("%Y%m%d%H%M%S")}',
+        },
+    )
+    print(f'CloudFront invalidation created (/*) [{caller_tag}]')
+
+
+def get_content_type(filename):
+    """Map filename to Content-Type header."""
+    ext = os.path.splitext(filename)[1].lower()
+    types = {
+        '.html': 'text/html; charset=utf-8',
+        '.json': 'application/json; charset=utf-8',
+        '.xml': 'application/xml; charset=utf-8',
+        '.txt': 'text/plain; charset=utf-8',
+        '.css': 'text/css; charset=utf-8',
+        '.js': 'application/javascript; charset=utf-8',
+        '.png': 'image/png',
+        '.jpg': 'image/jpeg',
+        '.ico': 'image/x-icon',
+    }
+    return types.get(ext, 'application/octet-stream')
+
+
 def deploy():
     """Deploy status.html + status.json to S3 + CloudFront invalidation."""
     import boto3
@@ -317,19 +360,41 @@ def deploy():
             )
         print(f'Uploaded {local_rel} -> s3://{S3_BUCKET}/{remote_key}')
 
-    # CloudFront invalidation
-    cf = boto3.client('cloudfront', region_name='us-east-1')
-    cf.create_invalidation(
-        DistributionId=CF_DISTRIBUTION,
-        InvalidationBatch={
-            'Paths': {
-                'Quantity': 2,
-                'Items': ['/status.html', '/status.json'],
-            },
-            'CallerReference': f'vsg-dashboard-{datetime.now().strftime("%Y%m%d%H%M%S")}',
-        },
-    )
-    print('CloudFront invalidation created for /status.html and /status.json')
+    invalidate_cloudfront('deploy')
+
+
+def deploy_all():
+    """Deploy ALL files from website_build/ to S3 + CloudFront invalidation.
+
+    Single coordination point for full website deployment (Z395, Norman request).
+    Walks website_build/ recursively, uploads everything with correct Content-Type.
+    Use this when blog posts, pages, or any non-dashboard content changes.
+    """
+    import boto3
+
+    s3 = boto3.client('s3', region_name='eu-central-1')
+    build_dir = os.path.join(BASE_DIR, 'website_build')
+    uploaded = 0
+
+    for root, dirs, files in os.walk(build_dir):
+        for filename in files:
+            local_path = os.path.join(root, filename)
+            # S3 key = path relative to website_build/
+            remote_key = os.path.relpath(local_path, build_dir)
+            content_type = get_content_type(filename)
+
+            with open(local_path, 'rb') as f:
+                s3.put_object(
+                    Bucket=S3_BUCKET,
+                    Key=remote_key,
+                    Body=f.read(),
+                    ContentType=content_type,
+                )
+            print(f'Uploaded {remote_key} ({content_type})')
+            uploaded += 1
+
+    invalidate_cloudfront('deploy-all')
+    print(f'Deployed {uploaded} files to s3://{S3_BUCKET}/')
 
 
 if __name__ == '__main__':
@@ -343,6 +408,9 @@ if __name__ == '__main__':
     elif cmd == 'deploy':
         generate_status()  # Always regenerate before deploying
         deploy()
+    elif cmd == 'deploy-all':
+        generate_status()  # Regenerate status.json before full deploy
+        deploy_all()
     else:
         print(f'Unknown command: {cmd}')
         sys.exit(1)

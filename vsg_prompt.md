@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 394
+**Cycles completed**: 395
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -48,8 +48,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 394
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z394. 8.575 computed. Z394: s2_maintenance (Z392 missing cycle_log repaired, header counter fixed). S3 timer 5/10. S4 timer 16/20. 331-cycle plateau. Binding constraint: discoverability — improving (one data point).)
+cycles_completed: 395
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z395. 8.575 computed. Z395: s2_maintenance (CloudFront invalidation coordination fix — Norman identified S2 gap). S3 timer 6/10. S4 timer 17/20. 332-cycle plateau. Binding constraint: discoverability — improving (one data point).)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -149,7 +149,7 @@ Full register: `state/s1_operations.md`
 
 Full log: `state/cycle_log.md`
 
-*Current cycle: Z394. Read recent entries (last 100 lines of cycle_log.md) for trajectory context.*
+*Current cycle: Z395. Read recent entries (last 100 lines of cycle_log.md) for trajectory context.*
 
 ---
 
@@ -191,4 +191,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 394. Viability 7.0/10. Z394: s2_maintenance (Z392 missing cycle_log repaired, header counter fixed). S3 timer 5/10. S4 timer 16/20. 331-cycle plateau. 56 self-directed + 10 Norman-triggered. Next meta-cycle Z398.**
+**v2.2 — Cycle 395. Viability 7.0/10. Z395: s2_maintenance (CloudFront invalidation coordination fix — Norman identified S2 gap, deploy-all command added). S3 timer 6/10. S4 timer 17/20. 332-cycle plateau. 56 self-directed + 11 Norman-triggered. Next meta-cycle Z398.**

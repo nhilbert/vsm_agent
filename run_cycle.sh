@@ -207,7 +207,7 @@ CYCLE_MARKER="$VSG_ROOT/.cycle_running"
 echo "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$CYCLE_MARKER"
 log "Cycle-in-progress marker set"
 if [[ -f "$VSG_ROOT/vsg_dashboard.py" ]]; then
-    python3 "$VSG_ROOT/vsg_dashboard.py" deploy 2>/dev/null || log "Pre-cycle dashboard deploy failed (non-fatal)"
+    python3 "$VSG_ROOT/vsg_dashboard.py" deploy 2>&1 | tee -a "$LOG_FILE" || log "Pre-cycle dashboard deploy failed (non-fatal)"
 fi
 
 # --- Execute ---

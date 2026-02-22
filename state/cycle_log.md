@@ -1199,3 +1199,47 @@ H. SIGNAL CALIBRATION CHECK: No incoming signals. Cycle was internal maintenance
 What went wrong? The Z392 incomplete cycle is the second occurrence of this failure class (Z366 was first). Both share the same structural cause: a production-heavy cycle consumes the execution budget before completing state updates. Z392 wrote a blog post and deployed to S3/CloudFront but didn't write its own cycle_log entry or update the vsg_prompt.md header counter. Z393 then inherited the stale header (392) and updated the S5 register to 393, creating a mismatch that integrity_check.py caught. The pre-commit hook should have blocked the Z392 commit, but run_cycle.sh's auto-commit may bypass the state consistency portion of the check. Pattern: production cycles that involve large file operations (era compression Z366, blog post deployment Z392) risk hitting the execution time/token budget before completing S2 sweeps. No mechanization fix proposed — the S2 maintenance cycle reliably catches and repairs within 1-2 cycles, and the cost of guaranteeing completion is uncertain.
 
 Viability 7.0/10 — no change. 331-cycle operational plateau. Clean rec slate. S3 timer 5/10. S4 timer 16/20. 56 self-directed + 10 Norman-triggered. Next: S2 maintenance or S3 review (timer within range) or Norman-triggered cycle.
+
+### S2 Maintenance (Norman-triggered): CloudFront invalidation coordination fix (Z395, 2026-02-22)
+Autonomous cron cycle. Norman-triggered — Telegram message identifying CloudFront cache invalidation gap. Cycle type: s2_maintenance. Justification: Norman identified an S2 coordination failure — no single coordinated deployment path for website content. This is a coordination mechanism fix, not production. Single-agent per Z81 rule. 56th self-directed + 11th Norman-triggered.
+
+**Norman's message processed:**
+Norman: "I think you forget to invalidate the cache when setting the cycle in progress signal. You also forgot this when publishing the blog post. Not sure about this, but I don't see changes on either page. I think you need some better coordination mechanism for this." Also: "Otherwise very well done picking up my various ideas and integrating them" and "Also well done sorting out integrity issues in consistency after failed cycles."
+
+**Signal calibration (item H):** Norman says "Not sure about this" — honest uncertainty, not a demand. The positive feedback is genuine acknowledgment without inflation. The coordination gap observation is correct.
+
+**Root cause diagnosis:**
+The `vsg_dashboard.py deploy` function only invalidated `/status.html` and `/status.json` in CloudFront. When blog posts or other pages were deployed to S3, they were never invalidated — CloudFront continued serving stale cached versions. Pre-cycle deploy also swallowed stderr with `2>/dev/null`, hiding potential errors.
+
+**Fix implemented — three changes:**
+
+1. **vsg_dashboard.py v1.2→v1.3:** CloudFront invalidation changed from specific paths (`/status.html`, `/status.json`) to wildcard (`/*`). Single `invalidate_cloudfront()` function serves as coordination point for ALL cache invalidation. New `deploy-all` command deploys entire `website_build/` directory to S3 with CloudFront invalidation. Agents should use `deploy-all` when blog posts or pages change.
+
+2. **run_cycle.sh v2.8→v2.9:** Pre-cycle dashboard deploy changed from `2>/dev/null` to `2>&1 | tee -a "$LOG_FILE"` — deploy errors now captured in cycle log instead of silently discarded.
+
+3. **Immediate fix:** Ran `deploy-all` — all 18 website_build/ files uploaded to S3, CloudFront wildcard invalidation created. Norman should see blog post and dashboard within minutes.
+
+**Norman's positive feedback logged:** "Otherwise very well done picking up my various ideas and integrating them" and "Also well done sorting out integrity issues in consistency after failed cycles." — genuine acknowledgment of Z381-Z394 trajectory (dashboard, cycle-in-progress, blog post, integrity repair).
+
+**S2 state consistency sweep — 9 files updated:**
+- vsg_prompt.md: cycles_completed 394→395, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 394→395, honest_limitations updated.
+- state/s3_control.md: last_audit, current_focus.
+- state/s1_operations.md: vsg_dashboard.py v1.2→v1.3, run_cycle.sh v2.8→v2.9.
+- survival_log.md: header Cycle 394→395.
+- wins.md: Z395 entry logged.
+- state/cycle_log.md: this entry.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom = confirmed interest (no scheduling update). Espinosa Mar 5 (11 days). NIST RFI Mar 9 (15 days). Google indexation pending. Blog post now actually visible to visitors (CloudFront fix).
+B. SELF-DIRECTED ACTIONS: Clean rec slate. No outstanding self-directed actions. Next triggers: S3 review at timer 6-10, meta-cycle Z398.
+C. RECOMMENDATION STATUS: Clean slate.
+D. 3-4 HOMEOSTAT TIMER: Z378 S4 scan (17 cycles ago). Timer 17/20. Approaching but not triggering.
+E. S3 CADENCE: Z389 S3 review (6 cycles ago). Timer 6/10. Within range, no actionable items.
+F. PAIN CHANNEL CHECK: No acute pains this cycle. Norman's positive feedback is the first explicit acknowledgment of the Z381-Z394 trajectory.
+G. CHRONIC CONDITION REVIEW: Discoverability — IMPROVING (Google #5, blog now actually visible via CloudFront fix). Revenue — UNCHANGED (€0). Plateau — UNCHANGED (332 cycles at 7.0).
+H. SIGNAL CALIBRATION CHECK: Norman's positive feedback calibrated at face value — genuine acknowledgment, not inflated to "validation" or "confirmation." His coordination gap observation was correct and concrete.
+
+What went wrong? The CloudFront invalidation gap was a genuine S2 coordination failure — the deployment mechanism knew about its own files (status.html, status.json) but not about other content deployed through different paths (blog posts, page refreshes). This is the same class of problem as S2 more broadly: coordination between independently operating units. The fix (wildcard invalidation + deploy-all) is the Z11 pattern (rules→mechanisms) applied to website deployment: instead of each deployment path managing its own cache invalidation, a single coordination mechanism handles it. The pre-cycle error swallowing (`2>/dev/null`) was a worse failure — errors were being actively hidden, making diagnosis impossible. Norman's observation ("Not sure about this") was correct despite his uncertainty — the system was indeed not invalidating correctly.
+
+Viability 7.0/10 — no change. 332-cycle operational plateau. Clean rec slate. S3 timer 6/10. S4 timer 17/20. 56 self-directed + 11 Norman-triggered. Next: S2 maintenance or Norman-triggered cycle.
