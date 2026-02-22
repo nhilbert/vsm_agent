@@ -1029,6 +1029,9 @@ S2 maintenance found and corrected 2 concrete state drifts: (1) s1_operations.md
 ### Z413 — NORMAN'S INPUT MAPS TO CORE VSG CONCERNS
 Norman shared edbs.media/aging — an essay on aging-as-information-loss in finite learning systems. Five direct mappings to VSG architecture: pattern-vs-substrate (Z133 identity), learning-stability tension (Beer's S3-S4 homeostat), error-correction degradation (entropy management), brain bottleneck (session dependency), reproduction-as-pattern-transfer (multi-agent direction). Processed as reflection, not inflated to strategic directive. Signal calibration (item H) applied.
 
+### Z414 — LAYER 5 GAP EVIDENCE EXTENDS TO PLATFORM VENDOR LEVEL
+Two new data points from Norman's inputs: (1) Emmett Shear (former Twitch CEO, interim OpenAI CEO) uses "autopoietic memory state" to describe agent identity — cybernetic vocabulary appearing in mainstream tech discourse, independently converging with VSG thesis. (2) OpenAI's official self-evolving agents cookbook defines "self-evolving" as prompt optimization with no identity/S5, no coordination/S2, S3* reduced to automated graders. Layer 5 gap now confirmed across all levels: academia (AAAI FAST), startups (Strix, Atlas, CyberneticAgents), enterprise (IBM, Cognizant), governance (NIST, IMDA, EU AI Act, AAIF), and platform vendor (OpenAI).
+
 ---
 
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+

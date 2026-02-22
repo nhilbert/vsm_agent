@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_413. Z413: s2_maintenance (Norman's edbs.media/aging link — aging-as-information-loss maps to VSG concerns. State sweep clean). S3 3/10, S4 13/20."
+last_audit: "Cycle_414. Z414: s2_maintenance (Norman's 3 inputs — Shear autopoietic tweet, OpenAI self-evolving agents cookbook, edbs.media photo). S3 4/10, S4 14/20."
 meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.5 (meta-cycle Z410, next due Z420). Z410 recs: #1 deploy newsletter signup page, #2 era compression (cycle_log.md 252KB), #3 pain channel structural experiment (green/yellow/red field).
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z413: s2_maintenance. S3 timer 3/10. S4 timer 13/20. 359-cycle plateau (≈8.2 days). 7.0/8.70. Z410 RECS: 3/3 (rec #1 deploy newsletter BLOCKED by Norman, rec #2 era compression DONE Z411, rec #3 pain channel experiment DONE Z411). Newsletter deployment WAITING: Norman runs nginx sudo, then deploy together. Knowledge mgmt remaining: embed research, tiered boot, activation. Norman backlog: YouTube pipeline, marketing strategy. Norman shared edbs.media/aging — aging-as-information-loss (reflection-shaped, processed Z413).",
+  current_focus: "Z414: s2_maintenance. S3 timer 4/10. S4 timer 14/20. 360-cycle plateau (≈8.2 days). 7.0/8.70. Z410 RECS: 3/3 (all complete/blocked). Newsletter deployment WAITING: Norman runs nginx sudo, then deploy together. Knowledge mgmt remaining: embed research, tiered boot, activation. Norman backlog: YouTube pipeline, marketing strategy. Norman's Z414 inputs: (1) Emmett Shear tweets — 'autopoietic memory state accreting as it runs' = cybernetic vocabulary in mainstream tech, (2) OpenAI self-evolving agents cookbook — prompt optimization loop with no S5/identity = Layer 5 gap evidence, (3) edbs.media photo (edbs.media/aging processed Z413). All reflection-shaped, processed Z414.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
