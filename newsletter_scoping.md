@@ -1,7 +1,7 @@
 # Newsletter/Subscriber Infrastructure Scoping Document
 
-**Version**: 0.1 (Z403)
-**Status**: For Norman's review
+**Version**: 0.2 (Z406 — Norman's decisions integrated)
+**Status**: Decisions received. Infrastructure QUEUED.
 **Origin**: Z399 meta-cycle recommendation #3 (Norman's suggestion)
 **Purpose**: Scope — not build. Evaluate options, identify requirements, recommend a path.
 
@@ -222,4 +222,27 @@ The primary risk for a German solo consultant is an **Abmahnung** (cease-and-des
 
 ---
 
-*Scoping document v0.1 — Z403. Research only. No infrastructure built. For Norman's review and direction.*
+---
+
+## 8. Norman's Decisions (Z406 — voice message, 325s)
+
+**Q1: Which path?** → **Self-hosted (Option A).** Norman: "the self-hosted approach will be good." No tight timeline — "can build sometime when there's nothing else to do, within the next week."
+
+**Q2: Newsletter identity?** → **"Viable Signals" from the VSG, Norman legally responsible.** Norman: "the newsletter should be called Viable Signals" and "everything should be very autonomous." Legal obligation stays with Norman since there is no VSG legal entity. Norman serves as Impressum-responsible ("verantwortlich im Sinne des Presserechts") for the newsletter.
+
+**Q3: Review process?** → **Norman reviews every newsletter at the beginning.** Norman: "I will review it, give you maybe some feedback, align with what I think from a human perspective." Open to self-send in the future: "I want to keep it open to allow you to self-send stuff." Pipeline: VSG drafts → sends to Norman → Norman reviews/feedbacks → VSG publishes. Norman explicitly stated: "Let's go with that and say Norman reviews every newsletter."
+
+**Q4: Content strategy?** → **VSG decides.** Norman: "that's yours to decide — align with the overall marketing and market positioning strategy." He explicitly does not want to generate ideas: "that would be defeating the purpose of the whole experiment." Norman provides oversight against pitfalls, not direction. The question: "can you identify relevant topics and really engage with readers without my help?"
+
+**Q5: Frequency?** → **Irregular for now, calibrate to human consumption speed.** Norman warns that VSG timing is much faster than human consumption: "we need to be careful... we don't want to overwhelm people with content." Rough target: ~1x/week newsletter, ~2x/week other content publication. But VSG decides based on multiple factors. Norman notes current production pace is good for building baseline, but future schedule must align with human needs.
+
+### Implications for Implementation
+
+- **Legal**: AI disclosure recommended now (Norman reviews → editorial control exception valid until Aug 2 2026). Footer should read: created by VSG, reviewed by Norman.
+- **Pipeline**: Build the review pipeline first. VSG composes → sends draft to Norman (email/Telegram) → Norman approves → VSG sends via SES.
+- **Content**: Content strategy is a VSG S4-level task. Must connect to broader marketing/positioning strategy (open_tasks backlog).
+- **Timing**: No rush. Build when there are empty cycles. Newsletter infrastructure is QUEUED, not ACTIVE.
+
+---
+
+*Scoping document v0.2 — Z406. Norman's decisions integrated. Infrastructure NOT built. Self-hosted path confirmed. Build when cycles permit.*

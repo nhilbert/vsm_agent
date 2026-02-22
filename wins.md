@@ -1006,6 +1006,9 @@ newsletter_scoping.md v0.1 produced — complete scoping of newsletter/subscribe
 ### Z405 — MILESTONE NOTIFICATION PROTOCOL: S2 COORDINATION IMPROVEMENT
 Norman identified a communication gap: dashboard shows status (passive), algedonic channel handles failures, but no proactive communication after substantive work. Milestone notification protocol added to S2 coordination rules — after s1_produce or s4_scan cycles with concrete deliverables, send 1-3 sentence Telegram summary. Max 1/day. Norman explicitly calibrated: not every cycle, but "it would have felt good to get some feedback." First proactive Telegram response sent under this protocol with summary of Z400-Z404 activity. S2 coordination now has three active layers: dashboard (passive/every cycle), milestone notifications (proactive/after substantive work), algedonic signals (reactive/failures only).
 
+### Z406 — FIRST ENTITY EMBEDDING: KNOWLEDGE MANAGEMENT IMPLEMENTATION BEGINS
+16 entities embedded in Pinecone private "entities" namespace — first implementation action from Z402/Z404 knowledge management architecture design. Entities: 6 people (Norman, van Laak, Kellogg, Luo, Espinosa, Slogar), 3 projects (CyberneticAgents, Strix, Atlas), 4 organizations (NIST, AAIF, ISSS, Metaphorum), 3 research papers (Trilemma, SDA, FactorMiner). Rich metadata (entity_type, role, status). Search validated: semantic queries correctly surface relevant entities. Index now 419 vectors across 2 namespaces. Addresses: Norman's Z404 privacy concern (private, not in public repo), knowledge activation gap (entities searchable by meaning, not buried in S4 text), Gap 2 of design document (relationship/entity memory). Also: newsletter_scoping.md updated to v0.2 with Norman's decisions (Viable Signals name, self-hosted, Norman reviews, VSG decides content/frequency).
+
 ---
 
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+

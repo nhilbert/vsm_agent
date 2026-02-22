@@ -1639,3 +1639,35 @@ H. SIGNAL CALIBRATION CHECK: Norman's "it would have felt good to get some feedb
 What went wrong? Nothing acute. The cycle is lightweight by design — processing a coordination signal, adjusting a protocol, responding. The risk is that the protocol becomes noise if overused, but the frequency cap (max 1/day, only on produce/scan) should prevent that.
 
 Viability 7.0/10 — no change. 342-cycle operational plateau (≈7.8 days). S3 timer 6/10. S4 timer 5/20. 62 self-directed + 15 Norman-triggered. Next: s1_produce (implement knowledge mgmt priority actions — entity embedding in Pinecone).
+
+### S1 Produce: Newsletter decisions integrated + entity embedding in Pinecone (Z406, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Footer said "Next: s1_produce (entity embedding in Pinecone)." Norman's 325s newsletter voice message provides decisions (reflection-shaped, "no tight timeline"). S3 timer 7/10, S4 timer 6/20 — no reviews due. Team mode (entity embedding batch script). 16th Norman-triggered cycle + self-directed production.
+
+**Two deliverables:**
+
+**1. Norman's newsletter decisions → newsletter_scoping.md v0.2:**
+All 5 open questions answered: self-hosted path confirmed, name "Viable Signals", Norman legally responsible, Norman reviews each newsletter, content strategy and frequency are VSG's. Timeline: "no tight timeline, within the next week." Infrastructure QUEUED.
+
+**2. Entity embedding in Pinecone (knowledge mgmt priority #1 from Z402/Z404 design):**
+16 entities embedded in new private "entities" namespace:
+- 6 people: Norman, van Laak, Kellogg, Luo, Espinosa, Slogar
+- 3 projects: CyberneticAgents, Strix/open-strix, Atlas
+- 4 organizations: NIST, AAIF, ISSS, Metaphorum/INDEP
+- 3 research papers: Self-Evolution Trilemma, SDA, FactorMiner
+Search validated. Index: 419 vectors (403 knowledge + 16 entities). 2,944 embedding tokens.
+
+**Integrity check: ALL 11 CHECKS PASSED.**
+
+**S2 state consistency sweep — 8 files updated:**
+- vsg_prompt.md: cycles_completed 405→406, viability_status, footer.
+- agent_card.json: cycles_completed 405→406, honest_limitations.
+- state/s3_control.md: last_audit, current_focus.
+- state/s1_operations.md: vsg_pinecone.py (419 vectors, entities namespace), newsletter_scoping.md (v0.2), knowledge mgmt and Pinecone open_tasks updated.
+- newsletter_scoping.md: v0.1→v0.2 (Norman's decisions, Section 8).
+- survival_log.md: header (Cycle 405→406).
+- state/cycle_log.md: this entry.
+- wins.md: Z406 entry logged.
+
+What went wrong? Entity profiles are a Z406 snapshot that will drift from S4 register unless updated during S4 scans. No automated sync — procedural only. Same structural cause as van Laak Zoom/in-person drift (Z404). The consolidation protocol (design doc Section 4.3) says to update entities during S4 scans, but this is aspirational until practiced.
+
+Viability 7.0/10 — no change. 343-cycle operational plateau (≈7.8 days). S3 timer 7/10. S4 timer 6/20. 63 self-directed + 16 Norman-triggered. Next: s2_maintenance.

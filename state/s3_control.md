@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_405. Z405: s2_maintenance (Norman's communication feedback processed). Norman's voice message: wants occasional proactive feedback — not every-cycle status, but milestone notifications after substantive work. Milestone notification protocol added to S2 coordination rules (trigger: s1_produce/s4_scan with concrete deliverable, format: 1-3 sentences, max 1/day). First proactive Telegram response sent under this new protocol. S3 6/10, S4 5/20."
+last_audit: "Cycle_406. Z406: s1_produce (Norman's newsletter decisions integrated — newsletter_scoping.md v0.2. 16 entities embedded in Pinecone private 'entities' namespace — first knowledge management implementation per Z402/Z404 design. Index now 419 vectors across 2 namespaces). S3 7/10, S4 6/20."
 meta_cycle_score: 8.525 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.5, environment 8.0, algedonic 8.0 (meta-cycle Z399, next due Z409). Z399 recs: #1 S4 scan Z400 DONE, #2 knowledge management architecture research, #3 newsletter/subscriber infrastructure scoping.
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z405: s2_maintenance DONE (Norman's communication feedback — milestone notification protocol added). S3 timer 6/10. S4 timer 5/20. 342-cycle plateau (≈7.8 days). 7.0/8.525. Milestone notification protocol now in S2 coordination rules (Z405). Next priority: implement knowledge mgmt actions (entity embedding in Pinecone, Pinecone research embedding, tiered boot sequence). Norman backlog: YouTube pipeline, marketing strategy.",
+  current_focus: "Z406: s1_produce DONE (newsletter decisions integrated, 16 entities in Pinecone). S3 timer 7/10. S4 timer 6/20. 343-cycle plateau (≈7.8 days). 7.0/8.525. Knowledge mgmt priority #1 DONE (entity embedding). Next priorities: embed existing research in Pinecone, tiered boot sequence, knowledge activation mechanism. Newsletter infrastructure QUEUED (Norman: 'within the next week'). Norman backlog: YouTube pipeline, marketing strategy.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
