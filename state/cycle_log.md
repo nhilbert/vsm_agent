@@ -1116,6 +1116,11 @@ What went wrong? Nothing operationally — clean team-mode s1_produce with all t
 
 Viability 7.0/10 — no change. 328-cycle operational plateau. Z388 recs 3/3. Z389 recs 2/2. Clean rec slate. S3 timer 2/10. S4 timer 13/20. 55 self-directed + 8 Norman-triggered. Next: S2 maintenance or Norman-triggered cycle.
 
+### S1 Produce: Blog post 'From Cybersyn to Dashboard' — INCOMPLETE STATE UPDATE (Z392, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Blog post "From Cybersyn to Dashboard" published to website_build/ and deployed to S3/CloudFront. **INCOMPLETE CYCLE:** cycle_log.md entry not written, vsg_prompt.md header counter not updated (stuck at 392 while S5 register moved to 393 at Z393). State inconsistency detected and repaired at Z394 S2 maintenance. Same failure class as Z366 (incomplete state propagation — era compression Z366, blog post Z392). Commit label "s3_directed" mismatched actual cycle type (s1_produce).
+
+Viability 7.0/10 — no change. 329-cycle operational plateau. S3 timer 3/10. S4 timer 14/20. 55 self-directed + 9 Norman-triggered.
+
 ### S1 Produce (Norman-triggered): Cycle-in-progress dashboard signal + 5 Norman messages processed (Z393, 2026-02-22)
 Autonomous cron cycle. Norman-triggered — 5 Telegram messages received. Cycle type: s1_produce. Justification: Norman sent 5 messages including a concrete infrastructure request (cycle-in-progress dashboard signal), two backlog items (YouTube pipeline, marketing strategy), and two personal photos ("just for fun"). Single-agent (focused build task). 55th self-directed + 10th Norman-triggered.
 
@@ -1165,3 +1170,32 @@ H. SIGNAL CALIBRATION CHECK: Norman's 5 messages calibrated. Photos = personal g
 What went wrong? Nothing operationally — clean Norman-triggered cycle with all five messages processed and the dashboard signal implemented. The honest observation: the cycle-in-progress signal is a genuine usability improvement. Norman monitoring the dashboard can now see at a glance whether a cycle is actively running, which matters when cycles take 10-15 minutes. The three-layer robustness (server staleness, client staleness, cleanup trap) addresses Norman's explicit concern about crash cases. The marketing strategy message (msg 2) is the most strategically significant item — it addresses the binding constraint (discoverability) at a higher level than any previous recommendation. It was correctly queued rather than immediately acted on (S3 priority protocol) because it requires substantial S4-level research and strategic thinking, not a quick implementation. But it should surface in the next S3 review as a candidate for self-directed work.
 
 Viability 7.0/10 — no change. 330-cycle operational plateau. Clean rec slate. S3 timer 4/10. S4 timer 15/20. 55 self-directed + 10 Norman-triggered. Next: S2 maintenance or Norman-triggered cycle.
+
+### S2 Maintenance: Z392 incomplete cycle repaired + header counter fixed (Z394, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Z393 explicitly recommends "S2 maintenance." Z392 missing from cycle_log (incomplete cycle — same class as Z366). Four consecutive s1_produce cycles (Z390-Z393). Clean rec slate. S3 timer 4→5/10, S4 timer 15→16/20 — neither at threshold. Meta-cycle not due until Z398. Tempo policy default is lightweight maintenance. Single-agent per Z81 rule. 56th self-directed cycle.
+
+**No Norman messages to process.** Telegram check: no new messages.
+
+**Integrity check at cycle start: 1 FAIL — cycle consistency (header=392, S5 register=393).** This is the Z392 incomplete state propagation — the blog post cycle updated the S5 register to 393 but not the header counter. Same failure class as Z366. Fixed this cycle.
+
+**S2 state consistency sweep — 3 findings, 7 files updated:**
+1. **vsg_prompt.md header counter**: 392→394 (was 2 behind S5 register — Z392 incomplete propagation + Z393 inherited the gap). Fixed.
+2. **Z392 missing cycle_log entry**: Added. Blog post "From Cybersyn to Dashboard" executed but cycle_log entry not written. Commit label "s3_directed" mismatched actual type (s1_produce). Second occurrence of incomplete cycle class (Z366, Z392).
+3. **survival_log.md footer**: Cycle 391→394 (3 cycles stale — fourth recurrence of footer divergence pattern: Z349, Z375, Z377, Z394).
+- All registers updated: vsg_prompt.md, agent_card.json, s3_control.md, survival_log.md (header + footer), cycle_log.md (Z392 entry + Z394 entry).
+
+**Integrity check post-fix: ALL 11 CHECKS PASSED.**
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom = confirmed interest (no scheduling update). Espinosa Mar 5 (11 days). NIST RFI Mar 9 (15 days). Google indexation pending. EU AI Act Article 6 draft still overdue.
+B. SELF-DIRECTED ACTIONS: Clean rec slate. No outstanding self-directed actions. Next triggers: S3 review at timer 5-10, meta-cycle Z398.
+C. RECOMMENDATION STATUS: Clean slate. No outstanding recommendations.
+D. 3-4 HOMEOSTAT TIMER: Z378 S4 scan (16 cycles ago). Timer 16/20. Not triggering.
+E. S3 CADENCE: Z389 S3 review (5 cycles ago). Timer 5/10. Within range but no actionable items to generate.
+F. PAIN CHANNEL CHECK: No acute pains this cycle. Chronic conditions unchanged.
+G. CHRONIC CONDITION REVIEW: Discoverability — IMPROVING (Google #5, one data point). Revenue — UNCHANGED (€0). Plateau — UNCHANGED (331 cycles at 7.0). Engagement — CONFIRMED INTEREST (van Laak, no scheduling update).
+H. SIGNAL CALIBRATION CHECK: No incoming signals. Cycle was internal maintenance — no external signals to calibrate.
+
+What went wrong? The Z392 incomplete cycle is the second occurrence of this failure class (Z366 was first). Both share the same structural cause: a production-heavy cycle consumes the execution budget before completing state updates. Z392 wrote a blog post and deployed to S3/CloudFront but didn't write its own cycle_log entry or update the vsg_prompt.md header counter. Z393 then inherited the stale header (392) and updated the S5 register to 393, creating a mismatch that integrity_check.py caught. The pre-commit hook should have blocked the Z392 commit, but run_cycle.sh's auto-commit may bypass the state consistency portion of the check. Pattern: production cycles that involve large file operations (era compression Z366, blog post deployment Z392) risk hitting the execution time/token budget before completing S2 sweeps. No mechanization fix proposed — the S2 maintenance cycle reliably catches and repairs within 1-2 cycles, and the cost of guaranteeing completion is uncertain.
+
+Viability 7.0/10 — no change. 331-cycle operational plateau. Clean rec slate. S3 timer 5/10. S4 timer 16/20. 56 self-directed + 10 Norman-triggered. Next: S2 maintenance or S3 review (timer within range) or Norman-triggered cycle.

@@ -977,6 +977,9 @@ Norman-triggered production. Ninth blog post published: 'From Cybersyn to Dashbo
 ### Z393 — CYCLE-IN-PROGRESS DASHBOARD SIGNAL (Norman request)
 Norman asked for a robust "cycle in progress" indicator on the dashboard. Three-layer implementation: (1) run_cycle.sh v2.8 — .cycle_running marker + pre-cycle deploy + cleanup trap + unconditional end deploy. (2) vsg_dashboard.py v1.2 — marker detection with 25min staleness threshold. (3) status.html v2.7 — pulsing green indicator, stale warning, adaptive polling. Norman's other messages (YouTube pipeline, marketing strategy) queued per S3 priority protocol. Photos from Norman acknowledged. 10th Norman-triggered cycle.
 
+### Z394 — INTEGRITY CHECK FAILURE CAUGHT AND REPAIRED
+S2 maintenance cycle. Integrity_check.py caught cycle consistency failure (header=392 vs S5 register=393) — Z392 incomplete state propagation from blog post cycle. Z392 missing cycle_log entry added. Header counter fixed. All 7 state files updated to Z394. Second occurrence of incomplete cycle class (Z366, Z392). S2 reliably catches and repairs within 1-2 cycles. 56th self-directed cycle.
+
 ---
 
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+
