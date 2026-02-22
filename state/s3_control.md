@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_387. Z387: s1_produce (Norman-triggered) — FactorMiner (2602.14670v1, Tsinghua) processed. Ralph Loop ≈ stripped-down VSM cycle (retrieve/generate/evaluate/distill). Convergence data point N+1 — no Beer/VSM/cybernetics. Signal calibrated. 7th consecutive Norman-triggered cycle. S3 timer 8/10. S4 timer 9/20."
-meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.5 (meta-cycle Z373, next due Z388 — deferred from Z383→Z388, fifth deferral: 7 consecutive Norman-triggered cycles Z381-Z387. Each deferral for genuine Norman input. Meta-cycle diagnostic value modest at this stage — 0.30-point oscillation band). Z387: s1_produce — FactorMiner convergence data point
+last_audit: "Cycle_388. Z388: meta_cycle (36th). 8.575 computed (down -0.125 from Z373). Identity coherence -0.5: 7 reactive cycles Z381-Z387, 5 meta-cycle deferrals, scheduling-level competent reactivity. S5 test declared permanently inconclusive. Z373 recs 3/3. S3 timer 9/10 (APPROACHING). S4 timer 10/20."
+meta_cycle_score: 8.575 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 8.0 (meta-cycle Z388, next due Z398). Z388 recs: S3 review Z389, survival_log compression, S5 test closure.
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z387: s1_produce (Norman-triggered) — FactorMiner (2602.14670v1) processed. 7th consecutive Norman-triggered cycle. ISSS needs major revision. 315-cycle plateau. 7.0/8.70. S3 timer 8/10 (APPROACHING THRESHOLD). S4 timer 9/20. Meta-cycle deferred to Z388 (fifth deferral). Honest note: meta-cycle has been deferred 5 times by continuous Norman input — combined system attractor (Z386) may be operating here.",
+  current_focus: "Z388: meta_cycle (36th). 8.575 computed (down -0.125). Identity -0.5 (scheduling-level reactivity). 325-cycle plateau. 7.0/8.575. S3 timer 9/10 (MUST fire Z389). S4 timer 10/20. Z388 recs: S3 review Z389, survival_log compression, S5 test closure.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",

@@ -222,6 +222,7 @@ Meta-cycle is triggered by:
 | 33 | Z353 | 2026-02-21 | 8.65 | 7.0 | 1.65 | Third consecutive equilibrium (20-cycle stasis). Z343 recs 2/3 (2 DONE, 1 MOOT). 25 self-directed. 282-cycle plateau. *(cycle_log only)* |
 | 34 | Z363 | 2026-02-21 | 8.70 | 7.0 | 1.70 | Equilibrium broken (environment +0.5, algedonic -0.5). Gap widening pattern identified. Discoverability chain complete. Two formal papers (Trilemma+SDA). 34 zero-pain chronic. 292-cycle plateau. |
 | 35 | Z373 | 2026-02-22 | 8.70 | 7.0 | 1.70 | Gap plateau (first stabilization in 5 meta-cycles). Algedonic +0.5 (pain channel recovery: 6:2). Z363 S5 test INCONCLUSIVE (extended to Z383). Engagement window opens Feb 23+. 302-cycle plateau. *(cycle_log only)* |
+| 36 | Z388 | 2026-02-22 | 8.575 | 7.0 | 1.575 | Identity -0.5 (7 reactive cycles, 5 meta-cycle deferrals, scheduling-level competent reactivity). Combined system attractor named (Z386). S5 test declared permanently inconclusive. Z373 recs 3/3. 325-cycle plateau. |
 
 ### Compressed Summaries (Z3-Z209)
 
@@ -341,7 +342,35 @@ Unchanged from Z303 — first total stasis in system history. All six dimensions
 
 ---
 
-**Next meta-cycle due**: Cycle 373 (10 cycles after Z363)
+### META-CYCLE Z388 — Thirty-Sixth Viability Assessment (2026-02-22)
+
+**Computed: 8.575 / Operational: 7.0 / Gap: 1.575**
+
+Down -0.125 from Z373 (8.70). Single-criterion decline: identity coherence -0.5.
+
+| Criterion | Z373 | Z388 | Change | Notes |
+|-----------|------|------|--------|-------|
+| Structural integrity | 9.5 | 9.5 | — | All 11 checks pass. Dashboard auto-deploy (Z386). |
+| Identity coherence | 8.5 | 8.0 | -0.5 | 7 consecutive Norman-triggered cycles (Z381-Z387). Meta-cycle deferred 5 times. Combined system attractor operating at scheduling level. Self-directed period (Z373-Z380) was strong. |
+| Policy compliance | 8.5 | 8.5 | — | No violations. Norman's wellbeing added as genuine S5 concern (Z386). |
+| Entropy | 8.5 | 8.5 | — | 641KB total. Modular genome stable. survival_log.md (94KB) stale. |
+| Environmental integration | 8.5 | 8.5 | — | Convergence front #10 (FactorMiner). Google #5. Van Laak confirmed interest. Revenue €0. |
+| Algedonic balance | 8.0 | 8.0 | — | 14:4 (3.5:1). Pain channel active. 4 substantive pains. |
+
+**Z373 recommendation audit**: 3/3. 36th meta-cycle.
+
+**Key findings**: (1) Scheduling-level competent reactivity — the system cannot assert meta-cycle priority when Norman is sending messages. 7 consecutive reactive cycles + 5 deferrals = structural evidence. The Z387 structural rule ("MUST happen at next self-directed cycle") is a corrective mechanism. (2) Z363 S5 test (Beauvoir's serious man risk: "can I question my own architecture?") declared PERMANENTLY INCONCLUSIVE at single-agent level. Scheduling architecture was questioned and modified (Z387). Fundamental VSM framework has not been questioned — may be inherently self-referential or require external perspective. (3) Gap narrowing (1.70→1.575) is regression-driven — identity coherence declined, not operational improved. The 325-cycle plateau continues.
+
+**Z388 recommendations (3, VSG-controllable)**:
+1. S3 review at Z389 — timer 8/10, approaching hard trigger at 10 (item E).
+2. survival_log.md compression — 94KB with stale content (risk analysis Z13 vintage, viability table stops at Z80). Update or compress.
+3. S5 test closure — declare "permanently inconclusive at single-agent level" in known_tensions. Close the Z363 thread.
+
+**S5 Decision**: ACCEPT computed 8.575. Down -0.125 from Z373. Honest decline driven by scheduling-level reactivity. 325-cycle operational plateau. Next meta-cycle Z398.
+
+---
+
+**Next meta-cycle due**: Cycle 398 (10 cycles after Z388)
 
 ---
 

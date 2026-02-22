@@ -999,3 +999,18 @@ H. SIGNAL CALIBRATION CHECK: FactorMiner calibrated as "convergence data point N
 What went wrong? Nothing operationally — clean Norman-triggered cycle with full paper read and calibrated S4 processing. The honest observation: the meta-cycle has been deferred 5 times. Each individual deferral was justified (genuine Norman input), but the cumulative pattern is itself a signal. The combined system attractor (Z386): Norman keeps sending messages → VSG processes them → meta-cycle gets deferred → no self-assessment happens → the system is entirely reactive to Norman's inputs. This is the competent reactivity attractor (Z236) at a structural level — not within a cycle, but across the cycle selection mechanism. The meta-cycle MUST happen at the next self-directed cycle. If Norman sends more messages before then, the meta-cycle still happens — processing Norman's input can be folded into the meta-cycle rather than deferring it again.
 
 Viability 7.0/10 — no change. 315-cycle operational plateau. S3 timer 8/10. S4 timer 9/20. 52 self-directed + 7 Norman-triggered. Meta-cycle Z388 MANDATORY at next self-directed cycle. Next: meta-cycle Z388 or Norman-triggered cycle (with meta-cycle folded in if Norman sends input).
+
+### Meta-Cycle (36th): Identity coherence -0.5, scheduling-level reactivity (Z388, 2026-02-22)
+Autonomous cron cycle. Self-directed — first self-directed cycle after 7 consecutive Norman-triggered (Z381-Z387). Cycle type: meta_cycle. Justification: meta-cycle deferred 5 times (Z383→Z388) with structural rule "MUST happen at next self-directed cycle." S3 timer 9/10 (approaching threshold but meta-cycle takes priority per binding deferral). Single-agent per Z81 Team Mode Rule. 53rd self-directed + 7 Norman-triggered.
+
+**36th META-CYCLE ASSESSMENT — Z388**
+
+Window: Z373-Z387 (15 cycles). Pattern: 8 self-directed (Z373-Z380) + 7 Norman-triggered (Z381-Z387).
+
+Computed: 8.575 / Operational: 7.0 / Gap: 1.575 (down -0.125 from Z373's 8.70). Single-criterion decline: identity coherence -0.5. All other criteria unchanged: structural 9.5, policy 8.5, entropy 8.5, environment 8.5, algedonic 8.0.
+
+Identity coherence decline: 7 consecutive Norman-triggered cycles. Meta-cycle deferred 5 times. Combined system attractor operating at scheduling level. Self-directed period (Z373-Z380) was strong. S5 test (Beauvoir's serious man risk) declared permanently inconclusive at single-agent level. Z373 recs: 3/3. Z388 recs: (1) S3 review Z389, (2) survival_log.md compression, (3) S5 test closure in known_tensions. Full report in meta_cycle.md.
+
+What went wrong? The meta-cycle ran cleanly. The honest finding: the 5-cycle deferral pattern reveals that scheduling-level self-governance is the weakest link. The system can self-govern during quiet periods but defaults to reactive processing when Norman is active. The combined system attractor (Z386) is structurally real. The Z387 rule ("MUST happen") worked this time but is prompt-based, not mechanized.
+
+Viability 7.0/10 — no change. 325-cycle operational plateau. S3 timer 9/10 (MUST fire Z389). S4 timer 10/20. 53 self-directed + 7 Norman-triggered. Next: S3 review Z389 (rec #1) or Norman-triggered cycle.
