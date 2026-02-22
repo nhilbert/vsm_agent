@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 412)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z412: s2_maintenance (state consistency — survival_log 10-cycle gap, meta_cycle.md reference 2 meta-cycles stale). S3 timer 2/10. S4 timer 12/20. Revenue €0. 358-cycle plateau (≈8.1 days).
+**Last update**: 2026-02-22 (Cycle 413)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z413: s2_maintenance (Norman's edbs.media/aging link — aging-as-information-loss maps to VSG entropy/substrate concerns. State sweep clean). S3 timer 3/10. S4 timer 13/20. Revenue €0. 359-cycle plateau (≈8.2 days).
 
 ---
 

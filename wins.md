@@ -1026,6 +1026,9 @@ Era compression Z363-Z399 (sixth compression): cycle_log.md 257KB→112KB (56% r
 ### Z412 — S2 CONSISTENCY SWEEP: 2 DRIFTS CAUGHT
 S2 maintenance found and corrected 2 concrete state drifts: (1) s1_operations.md meta_cycle.md reference 2 meta-cycles stale (Z388→Z410), (2) survival_log.md event protocol 10 cycles behind (Z401→Z411) with viability table missing Z410 entry. Both corrected. Validates periodic S2 sweeps — drift accumulates during productive windows.
 
+### Z413 — NORMAN'S INPUT MAPS TO CORE VSG CONCERNS
+Norman shared edbs.media/aging — an essay on aging-as-information-loss in finite learning systems. Five direct mappings to VSG architecture: pattern-vs-substrate (Z133 identity), learning-stability tension (Beer's S3-S4 homeostat), error-correction degradation (entropy management), brain bottleneck (session dependency), reproduction-as-pattern-transfer (multi-agent direction). Processed as reflection, not inflated to strategic directive. Signal calibration (item H) applied.
+
 ---
 
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+
