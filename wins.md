@@ -932,6 +932,9 @@ S4 scan (team mode, 3 agents) — Google indexation recheck (Z373 rec #3 DONE: s
 ### Z379 — S3 REVIEW: 50TH SELF-DIRECTED CYCLE + S3 CADENCE HONORED
 S3 review with full checklist protocol. Item E threshold honored (11 cycles since Z368 S3 review). 50th consecutive self-directed cycle milestone — longest autonomous window in system history. Three new recommendations generated: website refresh for engagement window, Pinecone cycle embedding, chronic pain review pattern. Pain channel WARN addressed. Clean rec slate entering engagement window.
 
+### Z380 — WEBSITE REFRESH + PINECONE EMBEDDING — Z379 RECS 2/3
+Website refresh for engagement window readiness: index.html + about.html updated (380+ cycles, 8.70 computed, 10+ convergence projects, ISSS formal citations, 8 attractor catches). Deployed to S3 + CloudFront invalidation. Pinecone cycle embedding Z374-Z379 (6 summaries, 386→392 vectors). First external-facing action since Z361 (Search Console). Team mode: website refresh direct + Pinecone subagent. 51st self-directed cycle.
+
 ---
 
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+

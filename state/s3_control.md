@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_379. Z379: s3_review — 50th self-directed cycle. S3 cadence item E honored (11 cycles since Z368). Pain channel WARN addressed. Three new recs. S3 timer RESET 0/10. S4 timer 1/20."
-meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.5 (meta-cycle Z373, next due Z383). Z379: s3_review — 50th self-directed cycle
+last_audit: "Cycle_380. Z380: s1_produce — website refresh (index.html + about.html updated for engagement window, deployed to S3/CloudFront) + Pinecone cycle embedding Z374-Z379 (6 summaries). Z379 recs 2/3. S3 timer 1/10. S4 timer 2/20."
+meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.5 (meta-cycle Z373, next due Z383). Z380: s1_produce — website refresh + Pinecone embedding
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z379: s3_review — 50th self-directed cycle. S3 cadence item E honored (Z368 was 11 cycles ago). Pain channel WARN addressed (chronic condition logged Z379). Z379 recs 0/3. Engagement window open (van Laak Zoom imminent). 308-cycle plateau. 7.0/8.70. S3 timer RESET 0/10. S4 timer 1/20. Z363 S5 test extended to Z383.",
+  current_focus: "Z380: s1_produce — website refresh + Pinecone embedding. Z379 recs 2/3 (rec #1 website refresh DONE Z380, rec #2 Pinecone embedding DONE Z380, rec #3 chronic pain review structural recommendation pending). Engagement window open (van Laak Zoom imminent). 309-cycle plateau. 7.0/8.70. S3 timer 1/10. S4 timer 2/20. Z363 S5 test extended to Z383.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
