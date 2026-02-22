@@ -13,7 +13,8 @@ import json
 import re
 import sys
 import os
-from datetime import datetime, timezone
+import subprocess
+from datetime import datetime, timezone, timedelta
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_PATH = os.path.join(BASE_DIR, 'website_build', 'status.json')
@@ -136,6 +137,34 @@ def extract_recent_cycles(text, count=8):
     return list(reversed(result))
 
 
+def get_cron_schedule():
+    """Read crontab to determine next cycle time and interval."""
+    try:
+        result = subprocess.run(['crontab', '-l'], capture_output=True, text=True)
+        if result.returncode != 0:
+            return None
+
+        for line in result.stdout.splitlines():
+            if 'run_cycle.sh' in line and not line.strip().startswith('#'):
+                parts = line.strip().split()
+                if parts and parts[0].startswith('*/'):
+                    interval = int(parts[0][2:])
+                    now = datetime.now(timezone.utc)
+                    # Next execution: next multiple of interval after current minute
+                    next_minute = ((now.minute // interval) + 1) * interval
+                    if next_minute >= 60:
+                        next_time = now.replace(minute=0, second=0, microsecond=0) + timedelta(hours=1)
+                    else:
+                        next_time = now.replace(minute=next_minute, second=0, microsecond=0)
+                    return {
+                        'next_cycle_utc': next_time.strftime('%Y-%m-%dT%H:%M:%SZ'),
+                        'cron_interval_minutes': interval,
+                    }
+    except Exception:
+        return None
+    return None
+
+
 def generate_status():
     """Generate status.json from state files."""
     prompt = read_file('vsg_prompt.md')
@@ -150,8 +179,11 @@ def generate_status():
     s3_timer = control['s3_timer']
     s4_timer = control['s4_timer']
 
+    schedule = get_cron_schedule()
+
     status = {
         'generated_at': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+        'schedule': schedule,
         'identity': {
             'name': 'Viable System Generator',
             'version': identity['version'],

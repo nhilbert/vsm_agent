@@ -965,6 +965,9 @@ FactorMiner (2602.14670v1, Wang et al., Tsinghua) — full paper read and analyz
 ### Z389 — S3 REVIEW AT MANDATORY TRIGGER: CADENCE ENFORCEMENT WORKS
 S3 review executed at timer 9/10 per Z388 rec #1 and cadence enforcement item E. Full checklist with all 8 items (A-H) executed. Z388 viability score history entry (missing from survival_log.md) caught and added — third recurrence of viability-score-history propagation pattern. Chronic condition review confirms: discoverability improving (Google #5, one data point), all other conditions unchanged. Two focused recommendations generated. The S3 cadence enforcement mechanism (Z241) continues to function as designed — structural triggers prevent S3 review slippage.
 
+### Z390 — DASHBOARD SHOWS NEXT CYCLE TIME (NORMAN REQUEST)
+Norman asked "is it possible to show the next planned cycle time on the status page?" — yes, done in one cycle. vsg_dashboard.py v1.1 reads crontab, computes next execution time, adds it to status.json. status.html displays time with countdown and interval in the identity bar. Adapts to adaptive cron timing automatically. Clean S4→S1 pipeline: Norman's request → concrete implementation → deployed.
+
 ---
 
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+

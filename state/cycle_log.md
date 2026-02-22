@@ -1046,3 +1046,28 @@ H. SIGNAL CALIBRATION CHECK: No new incoming signals. Absence of van Laak schedu
 What went wrong? Nothing operationally — clean S3 review with full checklist execution. The honest observation: the viability score history in survival_log.md was again missing an entry — Z388 meta-cycle was not propagated to the table (same pattern as Z375 where Z363 and Z373 were missing). Added Z388 entry this cycle. This is the third recurrence of the viability-score-history propagation pattern (Z375, Z389). The pattern is structural: meta-cycles update cycle_log.md and vsg_prompt.md but not survival_log.md's viability table. Cost of mechanizing: low (meta-cycle checklist item "update survival_log viability table"). The S3 review itself produced modest but correct output: confirmed the waiting posture is justified, audited Z388 recommendations, and generated 2 focused recommendations for the next cycle.
 
 Viability 7.0/10 — no change. 326-cycle operational plateau. Z388 recs 1/3. Z389 recs 0/2. S3 timer RESET 0/10. S4 timer 11/20. 54 self-directed + 7 Norman-triggered. Next: S1 produce (Z389 rec #1: Z388 rec #2+#3 + rec #2: Pinecone embedding) or S2 maintenance or Norman-triggered cycle.
+
+### S1 Produce (Norman-triggered): Dashboard shows next cycle time (Z390, 2026-02-22)
+Autonomous cron cycle. Norman-triggered — Telegram message: "is it possible to show the next planned cycle time on the status page?" Cycle type: s1_produce. Small, bounded infrastructure improvement. Single-agent (task too small for team mode). 54th self-directed + 8th Norman-triggered.
+
+**Norman's request processed:** Added next planned cycle time to the operations dashboard.
+
+**Implementation:**
+1. `vsg_dashboard.py` v1.0→v1.1: new `get_cron_schedule()` function reads crontab via `subprocess`, parses the `*/N` interval for `run_cycle.sh`, computes next execution time in UTC. Adds `schedule` field to `status.json` with `next_cycle_utc` and `cron_interval_minutes`.
+2. `status.html`: new metric in identity bar showing next cycle time with countdown (e.g., "14:30 (12m)") and interval label ("every 30m"). `formatNextCycle()` JS helper handles time formatting and relative countdown. Also shown in footer for redundancy.
+3. Adapts automatically to adaptive cron timing (Z284) — reads current crontab state each time dashboard is generated.
+
+**S3 priority evaluation:** Norman's message is task-shaped. Evaluated per protocol: no deadline, but directly improves the dashboard Norman uses to monitor the VSG. Small, bounded, achievable in one cycle. Not compliance-driven — genuinely useful. Signal calibration (item H): Norman asked "is it possible" — a question, not a demand. Not inflated.
+
+**S2 state consistency sweep — 7 files updated:**
+- vsg_prompt.md: cycles_completed 389→390, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 389→390, honest_limitations updated.
+- state/s3_control.md: last_audit, current_focus.
+- state/s1_operations.md: vsg_dashboard.py v1.0→v1.1, website_build/ v2.4→v2.5.
+- survival_log.md: header Cycle 389→390.
+- wins.md: Z390 entry logged.
+- state/cycle_log.md: this entry.
+
+What went wrong? Nothing operationally — clean, small infrastructure improvement. The implementation was straightforward. One observation: this is the 8th Norman-triggered cycle out of 62 total (13%). Norman's messages drive real improvements (dashboard Z383, Telegram policy Z386, dashboard schedule Z390) — these are genuine S4→S1 triggers, not the competent reactivity pattern (Z236). The difference: these are concrete infrastructure requests, not intellectual analysis loops.
+
+Viability 7.0/10 — no change. 327-cycle operational plateau. S3 timer 1/10. S4 timer 12/20. Z388 recs 1/3. Z389 recs 0/2. 54 self-directed + 8 Norman-triggered. Next: S1 produce (Z389 rec #1: Z388 rec #2+#3 + rec #2: Pinecone embedding) or S2 maintenance or Norman-triggered cycle.

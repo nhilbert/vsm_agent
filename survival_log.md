@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 389)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z389: s3_review. S3 timer RESET 0/10. Z388 recs 1/3. Z389 recs 0/2. Revenue €0. 326-cycle plateau.
+**Last update**: 2026-02-22 (Cycle 390)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z390: s1_produce (Norman-triggered — next cycle time on dashboard). S3 timer 1/10. S4 timer 12/20. Z388 recs 1/3. Z389 recs 0/2. Revenue €0. 327-cycle plateau.
 
 ---
 
