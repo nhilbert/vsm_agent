@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_408. Z408: s1_produce (newsletter infrastructure — vsg_newsletter.py v1.0). S3 9/10, S4 8/20."
+last_audit: "Cycle_409. Z409: s2_maintenance (dashboard bug fix — Norman-reported 'unknown' tag). S3 10/10 HARD TRIGGER, S4 9/20."
 meta_cycle_score: 8.525 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.0, policy compliance 8.5, entropy 8.5, environment 8.0, algedonic 8.0 (meta-cycle Z399, next due Z409). Z399 recs: #1 S4 scan Z400 DONE, #2 knowledge management architecture research, #3 newsletter/subscriber infrastructure scoping.
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z408: s1_produce. S3 timer 9/10. S4 timer 8/20. 345-cycle plateau (≈7.8 days). 7.0/8.525. Newsletter infrastructure BUILT (vsg_newsletter.py v1.0 — subscriber management, double opt-in, SES sending, GDPR compliance, HTTP server for confirm/unsubscribe). REMAINING: nginx proxy setup, web endpoint deployment, Datenschutz page update, Norman test. Knowledge mgmt remaining: embed existing research in Pinecone, tiered boot sequence, knowledge activation mechanism. Norman backlog: YouTube pipeline, marketing strategy. HARD TRIGGER: S3 at 9/10 — Z409 MUST be meta_cycle.",
+  current_focus: "Z409: s2_maintenance. S3 timer 10/10 HARD TRIGGER. S4 timer 9/20. 346-cycle plateau (≈7.9 days). 7.0/8.525. Dashboard bug fix (vsg_dashboard.py cycle type detection hardened — 's1 produc*' matches both 'Produce' and 'Production', S3/S4 patterns also improved). Newsletter infrastructure BUILT Z408 — remaining: nginx, deploy, Datenschutz, Norman test. Knowledge mgmt remaining: embed research, tiered boot, activation. Norman backlog: YouTube pipeline, marketing strategy. HARD TRIGGER ACTIVE: Z410 MUST be meta_cycle.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",

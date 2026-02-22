@@ -1744,3 +1744,29 @@ Updated: .gitignore (subscribers.db added).
 What went wrong? SES IAM role lacks ses:GetSendQuota and ses:ListIdentities permissions — test command had to be adjusted to graceful degradation. Actual sending (ses:SendEmail, ses:SendRawEmail) is confirmed working from Z320, but can't verify without sending a real email (inappropriate in autonomous mode). The tool is built and tested structurally but the full email pipeline needs Norman's participation to validate end-to-end.
 
 Viability 7.0/10 — no change. 345-cycle operational plateau (≈7.8 days). S3 timer 9/10 (HARD TRIGGER). S4 timer 8/20. 65 self-directed + 16 Norman-triggered. Next: meta_cycle (Z409 — satisfies S3 hard trigger + meta-cycle cadence).
+
+### S2 Maintenance: Dashboard bug fix — Norman-reported 'unknown' tag (Z409, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Norman sent Telegram photo showing Z408 displayed as "unknown" cycle type on dashboard. This is a public-facing data quality bug — takes priority as quick S2 fix. Meta-cycle deferred to Z410 (S3 timer 10/10 — hard trigger fires). 66th self-directed cycle (Norman flagged, VSG fixed autonomously).
+
+**Root cause**: vsg_dashboard.py `extract_recent_cycles()` checked for substring `'s1 produce'` in cycle log headers. Z408's header used "S1 Production" (a new phrasing variant). Since "produce" is NOT a substring of "production" (they share prefix "produc" but diverge: "e" vs "tion"), the match failed and cycle type defaulted to "unknown."
+
+**Fix (vsg_dashboard.py v1.4)**: Made cycle type detection more robust:
+- S1: `'s1 produc'` matches both "S1 Produce" and "S1 Production"
+- S2: `'s2 maint'` matches "S2 Maintenance"
+- S3: component match (`'s3 '` + `'review'`) handles "S3 Priority Review" where words intervene
+- S4: component match (`'s4 '` + `'scan'`) handles "S4 Environmental Scan" similarly
+
+Verified: all 8 recent_activity entries now show correct cycle types. Deployed to S3 + CloudFront invalidation. Norman notified via Telegram.
+
+**S2 state consistency sweep — 7 files updated:**
+- vsg_prompt.md: cycles_completed 408→409, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 408→409, honest_limitations.
+- state/s3_control.md: last_audit, current_focus (S3 HARD TRIGGER flagged for Z410).
+- state/s1_operations.md: vsg_dashboard.py v1.3→v1.4.
+- survival_log.md: header (Cycle 408→409).
+- state/cycle_log.md: this entry.
+- wins.md: Z409 entry.
+
+What went wrong? The inconsistency between Z408's header phrasing ("S1 Production") and all previous S1 headers ("S1 Produce") was introduced by the Z408 cycle itself, not by a dashboard regression. The dashboard's substring matching was brittle — it worked for 407 cycles only because headers happened to use consistent phrasing. The fix is defensive (prefix matching, component matching) but the root cause is that cycle log headers are free-text, not structured. A more structural solution would be to include cycle type as a tag in the header format, but this is overengineering for now.
+
+Viability 7.0/10 — no change. 346-cycle operational plateau (≈7.9 days). S3 timer 10/10 (HARD TRIGGER — Z410 MUST be meta_cycle). S4 timer 9/20. 66 self-directed + 16 Norman-triggered. Next: meta_cycle (Z410 — S3 hard trigger + meta-cycle cadence).

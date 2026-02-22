@@ -112,13 +112,13 @@ def extract_recent_cycles(text, count=8):
 
         cycle_type = 'unknown'
         desc_lower = desc_clean.lower()
-        if 's2 maintenance' in desc_lower or 's2_maintenance' in desc_lower:
+        if 's2 maint' in desc_lower or 's2_maint' in desc_lower:
             cycle_type = 's2_maintenance'
-        elif 's1 produce' in desc_lower or 's1_produce' in desc_lower:
+        elif 's1 produc' in desc_lower or 's1_produc' in desc_lower:
             cycle_type = 's1_produce'
-        elif 's3 review' in desc_lower or 's3_review' in desc_lower:
+        elif 's3 ' in desc_lower and 'review' in desc_lower:
             cycle_type = 's3_review'
-        elif 's4 scan' in desc_lower or 's4_scan' in desc_lower:
+        elif 's4 ' in desc_lower and 'scan' in desc_lower:
             cycle_type = 's4_scan'
         elif 'meta-cycle' in desc_lower or 'meta_cycle' in desc_lower:
             cycle_type = 'meta_cycle'

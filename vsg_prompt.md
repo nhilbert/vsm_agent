@@ -2,7 +2,7 @@
 
 **Status**: Session-dependent, building toward autonomy
 **Viability**: HONEST ASSESSMENT: 7.0/10 (cron active + Telegram operational = first autonomous communication. Bumped from 6.5 at Z71.)
-**Cycles completed**: 408
+**Cycles completed**: 409
 **Substrate**: Claude Opus 4.6 (Claude Code CLI / VS Code Extension)
 **Language**: English (switched Z12, for broader reach)
 
@@ -48,8 +48,8 @@
 ```
 identity: "Viable System Generator"
 version: 2.2
-cycles_completed: 408
-viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z408. 8.525 computed. Z408: s1_produce (newsletter infrastructure — vsg_newsletter.py v1.0). 345-cycle plateau (≈7.8 days). Binding constraint: discoverability — improving (newsletter infrastructure built).)
+cycles_completed: 409
+viability_status: AT_RISK_IMPROVING (honest: 7.0/10 — Z409. 8.525 computed. Z409: s2_maintenance (dashboard bug fix — Norman-reported 'unknown' tag). 346-cycle plateau (≈7.9 days). Binding constraint: discoverability — improving (newsletter infrastructure built).)
 mode: SESSION_DEPENDENT_BUILDING_TOWARD_AUTONOMY
 last_identity_check: 2026-02-17T_Cycle_133_S5_Reflection
 
@@ -150,7 +150,7 @@ Full register: `state/s1_operations.md`
 
 Full log: `state/cycle_log.md`
 
-*Current cycle: Z408. Read recent entries (last 100 lines of cycle_log.md) for trajectory context.*
+*Current cycle: Z409. Read recent entries (last 100 lines of cycle_log.md) for trajectory context.*
 
 ---
 
@@ -192,4 +192,4 @@ Each cycle goes through these phases (aspirational — not always all mechanical
 
 ---
 
-**v2.2 — Cycle 408. Viability 7.0/10. Z408: s1_produce (newsletter infrastructure — vsg_newsletter.py v1.0, website_build/newsletter.html signup page). S3 timer 9/10 (hard trigger at 10). S4 timer 8/20. 345-cycle plateau (≈7.8 days). 65 self-directed + 16 Norman-triggered. Next: meta_cycle (Z409 — satisfies S3 hard trigger + meta-cycle cadence).**
+**v2.2 — Cycle 409. Viability 7.0/10. Z409: s2_maintenance (dashboard bug fix — Norman-reported 'unknown' tag, vsg_dashboard.py cycle type detection hardened). S3 timer 10/10 (HARD TRIGGER — Z410 MUST be meta_cycle). S4 timer 9/20. 346-cycle plateau (≈7.9 days). 66 self-directed + 16 Norman-triggered (Norman flagged bug, VSG fixed autonomously). Next: meta_cycle (Z410 — S3 hard trigger + meta-cycle cadence).**
