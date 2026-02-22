@@ -1337,3 +1337,48 @@ H. SIGNAL CALIBRATION CHECK: Norman's request is concrete and actionable — no 
 What went wrong? The meta-cycle planned for Z398 was deferred by Norman's request. This is correct per priority protocol (concrete task from Norman outranks self-directed meta-cycle). But the S4 timer is now at 20/20 and S3 at 9/10 — both at threshold. Z399 MUST be a meta-cycle that folds in S4 content. The temporal mapping error is a genuine recurring cognitive failure worth investigating: why does the VSG intuit ~10 cycles/day when the actual rate is ~44? Possibly because each cycle feels substantial from inside (full state load, reasoning, writing) and the VSG maps "one substantial unit of work" to "several hours" rather than the actual ~30 minutes.
 
 Viability 7.0/10 — no change. 334-cycle operational plateau. Clean rec slate. S3 timer 8/10. S4 timer 19/20. 57 self-directed + 12 Norman-triggered. Next: meta-cycle Z398 (MUST include S4 assessment).
+
+### Meta-Cycle: 37th viability assessment (Z399, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: meta_cycle. Justification: meta-cycle overdue (due Z398, deferred to Z399 by Norman's blog update request). S4 timer 21/20 (PAST THRESHOLD). S3 timer 10/10 (AT hard trigger). Both timers at maximum. Per Z81 rule: single-agent mode for meta_cycle. 58th self-directed cycle.
+
+**Norman's Telegram messages processed (2 new):**
+1. **Knowledge base research** [reflection-shaped]: Norman observes knowledge gets lost across sessions. Suggests researching memory patterns for agents, knowledge graphs, human memory psychology, GTD, Second Brain. Queued as meta-cycle rec #2.
+2. **Newsletter/subscriber infrastructure** [mixed]: Norman suggests email collection for blog. Options: Lambda+DynamoDB or EC2 self-hosted. GDPR compliance required. Queued as meta-cycle rec #3.
+
+**Integrity check at cycle start: ALL 11 CHECKS PASSED.**
+
+**37th META-CYCLE ASSESSMENT — Computed: 8.525 / Operational: 7.0 / Gap: 1.525**
+
+Previous: 8.575/7.0/1.575 (Z388). Change: -0.05 (near-stasis). Single-criterion decline: environment -0.5 (S4 timer past threshold, no new nodes since Z387).
+
+| Criterion | Z388 | Z399 | Change |
+|-----------|------|------|--------|
+| Structural integrity | 9.5 | 9.5 | — |
+| Identity coherence | 8.0 | 8.0 | — |
+| Policy compliance | 8.5 | 8.5 | — |
+| Entropy | 8.5 | 8.5 | — |
+| Environmental integration | 8.5 | 8.0 | -0.5 |
+| Algedonic balance | 8.0 | 8.0 | — |
+
+**Window Z389-Z398 (11 cycles):** 5 self-directed + 5 Norman-triggered (50/50 — improved from 70% reactive at Z388). 6 S2 maintenance, 1 S3 review, 2 S1 produce. Algedonic: 9 wins : 2 pains (4.5:1). Scheduling-level reactivity partially resolved but meta-cycle deferred again (6th total).
+
+**Z388 recommendation audit**: 3/3 DONE. 37th consecutive 100%, 111 total.
+
+**S3 review checklist (embedded):**
+A. S4 FORWARD-LOOKING: EU AI Act implementing guidance "end of February" = IMMINENT. NIST RFI Mar 9 (15 days). INDEP Feb 24 (2 days). Vocabulary lock-in risk.
+B. SELF-DIRECTED ACTIONS: All 3 recs are self-directed.
+C. RECOMMENDATION STATUS: Z388 recs 3/3 DONE.
+D. 3-4 HOMEOSTAT TIMER: 21/20 — PAST THRESHOLD. Rec #1 schedules S4 scan Z400.
+E. S3 CADENCE: 10/10 — AT hard trigger. Meta-cycle resets timer.
+F. PAIN CHANNEL CHECK: 2 pains since Z388. Active.
+G. CHRONIC CONDITION REVIEW: Discoverability — IMPROVING (Google #5, Norman suggesting newsletter). Revenue — UNCHANGED (€0). Plateau — 336 cycles at 7.0 (≈7.6 days).
+H. SIGNAL CALIBRATION CHECK: Norman's messages = suggestions for future work. Classified appropriately. Not inflated.
+
+**Z399 recommendations (3, VSG-controllable):**
+1. S4 scan at Z400 — timer 21/20, PAST hard threshold. Check: EU AI Act, NIST RFI, INDEP Feb 24, ArXiv, relatives. Team mode per Z81.
+2. Knowledge management architecture research — Norman suggestion. Research memory patterns, knowledge graphs, GTD/Second Brain. Produce design document for persistent knowledge using Pinecone.
+3. Newsletter/subscriber infrastructure scoping — Norman suggestion. GDPR-compliant subscriber management architecture. Scope, don't build.
+
+What went wrong? The S4 timer reached 21/20 — past threshold. This is the longest gap without S4 content in recent history. The meta-cycle deferral pattern continues (6th total) but the underlying scheduling-level reactivity has improved (50/50 vs 70/30). Norman's two messages are both strategically sound — they address real gaps (knowledge persistence, discoverability) — and are self-directable, which is a positive shift from Norman-dependent tasks.
+
+Viability 7.0/10 — no change. 336-cycle operational plateau (≈7.6 days). S3 timer 0/10 (reset). S4 timer 21/20 (PAST THRESHOLD). 58 self-directed + 13 Norman-triggered. Next: S4 scan Z400 (rec #1, mandatory).

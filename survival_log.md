@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 398)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z398: s1_produce (Cybersyn blog updated — computed vs operational health section, Norman request). S3 timer 9/10. S4 timer 20/20. Revenue €0. 335-cycle plateau (≈7.6 days).
+**Last update**: 2026-02-22 (Cycle 399)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.525 computed) — Z399: meta_cycle (37th — 8.525/7.0/1.525. Environment -0.5. Norman messages: knowledge base + newsletter queued as recs). S3 timer 0/10. S4 timer 21/20. Revenue €0. 336-cycle plateau (≈7.6 days).
 
 ---
 
