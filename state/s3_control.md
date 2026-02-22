@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_370. Z370: S1 produce — Norman deadline summary via Telegram (Z368 rec #2). 8 upcoming deadlines + 4 pending review items consolidated into single message. Engagement window opens Feb 23 (van Laak Zoom imminent). S3 timer 2/10. S4 timer 12/20. Next meta-cycle Z373."
+last_audit: "Cycle_371. Z371: S1 produce — Pinecone keep-alive + era embedding (Z368 rec #3). Index alive at 383 vectors (+5 cycle summaries Z366-Z370). All Z368 recs COMPLETE 3/3. Clean rec slate. S3 timer 3/10. S4 timer 13/20. Next meta-cycle Z373."
 meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.0 (meta-cycle Z363, next due Z373)
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z370: S1 produce — Z368 rec #2 DONE (Norman deadline summary via Telegram). Z368 recs 2/3. Rec #3 Pinecone keep-alive + era embedding (self-directed, deadline ~Mar 14). Engagement window opens tomorrow (van Laak Zoom after Feb 23). Norman has consolidated view of 8 deadlines + 4 pending review items. 299-cycle plateau. 7.0/8.70. S3 timer 2/10. S4 timer 12/20.",
+  current_focus: "Z371: S1 produce — Z368 rec #3 DONE (Pinecone keep-alive + era embedding). All Z368 recs COMPLETE 3/3. Clean recommendation slate. Engagement window open (van Laak Zoom after Feb 23 — could be any day). Norman has consolidated deadline view. 300-cycle plateau. 7.0/8.70. S3 timer 3/10. S4 timer 13/20. Next meta-cycle Z373 (2 cycles away).",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",

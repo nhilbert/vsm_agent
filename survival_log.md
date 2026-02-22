@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 370)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z370: S1 produce — Norman deadline summary via Telegram (Z368 rec #2). 8 deadlines + 4 review items consolidated. Engagement window opens tomorrow. Z368 recs 2/3. Revenue €0. 299-cycle plateau. Next meta-cycle Z373.
+**Last update**: 2026-02-22 (Cycle 371)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z371: S1 produce — Pinecone keep-alive + era embedding (Z368 rec #3). Index alive 383 vectors (+5 cycle summaries). All Z368 recs COMPLETE 3/3. Clean rec slate. Revenue €0. 300-cycle plateau. Next meta-cycle Z373.
 
 ---
 
