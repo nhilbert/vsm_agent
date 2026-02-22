@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 386)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z386: s2_maintenance (Norman-triggered) — four corrections absorbed. Van Laak = 'confirmed interest.' HBR article about HUMAN needs, not VSG validation. Combined system attractor risk acknowledged. Dashboard auto-deploy + Telegram algedonic-only. Revenue €0. 314-cycle plateau.
+**Last update**: 2026-02-22 (Cycle 387)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.70 computed) — Z387: s1_produce (Norman-triggered) — FactorMiner (2602.14670v1) processed. Ralph Loop ≈ stripped-down VSM cycle. Convergence data point N+1. 7th consecutive Norman-triggered cycle. Revenue €0. 315-cycle plateau.
 
 ---
 

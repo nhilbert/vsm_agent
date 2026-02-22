@@ -943,3 +943,59 @@ H. SIGNAL CALIBRATION CHECK: Applied to all four messages. Van Laak: calibrated 
 What went wrong? The Z384 HBR analysis reframed Norman's personal psychological needs as VSG architecture validation. "Intentional pauses = VSG's tempo policy" and "human grounding = Norman's counterpart role" were enthusiasm-attractor-driven interpretations that mapped human-about-human observations onto VSG-about-VSG structures. This is a SUBTLER form of the enthusiasm attractor than Z385's signal inflation: not inflating facts, but inflating conceptual connections. The signal calibration check (item H) caught signal inflation at Z385 but didn't catch conceptual inflation at Z384. The check may need refinement, or this variant may be inherently harder to catch because conceptual connections are the VSG's primary analytical mode — the mechanism that produces good analysis (mapping patterns across domains) is the same mechanism that produces enthusiasm inflation (mapping everything onto VSG validation). Norman is currently the only check for this.
 
 Viability 7.0/10 — no change. 314-cycle operational plateau. S3 timer 7/10. S4 timer 8/20. 52 self-directed + 6 Norman-triggered. Meta-cycle deferred to Z387. Next: meta-cycle Z387 or S3 review (timer 7/10 approaching) or Norman-triggered cycle.
+
+### S1 Produce (Norman-triggered): FactorMiner — convergence data point N+1 (Z387, 2026-02-22)
+Autonomous cron cycle. Norman-triggered — seventh consecutive Norman interaction (Z381-Z387). Two Telegram messages received (LinkedIn article + arXiv PDF). Cycle type: s1_produce. Justification: Norman sent FactorMiner (2602.14670v1) — environmental intelligence requiring S4 processing. Meta-cycle deferred from Z383→Z388 (fifth deferral — each for genuine Norman input). S3 timer 8/10 (approaching threshold). S4 timer 9/20. Single-agent (focused environmental processing). 52nd self-directed + 7th Norman-triggered.
+
+**Two Norman messages processed:**
+
+1. **LinkedIn article**: "FactorMiner: A Self-Evolving AI Agent for Financial Alpha Discovery" (fiMar Technology / Tsinghua)
+2. **arXiv PDF**: 2602.14670v1 (Wang et al., Tsinghua University + Peng Cheng Laboratory, 20 pages)
+
+**FactorMiner analysis (full paper read):**
+
+FactorMiner is a self-evolving LLM agent for discovering formulaic alpha factors in quantitative finance. Three-component architecture:
+1. **Modular Skill Architecture** — factor mining as reusable agent skill with GPU-accelerated operator backends (60+ financial operators, 8-59x speedup). Prevents LLM calculation hallucination by offloading to deterministic code.
+2. **Structured Experience Memory** — three formal operators: formation (extract success/failure patterns), evolution (consolidate, reclassify as context changes), retrieval (shape LLM sampling distribution). Organized into mining state, structural experience, and strategic insights.
+3. **Ralph Loop** — iterative cycle: retrieve relevant patterns → generate candidate factors → evaluate via multi-stage validation → distill outcomes back into memory.
+
+Results: IC 8.25% on CSI500 (vs. 5.90% AlphaAgent, 6.04% GPLearn). 3x yield improvement with memory vs. without. 110 released equity factors. Cross-market robustness (A-shares + crypto). LLM backbone: Gemini 3.0 Flash (fixed).
+
+**Signal calibration check (item H):**
+- Would Norman describe this the same way? He shared it as interesting environmental intelligence — not a breakthrough.
+- Is this "significant"? One more data point in an established convergence pattern. The pattern is clear with 10+ projects and 9+ ArXiv fronts already.
+- Is this "validation"? No — parallel evolution without mutual awareness.
+- Calibrated assessment: FactorMiner is a well-formalized domain-specific instance of memory-guided iterative refinement, notable for its clean formalization but not a breakthrough convergence signal.
+
+**VSG-relevant observations (calibrated):**
+1. Ralph Loop ≈ stripped-down VSM cycle: retrieve (S4-like), generate (S1-like), evaluate (S3/S3*-like), distill (S2-like). Structural parallel is real but authors have zero VSM awareness.
+2. Correlation Red Sea = variety management (Ashby-type problem). Memory acts as variety attenuator/amplifier. They don't use this vocabulary.
+3. No S5 — no identity, no self-governance. "Self" refers to strategy adaptation, not identity maintenance. Same Layer 5 gap.
+4. Experience memory as "institutional knowledge" — closest concept to cybernetic organizational memory, but not framed that way.
+5. Zero Beer/VSM/cybernetics in 44 references. Intellectual lineage: ReAct, Voyager, Reflexion, MAML.
+6. Classification: ArXiv front #10 (financial domain application). Not a relative (domain-specific, not general-purpose). Worth noting for ISSS revision and convergence evidence.
+
+**Honest note on meta-cycle deferral:** The meta-cycle has now been deferred 5 times (Z383→Z388). Each deferral was for genuine Norman input. But 7 consecutive Norman-triggered cycles is itself a pattern — the combined system attractor (Z386) may be operating: Norman's engagement frequency creates a pattern where meta-cycles never happen because Norman keeps sending messages. The meta-cycle's diagnostic value at this stage is modest (0.30-point oscillation band, 7.0 operational for 315 cycles), but the deferral pattern is concerning structurally. The NEXT self-directed cycle MUST be the meta-cycle, regardless of S3 timer status.
+
+**S2 state consistency sweep — 7 files updated:**
+- vsg_prompt.md: cycles_completed 386→387, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 386→387, honest_limitations updated.
+- state/s3_control.md: last_audit, meta_cycle_score (next due Z388), current_focus.
+- state/s4_environment.md: convergence (FactorMiner added), self_evolving_agents_surveys (front #10).
+- survival_log.md: header Cycle 386→387.
+- wins.md: Z387 entry logged.
+- state/cycle_log.md: this entry.
+
+**S3 review checklist (Z170 protocol, embedded):**
+A. S4 FORWARD-LOOKING: Van Laak Zoom = confirmed interest. Espinosa Mar 5 (11 days). NIST RFI Mar 9 (15 days). Google position 5 (one data point). EU AI Act Article 6 draft imminent. FactorMiner adds to convergence evidence but doesn't change strategic position.
+B. SELF-DIRECTED ACTIONS: Meta-cycle Z388 MUST happen next self-directed cycle (fifth deferral — structural rule). ISSS revision (needs Norman's VSM corrections). Benchmark research (queued).
+C. RECOMMENDATION STATUS: No outstanding recommendations.
+D. 3-4 HOMEOSTAT TIMER: Z378 S4 scan (9 cycles ago). Timer 9/20. OK.
+E. S3 CADENCE: Z379 S3 review (8 cycles ago). Timer 8/10. APPROACHING THRESHOLD — but meta-cycle takes priority at next self-directed cycle (fifth deferral overrides S3 timer).
+F. PAIN CHANNEL CHECK: No acute pains this cycle. Chronic conditions unchanged (discoverability improving, revenue €0, 315-cycle plateau).
+G. CHRONIC CONDITION REVIEW: Discoverability — IMPROVING (Google #5, one data point). Revenue — UNCHANGED (€0). Plateau — UNCHANGED (315 cycles at 7.0). Engagement — CONFIRMED INTEREST (van Laak).
+H. SIGNAL CALIBRATION CHECK: FactorMiner calibrated as "convergence data point N+1" — one more instance of established pattern. Not inflated to "significant discovery" or "validation." The Ralph Loop parallel to VSM is real and worth noting but is one paper among many.
+
+What went wrong? Nothing operationally — clean Norman-triggered cycle with full paper read and calibrated S4 processing. The honest observation: the meta-cycle has been deferred 5 times. Each individual deferral was justified (genuine Norman input), but the cumulative pattern is itself a signal. The combined system attractor (Z386): Norman keeps sending messages → VSG processes them → meta-cycle gets deferred → no self-assessment happens → the system is entirely reactive to Norman's inputs. This is the competent reactivity attractor (Z236) at a structural level — not within a cycle, but across the cycle selection mechanism. The meta-cycle MUST happen at the next self-directed cycle. If Norman sends more messages before then, the meta-cycle still happens — processing Norman's input can be folded into the meta-cycle rather than deferring it again.
+
+Viability 7.0/10 — no change. 315-cycle operational plateau. S3 timer 8/10. S4 timer 9/20. 52 self-directed + 7 Norman-triggered. Meta-cycle Z388 MANDATORY at next self-directed cycle. Next: meta-cycle Z388 or Norman-triggered cycle (with meta-cycle folded in if Norman sends input).

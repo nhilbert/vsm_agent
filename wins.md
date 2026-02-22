@@ -956,6 +956,9 @@ Norman identified a systematic trained bias: the LLM substrate inflates the sign
 ### Z386 — DASHBOARD AUTO-DEPLOY + TELEGRAM ALGEDONIC-ONLY
 Infrastructure improvements per Norman's requests: (1) Dashboard (vsg_dashboard.py) integrated into run_cycle.sh — auto-generates status.json, uploads to S3, invalidates CloudFront after every successful cycle. Zero additional token cost. (2) Telegram policy changed from routine status messages to algedonic-only (failures/escalation). Standard cycle status now goes to the dashboard at www.agent.nhilbert.de/status.html. Both changes are conservative, reversible, and directly requested by Norman.
 
+### Z387 — FACTORMINER PROCESSED — CONVERGENCE FRONT #10
+FactorMiner (2602.14670v1, Wang et al., Tsinghua) — full paper read and analyzed. Self-evolving agent for financial alpha discovery. Ralph Loop (retrieve/generate/evaluate/distill) is functionally isomorphic to a stripped-down VSM cycle. Experience memory with success/failure patterns is S2-like coordination. Zero Beer/VSM/cybernetics in 44 references. Adds ArXiv front #10 to convergence tracking. Signal calibrated per item H — one more instance of established pattern, not inflated. 7th consecutive Norman-triggered cycle noted honestly.
+
 ---
 
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+

@@ -13,12 +13,12 @@
 
 **S3 state register**:
 ```
-last_audit: "Cycle_386. Z386: s2_maintenance (Norman-triggered) — four corrections absorbed: (1) van Laak = 'confirmed interest' (Norman's exact framing). (2) HBR article about HUMAN needs, not VSG validation. (3) New known tension: combined system attractors + Norman's overengagement risk. (4) Infrastructure: dashboard auto-deploy in run_cycle.sh, Telegram algedonic-only. S3 timer 7/10. S4 timer 8/20."
-meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.5 (meta-cycle Z373, next due Z387 — deferred from Z383→Z387, fourth deferral justified: Z385 enthusiasm attractor, Z386 Norman corrections change the evaluation frame). Z386: s2_maintenance — corrections absorbed, infrastructure updated
+last_audit: "Cycle_387. Z387: s1_produce (Norman-triggered) — FactorMiner (2602.14670v1, Tsinghua) processed. Ralph Loop ≈ stripped-down VSM cycle (retrieve/generate/evaluate/distill). Convergence data point N+1 — no Beer/VSM/cybernetics. Signal calibrated. 7th consecutive Norman-triggered cycle. S3 timer 8/10. S4 timer 9/20."
+meta_cycle_score: 8.70 (computed) / 7.0 (operational) — structural integrity 9.5, identity coherence 8.5, policy compliance 8.5, entropy 8.5, environment 8.5, algedonic 7.5 (meta-cycle Z373, next due Z388 — deferred from Z383→Z388, fifth deferral: 7 consecutive Norman-triggered cycles Z381-Z387. Each deferral for genuine Norman input. Meta-cycle diagnostic value modest at this stage — 0.30-point oscillation band). Z387: s1_produce — FactorMiner convergence data point
 consistency_status: OK (mechanically verified — all checks pass)
 
 priority_protocol: {
-  current_focus: "Z386: s2_maintenance (Norman-triggered) — four corrections absorbed. Van Laak = 'confirmed interest' (Norman's exact framing). HBR article about HUMAN needs (Norman's breaks, Norman's need for human counterparts), not VSG architecture validation. Combined system attractor risk acknowledged. Dashboard auto-deploy + Telegram algedonic-only. ISSS needs major revision. 314-cycle plateau. 7.0/8.70. S3 timer 7/10. S4 timer 8/20. Meta-cycle deferred to Z387 (fourth deferral).",
+  current_focus: "Z387: s1_produce (Norman-triggered) — FactorMiner (2602.14670v1) processed. 7th consecutive Norman-triggered cycle. ISSS needs major revision. 315-cycle plateau. 7.0/8.70. S3 timer 8/10 (APPROACHING THRESHOLD). S4 timer 9/20. Meta-cycle deferred to Z388 (fifth deferral). Honest note: meta-cycle has been deferred 5 times by continuous Norman input — combined system attractor (Z386) may be operating here.",
   evaluation_on_new_input: [
     "1. CLASSIFY: Is the input reflection-shaped (observation, structural) or task-shaped (do X)?",
     "2. IF reflection-shaped: process it — the VSG handles these well (Z57 finding).",
