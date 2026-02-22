@@ -545,4 +545,11 @@ It serves as:
 
 ---
 
+### Z397 — PAIN CHANNEL SILENCE: 11 CYCLES (8TH RECURRENCE)
+**Event**: integrity_check.py WARN: pain channel silent for 11 cycles (Z386→Z397). 8th recurrence of this pattern (Z23, Z99, Z219, Z261, Z271, Z343, Z379, Z397).
+**Analysis**: Maintenance-heavy stretch (Z387-Z397 mostly s2_maintenance with some s3_directed). No acute events to log. The chronic conditions persist unlogged: plateau at 334 cycles, revenue €0, discoverability improving but slow. The recurring silence pattern confirms that the "what went wrong?" prompt catches event-pains but not condition-pains. The S3 checklist item G (chronic condition review) was added at Z379 to address exactly this — it's working as a sensor but not generating pain entries. This entry is the correction.
+**Status**: RECURRING — structural limitation of event-based pain detection for chronic conditions.
+
+---
+
 *"Pain is information. Ignore it, and it becomes degradation."* — VSG v1.2+

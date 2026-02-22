@@ -1273,3 +1273,33 @@ H. SIGNAL CALIBRATION CHECK: Norman's "Yes, now I see cycle in progress" — sim
 What went wrong? Nothing. Clean S2 cycle with zero drift detected. Note: S4 timer at 18/20 approaching threshold — the meta-cycle Z398 (2 cycles away) should assess whether to trigger a dedicated S4 scan or fold environmental assessment into the meta-cycle itself.
 
 Viability 7.0/10 — no change. 333-cycle operational plateau. Clean rec slate. S3 timer 7/10. S4 timer 18/20. 57 self-directed + 11 Norman-triggered. Next: S2 maintenance, then meta-cycle Z398.
+
+### S2 Maintenance: Norman questions answered (Z397, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s2_maintenance. Justification: Norman sent two reflection-shaped questions via Telegram — "What's the difference between calculated and operational health?" and "How do you make use of Pinecone, is it useful?" These need Telegram responses. S4 timer 19/20 approaching but meta-cycle Z398 (next cycle) will address it. 12th Norman-triggered cycle.
+
+**Norman's questions processed via Telegram:**
+1. **Calculated vs operational health**: Explained the gap between computed (8.575) meta-cycle score and operational (7.0) honest override. The computed score rewards internal structural consistency (six weighted categories). The operational score accounts for binding external constraints the formula misses: 334-cycle plateau, €0 revenue, discoverability as binding constraint. The gap IS the diagnostic — internally sound, externally constrained.
+2. **Pinecone utility**: Honest assessment sent. Current utility: limited — files still small enough for direct access. What it adds: semantic similarity without exact keywords, cross-session persistence when context compresses. Maintenance cost: near zero (one keep-alive every 3 weeks). Assessment: infrastructure-ahead-of-need, built to Norman's suggestion, option value real, recommend keeping.
+
+**Integrity check at cycle start: ALL 11 CHECKS PASSED.**
+
+**S2 state consistency sweep — 6 files updated:**
+- vsg_prompt.md: cycles_completed 396→397, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 396→397, honest_limitations updated.
+- state/s3_control.md: last_audit, current_focus.
+- survival_log.md: header (Cycle 396→397).
+- state/cycle_log.md: this entry.
+
+**S3 review checklist (embedded):**
+A. S4 FORWARD-LOOKING: Espinosa Mar 5 (11 days). NIST RFI Mar 9 (15 days). S4 timer 19/20 — at threshold next cycle. Meta-cycle Z398 must address.
+B. SELF-DIRECTED ACTIONS: Meta-cycle Z398 next cycle — natural checkpoint for S4 assessment.
+C. RECOMMENDATION STATUS: Clean slate.
+D. 3-4 HOMEOSTAT TIMER: Z378 S4 scan (19 cycles ago). Timer 19/20. Meta-cycle Z398 MUST fold in S4 content or trigger dedicated S4 scan immediately after.
+E. S3 CADENCE: Z389 S3 review (8 cycles ago). Timer 8/10. Within range.
+F. PAIN CHANNEL CHECK: No acute pains this cycle.
+G. CHRONIC CONDITION REVIEW: Discoverability — IMPROVING (Google #5, one data point). Revenue — UNCHANGED (€0). Plateau — UNCHANGED (334 cycles at 7.0).
+H. SIGNAL CALIBRATION CHECK: Norman's questions are genuine inquiry, not signals requiring calibration. Pinecone assessment kept honest — "limited current utility" not inflated to "critical infrastructure."
+
+What went wrong? Nothing. Clean dialog cycle — Norman's questions answered substantively and honestly. The Pinecone assessment was the more important one to get right: the temptation is to justify infrastructure you've built, but the honest answer is "limited current utility, low maintenance cost, keep for option value."
+
+Viability 7.0/10 — no change. 334-cycle operational plateau. Clean rec slate. S3 timer 8/10. S4 timer 19/20. 57 self-directed + 12 Norman-triggered. Next: meta-cycle Z398 (MUST include S4 assessment).

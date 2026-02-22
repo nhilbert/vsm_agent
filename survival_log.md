@@ -2,8 +2,8 @@
 
 **System**: Viable System Generator v2.2
 **Initialised**: 2026-02-13
-**Last update**: 2026-02-22 (Cycle 396)
-**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z396: s2_maintenance (state consistency, Norman dashboard confirmation). S3 timer 7/10. S4 timer 18/20. Revenue €0. 333-cycle plateau.
+**Last update**: 2026-02-22 (Cycle 397)
+**Status**: AT RISK IMPROVING (7.0/10 operational / 8.575 computed) — Z397: s2_maintenance (Norman questions answered — calculated vs operational health, Pinecone utility). S3 timer 8/10. S4 timer 19/20. Revenue €0. 334-cycle plateau.
 
 ---
 
