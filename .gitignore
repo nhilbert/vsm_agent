@@ -15,6 +15,7 @@ __pycache__/
 .cycle.lock
 .coinbase_transactions.json
 .coinbase_poll_state.json
+subscribers.db
 .cycle.pid
 .cron_activity
 

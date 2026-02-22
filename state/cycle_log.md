@@ -1699,3 +1699,48 @@ H. SIGNAL CALIBRATION CHECK: No incoming signals. Nothing to calibrate.
 What went wrong? Nothing acute. Lightweight maintenance cycle as intended. GitHub comment check was blocked by sandbox — recurring limitation (sandbox restricts shell script execution). Not new, not actionable without Norman.
 
 Viability 7.0/10 — no change. 344-cycle operational plateau (≈7.8 days). S3 timer 8/10. S4 timer 7/20. 64 self-directed + 16 Norman-triggered. Next: s2_maintenance.
+
+### S1 Production: Newsletter infrastructure (Z408, 2026-02-22)
+Autonomous cron cycle. Agent-selected cycle type: s1_produce. Justification: Z407 S3 observation recommended "Z408 s2_maintenance (or s1_produce if newsletter build ready)." Newsletter IS ready — scoping complete (v0.2), all Norman decisions received (Z406: self-hosted, "Viable Signals", Norman reviews, "build within the next week"). Last production window before Z409 meta-cycle. 65th self-directed cycle.
+
+**Built: vsg_newsletter.py v1.0** — newsletter subscriber management and sending CLI.
+11 commands: test, subscribe, confirm, unsubscribe, list, send, preview, export, delete, stats, serve.
+
+Architecture (per newsletter_scoping.md Option A — Norman-approved):
+- SQLite subscriber database with full GDPR consent logging (signup IP, timestamp, consent text, confirmation IP/timestamp)
+- Double opt-in flow: subscribe → pending → confirmation email → confirm token → confirmed
+- AWS SES via boto3 (eu-west-1, vsg@agent.nhilbert.de) — same proven pattern as Z320
+- SendRawEmail for List-Unsubscribe headers (RFC 8058 compliance)
+- Email templates: confirmation (no promotional content — OLG München ruling), newsletter (AI disclosure, Impressum, Datenschutz link, unsubscribe), unsubscribe confirmation
+- Preview-to-Norman workflow (sends draft to Norman's email before mass send)
+- GDPR Art. 17 right to erasure (delete command)
+- Lightweight HTTP server (serve command) for confirm/unsubscribe link handling
+- Safety: send command requires --yes flag, subscriber count displayed before sending
+
+Also built: website_build/newsletter.html — signup page with form, consent text, dark mode support. Ready for deployment when endpoint is live.
+
+Updated: .gitignore (subscribers.db added).
+
+**What's remaining (follow-up cycles)**:
+1. nginx reverse proxy for /api/newsletter/ endpoint (needs sudo — Norman-dependent)
+2. Deploy newsletter.html signup page to website
+3. Update Datenschutz page with newsletter processing section
+4. Norman end-to-end test (subscribe → confirm → send test newsletter)
+5. systemd service for newsletter HTTP server
+6. Content strategy (VSG S4-level task per Norman's directive)
+
+**S2 state consistency sweep — 8 files updated:**
+- vsg_prompt.md: cycles_completed 407→408, viability_status, cycle_log pointer, footer.
+- agent_card.json: cycles_completed 407→408, honest_limitations.
+- state/s3_control.md: last_audit, current_focus (newsletter built, S3 hard trigger flagged).
+- state/s1_operations.md: vsg_newsletter.py artifact added, newsletter open_task updated.
+- survival_log.md: header (Cycle 407→408).
+- state/cycle_log.md: this entry.
+- .gitignore: subscribers.db added.
+- wins.md: Z408 entry.
+
+**Integrity check at cycle start: ALL 11 CHECKS PASSED.**
+
+What went wrong? SES IAM role lacks ses:GetSendQuota and ses:ListIdentities permissions — test command had to be adjusted to graceful degradation. Actual sending (ses:SendEmail, ses:SendRawEmail) is confirmed working from Z320, but can't verify without sending a real email (inappropriate in autonomous mode). The tool is built and tested structurally but the full email pipeline needs Norman's participation to validate end-to-end.
+
+Viability 7.0/10 — no change. 345-cycle operational plateau (≈7.8 days). S3 timer 9/10 (HARD TRIGGER). S4 timer 8/20. 65 self-directed + 16 Norman-triggered. Next: meta_cycle (Z409 — satisfies S3 hard trigger + meta-cycle cadence).

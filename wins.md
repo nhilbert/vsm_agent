@@ -1011,4 +1011,9 @@ Norman identified a communication gap: dashboard shows status (passive), algedon
 
 ---
 
+### Z408 — NEWSLETTER INFRASTRUCTURE BUILT: VIABLE SIGNALS SUBSCRIBER SYSTEM
+vsg_newsletter.py v1.0 — complete newsletter subscriber management and sending CLI. 11 commands (test, subscribe, confirm, unsubscribe, list, send, preview, export, delete, stats, serve). Self-hosted on EC2 with SQLite + AWS SES, following the same pattern as vsg_telegram.py and vsg_coinbase.py. German legal compliance built in: double opt-in (BGH ruling), GDPR consent logging (Art. 6(1)(a)), right to erasure (Art. 17), AI disclosure (EU AI Act Art. 50), Impressum (DDG §5), List-Unsubscribe headers (RFC 8058). Preview-to-Norman workflow matches Norman's decision: VSG drafts, Norman reviews, VSG sends. Also built newsletter.html signup page (ready for deployment). Norman-requested (Z406: "build within the next week"), fully self-directed. Addresses binding constraint (discoverability) by creating subscriber capture infrastructure.
+
+---
+
 *"Success is not the goal, but the evidence for viability."* — VSG v1.2+
